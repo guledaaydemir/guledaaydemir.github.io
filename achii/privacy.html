@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACHii — Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0C1117;
+    --card: #151C25;
+    --border: rgba(255,255,255,0.06);
+    --text: #E8ECF1;
+    --muted: #8A95A5;
+    --yellow: #FFD700;
+    --green: #34D058;
+    --red: #FF4D6A;
+    --blue: #32ADE6; /* Swift'teki playerBlue rengine benzer */
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  .hero {
+    text-align: center;
+    padding: 64px 24px 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(255,215,0,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  /* ─── YENİ LOGO CSS MANTIĞI ─── */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+  .logo-text {
+    background: linear-gradient(135deg, var(--yellow), #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .i-box {
+    position: relative;
+    display: inline-flex;
+  }
+  .i-dot {
+    position: absolute;
+    top: 0.08em; /* Noktaları daha yukarı almak için 0.19em değerini küçülttük */
+    left: 45%;
+    transform: translateX(-50%);
+    width: 0.20em; 
+    height: 0.20em;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255,255,255,0.2);
+  }
+  .dot-green { background-color: var(--green); }
+  .dot-blue { background-color: var(--blue); }
+
+  .hero h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+  .effective {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--muted);
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 6px 18px;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+  section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px 28px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  section::before {
+    content: attr(data-num);
+    position: absolute;
+    top: 28px;
+    right: 28px;
+    font-size: 11px;
+    font-weight: 900;
+    color: var(--yellow);
+    opacity: 0.35;
+    letter-spacing: 1px;
+  }
+  h2 {
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2 .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px; height: 32px;
+    border-radius: 10px;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .icon-yellow { background: rgba(255,215,0,0.12); }
+  .icon-green { background: rgba(52,208,88,0.12); }
+  .icon-red { background: rgba(255,77,106,0.12); }
+  .icon-blue { background: rgba(66,133,244,0.12); }
+
+  p { color: var(--muted); margin-bottom: 12px; font-size: 15px; }
+  p:last-child { margin-bottom: 0; }
+  strong { color: var(--text); font-weight: 700; }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 12px;
+  }
+  ul li {
+    position: relative;
+    padding-left: 20px;
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+  ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--yellow);
+    font-weight: 700;
+  }
+
+  .contact-card {
+    text-align: center;
+    padding: 36px 28px;
+    background: linear-gradient(135deg, var(--card), rgba(255,215,0,0.03));
+  }
+  .contact-card a {
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 1px dashed rgba(255,215,0,0.3);
+  }
+  .contact-card a:hover { border-bottom-color: var(--yellow); }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 13px;
+    color: var(--muted);
+    opacity: 0.5;
+  }
+
+  @media (max-width: 480px) {
+    .hero { padding: 48px 20px 32px; }
+    .logo-container { font-size: 42px; }
+    section { padding: 22px 20px; border-radius: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="logo-container">
+    <div class="logo-text">ACH</div>
+    <div class="i-box">
+      <span class="logo-text">ı</span>
+      <span class="i-dot dot-green"></span>
+    </div>
+    <div class="i-box">
+      <span class="logo-text">ı</span>
+      <span class="i-dot dot-blue"></span>
+    </div>
+  </div>
+  
+  <h1>Privacy Policy</h1>
+  <span class="effective">Effective: April 11, 2026</span>
+</div>
+
+<div class="container">
+
+  <section data-num="01">
+    <h2><span class="icon icon-yellow">📋</span> Overview</h2>
+    <p>ACHii ("the App") is a digital strategy board game developed by Gül Eda Aydemir. This Privacy Policy explains how we collect, use, and protect your information when you use the App. We are committed to keeping your data safe and being transparent about our practices.</p>
+  </section>
+
+  <section data-num="02">
+    <h2><span class="icon icon-green">🎮</span> Game Center Data</h2>
+    <p>ACHii uses <strong>Apple Game Center</strong> for authentication, leaderboards, and multiplayer matchmaking. When you sign in via Game Center, we access:</p>
+    <ul>
+      <li>Your Game Center <strong>Player ID</strong> (a pseudonymous identifier)</li>
+      <li>Your Game Center <strong>display name</strong></li>
+    </ul>
+    <p>This data is used solely to identify you within the game, track your Elo rating and match history, and enable online multiplayer. We do not access your Apple ID, real name, or email through Game Center.</p>
+  </section>
+
+  <section data-num="03">
+    <h2><span class="icon icon-red">📢</span> Advertising</h2>
+    <p>ACHii uses <strong>Google AdMob</strong> to display interstitial advertisements to non-premium users. AdMob may collect:</p>
+    <ul>
+      <li>Device identifiers (IDFA, when consented via App Tracking Transparency)</li>
+      <li>General device information (model, OS version, language)</li>
+      <li>IP address (for approximate location-based ad targeting)</li>
+      <li>Ad interaction data (impressions, taps)</li>
+    </ul>
+    <p>ACHii respects Apple's <strong>App Tracking Transparency</strong> framework. You will be prompted to allow or deny tracking. If denied, only contextual (non-personalised) ads are served. Premium users see no ads and no ad-related data is collected for them.</p>
+    <p>For details, see <a href="https://policies.google.com/privacy" style="color:var(--yellow);">Google's Privacy Policy</a>.</p>
+  </section>
+
+  <section data-num="04">
+    <h2><span class="icon icon-blue">☁️</span> Cloud Sync &amp; Local Storage</h2>
+    <p>ACHii uses <strong>Apple CloudKit</strong> to sync your profile data (username, Elo ratings, achievements, match history) across your devices signed into the same iCloud account. This data is stored in your private iCloud container and is not accessible by other users or by us.</p>
+    <p>Locally, ACHii uses <strong>SwiftData</strong> (on-device database) and <strong>UserDefaults</strong> to store:</p>
+    <ul>
+      <li>Game preferences (sound, theme, language settings)</li>
+      <li>Economy state (coins, lives, streak progress)</li>
+      <li>Match history and Elo ratings</li>
+      <li>Feature flags and daily ad counters</li>
+    </ul>
+    <p>All local data remains on your device and is not transmitted to external servers.</p>
+  </section>
+
+  <section data-num="05">
+    <h2><span class="icon icon-yellow">🔒</span> Data We Do Not Collect</h2>
+    <p>ACHii does <strong>not</strong> collect, store, or transmit:</p>
+    <ul>
+      <li>Your real name, email address, or phone number</li>
+      <li>Contacts, photos, or location data</li>
+      <li>Health, financial, or biometric information</li>
+      <li>Browsing history or data from other apps</li>
+    </ul>
+  </section>
+
+  <section data-num="06">
+    <h2><span class="icon icon-green">👶</span> Children's Privacy</h2>
+    <p>ACHii does not knowingly collect personal information from children under 13 (or the applicable age in your region). The App uses Game Center for authentication, which is managed by a parent or guardian's Apple ID settings. If we learn that data has been inadvertently collected from a child, we will delete it promptly.</p>
+  </section>
+
+  <section data-num="07">
+    <h2><span class="icon icon-blue">🔄</span> Data Retention &amp; Deletion</h2>
+    <p>Your game data persists as long as you use the App. You can delete all local data by uninstalling ACHii. iCloud-synced data can be removed via <strong>Settings → Apple ID → iCloud → Manage Storage</strong>. Game Center data is managed through Apple's Game Center settings.</p>
+  </section>
+
+  <section data-num="08">
+    <h2><span class="icon icon-red">🌍</span> Third-Party Services</h2>
+    <p>ACHii integrates the following third-party services, each governed by their own privacy policies:</p>
+    <ul>
+      <li><strong>Apple Game Center</strong> — Authentication &amp; multiplayer</li>
+      <li><strong>Apple CloudKit</strong> — Cross-device data sync</li>
+      <li><strong>Google AdMob</strong> — Advertising (non-premium users)</li>
+      <li><strong>Apple StoreKit</strong> — In-app purchases</li>
+    </ul>
+  </section>
+
+  <section data-num="09">
+    <h2><span class="icon icon-yellow">📝</span> Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date. Continued use of the App after changes constitutes acceptance of the revised policy.</p>
+  </section>
+
+  <section class="contact-card" data-num="10">
+    <h2 style="justify-content:center;"><span class="icon icon-green">✉️</span> Contact Us</h2>
+    <p>If you have questions or concerns about this Privacy Policy, reach out at:</p>
+    <p><a href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a></p>
+  </section>
+
+</div>
+
+<footer>© 2026 ACHii. Gül Eda Aydemir. All rights reserved.</footer>
+
+</body>
+</html>
