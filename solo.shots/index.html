@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLO.SHOTS — Capture Your Progress. Every Single Day.</title>
+  <meta name="description" content="The daily photo progress tracker built for people who show up. Document your transformation one shot at a time." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <style>
+    /* ─── TOKENS ──────────────────────────────── */
+    :root {
+      --bg:           #03050a;
+      --bg2:          #060b12;
+      --surface:      #0a1018;
+      --surface2:     #0d1520;
+      --border:       rgba(0,212,255,0.1);
+      --border2:      rgba(255,255,255,0.06);
+      --cyan:         #00d4ff;
+      --cyan2:        #00a8d4;
+      --cyan-glow:    rgba(0,212,255,0.18);
+      --cyan-glow2:   rgba(0,212,255,0.06);
+      --white:        #f0f6ff;
+      --grey:         #7a8fa8;
+      --grey2:        #3d5168;
+      --font-display: 'Syne', sans-serif;
+      --font-mono:    'DM Mono', monospace;
+      --font-body:    'DM Sans', sans-serif;
+    }
+
+    /* ─── RESET ───────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+      cursor: none;
+    }
+
+    /* ─── CUSTOM CURSOR ───────────────────────── */
+    #cursor {
+      position: fixed;
+      width: 10px; height: 10px;
+      background: var(--cyan);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%,-50%);
+      transition: transform 0.05s, width 0.2s, height 0.2s, opacity 0.2s;
+      mix-blend-mode: screen;
+    }
+    #cursor-ring {
+      position: fixed;
+      width: 36px; height: 36px;
+      border: 1px solid rgba(0,212,255,0.5);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9998;
+      transform: translate(-50%,-50%);
+      transition: transform 0.12s ease, width 0.2s, height 0.2s;
+    }
+    body:hover #cursor { opacity: 1; }
+
+    /* ─── GRAIN OVERLAY ───────────────────────── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+      opacity: 0.025;
+      pointer-events: none;
+      z-index: 1000;
+    }
+
+    /* ─── NAV ─────────────────────────────────── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0;
+      z-index: 900;
+      padding: 20px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.4s, background 0.4s;
+    }
+    nav.scrolled {
+      background: rgba(3,5,10,0.85);
+      border-bottom-color: var(--border);
+    }
+    .nav-logo {
+      font-family: var(--font-mono);
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .nav-logo em { color: var(--cyan); font-style: normal; }
+    .nav-links {
+      display: flex; gap: 36px; list-style: none;
+    }
+    .nav-links a {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--grey);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--cyan); }
+    .nav-cta {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--cyan);
+      padding: 10px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: box-shadow 0.3s, transform 0.2s;
+    }
+    .nav-cta:hover {
+      box-shadow: 0 0 24px rgba(0,212,255,0.6);
+      transform: translateY(-1px);
+    }
+
+    /* ─── HERO ────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 120px 48px 80px;
+      overflow: hidden;
+    }
+
+    /* animated grid bg */
+    .hero-grid {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 0%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 0%, transparent 100%);
+      animation: gridDrift 20s linear infinite;
+    }
+    @keyframes gridDrift {
+      0%   { background-position: 0 0; }
+      100% { background-position: 0 60px; }
+    }
+
+    /* radial glow behind hero */
+    .hero-glow {
+      position: absolute;
+      width: 800px; height: 600px;
+      background: radial-gradient(ellipse, rgba(0,212,255,0.12) 0%, transparent 70%);
+      top: -100px; left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+      animation: pulseGlow 6s ease-in-out infinite;
+    }
+    @keyframes pulseGlow {
+      0%,100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+      50%      { opacity: 1;   transform: translateX(-50%) scale(1.08); }
+    }
+
+    /* floating orbs */
+    .orb {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      pointer-events: none;
+    }
+    .orb-1 { width:300px; height:300px; background:rgba(0,212,255,0.07); top:10%; left:5%;  animation: floatA 12s ease-in-out infinite; }
+    .orb-2 { width:200px; height:200px; background:rgba(0,168,212,0.05); top:60%; right:8%; animation: floatB 9s  ease-in-out infinite; }
+    .orb-3 { width:150px; height:150px; background:rgba(0,212,255,0.06); top:40%; left:80%; animation: floatA 15s ease-in-out infinite reverse; }
+    @keyframes floatA { 0%,100%{transform:translate(0,0)}  50%{transform:translate(20px,-30px)} }
+    @keyframes floatB { 0%,100%{transform:translate(0,0)}  50%{transform:translate(-15px,25px)} }
+
+    .hero-inner {
+      position: relative; z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
+    }
+    .hero-left { display: flex; flex-direction: column; gap: 28px; }
+
+    .hero-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 28px; height: 1px;
+      background: var(--cyan);
+    }
+
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(44px, 6vw, 80px);
+      font-weight: 800;
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      opacity: 0;
+    }
+    .hero-headline em {
+      font-style: normal;
+      background: linear-gradient(135deg, var(--cyan) 0%, #ffffff 60%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--grey);
+      line-height: 1.7;
+      max-width: 420px;
+      opacity: 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      opacity: 0;
+    }
+
+    .btn-appstore {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--cyan);
+      color: var(--bg);
+      font-family: var(--font-mono);
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 0.06em;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s, box-shadow 0.35s;
+      box-shadow: 0 0 0 rgba(0,212,255,0);
+    }
+    .btn-appstore::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .btn-appstore:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 40px rgba(0,212,255,0.55), 0 8px 24px rgba(0,0,0,0.4);
+    }
+    .btn-appstore:hover::before { opacity: 1; }
+    .btn-appstore svg { flex-shrink: 0; }
+
+    .btn-ghost {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--grey);
+      text-decoration: none;
+      border: 1px solid var(--border2);
+      padding: 13px 22px;
+      border-radius: 10px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .btn-ghost:hover { color: var(--cyan); border-color: var(--cyan); }
+
+    .hero-stats {
+      display: flex; gap: 32px; opacity: 0;
+    }
+    .stat { display: flex; flex-direction: column; gap: 2px; }
+    .stat-num {
+      font-family: var(--font-mono);
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--white);
+    }
+    .stat-num span { color: var(--cyan); }
+    .stat-label {
+      font-size: 12px;
+      color: var(--grey);
+      letter-spacing: 0.06em;
+    }
+
+    /* ─── PHONE MOCKUP ────────────────────────── */
+    .hero-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      position: relative;
+    }
+
+    .mockup-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .mockup-glow-ring {
+      position: absolute;
+      width: 340px; height: 340px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,212,255,0.15);
+      animation: ringPulse 4s ease-in-out infinite;
+    }
+    .mockup-glow-ring:nth-child(2) {
+      width: 440px; height: 440px;
+      animation-delay: 1.5s;
+      border-color: rgba(0,212,255,0.07);
+    }
+    @keyframes ringPulse {
+      0%,100%{ opacity:1; transform:scale(1); }
+      50%    { opacity:0.4; transform:scale(1.04); }
+    }
+
+    .mockup-placeholder {
+      position: relative; z-index: 2;
+      width: 240px;
+      height: 490px;
+      background: linear-gradient(160deg, var(--surface) 0%, var(--bg2) 100%);
+      border-radius: 38px;
+      border: 1.5px solid rgba(0,212,255,0.2);
+      box-shadow:
+        0 0 60px rgba(0,212,255,0.1),
+        0 40px 80px rgba(0,0,0,0.6),
+        inset 0 1px 0 rgba(255,255,255,0.05);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      animation: phoneFloat 6s ease-in-out infinite;
+    }
+    @keyframes phoneFloat {
+      0%,100%{ transform: translateY(0) rotate(-1deg); }
+      50%    { transform: translateY(-16px) rotate(0.5deg); }
+    }
+    .mockup-notch {
+      width: 90px; height: 22px;
+      background: var(--bg);
+      border-radius: 0 0 14px 14px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    .mockup-screen {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 12px;
+      gap: 8px;
+    }
+    .mockup-bar {
+      height: 6px;
+      border-radius: 3px;
+      background: rgba(0,212,255,0.15);
+    }
+    .mockup-bar.accent { background: var(--cyan); width: 60%; }
+    .mockup-bar.short  { width: 40%; }
+
+    .mockup-photo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 4px;
+      margin-top: 8px;
+    }
+    .mockup-photo-cell {
+      height: 52px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, rgba(0,212,255,0.12), rgba(0,212,255,0.04));
+      position: relative;
+      overflow: hidden;
+    }
+    .mockup-photo-cell::after {
+      content:'';
+      position:absolute; inset:0;
+      background: linear-gradient(135deg, rgba(0,212,255,0.08) 0%, transparent 60%);
+    }
+    .mockup-photo-cell.lit {
+      background: linear-gradient(135deg, rgba(0,212,255,0.3), rgba(0,168,212,0.1));
+      box-shadow: 0 0 12px rgba(0,212,255,0.2);
+    }
+    .mockup-streak {
+      margin-top: 8px;
+      background: rgba(0,212,255,0.07);
+      border: 1px solid rgba(0,212,255,0.15);
+      border-radius: 10px;
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .streak-fire {
+      width: 20px; height: 20px;
+      background: linear-gradient(135deg, #ff8c00, #ff4500);
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(255,100,0,0.5);
+    }
+    .streak-text { font-family: var(--font-mono); font-size: 10px; color: var(--cyan); }
+
+    /* ─── SECTION SHARED ──────────────────────── */
+    section { padding: 120px 48px; }
+
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .section-label::before {
+      content:'';
+      width: 20px; height: 1px;
+      background: var(--cyan);
+    }
+
+    .section-heading {
+      font-family: var(--font-display);
+      font-size: clamp(32px, 4.5vw, 56px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      color: var(--white);
+    }
+
+    /* ─── WHY / PHILOSOPHY ────────────────────── */
+    #philosophy {
+      background: var(--bg2);
+      position: relative;
+      overflow: hidden;
+    }
+    #philosophy::before {
+      content:'';
+      position: absolute;
+      right: -200px; top: -200px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(0,212,255,0.06) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .philosophy-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .philosophy-left {}
+    .philosophy-right {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding-top: 8px;
+    }
+
+    .philosophy-manifesto {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 2.8vw, 34px);
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--white);
+      margin: 28px 0 36px;
+    }
+    .philosophy-manifesto em {
+      font-style: normal;
+      color: var(--cyan);
+    }
+
+    .philosophy-body {
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--grey);
+      line-height: 1.85;
+      margin-bottom: 24px;
+    }
+
+    .truth-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border2);
+      overflow: hidden;
+    }
+    .truth-item:first-child { border-top: 1px solid var(--border2); }
+    .truth-num {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--cyan);
+      letter-spacing: 0.1em;
+      padding-top: 3px;
+      flex-shrink: 0;
+      width: 28px;
+    }
+    .truth-text {
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--white);
+      line-height: 1.6;
+    }
+    .truth-text span { color: var(--grey); font-size: 14px; display: block; margin-top: 4px; }
+
+    /* ─── FEATURES ────────────────────────────── */
+    #features {
+      background: var(--bg);
+      position: relative;
+    }
+    #features::before {
+      content:'';
+      position: absolute;
+      left: 50%; top: 0;
+      transform: translateX(-50%);
+      width: 1px;
+      height: 100%;
+      background: linear-gradient(to bottom, transparent, rgba(0,212,255,0.12), transparent);
+    }
+
+    .features-header {
+      max-width: 1200px;
+      margin: 0 auto 72px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .features-header-right {
+      font-size: 15px;
+      color: var(--grey);
+      max-width: 280px;
+      text-align: right;
+      line-height: 1.7;
+    }
+
+    .features-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+    }
+
+    .feature-card {
+      background: var(--surface);
+      padding: 48px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s;
+    }
+    .feature-card:hover { background: var(--surface2); }
+    .feature-card::before {
+      content:'';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(0,212,255,0.04) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .feature-card:hover::before { opacity: 1; }
+
+    .feature-card-top-left  { border-radius: 2px 0 0 0; }
+    .feature-card-top-right { border-radius: 0 2px 0 0; }
+    .feature-card-bot-left  { border-radius: 0 0 0 2px; }
+    .feature-card-bot-right { border-radius: 0 0 2px 0; }
+
+    .feature-info { display: flex; flex-direction: column; gap: 14px; }
+    .feature-icon {
+      width: 48px; height: 48px;
+      border-radius: 12px;
+      background: var(--cyan-glow2);
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px;
+    }
+    .feature-title {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--white);
+    }
+    .feature-desc {
+      font-size: 14px;
+      color: var(--grey);
+      line-height: 1.75;
+    }
+    .feature-tag {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      border: 1px solid rgba(0,212,255,0.2);
+      padding: 4px 10px;
+      border-radius: 4px;
+      width: fit-content;
+    }
+
+    /* screenshot placeholder */
+    .feature-screenshot {
+      height: 220px;
+      border-radius: 16px;
+      background: linear-gradient(160deg, var(--surface2) 0%, var(--bg) 100%);
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .feature-screenshot::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(0,212,255,0.06) 0%, transparent 60%);
+    }
+    .feature-screenshot-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--grey2);
+    }
+    /* inner decorations */
+    .fs-bar {
+      position: absolute;
+      height: 3px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--cyan), transparent);
+    }
+    .fs-bar-1 { width: 70%; top: 30px; left: 16px; }
+    .fs-bar-2 { width: 45%; top: 42px; left: 16px; opacity: 0.5; }
+    .fs-circle {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(0,212,255,0.2);
+    }
+    .fs-circle-1 { width: 60px; height:60px; bottom: 20px; right: 20px; }
+    .fs-circle-2 { width: 40px; height:40px; bottom: 30px; right: 30px; background: rgba(0,212,255,0.06); }
+
+    /* ─── HOW IT WORKS ────────────────────────── */
+    #howitworks {
+      background: var(--bg2);
+    }
+    .hiw-inner {
+      max-width: 1200px; margin: 0 auto;
+    }
+    .hiw-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
+      margin-top: 64px;
+      position: relative;
+    }
+    .hiw-step {
+      background: var(--surface);
+      padding: 40px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hiw-step::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 1px; height: 100%;
+      background: var(--border);
+    }
+    .hiw-step:last-child::after { display: none; }
+    .step-num {
+      font-family: var(--font-mono);
+      font-size: 48px;
+      font-weight: 300;
+      color: rgba(0,212,255,0.08);
+      line-height: 1;
+      margin-bottom: 24px;
+      display: block;
+    }
+    .step-icon {
+      font-size: 28px;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .step-title {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .step-desc {
+      font-size: 14px;
+      color: var(--grey);
+      line-height: 1.7;
+    }
+
+    /* ─── TICKER ──────────────────────────────── */
+    .ticker-wrap {
+      background: var(--cyan);
+      padding: 14px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .ticker-track {
+      display: inline-block;
+      animation: ticker 22s linear infinite;
+    }
+    .ticker-track span {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bg);
+      padding: 0 32px;
+    }
+    .ticker-track span::before {
+      content: '·';
+      margin-right: 32px;
+      opacity: 0.4;
+    }
+    @keyframes ticker {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ─── CTA SECTION ─────────────────────────── */
+    #cta {
+      background: var(--bg);
+      padding: 140px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    #cta::before {
+      content:'';
+      position: absolute;
+      width: 700px; height: 500px;
+      background: radial-gradient(ellipse, rgba(0,212,255,0.1) 0%, transparent 70%);
+      top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      pointer-events: none;
+      animation: pulseGlow 8s ease-in-out infinite;
+    }
+    .cta-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative; z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+    }
+    .cta-heading {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 5vw, 64px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+    }
+    .cta-heading em {
+      font-style: normal;
+      color: var(--cyan);
+    }
+    .cta-sub {
+      font-size: 18px;
+      color: var(--grey);
+      line-height: 1.7;
+      max-width: 480px;
+    }
+    .cta-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    .cta-note {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: var(--grey2);
+    }
+
+    /* pulsing ring on CTA button */
+    .btn-appstore.hero-cta {
+      padding: 18px 40px;
+      font-size: 16px;
+      border-radius: 14px;
+      position: relative;
+    }
+    .btn-appstore.hero-cta::after {
+      content: '';
+      position: absolute; inset: -4px;
+      border-radius: 18px;
+      border: 1px solid rgba(0,212,255,0.25);
+      animation: ctaRing 2.5s ease-out infinite;
+    }
+    @keyframes ctaRing {
+      0%   { transform:scale(1);   opacity:0.6; }
+      100% { transform:scale(1.08); opacity:0; }
+    }
+
+    /* ─── FOOTER ──────────────────────────────── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border2);
+      padding: 48px;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .footer-logo {
+      font-family: var(--font-mono);
+      font-size: 15px;
+      letter-spacing: 0.18em;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .footer-logo em { color: var(--cyan); font-style: normal; }
+    .footer-copy {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--grey2);
+      letter-spacing: 0.06em;
+    }
+    .footer-links {
+      display: flex; gap: 28px; list-style: none;
+    }
+    .footer-links a {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--grey);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--cyan); }
+
+    /* ─── RESPONSIVE ──────────────────────────── */
+    @media (max-width: 900px) {
+      nav { padding: 18px 24px; }
+      .nav-links { display: none; }
+      section { padding: 80px 24px; }
+      #hero { padding: 100px 24px 60px; }
+      .hero-inner { grid-template-columns: 1fr; gap: 60px; text-align: center; }
+      .hero-left { align-items: center; }
+      .hero-sub { max-width: 100%; }
+      .hero-stats { justify-content: center; }
+      .philosophy-inner { grid-template-columns: 1fr; gap: 48px; }
+      .features-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .features-header-right { text-align: left; max-width: 100%; }
+      .features-grid { grid-template-columns: 1fr; }
+      .feature-card { grid-template-columns: 1fr; }
+      .hiw-steps { grid-template-columns: 1fr 1fr; }
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
+    }
+    @media (max-width: 560px) {
+      .hiw-steps { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; width: 100%; }
+      .btn-appstore { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- ─── NAV ──────────────────────────────────────── -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">SOLO<em>.</em>SHOTS</a>
+  <ul class="nav-links">
+    <li><a href="#philosophy">Why</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#howitworks">How It Works</a></li>
+  </ul>
+  <a href="#cta" class="nav-cta">Download Free</a>
+</nav>
+
+<!-- ─── HERO ──────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+      <p class="hero-eyebrow" id="he">Daily Progress Tracker · iOS</p>
+
+      <h1 class="hero-headline" id="hh">
+        Capture your<br/>
+        <em>progress.</em><br/>
+        Every single day.
+      </h1>
+
+      <p class="hero-sub" id="hs">
+        One photo. One project. Infinite motivation. SOLO.SHOTS turns the discipline of daily documentation into something you'll actually look forward to.
+      </p>
+
+      <div class="hero-actions" id="ha">
+        <a href="#" class="btn-appstore">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          Download on App Store
+        </a>
+        <a href="#philosophy" class="btn-ghost">See How It Works ↓</a>
+      </div>
+
+      <div class="hero-stats" id="hst">
+        <div class="stat">
+          <span class="stat-num">4<span>K</span></span>
+          <span class="stat-label">Video Export</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Daily Streaks</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Cloud Servers</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right" id="hr">
+      <div class="mockup-wrap">
+        <div class="mockup-glow-ring"></div>
+        <div class="mockup-glow-ring"></div>
+        <div class="mockup-placeholder">
+          <div class="mockup-notch"></div>
+          <div class="mockup-screen">
+            <div class="mockup-bar accent"></div>
+            <div class="mockup-bar short"></div>
+            <div class="mockup-photo-grid">
+              <div class="mockup-photo-cell lit"></div>
+              <div class="mockup-photo-cell lit"></div>
+              <div class="mockup-photo-cell"></div>
+              <div class="mockup-photo-cell"></div>
+              <div class="mockup-photo-cell lit"></div>
+              <div class="mockup-photo-cell"></div>
+              <div class="mockup-photo-cell lit"></div>
+              <div class="mockup-photo-cell"></div>
+              <div class="mockup-photo-cell lit"></div>
+            </div>
+            <div class="mockup-streak">
+              <div class="streak-fire"></div>
+              <span class="streak-text">47 DAY STREAK · KEEP GOING</span>
+            </div>
+            <div style="margin-top:8px;">
+              <div class="mockup-bar" style="width:80%; opacity:0.4;"></div>
+              <div style="height:4px;"></div>
+              <div class="mockup-bar" style="width:55%; opacity:0.25;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TICKER ─────────────────────────────────────── -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Daily Progress</span><span>4K Export</span><span>Streak Tracking</span>
+    <span>No Cloud Servers</span><span>Ad-Free Premium</span><span>Local Storage</span>
+    <span>iOS Native</span><span>Smart Reminders</span><span>Before & After</span>
+    <!-- duplicate for seamless loop -->
+    <span>Daily Progress</span><span>4K Export</span><span>Streak Tracking</span>
+    <span>No Cloud Servers</span><span>Ad-Free Premium</span><span>Local Storage</span>
+    <span>iOS Native</span><span>Smart Reminders</span><span>Before & After</span>
+  </div>
+</div>
+
+<!-- ─── PHILOSOPHY ─────────────────────────────────── -->
+<section id="philosophy">
+  <div class="philosophy-inner">
+    <div class="philosophy-left">
+      <p class="section-label phil-label">The Philosophy</p>
+      <h2 class="section-heading phil-heading">
+        You don't notice<br/>change in the mirror.
+      </h2>
+      <p class="philosophy-manifesto phil-manifesto">
+        But your camera does. <em>Document everything.</em> The compound interest of small, daily actions becomes undeniable when you can see it.
+      </p>
+      <p class="philosophy-body phil-body">
+        Progress is invisible in the moment. A day's work seems like nothing. A week feels like little. But thirty days of consistent documentation? That's a transformation you can feel — and see.
+      </p>
+      <p class="philosophy-body phil-body">
+        SOLO.SHOTS isn't about sharing. It's about proof. Your private record of showing up, rendered in stunning before-and-after timelapse.
+      </p>
+    </div>
+    <div class="philosophy-right">
+      <div class="truth-item t-item">
+        <span class="truth-num">01</span>
+        <p class="truth-text">
+          Consistency compounds
+          <span>Daily documentation makes progress visible over time, turning invisible micro-changes into undeniable macro-results.</span>
+        </p>
+      </div>
+      <div class="truth-item t-item">
+        <span class="truth-num">02</span>
+        <p class="truth-text">
+          Your data, your device
+          <span>Every photo stays on your phone or your personal iCloud. Zero developer servers. Zero data brokers.</span>
+        </p>
+      </div>
+      <div class="truth-item t-item">
+        <span class="truth-num">03</span>
+        <p class="truth-text">
+          Accountability without audience
+          <span>You're not performing for followers. You're building an honest record for yourself — the only person who matters here.</span>
+        </p>
+      </div>
+      <div class="truth-item t-item">
+        <span class="truth-num">04</span>
+        <p class="truth-text">
+          One tap to remember everything
+          <span>A daily notification, a single photo, a growing archive. The habit is frictionless by design.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FEATURES ───────────────────────────────────── -->
+<section id="features">
+  <div class="features-header feat-header">
+    <div>
+      <p class="section-label">What You Get</p>
+      <h2 class="section-heading">Built for<br/>the long game.</h2>
+    </div>
+    <p class="features-header-right">Every tool you need to document, track, and export your transformation — nothing you don't.</p>
+  </div>
+
+  <div class="features-grid">
+
+    <!-- Card 1: 4K Export -->
+    <div class="feature-card feature-card-top-left feat-card">
+      <div class="feature-info">
+        <div class="feature-icon">🎬</div>
+        <h3 class="feature-title">4K UHD Video Export</h3>
+        <p class="feature-desc">Export your entire project as a cinematic timelapse at full 4K resolution — ready to keep, share, or be amazed by.</p>
+        <span class="feature-tag">Premium</span>
+      </div>
+      <div class="feature-screenshot">
+        <div class="fs-bar fs-bar-1"></div>
+        <div class="fs-bar fs-bar-2"></div>
+        <div class="fs-circle fs-circle-1"></div>
+        <div class="fs-circle fs-circle-2"></div>
+        <span class="feature-screenshot-label">UI Screenshot</span>
+      </div>
+    </div>
+
+    <!-- Card 2: Ad-Free Premium -->
+    <div class="feature-card feature-card-top-right feat-card">
+      <div class="feature-info">
+        <div class="feature-icon">✦</div>
+        <h3 class="feature-title">Completely Ad-Free</h3>
+        <p class="feature-desc">Upgrade once and every distraction disappears. No banners, no interruptions — just you and your progress.</p>
+        <span class="feature-tag">Premium</span>
+      </div>
+      <div class="feature-screenshot">
+        <div class="fs-bar fs-bar-1"></div>
+        <div class="fs-bar fs-bar-2"></div>
+        <div class="fs-circle fs-circle-1"></div>
+        <div class="fs-circle fs-circle-2"></div>
+        <span class="feature-screenshot-label">UI Screenshot</span>
+      </div>
+    </div>
+
+    <!-- Card 3: Smart Reminders -->
+    <div class="feature-card feature-card-bot-left feat-card">
+      <div class="feature-info">
+        <div class="feature-icon">🔔</div>
+        <h3 class="feature-title">Smart Reminders</h3>
+        <p class="feature-desc">Set a daily reminder per project. SOLO.SHOTS nudges you at exactly the right moment so you never break your streak.</p>
+        <span class="feature-tag">Free</span>
+      </div>
+      <div class="feature-screenshot">
+        <div class="fs-bar fs-bar-1"></div>
+        <div class="fs-bar fs-bar-2"></div>
+        <div class="fs-circle fs-circle-1"></div>
+        <div class="fs-circle fs-circle-2"></div>
+        <span class="feature-screenshot-label">UI Screenshot</span>
+      </div>
+    </div>
+
+    <!-- Card 4: Streak Tracking -->
+    <div class="feature-card feature-card-bot-right feat-card">
+      <div class="feature-info">
+        <div class="feature-icon">🔥</div>
+        <h3 class="feature-title">Streak & Milestone Tracking</h3>
+        <p class="feature-desc">Every consecutive day adds to your streak. Hit 7, 30, 100 days and unlock milestone celebrations that remind you how far you've come.</p>
+        <span class="feature-tag">Free</span>
+      </div>
+      <div class="feature-screenshot">
+        <div class="fs-bar fs-bar-1"></div>
+        <div class="fs-bar fs-bar-2"></div>
+        <div class="fs-circle fs-circle-1"></div>
+        <div class="fs-circle fs-circle-2"></div>
+        <span class="feature-screenshot-label">UI Screenshot</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── HOW IT WORKS ───────────────────────────────── -->
+<section id="howitworks">
+  <div class="hiw-inner">
+    <p class="section-label hiw-label">The Process</p>
+    <h2 class="section-heading hiw-heading">Four steps.<br/>One daily habit.</h2>
+    <div class="hiw-steps">
+      <div class="hiw-step hiw-step-item">
+        <span class="step-num">01</span>
+        <span class="step-icon">📁</span>
+        <h4 class="step-title">Create a Project</h4>
+        <p class="step-desc">Name your goal — body transformation, plant growth, home renovation. Start up to 3 projects on the free tier.</p>
+      </div>
+      <div class="hiw-step hiw-step-item">
+        <span class="step-num">02</span>
+        <span class="step-icon">📸</span>
+        <h4 class="step-title">Take Your Daily Shot</h4>
+        <p class="step-desc">Open the app, tap capture. The ghost overlay shows your last photo so you can match the angle perfectly.</p>
+      </div>
+      <div class="hiw-step hiw-step-item">
+        <span class="step-num">03</span>
+        <span class="step-icon">🔥</span>
+        <h4 class="step-title">Build Your Streak</h4>
+        <p class="step-desc">Miss a day and the streak resets. Keep going and milestones unlock — a visual reminder of your discipline.</p>
+      </div>
+      <div class="hiw-step hiw-step-item">
+        <span class="step-num">04</span>
+        <span class="step-icon">✨</span>
+        <h4 class="step-title">Export the Evidence</h4>
+        <p class="step-desc">When you're ready, generate a smooth timelapse video up to 4K. Your transformation, distilled into seconds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ────────────────────────────────────────── -->
+<section id="cta">
+  <div class="cta-inner">
+    <p class="section-label cta-label" style="justify-content:center;">Get Started — It's Free</p>
+    <h2 class="cta-heading cta-h">
+      Start shooting.<br/>
+      <em>Day one.</em>
+    </h2>
+    <p class="cta-sub cta-s">The best time to start documenting your progress was yesterday. The second best time is right now. Download free and begin today.</p>
+    <div class="cta-actions">
+      <a href="#" class="btn-appstore hero-cta cta-btn">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+        </svg>
+        Download Free on App Store
+      </a>
+      <p class="cta-note">iOS 16+ · Free download · Premium available</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="footer-logo">SOLO<em>.</em>SHOTS</a>
+    <p class="footer-copy">&copy; 2026 Gül Eda Aydemir. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms-of-use.html">Terms of Use</a></li>
+      <li><a href="mailto:hello@soloshots.app">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  // ─── CURSOR ───────────────────────────────────
+  const cursor = document.getElementById('cursor');
+  const ring   = document.getElementById('cursor-ring');
+  let mx = 0, my = 0, rx = 0, ry = 0;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    cursor.style.left = mx + 'px';
+    cursor.style.top  = my + 'px';
+  });
+
+  (function animRing() {
+    rx += (mx - rx) * 0.12;
+    ry += (my - ry) * 0.12;
+    ring.style.left = rx + 'px';
+    ring.style.top  = ry + 'px';
+    requestAnimationFrame(animRing);
+  })();
+
+  document.querySelectorAll('a, button').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.style.width  = '16px';
+      cursor.style.height = '16px';
+      ring.style.width    = '52px';
+      ring.style.height   = '52px';
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.style.width  = '10px';
+      cursor.style.height = '10px';
+      ring.style.width    = '36px';
+      ring.style.height   = '36px';
+    });
+  });
+
+  // ─── NAVBAR SCROLL ────────────────────────────
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  // ─── GSAP ANIMATIONS ──────────────────────────
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero entrance — staggered
+  const heroTl = gsap.timeline({ delay: 0.2 });
+  heroTl
+    .to('#he',  { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, 0)
+    .fromTo('#hh', { opacity: 0, y: 40, clipPath: 'inset(0 0 100% 0)' },
+                   { opacity: 1, y: 0,  clipPath: 'inset(0 0 0% 0)', duration: 0.9, ease: 'power4.out' }, 0.15)
+    .to('#hs',  { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, 0.45)
+    .to('#ha',  { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, 0.62)
+    .to('#hst', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, 0.78)
+    .to('#hr',  { opacity: 1, x: 0, duration: 1.0, ease: 'power3.out' }, 0.35);
+
+  gsap.set(['#he','#hs','#ha','#hst'], { y: 24 });
+  gsap.set('#hr', { x: 40 });
+
+  // Philosophy
+  gsap.from('.phil-label',    { scrollTrigger: { trigger:'#philosophy', start:'top 75%' }, opacity:0, x:-20, duration:0.6 });
+  gsap.from('.phil-heading',  { scrollTrigger: { trigger:'#philosophy', start:'top 70%' }, opacity:0, y:30, duration:0.8, delay:0.1 });
+  gsap.from('.phil-manifesto',{ scrollTrigger: { trigger:'#philosophy', start:'top 65%' }, opacity:0, y:20, duration:0.7, delay:0.2 });
+  gsap.from('.phil-body',     { scrollTrigger: { trigger:'#philosophy', start:'top 60%' }, opacity:0, y:20, duration:0.7, stagger:0.12, delay:0.3 });
+  gsap.from('.t-item',        { scrollTrigger: { trigger:'.philosophy-right', start:'top 72%' }, opacity:0, x:30, duration:0.6, stagger:0.13 });
+
+  // Features
+  gsap.from('.feat-header',   { scrollTrigger: { trigger:'#features', start:'top 75%' }, opacity:0, y:30, duration:0.7 });
+  gsap.from('.feat-card',     { scrollTrigger: { trigger:'.features-grid', start:'top 75%' }, opacity:0, y:40, duration:0.7, stagger:0.14 });
+
+  // How it works
+  gsap.from('.hiw-label',     { scrollTrigger: { trigger:'#howitworks', start:'top 75%' }, opacity:0, x:-20, duration:0.6 });
+  gsap.from('.hiw-heading',   { scrollTrigger: { trigger:'#howitworks', start:'top 70%' }, opacity:0, y:24, duration:0.8, delay:0.1 });
+  gsap.from('.hiw-step-item', { scrollTrigger: { trigger:'.hiw-steps', start:'top 76%' }, opacity:0, y:36, duration:0.6, stagger:0.12 });
+
+  // CTA
+  gsap.from('.cta-label', { scrollTrigger:{ trigger:'#cta', start:'top 75%' }, opacity:0, y:20, duration:0.6 });
+  gsap.from('.cta-h',     { scrollTrigger:{ trigger:'#cta', start:'top 70%' }, opacity:0, y:30, duration:0.8, delay:0.1 });
+  gsap.from('.cta-s',     { scrollTrigger:{ trigger:'#cta', start:'top 65%' }, opacity:0, y:20, duration:0.7, delay:0.2 });
+  gsap.from('.cta-btn',   { scrollTrigger:{ trigger:'#cta', start:'top 60%' }, opacity:0, scale:0.9, duration:0.7, delay:0.35, ease:'back.out(1.7)' });
+
+  // Parallax on hero glow
+  gsap.to('.hero-glow', {
+    scrollTrigger: { trigger:'#hero', start:'top top', end:'bottom top', scrub: true },
+    y: -120, opacity: 0.3
+  });
+
+  // Mockup photo cells cycling glow
+  const cells = document.querySelectorAll('.mockup-photo-cell');
+  let cellIdx = 0;
+  setInterval(() => {
+    cells.forEach(c => c.classList.remove('lit'));
+    const litCount = Math.floor(Math.random() * 3) + 3;
+    const shuffled = [...cells].sort(() => 0.5 - Math.random()).slice(0, litCount);
+    shuffled.forEach(c => c.classList.add('lit'));
+  }, 1400);
+</script>
+</body>
+</html>
