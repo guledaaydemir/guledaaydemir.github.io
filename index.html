@@ -86,13 +86,13 @@
             font-weight: 400;
         }
 
-        /* Apps Grid */
+        /* Apps Container (Alt Alta Sıralama İçin Güncellendi) */
         .apps-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 30px;
             width: 100%;
-            max-width: 1000px;
+            max-width: 800px;
             padding: 0 20px;
             animation: fadeUp 1s ease-out 0.2s both;
         }
@@ -103,10 +103,9 @@
             border: 1px solid var(--card-border);
             border-radius: 24px;
             padding: 30px;
-            text-decoration: none;
             color: var(--text-main);
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 20px;
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
@@ -129,6 +128,7 @@
             background: linear-gradient(to right, transparent, rgba(255,255,255,0.05), transparent);
             transform: skewX(-20deg);
             transition: 0.7s;
+            pointer-events: none;
         }
 
         .app-card:hover::before {
@@ -143,10 +143,13 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
             object-fit: cover;
             background-color: #1e1e1e;
+            flex-shrink: 0;
         }
 
         .app-info {
             flex: 1;
+            display: flex;
+            flex-direction: column;
         }
 
         .app-title {
@@ -160,6 +163,50 @@
             font-size: 0.95rem;
             color: var(--text-muted);
             line-height: 1.4;
+            margin-bottom: 16px;
+        }
+
+        /* App Action Buttons */
+        .app-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-outline {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+	.btn-cyan {
+            color: #050505;
+            background: #00E5FF;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background: var(--accent);
+        }
+
+        .btn-primary:hover {
+            background: #6d28d9;
+            box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
         }
 
         /* Footer */
@@ -198,7 +245,8 @@
         /* Mobile Adjustments */
         @media (max-width: 600px) {
             .profile-section h1 { font-size: 2.2rem; }
-            .app-card { flex-direction: column; text-align: center; padding: 30px 20px; }
+            .app-card { flex-direction: column; text-align: center; align-items: center; padding: 30px 20px; }
+            .app-actions { justify-content: center; }
         }
     </style>
 </head>
@@ -214,13 +262,35 @@
 
     <div class="apps-container">
         
-        <a href="solo.swipe/" class="app-card">
+        <div class="app-card">
             <img src="solo.swipe/appicon.png" alt="Solo.Swipe Icon" class="app-icon">
             <div class="app-info">
                 <h2 class="app-title">Solo.Swipe</h2>
                 <p class="app-desc">Clean your gallery in seconds the fun way. A smart photo organizer that helps you free up storage with simple swipe gestures.</p>
+                
+                <div class="app-actions">
+                    <a href="solo.swipe/index.html" class="btn btn-outline">Website</a>
+                    <a href="https://apps.apple.com/app/id6761368690" target="_blank" class="btn btn-primary">
+                        App Store
+                    </a>
+                </div>
             </div>
-        </a>
+        </div>
+
+        <div class="app-card">
+            <img src="solo.shots/appicon.png" alt="Solo.Shots Icon" class="app-icon">
+            <div class="app-info">
+                <h2 class="app-title">Solo.Shots</h2>
+                <p class="app-desc">One shot a day. A lifetime of progress. Document your journey with a smart ghost overlay, build your daily streak, and turn months of effort into cinematic timelapse videos.</p>
+                
+                <div class="app-actions">
+                    <a href="solo.shots/index.html" class="btn btn-outline">Website</a>
+                    <a href="https://apps.apple.com/app/6762450478" target="_blank" class="btn btn-cyan">
+                        App Store
+                    </a>
+                </div>
+            </div>
+        </div>
 
     </div>
 
