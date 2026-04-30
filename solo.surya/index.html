@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#030308" />
+  <meta name="color-scheme" content="dark" />
+
+  <title>Solo.Surya — Offline Vedic Astrology App for iPhone | Dasha, Nakshatra & Kundli</title>
+  <meta name="description" content="Solo.Surya is a 100% offline Vedic astrology iOS app. Vimshottari Dasha timeline, all 27 Nakshatras, sidereal Kundli (North/South/East Indian), Astrocartography, Panchang and Ashtakoota synastry — Swiss Ephemeris precision, calculated entirely on-device. No accounts, no cloud, no tracking." />
+  <meta name="keywords" content="Vedic astrology app, offline Vedic astrology, Jyotish iPhone app, Vimshottari Dasha calculator, Nakshatra calculator, sidereal Kundli, Lahiri ayanamsa, Astrocartography iOS, Panchang app, Tithi Yoga Karana, Ashtakoota synastry, divisional charts varga, Navamsa D9, Mahadasha Antardasha, Janma Nakshatra, Swiss Ephemeris iOS, North Indian chart, South Indian chart, East Indian chart, Rasi chart, Dasha Pulse, Solo Surya" />
+  <meta name="author" content="Solo.Surya" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://solosurya.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Solo.Surya" />
+  <meta property="og:title" content="Solo.Surya — Offline Vedic Astrology for iPhone" />
+  <meta property="og:description" content="Vimshottari Dasha, 27 Nakshatras, sidereal Kundli, Astrocartography and Panchang — calculated entirely on your iPhone. No cloud, no tracking." />
+  <meta property="og:url" content="https://solosurya.app/" />
+  <meta property="og:image" content="https://solosurya.app/og-cover.png" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Solo.Surya — Offline Vedic Astrology for iPhone" />
+  <meta name="twitter:description" content="Vimshottari Dasha, 27 Nakshatras, Kundli, Astrocartography & Panchang — fully on-device on iOS." />
+  <meta name="twitter:image" content="https://solosurya.app/og-cover.png" />
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Solo.Surya",
+    "operatingSystem": "iOS 16+",
+    "applicationCategory": "LifestyleApplication",
+    "description": "Offline-first Vedic astrology iPhone app with Vimshottari Dasha, 27 Nakshatras, sidereal Kundli, Astrocartography, Panchang and Ashtakoota synastry. All calculations run on-device using Swiss Ephemeris.",
+    "url": "https://solosurya.app/",
+    "downloadUrl": "https://apps.apple.com/app/id6764138745",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "featureList": [
+      "Vimshottari Dasha timeline (Mahadasha, Antardasha, Pratyantardasha)",
+      "All 27 Nakshatras with Pada analysis",
+      "Sidereal Kundli in North, South and East Indian styles",
+      "16 divisional charts (Navamsa D9, Dashamsa D10, etc.)",
+      "Astrocartography with planetary lines",
+      "Daily Panchang (Tithi, Vara, Nakshatra, Yoga, Karana)",
+      "Rahu Kalam and auspicious muhurta windows",
+      "Ashtakoota compatibility synastry",
+      "Lahiri ayanamsa, Swiss Ephemeris accuracy",
+      "100% offline, no accounts, no tracking"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a Nakshatra?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A Nakshatra is a lunar mansion — one of 27 equal divisions of the sidereal zodiac, each spanning 13°20'. Your Janma Nakshatra is the Nakshatra the Moon was in at your birth, and it determines your Vimshottari Dasha lord and core psychological temperament." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Vimshottari Dasha?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Vimshottari Dasha is the primary Vedic timing system: a 120-year planetary cycle divided into Mahadasha (major periods), Antardasha (sub-periods) and Pratyantardasha (sub-sub-periods). It reveals when life events unfold, not just what is in your chart." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Solo.Surya really offline?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every calculation — chart, dasha, nakshatra, panchang, astrocartography — runs locally on your iPhone using a bundled Swiss Ephemeris. There are no accounts, no cloud sync, and no servers. Your birth data never leaves your device." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which ayanamsa does Solo.Surya use?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Solo.Surya uses the Lahiri (Chitrapaksha) ayanamsa by default, the standard for sidereal Vedic astrology, with Swiss Ephemeris providing NASA-grade planetary positions." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="cosmos" aria-hidden="true">
+    <div class="stars"></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="nav" aria-label="Primary">
+    <a class="nav__brand" href="#top">Solo<span>.</span>Surya</a>
+    <a class="nav__cta" href="https://apps.apple.com/app/id6764138745" target="_blank" rel="noopener noreferrer">Get the app</a>
+  </nav>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__orbit" aria-hidden="true">
+        <div class="hero__planet hero__planet--violet"></div>
+        <div class="hero__planet hero__planet--gold"></div>
+        <div class="hero__planet hero__planet--cyan"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <span class="hero__badge">
+          <span class="pulse"></span>
+          Vedic Jyotish · iOS 16+
+        </span>
+        <h1 id="hero-title">Your sky. Your Kundli. <em>Entirely on your iPhone.</em></h1>
+        <p class="hero__subtitle">
+          Solo.Surya is the offline-first Vedic astrology app. Vimshottari Dasha, all 27 Nakshatras,
+          sidereal Kundli, Astrocartography and daily Panchang — calculated privately on-device with
+          Swiss Ephemeris precision. No accounts. No cloud. No tracking.
+        </p>
+
+        <div class="hero__cta">
+          <a class="app-store-btn"
+             href="https://apps.apple.com/app/id6764138745"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Download Solo.Surya on the App Store">
+            <svg width="22" height="26" viewBox="0 0 24 28" fill="currentColor" aria-hidden="true">
+              <path d="M19.6 21.4c-1 1.5-2.1 3-3.7 3-1.6 0-2.1-.9-3.9-.9s-2.4 1-3.9 1c-1.6 0-2.7-1.4-3.8-2.9C2.2 18.5.6 13 3 9.2c1.2-1.9 3.3-3.1 5.5-3.1 1.6 0 3.1 1.1 3.9 1.1.8 0 2.7-1.3 4.5-1.1.8 0 3 .3 4.4 2.4-.1.1-2.7 1.6-2.6 4.7 0 3.7 3.2 4.9 3.3 5-.1.1-.5 1.7-1.6 3.2zM13 4c.7-.9 2-1.6 3-1.6.1 1.2-.4 2.4-1 3.2-.7.9-1.9 1.6-3 1.5-.2-1.2.4-2.4 1-3.1z"/>
+            </svg>
+            <span class="app-store-btn__label">
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </span>
+          </a>
+          <span class="hero__hint">Free · Requires iOS 16 or later · 100% offline</span>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">Scroll</div>
+    </section>
+
+    <!-- BENTO FEATURES -->
+    <section class="section" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__eyebrow">What's inside</span>
+          <h2 id="features-title">A complete Jyotish toolkit, calculated on-device</h2>
+          <p>Seven engines working in harmony — Swiss Ephemeris precision, classical Vedic tradition, modern clarity. Everything ancient Jyotish offers, none of the cloud overhead.</p>
+        </header>
+
+        <div class="bento">
+          <article class="bento__cell bento__cell--lg">
+            <div class="bento__visual viz-dasha"></div>
+            <span class="bento__tag"><span class="dot"></span> Daily Dasha Pulse</span>
+            <h3>Wake up to your planetary period</h3>
+            <p>Your active Vimshottari Mahadasha and Antardasha lords, the planetary mood they create today, and a single actionable cue tuned to your natal chart. Built around the 120-year cycle that governs <em>when</em> things unfold in your life — not just <em>what</em> sits in your chart.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--sm">
+            <div class="bento__visual viz-map"></div>
+            <span class="bento__tag">Astrocartography</span>
+            <h3>Planetary lines worldwide</h3>
+            <p>See where your Sun, Moon, Venus, Jupiter, Mars, Saturn, Rahu and Ketu lines fall on Earth.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--sm">
+            <div class="bento__visual viz-chart"></div>
+            <span class="bento__tag">Sidereal Kundli</span>
+            <h3>North · South · East Indian</h3>
+            <p>Plus 16 divisional vargas including Navamsa (D9) and Dashamsa (D10).</p>
+          </article>
+
+          <article class="bento__cell bento__cell--md">
+            <div class="bento__visual viz-pancha"></div>
+            <span class="bento__tag">Daily Panchang</span>
+            <h3>Tithi, Vara, Nakshatra, Yoga & Karana</h3>
+            <p>The five limbs of the Vedic almanac, with Rahu Kalam, Yamaganda, Gulika and auspicious Muhurta windows for important decisions.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--md">
+            <div class="bento__visual viz-syn"></div>
+            <span class="bento__tag">Ashtakoota Synastry</span>
+            <h3>Compatibility, the Vedic way</h3>
+            <p>Eight-fold Guna Milan scoring (Varna, Vashya, Tara, Yoni, Graha Maitri, Gana, Bhakoot, Nadi), planetary aspects and friendships — beautifully visualised.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--lg">
+            <div class="bento__visual viz-private"></div>
+            <span class="bento__tag"><span class="dot"></span> Privacy by design</span>
+            <h3>Truly offline. Truly yours.</h3>
+            <p>Every calculation runs locally on your iPhone. <strong>No accounts. No login. No cloud sync. No servers. No analytics. No third-party trackers.</strong> Your birth data, partner profiles and chart history never leave your device — that's not a marketing line, it's the architecture. Uninstall the app and the data is gone with it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section" aria-label="By the numbers" style="padding-top:0">
+      <div class="container">
+        <div class="stats">
+          <div class="stat">
+            <div class="stat__num">100%</div>
+            <div class="stat__label">On-device computation</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">27</div>
+            <div class="stat__label">Nakshatras with Padas</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">16</div>
+            <div class="stat__label">Divisional vargas</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">0</div>
+            <div class="stat__label">Trackers · Servers · Accounts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARN: Glossary of Vedic terms -->
+    <section class="section" aria-labelledby="learn-title">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__eyebrow">Learn</span>
+          <h2 id="learn-title">The language of Vedic astrology</h2>
+          <p>Solo.Surya speaks classical Jyotish. Here are the terms the app uses every day — and what they actually mean.</p>
+        </header>
+
+        <div class="bento">
+          <article class="bento__cell bento__cell--md">
+            <span class="bento__tag">Foundation</span>
+            <h3>Nakshatra — the lunar mansion</h3>
+            <p>A Nakshatra is one of 27 equal divisions of the sidereal zodiac, each spanning 13°20′ of the sky. The Moon transits one Nakshatra roughly every 24 hours. Each is further divided into four <strong>Padas</strong> (quarters of 3°20′). Your <strong>Janma Nakshatra</strong> — the lunar mansion the Moon occupied at your birth — is considered the most personal point in your chart. It rules your emotional nature, the dasha lord you're born under, and the deity, symbol and planetary energy that shape your life's tone.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--md">
+            <span class="bento__tag">Timing</span>
+            <h3>Vimshottari Dasha — the 120-year cycle</h3>
+            <p>Vimshottari Dasha is the primary Vedic timing system. It assigns a 120-year cycle of planetary rulerships beginning from your Janma Nakshatra. The cycle nests three deep: <strong>Mahadasha</strong> (major periods of 6–20 years), <strong>Antardasha</strong> (sub-periods within), and <strong>Pratyantardasha</strong> (sub-sub-periods). Where transits show daily weather, dasha shows the season — when career rises, when love arrives, when challenges concentrate.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--sm">
+            <span class="bento__tag">Almanac</span>
+            <h3>Panchang — the five limbs</h3>
+            <p>The Vedic daily almanac: <strong>Tithi</strong> (lunar day), <strong>Vara</strong> (weekday), <strong>Nakshatra</strong>, <strong>Yoga</strong> (Sun–Moon angle) and <strong>Karana</strong> (half-tithi). Together they reveal which moments of the day are auspicious.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--sm">
+            <span class="bento__tag">Charts</span>
+            <h3>Vargas — divisional charts</h3>
+            <p>Sub-charts that zoom into specific life areas: <strong>D1 Rasi</strong> (overall life), <strong>D9 Navamsa</strong> (marriage & dharma), <strong>D10 Dashamsa</strong> (career), and 13 more.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--sm">
+            <span class="bento__tag">Calibration</span>
+            <h3>Lahiri ayanamsa</h3>
+            <p>The offset between the tropical and sidereal zodiacs. Solo.Surya defaults to <strong>Lahiri (Chitrapaksha)</strong> — the official ayanamsa of Indian Vedic astrology — for accurate sidereal positions.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--sm">
+            <span class="bento__tag">Auspicious time</span>
+            <h3>Muhurta & Rahu Kalam</h3>
+            <p><strong>Muhurta</strong> identifies auspicious windows for new beginnings. <strong>Rahu Kalam</strong>, <strong>Yamaganda</strong> and <strong>Gulika</strong> mark periods to avoid. The app surfaces both daily.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--sm">
+            <span class="bento__tag">Compatibility</span>
+            <h3>Ashtakoota Guna Milan</h3>
+            <p>The eight-fold compatibility scoring of two charts. Solo.Surya computes all eight kootas and the Bhakoot/Nadi doshas for honest, classical synastry.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--md">
+            <span class="bento__tag">Geography</span>
+            <h3>Astrocartography — planetary geography</h3>
+            <p>Each planet in your chart projects four lines around the Earth — Ascendant, Descendant, Midheaven and Nadir. Standing under a Jupiter line feels different from standing under a Saturn line. Solo.Surya draws every line for every planet, so you can see which places amplify love, ambition, growth, or stillness for <em>your</em> chart specifically.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="section" aria-labelledby="philosophy-title">
+      <div class="container">
+        <div class="philosophy">
+          <span class="section__eyebrow">Philosophy</span>
+          <p class="philosophy__quote" id="philosophy-title">
+            Your chart is sacred. It deserves an app that <em>treats it that way</em>.
+          </p>
+          <div class="philosophy__pills">
+            <span class="pill pill--accent">Swiss Ephemeris</span>
+            <span class="pill">Lahiri ayanamsa</span>
+            <span class="pill">Vimshottari Dasha</span>
+            <span class="pill">All 27 Nakshatras</span>
+            <span class="pill">Navamsa D9</span>
+            <span class="pill">Dashamsa D10</span>
+            <span class="pill">North · South · East Indian</span>
+            <span class="pill">Astrocartography</span>
+            <span class="pill">Daily Panchang</span>
+            <span class="pill">Ashtakoota</span>
+            <span class="pill pill--accent">100% Offline</span>
+            <span class="pill pill--accent">No Accounts</span>
+            <span class="pill pill--accent">No Cloud Sync</span>
+            <span class="pill">No Tracking</span>
+            <span class="pill">Built for iOS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" aria-labelledby="faq-title">
+      <div class="container">
+        <header class="section__head">
+          <span class="section__eyebrow">Questions</span>
+          <h2 id="faq-title">Frequently asked</h2>
+          <p>Common questions about Vedic astrology and how Solo.Surya works.</p>
+        </header>
+
+        <div class="bento">
+          <article class="bento__cell bento__cell--md">
+            <span class="bento__tag">Privacy</span>
+            <h3>Is Solo.Surya really offline?</h3>
+            <p>Yes — completely. Every calculation runs locally on your iPhone using a bundled Swiss Ephemeris. There are no accounts to create, no cloud to sync to, and no servers receiving your data. The app works in airplane mode. Your birth chart, partner profiles and history exist only on your device.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--md">
+            <span class="bento__tag">Accuracy</span>
+            <h3>How accurate are the calculations?</h3>
+            <p>Solo.Surya uses the Swiss Ephemeris — the same NASA-grade planetary engine used by professional astrology software — and defaults to the Lahiri (Chitrapaksha) ayanamsa, the standard for sidereal Vedic astrology. Dashas, divisional charts and panchang values are computed directly from classical formulae.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--sm">
+            <span class="bento__tag">Difference</span>
+            <h3>Vedic vs Western?</h3>
+            <p>Vedic astrology uses the sidereal zodiac (aligned with actual constellations) and emphasises Nakshatras and Dasha timing. Western astrology uses the tropical zodiac.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--sm">
+            <span class="bento__tag">Birth time</span>
+            <h3>Why is birth time critical?</h3>
+            <p>Your Ascendant and Dasha balance can shift with even a 4-minute difference. Accurate birth time = accurate Kundli and timing predictions.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--sm">
+            <span class="bento__tag">Pricing</span>
+            <h3>Is it free?</h3>
+            <p>The core app — Kundli, Dasha, Nakshatra, Panchang — is free. A few advanced views are unlockable. No subscriptions.</p>
+          </article>
+
+          <article class="bento__cell bento__cell--md">
+            <span class="bento__tag">Compatibility</span>
+            <h3>Does Solo.Surya support friend & partner charts?</h3>
+            <p>Yes. You can save unlimited partner and friend profiles locally and run Ashtakoota synastry, planetary aspect comparison and friendship-mapping between any two charts. Partners are stored only on your device, never uploaded anywhere.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-final">
+          <span class="section__eyebrow">Begin</span>
+          <h2 id="cta-title">The cosmos, on your terms.</h2>
+          <p>Download Solo.Surya and bring your sky home to your iPhone — privately, precisely, in the language of classical Jyotish.</p>
+          <a class="app-store-btn"
+             href="https://apps.apple.com/app/id6764138745"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Download Solo.Surya on the App Store">
+            <svg width="22" height="26" viewBox="0 0 24 28" fill="currentColor" aria-hidden="true">
+              <path d="M19.6 21.4c-1 1.5-2.1 3-3.7 3-1.6 0-2.1-.9-3.9-.9s-2.4 1-3.9 1c-1.6 0-2.7-1.4-3.8-2.9C2.2 18.5.6 13 3 9.2c1.2-1.9 3.3-3.1 5.5-3.1 1.6 0 3.1 1.1 3.9 1.1.8 0 2.7-1.3 4.5-1.1.8 0 3 .3 4.4 2.4-.1.1-2.7 1.6-2.6 4.7 0 3.7 3.2 4.9 3.3 5-.1.1-.5 1.7-1.6 3.2zM13 4c.7-.9 2-1.6 3-1.6.1 1.2-.4 2.4-1 3.2-.7.9-1.9 1.6-3 1.5-.2-1.2.4-2.4 1-3.1z"/>
+            </svg>
+            <span class="app-store-btn__label">
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">Solo<span>.</span>Surya</div>
+        <nav class="footer__nav" aria-label="Legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="https://apps.apple.com/app/id6764138745" target="_blank" rel="noopener noreferrer">App Store</a>
+        </nav>
+        <p class="footer__copy">© 2026 Solo.Surya · Crafted with reverence for Jyotish</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
