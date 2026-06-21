@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!--
+  Solora — Marketing landing page
+  Drop these files next to this index.html:
+    • appsymbol.png        (app icon — same name your app uses)
+    • solora-og.png        (1200x630 share image for Google/social/AI previews)
+    • shot-roles.png, shot-big3.png, shot-habits.png, shot-ai.png, shot-insights.png  (app screenshots)
+  EDIT before publishing: the canonical/og:url below (set to your real domain).
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ===== SEO: Primary ===== -->
+<title>Solora — Role-Based Planner & Big 3 Focus App for iPhone</title>
+<meta name="description" content="Solora is more than a to-do list. Plan your day around your roles and a daily Big 3, build habits and streaks, and get private on-device AI help. Free on iPhone.">
+<meta name="keywords" content="Solora, role-based planner, Big 3 method, daily focus app, most important tasks, MIT method, habit tracker iPhone, productivity app, on-device AI planner, iOS planner, daily goals app">
+<meta name="author" content="Gül Eda Aydemir">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://guledaaydemir.github.io/Solora/">
+<link rel="icon" type="image/png" href="appsymbol.png">
+<link rel="apple-touch-icon" href="appsymbol.png">
+
+<!-- ===== SEO: Open Graph / Social / AI previews ===== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Solora">
+<meta property="og:title" content="Solora — Plan your life by who you are, not just what you have to do">
+<meta property="og:description" content="A role-based planner with a daily Big 3, habit streaks and private on-device AI. Free on iPhone.">
+<meta property="og:image" content="solora-og.png">
+<meta property="og:url" content="https://guledaaydemir.github.io/Solora/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Solora — Role-Based Planner & Big 3 Focus App">
+<meta name="twitter:description" content="More than a to-do list. Roles, a daily Big 3, habits and on-device AI — free on iPhone.">
+<meta name="twitter:image" content="solora-og.png">
+<meta name="theme-color" content="#0B0B12">
+
+<!-- ===== SEO: Structured data (Google rich results + AI search) ===== -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"Solora",
+  "alternateName":"Solora App",
+  "applicationCategory":"ProductivityApplication",
+  "operatingSystem":"iOS 26",
+  "description":"Solora is a role-based personal planner for iPhone. Instead of an endless to-do list, it organizes your day around your roles and a daily Big 3 of Most Important Tasks, with habit tracking, project breakdowns and a private on-device AI assistant.",
+  "url":"https://guledaaydemir.github.io/Solora/",
+  "downloadUrl":"https://apps.apple.com/app/id6778808618",
+  "installUrl":"https://apps.apple.com/app/id6778808618",
+  "image":"https://guledaaydemir.github.io/Solora/appsymbol.png",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+  "author":{"@type":"Person","name":"Gül Eda Aydemir","url":"https://guledaaydemir.github.io/"},
+  "sameAs":["https://instagram.com/solo.stasera"],
+  "featureList":["Role-based planning","Daily Big 3 focus","Habit tracking and streaks","Projects and subtasks","On-device AI assistant","Productivity insights","Low-energy support","English and Turkish"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"What is the Big 3 method?","acceptedAnswer":{"@type":"Answer","text":"The Big 3 is a daily focus method where you pick the three Most Important Tasks for the day. Instead of drowning in a long list, you commit to finishing three meaningful things, so progress is guaranteed even on busy days."}},
+    {"@type":"Question","name":"How is Solora different from a normal to-do list app?","acceptedAnswer":{"@type":"Answer","text":"A normal to-do list piles up tasks until you feel buried. Solora starts from your roles — like parent, founder, student or athlete — and a daily Big 3, so your day reflects who you are and what truly matters, not just everything you could do."}},
+    {"@type":"Question","name":"Is Solora free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Solora is free to download and use, with an optional Premium upgrade that unlocks unlimited roles, tasks, habits and projects, plus unlimited AI, deeper analytics and premium themes."}},
+    {"@type":"Question","name":"Does Solora use AI, and is my data private?","acceptedAnswer":{"@type":"Answer","text":"Solora's assistant runs on Apple's on-device intelligence. Your tasks, habits and AI conversations stay on your iPhone — Solora has no server that collects your content."}},
+    {"@type":"Question","name":"What devices and languages does Solora support?","acceptedAnswer":{"@type":"Answer","text":"Solora is built for iPhone on iOS 26 and is fully available in English and Turkish, with instant in-app language switching."}}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#0B0B12; --bg-soft:#101019; --surface:#15151F; --surface-2:#1B1B28;
+    --line:#26263A; --line-soft:#1E1E2D;
+    --text:#F5F6FB; --muted:#9A9BA8; --faint:#6E6F80;
+    --violet:#7C5CFF; --cyan:#22D3EE;
+    --grad:linear-gradient(120deg,#7C5CFF 0%,#22D3EE 100%);
+    --grad-soft:linear-gradient(120deg,rgba(124,92,255,.16),rgba(34,211,238,.12));
+    --maxw:1160px; --r:18px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{margin:0;background:var(--bg);color:var(--text);overflow-x:hidden;
+    font-family:"Inter",system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(60% 50% at 80% -5%,rgba(124,92,255,.22),transparent 70%),
+               radial-gradient(50% 40% at 0% 8%,rgba(34,211,238,.12),transparent 70%)}
+  .wrap{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:rgba(124,92,255,.35)}
+  h1,h2,h3{font-family:"Space Grotesk",sans-serif;letter-spacing:-.5px;line-height:1.08}
+  .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .eyebrow{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--cyan)}
+  .skip{position:absolute;left:-999px;top:0;background:var(--violet);color:#fff;padding:10px 16px;border-radius:8px;z-index:99}
+  .skip:focus{left:16px;top:16px}
+
+  /* Nav */
+  header{position:sticky;top:0;z-index:30;backdrop-filter:blur(14px);
+    background:rgba(11,11,18,.7);border-bottom:1px solid var(--line-soft);transition:padding .25s}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:20px}
+  .brand img{width:30px;height:30px;border-radius:8px;box-shadow:0 0 18px rgba(124,92,255,.5)}
+  .brand .orb{width:26px;height:26px;border-radius:50%;background:var(--grad);box-shadow:0 0 18px rgba(124,92,255,.6)}
+  .navlinks{display:flex;gap:28px;align-items:center}
+  .navlinks a{font-size:14.5px;color:var(--muted);font-weight:500;transition:.2s}
+  .navlinks a:hover{color:var(--text)}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;border-radius:999px;
+    padding:11px 20px;font-size:14.5px;transition:transform .15s,box-shadow .25s;cursor:pointer;border:0}
+  .btn:active{transform:scale(.97)}
+  .btn-grad{background:var(--grad);color:#fff;box-shadow:0 8px 26px rgba(124,92,255,.35)}
+  .btn-grad:hover{box-shadow:0 10px 34px rgba(124,92,255,.5)}
+  .btn-ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--violet)}
+  @media(max-width:780px){.navlinks .lk{display:none}}
+
+  /* App Store badge */
+  .appstore{display:inline-flex;align-items:center;gap:11px;background:#000;color:#fff;
+    border:1px solid #2a2a2a;border-radius:13px;padding:10px 18px;transition:transform .15s,box-shadow .3s}
+  .appstore:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.5)}
+  .appstore svg{width:26px;height:26px;fill:#fff}
+  .appstore .t{display:flex;flex-direction:column;line-height:1.1;text-align:left}
+  .appstore .t small{font-size:10px;color:#cfcfcf;letter-spacing:.3px}
+  .appstore .t b{font-family:"Space Grotesk",sans-serif;font-size:18px;font-weight:600}
+
+  /* Hero */
+  .hero{padding:96px 0 70px;position:relative}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+  .hero h1{font-size:clamp(40px,6vw,68px);font-weight:700;margin:20px 0 18px;max-width:15ch}
+  .hero p.sub{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:54ch;margin:0 0 30px}
+  .hero .cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .trust{margin-top:26px;font-family:"Space Mono",monospace;font-size:12.5px;color:var(--faint);display:flex;gap:8px 16px;flex-wrap:wrap}
+  .trust span{display:inline-flex;gap:8px;align-items:center}
+  .trust .d{width:6px;height:6px;border-radius:50%;background:var(--cyan)}
+
+  /* Phone mockup */
+  .phone-stage{display:flex;justify-content:center;position:relative}
+  .glow-blob{position:absolute;width:340px;height:340px;border-radius:50%;background:var(--grad);
+    filter:blur(70px);opacity:.45;top:50%;left:50%;transform:translate(-50%,-50%);z-index:0}
+  .phone{position:relative;z-index:1;width:288px;aspect-ratio:9/19.5;border-radius:42px;
+    background:#05050a;border:1px solid #2c2c40;padding:11px;
+    box-shadow:0 40px 90px rgba(0,0,0,.6),0 0 0 1px rgba(124,92,255,.12);animation:float 6s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+  @media (prefers-reduced-motion:reduce){.phone{animation:none}}
+  .phone .screen{width:100%;height:100%;border-radius:32px;overflow:hidden;background:
+    linear-gradient(160deg,#1a1430,#0b0b12 55%,#0a1a20);position:relative;display:flex;align-items:center;justify-content:center}
+  .phone .screen img{width:100%;height:100%;object-fit:cover}
+  .phone .notch{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:96px;height:26px;background:#05050a;border-radius:0 0 16px 16px;z-index:2}
+  .ph-fallback{position:absolute;inset:0;display:flex;flex-direction:column;gap:14px;padding:30px 22px;justify-content:center}
+  .ph-fallback .chip{height:13px;border-radius:6px;background:rgba(255,255,255,.08)}
+  .ph-fallback .chip.lg{background:var(--grad-soft);height:54px;border:1px solid rgba(124,92,255,.25)}
+
+  /* Marquee */
+  .marquee{margin-top:54px;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+  .marquee .row{display:flex;gap:14px;width:max-content;animation:scroll 28s linear infinite}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.marquee .row{animation:none}}
+  .role-chip{font-family:"Space Mono",monospace;font-size:13px;color:var(--muted);
+    border:1px solid var(--line);border-radius:999px;padding:8px 16px;white-space:nowrap;background:var(--surface)}
+
+  /* Sections */
+  section{padding:88px 0;position:relative}
+  .head{max-width:62ch;margin-bottom:48px}
+  .head h2{font-size:clamp(30px,4vw,46px);font-weight:700;margin:14px 0 16px}
+  .head p{color:var(--muted);font-size:18px;margin:0}
+
+  /* Compare */
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .col{border-radius:var(--r);padding:30px;border:1px solid var(--line)}
+  .col.old{background:var(--surface);}
+  .col.new{background:linear-gradient(180deg,rgba(124,92,255,.1),rgba(34,211,238,.05));border-color:rgba(124,92,255,.35)}
+  .col h3{font-size:21px;margin:0 0 18px;display:flex;align-items:center;gap:10px}
+  .col ul{list-style:none;margin:0;padding:0}
+  .col li{padding:10px 0 10px 30px;position:relative;color:#C8C9D6;border-top:1px solid var(--line-soft)}
+  .col li:first-child{border-top:0}
+  .col.old li::before{content:"✕";position:absolute;left:2px;color:#ff6b6b;font-weight:700}
+  .col.new li::before{content:"✓";position:absolute;left:2px;color:var(--cyan);font-weight:700}
+  .tagline{font-family:"Space Mono",monospace;font-size:12px;color:var(--faint);letter-spacing:1px;text-transform:uppercase}
+
+  /* Big 3 */
+  .big3{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+  .b3-cards{display:flex;flex-direction:column;gap:14px}
+  .b3-card{display:flex;align-items:center;gap:16px;border:1px solid var(--line);border-radius:16px;
+    padding:18px 20px;background:var(--surface);transition:transform .25s,border-color .25s}
+  .b3-card:hover{transform:translateX(6px);border-color:var(--violet)}
+  .b3-num{font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:22px;width:46px;height:46px;flex:none;
+    display:grid;place-items:center;border-radius:12px;background:var(--grad);color:#fff}
+  .b3-card b{display:block;font-size:16px}
+  .b3-card span{font-size:14px;color:var(--muted)}
+  .why{list-style:none;padding:0;margin:22px 0 0}
+  .why li{padding:12px 0 12px 30px;position:relative;color:#C8C9D6;max-width:60ch}
+  .why li::before{content:"";position:absolute;left:4px;top:20px;width:8px;height:8px;border-radius:2px;background:var(--grad)}
+
+  /* Roles */
+  .roles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .role-card{border:1px solid var(--line);border-radius:16px;padding:24px;background:var(--surface);
+    transition:transform .25s,box-shadow .25s,border-color .25s}
+  .role-card:hover{transform:translateY(-6px);border-color:rgba(124,92,255,.4);box-shadow:0 18px 40px rgba(0,0,0,.4)}
+  .role-ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;margin-bottom:16px;
+    background:rgba(124,92,255,.14);font-size:22px}
+  .role-card h3{font-size:18px;margin:0 0 8px}
+  .role-card p{margin:0;font-size:14.5px;color:var(--muted)}
+
+  /* Features */
+  .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .feat{border:1px solid var(--line);border-radius:16px;padding:26px;background:var(--surface);position:relative;overflow:hidden}
+  .feat::after{content:"";position:absolute;inset:0;background:var(--grad-soft);opacity:0;transition:opacity .3s}
+  .feat:hover::after{opacity:1}
+  .feat .ic{font-size:24px;margin-bottom:14px;position:relative;z-index:1}
+  .feat h3{font-size:17px;margin:0 0 8px;position:relative;z-index:1}
+  .feat p{margin:0;font-size:14px;color:var(--muted);position:relative;z-index:1}
+
+  /* Screenshots */
+  .shots{display:flex;gap:24px;overflow-x:auto;padding:8px 4px 22px;scroll-snap-type:x mandatory}
+  .shots::-webkit-scrollbar{height:8px}
+  .shots::-webkit-scrollbar-thumb{background:var(--line);border-radius:8px}
+  .shot{flex:none;scroll-snap-align:center;text-align:center}
+  .shot .frame{width:230px;aspect-ratio:9/19.5;border-radius:34px;background:#05050a;border:1px solid #2c2c40;
+    padding:9px;box-shadow:0 26px 60px rgba(0,0,0,.5)}
+  .shot .frame .sc{width:100%;height:100%;border-radius:26px;overflow:hidden;
+    background:linear-gradient(160deg,#1a1430,#0b0b12);display:flex;align-items:center;justify-content:center}
+  .shot .frame img{width:100%;height:100%;object-fit:cover}
+  .shot figcaption{margin-top:14px;font-family:"Space Mono",monospace;font-size:12px;color:var(--faint);letter-spacing:1px}
+
+  /* Privacy band */
+  .band{border:1px solid var(--line);border-radius:24px;padding:48px;text-align:center;
+    background:linear-gradient(180deg,rgba(34,211,238,.06),rgba(124,92,255,.06))}
+  .band h2{font-size:clamp(26px,3.5vw,40px);margin:0 0 14px}
+  .band p{color:var(--muted);max-width:60ch;margin:0 auto 24px;font-size:17px}
+
+  /* FAQ */
+  .faq details{border:1px solid var(--line);border-radius:14px;background:var(--surface);margin-bottom:12px;overflow:hidden}
+  .faq summary{cursor:pointer;padding:20px 24px;font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:17px;
+    list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";font-size:24px;color:var(--cyan);transition:transform .25s}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq .ans{padding:0 24px 22px;color:#C8C9D6;max-width:70ch}
+
+  /* CTA band */
+  .download{border-radius:28px;padding:60px 40px;text-align:center;position:relative;overflow:hidden;
+    background:radial-gradient(120% 140% at 50% 0%,rgba(124,92,255,.28),transparent 60%),var(--surface);
+    border:1px solid rgba(124,92,255,.3)}
+  .download h2{font-size:clamp(30px,4.5vw,52px);margin:0 0 16px;font-weight:700}
+  .download p{color:var(--muted);max-width:48ch;margin:0 auto 30px}
+
+  /* Footer */
+  footer{border-top:1px solid var(--line-soft);padding:56px 0 60px;margin-top:40px}
+  .foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+  .foot .about p{color:var(--muted);font-size:14.5px;max-width:36ch;margin:14px 0 0}
+  .foot h4{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);margin:0 0 16px}
+  .foot a{display:block;color:var(--muted);font-size:14.5px;padding:6px 0;transition:.2s}
+  .foot a:hover{color:var(--text)}
+  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:44px;
+    padding-top:24px;border-top:1px solid var(--line-soft);font-size:13px;color:var(--faint)}
+
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  @media(max-width:920px){
+    .hero-grid,.big3{grid-template-columns:1fr;gap:46px}
+    .phone-stage{order:-1}
+    .compare,.roles-grid,.feat-grid,.foot{grid-template-columns:1fr}
+    .roles-grid,.feat-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 18px}.hero{padding:60px 0 50px}
+    .roles-grid,.feat-grid{grid-template-columns:1fr}
+    .col,.band,.download{padding:28px}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#different">Skip to content</a>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Solora home">
+      <img src="appsymbol.png" alt="Solora app icon" onerror="this.outerHTML='&lt;span class=\'orb\'&gt;&lt;/span&gt;'">
+      Solora
+    </a>
+    <nav class="navlinks">
+      <a class="lk" href="#different">Why Solora</a>
+      <a class="lk" href="#big3">Big 3</a>
+      <a class="lk" href="#roles">Roles</a>
+      <a class="lk" href="#features">Features</a>
+      <a class="lk" href="#faq">FAQ</a>
+      <a class="btn btn-grad" href="https://apps.apple.com/app/id6778808618">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Role-based planner · Big 3 focus · On-device AI</p>
+        <h1>Plan your life by <span class="g">who you are.</span></h1>
+        <p class="sub">Solora isn't another endless to-do list. It organizes your day around your <strong>roles</strong> and a daily <strong>Big&nbsp;3</strong> — the three things that actually move your life forward — with a private AI that runs on your iPhone.</p>
+        <div class="cta">
+          <a class="appstore" href="https://apps.apple.com/app/id6778808618" aria-label="Download Solora on the App Store">
+            <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C32.1 141.5-8 184.2-8 269c0 25.1 4.6 51 13.8 77.6 12.3 35.6 56.7 122.7 102.9 121.3 24.2-.6 41.3-17.2 72.8-17.2 30.6 0 46.4 17.2 73.4 17.2 46.6-.7 86.8-79.9 98.5-115.6-62.6-29.5-59.4-86.4-59.4-87.6zM260.7 112.5c27.9-33.1 25.4-63.3 24.6-74.2-24.7 1.4-53.3 16.8-69.6 35.7-18 20.3-28.6 45.4-26.3 73.7 26.7 2.1 51.1-11.6 71.3-35.2z"/></svg>
+            <span class="t"><small>Download on the</small><b>App Store</b></span>
+          </a>
+          <a class="btn btn-ghost" href="#big3">See how it works</a>
+        </div>
+        <div class="trust">
+          <span><span class="d"></span>Built for iPhone · iOS 26</span>
+          <span><span class="d"></span>Your data stays on your device</span>
+          <span><span class="d"></span>English &amp; Türkçe</span>
+        </div>
+      </div>
+      <div class="phone-stage">
+        <div class="glow-blob"></div>
+        <div class="phone">
+          <div class="notch"></div>
+          <div class="screen">
+            <img src="shot-big3.png" alt="Solora daily Big 3 focus screen on iPhone" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="ph-fallback" style="display:none">
+              <div class="chip" style="width:55%"></div>
+              <div class="chip lg"></div><div class="chip lg"></div><div class="chip lg"></div>
+              <div class="chip" style="width:70%"></div><div class="chip" style="width:40%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="marquee" aria-hidden="true">
+        <div class="row">
+          <span class="role-chip">Parent</span><span class="role-chip">Founder</span><span class="role-chip">Student</span><span class="role-chip">Athlete</span><span class="role-chip">Partner</span><span class="role-chip">Creator</span><span class="role-chip">Friend</span><span class="role-chip">Professional</span>
+          <span class="role-chip">Parent</span><span class="role-chip">Founder</span><span class="role-chip">Student</span><span class="role-chip">Athlete</span><span class="role-chip">Partner</span><span class="role-chip">Creator</span><span class="role-chip">Friend</span><span class="role-chip">Professional</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFFERENT -->
+  <section id="different">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Not a to-do list</p>
+        <h2>Most apps help you <span class="g">collect tasks.</span> Solora helps you choose.</h2>
+        <p>A to-do list grows until it overwhelms you — every untouched item a small reminder of falling behind. Solora flips the model: start from the roles you live and the few things that matter today.</p>
+      </div>
+      <div class="compare reveal">
+        <div class="col old">
+          <p class="tagline">A normal to-do app</p>
+          <h3>😮‍💨 Endless lists</h3>
+          <ul>
+            <li>Tasks pile up with no priority</li>
+            <li>Everything looks equally urgent</li>
+            <li>No sense of which part of life you're neglecting</li>
+            <li>Guilt grows as the list grows</li>
+            <li>You stay busy, but not aligned</li>
+          </ul>
+        </div>
+        <div class="col new">
+          <p class="tagline">Solora</p>
+          <h3>🌅 Intentional days</h3>
+          <ul>
+            <li>Your day is built around your <strong>roles</strong></li>
+            <li>A daily <strong>Big 3</strong> makes priorities obvious</li>
+            <li>Balance across the lives you actually live</li>
+            <li>Finish three meaningful things, feel progress</li>
+            <li>Private on-device AI plans <em>with</em> you</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG 3 -->
+  <section id="big3">
+    <div class="wrap big3">
+      <div class="reveal">
+        <p class="eyebrow">The method</p>
+        <h2>What is the <span class="g">Big 3</span> Method?</h2>
+        <p style="color:var(--muted);font-size:18px;max-width:54ch">Every day, you choose just three <strong>Most Important Tasks</strong>. Not thirty. Three. The Big 3 is a focus practice: when everything is a priority, nothing is — so you commit to the three that genuinely matter and let momentum do the rest.</p>
+        <ul class="why">
+          <li><strong>Three is achievable.</strong> Even a chaotic day usually has room for three wins, so you almost always end the day ahead.</li>
+          <li><strong>Choosing is the work.</strong> Deciding what matters most is harder — and more valuable — than doing busywork.</li>
+          <li><strong>Roles keep it balanced.</strong> Solora nudges your Big 3 across different roles so one part of life doesn't quietly swallow the rest.</li>
+          <li><strong>Nothing is lost.</strong> Unfinished focus carries forward to tomorrow instead of vanishing into a backlog.</li>
+        </ul>
+      </div>
+      <div class="b3-cards reveal">
+        <div class="b3-card"><div class="b3-num">1</div><div><b>Move the founder forward</b><span>Ship the investor update</span></div></div>
+        <div class="b3-card"><div class="b3-num">2</div><div><b>Show up as a parent</b><span>Bedtime story, phone away</span></div></div>
+        <div class="b3-card"><div class="b3-num">3</div><div><b>Honor the athlete</b><span>45-minute training block</span></div></div>
+        <p style="font-family:'Space Mono',monospace;font-size:12.5px;color:var(--faint);margin:8px 4px 0">Three tasks. Three roles. One intentional day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROLES -->
+  <section id="roles">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Why roles matter</p>
+        <h2>You're not one person with a list. You're <span class="g">many roles</span> with a life.</h2>
+        <p>Productivity isn't doing more — it's making progress in the roles that define a good life. Solora gives each role its own space, so growth in one never means quietly abandoning another.</p>
+      </div>
+      <div class="roles-grid">
+        <div class="role-card reveal"><div class="role-ic">🎯</div><h3>Clarity over chaos</h3><p>Seeing your day through roles reveals what you're truly investing in — and what you've been neglecting.</p></div>
+        <div class="role-card reveal"><div class="role-ic">⚖️</div><h3>Balance, by design</h3><p>Solora highlights when one role dominates, so your attention reflects your real values, not just the loudest deadline.</p></div>
+        <div class="role-card reveal"><div class="role-ic">📈</div><h3>Progress you can feel</h3><p>Role analytics and streaks turn abstract effort into visible momentum across every part of life.</p></div>
+        <div class="role-card reveal"><div class="role-ic">🧭</div><h3>Aligned priorities</h3><p>Tasks, habits and projects all connect back to a role, so your daily actions ladder up to who you want to be.</p></div>
+        <div class="role-card reveal"><div class="role-ic">🔁</div><h3>Habits that stick</h3><p>Attach habits to roles and watch streaks build the identity behind them — not just the checkbox.</p></div>
+        <div class="role-card reveal"><div class="role-ic">🌙</div><h3>Low-energy support</h3><p>Off day? Solora offers gentler versions and easier wins so you keep moving without burning out.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Everything inside</p>
+        <h2>One calm home for your <span class="g">whole life.</span></h2>
+      </div>
+      <div class="feat-grid">
+        <div class="feat reveal"><div class="ic">🧩</div><h3>Roles &amp; balance</h3><p>Organize tasks, habits and projects by the roles you live.</p></div>
+        <div class="feat reveal"><div class="ic">⭐</div><h3>Daily Big 3</h3><p>Pick your Most Important Tasks and protect your focus.</p></div>
+        <div class="feat reveal"><div class="ic">🔥</div><h3>Habits &amp; streaks</h3><p>Build routines with heatmaps, history and streak protection.</p></div>
+        <div class="feat reveal"><div class="ic">📂</div><h3>Projects &amp; subtasks</h3><p>Break big goals down — let AI suggest the steps for you.</p></div>
+        <div class="feat reveal"><div class="ic">✨</div><h3>On-device AI assistant</h3><p>Plan your day, break down projects and recover from off days — privately.</p></div>
+        <div class="feat reveal"><div class="ic">📊</div><h3>Insights</h3><p>Weekly reviews and role analytics show where your time really goes.</p></div>
+        <div class="feat reveal"><div class="ic">🎨</div><h3>Premium themes</h3><p>Make Solora yours with rich colors, icons and personalization.</p></div>
+        <div class="feat reveal"><div class="ic">🌍</div><h3>English &amp; Türkçe</h3><p>Switch languages instantly — Solora speaks both, fluently.</p></div>
+        <div class="feat reveal"><div class="ic">🔒</div><h3>Private by design</h3><p>Your content stays on your iPhone. No accounts, no tracking.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section id="screens">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">A look inside</p>
+        <h2>Designed to feel <span class="g">calm and alive.</span></h2>
+      </div>
+      <div class="shots reveal">
+        <figure class="shot"><div class="frame"><div class="sc"><img src="shot-roles.png" alt="Solora roles overview screen" onerror="this.style.opacity=0"></div></div><figcaption>ROLES</figcaption></figure>
+        <figure class="shot"><div class="frame"><div class="sc"><img src="shot-big3.png" alt="Solora Big 3 daily focus screen" onerror="this.style.opacity=0"></div></div><figcaption>BIG 3</figcaption></figure>
+        <figure class="shot"><div class="frame"><div class="sc"><img src="shot-habits.png" alt="Solora habit tracking and streaks screen" onerror="this.style.opacity=0"></div></div><figcaption>HABITS</figcaption></figure>
+        <figure class="shot"><div class="frame"><div class="sc"><img src="shot-ai.png" alt="Solora on-device AI assistant screen" onerror="this.style.opacity=0"></div></div><figcaption>AI ASSISTANT</figcaption></figure>
+        <figure class="shot"><div class="frame"><div class="sc"><img src="shot-insights.png" alt="Solora insights and analytics screen" onerror="this.style.opacity=0"></div></div><figcaption>INSIGHTS</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY BAND -->
+  <section id="privacy">
+    <div class="wrap">
+      <div class="band reveal">
+        <p class="eyebrow">Private by design</p>
+        <h2>Your day. <span class="g">Your data.</span></h2>
+        <p>Solora's AI runs on Apple's on-device intelligence, and your tasks, habits and conversations never leave your iPhone. There's no account to create and nothing for us to collect.</p>
+        <a class="btn btn-ghost" href="privacypolicy.html">Read the Privacy Policy</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Questions</p>
+        <h2>Good to <span class="g">know.</span></h2>
+      </div>
+      <div class="faq reveal">
+        <details open><summary>What is the Big 3 method?</summary><div class="ans">The Big 3 is a daily focus method where you pick the three Most Important Tasks for the day. Instead of drowning in a long list, you commit to finishing three meaningful things — so progress is guaranteed even on busy days.</div></details>
+        <details><summary>How is Solora different from a normal to-do list?</summary><div class="ans">A normal to-do list piles up tasks until you feel buried. Solora starts from your roles — like parent, founder, student or athlete — and a daily Big 3, so your day reflects who you are and what truly matters, not just everything you could do.</div></details>
+        <details><summary>Is Solora free?</summary><div class="ans">Yes. Solora is free to download and use, with an optional Premium upgrade that unlocks unlimited roles, tasks, habits and projects, plus unlimited AI, deeper analytics and premium themes.</div></details>
+        <details><summary>Does Solora use AI, and is my data private?</summary><div class="ans">Solora's assistant runs on Apple's on-device intelligence. Your tasks, habits and AI conversations stay on your iPhone — Solora has no server that collects your content.</div></details>
+        <details><summary>What devices and languages does Solora support?</summary><div class="ans">Solora is built for iPhone on iOS 26 and is fully available in English and Turkish, with instant in-app language switching.</div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD CTA -->
+  <section id="download">
+    <div class="wrap">
+      <div class="download reveal">
+        <h2>Start your <span class="g">most intentional</span> day.</h2>
+        <p>Download Solora free and plan your life around what matters most.</p>
+        <a class="appstore" href="https://apps.apple.com/app/id6778808618" style="margin:0 auto" aria-label="Download Solora on the App Store">
+          <svg viewBox="0 0 384 512" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C32.1 141.5-8 184.2-8 269c0 25.1 4.6 51 13.8 77.6 12.3 35.6 56.7 122.7 102.9 121.3 24.2-.6 41.3-17.2 72.8-17.2 30.6 0 46.4 17.2 73.4 17.2 46.6-.7 86.8-79.9 98.5-115.6-62.6-29.5-59.4-86.4-59.4-87.6zM260.7 112.5c27.9-33.1 25.4-63.3 24.6-74.2-24.7 1.4-53.3 16.8-69.6 35.7-18 20.3-28.6 45.4-26.3 73.7 26.7 2.1 51.1-11.6 71.3-35.2z"/></svg>
+          <span class="t"><small>Download on the</small><b>App Store</b></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="about">
+        <a class="brand" href="#top"><img src="appsymbol.png" alt="Solora app icon" onerror="this.outerHTML='&lt;span class=\'orb\'&gt;&lt;/span&gt;'">Solora</a>
+        <p>A role-based planner with a daily Big 3, habit streaks and private on-device AI. Plan your life by who you are.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <a href="#big3">The Big 3 Method</a>
+        <a href="#roles">Why roles matter</a>
+        <a href="#features">Features</a>
+        <a href="https://apps.apple.com/app/id6778808618">Download on App Store</a>
+      </div>
+      <div>
+        <h4>More</h4>
+        <a href="privacypolicy.html">Privacy Policy</a>
+        <a href="https://guledaaydemir.github.io/">More apps by the developer</a>
+        <a href="https://instagram.com/solo.stasera">Instagram @solo.stasera</a>
+        <a href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> Solora · Made by Gül Eda Aydemir</span>
+      <span>Plan your life by who you are.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var reduce = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var reveals = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:.12});
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+</script>
+</body>
+</html>

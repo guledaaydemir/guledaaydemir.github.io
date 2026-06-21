@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!--
+  Solora — Privacy Policy
+  Host this file at https://solora.app/privacy  (place it as /privacy/index.html)
+
+  BEFORE PUBLISHING, edit the values marked below:
+    • EFFECTIVE DATE  → search: data-edit="date"
+    • LEGAL/DEVELOPER NAME → search: data-edit="entity"
+    • CONTACT EMAIL → search: data-edit="email"
+    • GOVERNING LAW / REGION → search: data-edit="law"
+  This is a strong starting template; have it reviewed for your jurisdiction.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Solora</title>
+<meta name="description" content="How Solora handles your data. Solora is local-first: your tasks, habits, roles and AI activity stay on your device.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0B12;
+    --bg-soft:#101019;
+    --surface:#15151F;
+    --surface-2:#1B1B28;
+    --line:#26263A;
+    --line-soft:#1E1E2D;
+    --text:#F5F6FB;
+    --muted:#9A9BA8;
+    --faint:#6E6F80;
+    --violet:#7C5CFF;
+    --cyan:#22D3EE;
+    --grad:linear-gradient(120deg,#7C5CFF 0%,#22D3EE 100%);
+    --maxw:1120px;
+    --r:16px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{
+    margin:0;background:var(--bg);color:var(--text);
+    font-family:"Inter",system-ui,-apple-system,sans-serif;
+    font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(60% 45% at 78% -8%, rgba(124,92,255,.20), transparent 70%),
+      radial-gradient(55% 40% at 8% 4%, rgba(34,211,238,.12), transparent 70%);
+  }
+  .wrap{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;padding:0 28px}
+  a{color:inherit}
+  ::selection{background:rgba(124,92,255,.35)}
+
+  .skip{position:absolute;left:-999px;top:0;background:var(--violet);color:#fff;padding:10px 16px;border-radius:8px;z-index:99}
+  .skip:focus{left:16px;top:16px}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);
+    background:rgba(11,11,18,.72);border-bottom:1px solid var(--line-soft)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:"Space Grotesk",sans-serif;
+    font-weight:700;font-size:19px;letter-spacing:.2px;text-decoration:none}
+  .orb{width:22px;height:22px;border-radius:50%;background:var(--grad);
+    box-shadow:0 0 18px rgba(124,92,255,.65);flex:none}
+  .brand small{font-family:"Space Mono",monospace;font-weight:400;font-size:11px;
+    color:var(--faint);letter-spacing:2px;text-transform:uppercase}
+  .home-link{font-size:14px;color:var(--muted);text-decoration:none;font-weight:500;
+    padding:9px 15px;border:1px solid var(--line);border-radius:999px;transition:.2s;white-space:nowrap}
+  .home-link:hover{color:var(--text);border-color:var(--violet)}
+
+  /* Hero */
+  .hero{padding:84px 0 56px}
+  .eyebrow{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:4px;
+    text-transform:uppercase;color:var(--cyan);margin:0 0 22px}
+  h1{font-family:"Space Grotesk",sans-serif;font-weight:700;line-height:1.04;
+    font-size:clamp(40px,7vw,76px);letter-spacing:-1.5px;margin:0 0 24px;max-width:14ch}
+  h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{font-size:clamp(18px,2.2vw,21px);color:var(--muted);max-width:60ch;margin:0}
+  .meta{display:flex;flex-wrap:wrap;gap:10px 14px;margin-top:34px;
+    font-family:"Space Mono",monospace;font-size:12.5px;color:var(--faint)}
+  .meta span{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);
+    border-radius:999px;padding:7px 14px}
+  .meta b{color:var(--text);font-weight:400}
+  .dot{width:6px;height:6px;border-radius:50%;background:var(--cyan)}
+
+  /* Ledger — signature element */
+  .ledger{margin:8px 0 12px;border:1px solid var(--line);border-radius:var(--r);
+    background:linear-gradient(180deg,var(--surface),var(--bg-soft));overflow:hidden}
+  .ledger-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+    padding:20px 24px;border-bottom:1px solid var(--line-soft);flex-wrap:wrap}
+  .ledger-head h2{font-family:"Space Grotesk",sans-serif;font-size:18px;margin:0;font-weight:600}
+  .ledger-head p{margin:0;font-size:13px;color:var(--muted)}
+  table{width:100%;border-collapse:collapse;font-size:14.5px}
+  thead th{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:1.5px;
+    text-transform:uppercase;color:var(--faint);text-align:left;padding:14px 24px;font-weight:400}
+  tbody td{padding:15px 24px;border-top:1px solid var(--line-soft);vertical-align:top}
+  tbody tr td:first-child{color:var(--text);font-weight:500;width:34%}
+  tbody td:nth-child(2){color:var(--muted)}
+  .tag{display:inline-block;font-family:"Space Mono",monospace;font-size:11px;
+    padding:4px 10px;border-radius:6px;letter-spacing:.5px;white-space:nowrap}
+  .tag.local{background:rgba(34,211,238,.12);color:#7FE9F7;border:1px solid rgba(34,211,238,.25)}
+  .tag.apple{background:rgba(124,92,255,.14);color:#C3B4FF;border:1px solid rgba(124,92,255,.28)}
+  .tag.none{background:rgba(255,255,255,.05);color:var(--muted);border:1px solid var(--line)}
+
+  /* Body layout */
+  .doc{display:grid;grid-template-columns:230px 1fr;gap:56px;
+    padding:64px 0 40px;align-items:start}
+  nav.toc{position:sticky;top:96px}
+  nav.toc .label{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:2px;
+    text-transform:uppercase;color:var(--faint);margin:0 0 16px;padding-left:14px}
+  nav.toc ol{list-style:none;margin:0;padding:0;counter-reset:t}
+  nav.toc a{display:flex;gap:10px;text-decoration:none;color:var(--muted);font-size:13.5px;
+    padding:7px 0 7px 14px;border-left:2px solid var(--line-soft);transition:.18s;counter-increment:t}
+  nav.toc a::before{content:counter(t,decimal-leading-zero);font-family:"Space Mono",monospace;
+    font-size:11px;color:var(--faint);transition:.18s}
+  nav.toc a:hover{color:var(--text);border-color:var(--violet)}
+  nav.toc a.active{color:var(--text);border-color:var(--cyan)}
+  nav.toc a.active::before{color:var(--cyan)}
+
+  section.s{padding:6px 0 40px;scroll-margin-top:92px}
+  section.s .num{font-family:"Space Mono",monospace;font-size:12px;color:var(--cyan);letter-spacing:2px}
+  section.s h2{font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:27px;
+    letter-spacing:-.4px;margin:8px 0 18px}
+  section.s p{color:#C8C9D6;margin:0 0 16px;max-width:68ch}
+  section.s p.tight{margin-bottom:10px}
+  section.s ul{margin:0 0 16px;padding-left:0;list-style:none;max-width:68ch}
+  section.s li{position:relative;padding-left:26px;margin-bottom:11px;color:#C8C9D6}
+  section.s li::before{content:"";position:absolute;left:4px;top:11px;width:7px;height:7px;
+    border-radius:2px;background:var(--grad)}
+  section.s strong{color:var(--text);font-weight:600}
+  .hr{height:1px;background:var(--line-soft);border:0;margin:0}
+
+  .callout{border:1px solid var(--line);border-left:3px solid var(--cyan);
+    background:var(--surface);border-radius:12px;padding:18px 22px;margin:4px 0 18px;max-width:68ch}
+  .callout p{margin:0;font-size:15px;color:var(--muted)}
+
+  .contact{border:1px solid var(--line);border-radius:var(--r);
+    background:linear-gradient(180deg,var(--surface),var(--bg-soft));padding:28px;max-width:68ch}
+  .contact a{color:#A99CFF;text-decoration:none;border-bottom:1px solid rgba(169,156,255,.4)}
+  .contact a:hover{color:#fff}
+
+  footer{border-top:1px solid var(--line-soft);padding:40px 0 60px;margin-top:24px}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:center}
+  .foot p{margin:0;font-size:13px;color:var(--faint)}
+  .foot nav{display:flex;gap:22px}
+  .foot nav a{font-size:13.5px;color:var(--muted);text-decoration:none}
+  .foot nav a:hover{color:var(--text)}
+
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+  @media (max-width:880px){
+    .doc{grid-template-columns:1fr;gap:8px;padding-top:44px}
+    nav.toc{position:static;margin-bottom:22px;border:1px solid var(--line);border-radius:12px;padding:18px}
+    nav.toc ol{columns:2;column-gap:18px}
+    tbody tr td:first-child{width:auto}
+    thead{display:none}
+    tbody td{display:block;padding:4px 20px;border:0}
+    tbody tr{display:block;padding:14px 0;border-top:1px solid var(--line-soft)}
+    tbody tr td:first-child{padding-top:14px}
+  }
+  @media (max-width:520px){
+    .wrap{padding:0 20px}
+    .hero{padding:56px 0 40px}
+    nav.toc ol{columns:1}
+    .brand small{display:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#overview">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="https://solora.app" aria-label="Solora home">
+      <span class="orb"></span>Solora <small>Privacy</small>
+    </a>
+    <a class="home-link" href="index.html">← Back to Solora</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <p class="eyebrow">Privacy Policy</p>
+    <h1>Your data stays on <span class="g">your device.</span></h1>
+    <p class="lead">Solora is a personal planner. The roles, tasks, habits, projects and notes you create live on your iPhone — not on our servers. This page explains exactly what that means.</p>
+    <div class="meta">
+      <span><span class="dot"></span>Effective <b data-edit="date">21 June 2026</b></span>
+      <span>Applies to <b>Solora for iOS</b></span>
+      <span>Read time <b>~4 min</b></span>
+    </div>
+  </div>
+
+  <div class="ledger reveal" aria-label="Data at a glance">
+    <div class="ledger-head">
+      <h2>Data at a glance</h2>
+      <p>What Solora handles, where it lives, and who it's shared with.</p>
+    </div>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Where it lives</th><th>Shared with</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Tasks, habits, projects, roles &amp; notes</td>
+          <td>On your device (SwiftData)</td>
+          <td><span class="tag none">No one</span></td>
+        </tr>
+        <tr>
+          <td>AI assistant prompts &amp; replies</td>
+          <td>Processed on-device (Apple Intelligence)</td>
+          <td><span class="tag none">No one</span></td>
+        </tr>
+        <tr>
+          <td>Purchase &amp; subscription status</td>
+          <td>Your device &amp; Apple</td>
+          <td><span class="tag apple">Apple</span></td>
+        </tr>
+        <tr>
+          <td>Notification preferences</td>
+          <td>On your device</td>
+          <td><span class="tag none">No one</span></td>
+        </tr>
+        <tr>
+          <td>Crash &amp; performance diagnostics</td>
+          <td>Apple, only if you opt in via iOS Settings</td>
+          <td><span class="tag apple">Apple</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="doc">
+    <nav class="toc" aria-label="Sections">
+      <p class="label">Contents</p>
+      <ol>
+        <li><a href="#overview">Our approach</a></li>
+        <li><a href="#data">Data we process</a></li>
+        <li><a href="#ai">On-device AI</a></li>
+        <li><a href="#purchases">Purchases</a></li>
+        <li><a href="#notifications">Notifications</a></li>
+        <li><a href="#never">What we never do</a></li>
+        <li><a href="#control">Your control</a></li>
+        <li><a href="#retention">Retention</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#international">International users</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <div>
+      <section class="s reveal" id="overview">
+        <span class="num">01</span>
+        <h2>Our approach</h2>
+        <p>Solora is built to be <strong>local-first</strong>. The information you enter to plan your day is stored on your device and is yours to control. We designed Solora so that we never need to collect, see, or sell the content of your tasks, habits, or conversations with the in-app assistant.</p>
+        <p>We don't ask you to create an account, and we don't require you to sign in to use Solora.</p>
+      </section>
+      <hr class="hr">
+
+      <section class="s reveal" id="data">
+        <span class="num">02</span>
+        <h2>Data we process</h2>
+        <p class="tight">The content you create in Solora — including the following — is saved locally on your device:</p>
+        <ul>
+          <li>Roles, tasks, subtasks, projects, habits and your daily “Big 3” focus.</li>
+          <li>Streaks, habit history, check-ins and progress.</li>
+          <li>Reminders, preferences, themes and language settings.</li>
+        </ul>
+        <p>This data stays on your device and within your own iCloud backups if you have device backup enabled. We do not operate a server that receives or stores this content.</p>
+      </section>
+      <hr class="hr">
+
+      <section class="s reveal" id="ai">
+        <span class="num">03</span>
+        <h2>On-device AI</h2>
+        <p>Solora's assistant — chat, daily planning, and project breakdowns — runs on Apple's on-device intelligence. The text you send to the assistant is processed on your device to generate a response. Solora does not transmit your prompts or their results to us or to a third-party AI service.</p>
+        <div class="callout"><p>Apple's on-device models power these features. Their behavior is governed by Apple's platform and privacy terms.</p></div>
+      </section>
+      <hr class="hr">
+
+      <section class="s reveal" id="purchases">
+        <span class="num">04</span>
+        <h2>Purchases &amp; subscriptions</h2>
+        <p>Solora Premium is sold through Apple's In-App Purchase system. When you subscribe or buy the lifetime option, <strong>Apple</strong> processes the payment — we never receive or store your card number or billing details.</p>
+        <p>Solora reads your entitlement status from Apple to know whether Premium is active. We may store a local record of that status on your device so the app works offline. Subscription management and refunds are handled by Apple through your Apple Account.</p>
+      </section>
+      <hr class="hr">
+
+      <section class="s reveal" id="notifications">
+        <span class="num">05</span>
+        <h2>Notifications</h2>
+        <p>Notifications are scheduled locally on your device to deliver your reminders. We don't use a remote push server, and we don't send marketing messages. You can manage or turn off notifications anytime in iOS Settings.</p>
+      </section>
+      <hr class="hr">
+
+      <section class="s reveal" id="never">
+        <span class="num">06</span>
+        <h2>What we never do</h2>
+        <ul>
+          <li>We don't sell or rent your personal data.</li>
+          <li>We don't show third-party ads or use advertising trackers.</li>
+          <li>We don't build advertising profiles about you.</li>
+          <li>We don't require an account or collect your contacts.</li>
+        </ul>
+        <p>If we ever introduce an optional feature that changes this — for example analytics you can turn on — we'll update this policy and describe it clearly before it takes effect.</p>
+      </section>
+      <hr class="hr">
+
+      <section class="s reveal" id="control">
+        <span class="num">07</span>
+        <h2>Your control</h2>
+        <p class="tight">Because your data lives on your device, you stay in control of it:</p>
+        <ul>
+          <li><strong>Edit or delete</strong> any item directly inside Solora at any time.</li>
+          <li><strong>Remove everything</strong> by deleting the app, which removes its local data from your device.</li>
+          <li><strong>Manage permissions</strong> (calendar, notifications) in iOS Settings.</li>
+        </ul>
+        <p>Depending on where you live, you may have rights under laws such as the GDPR or CCPA to access, correct, or delete personal data. Since Solora keeps your content on your device, you can exercise most of these directly in the app. For anything else, contact us using the details below.</p>
+      </section>
+      <hr class="hr">
+
+      <section class="s reveal" id="retention">
+        <span class="num">08</span>
+        <h2>Retention</h2>
+        <p>Your content is kept on your device for as long as you keep it in Solora or until you delete the app. We don't hold copies on our own systems, so there's nothing for us to retain after you remove the app.</p>
+      </section>
+      <hr class="hr">
+
+      <section class="s reveal" id="children">
+        <span class="num">09</span>
+        <h2>Children</h2>
+        <p>Solora is not directed to children under 13 (or the minimum age required in your region). We don't knowingly collect personal data from children. If you believe a child has provided us information, contact us and we'll help address it.</p>
+      </section>
+      <hr class="hr">
+
+      <section class="s reveal" id="international">
+        <span class="num">10</span>
+        <h2>International users</h2>
+        <p>Solora works the same way wherever you are: your content stays on your device. Purchases are processed by Apple in your region. This policy is governed by the laws of <strong data-edit="law">Türkiye</strong>, without affecting any mandatory protections you have under your local law.</p>
+      </section>
+      <hr class="hr">
+
+      <section class="s reveal" id="changes">
+        <span class="num">11</span>
+        <h2>Changes to this policy</h2>
+        <p>If we update this policy, we'll revise the “Effective” date at the top of this page and, for significant changes, surface a notice in the app. Continuing to use Solora after an update means you accept the revised policy.</p>
+      </section>
+      <hr class="hr">
+
+      <section class="s reveal" id="contact">
+        <span class="num">12</span>
+        <h2>Contact</h2>
+        <div class="contact">
+          <p style="margin:0 0 8px;color:var(--muted)">Questions about your privacy or this policy?</p>
+          <p style="margin:0;color:var(--text)">
+            <strong data-edit="entity">Gül Eda Aydemir</strong><br>
+            <a data-edit="email" href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a>
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p>© <span id="yr">2026</span> Solora. Your day, your data.</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="https://guledaaydemir.github.io/">More apps</a>
+      <a href="https://instagram.com/solo.stasera">Instagram</a>
+      <a href="https://apps.apple.com/app/id6778808618">App Store</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Scroll reveal
+  var reduce = window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  var reveals = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var ro = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target);} });
+    }, {threshold:.12});
+    reveals.forEach(function(el){ ro.observe(el); });
+  }
+
+  // Active TOC highlight
+  var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a'));
+  var map = {};
+  links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(l){ l.classList.remove('active'); });
+        if(map[e.target.id]) map[e.target.id].classList.add('active');
+      }
+    });
+  }, {rootMargin:'-45% 0px -50% 0px'});
+  document.querySelectorAll('section.s').forEach(function(s){ spy.observe(s); });
+</script>
+</body>
+</html>
