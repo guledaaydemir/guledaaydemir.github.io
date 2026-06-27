@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--
+  Solora — Terms of Use
+  EULA / Terms URL: https://guledaaydemir.github.io/Solora/terms.html
+  Drop next to index.html. Keep appsymbol.png in the same folder.
+  NOTE: This is a general template, not legal advice. Set the "Last updated"
+  date and review with a professional before publishing if needed.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Solora — Terms of Use</title>
+<meta name="description" content="The Terms of Use for Solora, the role-based planner and Big 3 focus app for iPhone.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://guledaaydemir.github.io/Solora/terms.html">
+<link rel="icon" type="image/png" href="appsymbol.png">
+<link rel="apple-touch-icon" href="appsymbol.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Solora">
+<meta property="og:title" content="Solora — Terms of Use">
+<meta property="og:description" content="The Terms of Use for Solora, the role-based planner for iPhone.">
+<meta property="og:image" content="solora-og.png">
+<meta property="og:url" content="https://guledaaydemir.github.io/Solora/terms.html">
+<meta name="theme-color" content="#0B0B12">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#0B0B12; --surface:#15151F; --surface-2:#1B1B28;
+    --line:#26263A; --line-soft:#1E1E2D;
+    --text:#F5F6FB; --muted:#9A9BA8; --faint:#6E6F80;
+    --violet:#7C5CFF; --cyan:#22D3EE;
+    --grad:linear-gradient(120deg,#7C5CFF 0%,#22D3EE 100%);
+    --maxw:820px; --r:18px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{margin:0;background:var(--bg);color:var(--text);overflow-x:hidden;
+    font-family:"Inter",system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
+  body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(60% 50% at 80% -5%,rgba(124,92,255,.22),transparent 70%),
+               radial-gradient(50% 40% at 0% 8%,rgba(34,211,238,.12),transparent 70%)}
+  .wrap{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:rgba(124,92,255,.35)}
+  h1,h2{font-family:"Space Grotesk",sans-serif;letter-spacing:-.5px;line-height:1.1}
+  .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .eyebrow{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--cyan)}
+
+  /* Nav */
+  header{position:sticky;top:0;z-index:30;backdrop-filter:blur(14px);
+    background:rgba(11,11,18,.7);border-bottom:1px solid var(--line-soft)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;max-width:1160px;margin:0 auto;padding:0 26px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:20px}
+  .brand img{width:30px;height:30px;border-radius:8px;box-shadow:0 0 18px rgba(124,92,255,.5)}
+  .brand .orb{width:26px;height:26px;border-radius:50%;background:var(--grad);box-shadow:0 0 18px rgba(124,92,255,.6)}
+  .navlinks{display:flex;gap:28px;align-items:center}
+  .navlinks a{font-size:14.5px;color:var(--muted);font-weight:500;transition:.2s}
+  .navlinks a:hover{color:var(--text)}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;border-radius:999px;
+    padding:11px 20px;font-size:14.5px;transition:transform .15s,box-shadow .25s;cursor:pointer;border:0}
+  .btn:active{transform:scale(.97)}
+  .btn-grad{background:var(--grad);color:#fff;box-shadow:0 8px 26px rgba(124,92,255,.35)}
+  .btn-grad:hover{box-shadow:0 10px 34px rgba(124,92,255,.5)}
+  @media(max-width:680px){.navlinks .lk{display:none}}
+
+  /* Hero */
+  .hero{padding:64px 0 18px}
+  .hero h1{font-size:clamp(32px,6vw,52px);font-weight:700;margin:14px 0 12px}
+  .hero .updated{font-family:"Space Mono",monospace;font-size:13px;color:var(--faint)}
+
+  /* Doc body */
+  .doc{padding:24px 0 20px}
+  .doc h2{font-size:clamp(20px,3vw,26px);margin:36px 0 10px;scroll-margin-top:80px}
+  .doc h2:first-child{margin-top:8px}
+  .doc p{color:#D2D3DE;margin:0 0 14px}
+  .doc ul{margin:0 0 16px;padding-left:22px;color:#D2D3DE}
+  .doc li{margin:7px 0}
+  .doc strong{color:var(--text)}
+  .doc a{color:var(--cyan);text-decoration:underline}
+  .lead{color:var(--muted);font-size:18px;max-width:62ch}
+
+  .toc{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:22px 24px;margin:8px 0 6px}
+  .toc h3{font-family:"Space Mono",monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--faint);margin:0 0 12px}
+  .toc ol{margin:0;padding-left:20px;color:var(--muted);font-size:14.5px;columns:2;column-gap:32px}
+  @media(max-width:560px){.toc ol{columns:1}}
+  .toc a:hover{color:var(--text)}
+
+  .callout{border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,rgba(34,211,238,.06),rgba(124,92,255,.06));
+    padding:18px 22px;margin:18px 0;font-size:15px;color:#C8C9D6}
+
+  /* Footer */
+  footer{border-top:1px solid var(--line-soft);padding:40px 0 50px;margin-top:30px}
+  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px;color:var(--faint)}
+  .foot-bottom a{color:var(--muted)}
+  .foot-bottom a:hover{color:var(--text)}
+
+  @media(max-width:680px){.wrap{padding:0 18px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html" aria-label="Solora home">
+      <img src="appsymbol.png" alt="Solora app icon" onerror="this.outerHTML='&lt;span class=\'orb\'&gt;&lt;/span&gt;'">
+      Solora
+    </a>
+    <nav class="navlinks">
+      <a class="lk" href="index.html#features">Features</a>
+      <a class="lk" href="support.html">Support</a>
+      <a class="lk" href="privacypolicy.html">Privacy</a>
+      <a class="btn btn-grad" href="https://apps.apple.com/app/id6778808618">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Legal</p>
+      <h1>Terms of <span class="g">Use.</span></h1>
+      <p class="updated">Last updated: 27 June 2026</p>
+    </div>
+  </section>
+
+  <!-- DOC -->
+  <section class="doc">
+    <div class="wrap">
+      <p class="lead">These Terms of Use ("Terms") govern your use of the Solora mobile application ("Solora", "the app", "we", "us"). By downloading, installing or using Solora, you agree to these Terms. If you don't agree, please don't use the app.</p>
+
+      <div class="toc">
+        <h3>Contents</h3>
+        <ol>
+          <li><a href="#use">Using Solora</a></li>
+          <li><a href="#account">No account, your content</a></li>
+          <li><a href="#premium">Premium &amp; subscriptions</a></li>
+          <li><a href="#ai">AI assistant</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#conduct">Acceptable use</a></li>
+          <li><a href="#ip">Intellectual property</a></li>
+          <li><a href="#warranty">Disclaimer of warranties</a></li>
+          <li><a href="#liability">Limitation of liability</a></li>
+          <li><a href="#apple">Apple App Store terms</a></li>
+          <li><a href="#changes">Changes &amp; termination</a></li>
+          <li><a href="#law">Governing law</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </div>
+
+      <h2 id="use">1. Using Solora</h2>
+      <p>Solora is a personal planning and productivity app for iPhone that helps you organize tasks, habits, projects and a daily focus around the roles in your life. You may use Solora for your own personal, non-commercial purposes, subject to these Terms.</p>
+      <p>Solora is built for iPhone running iOS 26. You're responsible for having a compatible device and a supported operating system. Some features depend on your device and OS capabilities and may not be available on all hardware.</p>
+
+      <h2 id="account">2. No account, your content</h2>
+      <p>Solora does not require you to create an account. The content you create — tasks, habits, projects, notes, roles and assistant conversations — is stored on your device. Because there is no account and no server holding your content, <strong>you are solely responsible for your data</strong>. If you delete an item, reset the app, or uninstall it, that content cannot be recovered by us.</p>
+
+      <h2 id="premium">3. Premium &amp; subscriptions</h2>
+      <p>Solora is free to download and use, with an optional <strong>Premium</strong> upgrade that unlocks additional limits and features. Premium is offered as:</p>
+      <ul>
+        <li>A <strong>monthly</strong> auto-renewing subscription;</li>
+        <li>A <strong>yearly</strong> auto-renewing subscription, which may include a free trial; and</li>
+        <li>A one-time <strong>lifetime</strong> purchase.</li>
+      </ul>
+      <p>All purchases are processed by Apple through the App Store and are subject to Apple's terms. Prices are shown in the app before purchase. For auto-renewing subscriptions:</p>
+      <ul>
+        <li>Payment is charged to your Apple ID at confirmation of purchase.</li>
+        <li>The subscription renews automatically unless cancelled at least 24 hours before the end of the current period.</li>
+        <li>You can manage or cancel subscriptions in your iPhone <strong>Settings → [your name] → Subscriptions</strong>.</li>
+        <li>If a free trial is offered, any unused portion is forfeited when you purchase a subscription.</li>
+      </ul>
+      <p>Refunds are handled by Apple. To request one, visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+      <h2 id="ai">4. AI assistant</h2>
+      <p>Solora includes an optional assistant powered by Apple's on-device intelligence. The assistant generates suggestions to help you plan, break down projects and adjust your day. It requires a supported device and OS, and may be unavailable on some hardware.</p>
+      <div class="callout">AI-generated output can be inaccurate, incomplete or unsuitable for your situation. The assistant is a planning aid only — it does not provide professional, medical, legal, financial or psychological advice. Use your own judgment and verify anything important.</div>
+
+      <h2 id="privacy">5. Privacy</h2>
+      <p>Solora is designed to keep your content on your device. We don't operate a server that collects your tasks, habits or assistant conversations. For full details on what is and isn't processed, please read our <a href="privacypolicy.html">Privacy Policy</a>, which forms part of these Terms.</p>
+
+      <h2 id="conduct">6. Acceptable use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Use Solora for any unlawful purpose or in violation of any applicable law;</li>
+        <li>Reverse-engineer, decompile, or attempt to extract the source code of the app, except where permitted by law;</li>
+        <li>Interfere with, disrupt, or attempt to gain unauthorized access to the app or related systems;</li>
+        <li>Resell, sublicense, or commercially exploit the app or its content; or</li>
+        <li>Use the app in any way that could damage, disable or impair it.</li>
+      </ul>
+
+      <h2 id="ip">7. Intellectual property</h2>
+      <p>Solora, including its name, design, branding, code, graphics and content (excluding content you create), is owned by the developer and is protected by intellectual property laws. We grant you a limited, personal, non-exclusive, non-transferable, revocable licence to use the app in accordance with these Terms and the Apple App Store terms. You retain ownership of the content you create in the app.</p>
+
+      <h2 id="warranty">8. Disclaimer of warranties</h2>
+      <p>Solora is provided <strong>"as is"</strong> and <strong>"as available"</strong>, without warranties of any kind, whether express or implied, including but not limited to merchantability, fitness for a particular purpose and non-infringement. We do not warrant that the app will be uninterrupted, error-free, secure, or that any defects will be corrected.</p>
+
+      <h2 id="liability">9. Limitation of liability</h2>
+      <p>To the maximum extent permitted by law, the developer will not be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of data, profits or goodwill, arising from your use of (or inability to use) Solora. Because Solora stores data locally and we cannot recover it, we are not responsible for any loss of content. Nothing in these Terms excludes liability that cannot be excluded under applicable law.</p>
+
+      <h2 id="apple">10. Apple App Store terms</h2>
+      <p>These Terms are between you and the developer only, not Apple. Apple is not responsible for the app or its content. You acknowledge that:</p>
+      <ul>
+        <li>Apple has no obligation to provide maintenance or support for Solora;</li>
+        <li>In the event the app fails to conform to any applicable warranty, you may notify Apple, and Apple may refund the purchase price (if any); to the maximum extent permitted by law, Apple has no other warranty obligation;</li>
+        <li>Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you; and</li>
+        <li>Your use of the app must comply with the Apple Media Services Terms and the App Store Usage Rules.</li>
+      </ul>
+
+      <h2 id="changes">11. Changes &amp; termination</h2>
+      <p>We may update these Terms from time to time. When we do, we'll change the "Last updated" date above, and continued use of the app means you accept the updated Terms. We may also modify, suspend or discontinue the app (or any feature) at any time. You may stop using Solora at any time by uninstalling it.</p>
+
+      <h2 id="law">12. Governing law</h2>
+      <p>These Terms are governed by the laws of the Republic of Türkiye, without regard to its conflict-of-law rules, except where mandatory consumer-protection laws of your country of residence apply.</p>
+
+      <h2 id="contact">13. Contact</h2>
+      <p>Questions about these Terms? Email <a href="mailto:solostaseraofficial@gmail.com?subject=Solora%20Terms">solostaseraofficial@gmail.com</a> or visit the <a href="support.html">Support page</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> Solora · Made by Gül Eda Aydemir</span>
+      <span>
+        <a href="index.html">Home</a> ·
+        <a href="support.html">Support</a> ·
+        <a href="privacypolicy.html">Privacy</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
