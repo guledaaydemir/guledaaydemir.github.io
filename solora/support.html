@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--
+  Solora — Support page
+  App Store "Support URL": https://guledaaydemir.github.io/Solora/support.html
+  Drop next to index.html. Keep appsymbol.png in the same folder.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Solora Support — Help, Contact & FAQ</title>
+<meta name="description" content="Get help with Solora, the role-based planner and Big 3 focus app for iPhone. Contact support, browse FAQs, and troubleshoot common issues.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://guledaaydemir.github.io/Solora/support.html">
+<link rel="icon" type="image/png" href="appsymbol.png">
+<link rel="apple-touch-icon" href="appsymbol.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Solora">
+<meta property="og:title" content="Solora Support — Help, Contact & FAQ">
+<meta property="og:description" content="Help, contact and answers for Solora — the role-based planner for iPhone.">
+<meta property="og:image" content="solora-og.png">
+<meta property="og:url" content="https://guledaaydemir.github.io/Solora/support.html">
+<meta name="theme-color" content="#0B0B12">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How do I get support for Solora?","acceptedAnswer":{"@type":"Answer","text":"Email solostaseraofficial@gmail.com with your question, your iPhone model and iOS version. We usually reply within 1–2 business days."}},
+    {"@type":"Question","name":"Is my data backed up or stored on a server?","acceptedAnswer":{"@type":"Answer","text":"No. Solora stores your tasks, habits and AI conversations on your iPhone. There is no account and no server collecting your content, so we cannot recover data after a delete or uninstall."}},
+    {"@type":"Question","name":"How do I restore my Premium purchase?","acceptedAnswer":{"@type":"Answer","text":"Open Settings inside Solora, go to Premium, and tap Restore Purchases. Make sure you are signed in with the same Apple ID you used to buy."}},
+    {"@type":"Question","name":"How do I cancel my subscription?","acceptedAnswer":{"@type":"Answer","text":"Subscriptions are managed by Apple. Open the iPhone Settings app, tap your name, then Subscriptions, choose Solora and cancel. Your access continues until the end of the billing period."}},
+    {"@type":"Question","name":"Why is the AI assistant unavailable?","acceptedAnswer":{"@type":"Answer","text":"Solora's assistant runs on Apple's on-device intelligence, which requires a supported iPhone and iOS 26. If it is unavailable, update iOS and confirm Apple Intelligence is enabled in iPhone Settings."}}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#0B0B12; --surface:#15151F; --surface-2:#1B1B28;
+    --line:#26263A; --line-soft:#1E1E2D;
+    --text:#F5F6FB; --muted:#9A9BA8; --faint:#6E6F80;
+    --violet:#7C5CFF; --cyan:#22D3EE;
+    --grad:linear-gradient(120deg,#7C5CFF 0%,#22D3EE 100%);
+    --grad-soft:linear-gradient(120deg,rgba(124,92,255,.16),rgba(34,211,238,.12));
+    --maxw:920px; --r:18px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{margin:0;background:var(--bg);color:var(--text);overflow-x:hidden;
+    font-family:"Inter",system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:radial-gradient(60% 50% at 80% -5%,rgba(124,92,255,.22),transparent 70%),
+               radial-gradient(50% 40% at 0% 8%,rgba(34,211,238,.12),transparent 70%)}
+  .wrap{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;padding:0 26px}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:rgba(124,92,255,.35)}
+  h1,h2,h3{font-family:"Space Grotesk",sans-serif;letter-spacing:-.5px;line-height:1.1}
+  .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .eyebrow{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--cyan)}
+
+  /* Nav */
+  header{position:sticky;top:0;z-index:30;backdrop-filter:blur(14px);
+    background:rgba(11,11,18,.7);border-bottom:1px solid var(--line-soft)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px;max-width:1160px;margin:0 auto;padding:0 26px}
+  .brand{display:flex;align-items:center;gap:11px;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:20px}
+  .brand img{width:30px;height:30px;border-radius:8px;box-shadow:0 0 18px rgba(124,92,255,.5)}
+  .brand .orb{width:26px;height:26px;border-radius:50%;background:var(--grad);box-shadow:0 0 18px rgba(124,92,255,.6)}
+  .navlinks{display:flex;gap:28px;align-items:center}
+  .navlinks a{font-size:14.5px;color:var(--muted);font-weight:500;transition:.2s}
+  .navlinks a:hover{color:var(--text)}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;border-radius:999px;
+    padding:11px 20px;font-size:14.5px;transition:transform .15s,box-shadow .25s;cursor:pointer;border:0}
+  .btn:active{transform:scale(.97)}
+  .btn-grad{background:var(--grad);color:#fff;box-shadow:0 8px 26px rgba(124,92,255,.35)}
+  .btn-grad:hover{box-shadow:0 10px 34px rgba(124,92,255,.5)}
+  .btn-ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--violet)}
+  @media(max-width:680px){.navlinks .lk{display:none}}
+
+  /* Hero */
+  .hero{padding:72px 0 28px;text-align:center}
+  .hero h1{font-size:clamp(34px,6vw,54px);font-weight:700;margin:16px 0 14px}
+  .hero p{color:var(--muted);font-size:clamp(16px,2vw,19px);max-width:56ch;margin:0 auto}
+
+  section{padding:34px 0;position:relative}
+
+  /* Contact cards */
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .card{display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-radius:16px;padding:24px;
+    background:var(--surface);transition:transform .25s,border-color .25s,box-shadow .25s}
+  .card:hover{transform:translateY(-4px);border-color:rgba(124,92,255,.4);box-shadow:0 18px 40px rgba(0,0,0,.4)}
+  .card.primary{background:linear-gradient(180deg,rgba(124,92,255,.1),rgba(34,211,238,.05));border-color:rgba(124,92,255,.35)}
+  .card .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;margin-bottom:6px;
+    background:rgba(124,92,255,.14);font-size:22px}
+  .card h3{font-size:18px;margin:0}
+  .card p{margin:0;font-size:14.5px;color:var(--muted)}
+  .card .val{font-family:"Space Mono",monospace;font-size:14px;color:var(--cyan);word-break:break-word}
+  .card a.go{margin-top:auto;font-size:14px;font-weight:600;color:var(--violet)}
+
+  /* Response note */
+  .note{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:14px;
+    padding:16px 20px;background:var(--surface);margin-top:18px;font-size:14.5px;color:#C8C9D6}
+  .note .d{width:8px;height:8px;border-radius:50%;background:var(--cyan);flex:none;box-shadow:0 0 10px var(--cyan)}
+
+  .head{margin-bottom:24px}
+  .head h2{font-size:clamp(26px,4vw,38px);font-weight:700;margin:12px 0 0}
+
+  /* FAQ */
+  .faq details{border:1px solid var(--line);border-radius:14px;background:var(--surface);margin-bottom:12px;overflow:hidden}
+  .faq summary{cursor:pointer;padding:18px 22px;font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:16.5px;
+    list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";font-size:24px;color:var(--cyan);transition:transform .25s}
+  .faq details[open] summary::after{transform:rotate(45deg)}
+  .faq .ans{padding:0 22px 20px;color:#C8C9D6;max-width:74ch}
+  .faq .ans a{color:var(--cyan);text-decoration:underline}
+  .faq .ans ol{margin:8px 0 0;padding-left:20px}
+  .faq .ans li{margin:4px 0}
+
+  /* Info band */
+  .band{border:1px solid var(--line);border-radius:22px;padding:34px;text-align:center;
+    background:linear-gradient(180deg,rgba(34,211,238,.06),rgba(124,92,255,.06))}
+  .band h2{font-size:clamp(22px,3.5vw,32px);margin:0 0 10px}
+  .band p{color:var(--muted);max-width:60ch;margin:0 auto 18px;font-size:16px}
+  .band .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+  /* Footer */
+  footer{border-top:1px solid var(--line-soft);padding:40px 0 50px;margin-top:30px}
+  .foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+    font-size:13px;color:var(--faint)}
+  .foot-bottom a{color:var(--muted)}
+  .foot-bottom a:hover{color:var(--text)}
+
+  @media(max-width:680px){
+    .cards{grid-template-columns:1fr}
+    .wrap{padding:0 18px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html" aria-label="Solora home">
+      <img src="appsymbol.png" alt="Solora app icon" onerror="this.outerHTML='&lt;span class=\'orb\'&gt;&lt;/span&gt;'">
+      Solora
+    </a>
+    <nav class="navlinks">
+      <a class="lk" href="index.html#features">Features</a>
+      <a class="lk" href="index.html#faq">FAQ</a>
+      <a class="lk" href="privacypolicy.html">Privacy</a>
+      <a class="btn btn-grad" href="https://apps.apple.com/app/id6778808618">Get the app</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Support</p>
+      <h1>We're here to <span class="g">help.</span></h1>
+      <p>Questions, feedback or a problem with Solora? Reach out any time — or browse the common answers below.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <div class="wrap">
+      <div class="cards">
+        <div class="card primary">
+          <div class="ic">✉️</div>
+          <h3>Email support</h3>
+          <p>The fastest way to reach us for anything — bugs, billing, ideas.</p>
+          <span class="val">solostaseraofficial@gmail.com</span>
+          <a class="go" href="mailto:solostaseraofficial@gmail.com?subject=Solora%20Support">Send an email →</a>
+        </div>
+        <div class="card">
+          <div class="ic">📸</div>
+          <h3>Instagram</h3>
+          <p>Follow for updates, tips and quick questions.</p>
+          <span class="val">@solo.stasera</span>
+          <a class="go" href="https://instagram.com/solo.stasera">Open Instagram →</a>
+        </div>
+      </div>
+      <div class="note">
+        <span class="d"></span>
+        We usually reply within 1–2 business days. To help us help you faster, include your iPhone model and iOS version.
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Common questions</p>
+        <h2>Quick <span class="g">answers.</span></h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>How do I get support?</summary>
+          <div class="ans">Email <a href="mailto:solostaseraofficial@gmail.com?subject=Solora%20Support">solostaseraofficial@gmail.com</a> with your question, your iPhone model and your iOS version. Screenshots or a short screen recording help a lot when reporting a bug.</div>
+        </details>
+        <details>
+          <summary>Is my data backed up anywhere?</summary>
+          <div class="ans">No. Solora keeps your tasks, habits, projects and AI conversations on your iPhone. There's no account and no server that collects your content — which means your data is private, but it also can't be recovered after you delete an item or uninstall the app. Learn more in the <a href="privacypolicy.html">Privacy Policy</a>.</div>
+        </details>
+        <details>
+          <summary>How do I restore my Premium purchase?</summary>
+          <div class="ans">
+            Open Solora, go to <strong>Settings → Premium</strong>, and tap <strong>Restore Purchases</strong>. Make sure you're signed in with the same Apple ID you used to buy. If it still doesn't restore, email us and we'll help.
+          </div>
+        </details>
+        <details>
+          <summary>How do I cancel my subscription?</summary>
+          <div class="ans">
+            Subscriptions are handled by Apple, not inside the app:
+            <ol>
+              <li>Open the iPhone <strong>Settings</strong> app.</li>
+              <li>Tap your name at the top, then <strong>Subscriptions</strong>.</li>
+              <li>Select <strong>Solora</strong> and tap <strong>Cancel Subscription</strong>.</li>
+            </ol>
+            Your Premium access stays active until the end of the current billing period.
+          </div>
+        </details>
+        <details>
+          <summary>How do refunds work?</summary>
+          <div class="ans">All purchases and subscriptions go through the App Store, so refunds are issued by Apple. Visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>, sign in, find Solora and request a refund. If you bought by mistake or hit a problem, email us first and we'll do our best to help.</div>
+        </details>
+        <details>
+          <summary>Why is the AI assistant unavailable?</summary>
+          <div class="ans">Solora's assistant runs entirely on Apple's on-device intelligence, so it needs a supported iPhone running iOS 26 with Apple Intelligence enabled. If it's greyed out, update iOS and check <strong>Settings → Apple Intelligence &amp; Siri</strong>. Because it's on-device, the assistant also works without internet.</div>
+        </details>
+        <details>
+          <summary>Notifications and reminders aren't showing up.</summary>
+          <div class="ans">Open the iPhone <strong>Settings</strong> app → <strong>Solora</strong> → <strong>Notifications</strong> and make sure they're allowed. Also check that Focus modes or Do Not Disturb aren't silencing them, and that each task or habit has a reminder time set inside the app.</div>
+        </details>
+        <details>
+          <summary>Which devices and languages are supported?</summary>
+          <div class="ans">Solora is built for iPhone on iOS 26 and is fully available in English and Turkish, with instant in-app language switching in <strong>Settings → Language</strong>.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAND -->
+  <section>
+    <div class="wrap">
+      <div class="band">
+        <h2>Still stuck?</h2>
+        <p>If you didn't find your answer, send us a message — real human, real reply.</p>
+        <div class="row">
+          <a class="btn btn-grad" href="mailto:solostaseraofficial@gmail.com?subject=Solora%20Support">Email support</a>
+          <a class="btn btn-ghost" href="privacypolicy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> Solora · Made by Gül Eda Aydemir</span>
+      <span>
+        <a href="index.html">Home</a> ·
+        <a href="https://apps.apple.com/app/id6778808618">App Store</a> ·
+        <a href="https://guledaaydemir.github.io/">More apps</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
