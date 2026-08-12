@@ -21,7 +21,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
 <title>Privacy Policy — DUMP for iPhone</title>
-<meta name="description" content="DUMP's privacy policy: no account, no uploads, no analytics. Photos stay on your iPhone. Detail on Photos permissions, storage and your GDPR, KVKK and CCPA rights.">
+<meta name="description" content="DUMP's privacy policy: no account, no uploads, no analytics. Photos stay on your iPhone. Detail on Photos permissions, storage, subscriptions and your GDPR, KVKK and CCPA rights.">
 <meta name="author" content="Gül Eda Aydemir">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
 <meta name="apple-itunes-app" content="app-id=6798248086">
@@ -51,7 +51,7 @@
   "url":"https://guledaaydemir.github.io/DUMP/privacypolicy.html",
   "inLanguage":"en",
   "datePublished":"2026-08-11",
-  "dateModified":"2026-08-11",
+  "dateModified":"2026-08-12",
   "description":"Privacy policy for DUMP, an offline photo and video dump maker for iPhone that requires no account and uploads nothing.",
   "isPartOf":{"@type":"WebSite","name":"DUMP","url":"https://guledaaydemir.github.io/DUMP/"},
   "about":{"@type":"SoftwareApplication","name":"DUMP","applicationCategory":"PhotoVideoApplication","operatingSystem":"iOS"},
@@ -119,7 +119,7 @@
     <p class="crumb"><a href="./">DUMP</a> / Privacy Policy</p>
     <span class="eyebrow">Legal</span>
     <h1 class="h1" style="font-size:clamp(32px,5.4vw,52px)">Privacy <span class="g">Policy.</span></h1>
-    <p class="updated">Last updated: 11 August 2026</p>
+    <p class="updated">Last updated: 12 August 2026</p>
   </div>
 </section>
 
@@ -144,7 +144,7 @@
         <li><a href="#nocollect">What we do not collect</a></li>
         <li><a href="#photos">Photos permission</a></li>
         <li><a href="#retention">What is stored on your device</a></li>
-        <li><a href="#purchases">Purchases &amp; Apple</a></li>
+        <li><a href="#purchases">Subscriptions &amp; Apple</a></li>
         <li><a href="#thirdparty">Third parties</a></li>
         <li><a href="#label">App Privacy label</a></li>
         <li><a href="#children">Children</a></li>
@@ -176,8 +176,11 @@
       <li>Track you across other apps or websites, or build a profile of you;</li>
       <li>Sell, rent or share personal information with anyone.</li>
     </ul>
-    <p>DUMP functions with your iPhone in airplane mode. The only network activity in the app is the
-      purchase and restore flow, which is performed by Apple's StoreKit framework.</p>
+    <p>DUMP's creative features — importing, editing, layouts, templates, stickers, frames, text,
+      filters and export — all work with your iPhone in airplane mode. The only network activity in
+      the app is Apple's StoreKit framework loading subscription prices, processing a purchase or
+      restore, and periodically confirming that an active subscription is still valid. No content
+      you create is ever part of that traffic.</p>
 
     <h2 id="photos">3. Photos permission</h2>
     <p>DUMP asks for access to your photo library because that is the material it works with.
@@ -209,7 +212,7 @@
         <tr><td>Copies of media used in a project</td><td>So a project still opens if the original is later removed from your library</td><td>Delete the project, or delete the app</td></tr>
         <tr><td>Preferences (language, theme, tint, layout settings)</td><td>So the app opens the way you left it</td><td>Delete the app</td></tr>
         <tr><td>Recent colours, gradients, textures and favourites</td><td>Convenience while editing</td><td>Delete the app</td></tr>
-        <tr><td>Premium entitlement status</td><td>So unlocked features stay unlocked offline</td><td>Delete the app (restore it later with Restore Purchases)</td></tr>
+        <tr><td>Premium entitlement status (a cached yes/no flag, no purchase or account detail)</td><td>So unlocked features stay unlocked offline between checks with Apple</td><td>Delete the app (restore it later with Restore Purchases)</td></tr>
         <tr><td>Temporary render and export files</td><td>Needed while exporting</td><td>Cleared automatically by the app and by iOS</td></tr>
       </tbody>
     </table>
@@ -219,24 +222,45 @@
     <p>If your iPhone backs up to iCloud or a computer, app data may be included in that backup under
       Apple's terms. That backup belongs to you; we have no access to it.</p>
 
-    <h2 id="purchases">5. Purchases &amp; Apple</h2>
-    <p>DUMP+ is sold through Apple's In-App Purchase system. When you buy or restore a purchase:</p>
+    <h2 id="purchases">5. Subscriptions, purchases &amp; Apple</h2>
+    <p>DUMP+ Premium is sold as an <strong>auto-renewing subscription</strong> through Apple's
+      In-App Purchase system, on a weekly or yearly plan. New yearly subscribers may be offered a
+      free trial period. Where this applies:</p>
+    <ul>
+      <li>The subscription renews automatically at the end of each period unless it is cancelled at
+        least 24 hours before the period ends. Your Apple Account is charged for renewal within 24
+        hours of the period ending;</li>
+      <li>A free trial converts to a paid subscription automatically unless cancelled before it
+        ends. Any unused portion of a trial is forfeited if you subscribe before the trial expires;</li>
+      <li>You manage and cancel your subscription in
+        <strong>Settings → your name → Subscriptions</strong> on your iPhone, not inside DUMP. We
+        cannot cancel a subscription on your behalf;</li>
+      <li>The current price for your region is fetched from Apple and displayed in the app before
+        you purchase.</li>
+    </ul>
+    <p>When you buy, renew or restore:</p>
     <ul>
       <li>The transaction is processed entirely by <strong>Apple</strong>. We never receive or store
-        your name, payment card, billing address or Apple ID;</li>
-      <li>The app receives a receipt from Apple confirming whether an entitlement is active, and
-        stores that entitlement locally so Premium features work offline;</li>
-      <li>Apple provides us with aggregated, anonymised sales and download reports through App Store
-        Connect. These contain no information identifying individual users.</li>
+        your name, payment card, billing address or Apple Account details, and the app has no
+        server that could receive them;</li>
+      <li>The app asks Apple's StoreKit framework whether an active entitlement exists. Making that
+        check involves your device communicating with Apple, under
+        <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple's
+        privacy policy</a>. We do not operate a receipt-validation server, and no such check is
+        routed through us;</li>
+      <li>The result — whether Premium is active — is cached on your device so unlocked features
+        continue to work offline. That cached flag contains no identifier and no purchase detail;</li>
+      <li>Apple provides us with aggregated, anonymised sales, subscription and download reports
+        through App Store Connect. These contain no information identifying individual users.</li>
     </ul>
-    <p>Purchases, refunds and subscription management are governed by Apple's own terms and privacy
-      policy. Refund requests go to
+    <p>Purchases, renewals, refunds and subscription management are governed by Apple's own terms
+      and privacy policy. Refund requests go to
       <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer">reportaproblem.apple.com</a>.</p>
 
     <h2 id="thirdparty">6. Third parties</h2>
     <p>DUMP bundles no third-party advertising, analytics, attribution or crash-reporting software.
       The only external party involved in the app is <strong>Apple</strong>, in its role as
-      distributor and payment processor.</p>
+      distributor, payment processor and subscription administrator.</p>
     <p>If you choose to open Instagram, an email client or another app to share or discuss a dump,
       that app's own privacy policy applies from that point on. DUMP does not post on your behalf.</p>
 
@@ -250,6 +274,7 @@
         <tr><td>Data used to track you</td><td>None</td></tr>
         <tr><td>Data linked to you</td><td>None</td></tr>
         <tr><td>Data not linked to you</td><td>None collected by the developer. Purchase transactions are processed by Apple.</td></tr>
+        <tr><td>Purchases</td><td>None collected by the developer. Subscription transactions are processed and retained by Apple; we receive only aggregated, anonymised reports.</td></tr>
         <tr><td>Photos or videos collected</td><td>None. Media is processed on device and never transmitted.</td></tr>
         <tr><td>Identifiers collected</td><td>None</td></tr>
         <tr><td>Location collected</td><td>None. DUMP never requests location, and photo location metadata is not read, used or transmitted.</td></tr>
