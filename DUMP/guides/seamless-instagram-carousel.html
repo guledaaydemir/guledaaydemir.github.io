@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>How to Make a Seamless Panoramic Instagram Carousel</title>
+<meta name="description" content="The post that swipes across slides as one continuous image. How the slicing works, the exact pixel maths, and the alignment mistakes that break the illusion.">
+<meta name="keywords" content="seamless instagram carousel, panoramic instagram post, instagram panorama, split photo carousel instagram, swipeable panorama">
+<meta name="author" content="Gül Eda Aydemir">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="apple-itunes-app" content="app-id=6798248086">
+<link rel="canonical" href="https://guledaaydemir.github.io/DUMP/guides/seamless-instagram-carousel.html">
+<link rel="icon" type="image/png" href="../appicon.png">
+<link rel="apple-touch-icon" href="../appicon.png">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="DUMP">
+<meta property="og:title" content="How to Make a Seamless Panoramic Instagram Carousel">
+<meta property="og:description" content="The post that swipes across slides as one continuous image. How the slicing works, the exact pixel maths, and the alignment mistakes that break the illusion.">
+<meta property="og:image" content="https://guledaaydemir.github.io/DUMP/dump-og.png">
+<meta property="og:url" content="https://guledaaydemir.github.io/DUMP/guides/seamless-instagram-carousel.html">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Make a Seamless Panoramic Instagram Carousel">
+<meta name="twitter:description" content="The post that swipes across slides as one continuous image. How the slicing works, the exact pixel maths, and the alignment mistakes that break the illusion.">
+<meta name="twitter:image" content="https://guledaaydemir.github.io/DUMP/dump-og.png">
+<meta name="theme-color" content="#0D0D0D">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"How to make a seamless panoramic Instagram carousel",
+  "description":"Slice one wide image into equal panels and post them in order so the carousel swipes as a single continuous picture.",
+  "totalTime":"PT15M",
+  "inLanguage":"en",
+  "step":[
+    {"@type":"HowToStep","position":1,"name":"Choose the number of panels","text":"Decide how many slides the panorama spans. Three is the usual choice. Each extra panel doubles the risk of someone stopping before the end."},
+    {"@type":"HowToStep","position":2,"name":"Calculate the canvas size","text":"Multiply 1080 by the number of panels for the width, and use the height of your chosen ratio. Three 4:5 panels is a canvas of 3240 by 1350 pixels."},
+    {"@type":"HowToStep","position":3,"name":"Compose on the full canvas","text":"Build the whole image on the wide canvas, keeping faces and important detail away from the vertical lines where the cuts will fall."},
+    {"@type":"HowToStep","position":4,"name":"Slice into equal panels","text":"Cut the canvas into equal pieces of exactly 1080 pixels wide. Uneven slices are the most common cause of a visible jump between slides."},
+    {"@type":"HowToStep","position":5,"name":"Post the panels in left to right order","text":"Upload the slices as a carousel in order from left to right, with the same aspect ratio on every slide, and apply no filter that would shift colour between panels."}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"How to Make a Seamless Panoramic Instagram Carousel",
+  "description":"The post that swipes across slides as one continuous image. How the slicing works, the exact pixel maths, and the alignment mistakes that break the illusion.",
+  "url":"https://guledaaydemir.github.io/DUMP/guides/seamless-instagram-carousel.html",
+  "inLanguage":"en",
+  "datePublished":"2026-08-11",
+  "dateModified":"2026-08-11",
+  "image":"https://guledaaydemir.github.io/DUMP/dump-og.png",
+  "author":{"@type":"Person","name":"Gül Eda Aydemir","url":"https://guledaaydemir.github.io/DUMP/"},
+  "publisher":{"@type":"Person","name":"Gül Eda Aydemir"},
+  "isPartOf":{"@type":"WebSite","name":"DUMP","url":"https://guledaaydemir.github.io/DUMP/"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"DUMP","item":"https://guledaaydemir.github.io/DUMP/"},
+    {"@type":"ListItem","position":2,"name":"Guides","item":"https://guledaaydemir.github.io/DUMP/guides/"},
+    {"@type":"ListItem","position":3,"name":"Seamless panoramic carousel","item":"https://guledaaydemir.github.io/DUMP/guides/seamless-instagram-carousel.html"}
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/dump.css">
+<script src="../assets/motion.js" defer></script>
+</head>
+<body data-page="guide">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="../index.html" aria-label="DUMP home">
+      <img src="../appicon.png" alt="DUMP app icon" width="32" height="32"
+           onerror="this.outerHTML='&lt;span class=\'orb\'&gt;&lt;/span&gt;'">
+      <span class="wordmark">DUMP</span>
+    </a>
+    <nav class="navlinks" aria-label="Primary">
+      <a class="lk" href="../index.html#basics">How it works</a>
+      <a class="lk active" href="index.html">Guides</a>
+      <a class="lk" href="../faq.html">FAQ</a>
+      <a class="lk" href="../support.html">Support</a>
+      <a class="lk" href="../../index.html">More apps</a>
+      <a class="btn btn-grad magnet" data-ct="guides-nav" href="https://apps.apple.com/app/id6798248086">Get DUMP — Free</a>
+      <button class="navtoggle" aria-expanded="false" aria-label="Open menu" aria-controls="drawer"><span></span></button>
+    </nav>
+  </div>
+  <span class="scrollbar" aria-hidden="true"></span>
+  <div class="navdrawer" id="drawer">
+    <a href="../index.html">DUMP home</a>
+    <a href="index.html">All guides</a>
+    <a href="../index.html#features">Features</a>
+    <a href="../faq.html">FAQ</a>
+    <a href="../support.html">Support</a>
+    <a href="../../index.html">More apps by Gül Eda</a>
+    <a class="btn btn-grad" data-ct="guides-drawer" href="https://apps.apple.com/app/id6798248086">Get DUMP — Free</a>
+  </div>
+</header>
+
+<main id="main">
+
+<article class="guide-hero section-sm" id="top">
+  <div class="wrap wrap-doc">
+    <p class="crumb"><a href="../index.html">DUMP</a> / <a href="index.html">Guides</a> / Advanced</p>
+    <span class="eyebrow">Guide &middot; Advanced</span>
+    <h1 class="h1" style="font-size:clamp(30px,5vw,50px);max-width:20ch">
+      The <span class="g">seamless</span> panoramic carousel.
+    </h1>
+    <p class="guide-meta">
+      <span>Updated 11 August 2026</span><span>&middot;</span><span>6 min read</span><span>&middot;</span><span>Advanced</span>
+    </p>
+  </div>
+</article>
+
+<section class="doc">
+  <div class="wrap wrap-doc guide-body">
+    <div class="toc">
+  <h4>In this guide</h4>
+  <ol>
+    <li><a href="#what">What is a seamless carousel?</a></li>
+    <li><a href="#maths">What canvas size do you need?</a></li>
+    <li><a href="#steps">How do you make one?</a></li>
+    <li><a href="#gap">Do slides line up perfectly?</a></li>
+    <li><a href="#compose">What works across a seam?</a></li>
+    <li><a href="#mistakes">Why is mine misaligned?</a></li>
+    <li><a href="#ideas">What to use it for</a></li>
+  </ol>
+</div>
+    
+<div class="answer">
+  <b>Short answer:</b> A seamless carousel is one wide image sliced into equal 1080 px panels and
+  posted in left-to-right order, so swiping reads as panning across a single picture. For three
+  portrait panels, build on a canvas of <b>3240 &times; 1350 px</b>, cut it into three exact
+  1080 &times; 1350 pieces, and post them in order with no per-slide filter.
+</div>
+
+<p>It is the most striking thing you can do with a carousel and the easiest to get slightly wrong.
+When it works, the swipe feels like panning a camera. When it fails, viewers see a visible jump at
+every slide boundary and the whole effect collapses into three photos that don't quite line up.</p>
+
+<p>The difference is almost always arithmetic, not artistry.</p>
+
+<h2 id="what">What is a seamless Instagram carousel?</h2>
+
+<p class="lead-answer">A seamless carousel is one wide image sliced into equal <b>1080 px</b> panels and posted in left-to-right order, so swiping reads as panning across a single continuous picture. Instagram has no panorama feature — the effect is built entirely before upload.</p>
+
+<p>Instagram treats every carousel slide as an independent image. It has no concept of a panorama
+and provides no tool to make one. The seamless effect is an illusion built entirely on the
+viewer's side: because slides sit edge to edge as you swipe, precisely aligned panels read as one
+continuous picture.</p>
+
+<p>This means the work happens entirely before upload. Instagram is not helping you and cannot
+warn you when something is misaligned.</p>
+
+<h2 id="maths">What size canvas do you need for a seamless carousel?</h2>
+
+<p class="lead-answer">Canvas width = <b>1080 &times; the number of panels</b>. For the standard three-panel portrait version that is <b>3240 &times; 1350 px</b>, sliced into three exact 1080 &times; 1350 pieces.</p>
+
+<p>Every panel must be exactly the width Instagram displays — 1080 pixels — and every panel must
+share the same height. From that, the canvas size follows directly.</p>
+
+<table>
+  <thead><tr><th>Panels</th><th>Ratio</th><th>Full canvas</th><th>Each panel</th></tr></thead>
+  <tbody>
+    <tr><td>2</td><td>4:5 portrait</td><td>2160 &times; 1350</td><td>1080 &times; 1350</td></tr>
+    <tr><td><b>3</b></td><td><b>4:5 portrait</b></td><td><b>3240 &times; 1350</b></td><td><b>1080 &times; 1350</b></td></tr>
+    <tr><td>4</td><td>4:5 portrait</td><td>4320 &times; 1350</td><td>1080 &times; 1350</td></tr>
+    <tr><td>3</td><td>1:1 square</td><td>3240 &times; 1080</td><td>1080 &times; 1080</td></tr>
+    <tr><td>5</td><td>1:1 square</td><td>5400 &times; 1080</td><td>1080 &times; 1080</td></tr>
+  </tbody>
+</table>
+
+<div class="keytakeaway">
+  <h3>The rule</h3>
+  <ul>
+    <li>Canvas width = <b>1080 &times; number of panels</b></li>
+    <li>Canvas height = the height of your chosen ratio (1350 for 4:5, 1080 for 1:1)</li>
+    <li>Every slice exactly <b>1080 px</b> wide — no rounding, no leftovers</li>
+    <li>Three panels is the practical sweet spot</li>
+  </ul>
+</div>
+
+<p><strong>Three is the right default.</strong> Two barely reads as a panorama. Four or more asks
+a lot of the viewer, and every panel someone doesn't reach is a piece of your image nobody sees.
+Since engagement drops off across a carousel, a five-panel panorama is usually experienced as a
+three-panel one with two orphans.</p>
+
+<h2 id="steps">How do you make a seamless carousel?</h2>
+
+<p class="lead-answer">Build the whole image on one wide canvas, mark where the cuts fall, slice into exact 1080 px panels, and post them in left-to-right order with no per-slide filter. The full sequence:</p>
+
+<ol class="steps-num">
+  <li><b>Pick the panel count and ratio first.</b> This is a decision you cannot change later
+    without rebuilding the whole thing.</li>
+  <li><b>Create the wide canvas.</b> 3240 &times; 1350 for the standard three-panel portrait
+    version.</li>
+  <li><b>Compose across the full width.</b> Place your photos, text and elements on the whole
+    canvas as one image. Think of it as a single picture, not three.</li>
+  <li><b>Mark where the cuts fall.</b> At 1080 px and 2160 px. Keep faces, words and any focal
+    point away from those lines.</li>
+  <li><b>Export the full canvas once, then slice.</b> Cut into exact 1080 px pieces. Do not export
+    each panel separately from a repositioned canvas — that is where drift creeps in.</li>
+  <li><b>Check the seams before posting.</b> Put the three exports side by side and look at the
+    joins at full size.</li>
+  <li><b>Post in left-to-right order</b>, all the same ratio, with no filter applied per slide.
+    A filter applied to one panel and not another produces a colour step exactly at the seam.</li>
+</ol>
+
+<h2 id="gap">Do carousel slides line up perfectly when swiping?</h2>
+
+<p class="lead-answer">Not quite. Instagram does not butt slides perfectly together during the transition, and viewers rarely hold a carousel halfway between two slides — so the illusion is experienced as a sequence of aligned frames rather than a continuous scroll.</p>
+
+<p>Here is the detail that separates a convincing panorama from an almost-convincing one.</p>
+
+<p>Instagram does not butt slides perfectly against each other during the swipe. There is a small
+transition as one slide moves out and the next moves in, and viewers rarely hold a carousel
+halfway between two slides. In practice this means the illusion is experienced as a
+<em>sequence of aligned frames</em> rather than a genuinely continuous scroll.</p>
+
+<p>Two consequences worth designing around:</p>
+
+<ul>
+  <li><strong>Each panel should work alone.</strong> Most people see one panel at a time, at rest.
+    A panel that is meaningless without its neighbours reads as a broken image, not part of a
+    whole.</li>
+  <li><strong>Never split a face or a word.</strong> Continuity across a seam works for landscapes,
+    textures, skies and horizons — content where the eye forgives an interruption. It fails badly
+    for anything the brain expects to be intact.</li>
+</ul>
+
+<h2 id="compose">What images work across a seam?</h2>
+
+<p class="lead-answer">Horizons, skies, coastlines, road surfaces, textures and gradients work, because the eye forgives an interruption in continuous material. Faces, hands, text and logos fail immediately.</p>
+
+<p><strong>What works across seams:</strong> horizons, coastlines, skies, wide interiors, road
+surfaces, repeating patterns, fabric, gradients and colour fields. Anything continuous and
+non-specific.</p>
+
+<p><strong>What breaks across seams:</strong> faces, hands, text, logos, small objects, and any
+subject with a clear single focal point that the cut happens to land on.</p>
+
+<p>A reliable structure: place your three strongest focal points at the centre of each panel, and
+use the seam regions for connective material — sky, ground, water, negative space. Every panel
+then has its own subject, and the transitions carry the eye rather than interrupting it.</p>
+
+<p>The other common approach abandons literal continuity entirely: three separate photos on one
+continuous background — a paper texture, a colour wash, a gradient — with a line of text or a
+graphic element flowing across all three. It gets the panoramic feel with none of the alignment
+risk, and it is what most creators actually post.</p>
+
+<h2 id="mistakes">Why is my seamless carousel misaligned?</h2>
+
+<p class="lead-answer">Almost always arithmetic: panels not exactly 1080 px wide, panels with different heights, mixed aspect ratios, or a filter applied to one panel and not another. Uploading out of order is unfixable — you cannot add a slide to a published carousel.</p>
+
+<table>
+  <thead><tr><th>Mistake</th><th>What you see</th></tr></thead>
+  <tbody>
+    <tr><td>Panels not exactly 1080 px wide</td><td>A visible jump or repeat at each seam</td></tr>
+    <tr><td>Panels with different heights</td><td>Instagram crops to slide one, breaking alignment</td></tr>
+    <tr><td>Mixed aspect ratios</td><td>Slide one's ratio is forced on the rest — everything shifts</td></tr>
+    <tr><td>Uploaded out of order</td><td>The image reads scrambled; you cannot add a slide to fix it</td></tr>
+    <tr><td>Filter applied per slide</td><td>A colour step exactly at the join</td></tr>
+    <tr><td>Exported wider than 1080 px per panel</td><td>Instagram downscales each panel separately, softening the seams</td></tr>
+    <tr><td>Face or text on a cut line</td><td>The illusion fails instantly</td></tr>
+  </tbody>
+</table>
+
+<p>The ordering mistake deserves emphasis. Instagram posts slides in the order you tap them, and
+while you can reorder or delete slides after publishing, you <strong>cannot add one</strong>. A
+panorama posted with panel two missing has to be deleted and reposted from scratch.</p>
+
+<h2 id="ideas">What should you use a seamless carousel for?</h2>
+
+<p class="lead-answer">Travel panoramas, event recaps, before-and-after scenes, text banners and product ranges. A pattern worth stealing: use the panorama for the first three slides, then continue with ordinary dump photos.</p>
+
+<ul>
+  <li><strong>Travel panoramas</strong> — the original use case, and still the most effective.</li>
+  <li><strong>Event recaps</strong> — a wide venue shot sliced across three, then normal photos on
+    the remaining slides.</li>
+  <li><strong>Before and after</strong> — one continuous scene, transformed across the panels.</li>
+  <li><strong>Text banners</strong> — a headline spanning the full width, with each panel readable
+    alone.</li>
+  <li><strong>Product ranges</strong> — items laid out on one continuous surface, each panel
+    centred on one product.</li>
+</ul>
+
+<p>A pattern worth stealing: use the panorama for the first three slides, then continue with
+ordinary dump photos on slides four onward. You get the visual impact of the seamless opening and
+the honesty of a normal dump, in one post.</p>
+
+<h2 id="app">Is there an app that makes seamless carousels?</h2>
+
+<p class="lead-answer">Yes. An app with seamless groups derives the panel geometry once and splits layers that cross a seam correctly, so alignment cannot drift and the export order is already right.</p>
+
+<p>Everything above is precise, mechanical and easy to get wrong by a few pixels — which is why
+<a href="../index.html">DUMP</a> has seamless groups built in.</p>
+
+<p>You place photos, text and elements across a canvas that spans multiple slides, and the app
+handles the panel boundaries: each slide is rendered at exactly the right width, the layers that
+cross a seam are split correctly, and the preview shows you the swipe before you commit. Elements
+that span neighbouring slides stay aligned because the geometry is derived once, not recreated per
+panel.</p>
+
+<p>Export produces the panels in order, in a Photos album, at full resolution — so you select the
+album in Instagram, tap select-all, and the sequence is already correct.</p>
+
+    <div class="guide-cta">
+  <h2>Build a seamless carousel without the pixel maths</h2>
+  <p>DUMP handles panel widths, seam alignment and export order for you. Free on iPhone, no account, works offline.</p>
+  <div class="row">
+    <a class="appstore magnet" data-ct="guide-seamless" href="https://apps.apple.com/app/id6798248086" aria-label="Download DUMP on the App Store">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.36 12.9c.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.71-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.18-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.32-3.5zM14.2 6.3c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.56 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.58-1.21z"/></svg>
+      <span class="t"><small>Download on the</small><b>App Store</b></span>
+    </a>
+    <a class="btn btn-ghost" href="../index.html#basics">See how it works</a>
+  </div>
+  <p class="tiny" style="margin-top:14px;margin-bottom:0">Free · iPhone · No account · Works offline</p>
+</div>
+    <div class="guide-nav">
+  <a href="instagram-photo-quality.html"><small>Previous guide</small><b>Why Instagram ruins your photo quality</b></a>
+  <a href="photo-dump-ideas.html"><small>Next guide</small><b>40 photo dump ideas and captions</b></a>
+</div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="../index.html" aria-label="DUMP home">
+          <img src="../appicon.png" alt="" width="32" height="32"
+               onerror="this.outerHTML='&lt;span class=\'orb\'&gt;&lt;/span&gt;'">
+          <span class="wordmark">DUMP</span>
+        </a>
+        <p class="tagline" style="margin-top:12px">Your camera roll, <b>unfiltered.</b></p>
+        <div class="social">
+          <a href="https://instagram.com/solo.stasera" target="_blank" rel="noopener noreferrer" aria-label="DUMP on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.4-10.4a1.44 1.44 0 1 0 1.44 1.44A1.44 1.44 0 0 0 18.4 5.6z"/></svg>
+          </a>
+          <a href="mailto:solostaseraofficial@gmail.com" aria-label="Email DUMP support">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24-8 4.76-8-4.76V6l8 4.76L20 6z"/></svg>
+          </a>
+          <a href="https://apps.apple.com/app/id6798248086" aria-label="DUMP on the App Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.36 12.9c.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.71-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.18-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.32-3.5zM14.2 6.3c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.56 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.58-1.21z"/></svg>
+          </a>
+        </div>
+        <p style="margin-top:16px">
+          <a href="../../index.html" style="font-size:14px;color:var(--purple)">&larr; All apps by G&uuml;l Eda</a>
+        </p>
+      </div>
+      <div>
+        <h5>Guides</h5>
+        <a href="how-to-post-a-photo-dump-on-instagram.html">Post a photo dump</a>
+        <a href="what-is-a-photo-dump.html">What is a photo dump</a>
+        <a href="instagram-carousel-size-guide.html">Carousel sizes</a>
+        <a href="instagram-photo-quality.html">Stop quality loss</a>
+        <a href="index.html">All guides</a>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <a href="../index.html#basics">How it works</a>
+        <a href="../index.html#features">Features</a>
+        <a href="../index.html#premium">Premium</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../support.html">Support</a>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <a href="../privacypolicy.html">Privacy Policy</a>
+        <a href="../terms.html">Terms of Use</a>
+        <a href="mailto:solostaseraofficial@gmail.com">Contact</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> DUMP · Made by Gül Eda Aydemir</span>
+      <span>
+        <a href="https://instagram.com/solo.stasera" target="_blank" rel="noopener noreferrer">@solo.stasera</a> ·
+        <a href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<div class="stickybar" role="complementary" aria-label="Download DUMP">
+  <img src="../appicon.png" alt="" width="40" height="40">
+  <div class="m"><b>DUMP</b><span>Free · iPhone · No account</span></div>
+  <a class="btn btn-grad" data-ct="guides-stickybar" href="https://apps.apple.com/app/id6798248086">Get</a>
+</div>
+
+</body>
+</html>

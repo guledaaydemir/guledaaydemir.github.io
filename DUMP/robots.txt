@@ -1,0 +1,24 @@
+# DUMP — https://guledaaydemir.github.io/DUMP/
+# Everything on this site is public marketing and legal content.
+
+User-agent: *
+Allow: /
+
+# AI answer engines are a real acquisition channel for app discovery.
+# Explicitly welcomed: the FAQ and privacy pages are written to be quotable.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://guledaaydemir.github.io/DUMP/sitemap.xml

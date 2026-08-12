@@ -1,0 +1,19 @@
+{
+  "name": "DUMP — Photo Dump Maker",
+  "short_name": "DUMP",
+  "description": "Turn your camera roll into a share-ready photo dump. Carousels, collages and grids, exported at full original quality.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/DUMP/",
+  "scope": "/DUMP/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0D0D0D",
+  "theme_color": "#0D0D0D",
+  "categories": ["photo", "graphics", "social", "utilities"],
+  "icons": [
+    { "src": "appicon.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "appicon.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "appicon.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
