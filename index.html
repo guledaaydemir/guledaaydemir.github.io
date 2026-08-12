@@ -3,7 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gul Eda Aydemir | iOS Developer</title>
+
+    <!-- ===== SEO ===== -->
+    <title>Gül Eda Aydemir — iOS Developer | Apps for iPhone</title>
+    <meta name="description" content="Independent iOS developer building offline-first iPhone apps: DUMP photo dump maker, Solo.Swipe, Solo.Shots, Solo.Surya and Solora.">
+    <meta name="keywords" content="Gül Eda Aydemir, indie iOS developer, iPhone apps, DUMP app, Solo.Swipe, Solo.Shots, Solo.Surya, Solora, offline iOS apps">
+    <meta name="author" content="Gül Eda Aydemir">
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+    <link rel="canonical" href="https://guledaaydemir.github.io/">
+    <link rel="icon" type="image/png" href="DUMP/appicon.png">
+    <link rel="apple-touch-icon" href="DUMP/appicon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gül Eda Aydemir">
+    <meta property="og:title" content="Gül Eda Aydemir — iOS Developer">
+    <meta property="og:description" content="Offline-first iPhone apps, built independently. Photo tools, planners and journals that work without an account.">
+    <meta property="og:url" content="https://guledaaydemir.github.io/">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gül Eda Aydemir — iOS Developer">
+    <meta name="twitter:description" content="Offline-first iPhone apps, built independently.">
+    <meta name="theme-color" content="#050505">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Gül Eda Aydemir",
+      "alternateName": "Gul Eda Aydemir",
+      "jobTitle": "iOS Developer",
+      "url": "https://guledaaydemir.github.io/",
+      "email": "solostaseraofficial@gmail.com",
+      "sameAs": ["https://instagram.com/solo.stasera"],
+      "knowsAbout": ["iOS development", "Swift", "SwiftUI", "mobile app design"]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Apps by Gül Eda Aydemir",
+      "itemListOrder": "https://schema.org/ItemListUnordered",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "DUMP",
+            "applicationCategory": "PhotoVideoApplication",
+            "operatingSystem": "iOS",
+            "description": "Photo and video dump maker that turns your camera roll into a share-ready Instagram carousel and exports at full original quality.",
+            "url": "https://guledaaydemir.github.io/DUMP/",
+            "downloadUrl": "https://apps.apple.com/app/id6798248086",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Solo.Swipe",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "iOS",
+            "description": "Photo organizer that frees up storage using simple swipe gestures.",
+            "url": "https://guledaaydemir.github.io/solo.swipe/",
+            "downloadUrl": "https://apps.apple.com/app/id6761368690"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Solo.Shots",
+            "applicationCategory": "PhotoVideoApplication",
+            "operatingSystem": "iOS",
+            "description": "Daily photo journal with ghost overlay, streaks and cinematic timelapse export.",
+            "url": "https://guledaaydemir.github.io/solo.shots/",
+            "downloadUrl": "https://apps.apple.com/app/6762450478"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Solo.Surya",
+            "applicationCategory": "LifestyleApplication",
+            "operatingSystem": "iOS",
+            "description": "Offline-first Vedic astrology app with sidereal charts, Astrocartography and Panchang.",
+            "url": "https://guledaaydemir.github.io/solo.surya/",
+            "downloadUrl": "https://apps.apple.com/app/id6764138745"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "SoftwareApplication",
+            "name": "Solora",
+            "applicationCategory": "ProductivityApplication",
+            "operatingSystem": "iOS",
+            "description": "Role-aware life planner for tasks, habits and projects with on-device AI assistance.",
+            "url": "https://guledaaydemir.github.io/solora/",
+            "downloadUrl": "https://apps.apple.com/app/id6778808618"
+          }
+        }
+      ]
+    }
+    </script>
+
     <style>
         :root {
             --bg-color: #050505;
@@ -194,9 +305,19 @@
         .btn-outline:hover {
             background: rgba(255, 255, 255, 0.15);
         }
+
 	    .btn-cyan {
             color: #050505;
             background: #00E5FF;
+        }
+
+        .btn-dump {
+            color: #12030A;
+            background: linear-gradient(120deg, #C799FA, #FF375F);
+        }
+
+        .btn-dump:hover {
+            box-shadow: 0 4px 12px rgba(255, 55, 95, 0.4);
         }
 
         .btn-primary {
@@ -248,6 +369,15 @@
             .app-card { flex-direction: column; text-align: center; align-items: center; padding: 30px 20px; }
             .app-actions { justify-content: center; }
         }
+
+        /* Respect reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.001ms !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -261,16 +391,31 @@
     </div>
 
     <div class="apps-container">
-        
+
         <div class="app-card">
-            <img src="solo.swipe/appicon.png" alt="Solo.Swipe Icon" class="app-icon">
+            <img src="DUMP/appicon.png" alt="DUMP app icon" class="app-icon" width="80" height="80" loading="lazy">
+            <div class="app-info">
+                <h2 class="app-title">DUMP</h2>
+                <p class="app-desc">Your camera roll, unfiltered. Turn hundreds of photos into one share-ready Instagram carousel — collages, grids and seamless panoramas, exported at full original quality.</p>
+
+                <div class="app-actions">
+                    <a href="DUMP/index.html" class="btn btn-outline">Website</a>
+                    <a href="https://apps.apple.com/app/id6798248086" target="_blank" rel="noopener" class="btn btn-dump">
+                        App Store
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="app-card">
+            <img src="solo.swipe/appicon.png" alt="Solo.Swipe app icon" class="app-icon" width="80" height="80" loading="lazy">
             <div class="app-info">
                 <h2 class="app-title">Solo.Swipe</h2>
                 <p class="app-desc">Clean your gallery in seconds the fun way. A smart photo organizer that helps you free up storage with simple swipe gestures.</p>
-                
+
                 <div class="app-actions">
                     <a href="solo.swipe/index.html" class="btn btn-outline">Website</a>
-                    <a href="https://apps.apple.com/app/id6761368690" target="_blank" class="btn btn-primary">
+                    <a href="https://apps.apple.com/app/id6761368690" target="_blank" rel="noopener" class="btn btn-primary">
                         App Store
                     </a>
                 </div>
@@ -278,14 +423,14 @@
         </div>
 
         <div class="app-card">
-            <img src="solo.shots/appicon.png" alt="Solo.Shots Icon" class="app-icon">
+            <img src="solo.shots/appicon.png" alt="Solo.Shots app icon" class="app-icon" width="80" height="80" loading="lazy">
             <div class="app-info">
                 <h2 class="app-title">Solo.Shots</h2>
                 <p class="app-desc">One shot a day. A lifetime of progress. Document your journey with a smart ghost overlay, build your daily streak, and turn months of effort into cinematic timelapse videos.</p>
-                
+
                 <div class="app-actions">
                     <a href="solo.shots/index.html" class="btn btn-outline">Website</a>
-                    <a href="https://apps.apple.com/app/6762450478" target="_blank" class="btn btn-cyan">
+                    <a href="https://apps.apple.com/app/6762450478" target="_blank" rel="noopener" class="btn btn-cyan">
                         App Store
                     </a>
                 </div>
@@ -293,14 +438,14 @@
         </div>
 
         <div class="app-card">
-            <img src="solo.surya/appicon.png" alt="Solo.Surya Icon" class="app-icon">
+            <img src="solo.surya/appicon.png" alt="Solo.Surya app icon" class="app-icon" width="80" height="80" loading="lazy">
             <div class="app-info">
                 <h2 class="app-title">Solo.Surya</h2>
                 <p class="app-desc">Your sky. Your chart. Entirely on your device. An offline-first Vedic astrology app featuring Daily Dasha Pulse, precision sidereal charts, Astrocartography, and Panchang.</p>
-                
+
                 <div class="app-actions">
                     <a href="solo.surya/index.html" class="btn btn-outline">Website</a>
-                    <a href="https://apps.apple.com/app/id6764138745" target="_blank" class="btn btn-primary">
+                    <a href="https://apps.apple.com/app/id6764138745" target="_blank" rel="noopener" class="btn btn-primary">
                         App Store
                     </a>
                 </div>
@@ -308,14 +453,14 @@
         </div>
 
         <div class="app-card">
-            <img src="solora/appicon.png" alt="Solora Icon" class="app-icon">
+            <img src="solora/appicon.png" alt="Solora app icon" class="app-icon" width="80" height="80" loading="lazy">
             <div class="app-info">
                 <h2 class="app-title">Solora</h2>
                 <p class="app-desc">Your role-aware AI life planner. Organize tasks, habits, and projects around the roles you play — with on-device AI assistance, morning rituals, and smart recovery when plans fall apart.</p>
-                
+
                 <div class="app-actions">
                     <a href="solora/index.html" class="btn btn-outline">Website</a>
-                    <a href=https://apps.apple.com/app/id6778808618" target="_blank" class="btn btn-primary">
+                    <a href="https://apps.apple.com/app/id6778808618" target="_blank" rel="noopener" class="btn btn-primary">
                         App Store
                     </a>
                 </div>
@@ -325,12 +470,14 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 Gul Eda Aydemir. All rights reserved.</p>
+        <p>&copy; <span id="yr">2026</span> Gul Eda Aydemir. All rights reserved.</p>
         <div class="social-links">
-            <a href="https://instagram.com/solo.stasera" target="_blank">Instagram</a>
+            <a href="https://instagram.com/solo.stasera" target="_blank" rel="noopener">Instagram</a>
             <a href="mailto:solostaseraofficial@gmail.com">Get in Touch</a>
         </div>
     </footer>
+
+    <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 
 </body>
 </html>
