@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Solo.Swipe sitemap
+  Base URL: https://guledaaydemir.github.io/solo.swipe/
+  Submit at: https://search.google.com/search-console  and  https://www.bing.com/webmasters
+  Update <lastmod> whenever a page's content meaningfully changes.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://guledaaydemir.github.io/solo.swipe/raccoon_hero.jpg</image:loc>
+      <image:title>Detective Raccoon, the Solo.Swipe mascot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://guledaaydemir.github.io/solo.swipe/1.jpg</image:loc>
+      <image:title>Solo.Swipe iPhone photo cleaner app screen</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://guledaaydemir.github.io/solo.swipe/2.jpg</image:loc>
+      <image:title>Solo.Swipe swipe-based photo review on iPhone</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://guledaaydemir.github.io/solo.swipe/3.jpg</image:loc>
+      <image:title>Solo.Swipe photo cleanup categories on iPhone</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://guledaaydemir.github.io/solo.swipe/4.jpg</image:loc>
+      <image:title>Solo.Swipe photo library cleaning screen on iPhone</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://guledaaydemir.github.io/solo.swipe/5.jpg</image:loc>
+      <image:title>Solo.Swipe cleaning progress screen on iPhone</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://guledaaydemir.github.io/solo.swipe/6.jpg</image:loc>
+      <image:title>Solo.Swipe photo organizer screen on iPhone</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://guledaaydemir.github.io/solo.swipe/7.jpg</image:loc>
+      <image:title>Solo.Swipe iPhone storage cleanup screen</image:title>
+    </image:image>
+  </url>
+
+  <!-- App information / entity page -->
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/about.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://guledaaydemir.github.io/solo.swipe/appicon.png</image:loc>
+      <image:title>Solo.Swipe app icon</image:title>
+    </image:image>
+  </url>
+
+  <!-- Guides hub -->
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Guide: cleaning a large library -->
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/how-to-clean-iphone-photo-library.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Guide: freeing storage -->
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/free-up-iphone-storage-photos.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Guide: blurry and duplicate photos -->
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/find-blurry-and-duplicate-photos-iphone.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy policy -->
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/privacy_policy.html</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

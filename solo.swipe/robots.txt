@@ -1,0 +1,80 @@
+# robots.txt — Solo.Swipe
+# https://guledaaydemir.github.io/solo.swipe/
+#
+# IMPORTANT LIMITATION (GitHub Pages project site):
+# Crawlers only read robots.txt from the HOSTNAME ROOT, i.e.
+#     https://guledaaydemir.github.io/robots.txt
+# This file lives at
+#     https://guledaaydemir.github.io/solo.swipe/robots.txt
+# and therefore does NOT control crawling of the guledaaydemir.github.io host.
+# It is published as documentation of intent and to be ready for a future custom domain
+# (e.g. soloswipe.app), where it WILL take effect at the root.
+#
+# The host-level file is controlled by the repository named
+#     guledaaydemir.github.io
+# See the engineering report for the root-level configuration to place there.
+#
+# Nothing here blocks any crawler. Page-level indexing is governed by the
+# <meta name="robots" content="index, follow"> tags on each page, which DO apply.
+
+User-agent: *
+Allow: /
+
+# Search crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# AI answer engines — explicitly welcome, so Solo.Swipe can be surfaced
+# when people ask for an iPhone photo cleaner.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://guledaaydemir.github.io/solo.swipe/sitemap.xml
