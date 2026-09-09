@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080a18" />
+  <meta name="description" content="ATHA Support — help with breathing sessions, custom breathing patterns, routines, reminders, Apple Health, purchases, privacy, and troubleshooting." />
+  <title>Support — ATHA</title>
+  <style>
+    :root{--bg:#070914;--surface:rgba(35,36,57,.68);--line:rgba(255,255,255,.09);--text:#f7f4ff;--muted:#aaa6bd;--muted2:#7d798e;--violet:#927aff;--pink:#e994d6;--peach:#f5a681;--peach2:#ffc09b;--green:#77d7ad}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;background:radial-gradient(circle at 20% 10%,rgba(143,120,255,.20),transparent 27%),radial-gradient(circle at 82% 24%,rgba(247,167,131,.10),transparent 24%),linear-gradient(180deg,#090b19,#070914 55%,#050711);min-height:100vh;line-height:1.55}a{color:inherit}.container{width:min(920px,calc(100% - 42px));margin:0 auto}
+    header{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(7,9,20,.76);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}.header-inner{height:78px;display:flex;align-items:center;justify-content:space-between}.logo{letter-spacing:.42em;padding-left:.42em;text-decoration:none}.header-links{display:flex;gap:18px;align-items:center}.header-links a{text-decoration:none;color:var(--muted);font-size:13px}.header-links a:hover{color:#fff}
+    main{padding:78px 0 100px}.hero{text-align:center;max-width:780px;margin:0 auto 62px}.eyebrow{font-size:12px;color:var(--peach);text-transform:uppercase;letter-spacing:.24em}.hero h1{font-size:clamp(48px,8vw,82px);font-weight:360;letter-spacing:-.045em;line-height:1.0;margin:16px 0 18px}.gradient{background:linear-gradient(105deg,#fff,#f6b49c 40%,#e89ad3 66%,#a48aff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:18px;color:var(--muted);max-width:620px;margin:0 auto}
+    .aura{width:130px;height:130px;margin:36px auto 6px;border-radius:50%;background:radial-gradient(circle,rgba(189,140,255,.14),rgba(15,14,35,.23) 54%);position:relative;filter:drop-shadow(0 0 24px rgba(239,143,213,.18))}.aura:before,.aura:after{content:"";position:absolute;inset:12px;border:2px solid rgba(239,143,213,.72);border-radius:47% 53% 49% 51%;box-shadow:0 0 10px rgba(239,143,213,.55);animation:m 10s linear infinite}.aura:after{inset:18px 9px 13px 17px;border-color:rgba(159,126,255,.75);animation-direction:reverse;animation-duration:13s}@keyframes m{0%{transform:rotate(0deg);border-radius:47% 53% 49% 51%}50%{transform:rotate(180deg);border-radius:54% 46% 56% 44%}100%{transform:rotate(360deg);border-radius:47% 53% 49% 51%}}
+    .quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:58px}.quick-card{text-decoration:none;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.03));padding:22px;transition:transform .25s ease,border-color .25s ease}.quick-card:hover{transform:translateY(-5px);border-color:rgba(239,143,213,.25)}.quick-icon{width:46px;height:46px;border-radius:16px;background:linear-gradient(145deg,rgba(143,120,255,.15),rgba(247,167,131,.12));display:grid;place-items:center;color:var(--peach2);font-size:20px;margin-bottom:26px}.quick-card b{font-size:17px}.quick-card span{display:block;color:var(--muted);font-size:13px;margin-top:6px}
+    .section-title{font-size:31px;font-weight:520;margin:58px 0 22px}.faq{display:grid;gap:12px}details{border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.045);overflow:hidden}summary{list-style:none;cursor:pointer;padding:21px 24px;font-weight:560;display:flex;align-items:center;justify-content:space-between;gap:16px}summary::-webkit-details-marker{display:none}summary:after{content:"+";width:30px;height:30px;border-radius:50%;background:rgba(143,120,255,.09);display:grid;place-items:center;color:#cbbcff;font-weight:400;font-size:20px}details[open] summary:after{content:"−"}.answer{padding:0 24px 22px;color:var(--muted);font-size:15px}.answer p{margin:0 0 12px}.answer ol,.answer ul{margin:10px 0;padding-left:20px}.answer li{margin:7px 0}.answer a{color:var(--peach2)}
+    .support-card{margin-top:64px;border:1px solid rgba(189,140,255,.16);border-radius:30px;padding:34px;background:linear-gradient(135deg,rgba(143,120,255,.11),rgba(247,167,131,.06));display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px}.support-card h2{font-size:30px;margin:0 0 8px}.support-card p{margin:0;color:var(--muted)}.email-btn{display:inline-flex;text-decoration:none;color:#0d0b17;background:linear-gradient(110deg,var(--peach2),var(--peach),#eba2bd);padding:13px 20px;border-radius:18px;font-weight:650;white-space:nowrap}
+    .privacy-note{margin-top:28px;text-align:center;color:var(--muted2);font-size:13px}.privacy-note a{color:#cbbcff}
+    footer{border-top:1px solid var(--line);padding:30px 0 44px;color:var(--muted2);font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-links{display:flex;gap:18px}.footer-links a{text-decoration:none;color:var(--muted)}
+    @media(max-width:720px){.container{width:min(100% - 30px,920px)}.header-links a:not(:last-child){display:none}.quick-grid{grid-template-columns:1fr}.support-card{grid-template-columns:1fr}.email-btn{justify-self:start}.hero p{font-size:16px}main{padding-top:52px}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+<header><div class="container header-inner"><a class="logo" href="index.html">ATHA</a><div class="header-links"><a href="index.html">Home</a><a href="privacypolicy.html">Privacy</a><a href="mailto:guledaaydemir@gmail.com">Contact</a></div></div></header>
+<main class="container">
+  <div class="hero"><div class="eyebrow">ATHA Support</div><div class="aura" aria-hidden="true"></div><h1>How can we help you<br><span class="gradient">breathe easier?</span></h1><p>Find answers about sessions, custom breathing, routines, reminders, Apple Health, privacy, and common troubleshooting.</p></div>
+
+  <div class="quick-grid">
+    <a class="quick-card" href="#health"><div class="quick-icon">♡</div><b>Apple Health</b><span>Connection, Mindful Sessions, and reflections.</span></a>
+    <a class="quick-card" href="#sessions"><div class="quick-icon">◎</div><b>Breathing sessions</b><span>Custom patterns, visuals, and session behavior.</span></a>
+    <a class="quick-card" href="#data"><div class="quick-icon">⌁</div><b>Privacy & data</b><span>On-device storage, deletion, and no ATHA cloud.</span></a>
+  </div>
+
+  <h2 class="section-title" id="health">Apple Health</h2>
+  <div class="faq">
+    <details><summary>How do I connect ATHA to Apple Health?</summary><div class="answer"><ol><li>Open ATHA Settings.</li><li>Find the <strong>Apple Health</strong> section.</li><li>Enable <strong>Save sessions</strong> if you want completed sessions saved as Mindful Sessions.</li><li>Enable <strong>Share reflections</strong> if you want supported reflections written as State of Mind entries.</li><li>Approve the requested Health permissions in the iOS authorization sheet.</li></ol><p>When the required permissions are granted, ATHA can show the Apple Health status as connected.</p></div></details>
+    <details><summary>Why does Apple Health show “Not connected”?</summary><div class="answer"><p>Check that at least one ATHA Health feature is enabled and that iOS permission was granted. You can review permissions from the Health app or iOS Settings. If a permission was previously denied, turning the ATHA switch on again may not show a new system prompt; update the permission from Apple's Health access controls.</p></div></details>
+    <details><summary>What does ATHA write to Apple Health?</summary><div class="answer"><p>When enabled, ATHA can write completed breathing session duration as <strong>Mindful Sessions</strong>. On supported iOS versions, reflections you explicitly choose to share can be written as <strong>State of Mind</strong> entries.</p></div></details>
+    <details><summary>Can I use ATHA without Apple Health?</summary><div class="answer"><p>Yes. Apple Health integration is optional. Core breathing, custom sessions, routines, visuals, garden, and local insights do not require Health access.</p></div></details>
+  </div>
+
+  <h2 class="section-title" id="sessions">Sessions & routines</h2>
+  <div class="faq">
+    <details><summary>How do I create a custom breathing pattern?</summary><div class="answer"><p>Open Explore or Practices, choose <strong>Create your own</strong>, name your pattern, then set the duration of Inhale, Hold in, Exhale, and Hold out. A phase can be set to zero if you do not want to use it. Save the pattern when it feels right.</p></div></details>
+    <details><summary>What happens during a breathing session?</summary><div class="answer"><p>ATHA follows the timing of the selected breathing technique and uses the chosen ambient visual to communicate inhale, hold, exhale, and hold-out states. Depending on your settings, the session may also use haptics and sound cues.</p></div></details>
+    <details><summary>How do routines work?</summary><div class="answer"><p>A routine helps you return to a practice at a chosen time. Create a routine, select a breathing practice, choose its schedule, and enable reminders if you want a notification.</p></div></details>
+    <details><summary>Why am I not receiving reminders?</summary><div class="answer"><ul><li>Confirm ATHA has notification permission in iOS Settings.</li><li>Check that the relevant reminder or routine is enabled in ATHA.</li><li>Verify the scheduled time and your device Focus / notification settings.</li><li>If you recently changed time zone, reopen ATHA so local schedules can refresh.</li></ul></div></details>
+    <details><summary>What is the Garden?</summary><div class="answer"><p>Garden is a visual metaphor for your practice history. As your cumulative breathing time grows, the scene can progress from a seed toward a sprout, plant, tree, garden, and forest. It does not claim that real plants are being grown or that breathing has a direct environmental effect.</p></div></details>
+  </div>
+
+  <h2 class="section-title">Insights & progress</h2>
+  <div class="faq">
+    <details><summary>What statistics can ATHA show?</summary><div class="answer"><p>Depending on available history, ATHA can show mindful minutes, session count, active days, current and longest streaks, average session duration, completion rate, favorite practice, practice-over-time trends, records, calendar history, and personal patterns such as preferred time or duration.</p></div></details>
+    <details><summary>What does “most effective breaths” mean?</summary><div class="answer"><p>It is based on your own post-session feedback — for example, how often you reported feeling better after a particular practice. It is a personal history insight, not a medical measurement or treatment claim.</p></div></details>
+    <details><summary>Why are some insights unavailable?</summary><div class="answer"><p>Some patterns need enough completed sessions or reflection data before they become meaningful. ATHA may wait until there is sufficient local history instead of showing a misleading conclusion from only one or two sessions.</p></div></details>
+  </div>
+
+  <h2 class="section-title" id="data">Privacy & data</h2>
+  <div class="faq">
+    <details><summary>Does ATHA have a cloud account?</summary><div class="answer"><p>ATHA is designed without a developer-controlled cloud backend for your breathing history. Core app data stays on your device. Your operating system may still include app data in device backups depending on your Apple / iCloud settings.</p></div></details>
+    <details><summary>What happens if I delete the app?</summary><div class="answer"><p>Locally stored ATHA data may be removed when the app is deleted, subject to your device backup and restoration settings. Apple Health entries are separate from ATHA's local storage and may remain in the Health app until you manage them there.</p></div></details>
+    <details><summary>Does ATHA sell my health or breathing data?</summary><div class="answer"><p>No. ATHA does not sell, rent, or trade your breathing history, reflections, or Apple Health data for advertising or marketing.</p></div></details>
+    <details><summary>Where can I read the full Privacy Policy?</summary><div class="answer"><p><a href="privacypolicy.html">Open ATHA's Privacy Policy →</a></p></div></details>
+  </div>
+
+  <h2 class="section-title">Purchases</h2>
+  <div class="faq">
+    <details><summary>How do I manage or cancel a subscription?</summary><div class="answer"><p>Subscriptions are managed by Apple. On iPhone, open <strong>Settings → [your name] → Subscriptions</strong>, select ATHA, and use Apple's available subscription controls.</p></div></details>
+    <details><summary>How do refunds work?</summary><div class="answer"><p>App Store payments and refunds are handled by Apple. Use Apple's “Report a Problem” service or the purchase support options associated with your Apple ID.</p></div></details>
+  </div>
+
+  <div class="support-card"><div><h2>Still need help?</h2><p>Send a short description of the issue, your iOS version, and what you expected to happen. Please do not send sensitive health information unless it is genuinely necessary to explain the problem.</p></div><a class="email-btn" href="mailto:guledaaydemir@gmail.com?subject=ATHA%20Support">Email support</a></div>
+  <div class="privacy-note">Your support email is handled separately from ATHA's on-device app data. Read the <a href="privacypolicy.html">Privacy Policy</a>.</div>
+</main>
+<footer><div class="container footer-inner"><span>© 2026 ATHA · Gül Eda Aydemir</span><div class="footer-links"><a href="index.html">Home</a><a href="privacypolicy.html">Privacy</a><a href="support.html">Support</a></div></div></footer>
+</body>
+</html>
