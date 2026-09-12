@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- ==========================================================================
+     ATHA — GUIDE TEMPLATE
+     Do not link to this file. Copy it to guides/<slug>.html and edit.
+
+     AUTHORING CHECKLIST
+     1. Copy this file to guides/<slug>.html — filename must equal the manifest slug.
+     2. Replace every {{TOKEN}} below.
+     3. Add or update the matching entry in content/guides.json and set
+        "status": "published" so the card becomes clickable site-wide.
+     4. Keep the answer block first: it is what assistants and search engines
+        quote. Answer the question in 2–4 sentences before any preamble.
+     5. Use <h2> for every major section — the TOC builds itself from them.
+     6. Keep the FAQ questions phrased exactly as a person would type or ask
+        them, and mirror each one in the FAQPage JSON-LD below.
+     7. Never claim medical treatment, diagnosis or cure. Keep the disclaimer.
+
+     TOKENS
+     {{SLUG}}            cant-sleep-at-night
+     {{TITLE}}           I can't sleep at night — what should I do?
+     {{META_DESCRIPTION}} 150–160 characters, answers the query directly.
+     {{ANSWER}}          The short answer, 2–4 sentences.
+     {{CATEGORY_LABEL}}  Sleep
+     {{UPDATED}}         2026-09-12
+     ========================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080a18" />
+
+  <title>{{TITLE}} — ATHA</title>
+  <meta name="description" content="{{META_DESCRIPTION}}" />
+  <link rel="canonical" href="https://guledaaydemir.github.io/atha/guides/{{SLUG}}.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="ATHA" />
+  <meta property="og:title" content="{{TITLE}}" />
+  <meta property="og:description" content="{{META_DESCRIPTION}}" />
+  <meta property="og:url" content="https://guledaaydemir.github.io/atha/guides/{{SLUG}}.html" />
+  <meta property="article:published_time" content="{{UPDATED}}" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="../assets/css/atha.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "{{TITLE}}",
+        "description": "{{META_DESCRIPTION}}",
+        "url": "https://guledaaydemir.github.io/atha/guides/{{SLUG}}.html",
+        "datePublished": "{{UPDATED}}",
+        "dateModified": "{{UPDATED}}",
+        "inLanguage": "en",
+        "author": { "@type": "Person", "name": "Gül Eda Aydemir", "url": "https://guledaaydemir.github.io/" },
+        "publisher": { "@type": "Organization", "name": "ATHA", "url": "https://guledaaydemir.github.io/atha/" },
+        "about": "Breathing techniques for {{CATEGORY_LABEL}}",
+        "mainEntityOfPage": "https://guledaaydemir.github.io/atha/guides/{{SLUG}}.html"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "ATHA",   "item": "https://guledaaydemir.github.io/atha/" },
+          { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://guledaaydemir.github.io/atha/guides/" },
+          { "@type": "ListItem", "position": 3, "name": "{{TITLE}}" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "{{FAQ_1_QUESTION}}",
+            "acceptedAnswer": { "@type": "Answer", "text": "{{FAQ_1_ANSWER}}" }
+          },
+          {
+            "@type": "Question",
+            "name": "{{FAQ_2_QUESTION}}",
+            "acceptedAnswer": { "@type": "Answer", "text": "{{FAQ_2_ANSWER}}" }
+          },
+          {
+            "@type": "Question",
+            "name": "{{FAQ_3_QUESTION}}",
+            "acceptedAnswer": { "@type": "Answer", "text": "{{FAQ_3_ANSWER}}" }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<div data-atha-header></div>
+
+<main id="atha-main" class="atha-main atha-container--text">
+
+  <ol class="atha-breadcrumb">
+    <li><a href="../index.html">ATHA</a></li>
+    <li><a href="index.html">Guides</a></li>
+    <li aria-current="page">{{CATEGORY_LABEL}}</li>
+  </ol>
+
+  <article class="atha-article" data-atha-guide="{{SLUG}}" data-collection="guides">
+
+    <header class="atha-article__head">
+      <h1 class="atha-article__title">{{TITLE}}</h1>
+      <!-- Populated from content/guides.json by guide.js -->
+      <div class="atha-article__meta" data-atha-meta></div>
+    </header>
+
+    <!-- Answer first. This is the block assistants quote. -->
+    <div class="atha-answer">
+      <p class="atha-answer__label">Short answer</p>
+      <p>{{ANSWER}}</p>
+    </div>
+
+    <!-- Auto-generated from h2 headings; hides itself under 3 sections. -->
+    <div class="atha-toc" data-atha-toc data-min="3" hidden></div>
+
+    <div class="atha-article__body">
+
+      <h2>{{SECTION_1_HEADING}}</h2>
+      <p>{{SECTION_1_BODY}}</p>
+
+      <h2>{{SECTION_2_HEADING}}</h2>
+      <p>{{SECTION_2_INTRO}}</p>
+
+      <!-- Step pattern — use for anything the reader should do in order. -->
+      <ol class="atha-steps">
+        <li><strong>{{STEP_1_TITLE}}</strong>{{STEP_1_BODY}}</li>
+        <li><strong>{{STEP_2_TITLE}}</strong>{{STEP_2_BODY}}</li>
+        <li><strong>{{STEP_3_TITLE}}</strong>{{STEP_3_BODY}}</li>
+      </ol>
+
+      <!-- Inline CTA — place after the reader has received real value. -->
+      <div class="atha-inlinecta">
+        <div>
+          <p class="atha-inlinecta__title">Practise this in ATHA</p>
+          <p>{{INLINE_CTA_TEXT}}</p>
+        </div>
+        <a class="atha-btn atha-btn--primary" data-atha-store="guide-{{SLUG}}">Get ATHA</a>
+      </div>
+
+      <h2>{{SECTION_3_HEADING}}</h2>
+      <p>{{SECTION_3_INTRO}}</p>
+
+      <!-- Pattern table — use when naming specific breathing timings. -->
+      <table class="atha-pattern">
+        <caption class="atha-visually-hidden">Breathing pattern timings</caption>
+        <thead>
+          <tr><th scope="col">Pattern</th><th scope="col">Inhale</th><th scope="col">Hold</th><th scope="col">Exhale</th><th scope="col">Hold out</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>{{PATTERN_1_NAME}}</td><td>{{P1_IN}}</td><td>{{P1_HOLD}}</td><td>{{P1_OUT}}</td><td>{{P1_HOLDOUT}}</td></tr>
+          <tr><td>{{PATTERN_2_NAME}}</td><td>{{P2_IN}}</td><td>{{P2_HOLD}}</td><td>{{P2_OUT}}</td><td>{{P2_HOLDOUT}}</td></tr>
+        </tbody>
+      </table>
+
+      <h2>{{SECTION_4_HEADING}}</h2>
+      <p>{{SECTION_4_BODY}}</p>
+
+      <h2>Common questions</h2>
+      <div class="atha-faq">
+        <details>
+          <summary>{{FAQ_1_QUESTION}}</summary>
+          <div class="atha-faq__answer"><p>{{FAQ_1_ANSWER}}</p></div>
+        </details>
+        <details>
+          <summary>{{FAQ_2_QUESTION}}</summary>
+          <div class="atha-faq__answer"><p>{{FAQ_2_ANSWER}}</p></div>
+        </details>
+        <details>
+          <summary>{{FAQ_3_QUESTION}}</summary>
+          <div class="atha-faq__answer"><p>{{FAQ_3_ANSWER}}</p></div>
+        </details>
+      </div>
+
+      <p class="atha-disclaimer">
+        ATHA is a breathing and mindfulness app, not a medical device or a substitute for
+        professional care. If a symptom is persistent, severe or distressing, speak to a
+        qualified healthcare professional.
+      </p>
+    </div>
+
+    <hr class="atha-aurora-rule" />
+
+    <!-- Related guides, same category first. Hides itself when empty. -->
+    <section aria-labelledby="atha-related-heading">
+      <h2 id="atha-related-heading">Keep reading</h2>
+      <div data-atha-related data-limit="3"></div>
+    </section>
+
+  </article>
+
+  <section class="atha-panel atha-ctaband">
+    <div class="atha-aura atha-aura--sm" style="margin:0 auto var(--atha-s-5)" aria-hidden="true"></div>
+    <h2>ATHA means now.</h2>
+    <p>{{CLOSING_CTA_TEXT}}</p>
+    <a class="atha-btn atha-btn--primary" data-atha-store="guide-{{SLUG}}-footer">Download on the App Store</a>
+  </section>
+
+  <noscript>
+    <div class="atha-note">
+      <p>This guide is fully readable without JavaScript. More from ATHA:</p>
+      <p>
+        <a href="index.html">All guides</a> ·
+        <a href="../meditations/">Meditations</a> ·
+        <a href="../features/">Features</a> ·
+        <a href="../index.html">Home</a>
+      </p>
+    </div>
+  </noscript>
+
+</main>
+
+<div data-atha-footer></div>
+
+<script src="../assets/js/atha.js" defer></script>
+<script src="../assets/js/content.js" defer></script>
+<script src="../assets/js/guide.js" defer></script>
+</body>
+</html>

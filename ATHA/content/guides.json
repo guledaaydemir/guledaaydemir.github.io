@@ -1,0 +1,104 @@
+{
+  "collection": "guides",
+  "basePath": "guides/",
+  "title": "Guides",
+  "description": "Practical answers for sleep, stress, focus and everyday calm.",
+  "categories": [
+    { "id": "sleep",   "label": "Sleep",           "description": "Falling asleep, waking at night, winding down." },
+    { "id": "stress",  "label": "Stress & anxiety","description": "Calming down quickly and staying steady." },
+    { "id": "focus",   "label": "Focus & energy",  "description": "Attention, clarity and energy without caffeine." },
+    { "id": "habits",  "label": "Life upgrade",    "description": "Small daily practices that hold over time." },
+    { "id": "basics",  "label": "Breathing basics","description": "How breathing techniques actually work." }
+  ],
+  "items": [
+    {
+      "slug": "cant-sleep-at-night",
+      "title": "I can't sleep at night — what should I do?",
+      "summary": "A step-by-step wind-down for when your body is tired but your mind will not stop.",
+      "category": "sleep",
+      "tags": ["insomnia", "bedtime", "racing thoughts", "can't sleep"],
+      "intent": "I can't sleep, what should I do",
+      "readMinutes": 7,
+      "updated": "2026-09-12",
+      "featured": true,
+      "order": 1,
+      "status": "published"
+    },
+    {
+      "slug": "breathing-to-fall-asleep-fast",
+      "title": "Breathing techniques to fall asleep faster",
+      "summary": "Which patterns actually help, why the exhale does the work, and how long to practise.",
+      "category": "sleep",
+      "tags": ["4-7-8", "exhale", "sleep", "breathing exercise"],
+      "intent": "breathing exercise to fall asleep",
+      "readMinutes": 6,
+      "updated": "2026-09-12",
+      "featured": true,
+      "order": 2,
+      "status": "published"
+    },
+    {
+      "slug": "4-7-8-breathing-for-sleep",
+      "title": "4-7-8 breathing for sleep: how to do it properly",
+      "summary": "The exact count, how many cycles, what it feels like, and the mistakes that stop it working.",
+      "category": "sleep",
+      "tags": ["4-7-8", "technique", "sleep", "how to"],
+      "intent": "how to do 4-7-8 breathing",
+      "readMinutes": 6,
+      "updated": "2026-09-12",
+      "featured": true,
+      "order": 3,
+      "status": "published"
+    },
+    {
+      "slug": "racing-thoughts-at-bedtime",
+      "title": "How to stop racing thoughts at bedtime",
+      "summary": "Why your brain starts working the moment you lie down, and how to give it something else to do.",
+      "category": "sleep",
+      "tags": ["racing thoughts", "overthinking", "bedtime", "anxiety"],
+      "intent": "how to stop overthinking at night",
+      "readMinutes": 6,
+      "updated": "2026-09-12",
+      "order": 4,
+      "status": "published"
+    },
+    {
+      "slug": "night-time-wind-down-routine",
+      "title": "A wind-down routine that takes ten minutes",
+      "summary": "The shortest evening routine that still works — and why long ones get abandoned.",
+      "category": "sleep",
+      "tags": ["routine", "evening", "habits", "sleep hygiene"],
+      "intent": "bedtime routine to sleep better",
+      "readMinutes": 6,
+      "updated": "2026-09-12",
+      "order": 5,
+      "status": "published"
+    },
+    {
+      "slug": "calm-down-fast",
+      "title": "How to calm down fast when anxiety spikes",
+      "summary": "What to do in the first sixty seconds, and what to do after the spike passes.",
+      "category": "stress",
+      "tags": ["anxiety", "panic", "quick relief"],
+      "intent": "how to calm down quickly",
+      "readMinutes": 5,
+      "updated": "2026-09-12",
+      "featured": true,
+      "order": 10,
+      "status": "draft"
+    },
+    {
+      "slug": "improve-my-life-daily-habits",
+      "title": "I want to improve my life — where do I actually start?",
+      "summary": "Why a 60-second daily practice outperforms an ambitious routine you abandon in a week.",
+      "category": "habits",
+      "tags": ["habits", "routine", "consistency"],
+      "intent": "I want to improve my life",
+      "readMinutes": 7,
+      "updated": "2026-09-12",
+      "featured": true,
+      "order": 20,
+      "status": "draft"
+    }
+  ]
+}

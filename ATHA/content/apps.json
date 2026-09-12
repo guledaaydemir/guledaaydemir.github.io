@@ -1,0 +1,95 @@
+{
+  "collection": "apps",
+  "basePath": "",
+  "title": "Other apps from the developer",
+  "description": "Independent iOS apps built by Gül Eda Aydemir.",
+  "fallbackHref": "https://guledaaydemir.github.io/",
+  "categories": [
+    { "id": "photo",        "label": "Photo & video" },
+    { "id": "productivity", "label": "Productivity" },
+    { "id": "play",         "label": "Play" },
+    { "id": "wellbeing",    "label": "Wellbeing" }
+  ],
+  "items": [
+    {
+      "slug": "solo-shots",
+      "title": "SOLO.SHOTS",
+      "summary": "Take one photo a day, watch a year become a timelapse. Offline-first and private.",
+      "category": "photo",
+      "icon": "◉",
+      "tags": ["progress", "timelapse", "daily"],
+      "order": 1,
+      "featured": true,
+      "external": true,
+      "href": ""
+    },
+    {
+      "slug": "solo-shoots",
+      "title": "Solo.Shoots",
+      "summary": "Shoot yourself properly. Your Apple Watch becomes the remote, the timer and the viewfinder.",
+      "category": "photo",
+      "icon": "◎",
+      "tags": ["watch", "self-portrait", "camera"],
+      "order": 2,
+      "featured": true,
+      "external": true,
+      "href": ""
+    },
+    {
+      "slug": "solo-swipe",
+      "title": "Solo.Swipe",
+      "summary": "Clear the camera roll one swipe at a time. Reclaim the storage you keep ignoring.",
+      "category": "photo",
+      "icon": "⌁",
+      "tags": ["cleanup", "storage", "photos"],
+      "order": 3,
+      "external": true,
+      "href": ""
+    },
+    {
+      "slug": "dump",
+      "title": "DUMP",
+      "summary": "Turn photos and video into Instagram carousels and collages without opening a design tool.",
+      "category": "photo",
+      "icon": "▣",
+      "tags": ["carousel", "collage", "instagram"],
+      "order": 4,
+      "external": true,
+      "href": ""
+    },
+    {
+      "slug": "solora",
+      "title": "Solora",
+      "summary": "A productivity app that adapts to the role you're in, instead of one rigid system for every part of your life.",
+      "category": "productivity",
+      "icon": "◐",
+      "tags": ["tasks", "focus", "routine"],
+      "order": 5,
+      "featured": true,
+      "external": true,
+      "href": ""
+    },
+    {
+      "slug": "solo-surya",
+      "title": "Solo.Surya",
+      "summary": "Vedic astrology charts and daily readings, calculated on device with no connection required.",
+      "category": "wellbeing",
+      "icon": "✦",
+      "tags": ["astrology", "offline", "daily"],
+      "order": 6,
+      "external": true,
+      "href": ""
+    },
+    {
+      "slug": "geozaza",
+      "title": "GeoZaza",
+      "summary": "A geography quiz worth playing twice. Solo runs, live duels and online matches.",
+      "category": "play",
+      "icon": "◍",
+      "tags": ["quiz", "geography", "multiplayer"],
+      "order": 7,
+      "external": true,
+      "href": ""
+    }
+  ]
+}

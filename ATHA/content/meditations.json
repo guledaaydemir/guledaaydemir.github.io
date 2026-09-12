@@ -1,0 +1,93 @@
+{
+  "collection": "meditations",
+  "basePath": "meditations/",
+  "title": "Meditations",
+  "description": "Every breathing practice in ATHA — what it does and when to reach for it.",
+  "categories": [
+    { "id": "calm",    "label": "Calm",    "description": "Settle the nervous system." },
+    { "id": "sleep",   "label": "Sleep",   "description": "Prepare the body for rest." },
+    { "id": "focus",   "label": "Focus",   "description": "Steady attention." },
+    { "id": "energy",  "label": "Energy",  "description": "Lift alertness." },
+    { "id": "custom",  "label": "Custom",  "description": "Patterns you build yourself." }
+  ],
+  "items": [
+    {
+      "slug": "box-breathing",
+      "title": "Box breathing",
+      "summary": "Equal inhale, hold, exhale and hold-out. Steadies the system without making you drowsy.",
+      "category": "focus",
+      "icon": "▢",
+      "tags": ["4-4-4-4", "focus", "steady"],
+      "intent": "box breathing how to",
+      "pattern": { "inhale": 4, "holdIn": 4, "exhale": 4, "holdOut": 4 },
+      "visual": "Box",
+      "tier": "free",
+      "order": 1,
+      "updated": "2026-09-12",
+      "featured": true,
+      "status": "draft"
+    },
+    {
+      "slug": "4-7-8-breathing",
+      "title": "4-7-8 breathing",
+      "summary": "A long, slow exhale that helps the body move toward rest. The classic pre-sleep pattern.",
+      "category": "sleep",
+      "icon": "☾",
+      "tags": ["sleep", "exhale", "wind-down"],
+      "intent": "4-7-8 breathing for sleep",
+      "pattern": { "inhale": 4, "holdIn": 7, "exhale": 8, "holdOut": 0 },
+      "visual": "Aurora",
+      "tier": "free",
+      "order": 2,
+      "updated": "2026-09-12",
+      "featured": true,
+      "status": "draft"
+    },
+    {
+      "slug": "calm-breathing",
+      "title": "Calm breathing",
+      "summary": "A gentle extended exhale for everyday settling. Nothing to count, nothing to achieve.",
+      "category": "calm",
+      "icon": "◎",
+      "tags": ["calm", "everyday", "beginner"],
+      "intent": "simple breathing exercise to relax",
+      "pattern": { "inhale": 4, "holdIn": 0, "exhale": 6, "holdOut": 0 },
+      "visual": "Orb",
+      "tier": "free",
+      "order": 3,
+      "updated": "2026-09-12",
+      "featured": true,
+      "status": "draft"
+    },
+    {
+      "slug": "energizing-breath",
+      "title": "Energizing breath",
+      "summary": "A brighter rhythm with a shorter exhale, for the afternoon dip instead of another coffee.",
+      "category": "energy",
+      "icon": "✧",
+      "tags": ["energy", "morning", "alertness"],
+      "intent": "breathing for energy without caffeine",
+      "pattern": { "inhale": 4, "holdIn": 2, "exhale": 3, "holdOut": 0 },
+      "visual": "Particle",
+      "tier": "free",
+      "order": 4,
+      "updated": "2026-09-12",
+      "status": "draft"
+    },
+    {
+      "slug": "custom-patterns",
+      "title": "Build your own pattern",
+      "summary": "Set inhale, hold, exhale and hold-out yourself. Any phase can be zero if you do not want it.",
+      "category": "custom",
+      "icon": "⌇",
+      "tags": ["custom", "personal"],
+      "intent": "create custom breathing pattern app",
+      "pattern": null,
+      "visual": "Any",
+      "tier": "free",
+      "order": 5,
+      "updated": "2026-09-12",
+      "status": "draft"
+    }
+  ]
+}

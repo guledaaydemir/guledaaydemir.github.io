@@ -1,0 +1,107 @@
+{
+  "collection": "features",
+  "basePath": "features/",
+  "title": "Features",
+  "description": "What ATHA does, and what it deliberately does not do.",
+  "categories": [
+    { "id": "practice",  "label": "Practice" },
+    { "id": "progress",  "label": "Progress" },
+    { "id": "platform",  "label": "Apple platform" },
+    { "id": "privacy",   "label": "Privacy" }
+  ],
+  "items": [
+    {
+      "slug": "breathing-sessions",
+      "title": "Guided breathing sessions",
+      "summary": "Inhale, hold, exhale and hold-out guided by ambient visuals, haptics and sound.",
+      "category": "practice",
+      "icon": "◎",
+      "tier": "free",
+      "order": 1,
+      "href": "meditations/"
+    },
+    {
+      "slug": "custom-patterns",
+      "title": "Custom breathing patterns",
+      "summary": "Build your own timing. Any phase can be set to zero if you do not want it.",
+      "category": "practice",
+      "icon": "⌇",
+      "tier": "free",
+      "order": 2
+    },
+    {
+      "slug": "ambient-visuals",
+      "title": "Ambient breathing visuals",
+      "summary": "Orb, aurora, liquid, flower, ripple, wave, particle and glow — all driven by the same breathing state.",
+      "category": "practice",
+      "icon": "✦",
+      "tier": "premium",
+      "order": 3
+    },
+    {
+      "slug": "routines-reminders",
+      "title": "Routines and reminders",
+      "summary": "Schedule a practice and let a local reminder bring you back to it.",
+      "category": "practice",
+      "icon": "◔",
+      "tier": "free",
+      "order": 4
+    },
+    {
+      "slug": "garden",
+      "title": "The Garden",
+      "summary": "Your cumulative practice grows a scene from seed to forest. A metaphor, not a claim.",
+      "category": "progress",
+      "icon": "❀",
+      "tier": "free",
+      "order": 5
+    },
+    {
+      "slug": "insights",
+      "title": "Insights and records",
+      "summary": "Mindful minutes, streaks, completion rate, calendar history and your own effective practices.",
+      "category": "progress",
+      "icon": "◑",
+      "tier": "premium",
+      "order": 6
+    },
+    {
+      "slug": "apple-health",
+      "title": "Apple Health",
+      "summary": "Optional Mindful Sessions and State of Mind entries. Core breathing never requires Health access.",
+      "category": "platform",
+      "icon": "♡",
+      "tier": "free",
+      "order": 7,
+      "href": "support.html#health"
+    },
+    {
+      "slug": "widgets-watch",
+      "title": "Widgets, Watch and Shortcuts",
+      "summary": "Start a session from the Home Screen, your wrist, or a Siri shortcut.",
+      "category": "platform",
+      "icon": "◈",
+      "tier": "free",
+      "order": 8
+    },
+    {
+      "slug": "themes",
+      "title": "Themes and appearance",
+      "summary": "System, light and dark — plus premium palettes that recolour visuals, glow and ambience.",
+      "category": "platform",
+      "icon": "◐",
+      "tier": "premium",
+      "order": 9
+    },
+    {
+      "slug": "on-device",
+      "title": "On-device by design",
+      "summary": "No ATHA cloud account for your breathing history. Analytics are anonymous and can be turned off.",
+      "category": "privacy",
+      "icon": "⌁",
+      "tier": "free",
+      "order": 10,
+      "href": "privacypolicy.html"
+    }
+  ]
+}

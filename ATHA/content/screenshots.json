@@ -1,0 +1,98 @@
+{
+  "collection": "screenshots",
+  "basePath": "assets/img/screens/",
+  "title": "Inside ATHA",
+  "description": "Screens from the app.",
+  "categories": [],
+  "categories": [
+    { "id": "practice",  "label": "Practice" },
+    { "id": "progress",  "label": "Progress" },
+    { "id": "platform",  "label": "Platform" }
+  ],
+  "items": [
+    {
+      "slug": "home",
+      "title": "Home",
+      "summary": "How you feel, and the shortest path to a breath.",
+      "category": "practice",
+      "image": "home.png",
+      "alt": "ATHA home screen showing a feeling check-in and a breathe-now button",
+      "order": 1,
+      "featured": true,
+      "status": "draft"
+    },
+    {
+      "slug": "session",
+      "title": "Breathing session",
+      "summary": "The ambient visual carries inhale, hold, exhale and hold-out.",
+      "category": "practice",
+      "image": "session.png",
+      "alt": "ATHA breathing session with an expanding ambient orb visual",
+      "order": 2,
+      "featured": true,
+      "status": "draft"
+    },
+    {
+      "slug": "practices",
+      "title": "Practices",
+      "summary": "Every breathing technique, filtered by how you want to feel.",
+      "category": "practice",
+      "image": "practices.png",
+      "alt": "ATHA practices browser listing breathing techniques",
+      "order": 3,
+      "featured": true,
+      "status": "draft"
+    },
+    {
+      "slug": "garden",
+      "title": "The Garden",
+      "summary": "Cumulative practice, grown rather than scored.",
+      "category": "progress",
+      "image": "garden.png",
+      "alt": "ATHA garden screen showing a growing plant scene",
+      "order": 4,
+      "featured": true,
+      "status": "draft"
+    },
+    {
+      "slug": "insights",
+      "title": "Insights",
+      "summary": "Mindful minutes, streaks and your own effective practices.",
+      "category": "progress",
+      "image": "insights.png",
+      "alt": "ATHA insights screen with mindful minutes and streak metrics",
+      "order": 5,
+      "status": "draft"
+    },
+    {
+      "slug": "custom",
+      "title": "Custom pattern",
+      "summary": "Set inhale, hold, exhale and hold-out yourself.",
+      "category": "practice",
+      "image": "custom.png",
+      "alt": "ATHA custom breathing pattern editor with phase duration controls",
+      "order": 6,
+      "status": "draft"
+    },
+    {
+      "slug": "themes",
+      "title": "Themes",
+      "summary": "Palettes that recolour visuals, glow and ambience.",
+      "category": "platform",
+      "image": "themes.png",
+      "alt": "ATHA theme gallery showing selectable colour palettes",
+      "order": 7,
+      "status": "draft"
+    },
+    {
+      "slug": "watch",
+      "title": "Apple Watch",
+      "summary": "Haptic breathing guidance on the wrist.",
+      "category": "platform",
+      "image": "watch.png",
+      "alt": "ATHA Apple Watch app showing a breathing session",
+      "order": 8,
+      "status": "draft"
+    }
+  ]
+}
