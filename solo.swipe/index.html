@@ -586,10 +586,21 @@
 
         .features .section-intro {
             color: var(--text-muted);
-            max-width: 720px;
+            max-width: 760px;
             margin: 0 auto 55px;
             line-height: 1.7;
+            font-size: 1.06rem;
         }
+
+        .features .section-intro strong { color: var(--text-light); font-weight: 700; }
+
+        .features-footer {
+            max-width: 1200px;
+            margin: 46px auto 0;
+            text-align: center;
+        }
+
+        .features-footer p { color: var(--text-muted); font-size: 1.05rem; }
 
         .grid-3 {
             display: grid;
@@ -630,6 +641,18 @@
             color: var(--text-muted);
             line-height: 1.65;
         }
+
+        .feature-card .card-link {
+            display: inline-block;
+            margin-top: 14px;
+            color: #C4B5FD;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(196, 181, 253, 0.4);
+        }
+
+        .feature-card .card-link:hover { color: #fff; border-color: #fff; }
 
         /* --- Creator section --- */
         .persona-grid {
@@ -920,8 +943,12 @@
         }
 
         /* Responsive */
-        @media (max-width: 1100px) {
+        @media (max-width: 1200px) {
             .main-nav { gap: 16px; font-size: 0.9rem; }
+        }
+
+        @media (max-width: 1000px) {
+            .main-nav { display: none; }
         }
 
         @media (max-width: 900px) {
@@ -930,7 +957,6 @@
             .hero-actions { justify-content: center; }
             .speech-bubble { left: 50%; transform: translateX(-50%) rotate(0); top: -40px; width: max-content; }
             .ipad-item { flex: 0 0 300px; }
-            .main-nav { display: none; }
             .section h2, .features h2, .evidence-header h2, .final-cta h2 { font-size: 2rem; }
             .privacy-panel { padding: 32px 24px; }
         }
@@ -972,8 +998,8 @@
         </a>
         <nav class="main-nav" aria-label="Primary">
             <a href="#what-is-solo-swipe">What it is</a>
+            <a href="/solo.swipe/features/">Features</a>
             <a href="#how-it-works">How it works</a>
-            <a href="#features">Features</a>
             <a href="/solo.swipe/for/content-creators/">For creators</a>
             <a href="/solo.swipe/camera-roll-reset/">Camera Roll Reset</a>
             <a href="#privacy">Privacy</a>
@@ -996,7 +1022,7 @@
                             <svg viewBox="0 0 384 512" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
                             Clean My Photo Library
                         </a>
-                        <a href="#how-it-works" class="text-link">See how Solo.Swipe works</a>
+                        <a href="/solo.swipe/features/" class="text-link">Explore every feature</a>
                     </div>
                     <span class="cta-sub">Download Solo.Swipe on the App Store — free, for iPhone.</span>
                 </div>
@@ -1053,48 +1079,59 @@
 
         <section class="features" id="features" aria-labelledby="features-title">
             <h2 class="reveal" id="features-title">My Investigation Tactics 🔍</h2>
-            <p class="section-intro reveal">Everything Solo.Swipe gives you for cleaning and organizing an iPhone photo library.</p>
+            <p class="section-intro reveal">The tools Solo.Swipe gives you for cleaning and organizing an iPhone photo library. <strong>Each one is covered in depth — what it does and when to reach for it — on the <a class="text-link" href="/solo.swipe/features/">full features page</a>.</strong></p>
             <div class="grid-3">
                 <article class="feature-card reveal" style="transition-delay: 0.1s;">
                     <div class="feature-icon" aria-hidden="true">👆</div>
                     <h3>Swipe to Clean</h3>
                     <p>Four gestures do the whole job: swipe right to keep a photo, left to mark it for deletion, up to drop it into an album, down to skip it. It's the fastest way to clear a camera roll without tapping through selection mode — swipe right to keep your masterpieces, left to toss the blurry evidence.</p>
+                    <a class="card-link" href="/solo.swipe/features/#review">How the gestures work →</a>
                 </article>
                 <article class="feature-card reveal" style="transition-delay: 0.2s;">
                     <div class="feature-icon" aria-hidden="true">🕵️‍♂️</div>
                     <h3>Smart Modes</h3>
                     <p>Detective Raccoon has a sharp eye. Smart Modes use Apple's on-device Vision framework to surface photos worth reviewing first — blurry shots, photos where someone blinked, documents and receipts, screenshots, food, pets, plants, vehicles and sunsets — so you don't have to hunt for the clutter yourself.</p>
+                    <a class="card-link" href="/solo.swipe/features/#smart-modes">All nine Smart Modes →</a>
                 </article>
                 <article class="feature-card reveal" style="transition-delay: 0.3s;">
                     <div class="feature-icon" aria-hidden="true">👯</div>
                     <h3>Duplicate &amp; Similar Photos</h3>
                     <p>Burst shots and near-identical retakes get grouped together so you can compare them, keep the best one and clear the rest in a couple of taps. Duplicates are usually the quickest storage win in a large library.</p>
+                    <a class="card-link" href="/solo.swipe/features/#duplicates">What iOS misses →</a>
                 </article>
                 <article class="feature-card reveal" style="transition-delay: 0.1s;">
                     <div class="feature-icon" aria-hidden="true">🔒</div>
                     <h3>Photos Processed On Your Device</h3>
                     <p>A good detective keeps every case confidential. Solo.Swipe reads and analyses your photos on your iPhone using Apple's PhotoKit and Vision frameworks. There is no photo server: your images are never uploaded, copied off the device or shared with anyone.</p>
+                    <a class="card-link" href="/solo.swipe/features/#privacy">Privacy &amp; safety in detail →</a>
                 </article>
                 <article class="feature-card reveal" style="transition-delay: 0.2s;">
                     <div class="feature-icon" aria-hidden="true">🔥</div>
                     <h3>Daily Goals &amp; Streaks</h3>
                     <p>Set a daily target — say fifty photos — and Solo.Swipe tracks your progress with a goal ring, a streak counter and an optional home screen widget. Cleaning a huge library works far better as a five-minute daily habit than as one heroic session.</p>
+                    <a class="card-link" href="/solo.swipe/features/#habit">Habit &amp; progress tools →</a>
                 </article>
                 <article class="feature-card reveal" style="transition-delay: 0.3s;">
                     <div class="feature-icon" aria-hidden="true">🗂️</div>
                     <h3>Albums, Superfast</h3>
                     <p>Found a top-secret file? Swipe up to add the photo to an album without leaving the review flow. You end a session with a cleaner library <em>and</em> better-organized keepers, instead of promising yourself a second pass you'll never do.</p>
+                    <a class="card-link" href="/solo.swipe/features/#organize">Organizing while you clean →</a>
                 </article>
                 <article class="feature-card reveal" style="transition-delay: 0.1s;">
                     <div class="feature-icon" aria-hidden="true">⚡</div>
                     <h3>Built for Large Libraries</h3>
                     <p>Solo.Swipe loads photos in batches rather than all at once, so it stays responsive whether you have 100 photos or 100,000. Browsing by day, month, year, album or category keeps even an enormous library manageable.</p>
+                    <a class="card-link" href="/solo.swipe/features/#browse">All 18 ways to browse →</a>
                 </article>
                 <article class="feature-card reveal" style="transition-delay: 0.2s;">
                     <div class="feature-icon" aria-hidden="true">📦</div>
                     <h3>Storage Insights</h3>
                     <p>See what's actually eating your storage — videos, screenshots, large files — and jump straight from the breakdown into a cleaning session for that category. Every session reports roughly how much space you freed.</p>
+                    <a class="card-link" href="/solo.swipe/features/#storage">Storage tools explained →</a>
                 </article>
+            </div>
+            <div class="features-footer reveal">
+                <p><a class="text-link" href="/solo.swipe/features/">See every feature explained in full →</a></p>
             </div>
         </section>
 
@@ -1204,6 +1241,10 @@
                 <h2 id="guides-title">Guides for Cleaning Your Photo Library</h2>
                 <p>Practical walkthroughs for iPhone photo cleanup and digital decluttering — useful whether or not you use Solo.Swipe.</p>
                 <div class="guide-grid">
+                    <a class="guide-card" href="/solo.swipe/features/">
+                        <h3>Every Solo.Swipe feature explained</h3>
+                        <p>Gestures, browsing categories, Smart Modes, duplicates, albums, storage and streaks — and when to use each.</p>
+                    </a>
                     <a class="guide-card" href="/solo.swipe/guides/how-to-clean-iphone-photo-library.html">
                         <h3>How to clean a huge iPhone photo library</h3>
                         <p>A repeatable method for working through 10,000+ photos without burning out.</p>
@@ -1223,10 +1264,6 @@
                     <a class="guide-card" href="/solo.swipe/guides/sunday-digital-reset/">
                         <h3>A simple Sunday digital reset routine</h3>
                         <p>Seven short steps to close out the week, with camera roll cleanup as step three.</p>
-                    </a>
-                    <a class="guide-card" href="/solo.swipe/camera-roll-reset/">
-                        <h3>The Camera Roll Reset</h3>
-                        <p>Five-minute, Sunday, post-shoot, travel and creator versions of one routine.</p>
                     </a>
                 </div>
                 <p style="margin-top:26px;">More in the <a class="text-link" href="/solo.swipe/guides/">Solo.Swipe guides library</a>.</p>
@@ -1255,7 +1292,7 @@
 
                 <details class="faq-item">
                     <summary><h3>Does Solo.Swipe find duplicate or unwanted photos?</h3></summary>
-                    <p>Yes. Solo.Swipe groups likely duplicates and near-identical shots so you can pick one to keep, and its Smart Modes surface categories such as blurry photos, photos with closed eyes, screenshots, selfies, documents, food, pets and large files.</p>
+                    <p>Yes. Solo.Swipe groups likely duplicates and near-identical shots so you can pick one to keep, and its Smart Modes surface categories such as blurry photos, photos with closed eyes, screenshots, selfies, documents, food, pets and large files. The <a class="text-link" href="/solo.swipe/features/#smart-modes">features page</a> covers all of them.</p>
                 </details>
 
                 <details class="faq-item">
@@ -1331,9 +1368,12 @@
 
         <nav class="footer-links" aria-label="Footer">
             <a href="/solo.swipe/">Home</a>
+            <a href="/solo.swipe/features/">Features</a>
             <a href="/solo.swipe/for/content-creators/">For creators</a>
+            <a href="/solo.swipe/for/influencers/">For influencers</a>
             <a href="/solo.swipe/camera-roll-reset/">Camera Roll Reset</a>
             <a href="/solo.swipe/guides/">Guides</a>
+            <a href="/solo.swipe/story/why-i-built-solo-swipe/">Story</a>
             <a href="/solo.swipe/about.html">About Solo.Swipe</a>
             <a href="/solo.swipe/privacy_policy.html">Privacy Policy</a>
             <a href="https://apps.apple.com/app/solo-swipe/id6761368690">Download on the App Store</a>
