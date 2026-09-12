@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Solo.Swipe — iPhone Photo Cleaner &amp; Organizer | Swipe to Clean Photos</title>
-    <meta name="description" content="Solo.Swipe is an iPhone photo cleaner and organizer. Swipe to keep or delete photos, find blurry shots and duplicates, sort photos into albums, build a daily cleaning streak and free up iPhone storage — with photos processed on your device.">
+    <meta name="description" content="Solo.Swipe is an iPhone photo cleaner and organizer for busy camera rolls. Swipe to keep or delete photos, find blurry shots and duplicates, sort photos into albums, build a cleaning habit and free up iPhone storage — photos stay on your device.">
     <link rel="canonical" href="https://guledaaydemir.github.io/solo.swipe/">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="author" content="Gül Eda Aydemir">
@@ -35,7 +35,7 @@
 
     <link rel="icon" type="image/png" href="/solo.swipe/appicon.png">
     <link rel="apple-touch-icon" href="/solo.swipe/appicon.png">
-    <link rel="preload" as="image" href="./raccoon_hero.jpg" fetchpriority="high">
+    <link rel="preload" as="image" href="/solo.swipe/raccoon_hero.jpg" fetchpriority="high">
 
     <script type="application/ld+json">
     {
@@ -54,6 +54,7 @@
           "@id": "https://guledaaydemir.github.io/solo.swipe/#developer",
           "name": "Gül Eda Aydemir",
           "url": "https://guledaaydemir.github.io/solo.swipe/about.html",
+          "jobTitle": "iOS Developer",
           "sameAs": ["https://instagram.com/solo.stasera"]
         },
         {
@@ -61,7 +62,7 @@
           "@id": "https://guledaaydemir.github.io/solo.swipe/#app",
           "name": "Solo.Swipe",
           "alternateName": ["Solo Swipe", "SoloSwipe"],
-          "description": "Solo.Swipe is an iPhone photo cleaner and organizer built around swipe gestures. Users review their photo library one photo at a time and swipe to delete, keep, or file a photo into an album. Smart Modes surface blurry photos, photos with closed eyes, screenshots, selfies, large files, videos and duplicate groups. Photos are processed on the device using Apple's PhotoKit and Vision frameworks.",
+          "description": "Solo.Swipe is an iPhone photo cleaner and organizer built around swipe gestures. Users review their photo library one photo at a time and swipe to delete, keep, or file a photo into an album. Smart Modes surface blurry photos, photos with closed eyes, screenshots, selfies, large files, videos and duplicate groups. It is designed for people with busy or large camera rolls, including content creators who accumulate unused takes, screenshots and unpublished clips. Photos are processed on the device using Apple's PhotoKit and Vision frameworks.",
           "url": "https://guledaaydemir.github.io/solo.swipe/",
           "downloadUrl": "https://apps.apple.com/app/solo-swipe/id6761368690",
           "installUrl": "https://apps.apple.com/app/solo-swipe/id6761368690",
@@ -69,6 +70,10 @@
           "applicationCategory": "UtilitiesApplication",
           "applicationSubCategory": "Photo & Video",
           "image": "https://guledaaydemir.github.io/solo.swipe/appicon.png",
+          "audience": {
+            "@type": "Audience",
+            "audienceType": "iPhone users with large or cluttered photo libraries, content creators, influencers, photographers and travellers"
+          },
           "screenshot": [
             "https://guledaaydemir.github.io/solo.swipe/1.jpg",
             "https://guledaaydemir.github.io/solo.swipe/2.jpg",
@@ -77,10 +82,11 @@
           "featureList": [
             "Swipe left to delete, right to keep, up to add to an album, down to skip",
             "Smart Modes that surface blurry photos, closed eyes, screenshots, selfies and more",
-            "Duplicate and similar photo grouping",
+            "Duplicate and similar photo grouping for near-identical takes",
             "Album organization while reviewing",
-            "Daily cleaning goals and streaks",
+            "Daily cleaning goals and streaks for a recurring camera roll reset",
             "Browse by day, month, year, album, location, videos, large files and panoramas",
+            "Storage breakdown by category",
             "On-device photo processing with Apple PhotoKit and Vision",
             "Home screen widget"
           ],
@@ -138,6 +144,21 @@
               "@type": "Question",
               "name": "Does Solo.Swipe work with large photo libraries?",
               "acceptedAnswer": { "@type": "Answer", "text": "Solo.Swipe is designed for large libraries. Photos load in batches rather than all at once, and you can break a big library into small sessions by day, month, year, album, location or category so you never have to face tens of thousands of photos in one sitting." }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Solo.Swipe useful for content creators?",
+              "acceptedAnswer": { "@type": "Answer", "text": "It can be. Content creation produces far more photos and videos than get published — multiple takes of one shot, reference screenshots, unused clips and edited versions saved alongside originals. Solo.Swipe gives creators a fast way to review that leftover material after a shoot and file the keepers into albums in the same pass." }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a Camera Roll Reset?",
+              "acceptedAnswer": { "@type": "Answer", "text": "A Camera Roll Reset is a short routine for reviewing the photos, screenshots and videos that have accumulated on your phone and deciding what deserves to stay. It is deliberately small and repeatable — usually five to ten minutes — rather than an attempt to clean an entire library at once. Solo.Swipe uses the term to describe this kind of recurring photo cleanup session." }
+            },
+            {
+              "@type": "Question",
+              "name": "Can Solo.Swipe be part of a digital declutter or Sunday reset?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes. Solo.Swipe covers the camera roll portion of a wider digital decluttering routine, alongside steps like clearing your inbox, downloads folder, browser tabs and notifications. It does not organize anything outside your photo library." }
             },
             {
               "@type": "Question",
@@ -291,7 +312,7 @@
         .main-nav {
             display: flex;
             align-items: center;
-            gap: 22px;
+            gap: 20px;
             margin-left: auto;
         }
 
@@ -610,6 +631,57 @@
             line-height: 1.65;
         }
 
+        /* --- Creator section --- */
+        .persona-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+            margin: 34px 0 10px;
+        }
+
+        .persona-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 22px;
+            padding: 28px 24px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .persona-card:hover { transform: translateY(-6px); border-color: var(--primary); }
+
+        .persona-icon { font-size: 2.2rem; margin-bottom: 12px; }
+
+        .persona-card h3 { margin: 0 0 10px; font-size: 1.15rem; }
+
+        .persona-card p { margin: 0; font-size: 0.99rem; line-height: 1.65; color: var(--text-muted); }
+
+        .clutter-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 8px 24px;
+            margin: 22px 0 24px;
+        }
+
+        .clutter-list li {
+            color: var(--text-muted);
+            padding-left: 26px;
+            position: relative;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .clutter-list li::before {
+            content: "📎";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 0.9rem;
+        }
+
         /* --- Privacy panel --- */
         .privacy-panel {
             background: var(--bg-card);
@@ -848,6 +920,10 @@
         }
 
         /* Responsive */
+        @media (max-width: 1100px) {
+            .main-nav { gap: 16px; font-size: 0.9rem; }
+        }
+
         @media (max-width: 900px) {
             .hero-container { flex-direction: column; text-align: center; }
             .hero h1 { font-size: 2.7rem; }
@@ -864,7 +940,7 @@
             .orb, .raccoon-hero { animation: none !important; }
             .speech-bubble { animation: none !important; opacity: 1; transform: rotate(-5deg); }
             .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
-            .feature-card:hover, .guide-card:hover, .screenshot-item:hover img, .download-btn:hover, .nav-cta:hover, .social-link:hover { transform: none; }
+            .feature-card:hover, .guide-card:hover, .persona-card:hover, .screenshot-item:hover img, .download-btn:hover, .nav-cta:hover, .social-link:hover { transform: none; }
             html { scroll-behavior: auto; }
         }
 
@@ -898,8 +974,9 @@
             <a href="#what-is-solo-swipe">What it is</a>
             <a href="#how-it-works">How it works</a>
             <a href="#features">Features</a>
+            <a href="/solo.swipe/for/content-creators/">For creators</a>
+            <a href="/solo.swipe/camera-roll-reset/">Camera Roll Reset</a>
             <a href="#privacy">Privacy</a>
-            <a href="#faq">FAQ</a>
             <a href="/solo.swipe/guides/">Guides</a>
         </nav>
         <a href="https://apps.apple.com/app/solo-swipe/id6761368690" class="nav-cta">Get the App</a>
@@ -913,7 +990,7 @@
                     <p class="badge">iPhone Photo Cleaner &amp; Organizer</p>
                     <h1 id="hero-title">Clean Your iPhone Photo&nbsp;Library <span>With a Swipe</span></h1>
                     <p class="hero-lead">Solo.Swipe is an iPhone photo cleaner and organizer built around swipe gestures. Review your camera roll one photo at a time: swipe left to delete, right to keep, and up to file a photo into an album. Smart Modes surface blurry shots, screenshots, large files and duplicate groups, so a library of tens of thousands of photos becomes a few short daily sessions instead of one exhausting cleanup.</p>
-                    <p>Your photos are read and analysed on your device with Apple's PhotoKit and Vision frameworks — Solo.Swipe has no photo server. And yes, Detective Raccoon is on the case with you. 🕵️</p>
+                    <p>Built for busy camera rolls — travellers, parents, photographers and content creators who shoot far more than they ever post. Your photos are read and analysed on your device with Apple's PhotoKit and Vision frameworks; Solo.Swipe has no photo server. And yes, Detective Raccoon is on the case with you. 🕵️</p>
                     <div class="hero-actions">
                         <a href="https://apps.apple.com/app/solo-swipe/id6761368690" class="download-btn">
                             <svg viewBox="0 0 384 512" width="20" height="20" fill="currentColor" aria-hidden="true" focusable="false"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
@@ -1021,13 +1098,54 @@
             </div>
         </section>
 
-        <section class="section" id="why-solo-swipe" aria-labelledby="why-title">
+        <section class="section" id="for-creators" aria-labelledby="creators-title">
             <div class="container reveal">
-                <span class="kicker">The difference</span>
-                <h2 id="why-title">Why Solo.Swipe?</h2>
-                <p>Most photo cleaners feel like maintenance software: a scan, a progress bar, a list of files to confirm. That works once. It doesn't get you to come back, and a photo library refills every week.</p>
-                <p>Solo.Swipe is built the other way round. Cleaning is <strong>visual</strong> — you see each photo full-screen and decide with a flick of your thumb. It's <strong>finishable</strong> — sets are small, so you always reach the end of something. It's <strong>habit-shaped</strong> — daily goals, streaks and a widget make it a short routine rather than a project. And it's <strong>private by design</strong> — the analysis that finds your blurry shots and duplicates runs on your iPhone, not on someone's server.</p>
-                <p>The playful part is deliberate too. Detective Raccoon, the case-file framing and the little celebrations exist because a job you enjoy is a job you actually finish.</p>
+                <span class="kicker">Busy camera rolls</span>
+                <h2 id="creators-title">Made for people who take a lot of photos</h2>
+                <p><strong>Solo.Swipe can be useful for content creators because content creation produces far more photos than get published.</strong> One post can leave behind fifteen takes of the same shot, reference screenshots, an unused clip and an edited copy sitting next to the original — and none of it gets deleted, because the post is done and the camera roll is tomorrow's problem.</p>
+                <p>The material that piles up is fairly predictable:</p>
+                <ul class="clutter-list">
+                    <li>multiple takes of one shot</li>
+                    <li>rejected frames and blinks</li>
+                    <li>reference and inspiration screenshots</li>
+                    <li>unused short-form clips</li>
+                    <li>B-roll you never cut in</li>
+                    <li>edited and unedited versions</li>
+                    <li>thumbnail attempts</li>
+                    <li>story screenshots and drafts</li>
+                    <li>temporary assets from other apps</li>
+                </ul>
+                <p>Solo.Swipe makes reviewing that clutter a short, repeatable habit rather than a job you keep postponing. It doesn't schedule posts, edit video or store anything in the cloud — it handles one part of the workflow: clearing and organizing what's on the phone.</p>
+
+                <div class="persona-grid">
+                    <div class="persona-card">
+                        <div class="persona-icon" aria-hidden="true">🎬</div>
+                        <h3>Content creators</h3>
+                        <p>Keep large volumes of takes, drafts and screenshots manageable, so the camera roll stays a working library rather than an archive you avoid opening.</p>
+                    </div>
+                    <div class="persona-card">
+                        <div class="persona-icon" aria-hidden="true">✨</div>
+                        <h3>Influencers</h3>
+                        <p>Review the unused shots left over from content days, campaigns and brand shoots — dozens of pose and outfit variations where only one gets posted.</p>
+                    </div>
+                    <div class="persona-card">
+                        <div class="persona-icon" aria-hidden="true">📷</div>
+                        <h3>Photo lovers</h3>
+                        <p>Photographers, travellers and parents alike: take as many photos as you want without letting the camera roll become overwhelming.</p>
+                    </div>
+                </div>
+
+                <p style="margin-top:30px;"><a class="text-link" href="/solo.swipe/for/content-creators/">Solo.Swipe for content creators →</a></p>
+            </div>
+        </section>
+
+        <section class="section" id="camera-roll-reset" aria-labelledby="reset-title">
+            <div class="container reveal">
+                <span class="kicker">The routine</span>
+                <h2 id="reset-title">The Camera Roll Reset</h2>
+                <p><strong>A Camera Roll Reset is a short routine for reviewing the photos, screenshots and videos that have accumulated on your phone and deciding what deserves to stay.</strong> It's the term we use at Solo.Swipe for a recurring cleanup session — five or ten minutes, one batch, a clear end point.</p>
+                <p>It works because a camera roll refills every week. A once-a-year purge buys a few months; a small routine keeps the library permanently manageable. There's a five-minute daily version, a Sunday version that sits inside a wider digital reset, a post-shoot version for content days, and a travel version for coming home with four hundred photos.</p>
+                <p>Solo.Swipe is built around that routine: finishable batches, four gestures, and a streak to keep you coming back. <a class="text-link" href="/solo.swipe/camera-roll-reset/">Read the Camera Roll Reset routine →</a></p>
             </div>
         </section>
 
@@ -1036,10 +1154,10 @@
                 <div class="privacy-panel">
                     <span class="kicker">Confidential case file</span>
                     <h2 id="privacy-title">Your Photos Stay Yours</h2>
-                    <p>Photos are the most personal thing on a phone, so here is exactly how Solo.Swipe handles them.</p>
+                    <p>Photos are the most personal thing on a phone — and for creators, often the most confidential. Here is exactly how Solo.Swipe handles them.</p>
                     <ul class="fact-list">
                         <li><strong>Photos are processed on your device.</strong> Solo.Swipe reads your library through Apple's PhotoKit framework and analyses images with Apple's on-device Vision framework.</li>
-                        <li><strong>Your photos are never uploaded.</strong> There is no Solo.Swipe photo server. Images are not copied off your iPhone, sent to a cloud service, or shared with third parties.</li>
+                        <li><strong>Your photos are never uploaded.</strong> There is no Solo.Swipe photo server. Images are not copied off your iPhone, sent to a cloud service, or shared with third parties — including unpublished shoots and client work.</li>
                         <li><strong>Deletion goes through iOS.</strong> When you confirm a cleanup, items move to Apple's Recently Deleted album, where you can restore them for 30 days before iOS removes them permanently.</li>
                         <li><strong>App data stays local.</strong> Preferences, session statistics, streaks and album references are stored on your device and are removed when you delete the app.</li>
                         <li><strong>Photo library access is optional and revocable.</strong> Solo.Swipe asks for photo access when you start, and you can change or withdraw it at any time in iOS Settings.</li>
@@ -1049,7 +1167,7 @@
                       The app ships the Google Mobile Ads (AdMob) SDK and an App Tracking Transparency prompt.
                       Therefore the site must NOT claim "no third-party SDKs", "no tracking" or "100% private" —
                       those claims have been removed from this page. The advertising sentence below must match:
-                      (a) the rewritten privacy_policy.html (Phase 2), and
+                      (a) the rewritten privacy_policy.html, and
                       (b) the App Privacy disclosure in App Store Connect.
                       Confirm: does the paid upgrade remove ads entirely? Adjust wording if not.
                     -->
@@ -1084,7 +1202,7 @@
             <div class="container reveal">
                 <span class="kicker">Field notes</span>
                 <h2 id="guides-title">Guides for Cleaning Your Photo Library</h2>
-                <p>Practical walkthroughs for iPhone photo cleanup — useful whether or not you use Solo.Swipe.</p>
+                <p>Practical walkthroughs for iPhone photo cleanup and digital decluttering — useful whether or not you use Solo.Swipe.</p>
                 <div class="guide-grid">
                     <a class="guide-card" href="/solo.swipe/guides/how-to-clean-iphone-photo-library.html">
                         <h3>How to clean a huge iPhone photo library</h3>
@@ -1097,6 +1215,18 @@
                     <a class="guide-card" href="/solo.swipe/guides/find-blurry-and-duplicate-photos-iphone.html">
                         <h3>How to find blurry and duplicate photos on iPhone</h3>
                         <p>What iOS finds on its own, what it misses, and how to catch the rest.</p>
+                    </a>
+                    <a class="guide-card" href="/solo.swipe/guides/digital-declutter-iphone/">
+                        <h3>How to declutter your iPhone</h3>
+                        <p>Photos, downloads, apps, notifications and tabs — in order of what actually matters.</p>
+                    </a>
+                    <a class="guide-card" href="/solo.swipe/guides/sunday-digital-reset/">
+                        <h3>A simple Sunday digital reset routine</h3>
+                        <p>Seven short steps to close out the week, with camera roll cleanup as step three.</p>
+                    </a>
+                    <a class="guide-card" href="/solo.swipe/camera-roll-reset/">
+                        <h3>The Camera Roll Reset</h3>
+                        <p>Five-minute, Sunday, post-shoot, travel and creator versions of one routine.</p>
                     </a>
                 </div>
                 <p style="margin-top:26px;">More in the <a class="text-link" href="/solo.swipe/guides/">Solo.Swipe guides library</a>.</p>
@@ -1149,6 +1279,21 @@
                 </details>
 
                 <details class="faq-item">
+                    <summary><h3>Is Solo.Swipe useful for content creators?</h3></summary>
+                    <p>It can be. Content creation produces far more photos and videos than get published — multiple takes of one shot, reference screenshots, unused clips and edited versions saved alongside originals. Solo.Swipe gives creators a fast way to review that leftover material after a shoot and file the keepers into albums in the same pass. There's more detail on <a class="text-link" href="/solo.swipe/for/content-creators/">photo cleanup for content creators</a>.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary><h3>What is a Camera Roll Reset?</h3></summary>
+                    <p>A Camera Roll Reset is a short routine for reviewing the photos, screenshots and videos that have accumulated on your phone and deciding what deserves to stay. It is deliberately small and repeatable — usually five to ten minutes — rather than an attempt to clean an entire library at once. Solo.Swipe uses the term to describe this kind of recurring photo cleanup session.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary><h3>Can Solo.Swipe be part of a digital declutter or Sunday reset?</h3></summary>
+                    <p>Yes. Solo.Swipe covers the camera roll portion of a wider digital decluttering routine, alongside steps like clearing your inbox, downloads folder, browser tabs and notifications. It does not organize anything outside your photo library.</p>
+                </details>
+
+                <details class="faq-item">
                     <summary><h3>Is Solo.Swipe available for iPhone?</h3></summary>
                     <p>Solo.Swipe is an iOS app for iPhone and is distributed through Apple's App Store.</p>
                 </details>
@@ -1186,8 +1331,10 @@
 
         <nav class="footer-links" aria-label="Footer">
             <a href="/solo.swipe/">Home</a>
-            <a href="/solo.swipe/about.html">About Solo.Swipe</a>
+            <a href="/solo.swipe/for/content-creators/">For creators</a>
+            <a href="/solo.swipe/camera-roll-reset/">Camera Roll Reset</a>
             <a href="/solo.swipe/guides/">Guides</a>
+            <a href="/solo.swipe/about.html">About Solo.Swipe</a>
             <a href="/solo.swipe/privacy_policy.html">Privacy Policy</a>
             <a href="https://apps.apple.com/app/solo-swipe/id6761368690">Download on the App Store</a>
             <a href="mailto:soloswipeapp@gmail.com">Contact</a>

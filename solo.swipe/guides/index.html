@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>iPhone Photo Cleanup Guides — Solo.Swipe</title>
-    <meta name="description" content="Practical guides for cleaning and organizing an iPhone photo library: working through thousands of photos, freeing storage taken by photos and videos, and finding blurry or duplicate shots.">
+    <title>iPhone Photo Cleanup &amp; Digital Declutter Guides | Solo.Swipe</title>
+    <meta name="description" content="Practical guides for cleaning and organizing an iPhone photo library: working through a huge camera roll, freeing storage, finding blurry and duplicate photos, creator post-shoot workflows and weekly digital resets.">
     <link rel="canonical" href="https://guledaaydemir.github.io/solo.swipe/guides/">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <meta name="author" content="Gül Eda Aydemir">
@@ -15,14 +15,14 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Solo.Swipe">
     <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="iPhone Photo Cleanup Guides — Solo.Swipe">
-    <meta property="og:description" content="How to work through a huge camera roll, free the storage photos and videos are taking, and catch the blurry and duplicate shots iOS leaves behind.">
+    <meta property="og:title" content="iPhone Photo Cleanup &amp; Digital Declutter Guides | Solo.Swipe">
+    <meta property="og:description" content="How to work through a huge camera roll, free the storage photos are taking, run a creator post-shoot cull, and keep it all clear with a weekly reset.">
     <meta property="og:url" content="https://guledaaydemir.github.io/solo.swipe/guides/">
     <meta property="og:image" content="https://guledaaydemir.github.io/solo.swipe/raccoon_hero.jpg">
     <meta property="og:image:alt" content="Detective Raccoon, the mascot of the Solo.Swipe iPhone photo cleaner app">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="iPhone Photo Cleanup Guides — Solo.Swipe">
+    <meta name="twitter:title" content="iPhone Photo Cleanup &amp; Digital Declutter Guides | Solo.Swipe">
     <meta name="twitter:description" content="Practical guides for cleaning and organizing an iPhone photo library.">
     <meta name="twitter:image" content="https://guledaaydemir.github.io/solo.swipe/raccoon_hero.jpg">
 
@@ -35,8 +35,8 @@
       "@type": "CollectionPage",
       "@id": "https://guledaaydemir.github.io/solo.swipe/guides/#webpage",
       "url": "https://guledaaydemir.github.io/solo.swipe/guides/",
-      "name": "iPhone Photo Cleanup Guides",
-      "description": "Practical guides for cleaning and organizing an iPhone photo library, published alongside the Solo.Swipe iPhone photo cleaner.",
+      "name": "iPhone Photo Cleanup & Digital Declutter Guides",
+      "description": "Practical guides for cleaning and organizing an iPhone photo library, covering large libraries, storage, duplicates, creator workflows and digital decluttering routines.",
       "inLanguage": "en",
       "isPartOf": { "@id": "https://guledaaydemir.github.io/solo.swipe/#website" },
       "publisher": {
@@ -56,7 +56,7 @@
       "mainEntity": {
         "@type": "ItemList",
         "itemListOrder": "https://schema.org/ItemListOrderAscending",
-        "numberOfItems": 5,
+        "numberOfItems": 8,
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -79,13 +79,31 @@
           {
             "@type": "ListItem",
             "position": 4,
-            "name": "How to declutter your iPhone",
-            "url": "https://guledaaydemir.github.io/solo.swipe/guides/digital-declutter-iphone/"
+            "name": "Camera roll cleanup for content creators",
+            "url": "https://guledaaydemir.github.io/solo.swipe/guides/camera-roll-cleanup-for-content-creators/"
           },
           {
             "@type": "ListItem",
             "position": 5,
-            "name": "A simple Sunday digital reset",
+            "name": "Solo.Swipe for content creators",
+            "url": "https://guledaaydemir.github.io/solo.swipe/for/content-creators/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "name": "Your camera roll is part of your workspace — for influencers",
+            "url": "https://guledaaydemir.github.io/solo.swipe/for/influencers/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "name": "How to declutter your iPhone without overcomplicating it",
+            "url": "https://guledaaydemir.github.io/solo.swipe/guides/digital-declutter-iphone/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "name": "A simple Sunday digital reset routine",
             "url": "https://guledaaydemir.github.io/solo.swipe/guides/sunday-digital-reset/"
           }
         ]
@@ -260,11 +278,20 @@
         .doc li { margin-bottom: 10px; }
         .doc strong { color: var(--text-light); font-weight: 700; }
 
-        .doc h2 {
+        .cluster {
+            margin-top: 56px;
+        }
+
+        .cluster > h2 {
             font-size: 1.6rem;
             font-weight: 700;
-            margin-top: 50px;
-            margin-bottom: 14px;
+            margin-bottom: 8px;
+        }
+
+        .cluster > p.cluster-intro {
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            font-size: 1rem;
         }
 
         .inline-link { color: #C4B5FD; text-decoration: none; border-bottom: 1px solid rgba(196, 181, 253, 0.4); }
@@ -275,7 +302,7 @@
             padding: 0;
             display: grid;
             gap: 22px;
-            margin: 34px 0 10px;
+            margin: 26px 0 10px;
         }
 
         .guide-list li { margin: 0; }
@@ -299,7 +326,7 @@
             background: rgba(30, 41, 59, 0.8);
         }
 
-        .guide-card h2 {
+        .guide-card h3 {
             font-size: 1.35rem;
             line-height: 1.35;
             margin: 0 0 10px;
@@ -329,6 +356,21 @@
             letter-spacing: 0.4px;
         }
 
+        .start-here {
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(124, 58, 237, 0.35);
+            border-radius: 24px;
+            padding: 28px 26px;
+            margin: 36px 0 10px;
+        }
+
+        .start-here h2 { font-size: 1.3rem; margin: 0 0 14px; }
+        .start-here ul { margin: 0; padding-left: 22px; }
+        .start-here li { margin-bottom: 10px; }
+        .start-here li:last-child { margin-bottom: 0; }
+
         .app-panel {
             background: var(--bg-card);
             backdrop-filter: blur(10px);
@@ -336,10 +378,10 @@
             border: 1px solid rgba(124, 58, 237, 0.35);
             border-radius: 26px;
             padding: 38px 34px;
-            margin-top: 56px;
+            margin-top: 60px;
         }
 
-        .app-panel h2 { margin-top: 0; }
+        .app-panel h2 { margin-top: 0; font-size: 1.6rem; margin-bottom: 14px; }
 
         .cta-row {
             display: flex;
@@ -407,7 +449,9 @@
             .main-nav { display: none; }
             .doc { padding-top: 120px; }
             .doc h1 { font-size: 2.1rem; }
-            .app-panel { padding: 28px 22px; }
+            .app-panel, .start-here { padding: 26px 22px; }
+            .guide-card { padding: 24px 22px; }
+            .guide-card h3 { font-size: 1.18rem; }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -435,9 +479,9 @@
         </a>
         <nav class="main-nav" aria-label="Primary">
             <a href="/solo.swipe/#what-is-solo-swipe">What it is</a>
-            <a href="/solo.swipe/#features">Features</a>
+            <a href="/solo.swipe/for/content-creators/">For creators</a>
+            <a href="/solo.swipe/camera-roll-reset/">Camera Roll Reset</a>
             <a href="/solo.swipe/#privacy">Privacy</a>
-            <a href="/solo.swipe/#faq">FAQ</a>
             <a href="/solo.swipe/guides/" aria-current="page">Guides</a>
         </nav>
         <a href="https://apps.apple.com/app/solo-swipe/id6761368690" class="nav-cta">Get the App</a>
@@ -450,69 +494,162 @@
         </nav>
 
         <span class="kicker">Field notes</span>
-        <h1>iPhone Photo Cleanup <span>Guides</span></h1>
+        <h1>iPhone Photo Cleanup &amp; <span>Digital Declutter Guides</span></h1>
 
-        <p class="lede">Practical walkthroughs for getting a cluttered iPhone photo library under control — how to work through thousands of photos without giving up halfway, where your storage is actually going, and how to catch the blurry and duplicate shots iOS leaves behind.</p>
-        <p>These guides are written to be useful on their own. The methods work with Apple's built-in Photos app; where a tool like <a class="inline-link" href="/solo.swipe/">Solo.Swipe</a> makes a particular step faster, that is noted, but nothing here depends on installing anything.</p>
+        <p class="lede">Practical walkthroughs for getting a cluttered iPhone photo library under control — how to work through thousands of photos without giving up, where your storage is actually going, how to catch the blurry and duplicate shots iOS leaves behind, and how to keep a camera roll clear when you shoot for a living.</p>
+        <p>These guides are written to be useful on their own. The methods work with Apple's built-in Photos app; where a tool like <a class="inline-link" href="/solo.swipe/">Solo.Swipe</a> makes a particular step faster, that's noted, but nothing here depends on installing anything.</p>
 
-        <h2 id="all-guides">All guides</h2>
+        <div class="start-here">
+            <h2>Not sure where to start?</h2>
+            <ul>
+                <li><strong>Storage warning right now?</strong> → <a class="inline-link" href="/solo.swipe/guides/free-up-iphone-storage-photos.html">Free up iPhone storage taken by photos</a></li>
+                <li><strong>Tens of thousands of photos and no idea where to begin?</strong> → <a class="inline-link" href="/solo.swipe/guides/how-to-clean-iphone-photo-library.html">Clean a huge iPhone photo library</a></li>
+                <li><strong>You shoot content and the camera roll never empties?</strong> → <a class="inline-link" href="/solo.swipe/guides/camera-roll-cleanup-for-content-creators/">Camera roll cleanup for content creators</a></li>
+                <li><strong>Want a routine rather than a one-off purge?</strong> → <a class="inline-link" href="/solo.swipe/camera-roll-reset/">The Camera Roll Reset</a></li>
+            </ul>
+        </div>
 
-        <ul class="guide-list">
-            <li>
-                <a class="guide-card" href="/solo.swipe/guides/how-to-clean-iphone-photo-library.html">
-                    <h2>How to clean a huge iPhone photo library</h2>
-                    <p>A repeatable method for working through 10,000, 30,000 or 100,000 photos: how to break the library into finishable batches, which decisions to make quickly, what to do with the ones you're unsure about, and how to keep the cleanup going instead of abandoning it in week two.</p>
-                    <div class="guide-meta">
-                        <span class="tag">Method</span>
-                        <span class="tag">Large libraries</span>
-                        <span class="tag">Habit</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a class="guide-card" href="/solo.swipe/guides/free-up-iphone-storage-photos.html">
-                    <h2>How to free up iPhone storage taken by photos</h2>
-                    <p>Where the gigabytes actually go — videos, bursts, screenshots and Live Photos — and the order to tackle them in for the fastest result. Also covers why deleting photos doesn't free space immediately, what Recently Deleted does, and how iCloud Photos changes the picture.</p>
-                    <div class="guide-meta">
-                        <span class="tag">Storage</span>
-                        <span class="tag">Videos</span>
-                        <span class="tag">iCloud</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a class="guide-card" href="/solo.swipe/guides/find-blurry-and-duplicate-photos-iphone.html">
-                    <h2>How to find blurry and duplicate photos on iPhone</h2>
-                    <p>What iOS finds by itself in the Duplicates album, what it misses — near-identical retakes, burst leftovers and out-of-focus shots — and how to track down the rest without scrolling your entire camera roll by hand.</p>
-                    <div class="guide-meta">
-                        <span class="tag">Duplicates</span>
-                        <span class="tag">Blurry photos</span>
-                        <span class="tag">Quality</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a class="guide-card" href="/solo.swipe/guides/digital-declutter-iphone/">
-                    <h2>How to declutter your iPhone</h2>
-                    <p>A practical, step-by-step guide to clearing the digital weight from your iPhone, starting with the camera roll.</p>
-                    <div class="guide-meta">
-                        <span class="tag">Declutter</span>
-                        <span class="tag">Storage</span>
-                        <span class="tag">Focus</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a class="guide-card" href="/solo.swipe/guides/sunday-digital-reset/">
-                    <h2>A simple Sunday digital reset</h2>
-                    <p>Inbox, downloads, tabs, notifications and camera roll in one weekly pass to keep your phone manageable.</p>
-                    <div class="guide-meta">
-                        <span class="tag">Habit</span>
-                        <span class="tag">Routine</span>
-                    </div>
-                </a>
-            </li>
-        </ul>
+        <section class="cluster" id="photo-cleanup" aria-labelledby="cluster-cleanup">
+            <h2 id="cluster-cleanup">Photo cleanup</h2>
+            <p class="cluster-intro">The core problem: too many photos, not enough storage, no way to search what's there.</p>
+
+            <ul class="guide-list">
+                <li>
+                    <a class="guide-card" href="/solo.swipe/guides/how-to-clean-iphone-photo-library.html">
+                        <h3>How to clean a huge iPhone photo library</h3>
+                        <p>A repeatable method for working through 10,000, 30,000 or 100,000 photos: how to break the library into finishable batches, which decisions to make quickly, what to do with the ones you're unsure about, and how to keep going instead of abandoning it in week two.</p>
+                        <div class="guide-meta">
+                            <span class="tag">Method</span>
+                            <span class="tag">Large libraries</span>
+                            <span class="tag">Habit</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="guide-card" href="/solo.swipe/guides/free-up-iphone-storage-photos.html">
+                        <h3>How to free up iPhone storage taken by photos</h3>
+                        <p>Where the gigabytes actually go — videos, bursts, screenshots and Live Photos — and the order to tackle them in for the fastest result. Also covers why deleting photos doesn't free space immediately, and how iCloud Photos changes the picture.</p>
+                        <div class="guide-meta">
+                            <span class="tag">Storage</span>
+                            <span class="tag">Videos</span>
+                            <span class="tag">iCloud</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="guide-card" href="/solo.swipe/guides/find-blurry-and-duplicate-photos-iphone.html">
+                        <h3>How to find blurry and duplicate photos on iPhone</h3>
+                        <p>What iOS finds by itself in the Duplicates album, what it misses — near-identical retakes, burst leftovers and out-of-focus shots — and how to track down the rest without scrolling your entire camera roll by hand.</p>
+                        <div class="guide-meta">
+                            <span class="tag">Duplicates</span>
+                            <span class="tag">Blurry photos</span>
+                            <span class="tag">Quality</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cluster" id="creators" aria-labelledby="cluster-creators">
+            <h2 id="cluster-creators">For creators and influencers</h2>
+            <p class="cluster-intro">When the camera roll is part of the job, and a single content day adds hundreds of files.</p>
+
+            <ul class="guide-list">
+                <li>
+                    <a class="guide-card" href="/solo.swipe/guides/camera-roll-cleanup-for-content-creators/">
+                        <h3>Camera roll cleanup for content creators</h3>
+                        <p>The post-shoot workflow in full: mark selects before culling, keep one alternate per setup, file into project albums as you go, archive contractual work off the phone, and rotate one clutter category each week.</p>
+                        <div class="guide-meta">
+                            <span class="tag">Post-shoot</span>
+                            <span class="tag">Workflow</span>
+                            <span class="tag">Albums</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="guide-card" href="/solo.swipe/for/content-creators/">
+                        <h3>Solo.Swipe for content creators</h3>
+                        <p>Why creator camera rolls become chaotic, the post-shoot cleanup problem, and how swipe-based review fits a production workflow — plus privacy for unpublished work and notes on large libraries.</p>
+                        <div class="guide-meta">
+                            <span class="tag">Creators</span>
+                            <span class="tag">Unused takes</span>
+                            <span class="tag">Privacy</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="guide-card" href="/solo.swipe/for/influencers/">
+                        <h3>Your camera roll is part of your workspace</h3>
+                        <p>For influencers and UGC creators: batching content days, handling campaign and brand material, an album system that still makes sense in six months, and a weekly operating rhythm that keeps the whole thing running.</p>
+                        <div class="guide-meta">
+                            <span class="tag">Influencers</span>
+                            <span class="tag">Batching</span>
+                            <span class="tag">Campaigns</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cluster" id="digital-declutter" aria-labelledby="cluster-declutter">
+            <h2 id="cluster-declutter">Digital decluttering</h2>
+            <p class="cluster-intro">The camera roll is one part of a wider picture — notifications, apps, files, tabs and inbox are the rest.</p>
+
+            <ul class="guide-list">
+                <li>
+                    <a class="guide-card" href="/solo.swipe/guides/digital-declutter-iphone/">
+                        <h3>How to declutter your iPhone without overcomplicating it</h3>
+                        <p>Notifications, unused apps, the camera roll, downloads, browser tabs, the home screen, notes and messages — in order of what actually affects your day, with a fifteen-minute version for people who only want to do one pass.</p>
+                        <div class="guide-meta">
+                            <span class="tag">Declutter</span>
+                            <span class="tag">Notifications</span>
+                            <span class="tag">One-off pass</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="guide-card" href="/solo.swipe/guides/sunday-digital-reset/">
+                        <h3>A simple Sunday digital reset routine</h3>
+                        <p>Seven short steps in about half an hour: clear the inbox, review downloads, clean the camera roll, close tabs, tidy the home screen, review notifications and set next week's priorities. Includes a ten-minute version.</p>
+                        <div class="guide-meta">
+                            <span class="tag">Weekly</span>
+                            <span class="tag">Sunday reset</span>
+                            <span class="tag">Routine</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="guide-card" href="/solo.swipe/camera-roll-reset/">
+                        <h3>The Camera Roll Reset</h3>
+                        <p>The photo-specific routine, in five steps and five versions — everyday, Sunday, post-shoot, travel and creator. Short, repeatable, and designed to be finished rather than abandoned halfway.</p>
+                        <div class="guide-meta">
+                            <span class="tag">Routine</span>
+                            <span class="tag">5 minutes</span>
+                            <span class="tag">Habit</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="cluster" id="story" aria-labelledby="cluster-story">
+            <h2 id="cluster-story">From the developer</h2>
+            <p class="cluster-intro">Why the app exists, and the thinking behind how it works.</p>
+
+            <ul class="guide-list">
+                <li>
+                    <a class="guide-card" href="/solo.swipe/story/why-i-built-solo-swipe/">
+                        <h3>Why I built Solo.Swipe — and why I think you need one too</h3>
+                        <p>The camera roll is the last unmanaged space on a modern phone. A first-person account of why that matters, why the swipe gesture suits the problem, why there's a raccoon, and what actually changes when the library stops being overwhelming.</p>
+                        <div class="guide-meta">
+                            <span class="tag">Story</span>
+                            <span class="tag">Design</span>
+                            <span class="tag">Solo-built</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
 
         <div class="app-panel">
             <h2 id="about-solo-swipe">Cleaning with Solo.Swipe</h2>
@@ -534,11 +671,14 @@
         <p class="footer-note">Solo.Swipe is an independent iPhone photo cleaner and organizer made by <a href="/solo.swipe/about.html">Gül Eda Aydemir</a>.</p>
         <nav class="footer-links" aria-label="Footer">
             <a href="/solo.swipe/">Home</a>
-            <a href="/solo.swipe/about.html">About Solo.Swipe</a>
+            <a href="/solo.swipe/for/content-creators/">For creators</a>
+            <a href="/solo.swipe/for/influencers/">For influencers</a>
+            <a href="/solo.swipe/camera-roll-reset/">Camera Roll Reset</a>
             <a href="/solo.swipe/guides/">Guides</a>
+            <a href="/solo.swipe/story/why-i-built-solo-swipe/">Story</a>
+            <a href="/solo.swipe/about.html">About</a>
             <a href="/solo.swipe/privacy_policy.html">Privacy Policy</a>
             <a href="https://apps.apple.com/app/solo-swipe/id6761368690">Download on the App Store</a>
-            <a href="mailto:soloswipeapp@gmail.com">Contact</a>
         </nav>
         <p style="color: rgba(255,255,255,0.25); font-size: 0.8rem;">&copy; 2026 Solo.Swipe. Case Closed.</p>
     </footer>
