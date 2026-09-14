@@ -35,7 +35,7 @@
       "summary": "Orb, aurora, liquid, flower, ripple, wave, particle and glow — all driven by the same breathing state.",
       "category": "practice",
       "icon": "✦",
-      "tier": "premium",
+      "tier": "free",
       "order": 3
     },
     {
@@ -62,7 +62,7 @@
       "summary": "Mindful minutes, streaks, completion rate, calendar history and your own effective practices.",
       "category": "progress",
       "icon": "◑",
-      "tier": "premium",
+      "tier": "free",
       "order": 6
     },
     {
@@ -87,13 +87,13 @@
     {
       "slug": "themes",
       "title": "Themes and appearance",
-      "summary": "System, light and dark — plus premium palettes that recolour visuals, glow and ambience.",
+      "summary": "System, light and dark, plus palettes that recolour visuals, glow and ambience.",
       "category": "platform",
       "icon": "◐",
-      "tier": "premium",
+      "tier": "free",
       "order": 9
     },
-    {
+     {
       "slug": "on-device",
       "title": "On-device by design",
       "summary": "No ATHA cloud account for your breathing history. Analytics are anonymous and can be turned off.",
@@ -102,6 +102,15 @@
       "tier": "free",
       "order": 10,
       "href": "privacypolicy.html"
+    },
+    {
+      "slug": "free",
+      "title": "Free, with no ads",
+      "summary": "The whole app, at no cost. No subscription, no in-app purchases, no advertising, no account.",
+      "category": "privacy",
+      "icon": "○",
+      "tier": "free",
+      "order": 11
     }
   ]
 }

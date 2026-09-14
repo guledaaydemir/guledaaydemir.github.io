@@ -6,14 +6,17 @@
   <meta name="theme-color" content="#080a18" />
 
   <title>ATHA — Breathing and mindfulness app for iPhone</title>
-  <meta name="description" content="ATHA is a breathing and mindfulness app for iPhone, Apple Watch and Apple Health. Guided breathing for sleep, stress, focus and energy — private, on-device, and calm by design." />
+   <meta name="description" content="ATHA is a free breathing and mindfulness app for iPhone, Apple Watch and Apple Health. Guided breathing for sleep, stress, focus and energy — no ads, no account, private and on-device." />
   <link rel="canonical" href="https://guledaaydemir.github.io/atha/" />
+  <link rel="alternate" type="text/plain" href="/atha/llms.txt" title="ATHA for language models" />
+  <link rel="sitemap" type="application/xml" href="/atha/sitemap.xml" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="author" content="Gül Eda Aydemir" />
 
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="ATHA" />
   <meta property="og:title" content="ATHA — Breathe now" />
-  <meta property="og:description" content="Guided breathing for sleep, stress, focus and energy. Private by design, on your iPhone and Apple Watch." />
-  <meta property="og:url" content="https://guledaaydemir.github.io/atha/" />
+  <meta property="og:description" content="Free guided breathing for sleep, stress, focus and energy. No ads, no account, private by design." />  <meta property="og:url" content="https://guledaaydemir.github.io/atha/" />
   <meta property="og:image" content="https://guledaaydemir.github.io/atha/assets/img/og-atha.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="ATHA — Breathe now" />
@@ -34,8 +37,7 @@
         "applicationSubCategory": "Breathing and mindfulness",
         "operatingSystem": "iOS, watchOS",
         "url": "https://guledaaydemir.github.io/atha/",
-        "description": "ATHA is a breathing and mindfulness app for iPhone and Apple Watch. It guides inhale, hold, exhale and hold-out with ambient visuals, haptics and sound, and helps with sleep, stress, anxiety, focus and energy. Practice data stays on the device.",
-        "featureList": [
+        "description": "ATHA is a free breathing and mindfulness app for iPhone and Apple Watch. It guides inhale, hold, exhale and hold-out with ambient visuals, haptics and sound, and helps with sleep, stress, anxiety, focus and energy. There is no subscription, no in-app purchase and no advertising, and practice data stays on the device.",        "featureList": [
           "Guided breathing sessions",
           "Custom breathing patterns",
           "Ambient breathing visuals",
@@ -48,7 +50,7 @@
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD",
-          "description": "Free to download with an optional Premium subscription."
+          "description": "Free. No subscription, no in-app purchases and no advertising."
         },
         "author": {
           "@type": "Person",
@@ -116,7 +118,7 @@
       <a class="atha-btn atha-btn--primary" data-atha-store="hero">Download on the App Store</a>
       <a class="atha-btn atha-btn--ghost" href="features/">See what's inside</a>
     </div>
-    <p class="atha-small atha-hero__note">Free to start · No account · Practice data stays on your device</p>
+       <p class="atha-small atha-hero__note">Free · No ads · No account · Practice data stays on your device</p>
   </section>
 
   <!-- Value strip --------------------------------------------------------->
@@ -130,8 +132,8 @@
       <span class="atha-valuestrip__label">To start breathing</span>
     </div>
     <div class="atha-valuestrip__item">
-      <span class="atha-valuestrip__value">0</span>
-      <span class="atha-valuestrip__label">Cloud accounts</span>
+      <span class="atha-valuestrip__value">Free</span>
+      <span class="atha-valuestrip__label">No ads, no account</span>
     </div>
     <div class="atha-valuestrip__item">
       <span class="atha-valuestrip__value">∞</span>
@@ -152,7 +154,7 @@
     <div data-atha-collection="guides"
          data-layout="grid"
          data-limit="3"
-         data-include-drafts="true"
+         data-featured="true"
          data-empty-title="Guides are being written"
          data-empty-text="The first sleep and stress guides are on the way."></div>
   </section>
@@ -177,7 +179,7 @@
   <!-- Mid-page CTA -------------------------------------------------------->
   <section class="atha-panel atha-ctaband">
     <h2>One breath is enough to start.</h2>
-    <p>Open ATHA, pick how you feel, and let the rhythm do the work.</p>
+    <p>Open ATHA, pick how you feel, and let the rhythm do the work. Nothing is locked.</p>
     <a class="atha-btn atha-btn--primary" data-atha-store="mid">Download on the App Store</a>
     <div class="atha-principle" aria-label="The ATHA principle">
       <span>Open</span><span>Breathe</span><span>Feel</span><span>Return</span>
@@ -201,18 +203,20 @@
          data-empty-text="Each breathing mode will get its own page as ATHA's library grows."></div>
   </section>
 
-  <!-- Screenshots (self-hiding until Phase 7 supplies images) -------------->
+  <!-- Screenshots — hides itself if no images are present ------------------>
   <section class="atha-section" data-atha-region hidden>
     <div class="atha-seehead">
       <div>
         <p class="atha-kicker">Screenshots</p>
         <h2>See it before you install it</h2>
+        <p class="atha-lead">Tap any screen to view it larger.</p>
       </div>
       <a class="atha-seehead__link" href="press/">Press kit →</a>
     </div>
     <div data-atha-collection="screenshots"
-         data-layout="grid"
+         data-layout="shots"
          data-limit="4"
+         data-include-drafts="true"
          data-hide-when-empty="true"></div>
   </section>
 
@@ -226,11 +230,16 @@
         <h2>Independently built, one at a time</h2>
         <p class="atha-lead">ATHA is made by Gül Eda Aydemir, who also builds these.</p>
       </div>
-      <a class="atha-seehead__link" href="https://guledaaydemir.github.io/" rel="noopener">All apps →</a>
+      <a class="atha-seehead__link" href="apps/">All apps →</a>
     </div>
     <div data-atha-collection="apps"
          data-layout="grid"
-         data-limit="6"></div>
+         data-limit="3"
+         data-featured="true"></div>
+    <div class="atha-devbanner">
+      <p><strong>More from the same developer</strong>Photo tools, productivity, wellbeing and games.</p>
+      <a class="atha-btn atha-btn--ghost" href="https://guledaaydemir.github.io/" rel="noopener" data-atha-outbound="home-devbanner">guledaaydemir.github.io →</a>
+    </div>
   </section>
 
   <!-- Closing CTA --------------------------------------------------------->
@@ -260,6 +269,9 @@
 <div data-atha-footer></div>
 
 <script src="assets/js/atha.js" defer></script>
+<script src="assets/js/seo.js" defer></script>
+<script src="assets/js/gallery.js" defer></script>
 <script src="assets/js/content.js" defer></script>
+<script src="assets/js/cta.js" defer></script>
 </body>
 </html>

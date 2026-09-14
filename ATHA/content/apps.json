@@ -24,18 +24,6 @@
       "href": ""
     },
     {
-      "slug": "solo-shoots",
-      "title": "Solo.Shoots",
-      "summary": "Shoot yourself properly. Your Apple Watch becomes the remote, the timer and the viewfinder.",
-      "category": "photo",
-      "icon": "◎",
-      "tags": ["watch", "self-portrait", "camera"],
-      "order": 2,
-      "featured": true,
-      "external": true,
-      "href": ""
-    },
-    {
       "slug": "solo-swipe",
       "title": "Solo.Swipe",
       "summary": "Clear the camera roll one swipe at a time. Reclaim the storage you keep ignoring.",
@@ -77,17 +65,6 @@
       "icon": "✦",
       "tags": ["astrology", "offline", "daily"],
       "order": 6,
-      "external": true,
-      "href": ""
-    },
-    {
-      "slug": "geozaza",
-      "title": "GeoZaza",
-      "summary": "A geography quiz worth playing twice. Solo runs, live duels and online matches.",
-      "category": "play",
-      "icon": "◍",
-      "tags": ["quiz", "geography", "multiplayer"],
-      "order": 7,
       "external": true,
       "href": ""
     }

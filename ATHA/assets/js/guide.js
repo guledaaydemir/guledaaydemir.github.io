@@ -71,6 +71,11 @@
       }
       parts.push('<span>' + A.escapeHTML(label) + '</span>');
     }
+    if (entry.pattern) {
+      var cycle = A.content.patternLine(entry.pattern);
+      if (cycle) { parts.push('<span>' + A.escapeHTML(cycle) + '</span>'); }
+    }
+    if (entry.visual) { parts.push('<span>' + A.escapeHTML(entry.visual) + ' visual</span>'); }
     if (entry.readMinutes) { parts.push('<span>' + entry.readMinutes + ' min read</span>'); }
     if (entry.updated) {
       parts.push('<span>Updated <time datetime="' + A.escapeHTML(entry.updated) + '">' +

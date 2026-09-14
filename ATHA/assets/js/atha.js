@@ -23,6 +23,7 @@
       { label: 'Features',    href: 'features/' },
       { label: 'Guides',      href: 'guides/' },
       { label: 'Meditations', href: 'meditations/' },
+      { label: 'About',       href: 'about.html' },
       { label: 'Support',     href: 'support.html' }
     ],
     footer: [
@@ -32,8 +33,10 @@
       { label: 'Meditations', href: 'meditations/' },
       { label: 'Screenshots', href: 'press/' },
       { label: 'Other apps',  href: 'apps/' },
+      { label: 'About',       href: 'about.html' },
       { label: 'Support',     href: 'support.html' },
-      { label: 'Privacy',     href: 'privacypolicy.html' }
+      { label: 'Privacy',     href: 'privacypolicy.html' },
+      { label: 'Terms',       href: 'terms.html' }
     ]
   };
 

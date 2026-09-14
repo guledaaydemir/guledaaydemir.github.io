@@ -92,9 +92,24 @@
   /* ----------------------------------------------------------------------
      Item helpers
      ---------------------------------------------------------------------- */
+  // Image path resolves against the collection's basePath, e.g. assets/img/screens/
+  function itemImage(item) {
+    if (!item.image) { return ''; }
+    if (/^https?:/.test(item.image)) { return item.image; }
+    return A.url(item._base + item.image);
+  }
+
   function itemHref(item) {
-    if (item.external) { return item._fallback || A.config.developerSite; }
-    if (item.href) { return /^https?:/.test(item.href) ? item.href : A.url(item.href); }
+    // An explicit href always wins, so an App Store URL can be dropped into
+    // the manifest later without touching any page.
+    if (item.href) {
+      var direct = /^https?:/.test(item.href) ? item.href : A.url(item.href);
+      return item.external && A.campaignURL ? A.campaignURL(direct, 'atha-web-' + item.slug) : direct;
+    }
+    if (item.external) {
+      var fallback = item._fallback || A.config.developerSite;
+      return A.campaignURL ? A.campaignURL(fallback, 'atha-web-' + item.slug) : fallback;
+    }
     return A.url(item._base + item.slug + '.html');
   }
 
@@ -151,6 +166,7 @@
       if (opts.category && opts.category !== 'all' && item.category !== opts.category) { return false; }
       if (opts.tag && item.tags.indexOf(opts.tag) === -1) { return false; }
       if (opts.featured && !item.featured) { return false; }
+      if (opts.tier && opts.tier !== 'all' && item.tier !== opts.tier) { return false; }
       if (exclude.indexOf(item.slug) !== -1) { return false; }
       if (!matchesSearch(item, opts.search)) { return false; }
       return true;
@@ -233,11 +249,32 @@
       '</div>';
   }
 
+  // Screenshot tile — image is the content, so a missing file removes the tile
+  // rather than leaving a broken frame on a marketing surface.
+  function shotHTML(collection, item) {
+    var src = itemImage(item);
+    if (!src) { return ''; }
+    return '<figure class="atha-shot atha-reveal" data-atha-shot="' + esc(item.slug) + '">' +
+      '<button class="atha-shot__trigger" type="button" ' +
+        'data-atha-lightbox="' + esc(src) + '" ' +
+        'data-caption="' + esc(item.title) + '">' +
+        '<img src="' + esc(src) + '" alt="' + esc(item.alt || item.title) + '" ' +
+          'loading="lazy" decoding="async" width="390" height="844" ' +
+          'onerror="this.closest(\'[data-atha-shot]\').remove()" />' +
+      '</button>' +
+      '<figcaption class="atha-shot__caption">' +
+        '<strong>' + esc(item.title) + '</strong>' +
+        (item.summary ? '<span>' + esc(item.summary) + '</span>' : '') +
+      '</figcaption>' +
+      '</figure>';
+  }
+
   var LAYOUTS = {
     grid:    { render: gridHTML,    wrap: 'atha-grid atha-grid--3' },
     list:    { render: listHTML,    wrap: 'atha-list' },
     compact: { render: compactHTML, wrap: 'atha-chiprow' },
-    feature: { render: featureHTML, wrap: 'atha-grid atha-grid--2' }
+    feature: { render: featureHTML, wrap: 'atha-grid atha-grid--2' },
+    shots:   { render: shotHTML,    wrap: 'atha-shots' }
   };
 
   /* ----------------------------------------------------------------------
@@ -280,6 +317,7 @@
       layout:      el.getAttribute('data-layout') || 'grid',
       limit:       isNaN(limit) ? 0 : limit,
       category:    el.getAttribute('data-category') || '',
+      tier:        el.getAttribute('data-tier') || '',
       tag:         el.getAttribute('data-tag') || '',
       exclude:     el.getAttribute('data-exclude') || '',
       featured:    bool('data-featured'),
@@ -307,6 +345,7 @@
       function paint() {
         var items = query(collection, {
           category: state.category,
+          tier: opts.tier,
           tag: opts.tag,
           featured: opts.featured,
           exclude: opts.exclude,
@@ -339,6 +378,7 @@
         target.innerHTML = controlsHTML(collection, state, opts.filters, opts.search) + body;
         target.removeAttribute('aria-busy');
         bindControls();
+        if (A.gallery) { A.gallery.bind(target); }
         A.reveal(target);
       }
 
@@ -398,6 +438,8 @@
     render: render,
     mountAll: mountAll,
     itemHref: itemHref,
+    itemImage: itemImage,
+    patternLine: patternLine,
     manifests: MANIFESTS
   };
 
