@@ -57,7 +57,8 @@
 - Photos and videos are read and analysed on the device through Apple's PhotoKit, Vision and Core Image frameworks.
 - There is no Solo.Swipe photo server. Photos are never uploaded, copied off the device, or shared with third parties. This includes unpublished shoots, client deliverables and drafts.
 - There is no account, sign-up or email address. Preferences, statistics, streaks and album references are stored locally and removed when the app is deleted.
-- The free version is supported by advertising delivered through Google AdMob, which processes device and ad-request data — never photos. An App Tracking Transparency prompt governs use of the advertising identifier. The paid upgrade removes ads.
+- Anonymous usage statistics and crash reports are sent to Google Firebase (Analytics, Crashlytics), tied to a random installation ID — never photos, file names, album names or locations. Users can turn this off in the app under Settings › Privacy › Share Usage Data.
+- The free version is supported by advertising delivered through Google AdMob, which processes device and ad-request data — never photos. An App Tracking Transparency prompt governs use of the advertising identifier, and users in the EEA, UK and Switzerland see Google's consent form first. The paid upgrade removes ads.
 - Full policy: https://guledaaydemir.github.io/solo.swipe/privacy_policy.html
 
 ## Pages

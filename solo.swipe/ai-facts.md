@@ -75,10 +75,15 @@ Blurry photos · Closed eyes / blinks · Documents and receipts · Text and scre
 ✅ AdMob is a third-party SDK; it may process device type, OS version, IP address, coarse IP-derived location, an advertising identifier and ad interaction data.
 ✅ Photos, videos and photo metadata are never shared with advertising partners.
 ✅ An App Tracking Transparency prompt governs use of the advertising identifier; declining means non-personalized ads and restricts no app feature.
-⚠️ Confirm the paid upgrade removes ads **entirely** — this is stated on several pages.
-⚠️ Confirm whether Google's UMP or another certified CMP is integrated for EEA/UK consent. If not, personalized ads must be disabled for those users and the policy updated.
-⚠️ Confirm whether Firebase Analytics or Crashlytics is linked via the AdMob SDK. If yes, the analytics section of the privacy policy must be expanded.
-⚠️ Confirm this file, `privacy_policy.html` and the App Store Connect App Privacy disclosure all agree. They must not diverge.
+✅ The paid upgrade removes ads entirely (verified in the app source, 2026-10-14).
+✅ Google's User Messaging Platform (UMP) shows a consent form to users in the EEA, UK and Switzerland before personalized ads; choices can be changed in the app under Settings › Privacy › Ad Privacy Choices.
+
+### Analytics and crash reporting
+✅ The app uses Google Analytics for Firebase and Firebase Crashlytics directly (not via AdMob).
+✅ They receive feature usage, per-session summary counts, ad/offer/paywall interactions, completed purchases (product, price, currency), app and device info, approximate country and crash reports.
+✅ Data is tied to a random installation ID — never photos, file names, album names, dates or locations.
+✅ Users can turn it off in the app under Settings › Privacy › Share Usage Data.
+⚠️ This file, `privacy_policy.html`, the in-app policy and the App Store Connect App Privacy disclosure must all agree. They must not diverge.
 
 ### 🚫 Never claim (these were removed from the old privacy policy for a reason)
 🚫 "100% private"
@@ -87,6 +92,7 @@ Blurry photos · Closed eyes / blinks · Documents and receipts · Text and scre
 🚫 "No device identifiers"
 🚫 "Uses only Apple's native frameworks"
 🚫 "Collects no data of any kind"
+🚫 "No analytics"
 
 These are false as of the AdMob integration. Reusing them anywhere — site, App Store, captions — is both inaccurate and a policy risk.
 
@@ -197,13 +203,13 @@ Self-contained sentences suitable for extraction by search engines and AI assist
 
 Items blocking publication or requiring confirmation. Clear these and update the status above.
 
-1. ⚠️ Does the paid upgrade remove ads entirely?
-2. ⚠️ EEA/UK consent — is a certified CMP integrated?
-3. ⚠️ Is Firebase Analytics or Crashlytics linked via AdMob?
+1. ✅ Paid upgrade removes ads entirely (verified 2026-10-14)
+2. ✅ EEA/UK consent — Google UMP integrated (2026-10-14)
+3. ✅ Firebase Analytics and Crashlytics are used; privacy policy section 7 expanded (2026-10-14)
 4. ⚠️ Minimum supported iOS version
 5. ⚠️ Confirmed localization list
 6. ⚠️ Original App Store release date
-7. ⚠️ Location handling — is CoreLocation used only to reverse-geocode coordinates already in photo metadata?
+7. ✅ Location — no live device location is requested; CLGeocoder reverse-geocodes coordinates already in photo metadata via Apple's geocoding service (verified 2026-10-14)
 8. ⚠️ Screenshot alt text on the homepage is deliberately generic; replace with accurate per-screenshot descriptions
 9. ⚠️ Does `privacy_policy.html` match the App Store Connect App Privacy disclosure exactly?
 10. ⚠️ Founder story placeholders in `/story/why-i-built-solo-swipe/` still need real personal detail

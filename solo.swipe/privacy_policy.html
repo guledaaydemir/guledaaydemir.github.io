@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Privacy Policy — Solo.Swipe iPhone Photo Cleaner</title>
-    <meta name="description" content="How Solo.Swipe handles your data: photos are processed on your iPhone with Apple's PhotoKit and Vision frameworks and are never uploaded. Read what is stored locally, how advertising works, and your choices.">
+    <meta name="description" content="How Solo.Swipe handles your data: photos are processed on your iPhone with Apple's PhotoKit and Vision frameworks and are never uploaded. Read what is stored locally, how advertising and anonymous usage statistics work, and your choices.">
     <link rel="canonical" href="https://guledaaydemir.github.io/solo.swipe/privacy_policy.html">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <meta name="author" content="Gül Eda Aydemir">
@@ -16,7 +16,7 @@
     <meta property="og:site_name" content="Solo.Swipe">
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="Privacy Policy — Solo.Swipe iPhone Photo Cleaner">
-    <meta property="og:description" content="Photos are processed on your device and never uploaded. Here is exactly what Solo.Swipe stores, what the advertising SDK receives, and how to control it.">
+    <meta property="og:description" content="Photos are processed on your device and never uploaded. Here is exactly what Solo.Swipe stores, what Google's advertising and analytics SDKs receive, and how to control it.">
     <meta property="og:url" content="https://guledaaydemir.github.io/solo.swipe/privacy_policy.html">
     <meta property="og:image" content="https://guledaaydemir.github.io/solo.swipe/raccoon_hero.jpg">
     <meta property="og:image:alt" content="Detective Raccoon, the mascot of the Solo.Swipe iPhone photo cleaner app">
@@ -38,7 +38,7 @@
       "name": "Privacy Policy — Solo.Swipe iPhone Photo Cleaner",
       "description": "Privacy policy for Solo.Swipe, an iPhone photo cleaner and organizer. Photos are processed on the device using Apple's PhotoKit and Vision frameworks and are never uploaded.",
       "inLanguage": "en",
-      "dateModified": "2026-09-04",
+      "dateModified": "2026-10-14",
       "isPartOf": { "@id": "https://guledaaydemir.github.io/solo.swipe/#website" },
       "about": { "@id": "https://guledaaydemir.github.io/solo.swipe/#app" },
       "publisher": {
@@ -435,37 +435,15 @@
         </nav>
 
         <h1>Solo.Swipe <span>Privacy Policy</span></h1>
-        <p class="last-updated">Last updated: September 2026</p>
+        <p class="last-updated">Last updated: October 2026</p>
 
         <!--
-          ============================================================
-          VERIFY WITH DEVELOPER — READ BEFORE PUBLISHING
-          ============================================================
-          The previous version of this policy stated that Solo.Swipe collects no data,
-          uses no third-party SDKs, no device identifiers and no tracking. That is no longer
-          accurate for v4.0, which ships:
-            • Google Mobile Ads SDK (AdMob), publisher pub-3258024971991443
-            • An App Tracking Transparency (ATT) prompt
-            • StoreKit in-app purchases
-          Those claims have therefore been rewritten. Before publishing, confirm each item below
-          and make sure this page MATCHES the App Privacy disclosure in App Store Connect:
-
-          1. Ads: confirm which AdMob formats ship (native ad cards + rewarded interstitial)
-             and whether personalized ads are enabled by default.
-          2. EEA/UK: confirm whether Google's UMP / a certified CMP is integrated. If it is NOT,
-             personalized ads must be disabled for EEA/UK users, and section 6 must say so.
-          3. ATT: confirm the exact wording/behaviour — this page says permission is requested
-             and that declining means non-personalized ads.
-          4. Analytics / crash reporting: confirm whether Firebase Analytics or Crashlytics is
-             linked via the AdMob SDK. If yes, section 7 must be expanded before publishing.
-          5. Location: confirm whether CoreLocation is used only to reverse-geocode coordinates
-             already embedded in photo metadata, or whether live device location is requested.
-             Section 8 currently states the former.
-          6. Premium: confirm the paid upgrade removes ads entirely (section 6).
-          7. Notifications, widget and App Group behaviour described in sections 9 and 10.
-          8. Confirm the App Store "Data Used to Track You" / "Data Linked to You" categories
-             reflect the AdMob SDK's collection.
-          ============================================================
+          Verified against the app source (v5.x) on 2026-10-14: Google AdMob (native cards +
+          rewarded ads), Google UMP consent form for EEA/UK/Switzerland, Firebase Analytics and
+          Crashlytics with an in-app "Share Usage Data" switch, ATT prompt, StoreKit 2 purchases
+          (logged to Analytics as in_app_purchase), Pro removes all ads, CLGeocoder reverse-geocodes
+          photo coordinates (no live device location). Keep this page, the in-app policy
+          (Localizable.strings privacy.*) and App Store Connect → App Privacy in sync.
         -->
 
         <div class="summary-box">
@@ -473,9 +451,10 @@
             <ul>
                 <li><strong>Your photos are never uploaded.</strong> Solo.Swipe has no photo server. Photos and videos are read and analysed on your iPhone.</li>
                 <li><strong>Solo.Swipe does not ask for an account.</strong> There is no sign-up, no email address, no profile.</li>
-                <li><strong>App data stays on your device.</strong> Settings, statistics, streaks and album references are stored locally.</li>
+                <li><strong>Your library data stays on your device.</strong> Settings, statistics, streaks and album references are stored locally.</li>
+                <li><strong>Anonymous usage statistics.</strong> Google Firebase receives anonymous usage statistics and crash reports so we can improve the app — never your photos. You can turn this off in the app.</li>
                 <li><strong>The free version shows ads.</strong> Advertising is delivered by Google AdMob, which receives device and ad-request data — never your photos.</li>
-                <li><strong>You are in control.</strong> Photo access, tracking permission and notifications can all be changed or withdrawn in iOS Settings.</li>
+                <li><strong>You are in control.</strong> Photo access, tracking permission, notifications, usage statistics and ad consent can all be changed or withdrawn at any time.</li>
             </ul>
         </div>
 
@@ -504,12 +483,13 @@
             <li>Purchase state for the optional paid upgrade</li>
         </ul>
         <p>This data is removed when you delete the app from your device. You can also reset statistics and review history from within the app's settings.</p>
+        <p>Anonymous totals from your cleaning sessions (for example, how many items were reviewed or deleted) are also sent as usage statistics, as described in <a href="#analytics">section 7</a>.</p>
 
         <h2 id="no-account">4. Personal information we do not collect</h2>
-        <p>Solo.Swipe has no account system. We do not ask for, receive or store your name, email address, phone number, contacts, or any similar personal identifier. We do not build a user profile, and we do not sell personal information.</p>
+        <p>Solo.Swipe has no account system. We do not ask for, receive or store your name, email address, phone number, contacts, or any similar personal identifier. We do not link app data to your identity, and we do not sell personal information.</p>
 
         <h2 id="purchases">5. Purchases</h2>
-        <p>Solo.Swipe is free to download and offers an optional paid upgrade. Purchases are handled entirely by Apple through StoreKit and the App Store. We never see or receive your payment details. Apple provides the app with the status of your purchase so the app can unlock the corresponding features, and Apple's own privacy policy governs the transaction.</p>
+        <p>Solo.Swipe is free to download and offers an optional paid upgrade. Purchases are handled entirely by Apple through StoreKit and the App Store. We never see or receive your payment details. Apple provides the app with the status of your purchase so the app can unlock the corresponding features, and Apple's own privacy policy governs the transaction. When a purchase completes, the product, price and currency are recorded as an anonymous analytics event (see <a href="#analytics">section 7</a>) — never your payment details.</p>
 
         <h2 id="advertising">6. Advertising</h2>
         <p>The free version of Solo.Swipe is supported by advertising delivered through <strong>Google AdMob</strong>, part of Google Ireland Limited / Google LLC. AdMob is a third-party SDK embedded in the app.</p>
@@ -519,17 +499,26 @@
 
         <h3>App Tracking Transparency</h3>
         <p>On iOS, Solo.Swipe uses Apple's App Tracking Transparency framework to ask whether you allow tracking across apps and websites owned by other companies. If you allow it, the advertising identifier (IDFA) may be used to serve personalized ads. If you decline, the identifier is not made available and you will see non-personalized ads instead. Declining does not restrict any feature of the app. You can change this choice at any time in <strong>iOS Settings &rsaquo; Privacy &amp; Security &rsaquo; Tracking</strong>.</p>
-        <p>Depending on where you live, you may also be asked for additional consent before personalized advertising is used, and you can withdraw that consent later.</p>
+        <h3>Consent in the EEA, UK and Switzerland</h3>
+        <p>If you are in the European Economic Area, the United Kingdom or Switzerland, Solo.Swipe shows Google's consent form (Google User Messaging Platform) before personalized ads are used. You can consent, decline, or choose individual purposes; if you decline, you may still see non-personalized or limited ads. You can review or change your choice at any time in the app under <strong>Settings &rsaquo; Privacy &rsaquo; Ad Privacy Choices</strong>.</p>
 
         <h2 id="analytics">7. Analytics and crash reporting</h2>
-        <p>Solo.Swipe does not include a separate analytics product or a third-party crash-reporting service for the purpose of profiling users. Apple may provide us with aggregated, anonymised App Store metrics and crash reports if you have opted in to sharing diagnostics with developers in your iOS settings; these come from Apple in aggregate form and do not identify you.</p>
-        <p>Note that the advertising SDK described in section 6 does collect device-level data for the purpose of serving ads, as explained there.</p>
+        <p>To learn which features are useful, fix crashes and keep the app free, Solo.Swipe uses <strong>Google Analytics for Firebase</strong> and <strong>Firebase Crashlytics</strong>, provided by Google. They receive:</p>
+        <ul>
+            <li><strong>How the app is used:</strong> which screens and features are opened, and summary counts for each cleaning session — for example how many items were reviewed, kept or deleted, the approximate space freed and how long the session took</li>
+            <li><strong>Interactions with ads, offers and the upgrade screen</strong>, and completed in-app purchases (product, price and currency — never payment details)</li>
+            <li><strong>App and device information:</strong> app version, device model, iOS version, language and approximate country</li>
+            <li><strong>Crash reports:</strong> technical details about what went wrong when the app crashes</li>
+        </ul>
+        <p>This data is linked to a random identifier created for this installation of the app — not to your name, email address or Apple ID. <strong>It never includes your photos, their content, file names, album names, dates or locations.</strong></p>
+        <p>You can turn this off at any time in the app under <strong>Settings &rsaquo; Privacy &rsaquo; Share Usage Data</strong>; from then on, no analytics or crash data is sent from your device. In the EEA, the UK and Switzerland, your choices in the consent form described in section 6 also apply to analytics storage. Google processes this data under the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase privacy terms</a> and the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+        <p>Apple may also provide us with aggregated, anonymised App Store metrics and crash reports if you have opted in to sharing diagnostics with developers in your iOS settings.</p>
 
         <h2 id="location">8. Location data</h2>
-        <p>Solo.Swipe can group your photos by place. This uses location coordinates that are already embedded in your photos' own metadata by the camera; those coordinates are converted into readable place names on your device. Solo.Swipe does not track your movements and does not transmit your location to us.</p>
+        <p>Solo.Swipe can group your photos by place. This uses location coordinates that are already embedded in your photos' own metadata by the camera; those coordinates are converted into readable place names using Apple's geocoding service, which receives the coordinates but no photos. Solo.Swipe never asks for your device's current location, does not track your movements and does not transmit your location to us. Separately, Google derives an approximate country or region from your IP address for advertising and usage statistics (sections 6 and 7).</p>
 
         <h2 id="notifications">9. Notifications</h2>
-        <p>Solo.Swipe can send local reminders about your daily cleaning goal and your streak. These notifications are scheduled and delivered entirely on your device by iOS; they are not push messages sent from a server. Notifications are optional and can be turned off in the app or in <strong>iOS Settings &rsaquo; Notifications</strong>.</p>
+        <p>Solo.Swipe can send local reminders about your daily cleaning goal and your streak. These notifications are scheduled and delivered entirely on your device by iOS; they are not push messages sent from a server. Reminders may mention counts from your library, such as how many photos you took this week; these numbers are calculated on your device. Notifications are optional and can be turned off in the app or in <strong>iOS Settings &rsaquo; Notifications</strong>.</p>
 
         <h2 id="widget">10. Home screen widget</h2>
         <p>Solo.Swipe offers an optional home screen widget that shows your streak and a photo from your library as a reminder to keep cleaning. The widget reads data from a local App Group container shared with the main app, and the photo it displays is read from your library on the device. No widget data leaves your iPhone.</p>
@@ -541,7 +530,8 @@
             </thead>
             <tbody>
                 <tr><td>Apple (PhotoKit, Vision, StoreKit, iOS)</td><td>Photo library access, on-device analysis, purchases, system deletion and notifications</td><td>No — processing happens on your device</td></tr>
-                <tr><td>Google AdMob</td><td>Serving ads in the free version</td><td>No</td></tr>
+                <tr><td>Google AdMob and User Messaging Platform</td><td>Serving ads in the free version and collecting ad consent where required</td><td>No</td></tr>
+                <tr><td>Google Firebase (Analytics, Crashlytics)</td><td>Anonymous usage statistics and crash reports</td><td>No</td></tr>
             </tbody>
         </table>
 
@@ -550,17 +540,19 @@
 
         <h2 id="retention">13. Data retention and deletion</h2>
         <p>Because Solo.Swipe does not send your photos or personal information to a server we operate, there is no remote account or archive for us to delete. All locally stored preferences, statistics and review history are removed when you uninstall the app, and can be reset from the app's settings at any time.</p>
-        <p>Data processed by Google for advertising is retained according to Google's own policies; see the Google links in section 6 for details and controls.</p>
+        <p>Anonymous usage statistics are kept by Google Analytics for up to 14 months and crash reports for up to 90 days, after which they are deleted. Turning off Share Usage Data stops collection right away, and deleting the app resets the random installation ID. Data processed by Google for advertising is retained according to Google's own policies; see the Google links in section 6 for details and controls.</p>
 
         <h2 id="your-rights">14. Your choices and rights</h2>
         <ul>
             <li><strong>Photo access:</strong> grant, limit or revoke it in iOS Settings &rsaquo; Privacy &amp; Security &rsaquo; Photos.</li>
             <li><strong>Tracking:</strong> allow or decline in the app's prompt, and change it later in iOS Settings &rsaquo; Privacy &amp; Security &rsaquo; Tracking.</li>
             <li><strong>Personalized ads:</strong> remove advertising with the paid upgrade, or limit ad personalization through your device and Google settings.</li>
+            <li><strong>Usage statistics:</strong> turn off anonymous analytics and crash reports in the app under Settings &rsaquo; Privacy &rsaquo; Share Usage Data.</li>
+            <li><strong>Ad consent (EEA, UK, Switzerland):</strong> review or change your choice in the app under Settings &rsaquo; Privacy &rsaquo; Ad Privacy Choices.</li>
             <li><strong>Notifications:</strong> enable or disable them in the app or in iOS Settings.</li>
             <li><strong>Local data:</strong> reset statistics in the app, or delete the app to remove everything it stored.</li>
         </ul>
-        <p>Depending on where you live, you may have additional rights over personal data, such as the right to access, correct, delete or object to processing. Since we do not hold personal data about you, requests about advertising data should be directed to Google; you can also contact us using the details below and we will help where we can.</p>
+        <p>Depending on where you live, you may have additional rights over personal data, such as the right to access, correct, delete or object to processing. We cannot connect usage statistics to a specific person, because they are tied only to a random installation ID. Requests about advertising data can be directed to Google; you can also contact us using the details below and we will help where we can.</p>
 
         <h2 id="changes">15. Changes to this policy</h2>
         <p>We may update this policy as the app changes. The revision date at the top of this page always reflects the current version, and the latest version is published here. Continued use of Solo.Swipe after an update means you accept the revised policy.</p>
