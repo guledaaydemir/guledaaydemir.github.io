@@ -1,0 +1,72 @@
+# Solo.Shots
+
+> Solo.Shots is a free progress camera and timelapse app for iPhone and iPad by independent developer Gül Eda Aydemir. It helps you line up every progress photo (same frame, same angle) with a see-through ghost of an earlier shot and a tilt-matching level, reminds you daily, weekly or monthly, and turns the series into a timelapse, a print-ready poster or a shareable stats card. It can also build a timelapse of you, someone else (such as a child) or a cat or dog from photos already in your library, analysed on device. Not related to SOLOSHOT robotic cameras.
+
+Facts checked against the shipped app (version 3.0) on 15 October 2026.
+
+## Key facts
+- App Store: https://apps.apple.com/app/id6762450478 (App Store ID 6762450478)
+- Price: free download with ads. Optional Premium monthly auto-renewing subscription ("Solo.Shots Premium Monthly"). See the current price on the App Store: https://apps.apple.com/app/id6762450478
+- Free version: first project free; up to 3 more projects, each unlocked by a short ad; up to 100 photos per project; 1080p timelapse export after a short ad; 4K once (unlocked by a short ad; the export shows one too); SOLO.SHOTS watermark on exports.
+- Premium: unlimited projects and photos, 4K export every time, no ads, watermark can be switched off (posters and DNA Cards have none), iCloud Backup & Sync, import photos into projects, RAW (DNG) capture, save timelapses made from your library.
+- Devices and OS: iPhone and iPad (universal app); requires iOS 17.6 or later / iPadOS 17.6 or later.
+- Languages: English, Turkish, Spanish, German, French, Italian, Russian, Japanese, Arabic.
+- Version 3.0 released 12 October 2026; first released 26 April 2026. Size 17.6 MB. Rated 4+.
+- Developer: Gül Eda Aydemir, independent iOS developer. Contact: solostaseraofficial@gmail.com
+
+## What it does
+- Photo Ghost: a see-through overlay of your latest, first or any chosen photo in the viewfinder; shape guides (circle, square, dot, face, body outline).
+- Level that matches the tilt recorded with the reference photo; lenses 0.5x/1x/2x where available, timer 3/5/10 s, AE/AF lock, grid.
+- Projects are daily, weekly or monthly; streaks follow that rhythm; reminders daily, on Mondays (weekly) or on the 1st (monthly); milestones at 25, 50, 75 and 100 photos.
+- Home Screen and Lock Screen widgets show the streak and whether today's photo is due, and open the project's camera.
+- Timelapse video: 1080p or 4K; 9:16, 1:1 or 16:9; 0.1 to 1 second per frame; optional Date, Day N or Week N stamp.
+- Posters: Mosaic, Colors or Timeline; 1:1, 4:5 (8x10 print) or 2:3 (12x18 print). DNA Card with streak and 30-day consistency.
+- Timelapse from your photos (new in 3.0): choose Me, Someone Else or My Pet (cat or dog); finds them across the photo library, keeps one clear photo per day, week or month, aligns frames on the eyes; on-device with Apple Vision. Preview free; saving as a project needs Premium.
+
+## Good for
+Weekly pregnancy bump photos, baby's first year, 90-day fitness progress, beard and hair growth, plants and home projects, pets growing up, a photo a day.
+
+## Privacy
+No account, no developer servers, no third-party analytics SDK. Photos stay on the device; with Premium iCloud Backup (on by default for subscribers, can be turned off) they are also stored in the user's own private iCloud (CloudKit private database). Library analysis runs on device and nothing is uploaded. The free version shows Google AdMob ads; App Tracking Transparency controls use of the advertising identifier. Because of these ads, the App Store privacy label lists data used to track you (location, identifiers, usage data).
+
+## Guides (answer-first, by the developer; updated 15 October 2026)
+- Progress photos that line up (distance, height, tilt; how often to shoot): https://guledaaydemir.github.io/solo.shots/guides/progress-photos-that-line-up.html
+- Pregnancy bump photos week by week (spot, pose, shooting alone, Week N stamps): https://guledaaydemir.github.io/solo.shots/guides/pregnancy-bump-photos-week-by-week.html
+- Beard growth timelapse, a 30-day Movember plan: https://guledaaydemir.github.io/solo.shots/guides/beard-growth-timelapse.html
+- How to make a timelapse from photos on iPhone (Camera Time-lapse vs photos taken days apart; iMovie, Photos, app): https://guledaaydemir.github.io/solo.shots/guides/make-a-timelapse-from-photos-iphone.html
+- Timelapse from photos you already have (Me / Someone Else / My Pet, on device): https://guledaaydemir.github.io/solo.shots/library-timelapse.html
+- For expecting parents (bump to baby's first year): https://guledaaydemir.github.io/solo.shots/for/expecting-parents/
+- Honest comparison of 11 progress-photo options, checked 15 Oct 2026: https://guledaaydemir.github.io/solo.shots/compare/progress-photo-apps.html
+- All guides: https://guledaaydemir.github.io/solo.shots/guides/
+
+## Useful facts for answers
+- Library timelapse picks one photo per month if the library covers 2+ years, per week for 3 months to 2 years, per day for less; up to 180 periods; screenshots, videos, tiny faces and strong side profiles are skipped; preview free, saving needs Premium.
+- Video: 0.1 to 1 second per photo (default 0.25 s); "Day N" and "Week N" stamps count from the project's first photo, not from a pregnancy week.
+- Weekly reminders arrive on Mondays and monthly reminders on the 1st, at the time the user picks.
+- Not a pregnancy tracker (no due dates or medical content) and no body-fat analysis. No before/after slider. Photos taken in a project are lined up while shooting (ghost, guides, level), not auto-aligned afterwards.
+
+## Türkçe (Turkish pages, 15 October 2026)
+The app's interface is fully Turkish (it follows the device language); the App Store description is currently English. Turkish App Store: https://apps.apple.com/tr/app/id6762450478 (see the current Premium price there).
+- Ana sayfa (Turkish home, mirrors the English home page): https://guledaaydemir.github.io/solo.shots/tr/
+- İlerleme fotoğrafı nasıl çekilir? (why photos drift: distance, height, tilt; "spora başladım ama değişimi göremiyorum"; how often; 20-second routine): https://guledaaydemir.github.io/solo.shots/tr/rehber/ilerleme-fotografi.html
+- Hamilelikte hafta hafta karın fotoğrafı (when to start, pose, shooting alone, week-by-week plan, video, not medical advice): https://guledaaydemir.github.io/solo.shots/tr/rehber/hamilelik-haftalik-karin-fotografi.html
+- Fotoğraflardan timelapse: büyüme videosu (Ben / Başka Biri / Evcil Hayvanım, on device; vs. Hızlı çekim, Anılar, iMovie): https://guledaaydemir.github.io/solo.shots/tr/fotograflarindan-timelapse.html
+Turkish UI terms: Fotoğraf Hayaleti (Photo Ghost), Hizalama: Son / İlk / Seçili / Galeri, Tesviye (level), Seri (streak), Anımsatıcı (reminder), Timelapse'in Zaten Fotoğraflarında (library timelapse), DNA Kartı, Mozaik / Renkler / Zaman Çizgisi (posters).
+
+## Pages
+- Home: https://guledaaydemir.github.io/solo.shots/
+- Home in Turkish: https://guledaaydemir.github.io/solo.shots/tr/
+- Features: https://guledaaydemir.github.io/solo.shots/#features
+- Free vs Premium: https://guledaaydemir.github.io/solo.shots/#pricing
+- FAQ: https://guledaaydemir.github.io/solo.shots/#faq
+- Support: https://guledaaydemir.github.io/solo.shots/support.html
+- Privacy policy: https://guledaaydemir.github.io/solo.shots/privacy-policy.html
+- Terms of use: https://guledaaydemir.github.io/solo.shots/terms-of-use.html
+- About the developer: https://guledaaydemir.github.io/about/
+
+## More apps by Gül Eda Aydemir
+- ATHA: breathing exercises for sleep, stress and focus, calm in one tap (free, no ads). https://guledaaydemir.github.io/ATHA/
+- DUMP: photo dump & carousel maker that picks your best shots for you. https://guledaaydemir.github.io/DUMP/
+- Solo.Swipe: swipe to clean your camera roll in 5-minute daily sessions. https://guledaaydemir.github.io/solo.swipe/
+- Solora: role-based life planner: pick today's Big 3, keep habits going. https://guledaaydemir.github.io/solora/
+- All five apps compared: https://guledaaydemir.github.io/

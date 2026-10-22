@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hub pages only (English and Turkish). Each app keeps its own sitemap (listed in /robots.txt). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://guledaaydemir.github.io/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/"/>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/about/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/guides/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/guides/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/tr/rehber/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/guides/"/>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/guides/organize-your-life/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/guides/organize-your-life/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/tr/rehber/hayatini-duzenlemeye-nereden-baslamali/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/guides/organize-your-life/"/>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/guides/creator-toolkit/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/guides/creator-toolkit/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/tr/rehber/icerik-ureticisi-ipuclari/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/guides/creator-toolkit/"/>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/guides/small-daily-rituals/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/tr/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/"/>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/tr/rehber/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/guides/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/tr/rehber/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/guides/"/>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/tr/rehber/hayatini-duzenlemeye-nereden-baslamali/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/guides/organize-your-life/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/tr/rehber/hayatini-duzenlemeye-nereden-baslamali/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/guides/organize-your-life/"/>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/tr/rehber/icerik-ureticisi-ipuclari/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/guides/creator-toolkit/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/tr/rehber/icerik-ureticisi-ipuclari/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/guides/creator-toolkit/"/>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/faq/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/faq/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/tr/sss/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/faq/"/>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/tr/sss/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/faq/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/tr/sss/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/faq/"/>
+  </url>
+</urlset>

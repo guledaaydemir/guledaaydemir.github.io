@@ -3,1304 +3,1257 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SOLO.SHOTS — Capture Your Progress. Every Single Day.</title>
-  <meta name="description" content="The daily photo progress tracker built for people who show up. Document your transformation one shot at a time." />
+  <title>Solo.Shots — Progress Photo &amp; Timelapse App for iPhone</title>
+  <meta name="description" content="Free progress camera for iPhone &amp; iPad: a ghost overlay and level help you line up every photo, then turn them into a timelapse, even from old photos." />
+  <link rel="canonical" href="https://guledaaydemir.github.io/solo.shots/" />
+  <link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.shots/" />
+  <link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.shots/tr/" />
+  <link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.shots/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Gül Eda Aydemir" />
+  <meta name="theme-color" content="#03050a" />
+  <meta name="apple-itunes-app" content="app-id=6762450478" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+  <link rel="apple-touch-icon" href="appicon-180.png" />
 
-  <!-- Fonts -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Gül Eda Aydemir · iOS apps" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="tr_TR" />
+  <meta property="og:title" content="Solo.Shots — See your progress, one aligned photo at a time" />
+  <meta property="og:description" content="A ghost overlay and an angle-matching level help you line up every photo. Daily, weekly or monthly reminders. Timelapses up to 4K, even from photos already in your library." />
+  <meta property="og:url" content="https://guledaaydemir.github.io/solo.shots/" />
+  <meta property="og:image" content="https://guledaaydemir.github.io/solo.shots/og-soloshots.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Solo.Shots: years of photos, one timelapse" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Solo.Shots — See your progress, one aligned photo at a time" />
+  <meta name="twitter:description" content="Free progress camera for iPhone &amp; iPad. Photos that line up, reminders on your rhythm, and timelapses up to 4K." />
+  <meta name="twitter:image" content="https://guledaaydemir.github.io/solo.shots/og-soloshots.jpg" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&amp;family=DM+Mono:wght@400;500&amp;family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&amp;display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="img/library-timelapse-600.webp" imagesrcset="img/library-timelapse-600.webp 600w, img/library-timelapse-1206.webp 1206w" imagesizes="(max-width: 899px) 62vw, 300px" />
 
-  <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "@id": "https://guledaaydemir.github.io/solo.shots/#app",
+        "name": "Solo.Shots",
+        "alternateName": ["SOLO.SHOTS", "Solo Shots"],
+        "description": "Progress camera and timelapse app for iPhone and iPad. A Photo Ghost overlay and an angle-matching level help you line up every photo; daily, weekly or monthly projects keep a streak with reminders and widgets; photos become timelapse videos up to 4K, posters and a shareable DNA Card. It can also build a timelapse of you, someone else or a cat or dog from photos already in your library, analysed on device.",
+        "url": "https://guledaaydemir.github.io/solo.shots/",
+        "installUrl": "https://apps.apple.com/app/id6762450478",
+        "downloadUrl": "https://apps.apple.com/app/id6762450478",
+        "sameAs": ["https://apps.apple.com/us/app/solo-shots/id6762450478"],
+        "applicationCategory": "MultimediaApplication",
+        "applicationSubCategory": "Productivity, Photo & Video",
+        "operatingSystem": "iOS 17.6 or later, iPadOS 17.6 or later",
+        "softwareVersion": "3.0",
+        "datePublished": "2026-04-26",
+        "dateModified": "2026-10-12",
+        "fileSize": "17.6 MB",
+        "contentRating": "4+",
+        "inLanguage": ["en", "tr", "es", "de", "fr", "it", "ru", "ja", "ar"],
+        "image": "https://guledaaydemir.github.io/solo.shots/og-soloshots.jpg",
+        "screenshot": [
+          "https://guledaaydemir.github.io/solo.shots/img/library-timelapse-1206.webp",
+          "https://guledaaydemir.github.io/solo.shots/img/camera-overlay-guide-1206.webp",
+          "https://guledaaydemir.github.io/solo.shots/img/timelapse-editor-1206.webp",
+          "https://guledaaydemir.github.io/solo.shots/img/poster-mosaic-1206.webp"
+        ],
+        "featureList": [
+          "Photo Ghost overlay of your latest, first or any chosen photo",
+          "Level that matches the tilt of the reference photo",
+          "Shape guides: circle, square, dot, face and body outline",
+          "Daily, weekly or monthly projects with streaks and reminders",
+          "Milestones at 25, 50, 75 and 100 photos",
+          "Home Screen and Lock Screen widgets that open the project camera",
+          "Timelapse export in 1080p or 4K, 9:16, 1:1 or 16:9, with Date, Day N or Week N stamps",
+          "Timelapse from photos already in your library: you, someone else, or a cat or dog, aligned on the eyes, on device",
+          "Mosaic, Colors and Timeline posters for Instagram or print",
+          "Shareable DNA Card with streak and 30-day consistency",
+          "No account; optional iCloud backup and sync with Premium",
+          "Available in 9 languages"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://apps.apple.com/app/id6762450478",
+          "description": "Free download with ads. Optional Premium monthly auto-renewing subscription."
+        },
+        "author": { "@id": "https://guledaaydemir.github.io/#person" },
+        "publisher": { "@id": "https://guledaaydemir.github.io/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://guledaaydemir.github.io/#person",
+        "name": "Gül Eda Aydemir",
+        "alternateName": "Gul Eda Aydemir",
+        "jobTitle": "Independent iOS developer",
+        "url": "https://guledaaydemir.github.io/about/",
+        "email": "mailto:solostaseraofficial@gmail.com",
+        "sameAs": [
+          "https://apps.apple.com/us/developer/gul-eda-aydemir/id1889159460",
+          "https://instagram.com/solo.stasera"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://guledaaydemir.github.io/solo.shots/#webpage", "workTranslation": { "@id": "https://guledaaydemir.github.io/solo.shots/tr/#webpage" },
+        "url": "https://guledaaydemir.github.io/solo.shots/",
+        "name": "Solo.Shots — Progress Photo & Timelapse App for iPhone",
+        "inLanguage": "en",
+        "isPartOf": { "@type": "WebSite", "@id": "https://guledaaydemir.github.io/#website", "url": "https://guledaaydemir.github.io/", "name": "Gül Eda Aydemir · iOS apps" },
+        "about": { "@id": "https://guledaaydemir.github.io/solo.shots/#app" },
+        "primaryImageOfPage": "https://guledaaydemir.github.io/solo.shots/og-soloshots.jpg",
+        "datePublished": "2026-04-20",
+        "dateModified": "2026-10-15",
+        "breadcrumb": { "@id": "https://guledaaydemir.github.io/solo.shots/#breadcrumb" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://guledaaydemir.github.io/solo.shots/#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Apps by Gül Eda Aydemir", "item": "https://guledaaydemir.github.io/" },
+          { "@type": "ListItem", "position": 2, "name": "Solo.Shots", "item": "https://guledaaydemir.github.io/solo.shots/" }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json" id="faq-jsonld">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://guledaaydemir.github.io/solo.shots/#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Solo.Shots free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Solo.Shots is free to download and use, with ads. Your first project is free, up to 3 more unlock after a short ad each, and free projects hold up to 100 photos. Premium is an optional monthly subscription (see the current price on the App Store). It removes ads, lets you remove watermarks and adds unlimited projects and photos, 4K every time and iCloud backup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I take progress photos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Match the speed of the change: daily for fast changes (a beard, seedlings, a 30-day challenge), weekly for bodies and pregnancy, monthly for children and slow projects. Pick one rhythm and keep it. In Solo.Shots each project is daily, weekly or monthly, and the streak and reminders follow that rhythm."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I take progress photos that line up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Keep the distance, height, tilt and light the same every time. Solo.Shots helps with the first three: the Photo Ghost shows your latest or first photo through the viewfinder, a shape guide marks where the subject goes, and the level buzzes when your phone's tilt matches the reference photo. For similar light, shoot at the same time of day in the same spot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I make a timelapse from photos I already have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. In Solo.Shots 3.0, choose Me, Someone Else or My Pet. The app finds them across your photo library, keeps one clear, front-facing photo per day, week or month, and lines every frame up on the eyes, all on your iPhone. Previewing is free with a watermark; saving the timelapse as a project needs Premium."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work for pets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for cats and dogs. My Pet finds your cat or dog in photos you already have and lines them up into a timelapse. For new photos, any project works: shoot at your pet's eye level and use the Photo Ghost to keep the framing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are my photos uploaded anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not to the developer: Solo.Shots has no account and no server of its own. Photos stay on your device. If you subscribe to Premium and keep iCloud Backup on, projects and photos are also saved to your own private iCloud. Library analysis runs on your iPhone with Apple's Vision framework, and nothing is uploaded. The free version shows Google AdMob ads, which can use your advertising identifier only if you allow tracking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do weekly and monthly projects work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Each project has a rhythm: daily, weekly or monthly. The streak counts days, weeks or months; reminders arrive at your chosen time every day, every Monday, or on the 1st of the month; and milestones celebrate 25, 50, 75 and 100 photos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I export in 4K or for Instagram Reels?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Timelapses export in 1080p or 4K, in 9:16 (Reels, TikTok, Shorts), 1:1 or 16:9, at 0.1 to 1 second per frame, with an optional Date, Day N or Week N stamp. Free exports are 1080p after a short ad, and you can try 4K once (a short ad unlocks it, and the export shows one too); Premium exports 4K every time with no ads, and you can switch the watermark off."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Solo.Shots work on iPad, and which iOS version do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, it works on iPad. Solo.Shots is one universal app for iPhone and iPad and needs iOS 17.6 or later on iPhone, or iPadOS 17.6 or later on iPad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I restore or cancel Premium?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To restore, open Settings (the gear on the Home screen) → Subscription → Restore Purchases while signed in with the same Apple Account. To cancel, go to your Apple Account subscriptions (iPhone Settings → your name → Subscriptions). Premium stays active until the end of the period you paid for."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which languages is Solo.Shots available in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nine: English, Turkish, Spanish, German, French, Italian, Russian, Japanese and Arabic. The app follows your device language, and you can switch languages in Settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Solo.Shots related to SOLOSHOT cameras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Solo.Shots is an iPhone and iPad app by independent developer Gül Eda Aydemir. It isn't related to SOLOSHOT, the robotic camera company."
+      }
+    }
+  ]
+}
+  </script>
 
   <style>
-    /* ─── TOKENS ──────────────────────────────── */
     :root {
-      --bg:           #03050a;
-      --bg2:          #060b12;
-      --surface:      #0a1018;
-      --surface2:     #0d1520;
-      --border:       rgba(0,212,255,0.1);
-      --border2:      rgba(255,255,255,0.06);
-      --cyan:         #00d4ff;
-      --cyan2:        #00a8d4;
-      --cyan-glow:    rgba(0,212,255,0.18);
-      --cyan-glow2:   rgba(0,212,255,0.06);
-      --white:        #f0f6ff;
-      --grey:         #7a8fa8;
-      --grey2:        #3d5168;
-      --font-display: 'Syne', sans-serif;
-      --font-mono:    'DM Mono', monospace;
-      --font-body:    'DM Sans', sans-serif;
+      --bg: #03050a;
+      --bg2: #060b12;
+      --surface: #0a1018;
+      --surface2: #0d1520;
+      --border: rgba(0,212,255,0.14);
+      --border2: rgba(255,255,255,0.08);
+      --cyan: #00d4ff;
+      --cyan2: #00a8d4;
+      --cyan-glow: rgba(0,212,255,0.18);
+      --cyan-glow2: rgba(0,212,255,0.06);
+      --white: #f0f6ff;
+      --grey: #a3b4c8;
+      --grey2: #7a8fa8;
+      --font-display: 'Syne', system-ui, sans-serif;
+      --font-mono: 'DM Mono', ui-monospace, monospace;
+      --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+      --wrap: 1160px;
+      --gutter: 20px;
     }
-
-    /* ─── RESET ───────────────────────────────── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; scroll-padding-top: 84px; -webkit-text-size-adjust: 100%; }
     body {
       background: var(--bg);
       color: var(--white);
       font-family: var(--font-body);
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.65;
       overflow-x: hidden;
-      cursor: none;
     }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--cyan); }
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--gutter); }
+    .skip {
+      position: absolute; left: 12px; top: -60px; z-index: 2000;
+      background: var(--cyan); color: var(--bg); padding: 10px 16px; border-radius: 8px;
+      font-weight: 700; text-decoration: none;
+    }
+    .skip:focus { top: 12px; }
 
-    /* ─── CUSTOM CURSOR ───────────────────────── */
-    #cursor {
-      position: fixed;
-      width: 10px; height: 10px;
-      background: var(--cyan);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9999;
-      transform: translate(-50%,-50%);
-      transition: transform 0.05s, width 0.2s, height 0.2s, opacity 0.2s;
-      mix-blend-mode: screen;
+    /* ─── NAV ─── */
+    .site-header {
+      position: sticky; top: 0; z-index: 900;
+      background: rgba(3,5,10,0.82);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border2);
     }
-    #cursor-ring {
-      position: fixed;
-      width: 36px; height: 36px;
-      border: 1px solid rgba(0,212,255,0.5);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 9998;
-      transform: translate(-50%,-50%);
-      transition: transform 0.12s ease, width 0.2s, height 0.2s;
+    .nav { display: flex; align-items: center; gap: 24px; min-height: 64px; }
+    .logo {
+      font-family: var(--font-mono); font-size: 16px; font-weight: 500;
+      letter-spacing: 0.18em; color: var(--white); text-decoration: none; white-space: nowrap;
     }
-    body:hover #cursor { opacity: 1; }
-
-    /* ─── GRAIN OVERLAY ───────────────────────── */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
-      opacity: 0.025;
-      pointer-events: none;
-      z-index: 1000;
-    }
-
-    /* ─── NAV ─────────────────────────────────── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0;
-      z-index: 900;
-      padding: 20px 48px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border-bottom: 1px solid transparent;
-      transition: border-color 0.4s, background 0.4s;
-    }
-    nav.scrolled {
-      background: rgba(3,5,10,0.85);
-      border-bottom-color: var(--border);
-    }
-    .nav-logo {
-      font-family: var(--font-mono);
-      font-size: 16px;
-      font-weight: 500;
-      letter-spacing: 0.18em;
-      color: var(--white);
-      text-decoration: none;
-    }
-    .nav-logo em { color: var(--cyan); font-style: normal; }
-    .nav-links {
-      display: flex; gap: 36px; list-style: none;
-    }
+    .logo em { color: var(--cyan); font-style: normal; }
+    .nav > nav { margin-left: auto; min-width: 0; }
+    .nav-links { display: flex; gap: 26px; list-style: none; }
     .nav-links a {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--grey);
-      text-decoration: none;
-      transition: color 0.2s;
+      font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--grey); text-decoration: none;
     }
     .nav-links a:hover { color: var(--cyan); }
     .nav-cta {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--bg);
-      background: var(--cyan);
-      padding: 10px 22px;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: box-shadow 0.3s, transform 0.2s;
+      font-family: var(--font-mono); font-size: 12px; font-weight: 500; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--bg); background: var(--cyan);
+      padding: 10px 18px; border-radius: 8px; text-decoration: none; white-space: nowrap;
+      transition: box-shadow .25s;
     }
-    .nav-cta:hover {
-      box-shadow: 0 0 24px rgba(0,212,255,0.6);
-      transform: translateY(-1px);
-    }
+    .nav-cta:hover { box-shadow: 0 0 24px rgba(0,212,255,0.55); }
 
-    /* ─── HERO ────────────────────────────────── */
-    #hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      padding: 120px 48px 80px;
-      overflow: hidden;
+    /* ─── SHARED ─── */
+    section { padding: 96px 0; }
+    .eyebrow, .section-label {
+      font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--cyan);
+      display: flex; align-items: center; gap: 10px; margin-bottom: 18px;
     }
+    .eyebrow::before, .section-label::before { content: ''; width: 24px; height: 1px; background: var(--cyan); flex-shrink: 0; }
+    h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.015em; }
+    h2 { font-size: clamp(30px, 4.2vw, 48px); font-weight: 800; line-height: 1.08; margin-bottom: 18px; }
+    h3 { font-size: 20px; font-weight: 700; line-height: 1.25; }
+    .lead { font-size: 18px; color: var(--grey); max-width: 640px; }
+    .lead strong, .muted strong { color: var(--white); font-weight: 500; }
+    .muted { color: var(--grey); }
+    .section-head { margin-bottom: 48px; }
 
-    /* animated grid bg */
-    .hero-grid {
-      position: absolute; inset: 0;
-      background-image:
-        linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px);
-      background-size: 60px 60px;
-      mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 0%, transparent 100%);
-      -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 0%, transparent 100%);
-      animation: gridDrift 20s linear infinite;
-    }
-    @keyframes gridDrift {
-      0%   { background-position: 0 0; }
-      100% { background-position: 0 60px; }
-    }
-
-    /* radial glow behind hero */
-    .hero-glow {
-      position: absolute;
-      width: 800px; height: 600px;
-      background: radial-gradient(ellipse, rgba(0,212,255,0.12) 0%, transparent 70%);
-      top: -100px; left: 50%;
-      transform: translateX(-50%);
-      pointer-events: none;
-      animation: pulseGlow 6s ease-in-out infinite;
-    }
-    @keyframes pulseGlow {
-      0%,100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
-      50%      { opacity: 1;   transform: translateX(-50%) scale(1.08); }
-    }
-
-    /* floating orbs */
-    .orb {
-      position: absolute;
-      border-radius: 50%;
-      filter: blur(60px);
-      pointer-events: none;
-    }
-    .orb-1 { width:300px; height:300px; background:rgba(0,212,255,0.07); top:10%; left:5%;  animation: floatA 12s ease-in-out infinite; }
-    .orb-2 { width:200px; height:200px; background:rgba(0,168,212,0.05); top:60%; right:8%; animation: floatB 9s  ease-in-out infinite; }
-    .orb-3 { width:150px; height:150px; background:rgba(0,212,255,0.06); top:40%; left:80%; animation: floatA 15s ease-in-out infinite reverse; }
-    @keyframes floatA { 0%,100%{transform:translate(0,0)}  50%{transform:translate(20px,-30px)} }
-    @keyframes floatB { 0%,100%{transform:translate(0,0)}  50%{transform:translate(-15px,25px)} }
-
-    .hero-inner {
-      position: relative; z-index: 2;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: center;
-      max-width: 1200px;
-      width: 100%;
-    }
-    .hero-left { display: flex; flex-direction: column; gap: 28px; }
-
-    .hero-eyebrow {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      letter-spacing: 0.24em;
-      text-transform: uppercase;
-      color: var(--cyan);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      opacity: 0;
-    }
-    .hero-eyebrow::before {
-      content: '';
-      display: block;
-      width: 28px; height: 1px;
-      background: var(--cyan);
-    }
-
-    .hero-headline {
-      font-family: var(--font-display);
-      font-size: clamp(44px, 6vw, 80px);
-      font-weight: 800;
-      line-height: 1.0;
-      letter-spacing: -0.02em;
-      color: var(--white);
-      opacity: 0;
-    }
-    .hero-headline em {
-      font-style: normal;
-      background: linear-gradient(135deg, var(--cyan) 0%, #ffffff 60%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hero-sub {
-      font-size: 18px;
-      font-weight: 300;
-      color: var(--grey);
-      line-height: 1.7;
-      max-width: 420px;
-      opacity: 0;
-    }
-
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      opacity: 0;
-    }
-
+    /* ─── APP STORE BUTTON + QR ─── */
     .btn-appstore {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      background: var(--cyan);
-      color: var(--bg);
-      font-family: var(--font-mono);
-      font-weight: 500;
-      font-size: 14px;
-      letter-spacing: 0.06em;
-      padding: 14px 28px;
-      border-radius: 12px;
-      text-decoration: none;
-      position: relative;
-      overflow: hidden;
-      transition: transform 0.25s, box-shadow 0.35s;
-      box-shadow: 0 0 0 rgba(0,212,255,0);
+      display: inline-flex; align-items: center; gap: 12px;
+      background: var(--cyan); color: var(--bg);
+      padding: 12px 24px 12px 18px; border-radius: 14px; text-decoration: none;
+      transition: transform .2s, box-shadow .3s;
+      min-height: 56px;
     }
-    .btn-appstore::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-    .btn-appstore:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 0 40px rgba(0,212,255,0.55), 0 8px 24px rgba(0,0,0,0.4);
-    }
-    .btn-appstore:hover::before { opacity: 1; }
+    .btn-appstore:hover { transform: translateY(-2px); box-shadow: 0 0 36px rgba(0,212,255,0.5), 0 8px 24px rgba(0,0,0,0.4); }
     .btn-appstore svg { flex-shrink: 0; }
-
-    .btn-ghost {
-      font-family: var(--font-mono);
-      font-size: 13px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--grey);
-      text-decoration: none;
-      border: 1px solid var(--border2);
-      padding: 13px 22px;
-      border-radius: 10px;
-      transition: color 0.2s, border-color 0.2s;
+    .btn-appstore span { display: flex; flex-direction: column; line-height: 1.1; font-family: var(--font-body); font-weight: 700; font-size: 20px; }
+    .btn-appstore small { font-size: 12px; font-weight: 500; letter-spacing: 0.02em; }
+    .cta-row { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+    .qr {
+      display: none; align-items: center; gap: 12px;
+      padding: 8px 14px 8px 8px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface);
     }
-    .btn-ghost:hover { color: var(--cyan); border-color: var(--cyan); }
-
-    .hero-stats {
-      display: flex; gap: 32px; opacity: 0;
-    }
-    .stat { display: flex; flex-direction: column; gap: 2px; }
-    .stat-num {
-      font-family: var(--font-mono);
-      font-size: 24px;
-      font-weight: 500;
-      color: var(--white);
-    }
-    .stat-num span { color: var(--cyan); }
-    .stat-label {
-      font-size: 12px;
-      color: var(--grey);
-      letter-spacing: 0.06em;
+    .qr img { width: 88px; height: 88px; border-radius: 8px; background: #fff; }
+    .qr p { font-family: var(--font-mono); font-size: 12px; line-height: 1.5; color: var(--grey); letter-spacing: 0.04em; }
+    .micro-facts { display: flex; flex-wrap: wrap; gap: 6px 0; list-style: none; margin-top: 18px; font-family: var(--font-mono); font-size: 12.5px; color: var(--grey); letter-spacing: 0.04em; }
+    .micro-facts li:not(:last-child)::after { content: '·'; margin: 0 10px; color: var(--grey2); }
+    .hero-note { margin-top: 10px; font-size: 14px; line-height: 1.5; color: var(--grey); max-width: 520px; }
+    /* Phones: keep price + data facts in the first screen; the use-case chips move below them */
+    @media (max-width: 600px) {
+      .hero-copy { display: flex; flex-direction: column; }
+      .hero-copy .for-chips { order: 1; margin: 18px 0 0; }
+      .hero .lead { margin-bottom: 18px; }
+      section.hero { padding-top: 22px; }
+      .hero .crumbs ol { margin-bottom: 16px; }
     }
 
-    /* ─── PHONE MOCKUP ────────────────────────── */
-    .hero-right {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      position: relative;
+    /* ─── PHONE FRAMES ─── */
+    .phone {
+      position: relative; border-radius: 34px; overflow: hidden;
+      border: 1.5px solid rgba(0,212,255,0.25); background: #000;
+      box-shadow: 0 0 60px rgba(0,212,255,0.10), 0 30px 70px rgba(0,0,0,0.55);
+      aspect-ratio: 600 / 1304;
     }
+    .phone img { width: 100%; height: 100%; object-fit: cover; }
 
-    .mockup-wrap {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* ─── HERO ─── */
+    .hero { position: relative; padding: 56px 0 72px; overflow: hidden; }
+    .hero-bg {
+      position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 60% 50% at 70% 10%, rgba(0,212,255,0.13), transparent 70%),
+        linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px) 0 0 / 60px 60px,
+        linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px) 0 0 / 60px 60px;
+      -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 0%, #000 0%, transparent 100%);
+              mask-image: radial-gradient(ellipse 90% 80% at 50% 0%, #000 0%, transparent 100%);
     }
-    .mockup-glow-ring {
-      position: absolute;
-      width: 340px; height: 340px;
-      border-radius: 50%;
-      border: 1px solid rgba(0,212,255,0.15);
-      animation: ringPulse 4s ease-in-out infinite;
-    }
-    .mockup-glow-ring:nth-child(2) {
-      width: 440px; height: 440px;
-      animation-delay: 1.5s;
-      border-color: rgba(0,212,255,0.07);
-    }
-    @keyframes ringPulse {
-      0%,100%{ opacity:1; transform:scale(1); }
-      50%    { opacity:0.4; transform:scale(1.04); }
-    }
-
-    .mockup-placeholder {
-      position: relative; z-index: 2;
-      width: 240px;
-      height: 490px;
-      background: linear-gradient(160deg, var(--surface) 0%, var(--bg2) 100%);
-      border-radius: 38px;
-      border: 1.5px solid rgba(0,212,255,0.2);
-      box-shadow:
-        0 0 60px rgba(0,212,255,0.1),
-        0 40px 80px rgba(0,0,0,0.6),
-        inset 0 1px 0 rgba(255,255,255,0.05);
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      animation: phoneFloat 6s ease-in-out infinite;
-    }
-    @keyframes phoneFloat {
-      0%,100%{ transform: translateY(0) rotate(-1deg); }
-      50%    { transform: translateY(-16px) rotate(0.5deg); }
-    }
-    .mockup-notch {
-      width: 90px; height: 22px;
-      background: var(--bg);
-      border-radius: 0 0 14px 14px;
-      margin: 0 auto;
-      margin-top: 10px;
-    }
-    .mockup-screen {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      padding: 12px;
-      gap: 8px;
-    }
-    .mockup-bar {
-      height: 6px;
-      border-radius: 3px;
-      background: rgba(0,212,255,0.15);
-    }
-    .mockup-bar.accent { background: var(--cyan); width: 60%; }
-    .mockup-bar.short  { width: 40%; }
-
-    .mockup-photo-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 4px;
-      margin-top: 8px;
-    }
-    .mockup-photo-cell {
-      height: 52px;
-      border-radius: 6px;
-      background: linear-gradient(135deg, rgba(0,212,255,0.12), rgba(0,212,255,0.04));
-      position: relative;
-      overflow: hidden;
-    }
-    .mockup-photo-cell::after {
-      content:'';
-      position:absolute; inset:0;
-      background: linear-gradient(135deg, rgba(0,212,255,0.08) 0%, transparent 60%);
-    }
-    .mockup-photo-cell.lit {
-      background: linear-gradient(135deg, rgba(0,212,255,0.3), rgba(0,168,212,0.1));
-      box-shadow: 0 0 12px rgba(0,212,255,0.2);
-    }
-    .mockup-streak {
-      margin-top: 8px;
-      background: rgba(0,212,255,0.07);
-      border: 1px solid rgba(0,212,255,0.15);
-      border-radius: 10px;
-      padding: 8px 10px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .streak-fire {
-      width: 20px; height: 20px;
-      background: linear-gradient(135deg, #ff8c00, #ff4500);
-      border-radius: 50%;
-      box-shadow: 0 0 8px rgba(255,100,0,0.5);
-    }
-    .streak-text { font-family: var(--font-mono); font-size: 10px; color: var(--cyan); }
-
-    /* ─── SECTION SHARED ──────────────────────── */
-    section { padding: 120px 48px; }
-
-    .section-label {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 0.26em;
-      text-transform: uppercase;
-      color: var(--cyan);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 28px;
-    }
-    .section-label::before {
-      content:'';
-      width: 20px; height: 1px;
-      background: var(--cyan);
-    }
-
-    .section-heading {
-      font-family: var(--font-display);
-      font-size: clamp(32px, 4.5vw, 56px);
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      line-height: 1.05;
-      color: var(--white);
-    }
-
-    /* ─── WHY / PHILOSOPHY ────────────────────── */
-    #philosophy {
-      background: var(--bg2);
-      position: relative;
-      overflow: hidden;
-    }
-    #philosophy::before {
-      content:'';
-      position: absolute;
-      right: -200px; top: -200px;
-      width: 600px; height: 600px;
-      background: radial-gradient(circle, rgba(0,212,255,0.06) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .philosophy-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-      align-items: start;
-    }
-    .philosophy-left {}
-    .philosophy-right {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      padding-top: 8px;
-    }
-
-    .philosophy-manifesto {
-      font-family: var(--font-display);
-      font-size: clamp(22px, 2.8vw, 34px);
-      font-weight: 700;
-      line-height: 1.3;
-      color: var(--white);
-      margin: 28px 0 36px;
-    }
-    .philosophy-manifesto em {
+    .hero-inner { position: relative; display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 56px; align-items: center; }
+    .crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; font-family: var(--font-mono); font-size: 12px; color: var(--grey2); margin-bottom: 26px; }
+    .crumbs li + li::before { content: '›'; margin-right: 6px; }
+    .crumbs a { color: var(--grey); text-decoration: none; }
+    .crumbs a:hover { color: var(--cyan); }
+    .hero h1 { font-size: clamp(34px, 4.3vw, 54px); font-weight: 800; line-height: 1.04; letter-spacing: -0.025em; margin-bottom: 22px; }
+    .hero h1 em {
       font-style: normal;
-      color: var(--cyan);
+      background: linear-gradient(135deg, var(--cyan) 0%, #ffffff 75%);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero .lead { margin-bottom: 22px; }
+    .for-chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin-bottom: 28px; }
+    .for-chips li {
+      font-size: 13.5px; color: var(--white); padding: 5px 12px; border-radius: 999px;
+      border: 1px solid var(--border); background: var(--cyan-glow2);
+    }
+    .hero-shot { position: relative; justify-self: center; width: 100%; max-width: 300px; }
+    .hero-shot::before {
+      content: ''; position: absolute; inset: -12% -22%; z-index: -1;
+      background: radial-gradient(circle, rgba(0,212,255,0.16) 0%, transparent 62%);
+    }
+    .hero-shot figcaption { margin-top: 16px; text-align: center; font-size: 14px; color: var(--grey); }
+    .pill {
+      display: inline-block; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--bg); background: var(--cyan); border-radius: 999px; padding: 3px 10px; margin-right: 6px; vertical-align: 1px;
     }
 
-    .philosophy-body {
-      font-size: 16px;
-      font-weight: 300;
-      color: var(--grey);
-      line-height: 1.85;
-      margin-bottom: 24px;
-    }
+    /* ─── FACT STRIP ─── */
+    .factstrip { background: var(--cyan); color: var(--bg); }
+    .factstrip ul { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 28px; padding-top: 14px; padding-bottom: 14px; }
+    .factstrip li { font-family: var(--font-mono); font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; }
 
-    .truth-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      padding: 20px 0;
-      border-bottom: 1px solid var(--border2);
-      overflow: hidden;
+    /* ─── USE CASES ─── */
+    #uses { background: var(--bg2); }
+    .uses-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+    .use {
+      background: var(--surface); border: 1px solid var(--border2); border-radius: 18px; padding: 24px;
+      display: flex; flex-direction: column; gap: 10px;
     }
-    .truth-item:first-child { border-top: 1px solid var(--border2); }
-    .truth-num {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      color: var(--cyan);
-      letter-spacing: 0.1em;
-      padding-top: 3px;
-      flex-shrink: 0;
-      width: 28px;
-    }
-    .truth-text {
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--white);
-      line-height: 1.6;
-    }
-    .truth-text span { color: var(--grey); font-size: 14px; display: block; margin-top: 4px; }
+    .use-meta { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cyan); }
+    .use p:last-child { color: var(--grey); font-size: 15px; }
+    .use.custom { border-style: dashed; border-color: var(--border); background: transparent; }
 
-    /* ─── FEATURES ────────────────────────────── */
-    #features {
-      background: var(--bg);
-      position: relative;
+    /* ─── HOW IT WORKS ─── */
+    .steps { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; counter-reset: step; }
+    .step {
+      background: var(--surface); border: 1px solid var(--border2); border-radius: 22px;
+      padding: 28px 26px 0; display: flex; flex-direction: column; overflow: hidden;
     }
-    #features::before {
-      content:'';
-      position: absolute;
-      left: 50%; top: 0;
-      transform: translateX(-50%);
-      width: 1px;
-      height: 100%;
-      background: linear-gradient(to bottom, transparent, rgba(0,212,255,0.12), transparent);
-    }
+    .step-num { font-family: var(--font-mono); font-size: 13px; color: var(--cyan); letter-spacing: 0.14em; margin-bottom: 10px; }
+    .step h3 { margin-bottom: 8px; }
+    .step p { color: var(--grey); font-size: 15px; margin-bottom: 24px; }
+    .step .phone { width: 78%; max-width: 230px; margin: auto auto 28px; border-radius: 28px; }
 
-    .features-header {
-      max-width: 1200px;
-      margin: 0 auto 72px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
+    /* ─── FEATURE ROWS ─── */
+    .feature { padding: 88px 0; }
+    .feature:nth-of-type(even) { background: var(--bg2); }
+    .feature-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 64px; align-items: center; }
+    .feature h2 { font-size: clamp(28px, 3.1vw, 40px); }
+    .feature.flip .feature-media { order: -1; }
+    .feature-media { display: flex; justify-content: center; gap: 18px; }
+    .feature-media .phone { width: 100%; max-width: 280px; }
+    .feature-media.duo .phone { max-width: 240px; }
+    .feature-media.duo .phone:nth-child(2) { margin-top: 48px; }
+    .ticks { list-style: none; margin-top: 22px; display: grid; gap: 12px; }
+    .ticks li { position: relative; padding-left: 28px; color: var(--grey); }
+    .ticks li strong { color: var(--white); font-weight: 500; }
+    .ticks li::before {
+      content: ''; position: absolute; left: 2px; top: 9px; width: 12px; height: 7px;
+      border-left: 2px solid var(--cyan); border-bottom: 2px solid var(--cyan); transform: rotate(-45deg);
     }
-    .features-header-right {
-      font-size: 15px;
-      color: var(--grey);
-      max-width: 280px;
-      text-align: right;
-      line-height: 1.7;
-    }
+    .note { margin-top: 18px; font-size: 14px; color: var(--grey2); }
+    .banner { border-radius: 20px; overflow: hidden; border: 1px solid var(--border); margin-top: 28px; }
 
-    .features-grid {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2px;
-    }
+    /* ─── PRIVACY ─── */
+    .privacy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 8px; }
+    .privacy-item { background: var(--surface); border: 1px solid var(--border2); border-radius: 16px; padding: 22px; }
+    .privacy-item h3 { font-size: 17px; margin-bottom: 6px; }
+    .privacy-item p { color: var(--grey); font-size: 15px; }
+    .privacy-item.caveat { border-color: rgba(255,190,90,0.28); }
+    .privacy-item.caveat h3 { color: #ffd08a; }
 
-    .feature-card {
-      background: var(--surface);
-      padding: 48px;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: start;
-      position: relative;
-      overflow: hidden;
-      transition: background 0.3s;
-    }
-    .feature-card:hover { background: var(--surface2); }
-    .feature-card::before {
-      content:'';
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(0,212,255,0.04) 0%, transparent 60%);
-      opacity: 0;
-      transition: opacity 0.4s;
-    }
-    .feature-card:hover::before { opacity: 1; }
+    /* ─── PRICING TABLE ─── */
+    #pricing { background: var(--bg2); }
+    .table-scroll { overflow-x: auto; border: 1px solid var(--border); border-radius: 18px; background: var(--surface); }
+    table { width: 100%; border-collapse: collapse; min-width: 560px; font-size: 15px; }
+    caption { text-align: left; padding: 16px 20px; color: var(--grey); font-size: 14px; border-bottom: 1px solid var(--border2); }
+    th, td { text-align: left; padding: 13px 20px; border-bottom: 1px solid var(--border2); vertical-align: top; }
+    thead th { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cyan); background: var(--surface2); }
+    tbody th { font-weight: 500; color: var(--white); width: 30%; }
+    td { color: var(--grey); }
+    tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+    .price-notes { margin-top: 18px; display: grid; gap: 6px; font-size: 14px; color: var(--grey2); }
 
-    .feature-card-top-left  { border-radius: 2px 0 0 0; }
-    .feature-card-top-right { border-radius: 0 2px 0 0; }
-    .feature-card-bot-left  { border-radius: 0 0 0 2px; }
-    .feature-card-bot-right { border-radius: 0 0 2px 0; }
+    /* ─── FACTS + WHAT'S NEW ─── */
+    .facts-inner { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 28px; align-items: start; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 30px; }
+    .card h2 { font-size: clamp(24px, 3vw, 32px); }
+    .facts { display: grid; grid-template-columns: 170px 1fr; gap: 0; margin-top: 8px; }
+    .facts dt, .facts dd { padding: 11px 0; border-bottom: 1px solid var(--border2); font-size: 15px; }
+    .facts dt { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--grey2); padding-right: 14px; padding-top: 14px; }
+    .facts dd { color: var(--white); }
+    .facts dd span { color: var(--grey); }
+    .facts dt:last-of-type, .facts dd:last-of-type { border-bottom: 0; }
+    .release-date { font-family: var(--font-mono); font-size: 12.5px; color: var(--cyan); letter-spacing: 0.06em; margin-bottom: 14px; }
+    .card .ticks { margin-top: 10px; }
+    .card .ticks li { font-size: 15px; }
 
-    .feature-info { display: flex; flex-direction: column; gap: 14px; }
-    .feature-icon {
-      width: 48px; height: 48px;
-      border-radius: 12px;
-      background: var(--cyan-glow2);
-      border: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 20px;
-    }
-    .feature-title {
-      font-family: var(--font-display);
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--white);
-    }
-    .feature-desc {
-      font-size: 14px;
-      color: var(--grey);
-      line-height: 1.75;
-    }
-    .feature-tag {
-      display: inline-block;
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--cyan);
-      border: 1px solid rgba(0,212,255,0.2);
-      padding: 4px 10px;
-      border-radius: 4px;
-      width: fit-content;
-    }
+    /* ─── FAQ ─── */
+    #faq { background: var(--bg2); }
+    .faq-list { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .faq-item { background: var(--surface); border: 1px solid var(--border2); border-radius: 16px; padding: 22px 24px; }
+    .faq-item h3 { font-size: 17.5px; line-height: 1.35; margin-bottom: 10px; }
+    .faq-answer { color: var(--grey); font-size: 15.5px; }
+    .faq-answer p + p { margin-top: 10px; }
 
-    /* screenshot placeholder */
-    .feature-screenshot {
-      height: 220px;
-      border-radius: 16px;
-      background: linear-gradient(160deg, var(--surface2) 0%, var(--bg) 100%);
-      border: 1px solid var(--border);
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    /* ─── DEVELOPER / TRUST ─── */
+    .trust { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; }
+    .trust-links { list-style: none; display: grid; gap: 10px; margin-top: 22px; }
+    .trust-links a { color: var(--white); text-decoration: none; border-bottom: 1px solid var(--border); }
+    .trust-links a:hover { color: var(--cyan); border-color: var(--cyan); }
+    .trust-points { list-style: none; display: grid; gap: 10px; }
+    .trust-points li {
+      background: var(--surface); border: 1px solid var(--border2); border-radius: 14px; padding: 14px 18px;
+      font-size: 15px; color: var(--grey);
     }
-    .feature-screenshot::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: linear-gradient(135deg, rgba(0,212,255,0.06) 0%, transparent 60%);
-    }
-    .feature-screenshot-label {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--grey2);
-    }
-    /* inner decorations */
-    .fs-bar {
-      position: absolute;
-      height: 3px;
-      border-radius: 2px;
-      background: linear-gradient(90deg, var(--cyan), transparent);
-    }
-    .fs-bar-1 { width: 70%; top: 30px; left: 16px; }
-    .fs-bar-2 { width: 45%; top: 42px; left: 16px; opacity: 0.5; }
-    .fs-circle {
-      position: absolute;
-      border-radius: 50%;
-      border: 1px solid rgba(0,212,255,0.2);
-    }
-    .fs-circle-1 { width: 60px; height:60px; bottom: 20px; right: 20px; }
-    .fs-circle-2 { width: 40px; height:40px; bottom: 30px; right: 30px; background: rgba(0,212,255,0.06); }
+    .trust-points strong { color: var(--white); font-weight: 500; display: block; }
 
-    /* ─── HOW IT WORKS ────────────────────────── */
-    #howitworks {
-      background: var(--bg2);
+    /* ─── FINAL CTA ─── */
+    #download { position: relative; text-align: center; overflow: hidden; background: var(--bg); }
+    #download::before {
+      content: ''; position: absolute; left: 50%; top: 50%; width: 760px; height: 520px; transform: translate(-50%,-50%);
+      background: radial-gradient(ellipse, rgba(0,212,255,0.11) 0%, transparent 70%); pointer-events: none;
     }
-    .hiw-inner {
-      max-width: 1200px; margin: 0 auto;
-    }
-    .hiw-steps {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 2px;
-      margin-top: 64px;
-      position: relative;
-    }
-    .hiw-step {
-      background: var(--surface);
-      padding: 40px 32px;
-      position: relative;
-      overflow: hidden;
-    }
-    .hiw-step::after {
-      content: '';
-      position: absolute;
-      top: 0; right: 0;
-      width: 1px; height: 100%;
-      background: var(--border);
-    }
-    .hiw-step:last-child::after { display: none; }
-    .step-num {
-      font-family: var(--font-mono);
-      font-size: 48px;
-      font-weight: 300;
-      color: rgba(0,212,255,0.08);
-      line-height: 1;
-      margin-bottom: 24px;
-      display: block;
-    }
-    .step-icon {
-      font-size: 28px;
-      margin-bottom: 16px;
-      display: block;
-    }
-    .step-title {
-      font-family: var(--font-display);
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--white);
-      margin-bottom: 10px;
-    }
-    .step-desc {
-      font-size: 14px;
-      color: var(--grey);
-      line-height: 1.7;
-    }
+    .cta-inner { position: relative; max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+    .cta-inner h2 { font-size: clamp(36px, 5vw, 60px); }
+    .cta-inner h2 em { font-style: normal; color: var(--cyan); }
+    .cta-inner .lead { margin: 0 auto 30px; }
+    .cta-inner .cta-row { justify-content: center; }
+    .cta-inner .micro-facts { justify-content: center; }
 
-    /* ─── TICKER ──────────────────────────────── */
-    .ticker-wrap {
-      background: var(--cyan);
-      padding: 14px 0;
-      overflow: hidden;
-      white-space: nowrap;
+    /* ─── MORE APPS ─── */
+    #more-apps { background: var(--bg2); padding: 80px 0; }
+    .apps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; list-style: none; }
+    .app-card {
+      display: flex; flex-direction: column; gap: 10px; height: 100%;
+      background: var(--surface); border: 1px solid var(--border2); border-radius: 18px; padding: 22px;
+      text-decoration: none; color: var(--white); transition: border-color .2s, transform .2s;
     }
-    .ticker-track {
-      display: inline-block;
-      animation: ticker 22s linear infinite;
-    }
-    .ticker-track span {
-      font-family: var(--font-mono);
-      font-size: 13px;
-      font-weight: 500;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--bg);
-      padding: 0 32px;
-    }
-    .ticker-track span::before {
-      content: '·';
-      margin-right: 32px;
-      opacity: 0.4;
-    }
-    @keyframes ticker {
-      0%   { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
+    .app-card:hover { border-color: var(--border); transform: translateY(-2px); }
+    .app-card img { width: 56px; height: 56px; border-radius: 13px; }
+    .app-card strong { font-family: var(--font-display); font-size: 18px; }
+    .app-card span { color: var(--grey); font-size: 14.5px; }
+    .app-card em { margin-top: auto; font-style: normal; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cyan); }
 
-    /* ─── CTA SECTION ─────────────────────────── */
-    #cta {
-      background: var(--bg);
-      padding: 140px 48px;
-      position: relative;
-      overflow: hidden;
-    }
-    #cta::before {
-      content:'';
-      position: absolute;
-      width: 700px; height: 500px;
-      background: radial-gradient(ellipse, rgba(0,212,255,0.1) 0%, transparent 70%);
-      top: 50%; left: 50%;
-      transform: translate(-50%,-50%);
-      pointer-events: none;
-      animation: pulseGlow 8s ease-in-out infinite;
-    }
-    .cta-inner {
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
-      position: relative; z-index: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 32px;
-    }
-    .cta-heading {
-      font-family: var(--font-display);
-      font-size: clamp(36px, 5vw, 64px);
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      line-height: 1.05;
-    }
-    .cta-heading em {
-      font-style: normal;
-      color: var(--cyan);
-    }
-    .cta-sub {
-      font-size: 18px;
-      color: var(--grey);
-      line-height: 1.7;
-      max-width: 480px;
-    }
-    .cta-actions {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 14px;
-    }
-    .cta-note {
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 0.1em;
-      color: var(--grey2);
-    }
-
-    /* pulsing ring on CTA button */
-    .btn-appstore.hero-cta {
-      padding: 18px 40px;
-      font-size: 16px;
-      border-radius: 14px;
-      position: relative;
-    }
-    .btn-appstore.hero-cta::after {
-      content: '';
-      position: absolute; inset: -4px;
-      border-radius: 18px;
-      border: 1px solid rgba(0,212,255,0.25);
-      animation: ctaRing 2.5s ease-out infinite;
-    }
-    @keyframes ctaRing {
-      0%   { transform:scale(1);   opacity:0.6; }
-      100% { transform:scale(1.08); opacity:0; }
-    }
-
-    /* ─── FOOTER ──────────────────────────────── */
-    footer {
-      background: var(--surface);
-      border-top: 1px solid var(--border2);
-      padding: 48px;
-    }
-    .footer-inner {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 32px;
-      flex-wrap: wrap;
-    }
-    .footer-logo {
-      font-family: var(--font-mono);
-      font-size: 15px;
-      letter-spacing: 0.18em;
-      color: var(--white);
-      text-decoration: none;
-    }
-    .footer-logo em { color: var(--cyan); font-style: normal; }
-    .footer-copy {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      color: var(--grey2);
-      letter-spacing: 0.06em;
-    }
-    .footer-links {
-      display: flex; gap: 28px; list-style: none;
-    }
-    .footer-links a {
-      font-family: var(--font-mono);
-      font-size: 12px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--grey);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+    /* ─── FOOTER ─── */
+    footer { background: var(--surface); border-top: 1px solid var(--border2); padding: 48px 0 40px; }
+    .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 28px; align-items: flex-start; }
+    .footer-brand p { margin-top: 10px; font-size: 14px; color: var(--grey); max-width: 340px; }
+    .footer-links { list-style: none; display: flex; flex-wrap: wrap; gap: 10px 26px; }
+    .footer-links a { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--grey); text-decoration: none; }
     .footer-links a:hover { color: var(--cyan); }
+    .footer-meta { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--border2); font-family: var(--font-mono); font-size: 12px; color: var(--grey2); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
 
-    /* ─── RESPONSIVE ──────────────────────────── */
-    @media (max-width: 900px) {
-      nav { padding: 18px 24px; }
-      .nav-links { display: none; }
-      section { padding: 80px 24px; }
-      #hero { padding: 100px 24px 60px; }
-      .hero-inner { grid-template-columns: 1fr; gap: 60px; text-align: center; }
-      .hero-left { align-items: center; }
-      .hero-sub { max-width: 100%; }
-      .hero-stats { justify-content: center; }
-      .philosophy-inner { grid-template-columns: 1fr; gap: 48px; }
-      .features-header { flex-direction: column; align-items: flex-start; gap: 16px; }
-      .features-header-right { text-align: left; max-width: 100%; }
-      .features-grid { grid-template-columns: 1fr; }
-      .feature-card { grid-template-columns: 1fr; }
-      .hiw-steps { grid-template-columns: 1fr 1fr; }
-      .footer-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
+    /* ─── STICKY MOBILE CTA ─── */
+    .sticky-cta {
+      position: fixed; left: 10px; right: 10px; bottom: 10px; z-index: 950;
+      display: none; align-items: center; gap: 12px;
+      background: rgba(10,16,24,0.94); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--border); border-radius: 18px; padding: 10px 10px 10px 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .sticky-cta.ready { transition: transform .3s, opacity .3s; }
+    .sticky-cta img { width: 40px; height: 40px; border-radius: 10px; }
+    .sticky-cta div { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
+    .sticky-cta strong { font-size: 15px; }
+    .sticky-cta div span { font-size: 12.5px; color: var(--grey); }
+    .sticky-cta a {
+      margin-left: auto; background: var(--cyan); color: var(--bg); text-decoration: none; font-weight: 700;
+      padding: 10px 18px; border-radius: 12px; font-size: 15px; white-space: nowrap;
+    }
+    .sticky-cta.is-hidden { transform: translateY(140%); opacity: 0; pointer-events: none; }
+
+    /* ─── GUIDES TEASER ─── */
+    #guides { border-top: 1px solid var(--border2); }
+    .guide-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; list-style: none; }
+    .guide-card { display: flex; flex-direction: column; gap: 8px; height: 100%; background: var(--surface); border: 1px solid var(--border2); border-radius: 18px; padding: 22px; text-decoration: none; color: var(--white); transition: border-color .2s; }
+    .guide-card:hover { border-color: var(--border); }
+    .guide-card .tag { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--cyan); }
+    .guide-card strong { font-family: var(--font-display); font-size: 18.5px; line-height: 1.3; }
+    .guide-card .sum { color: var(--grey); font-size: 15px; }
+    .guide-card time { margin-top: auto; font-family: var(--font-mono); font-size: 12px; color: var(--grey2); }
+    @media (min-width: 900px) { #guides .guide-grid { grid-template-columns: repeat(3, 1fr); } }
+    .more-link { display: inline-block; margin-top: 22px; font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.06em; color: var(--cyan); }
+    .use a.use-link { color: var(--cyan); white-space: nowrap; text-underline-offset: 3px; }
+    .use a.use-link::after { content: ' →'; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (min-width: 900px) {
+      .qr { display: inline-flex; }
+    }
+    @media (max-width: 1020px) {
+      .nav-links { gap: 18px; }
+      .apps-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 899px) {
+      section, .feature { padding: 72px 0; }
+      .nav { flex-wrap: wrap; gap: 4px 16px; min-height: 0; padding-top: 12px; padding-bottom: 10px; }
+      .nav > nav { order: 3; width: 100%; margin-left: 0; }
+      .nav-links { gap: 20px; overflow-x: auto; padding: 6px 0 2px; scrollbar-width: none; }
+      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links a { font-size: 11px; letter-spacing: 0.06em; white-space: nowrap; }
+      .nav-cta { margin-left: auto; padding: 8px 14px; }
+      html { scroll-padding-top: 110px; }
+      .hero { padding: 32px 0 56px; }
+      .hero-inner, .feature-inner, .facts-inner, .trust, .faq-list { grid-template-columns: 1fr; gap: 40px; }
+      .faq-list { gap: 12px; }
+      .hero-shot { max-width: 62vw; }
+      .feature.flip .feature-media { order: 0; }
+      .feature-media .phone { max-width: 62vw; }
+      .feature-media.duo .phone { max-width: 44vw; }
+      .feature-media.duo .phone:nth-child(2) { margin-top: 32px; }
+      .steps { grid-template-columns: 1fr; }
+      .step .phone { width: 58%; }
+      .use { padding: 18px 20px; gap: 6px; }
+      .uses-grid { gap: 10px; }
+      .sticky-cta { display: flex; }
+      body { padding-bottom: 84px; }
     }
     @media (max-width: 560px) {
-      .hiw-steps { grid-template-columns: 1fr; }
-      .hero-actions { flex-direction: column; width: 100%; }
-      .btn-appstore { justify-content: center; }
+      :root { --gutter: 16px; }
+      .apps-grid { grid-template-columns: 1fr; }
+      .facts { grid-template-columns: 1fr; }
+      .facts dt { border-bottom: 0; padding-bottom: 0; }
+      .card { padding: 22px; }
+      .btn-appstore { width: 100%; justify-content: center; }
+      .factstrip ul { justify-content: flex-start; gap: 4px 18px; }
+      .factstrip li { font-size: 11.5px; }
+      .lead { font-size: 17px; }
+      table { min-width: 0; font-size: 14px; }
+      th, td { padding: 11px 10px; }
+      caption { padding: 14px 12px; }
+      thead th { font-size: 11px; letter-spacing: 0.08em; }
+      tbody th { width: 34%; }
     }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-bg { animation: gridDrift 24s linear infinite; }
+      @keyframes gridDrift { from { background-position: 0 0, 0 0, 0 0; } to { background-position: 0 0, 0 60px, 0 0; } }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; animation: none !important; }
+    }
+    /* language switcher (EN / TR) */
+    .lang-switch { display: inline-flex; align-items: center; flex-shrink: 0; border: 1px solid var(--border); border-radius: 8px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; }
+    .lang-switch > :first-child { border-radius: 7px 0 0 7px; }
+    .lang-switch > :last-child { border-radius: 0 7px 7px 0; }
+    .lang-switch a:focus-visible { outline-offset: -3px; border-radius: 7px; }
+    .lang-switch a, .lang-switch span { display: inline-flex; align-items: center; justify-content: center; min-width: 40px; min-height: 36px; padding: 0 10px; text-decoration: none; }
+    .lang-switch a { color: var(--grey); }
+    .lang-switch a:hover { color: var(--cyan); background: rgba(0,212,255,0.06); }
+    .lang-switch [aria-current] { color: var(--white); background: rgba(0,212,255,0.16); font-weight: 500; }
+    @media (max-width: 899px) { .lang-switch { margin-left: auto; } .lang-switch + .nav-cta { margin-left: 0; } }
   </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 
-<!-- Cursor -->
-<div id="cursor"></div>
-<div id="cursor-ring"></div>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="./" class="logo" aria-label="Solo.Shots home">SOLO<em>.</em>SHOTS</a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="guides/">Guides</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language / Dil"><span aria-current="true" title="English">EN</span><a href="tr/" hreflang="tr" lang="tr" aria-label="TR – Türkçe sürüm">TR</a></div>
+    <a href="https://apps.apple.com/app/id6762450478" class="nav-cta">Download</a>
+  </div>
+</header>
 
-<!-- ─── NAV ──────────────────────────────────────── -->
-<nav id="navbar">
-  <a href="#" class="nav-logo">SOLO<em>.</em>SHOTS</a>
-  <ul class="nav-links">
-    <li><a href="#philosophy">Why</a></li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#howitworks">How It Works</a></li>
-  </ul>
-  <a href="#cta" class="nav-cta">Download Free</a>
-</nav>
+<main id="main">
 
-<!-- ─── HERO ──────────────────────────────────────── -->
-<section id="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-glow"></div>
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-
-  <div class="hero-inner">
-    <div class="hero-left">
-      <p class="hero-eyebrow" id="he">Daily Progress Tracker · iOS</p>
-
-      <h1 class="hero-headline" id="hh">
-        Capture your<br/>
-        <em>progress.</em><br/>
-        Every single day.
-      </h1>
-
-      <p class="hero-sub" id="hs">
-        One photo. One project. Infinite motivation. SOLO.SHOTS turns the discipline of daily documentation into something you'll actually look forward to.
-      </p>
-
-      <div class="hero-actions" id="ha">
-        <a href="#" class="btn-appstore">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-          </svg>
-          Download on App Store
+<!-- ─── HERO ─── -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="/">Apps by Gül Eda Aydemir</a></li>
+          <li aria-current="page">Solo.Shots</li>
+        </ol>
+      </nav>
+      <p class="eyebrow">The progress camera · iPhone &amp; iPad</p>
+      <h1 id="hero-title">See your progress. <em>One aligned photo</em> at a time.</h1>
+      <p class="lead">Solo.Shots is a free progress camera for iPhone and iPad. A see-through ghost of an earlier shot and a tilt-matching level help you line up every photo (same frame, same angle), reminders keep your rhythm, and the series becomes a timelapse, even from photos already in your library.</p>
+      <ul class="for-chips" aria-label="Made for">
+        <li>Bump, week by week</li>
+        <li>Baby's first year</li>
+        <li>90-day fitness</li>
+        <li>Beard &amp; hair</li>
+        <li>Plants</li>
+        <li>Pets</li>
+        <li>A photo a day</li>
+      </ul>
+      <div class="cta-row" id="hero-cta">
+        <a class="btn-appstore" href="https://apps.apple.com/app/id6762450478">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <span><small>Download on the</small>App Store</span>
         </a>
-        <a href="#philosophy" class="btn-ghost">See How It Works ↓</a>
-      </div>
-
-      <div class="hero-stats" id="hst">
-        <div class="stat">
-          <span class="stat-num">4<span>K</span></span>
-          <span class="stat-label">Video Export</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">∞</span>
-          <span class="stat-label">Daily Streaks</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">0</span>
-          <span class="stat-label">Cloud Servers</span>
+        <div class="qr">
+          <img src="img/appstore-qr.svg" width="88" height="88" alt="QR code that opens Solo.Shots on the App Store" />
+          <p>Scan with your<br />iPhone camera</p>
         </div>
       </div>
+      <ul class="micro-facts" aria-label="Quick facts">
+        <li>Free with ads</li>
+        <li>Premium optional</li>
+        <li>No account</li>
+        <li>iOS 17.6+</li>
+        <li>9 languages</li>
+      </ul>
+      <p class="hero-note">Your photos stay on your device, or in your own private iCloud with Premium backup. The free version shows Google AdMob ads.</p>
     </div>
-
-    <div class="hero-right" id="hr">
-      <div class="mockup-wrap">
-        <div class="mockup-glow-ring"></div>
-        <div class="mockup-glow-ring"></div>
-        <div class="mockup-placeholder">
-          <div class="mockup-notch"></div>
-          <div class="mockup-screen">
-            <div class="mockup-bar accent"></div>
-            <div class="mockup-bar short"></div>
-            <div class="mockup-photo-grid">
-              <div class="mockup-photo-cell lit"></div>
-              <div class="mockup-photo-cell lit"></div>
-              <div class="mockup-photo-cell"></div>
-              <div class="mockup-photo-cell"></div>
-              <div class="mockup-photo-cell lit"></div>
-              <div class="mockup-photo-cell"></div>
-              <div class="mockup-photo-cell lit"></div>
-              <div class="mockup-photo-cell"></div>
-              <div class="mockup-photo-cell lit"></div>
-            </div>
-            <div class="mockup-streak">
-              <div class="streak-fire"></div>
-              <span class="streak-text">47 DAY STREAK · KEEP GOING</span>
-            </div>
-            <div style="margin-top:8px;">
-              <div class="mockup-bar" style="width:80%; opacity:0.4;"></div>
-              <div style="height:4px;"></div>
-              <div class="mockup-bar" style="width:55%; opacity:0.25;"></div>
-            </div>
-          </div>
-        </div>
+    <figure class="hero-shot">
+      <div class="phone">
+        <img src="img/library-timelapse-600.webp"
+             srcset="img/library-timelapse-600.webp 600w, img/library-timelapse-1206.webp 1206w"
+             sizes="(max-width: 899px) 62vw, 300px"
+             width="600" height="1304" fetchpriority="high"
+             alt="Solo.Shots screen 'Your Timelapse Is Already in Your Photos' with three choices: Me (from your selfies), Someone Else (a child, partner or friend) and My Pet (a cat or dog), and the note that photos are analyzed on this iPhone and never uploaded." />
       </div>
-    </div>
+      <figcaption><span class="pill">New in 3.0</span> Your timelapse is already in your photos.</figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- ─── TICKER ─────────────────────────────────────── -->
-<div class="ticker-wrap" aria-hidden="true">
-  <div class="ticker-track">
-    <span>Daily Progress</span><span>4K Export</span><span>Streak Tracking</span>
-    <span>No Cloud Servers</span><span>Ad-Free Premium</span><span>Local Storage</span>
-    <span>iOS Native</span><span>Smart Reminders</span><span>Before & After</span>
-    <!-- duplicate for seamless loop -->
-    <span>Daily Progress</span><span>4K Export</span><span>Streak Tracking</span>
-    <span>No Cloud Servers</span><span>Ad-Free Premium</span><span>Local Storage</span>
-    <span>iOS Native</span><span>Smart Reminders</span><span>Before & After</span>
-  </div>
+<div class="factstrip">
+  <ul class="wrap" aria-label="Privacy facts">
+    <li>No account</li>
+    <li>No developer servers</li>
+    <li>No analytics SDK</li>
+    <li>On-device photo analysis</li>
+    <li>Private iCloud backup with Premium</li>
+  </ul>
 </div>
 
-<!-- ─── PHILOSOPHY ─────────────────────────────────── -->
-<section id="philosophy">
-  <div class="philosophy-inner">
-    <div class="philosophy-left">
-      <p class="section-label phil-label">The Philosophy</p>
-      <h2 class="section-heading phil-heading">
-        You don't notice<br/>change in the mirror.
-      </h2>
-      <p class="philosophy-manifesto phil-manifesto">
-        But your camera does. <em>Document everything.</em> The compound interest of small, daily actions becomes undeniable when you can see it.
-      </p>
-      <p class="philosophy-body phil-body">
-        Progress is invisible in the moment. A day's work seems like nothing. A week feels like little. But thirty days of consistent documentation? That's a transformation you can feel — and see.
-      </p>
-      <p class="philosophy-body phil-body">
-        SOLO.SHOTS isn't about sharing. It's about proof. Your private record of showing up, rendered in stunning before-and-after timelapse.
-      </p>
+<!-- ─── USE CASES ─── -->
+<section id="uses" aria-labelledby="uses-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-label">Made for slow changes</p>
+      <h2 id="uses-title">What do you want to see change?</h2>
+      <p class="lead">Tell Solo.Shots what you're tracking when you first open it, and it suggests a matching project: the right rhythm and a photo goal. Switch on a reminder at your time, change anything, or start from scratch.</p>
     </div>
-    <div class="philosophy-right">
-      <div class="truth-item t-item">
-        <span class="truth-num">01</span>
-        <p class="truth-text">
-          Consistency compounds
-          <span>Daily documentation makes progress visible over time, turning invisible micro-changes into undeniable macro-results.</span>
-        </p>
-      </div>
-      <div class="truth-item t-item">
-        <span class="truth-num">02</span>
-        <p class="truth-text">
-          Your data, your device
-          <span>Every photo stays on your phone or your personal iCloud. Zero developer servers. Zero data brokers.</span>
-        </p>
-      </div>
-      <div class="truth-item t-item">
-        <span class="truth-num">03</span>
-        <p class="truth-text">
-          Accountability without audience
-          <span>You're not performing for followers. You're building an honest record for yourself — the only person who matters here.</span>
-        </p>
-      </div>
-      <div class="truth-item t-item">
-        <span class="truth-num">04</span>
-        <p class="truth-text">
-          One tap to remember everything
-          <span>A daily notification, a single photo, a growing archive. The habit is frictionless by design.</span>
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ─── FEATURES ───────────────────────────────────── -->
-<section id="features">
-  <div class="features-header feat-header">
-    <div>
-      <p class="section-label">What You Get</p>
-      <h2 class="section-heading">Built for<br/>the long game.</h2>
-    </div>
-    <p class="features-header-right">Every tool you need to document, track, and export your transformation — nothing you don't.</p>
-  </div>
-
-  <div class="features-grid">
-
-    <div class="feature-card feature-card-top-left feat-card">
-      <div class="feature-info">
-        <div class="feature-icon">🎬</div>
-        <h3 class="feature-title">4K UHD Video Export</h3>
-        <p class="feature-desc">Export your entire project as a cinematic timelapse at full 4K resolution — ready to keep, share, or be amazed by.</p>
-        <span class="feature-tag">Premium</span>
-      </div>
-      <div class="feature-screenshot" style="padding: 0; border: none; background: transparent;">
-        <img src="senin-ekran-goruntun-1.jpg" alt="4K Export Screenshot" style="width: 100%; height: 100%; object-fit: contain; border-radius: 16px;">
-      </div>
-    </div>
-
-    <div class="feature-card feature-card-top-right feat-card">
-      <div class="feature-info">
-        <div class="feature-icon">✦</div>
-        <h3 class="feature-title">Completely Ad-Free</h3>
-        <p class="feature-desc">Upgrade once and every distraction disappears. No banners, no interruptions — just you and your progress.</p>
-        <span class="feature-tag">Premium</span>
-      </div>
-      <div class="feature-screenshot" style="padding: 0; border: none; background: transparent;">
-        <img src="senin-ekran-goruntun-2.jpg" alt="Ad-Free Screenshot" style="width: 100%; height: 100%; object-fit: contain; border-radius: 16px;">
-      </div>
-    </div>
-
-    <div class="feature-card feature-card-bot-left feat-card">
-      <div class="feature-info">
-        <div class="feature-icon">🔔</div>
-        <h3 class="feature-title">Smart Reminders</h3>
-        <p class="feature-desc">Set a daily reminder per project. SOLO.SHOTS nudges you at exactly the right moment so you never break your streak.</p>
-        <span class="feature-tag">Free</span>
-      </div>
-      <div class="feature-screenshot" style="padding: 0; border: none; background: transparent;">
-        <img src="senin-ekran-goruntun-3.jpg" alt="Reminders Screenshot" style="width: 100%; height: 100%; object-fit: contain; border-radius: 16px;">
-      </div>
-    </div>
-
-    <div class="feature-card feature-card-bot-right feat-card">
-      <div class="feature-info">
-        <div class="feature-icon">🔥</div>
-        <h3 class="feature-title">Streak & Milestone Tracking</h3>
-        <p class="feature-desc">Every consecutive day adds to your streak. Hit 7, 30, 100 days and unlock milestone celebrations that remind you how far you've come.</p>
-        <span class="feature-tag">Free</span>
-      </div>
-      <div class="feature-screenshot" style="padding: 0; border: none; background: transparent;">
-        <img src="senin-ekran-goruntun-4.jpg" alt="Streak Screenshot" style="width: 100%; height: 100%; object-fit: contain; border-radius: 16px;">
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ─── HOW IT WORKS ───────────────────────────────── -->
-<section id="howitworks">
-  <div class="hiw-inner">
-    <p class="section-label hiw-label">The Process</p>
-    <h2 class="section-heading hiw-heading">Four steps.<br/>One daily habit.</h2>
-    <div class="hiw-steps">
-      <div class="hiw-step hiw-step-item">
-        <span class="step-num">01</span>
-        <span class="step-icon">📁</span>
-        <h4 class="step-title">Create a Project</h4>
-        <p class="step-desc">Name your goal — body transformation, plant growth, home renovation. Start up to 3 projects on the free tier.</p>
-      </div>
-      <div class="hiw-step hiw-step-item">
-        <span class="step-num">02</span>
-        <span class="step-icon">📸</span>
-        <h4 class="step-title">Take Your Daily Shot</h4>
-        <p class="step-desc">Open the app, tap capture. The ghost overlay shows your last photo so you can match the angle perfectly.</p>
-      </div>
-      <div class="hiw-step hiw-step-item">
-        <span class="step-num">03</span>
-        <span class="step-icon">🔥</span>
-        <h4 class="step-title">Build Your Streak</h4>
-        <p class="step-desc">Miss a day and the streak resets. Keep going and milestones unlock — a visual reminder of your discipline.</p>
-      </div>
-      <div class="hiw-step hiw-step-item">
-        <span class="step-num">04</span>
-        <span class="step-icon">✨</span>
-        <h4 class="step-title">Export the Evidence</h4>
-        <p class="step-desc">When you're ready, generate a smooth timelapse video up to 4K. Your transformation, distilled into seconds.</p>
-      </div>
+    <div class="uses-grid">
+      <article class="use">
+        <p class="use-meta">Template: weekly · 40 photos</p>
+        <h3>Pregnancy, week by week</h3>
+        <p>One side-on bump photo a week, lined up with last week's, and a video stamped "Week N". Turn on the reminder and it arrives every Monday. <a class="use-link" href="guides/pregnancy-bump-photos-week-by-week.html">Bump photo guide</a></p>
+      </article>
+      <article class="use">
+        <p class="use-meta">Template: weekly · 52 photos</p>
+        <h3>Baby's first year</h3>
+        <p>Fifty-two weekly photos become one short film. Missed the early months? Make a separate face-aligned timelapse of your child from photos you already took. <a class="use-link" href="for/expecting-parents/">Bump to baby</a></p>
+      </article>
+      <article class="use">
+        <p class="use-meta">Template: daily · 90 photos · or weekly</p>
+        <h3>Fitness journey</h3>
+        <p>Proof of the change the mirror hides: same spot, same pose, same angle, with a body-outline guide.</p>
+      </article>
+      <article class="use">
+        <p class="use-meta">Template: daily · 60 photos · or monthly</p>
+        <h3>Beard &amp; hair growth</h3>
+        <p>An honest side-by-side over weeks, with the date on every frame. Made for month-long beard challenges, too. <a class="use-link" href="guides/beard-growth-timelapse.html">Movember plan</a></p>
+      </article>
+      <article class="use">
+        <p class="use-meta">Template: daily · 60 photos · or weekly</p>
+        <h3>Plants &amp; projects</h3>
+        <p>Watch a seedling, a garden or a renovation come together, without a tripod rig.</p>
+      </article>
+      <article class="use">
+        <p class="use-meta">Template: daily · 100 photos</p>
+        <h3>A photo a day</h3>
+        <p>A record of you, one frame a day. A Lock Screen widget tells you when today's photo is still due.</p>
+      </article>
+      <article class="use">
+        <p class="use-meta">From your library</p>
+        <h3>Pets growing up</h3>
+        <p>Kitten to cat, puppy to dog: "My Pet" finds your cat or dog in photos you already have and lines them up. <a class="use-link" href="library-timelapse.html">How it works</a></p>
+      </article>
+      <article class="use custom">
+        <p class="use-meta">Your rules</p>
+        <h3>Anything else</h3>
+        <p>Art practice, a room makeover, a skincare routine: name it, choose daily, weekly or monthly, and set a goal of 10 to 100 photos.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ─── CTA ────────────────────────────────────────── -->
-<section id="cta">
-  <div class="cta-inner">
-    <p class="section-label cta-label" style="justify-content:center;">Get Started — It's Free</p>
-    <h2 class="cta-heading cta-h">
-      Start shooting.<br/>
-      <em>Day one.</em>
-    </h2>
-    <p class="cta-sub cta-s">The best time to start documenting your progress was yesterday. The second best time is right now. Download free and begin today.</p>
-    <div class="cta-actions">
-      <a href="#" class="btn-appstore hero-cta cta-btn">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-        </svg>
-        Download Free on App Store
-      </a>
-      <p class="cta-note">iOS 16+ · Free download · Premium available</p>
+<!-- ─── HOW IT WORKS ─── -->
+<section id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-label">How it works</p>
+      <h2 id="how-title">How does Solo.Shots work?</h2>
+      <p class="lead">You take the photo; Solo.Shots helps you line it up and can remind you when the next one is due. Three steps:</p>
+    </div>
+    <ol class="steps">
+      <li class="step">
+        <p class="step-num">Step 01</p>
+        <h3>Pick what you're tracking</h3>
+        <p>Choose a goal or make your own project. Set the rhythm (daily, weekly or monthly), a photo goal and the time you want a reminder.</p>
+        <div class="phone">
+          <img src="img/project-reminder-600.webp" srcset="img/project-reminder-600.webp 600w, img/project-reminder-1206.webp 1206w" sizes="(max-width: 899px) 62vw, 250px" width="600" height="1304" loading="lazy" decoding="async"
+               alt="Solo.Shots project with the Notifications sheet open: Reminder switched on, reminder time 9:00 AM, 'You'll be reminded daily at this time'." />
+        </div>
+      </li>
+      <li class="step">
+        <p class="step-num">Step 02</p>
+        <h3>Line up the shot</h3>
+        <p>Turn on the Photo Ghost to see a previous photo through the viewfinder, add a shape guide, and match the level. Shooting yourself? Use the 3, 5 or 10-second timer.</p>
+        <div class="phone">
+          <img src="img/camera-overlay-guide-600.webp" srcset="img/camera-overlay-guide-600.webp 600w, img/camera-overlay-guide-1206.webp 1206w" sizes="(max-width: 899px) 62vw, 250px" width="600" height="1304" loading="lazy" decoding="async"
+               alt="Solo.Shots camera overlay panel: Photo Ghost switch, Overlay Guide with circle, square, dot, face and body shapes, a 50% opacity slider, Move &amp; Resize, Reset Position and Save for Project." />
+        </div>
+      </li>
+      <li class="step">
+        <p class="step-num">Step 03</p>
+        <h3>Watch it come together</h3>
+        <p>Every photo lands in a grid and a calendar. When you're ready, make a timelapse in 9:16, 1:1 or 16:9, a poster, or a DNA Card to share.</p>
+        <div class="phone">
+          <img src="img/timelapse-editor-600.webp" srcset="img/timelapse-editor-600.webp 600w, img/timelapse-editor-1206.webp 1206w" sizes="(max-width: 899px) 62vw, 250px" width="600" height="1304" loading="lazy" decoding="async"
+               alt="Solo.Shots Edit Video screen: Day 1 preview, a timeline of 12 frames, aspect ratio choices 9:16 Portrait, 1:1 Square and 16:9 Landscape, and a Generate Video button." />
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ─── FEATURES ─── -->
+<div id="features">
+
+  <section class="feature" id="library" aria-labelledby="library-title">
+    <div class="wrap feature-inner">
+      <div class="feature-copy">
+        <p class="section-label">New in 3.0 · Timelapse from your photos</p>
+        <h2 id="library-title">Can I make a timelapse from photos I already have?</h2>
+        <p class="lead">Yes. Choose <strong>Me</strong>, <strong>Someone Else</strong> or <strong>My Pet</strong>, and Solo.Shots finds them across your photo library, keeps one clear, front-facing photo for each day, week or month, and lines every frame up on the eyes.</p>
+        <ul class="ticks">
+          <li><strong>Me</strong> starts from your Selfies album. <strong>Someone Else</strong> follows a child, partner or friend. <strong>My Pet</strong> finds a cat or dog.</li>
+          <li>It walks back through time and keeps learning the face as it goes, so it can follow a child from today back to babyhood.</li>
+          <li>Screenshots are skipped, and you can tap any photo to leave it out.</li>
+          <li><strong>Private:</strong> the analysis runs on your iPhone with Apple's Vision framework. Nothing is uploaded.</li>
+        </ul>
+        <p class="note">Building and previewing is free (with a watermark). Saving the result as a project needs Premium. <a href="library-timelapse.html">How it works, step by step</a></p>
+      </div>
+      <div class="feature-media">
+        <figure>
+          <div class="banner">
+            <img src="img/years-of-photos-one-timelapse-720.webp" srcset="img/years-of-photos-one-timelapse-720.webp 720w, img/years-of-photos-one-timelapse-1440.webp 1440w" sizes="(max-width: 899px) 92vw, 540px" width="720" height="309" loading="lazy" decoding="async"
+                 alt="Illustration: a stack of portrait photos next to the words 'Years of photos. One timelapse.' and a slider running from Day 1 to Day 748." />
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature flip" id="align" aria-labelledby="align-title">
+    <div class="wrap feature-inner">
+      <div class="feature-copy">
+        <p class="section-label">Same frame · Same angle</p>
+        <h2 id="align-title">How do I keep every progress photo lined up?</h2>
+        <p class="lead">Keep the same frame and the same angle. Solo.Shots shows a see-through <strong>Photo Ghost</strong> of a reference photo in the viewfinder, and a level that buzzes when your phone's tilt matches it.</p>
+        <ul class="ticks">
+          <li>Ghost your <strong>latest</strong> photo, your <strong>first</strong> (so the framing can't slowly drift over months), any photo in the project, or one from your library.</li>
+          <li><strong>Shape guides</strong>: circle, square, dot, face or body outline. Move, resize, set the opacity and save them per project.</li>
+          <li>A <strong>level that remembers the tilt</strong> of the reference photo, not just "flat".</li>
+          <li>Pro controls: 0.5×, 1× and 2× lenses where available, front or back camera, flash, tap to focus, drag for exposure, AE/AF lock, grid and self-timer.</li>
+        </ul>
+      </div>
+      <div class="feature-media">
+        <div class="phone">
+          <img src="img/camera-tips-600.webp" srcset="img/camera-tips-600.webp 600w, img/camera-tips-1206.webp 1206w" sizes="(max-width: 899px) 62vw, 280px" width="600" height="1304" loading="lazy" decoding="async"
+               alt="Solo.Shots 'Welcome to the Camera' tips: drag and pinch to move and scale the ghost overlay, tap to focus and drag to adjust exposure, and tap the dashed square to change overlay shape and opacity." />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature" id="rhythm" aria-labelledby="rhythm-title">
+    <div class="wrap feature-inner">
+      <div class="feature-copy">
+        <p class="section-label">Streaks · Reminders · Widgets</p>
+        <h2 id="rhythm-title">How does Solo.Shots help me stay consistent?</h2>
+        <p class="lead">It follows your rhythm. Each project is daily, weekly or monthly, the streak counts in that unit, and a reminder arrives at the time you pick.</p>
+        <ul class="ticks">
+          <li>Reminders <strong>every day</strong>, <strong>every Monday</strong> for weekly projects, or <strong>on the 1st</strong> for monthly ones.</li>
+          <li>Home tells you which streak needs attention, with a one-tap <strong>Capture</strong> button.</li>
+          <li><strong>Home Screen and Lock Screen widgets</strong> show your streak and whether today's photo is due. Tap one to open that project's camera.</li>
+          <li><strong>Milestones at 25, 50, 75 and 100 photos</strong>: Warming Up, Halfway Hero, Almost There and Consistency Master.</li>
+          <li>Hide a photo to keep it out of the streak and the video, or move it to another project.</li>
+        </ul>
+      </div>
+      <div class="feature-media">
+        <div class="phone">
+          <img src="img/home-streak-600.webp" srcset="img/home-streak-600.webp 600w, img/home-streak-1206.webp 1206w" sizes="(max-width: 899px) 62vw, 280px" width="600" height="1304" loading="lazy" decoding="async"
+               alt="Solo.Shots Home screen with a banner saying the Fitness Journey streak needs attention and a Capture button, above a Fitness Journey project card showing 12 of 90 photos, daily." />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature flip" id="make" aria-labelledby="make-title">
+    <div class="wrap feature-inner">
+      <div class="feature-copy">
+        <p class="section-label">Video · Poster · DNA Card</p>
+        <h2 id="make-title">What can I make from my progress photos?</h2>
+        <p class="lead">Three things from one habit: a timelapse video, a print-ready poster and a shareable stats card.</p>
+        <ul class="ticks">
+          <li><strong>Timelapse video</strong> in 1080p or 4K; 9:16 for Reels, TikTok and Shorts, 1:1 or 16:9; 0.1 to 1 second per frame; an optional Date, Day N or Week N stamp. Save it to Photos or share it.</li>
+          <li><strong>Posters</strong> in three styles: Mosaic, Colors (each tile becomes that photo's main colour) or Timeline (photos as vertical slices). Sized 1:1 for Instagram, 4:5 for 8×10 prints or 2:3 for 12×18 prints.</li>
+          <li><strong>DNA Card</strong>: your streak, photo count, days and a 30-day consistency chart, with Day 1 next to your latest photo.</li>
+        </ul>
+        <p class="note">Free exports carry a small SOLO.SHOTS watermark; with Premium you can remove it.</p>
+      </div>
+      <div class="feature-media duo">
+        <div class="phone">
+          <img src="img/poster-mosaic-600.webp" srcset="img/poster-mosaic-600.webp 600w, img/poster-mosaic-1206.webp 1206w" sizes="(max-width: 899px) 44vw, 240px" width="600" height="1304" loading="lazy" decoding="async"
+               alt="Solo.Shots Poster screen: a Mosaic poster of 12 daily photos titled Fitness Journey, with Mosaic, Colors and Timeline styles and 1:1, 4:5 (print 8×10) and 2:3 (print 12×18) sizes." />
+        </div>
+        <div class="phone">
+          <img src="img/dna-card-600.webp" srcset="img/dna-card-600.webp 600w, img/dna-card-1206.webp 1206w" sizes="(max-width: 899px) 44vw, 240px" width="600" height="1304" loading="lazy" decoding="async"
+               alt="Solo.Shots DNA Card: Day 1 and Day 12 photos side by side, streak, photos and days counters, a 30-day consistency chart and a Share button." />
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ─── PRIVACY ─── -->
+<section id="privacy" aria-labelledby="privacy-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-label">Privacy</p>
+      <h2 id="privacy-title">Is Solo.Shots private?</h2>
+      <p class="lead">Private by design: no account, no developer server and no analytics SDK. Your photos are stored on your device (and, with Premium backup, in your own private iCloud). Two honest caveats below.</p>
+    </div>
+    <div class="privacy-grid">
+      <div class="privacy-item">
+        <h3>No account, no sign-up</h3>
+        <p>Open the app and start. There's nothing to register, and no developer server receives your photos or projects.</p>
+      </div>
+      <div class="privacy-item">
+        <h3>Photos stored on your device</h3>
+        <p>Photos and project details are stored in the app on your iPhone or iPad. Saving to your Camera Roll is optional.</p>
+      </div>
+      <div class="privacy-item">
+        <h3>On-device analysis</h3>
+        <p>"Timelapse from your photos" uses Apple's Vision framework on your iPhone. Face data isn't saved or uploaded.</p>
+      </div>
+      <div class="privacy-item caveat">
+        <h3>Premium: your private iCloud</h3>
+        <p>With Premium, iCloud Backup &amp; Sync (on by default, can be switched off) copies projects and photos to your own private iCloud, so they come back on a new device.</p>
+      </div>
+      <div class="privacy-item caveat">
+        <h3>Free version: Google AdMob ads</h3>
+        <p>The free version shows ads from Google AdMob. If you allow tracking when asked, ads can use your device's advertising identifier; if you don't, they can't. Because of these ads, the App Store privacy label lists data used to track you (location, identifiers, usage data).</p>
+      </div>
+    </div>
+    <p class="note">Details: <a href="privacy-policy.html">Solo.Shots Privacy Policy</a> (updated 15 October 2026).</p>
+  </div>
+</section>
+
+<!-- ─── PRICING ─── -->
+<section id="pricing" aria-labelledby="pricing-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-label">Free vs Premium</p>
+      <h2 id="pricing-title">Is Solo.Shots free?</h2>
+      <p class="lead">Yes. Solo.Shots is free to download and use, with ads. <strong>Premium</strong> is an optional monthly subscription that removes ads and limits, and lets you switch off the watermark. See the current price on the <a href="https://apps.apple.com/app/id6762450478">App Store</a>.</p>
+    </div>
+    <div class="table-scroll" role="region" aria-label="Free vs Premium comparison" tabindex="0">
+      <table>
+        <caption>What's free and what Premium adds (Solo.Shots 3.0)</caption>
+        <thead>
+          <tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Premium</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Projects</th><td>First project free; up to 3 more, each unlocked by a short ad</td><td>Unlimited</td></tr>
+          <tr><th scope="row">Photos per project</th><td>Up to 100</td><td>Unlimited</td></tr>
+          <tr><th scope="row">Photo Ghost, guides, level, timer</th><td>Included</td><td>Included</td></tr>
+          <tr><th scope="row">Streaks, reminders, widgets, calendar</th><td>Included</td><td>Included</td></tr>
+          <tr><th scope="row">Timelapse video</th><td>1080p after a short ad; 4K once (a short ad unlocks it, and the export shows one too)</td><td>1080p or 4K, no ads</td></tr>
+          <tr><th scope="row">Posters and DNA Card</th><td>Included, with watermark</td><td>No watermark</td></tr>
+          <tr><th scope="row">Timelapse from your photos</th><td>Build and preview (watermarked)</td><td>Save as a project</td></tr>
+          <tr><th scope="row">iCloud Backup &amp; Sync</th><td>—</td><td>Included</td></tr>
+          <tr><th scope="row">Import photos into a project</th><td>—</td><td>Included</td></tr>
+          <tr><th scope="row">RAW (DNG) capture</th><td>—</td><td>On supported rear cameras</td></tr>
+          <tr><th scope="row">Ads</th><td>Short ads to unlock extras and exports, plus occasional full-screen ads between screens (never while you're shooting)</td><td>None</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="price-notes">
+      <p>Premium ("Solo.Shots Premium Monthly") renews every month until you cancel. Cancel any time in your Apple Account subscriptions; Premium stays active until the end of the period you paid for.</p>
+      <p>Already subscribed on another device? Settings → Subscription → Restore Purchases.</p>
     </div>
   </div>
 </section>
 
-<!-- ─── FOOTER ─────────────────────────────────────── -->
-<footer>
-  <div class="footer-inner">
-    <a href="#" class="footer-logo">SOLO<em>.</em>SHOTS</a>
-    <p class="footer-copy">&copy; 2026 Gül Eda Aydemir. All rights reserved.</p>
-    <ul class="footer-links">
-      <li><a href="privacy-policy.html">Privacy Policy</a></li>
-      <li><a href="terms-of-use.html">Terms of Use</a></li>
-      <li><a href="mailto:solostaseraofficial@gmail.com">Contact</a></li>
+<!-- ─── FACTS + WHAT'S NEW ─── -->
+<section id="facts" aria-label="Facts and release notes">
+  <div class="wrap facts-inner">
+    <div class="card">
+      <p class="section-label">Facts</p>
+      <h2>Solo.Shots at a glance</h2>
+      <dl class="facts">
+        <dt>Price</dt><dd>Free download <span>· optional Premium monthly subscription (price on the <a href="https://apps.apple.com/app/id6762450478">App Store</a>)</span></dd>
+        <dt>Devices</dt><dd>iPhone and iPad <span>(one universal app)</span></dd>
+        <dt>Requires</dt><dd>iOS 17.6 or later <span>· iPadOS 17.6 or later</span></dd>
+        <dt>Languages</dt><dd>English, Turkish, Spanish, German, French, Italian, Russian, Japanese, Arabic</dd>
+        <dt>Version</dt><dd>3.0 <span>· released 12 October 2026 · first release 26 April 2026</span></dd>
+        <dt>Size · Age</dt><dd>17.6 MB <span>· rated 4+</span></dd>
+        <dt>Account</dt><dd>None needed</dd>
+        <dt>Privacy</dt><dd>No developer servers, no analytics SDK <span>· photos on your device (and your private iCloud with Premium backup) · free version shows Google AdMob ads</span></dd>
+        <dt>Developer</dt><dd><a href="/about/">Gül Eda Aydemir</a> <span>· independent iOS developer</span></dd>
+        <dt>Contact</dt><dd><a href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a></dd>
+      </dl>
+    </div>
+    <div class="card" id="whats-new">
+      <p class="section-label">Changelog</p>
+      <h2>What's new in Solo.Shots 3.0</h2>
+      <p class="release-date"><time datetime="2026-10-12">12 October 2026</time></p>
+      <ul class="ticks">
+        <li><strong>Timelapse from your photos:</strong> create timelapses from photos already in your library, with on-device detection that finds and aligns matching photos.</li>
+        <li>Improved photo alignment and mosaics.</li>
+        <li>iCloud support (Premium backup and sync).</li>
+        <li>Light Mode.</li>
+        <li>Premium updates, better performance and support for the latest iOS devices.</li>
+      </ul>
+      <p class="note">Source: the 3.0 release notes on the <a href="https://apps.apple.com/us/app/solo-shots/id6762450478">App Store</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── GUIDES ─── -->
+<section id="guides" aria-labelledby="guides-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-label">Guides</p>
+      <h2 id="guides-title">How do I take progress photos worth watching?</h2>
+      <p class="lead">Practical guides from the developer: the spot, the angle, the rhythm, and what to make at the end.</p>
+    </div>
+    <ul class="guide-grid">
+      <li><a class="guide-card" href="guides/progress-photos-that-line-up.html"><span class="tag">How-to</span><strong>Progress photos that actually line up</strong><span class="sum">Why photos drift (distance, height, tilt) and the 20-second routine that fixes it.</span><time datetime="2026-10-15">15 Oct 2026</time></a></li>
+      <li><a class="guide-card" href="guides/pregnancy-bump-photos-week-by-week.html"><span class="tag">Pregnancy</span><strong>Bump photos, week by week</strong><span class="sum">A 40-week plan you can do alone, with a checklist and the video at the end.</span><time datetime="2026-10-15">15 Oct 2026</time></a></li>
+      <li><a class="guide-card" href="guides/beard-growth-timelapse.html"><span class="tag">Movember · 1–30 Nov</span><strong>Beard growth timelapse: a 30-day plan</strong><span class="sum">Clean-shaven on 1 November, one aligned photo a day, a timelapse to share.</span><time datetime="2026-10-15">15 Oct 2026</time></a></li>
+      <li><a class="guide-card" href="library-timelapse.html"><span class="tag">New in 3.0</span><strong>Your timelapse is already in your photos</strong><span class="sum">How Solo.Shots finds you, your child or your pet across your library, on device.</span><time datetime="2026-10-15">15 Oct 2026</time></a></li>
+      <li><a class="guide-card" href="guides/make-a-timelapse-from-photos-iphone.html"><span class="tag">How-to</span><strong>Make a timelapse from photos on iPhone</strong><span class="sum">For photos taken days or years apart: free and app options, with the length math.</span><time datetime="2026-10-15">15 Oct 2026</time></a></li>
+      <li><a class="guide-card" href="compare/progress-photo-apps.html"><span class="tag">Comparison</span><strong>Progress photo apps, compared honestly</strong><span class="sum">11 options checked on the App Store, including when another app is the better pick.</span><time datetime="2026-10-15">15 Oct 2026</time></a></li>
     </ul>
+    <a class="more-link" href="guides/">All Solo.Shots guides →</a>
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+<section id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-label">FAQ</p>
+      <h2 id="faq-title">Frequently asked questions</h2>
+      <p class="lead">Short, straight answers. Something missing? <a href="support.html">Visit Support</a> or email <a href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a>.</p>
+    </div>
+    <div class="faq-list">
+<!-- faq:start -->
+      <div class="faq-item" id="faq-1">
+        <h3>Is Solo.Shots free?</h3>
+        <div class="faq-answer"><p>Yes. Solo.Shots is free to download and use, with ads. Your first project is free, up to 3 more unlock after a short ad each, and free projects hold up to 100 photos.</p><p>Premium is an optional monthly subscription (see the current price on the <a href="https://apps.apple.com/app/id6762450478">App Store</a>). It removes ads, lets you remove watermarks and adds unlimited projects and photos, 4K every time and iCloud backup.</p></div>
+      </div>
+      <div class="faq-item" id="faq-2">
+        <h3>How often should I take progress photos?</h3>
+        <div class="faq-answer"><p>Match the speed of the change: daily for fast changes (a beard, seedlings, a 30-day challenge), weekly for bodies and pregnancy, monthly for children and slow projects. Pick one rhythm and keep it.</p><p>In Solo.Shots each project is daily, weekly or monthly, and the streak and reminders follow that rhythm.</p></div>
+      </div>
+      <div class="faq-item" id="faq-3">
+        <h3>How do I take progress photos that line up?</h3>
+        <div class="faq-answer"><p>Keep the distance, height, tilt and light the same every time. Solo.Shots helps with the first three: the Photo Ghost shows your latest or first photo through the viewfinder, a shape guide marks where the subject goes, and the level buzzes when your phone's tilt matches the reference photo.</p><p>For similar light, shoot at the same time of day in the same spot.</p></div>
+      </div>
+      <div class="faq-item" id="faq-4">
+        <h3>Can I make a timelapse from photos I already have?</h3>
+        <div class="faq-answer"><p>Yes. In Solo.Shots 3.0, choose Me, Someone Else or My Pet. The app finds them across your photo library, keeps one clear, front-facing photo per day, week or month, and lines every frame up on the eyes, all on your iPhone.</p><p>Previewing is free with a watermark; saving the timelapse as a project needs Premium.</p></div>
+      </div>
+      <div class="faq-item" id="faq-5">
+        <h3>Does it work for pets?</h3>
+        <div class="faq-answer"><p>Yes, for cats and dogs. My Pet finds your cat or dog in photos you already have and lines them up into a timelapse.</p><p>For new photos, any project works: shoot at your pet's eye level and use the Photo Ghost to keep the framing.</p></div>
+      </div>
+      <div class="faq-item" id="faq-6">
+        <h3>Are my photos uploaded anywhere?</h3>
+        <div class="faq-answer"><p>Not to the developer: Solo.Shots has no account and no server of its own. Photos stay on your device. If you subscribe to Premium and keep iCloud Backup on, projects and photos are also saved to your own private iCloud.</p><p>Library analysis runs on your iPhone with Apple's Vision framework, and nothing is uploaded. The free version shows Google AdMob ads, which can use your advertising identifier only if you allow tracking.</p></div>
+      </div>
+      <div class="faq-item" id="faq-7">
+        <h3>How do weekly and monthly projects work?</h3>
+        <div class="faq-answer"><p>Each project has a rhythm: daily, weekly or monthly. The streak counts days, weeks or months; reminders arrive at your chosen time every day, every Monday, or on the 1st of the month; and milestones celebrate 25, 50, 75 and 100 photos.</p></div>
+      </div>
+      <div class="faq-item" id="faq-8">
+        <h3>Can I export in 4K or for Instagram Reels?</h3>
+        <div class="faq-answer"><p>Yes. Timelapses export in 1080p or 4K, in 9:16 (Reels, TikTok, Shorts), 1:1 or 16:9, at 0.1 to 1 second per frame, with an optional Date, Day N or Week N stamp.</p><p>Free exports are 1080p after a short ad, and you can try 4K once (a short ad unlocks it, and the export shows one too); Premium exports 4K every time with no ads, and you can switch the watermark off.</p></div>
+      </div>
+      <div class="faq-item" id="faq-9">
+        <h3>Does Solo.Shots work on iPad, and which iOS version do I need?</h3>
+        <div class="faq-answer"><p>Yes, it works on iPad. Solo.Shots is one universal app for iPhone and iPad and needs iOS 17.6 or later on iPhone, or iPadOS 17.6 or later on iPad.</p></div>
+      </div>
+      <div class="faq-item" id="faq-10">
+        <h3>How do I restore or cancel Premium?</h3>
+        <div class="faq-answer"><p>To restore, open Settings (the gear on the Home screen) → Subscription → Restore Purchases while signed in with the same Apple Account.</p><p>To cancel, go to your Apple Account subscriptions (iPhone Settings → your name → Subscriptions). Premium stays active until the end of the period you paid for.</p></div>
+      </div>
+      <div class="faq-item" id="faq-11">
+        <h3>Which languages is Solo.Shots available in?</h3>
+        <div class="faq-answer"><p>Nine: English, Turkish, Spanish, German, French, Italian, Russian, Japanese and Arabic. The app follows your device language, and you can switch languages in Settings.</p></div>
+      </div>
+      <div class="faq-item" id="faq-12">
+        <h3>Is Solo.Shots related to SOLOSHOT cameras?</h3>
+        <div class="faq-answer"><p>No. Solo.Shots is an iPhone and iPad app by independent developer Gül Eda Aydemir. It isn't related to SOLOSHOT, the robotic camera company.</p></div>
+      </div>
+      <!-- faq:end -->
+    </div>
+  </div>
+</section>
+
+<!-- ─── DEVELOPER / TRUST ─── -->
+<section id="developer" aria-labelledby="dev-title">
+  <div class="wrap trust">
+    <div>
+      <p class="section-label">Made by an independent developer</p>
+      <h2 id="dev-title">Who makes Solo.Shots?</h2>
+      <p class="lead">Solo.Shots is designed, built and supported by <strong>Gül Eda Aydemir</strong>, an independent iOS developer. When you email, the person who builds the app reads it.</p>
+      <ul class="trust-links">
+        <li><a href="/about/">About the developer</a></li>
+        <li><a href="https://apps.apple.com/us/developer/gul-eda-aydemir/id1889159460">All apps on the App Store</a></li>
+        <li><a href="https://instagram.com/solo.stasera">Instagram: @solo.stasera</a></li>
+        <li><a href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a></li>
+      </ul>
+    </div>
+    <ul class="trust-points">
+      <li><strong>Real support</strong>Questions, bugs and ideas go to one inbox: solostaseraofficial@gmail.com.</li>
+      <li><strong>Honest privacy</strong>No account, no developer servers, no analytics SDK. The <a href="privacy-policy.html">privacy policy</a> says exactly what the ads and iCloud backup do.</li>
+      <li><strong>Clear pricing</strong>Free with ads, or Premium monthly. The price is shown in the app before you pay.</li>
+      <li><strong>Kept up to date</strong>Version 3.0 shipped on 12 October 2026. One universal app for iPhone and iPad, in 9 languages.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─── FINAL CTA ─── -->
+<section id="download" aria-labelledby="download-title">
+  <div class="wrap cta-inner">
+    <p class="section-label">Free on the App Store</p>
+    <h2 id="download-title">Start your <em>Day&nbsp;1</em> today.</h2>
+    <p class="lead">Day 1 is the one photo you can't take later. Download Solo.Shots, pick what you're tracking, and let the app remember the rest.</p>
+    <div class="cta-row">
+      <a class="btn-appstore" href="https://apps.apple.com/app/id6762450478">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <span><small>Download on the</small>App Store</span>
+      </a>
+      <div class="qr">
+        <img src="img/appstore-qr.svg" width="88" height="88" loading="lazy" alt="QR code that opens Solo.Shots on the App Store" />
+        <p>Scan with your<br />iPhone camera</p>
+      </div>
+    </div>
+    <ul class="micro-facts" aria-label="Quick facts">
+      <li>Free with ads</li>
+      <li>No account</li>
+      <li>iPhone &amp; iPad</li>
+      <li>iOS 17.6+</li>
+      <li>9 languages</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ─── MORE APPS ─── -->
+<section id="more-apps" aria-labelledby="more-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="section-label">Also by Gül Eda Aydemir</p>
+      <h2 id="more-title">More apps by Gül Eda</h2>
+    </div>
+    <ul class="apps-grid">
+      <li>
+        <a class="app-card" href="/solo.swipe/">
+          <img src="/solo.swipe/appicon-128.webp" width="56" height="56" loading="lazy" alt="" />
+          <strong>Solo.Swipe</strong>
+          <span>Swipe to clean your camera roll in 5-minute daily sessions, and make room for a year of progress shots.</span>
+          <em>Visit Solo.Swipe →</em>
+        </a>
+      </li>
+      <li>
+        <a class="app-card" href="/DUMP/">
+          <img src="/DUMP/appicon-128.webp" width="56" height="56" loading="lazy" alt="" />
+          <strong>DUMP</strong>
+          <span>Photo dump &amp; carousel maker that picks your best shots for you.</span>
+          <em>Visit DUMP →</em>
+        </a>
+      </li>
+      <li>
+        <a class="app-card" href="/solora/">
+          <img src="/solora/appicon-128.webp" width="56" height="56" loading="lazy" alt="" />
+          <strong>Solora</strong>
+          <span>Role-based life planner: pick today's Big 3, keep habits going.</span>
+          <em>Visit Solora →</em>
+        </a>
+      </li>
+      <li>
+        <a class="app-card" href="/ATHA/">
+          <img src="/ATHA/appicon-128.webp" width="56" height="56" loading="lazy" alt="" />
+          <strong>ATHA</strong>
+          <span>Breathing exercises for sleep, stress and focus: calm in one tap.</span>
+          <em>Visit ATHA →</em>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="./" class="logo">SOLO<em>.</em>SHOTS</a>
+        <p>The progress camera for iPhone and iPad: photos that line up, reminders on your rhythm, and timelapses of the changes you can't see day to day.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="guides/">Guides</a></li>
+        <li><a href="tr/" hreflang="tr" lang="tr">Türkçe</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy-policy.html">Privacy</a></li>
+        <li><a href="terms-of-use.html">Terms</a></li>
+        <li><a href="/about/">About the developer</a></li>
+        <li><a href="/">More apps by Gül Eda</a></li>
+        <li><a href="mailto:solostaseraofficial@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-meta">
+      <span>&copy; 2026 Gül Eda Aydemir. Not affiliated with SOLOSHOT cameras.</span>
+      <span>Updated <time datetime="2026-10-15">15 October 2026</time></span>
+    </div>
   </div>
 </footer>
 
+<div class="sticky-cta" id="sticky-cta">
+  <img src="appicon-128.webp" width="40" height="40" loading="lazy" alt="" />
+  <div><strong>Solo.Shots</strong><span>Free · iPhone &amp; iPad</span></div>
+  <a href="https://apps.apple.com/app/id6762450478" aria-label="Get the app: download Solo.Shots on the App Store">Get the app</a>
+</div>
+
 <script>
-  // ─── CURSOR ───────────────────────────────────
-  const cursor = document.getElementById('cursor');
-  const ring   = document.getElementById('cursor-ring');
-  let mx = 0, my = 0, rx = 0, ry = 0;
-
-  document.addEventListener('mousemove', e => {
-    mx = e.clientX; my = e.clientY;
-    cursor.style.left = mx + 'px';
-    cursor.style.top  = my + 'px';
-  });
-
-  (function animRing() {
-    rx += (mx - rx) * 0.12;
-    ry += (my - ry) * 0.12;
-    ring.style.left = rx + 'px';
-    ring.style.top  = ry + 'px';
-    requestAnimationFrame(animRing);
+  (function () {
+    var sticky = document.getElementById('sticky-cta');
+    var targets = [document.getElementById('hero-cta'), document.querySelector('#download .cta-row')].filter(Boolean);
+    if (!sticky || !targets.length) return;
+    function inView(el) { var r = el.getBoundingClientRect(); return r.bottom > 0 && r.top < (window.innerHeight || document.documentElement.clientHeight); }
+    function update() { sticky.classList.toggle('is-hidden', targets.some(inView)); }
+    update();
+    requestAnimationFrame(function () { sticky.classList.add('ready'); });
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(update);
+      targets.forEach(function (t) { io.observe(t); });
+    } else {
+      window.addEventListener('scroll', update, { passive: true });
+    }
   })();
-
-  document.querySelectorAll('a, button').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.style.width  = '16px';
-      cursor.style.height = '16px';
-      ring.style.width    = '52px';
-      ring.style.height   = '52px';
-    });
-    el.addEventListener('mouseleave', () => {
-      cursor.style.width  = '10px';
-      cursor.style.height = '10px';
-      ring.style.width    = '36px';
-      ring.style.height   = '36px';
-    });
-  });
-
-  // ─── NAVBAR SCROLL ────────────────────────────
-  const navbar = document.getElementById('navbar');
-  window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 40);
-  }, { passive: true });
-
-  // ─── GSAP ANIMATIONS ──────────────────────────
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Hero entrance — staggered
-  const heroTl = gsap.timeline({ delay: 0.2 });
-  heroTl
-    .to('#he',  { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, 0)
-    .fromTo('#hh', { opacity: 0, y: 40, clipPath: 'inset(0 0 100% 0)' },
-                   { opacity: 1, y: 0,  clipPath: 'inset(0 0 0% 0)', duration: 0.9, ease: 'power4.out' }, 0.15)
-    .to('#hs',  { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' }, 0.45)
-    .to('#ha',  { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, 0.62)
-    .to('#hst', { opacity: 1, y: 0, duration: 0.6, ease: 'power3.out' }, 0.78)
-    .to('#hr',  { opacity: 1, x: 0, duration: 1.0, ease: 'power3.out' }, 0.35);
-
-  gsap.set(['#he','#hs','#ha','#hst'], { y: 24 });
-  gsap.set('#hr', { x: 40 });
-
-  // Philosophy
-  gsap.from('.phil-label',    { scrollTrigger: { trigger:'#philosophy', start:'top 75%' }, opacity:0, x:-20, duration:0.6 });
-  gsap.from('.phil-heading',  { scrollTrigger: { trigger:'#philosophy', start:'top 70%' }, opacity:0, y:30, duration:0.8, delay:0.1 });
-  gsap.from('.phil-manifesto',{ scrollTrigger: { trigger:'#philosophy', start:'top 65%' }, opacity:0, y:20, duration:0.7, delay:0.2 });
-  gsap.from('.phil-body',     { scrollTrigger: { trigger:'#philosophy', start:'top 60%' }, opacity:0, y:20, duration:0.7, stagger:0.12, delay:0.3 });
-  gsap.from('.t-item',        { scrollTrigger: { trigger:'.philosophy-right', start:'top 72%' }, opacity:0, x:30, duration:0.6, stagger:0.13 });
-
-  // Features
-  gsap.from('.feat-header',   { scrollTrigger: { trigger:'#features', start:'top 75%' }, opacity:0, y:30, duration:0.7 });
-  gsap.from('.feat-card',     { scrollTrigger: { trigger:'.features-grid', start:'top 75%' }, opacity:0, y:40, duration:0.7, stagger:0.14 });
-
-  // How it works
-  gsap.from('.hiw-label',     { scrollTrigger: { trigger:'#howitworks', start:'top 75%' }, opacity:0, x:-20, duration:0.6 });
-  gsap.from('.hiw-heading',   { scrollTrigger: { trigger:'#howitworks', start:'top 70%' }, opacity:0, y:24, duration:0.8, delay:0.1 });
-  gsap.from('.hiw-step-item', { scrollTrigger: { trigger:'.hiw-steps', start:'top 76%' }, opacity:0, y:36, duration:0.6, stagger:0.12 });
-
-  // CTA
-  gsap.from('.cta-label', { scrollTrigger:{ trigger:'#cta', start:'top 75%' }, opacity:0, y:20, duration:0.6 });
-  gsap.from('.cta-h',     { scrollTrigger:{ trigger:'#cta', start:'top 70%' }, opacity:0, y:30, duration:0.8, delay:0.1 });
-  gsap.from('.cta-s',     { scrollTrigger:{ trigger:'#cta', start:'top 65%' }, opacity:0, y:20, duration:0.7, delay:0.2 });
-  gsap.from('.cta-btn',   { scrollTrigger:{ trigger:'#cta', start:'top 60%' }, opacity:0, scale:0.9, duration:0.7, delay:0.35, ease:'back.out(1.7)' });
-
-  // Parallax on hero glow
-  gsap.to('.hero-glow', {
-    scrollTrigger: { trigger:'#hero', start:'top top', end:'bottom top', scrub: true },
-    y: -120, opacity: 0.3
-  });
-
-  // Mockup photo cells cycling glow
-  const cells = document.querySelectorAll('.mockup-photo-cell');
-  let cellIdx = 0;
-  setInterval(() => {
-    cells.forEach(c => c.classList.remove('lit'));
-    const litCount = Math.floor(Math.random() * 3) + 3;
-    const shuffled = [...cells].sort(() => 0.5 - Math.random()).slice(0, litCount);
-    shuffled.forEach(c => c.classList.add('lit'));
-  }, 1400);
 </script>
 </body>
 </html>

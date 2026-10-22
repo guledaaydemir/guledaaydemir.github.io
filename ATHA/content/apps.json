@@ -1,72 +1,54 @@
 {
   "collection": "apps",
   "basePath": "",
-  "title": "Other apps from the developer",
-  "description": "Independent iOS apps built by Gül Eda Aydemir.",
+  "title": "More apps by Gül Eda",
+  "description": "iOS apps by Gül Eda Aydemir, the independent developer of ATHA.",
   "fallbackHref": "https://guledaaydemir.github.io/",
-  "categories": [
-    { "id": "photo",        "label": "Photo & video" },
-    { "id": "productivity", "label": "Productivity" },
-    { "id": "play",         "label": "Play" },
-    { "id": "wellbeing",    "label": "Wellbeing" }
-  ],
+  "categories": [],
   "items": [
     {
-      "slug": "solo-shots",
-      "title": "SOLO.SHOTS",
-      "summary": "Take one photo a day, watch a year become a timelapse. Offline-first and private.",
-      "category": "photo",
-      "icon": "◉",
-      "tags": ["progress", "timelapse", "daily"],
+      "slug": "dump",
+      "title": "DUMP",
+      "summary": "Photo dump & carousel maker that picks your best shots for you",
       "order": 1,
       "featured": true,
       "external": true,
-      "href": ""
+      "href": "https://guledaaydemir.github.io/DUMP/",
+      "image": "/DUMP/appicon-128.webp",
+      "appStore": "https://apps.apple.com/app/id6798248086"
     },
     {
       "slug": "solo-swipe",
       "title": "Solo.Swipe",
-      "summary": "Clear the camera roll one swipe at a time. Reclaim the storage you keep ignoring.",
-      "category": "photo",
-      "icon": "⌁",
-      "tags": ["cleanup", "storage", "photos"],
-      "order": 3,
+      "summary": "Swipe to clean your camera roll in 5-minute daily sessions",
+      "order": 2,
+      "featured": true,
       "external": true,
-      "href": ""
+      "href": "https://guledaaydemir.github.io/solo.swipe/",
+      "image": "/solo.swipe/appicon-128.webp",
+      "appStore": "https://apps.apple.com/app/id6761368690"
     },
     {
-      "slug": "dump",
-      "title": "DUMP",
-      "summary": "Turn photos and video into Instagram carousels and collages without opening a design tool.",
-      "category": "photo",
-      "icon": "▣",
-      "tags": ["carousel", "collage", "instagram"],
-      "order": 4,
+      "slug": "solo-shots",
+      "title": "Solo.Shots",
+      "summary": "Progress photos that line up, turned into a timelapse",
+      "order": 3,
+      "featured": true,
       "external": true,
-      "href": ""
+      "href": "https://guledaaydemir.github.io/solo.shots/",
+      "image": "/solo.shots/appicon-128.webp",
+      "appStore": "https://apps.apple.com/app/id6762450478"
     },
     {
       "slug": "solora",
       "title": "Solora",
-      "summary": "A productivity app that adapts to the role you're in, instead of one rigid system for every part of your life.",
-      "category": "productivity",
-      "icon": "◐",
-      "tags": ["tasks", "focus", "routine"],
-      "order": 5,
+      "summary": "Role-based life planner: pick today's Big 3, keep habits going",
+      "order": 4,
       "featured": true,
       "external": true,
-      "href": ""
-    },
-    {
-      "slug": "solo-surya",
-      "title": "Solo.Surya",
-      "summary": "Vedic astrology charts and daily readings, calculated on device with no connection required.",
-      "category": "wellbeing",
-      "icon": "✦",
-      "tags": ["astrology", "offline", "daily"],
-      "order": 6,
-      "external": true,
-      "href": ""
+      "href": "https://guledaaydemir.github.io/solora/",
+      "image": "/solora/appicon-128.webp",
+      "appStore": "https://apps.apple.com/app/id6778808618"
     }
   ]
 }

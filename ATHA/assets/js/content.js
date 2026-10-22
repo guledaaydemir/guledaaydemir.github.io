@@ -110,6 +110,8 @@
       var fallback = item._fallback || A.config.developerSite;
       return A.campaignURL ? A.campaignURL(fallback, 'atha-web-' + item.slug) : fallback;
     }
+    // Items outside the collection folder (practices/, compare/, for/) carry a path.
+    if (item.path) { return A.url(item.path); }
     return A.url(item._base + item.slug + '.html');
   }
 

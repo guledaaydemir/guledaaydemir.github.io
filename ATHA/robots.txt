@@ -1,48 +1,10 @@
-# ATHA — https://guledaaydemir.github.io/atha/
-# Crawlers and AI assistants are welcome. Templates and raw manifests are not
-# content pages and are excluded to keep the index clean.
+# ATHA folder robots file.
+# Note: crawlers only read robots.txt at the host root
+# (https://guledaaydemir.github.io/robots.txt). This file is informational and
+# deliberately blocks nothing: CSS, JS and JSON must stay fetchable so pages
+# render for search engines. Unpublished templates (_*.html) are never served.
 
 User-agent: *
 Allow: /
-Disallow: /atha/guides/_template.html
-Disallow: /atha/meditations/_template.html
-Disallow: /atha/content/
-Disallow: /atha/assets/js/
-Disallow: /atha/tools/
 
-# Assistant crawlers — explicit allow so answers about sleep, stress and
-# breathing can cite ATHA's guides directly.
-User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-User
-Allow: /
-
-User-agent: Claude-SearchBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Applebot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-Sitemap: https://guledaaydemir.github.io/atha/sitemap.xml
+Sitemap: https://guledaaydemir.github.io/ATHA/sitemap.xml

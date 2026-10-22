@@ -4,16 +4,28 @@
   "title": "Features",
   "description": "What ATHA does, and what it deliberately does not do.",
   "categories": [
-    { "id": "practice",  "label": "Practice" },
-    { "id": "progress",  "label": "Progress" },
-    { "id": "platform",  "label": "Apple platform" },
-    { "id": "privacy",   "label": "Privacy" }
+    {
+      "id": "practice",
+      "label": "Practice"
+    },
+    {
+      "id": "progress",
+      "label": "Progress"
+    },
+    {
+      "id": "platform",
+      "label": "Apple platform"
+    },
+    {
+      "id": "privacy",
+      "label": "Privacy"
+    }
   ],
   "items": [
     {
       "slug": "breathing-sessions",
       "title": "Guided breathing sessions",
-      "summary": "Inhale, hold, exhale and hold-out guided by ambient visuals, haptics and sound.",
+      "summary": "10 built-in patterns guided by an ambient visual, haptic taps and optional soft phase tones. Eyes-closed mode dims the screen.",
       "category": "practice",
       "icon": "◎",
       "tier": "free",
@@ -23,7 +35,7 @@
     {
       "slug": "custom-patterns",
       "title": "Custom breathing patterns",
-      "summary": "Build your own timing. Any phase can be set to zero if you do not want it.",
+      "summary": "Set inhale, hold, exhale and hold-out yourself; any hold can be zero. Sessions run from 1 to 60 minutes.",
       "category": "practice",
       "icon": "⌇",
       "tier": "free",
@@ -32,7 +44,7 @@
     {
       "slug": "ambient-visuals",
       "title": "Ambient breathing visuals",
-      "summary": "Orb, aurora, liquid, flower, ripple, wave, particle and glow — all driven by the same breathing state.",
+      "summary": "Aura, Orb, Box, Glow, Ripple, Wave, Liquid, Aurora, Flower and Particles, all moving with the same breath.",
       "category": "practice",
       "icon": "✦",
       "tier": "free",
@@ -68,7 +80,7 @@
     {
       "slug": "apple-health",
       "title": "Apple Health",
-      "summary": "Optional Mindful Sessions and State of Mind entries. Core breathing never requires Health access.",
+      "summary": "Optional and write-only: Mindful Minutes and State of Mind. ATHA reads nothing, and core breathing never needs Health.",
       "category": "platform",
       "icon": "♡",
       "tier": "free",
@@ -78,7 +90,7 @@
     {
       "slug": "widgets-watch",
       "title": "Widgets, Watch and Shortcuts",
-      "summary": "Start a session from the Home Screen, your wrist, or a Siri shortcut.",
+      "summary": "Apple Watch haptics, Home and Lock Screen widgets, a Live Activity and Siri: \"Breathe now with ATHA\".",
       "category": "platform",
       "icon": "◈",
       "tier": "free",
@@ -87,16 +99,16 @@
     {
       "slug": "themes",
       "title": "Themes and appearance",
-      "summary": "System, light and dark, plus palettes that recolour visuals, glow and ambience.",
+      "summary": "Eight themes (ATHA, Ocean, Sunset, Forest, Lavender, Midnight, Aurora, Sand) with System, Light or Dark appearance.",
       "category": "platform",
       "icon": "◐",
       "tier": "free",
       "order": 9
     },
-     {
+    {
       "slug": "on-device",
       "title": "On-device by design",
-      "summary": "No ATHA cloud account for your breathing history. Analytics are anonymous and can be turned off.",
+      "summary": "No account, no server, no analytics: the app makes no network requests. Apple's privacy label: Data Not Collected.",
       "category": "privacy",
       "icon": "⌁",
       "tier": "free",

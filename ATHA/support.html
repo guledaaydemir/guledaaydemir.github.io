@@ -3,77 +3,552 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#080a18" />
-  <meta name="description" content="ATHA Support — help with breathing sessions, custom breathing patterns, routines, reminders, Apple Health, purchases, privacy, and troubleshooting." />
-  <title>Support — ATHA</title>
-  <style>
-    :root{--bg:#070914;--surface:rgba(35,36,57,.68);--line:rgba(255,255,255,.09);--text:#f7f4ff;--muted:#aaa6bd;--muted2:#7d798e;--violet:#927aff;--pink:#e994d6;--peach:#f5a681;--peach2:#ffc09b;--green:#77d7ad}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;background:radial-gradient(circle at 20% 10%,rgba(143,120,255,.20),transparent 27%),radial-gradient(circle at 82% 24%,rgba(247,167,131,.10),transparent 24%),linear-gradient(180deg,#090b19,#070914 55%,#050711);min-height:100vh;line-height:1.55}a{color:inherit}.container{width:min(920px,calc(100% - 42px));margin:0 auto}
-    header{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);background:rgba(7,9,20,.76);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}.header-inner{height:78px;display:flex;align-items:center;justify-content:space-between}.logo{letter-spacing:.42em;padding-left:.42em;text-decoration:none}.header-links{display:flex;gap:18px;align-items:center}.header-links a{text-decoration:none;color:var(--muted);font-size:13px}.header-links a:hover{color:#fff}
-    main{padding:78px 0 100px}.hero{text-align:center;max-width:780px;margin:0 auto 62px}.eyebrow{font-size:12px;color:var(--peach);text-transform:uppercase;letter-spacing:.24em}.hero h1{font-size:clamp(48px,8vw,82px);font-weight:360;letter-spacing:-.045em;line-height:1.0;margin:16px 0 18px}.gradient{background:linear-gradient(105deg,#fff,#f6b49c 40%,#e89ad3 66%,#a48aff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:18px;color:var(--muted);max-width:620px;margin:0 auto}
-    .aura{width:130px;height:130px;margin:36px auto 6px;border-radius:50%;background:radial-gradient(circle,rgba(189,140,255,.14),rgba(15,14,35,.23) 54%);position:relative;filter:drop-shadow(0 0 24px rgba(239,143,213,.18))}.aura:before,.aura:after{content:"";position:absolute;inset:12px;border:2px solid rgba(239,143,213,.72);border-radius:47% 53% 49% 51%;box-shadow:0 0 10px rgba(239,143,213,.55);animation:m 10s linear infinite}.aura:after{inset:18px 9px 13px 17px;border-color:rgba(159,126,255,.75);animation-direction:reverse;animation-duration:13s}@keyframes m{0%{transform:rotate(0deg);border-radius:47% 53% 49% 51%}50%{transform:rotate(180deg);border-radius:54% 46% 56% 44%}100%{transform:rotate(360deg);border-radius:47% 53% 49% 51%}}
-    .quick-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:58px}.quick-card{text-decoration:none;border:1px solid var(--line);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.03));padding:22px;transition:transform .25s ease,border-color .25s ease}.quick-card:hover{transform:translateY(-5px);border-color:rgba(239,143,213,.25)}.quick-icon{width:46px;height:46px;border-radius:16px;background:linear-gradient(145deg,rgba(143,120,255,.15),rgba(247,167,131,.12));display:grid;place-items:center;color:var(--peach2);font-size:20px;margin-bottom:26px}.quick-card b{font-size:17px}.quick-card span{display:block;color:var(--muted);font-size:13px;margin-top:6px}
-    .section-title{font-size:31px;font-weight:520;margin:58px 0 22px}.faq{display:grid;gap:12px}details{border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.045);overflow:hidden}summary{list-style:none;cursor:pointer;padding:21px 24px;font-weight:560;display:flex;align-items:center;justify-content:space-between;gap:16px}summary::-webkit-details-marker{display:none}summary:after{content:"+";width:30px;height:30px;border-radius:50%;background:rgba(143,120,255,.09);display:grid;place-items:center;color:#cbbcff;font-weight:400;font-size:20px}details[open] summary:after{content:"−"}.answer{padding:0 24px 22px;color:var(--muted);font-size:15px}.answer p{margin:0 0 12px}.answer ol,.answer ul{margin:10px 0;padding-left:20px}.answer li{margin:7px 0}.answer a{color:var(--peach2)}
-    .support-card{margin-top:64px;border:1px solid rgba(189,140,255,.16);border-radius:30px;padding:34px;background:linear-gradient(135deg,rgba(143,120,255,.11),rgba(247,167,131,.06));display:grid;grid-template-columns:1fr auto;align-items:center;gap:28px}.support-card h2{font-size:30px;margin:0 0 8px}.support-card p{margin:0;color:var(--muted)}.email-btn{display:inline-flex;text-decoration:none;color:#0d0b17;background:linear-gradient(110deg,var(--peach2),var(--peach),#eba2bd);padding:13px 20px;border-radius:18px;font-weight:650;white-space:nowrap}
-    .privacy-note{margin-top:28px;text-align:center;color:var(--muted2);font-size:13px}.privacy-note a{color:#cbbcff}
-    footer{border-top:1px solid var(--line);padding:30px 0 44px;color:var(--muted2);font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer-links{display:flex;gap:18px}.footer-links a{text-decoration:none;color:var(--muted)}
-    @media(max-width:720px){.container{width:min(100% - 30px,920px)}.header-links a:not(:last-child){display:none}.quick-grid{grid-template-columns:1fr}.support-card{grid-template-columns:1fr}.email-btn{justify-self:start}.hero p{font-size:16px}main{padding-top:52px}}
-    @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
-  </style>
+  <title>ATHA Support: Apple Health, Watch, widgets, reminders</title>
+  <meta name="description" content="Help with ATHA: Apple Health, Apple Watch, widgets, Siri, Eyes-closed mode, reminders, deleting your history and privacy. Email the developer." />
+  <link rel="canonical" href="https://guledaaydemir.github.io/ATHA/support.html" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+  <meta name="theme-color" content="#070914" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="author" content="Gül Eda Aydemir" />
+  <meta name="apple-itunes-app" content="app-id=6807887691" />
+  <link rel="icon" href="/ATHA/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="/ATHA/appicon-180.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ATHA" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="ATHA Support and FAQ" />
+  <meta property="og:description" content="Help with ATHA: Apple Health, Apple Watch, widgets, Siri, Eyes-closed mode, reminders, deleting your history and privacy. Email the developer." />
+  <meta property="og:url" content="https://guledaaydemir.github.io/ATHA/support.html" />
+  <meta property="og:image" content="https://guledaaydemir.github.io/ATHA/assets/img/og/og-atha.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="ATHA breathing app: Breathe better. Feel present. Free, no account, Data Not Collected." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ATHA Support and FAQ" />
+  <meta name="twitter:description" content="Help with ATHA: Apple Health, Apple Watch, widgets, Siri, Eyes-closed mode, reminders, deleting your history and privacy. Email the developer." />
+  <meta name="twitter:image" content="https://guledaaydemir.github.io/ATHA/assets/img/og/og-atha.jpg" />
+  <meta name="twitter:image:alt" content="ATHA breathing app: Breathe better. Feel present. Free, no account, Data Not Collected." />
+  <link rel="stylesheet" href="/ATHA/assets/css/atha.css?v=3" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://guledaaydemir.github.io/ATHA/support.html#webpage",
+      "url": "https://guledaaydemir.github.io/ATHA/support.html",
+      "name": "ATHA Support",
+      "isPartOf": {
+        "@id": "https://guledaaydemir.github.io/ATHA/#website"
+      },
+      "about": {
+        "@id": "https://guledaaydemir.github.io/ATHA/#app"
+      },
+      "inLanguage": "en",
+      "dateModified": "2026-10-15",
+      "author": {
+        "@id": "https://guledaaydemir.github.io/#person"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ATHA",
+          "item": "https://guledaaydemir.github.io/ATHA/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Support"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://guledaaydemir.github.io/ATHA/support.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which devices and iOS versions does ATHA support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "iPhone and iPad with iOS 18.6 or later, and Apple Watch with watchOS 10.6 or later. In ATHA 1.0, widgets and the Live Activity need iOS 26.1 or later. ATHA is a free download from the App Store. It is not verified for Mac."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I start my first session?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open ATHA and tap Breathe now. Or tap the check-in to say how you feel, or choose a moment such as Before a meeting or Before sleep, and ATHA picks the breath. You can also browse every pattern in Explore."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I change the language?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ATHA is available in English and Turkish. Open Settings in ATHA and choose Language; you can follow the system language or pick one for the app only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I connect ATHA to Apple Health?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open ATHA’s Settings.Go to Apple Health.Turn on Save sessions to write completed sessions as Mindful Minutes.Turn on Share reflections if you want reflections written as State of Mind.Approve the permissions in the iOS sheet.When permission is granted, the status shows Connected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does Apple Health show &#8220;Not connected&#8221;?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check that at least one Health option is on in ATHA and that iOS permission was granted. If you denied permission before, turning the switch on again may not show a new prompt; change it in the Health app under Sharing › Apps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does ATHA write to Apple Health? Does it read anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When enabled, ATHA writes completed session time as Mindful Minutes and, if you choose, reflections as State of Mind. ATHA does not read any Health data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use ATHA without Apple Health?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Health is optional. Breathing, custom patterns, routines, the Garden and insights all work without it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I breathe with my eyes closed?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. During a session, tap the eye button until you reach Eyes closed: the screen dims and haptic taps (plus a soft tone, if Full Guided Mode is on) carry the rhythm. Keep haptics or tones switched on, otherwise there is nothing to follow. On silent (Ring/Silent switch), ATHA 1.0 plays no sound, so keep haptics on. In ATHA 1.0 the cues stop if your iPhone locks itself, so for longer sessions set Settings › Display & Brightness › Auto-Lock to longer than the session, or use Apple Watch, which keeps going with your wrist down. Minimal view keeps only the visual, the instruction and the time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a spoken guided voice?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not in ATHA 1.0. For a sound at every phase, open ATHA’s Settings › Breathing sound, turn on Full Guided Mode (“a sound marks every step of the breath”) and pick Chime, Marimba, Bowl, Drop or Pulse. Haptic strength (Off, Light, Medium or Strong) is also in Settings. A spoken guided voice and ambient sounds are planned for version 2.0."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I create a custom breathing pattern?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open Explore and choose Create your own. Name the pattern, then set Inhale, Hold in, Exhale and Hold out. Holds can be 0, but a pattern needs an inhale and an exhale. Sessions can be 1 to 60 minutes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do routines work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A routine brings you back to a practice at a set time. Create one, choose the practice, time, days and length, and turn on the reminder if you want a notification."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why am I not receiving reminders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Check that ATHA has notification permission in iOS Settings.Check that the reminder or routine is switched on in ATHA.Check the time and your Focus settings.After a time-zone change, open ATHA once so reminders can reschedule."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I turn off the streak reminder?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Once notifications are allowed, ATHA sends a gentle streak reminder by default. Turn it off in ATHA’s Settings › Notifications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why didn&#8217;t a short session count?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sessions shorter than 60 seconds are not added to your stats, so a mis-tap doesn’t count as practice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the ATHA Watch app empty?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open ATHA on your iPhone once while your Watch is nearby. Your favourites (up to five), today’s Daily Breath and I need a moment then sync to the Watch; until that first sync it offers Quick Reset, Coherence and Box Breathing. To see a practice on your wrist, mark it as a favourite on your iPhone. Watch sessions run at the practice’s default length and are sent back to your iPhone history."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which widgets are there?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Quick Breath, Streak, Daily Progress and Check In (“How are you feeling?”), for the Home Screen and Lock Screen. Long-press the Home or Lock Screen, tap Edit or Customize, and add ATHA. In ATHA 1.0, widgets need iOS 26.1 or later (the app itself runs on iOS 18.6)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What can I say to Siri?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "“Breathe now with ATHA”, “Quick reset with ATHA”, “Start my daily breath in ATHA” or “Start a breathing session in ATHA”. You can also add these as Shortcuts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I see the session on my Lock Screen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, on iOS 26.1 or later in ATHA 1.0. Sessions of 3 minutes or more can show as a Live Activity on the Lock Screen and in the Dynamic Island."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What statistics does ATHA show?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mindful minutes, sessions, active days, current and longest streak, average session and completion rate, over 7 days, 30 days, 3 months, 1 year or all time, with a calendar, weekly and monthly recaps and your favourite practices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does &#8220;what works for you&#8221; mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It comes from your own ratings after sessions, for example how often you felt better after a practice. It is calculated on your phone and is a personal pattern, not a medical measurement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why are some insights not showing yet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Personal insights appear after at least 5 sessions, and time-of-day insights after at least 10, so ATHA doesn’t draw conclusions from one or two sessions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Garden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A visual way to see your practice add up. As your total minutes grow, the scene moves from seed to sprout, plant, tree, garden and forest, with an estimate of the air you’ve breathed. It is a metaphor; nothing real is planted."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ATHA collect any data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. ATHA has no account and makes no network requests. It contains no analytics or advertising SDKs, so nothing about your use is sent to the developer or anyone else. Apple’s App Store privacy label for ATHA reads “Data Not Collected”. ATHA 1.0 shows an “Anonymous usage data” switch in Settings › Data. It has no effect: the App Store build has no analytics destination, so nothing is sent whether it is on or off. Full details: Privacy Policy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is my history stored?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On your device only. There is no ATHA cloud or iCloud sync; your data is included in your normal device backup, which Apple and your settings control."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I delete my ATHA history?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In ATHA, go to Settings › Data › Reset progress. Deleting the app also removes its local data (subject to your backups). Entries already written to Apple Health stay in the Health app until you delete them there."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ATHA sell my health or breathing data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. ATHA never receives your data, so there is nothing to sell, rent or share."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ATHA cost anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. ATHA is free, with no subscription, no in-app purchases and no ads. Every feature is included."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I saw a payment prompt. What should I do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ATHA 1.0 has no in-app purchases, so you should never see one. If you do, please email a screenshot so it can be fixed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will ATHA stay free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no paid tier today. If that ever changes, it will be announced on the website before the update that changes it."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
-<body>
-<header><div class="container header-inner"><a class="logo" href="index.html">ATHA</a><div class="header-links"><a href="index.html">Home</a><a href="privacypolicy.html">Privacy</a><a href="mailto:guledaaydemir@gmail.com">Contact</a></div></div></header>
-<main class="container">
-  <div class="hero"><div class="eyebrow">ATHA Support</div><div class="aura" aria-hidden="true"></div><h1>How can we help you<br><span class="gradient">breathe easier?</span></h1><p>Find answers about sessions, custom breathing, routines, reminders, Apple Health, privacy, and common troubleshooting.</p></div>
+<body data-atha-stickycta="off">
 
-  <div class="quick-grid">
-    <a class="quick-card" href="#health"><div class="quick-icon">♡</div><b>Apple Health</b><span>Connection, Mindful Sessions, and reflections.</span></a>
-    <a class="quick-card" href="#sessions"><div class="quick-icon">◎</div><b>Breathing sessions</b><span>Custom patterns, visuals, and session behavior.</span></a>
-    <a class="quick-card" href="#data"><div class="quick-icon">⌁</div><b>Privacy & data</b><span>On-device storage, deletion, and no ATHA cloud.</span></a>
+<a class="atha-skip" href="#atha-main">Skip to content</a>
+<header class="atha-header">
+  <div class="atha-container atha-header__inner">
+    <a class="atha-logo" href="/ATHA/" aria-label="ATHA home">ATHA</a>
+    <nav class="atha-nav" id="atha-nav" aria-label="Primary">
+      <a class="atha-nav__link" href="/ATHA/">Home</a>
+      <a class="atha-nav__link" href="/ATHA/features/">Features</a>
+      <a class="atha-nav__link" href="/ATHA/guides/">Guides</a>
+      <a class="atha-nav__link" href="/ATHA/support.html" aria-current="page">FAQ &amp; Support</a>
+      <a class="atha-btn atha-btn--primary atha-nav__cta" href="https://apps.apple.com/app/id6807887691" data-atha-store="nav">Download</a>
+    </nav>
+    <div class="atha-header__actions">
+      <a class="atha-btn atha-btn--primary atha-header__get" href="https://apps.apple.com/app/id6807887691" data-atha-store="nav-mobile">Get ATHA</a>
+      <button class="atha-nav__toggle" type="button" aria-expanded="false" aria-controls="atha-nav" aria-label="Open menu">&#9776;</button>
+    </div>
   </div>
+</header>
 
-  <h2 class="section-title" id="health">Apple Health</h2>
-  <div class="faq">
-    <details><summary>How do I connect ATHA to Apple Health?</summary><div class="answer"><ol><li>Open ATHA Settings.</li><li>Find the <strong>Apple Health</strong> section.</li><li>Enable <strong>Save sessions</strong> if you want completed sessions saved as Mindful Sessions.</li><li>Enable <strong>Share reflections</strong> if you want supported reflections written as State of Mind entries.</li><li>Approve the requested Health permissions in the iOS authorization sheet.</li></ol><p>When the required permissions are granted, ATHA can show the Apple Health status as connected.</p></div></details>
-    <details><summary>Why does Apple Health show “Not connected”?</summary><div class="answer"><p>Check that at least one ATHA Health feature is enabled and that iOS permission was granted. You can review permissions from the Health app or iOS Settings. If a permission was previously denied, turning the ATHA switch on again may not show a new system prompt; update the permission from Apple's Health access controls.</p></div></details>
-    <details><summary>What does ATHA write to Apple Health?</summary><div class="answer"><p>When enabled, ATHA can write completed breathing session duration as <strong>Mindful Sessions</strong>. On supported iOS versions, reflections you explicitly choose to share can be written as <strong>State of Mind</strong> entries.</p></div></details>
-    <details><summary>Can I use ATHA without Apple Health?</summary><div class="answer"><p>Yes. Apple Health integration is optional. Core breathing, custom sessions, routines, visuals, garden, and local insights do not require Health access.</p></div></details>
-  </div>
+<main id="atha-main" class="atha-main atha-container">
 
-  <h2 class="section-title" id="sessions">Sessions & routines</h2>
-  <div class="faq">
-    <details><summary>How do I create a custom breathing pattern?</summary><div class="answer"><p>Open Explore or Practices, choose <strong>Create your own</strong>, name your pattern, then set the duration of Inhale, Hold in, Exhale, and Hold out. A phase can be set to zero if you do not want to use it. Save the pattern when it feels right.</p></div></details>
-    <details><summary>What happens during a breathing session?</summary><div class="answer"><p>ATHA follows the timing of the selected breathing technique and uses the chosen ambient visual to communicate inhale, hold, exhale, and hold-out states. Depending on your settings, the session may also use haptics and sound cues.</p></div></details>
-    <details><summary>How do routines work?</summary><div class="answer"><p>A routine helps you return to a practice at a chosen time. Create a routine, select a breathing practice, choose its schedule, and enable reminders if you want a notification.</p></div></details>
-    <details><summary>Why am I not receiving reminders?</summary><div class="answer"><ul><li>Confirm ATHA has notification permission in iOS Settings.</li><li>Check that the relevant reminder or routine is enabled in ATHA.</li><li>Verify the scheduled time and your device Focus / notification settings.</li><li>If you recently changed time zone, reopen ATHA so local schedules can refresh.</li></ul></div></details>
-    <details><summary>What is the Garden?</summary><div class="answer"><p>Garden is a visual metaphor for your practice history. As your cumulative breathing time grows, the scene can progress from a seed toward a sprout, plant, tree, garden, and forest. It does not claim that real plants are being grown or that breathing has a direct environmental effect.</p></div></details>
-  </div>
+  <ol class="atha-breadcrumb">
+    <li><a href="/ATHA/">ATHA</a></li>
+    <li aria-current="page">Support</li>
+  </ol>
 
-  <h2 class="section-title">Insights & progress</h2>
-  <div class="faq">
-    <details><summary>What statistics can ATHA show?</summary><div class="answer"><p>Depending on available history, ATHA can show mindful minutes, session count, active days, current and longest streaks, average session duration, completion rate, favorite practice, practice-over-time trends, records, calendar history, and personal patterns such as preferred time or duration.</p></div></details>
-    <details><summary>What does “most effective breaths” mean?</summary><div class="answer"><p>It is based on your own post-session feedback — for example, how often you reported feeling better after a particular practice. It is a personal history insight, not a medical measurement or treatment claim.</p></div></details>
-    <details><summary>Why are some insights unavailable?</summary><div class="answer"><p>Some patterns need enough completed sessions or reflection data before they become meaningful. ATHA may wait until there is sufficient local history instead of showing a misleading conclusion from only one or two sessions.</p></div></details>
-  </div>
+  <section class="atha-hubhead">
+    <p class="atha-eyebrow">ATHA Support</p>
+    <div class="atha-aura" aria-hidden="true"></div>
+    <h1>How can we help you <span class="atha-gradient">breathe easier?</span></h1>
+    <p class="atha-lead">Answers about sessions, Apple Health, Apple Watch, widgets, reminders, privacy and pricing. Still stuck? Email the developer directly.</p>
+  </section>
 
-  <h2 class="section-title" id="data">Privacy & data</h2>
-  <div class="faq">
-    <details><summary>Does ATHA have a cloud account?</summary><div class="answer"><p>ATHA is designed without a developer-controlled cloud backend for your breathing history. Core app data stays on your device. Your operating system may still include app data in device backups depending on your Apple / iCloud settings.</p></div></details>
-    <details><summary>What happens if I delete the app?</summary><div class="answer"><p>Locally stored ATHA data may be removed when the app is deleted, subject to your device backup and restoration settings. Apple Health entries are separate from ATHA's local storage and may remain in the Health app until you manage them there.</p></div></details>
-    <details><summary>Does ATHA sell my health or breathing data?</summary><div class="answer"><p>No. ATHA does not sell, rent, or trade your breathing history, reflections, or Apple Health data for advertising or marketing.</p></div></details>
-    <details><summary>Where can I read the full Privacy Policy?</summary><div class="answer"><p><a href="privacypolicy.html">Open ATHA's Privacy Policy →</a></p></div></details>
-  </div>
+  <nav aria-label="Support topics" class="atha-section atha-topics">
+    <ul class="atha-grid atha-grid--4 atha-cards">
+      <li><a class="atha-card atha-card--feature" href="#start"><span class="atha-card__icon" aria-hidden="true">&#9675;</span><p class="atha-card__title">Getting started</p><p class="atha-card__text">3 answers</p></a></li>
+      <li><a class="atha-card atha-card--feature" href="#health"><span class="atha-card__icon" aria-hidden="true">&#9825;</span><p class="atha-card__title">Apple Health</p><p class="atha-card__text">4 answers</p></a></li>
+      <li><a class="atha-card atha-card--feature" href="#sessions"><span class="atha-card__icon" aria-hidden="true">&#9678;</span><p class="atha-card__title">Sessions, sound and routines</p><p class="atha-card__text">7 answers</p></a></li>
+      <li><a class="atha-card atha-card--feature" href="#watch"><span class="atha-card__icon" aria-hidden="true">&#8986;</span><p class="atha-card__title">Apple Watch, widgets and Siri</p><p class="atha-card__text">4 answers</p></a></li>
+      <li><a class="atha-card atha-card--feature" href="#progress"><span class="atha-card__icon" aria-hidden="true">&#10048;</span><p class="atha-card__title">Insights and progress</p><p class="atha-card__text">4 answers</p></a></li>
+      <li><a class="atha-card atha-card--feature" href="#data"><span class="atha-card__icon" aria-hidden="true">&#8999;</span><p class="atha-card__title">Privacy and data</p><p class="atha-card__text">4 answers</p></a></li>
+      <li><a class="atha-card atha-card--feature" href="#pricing"><span class="atha-card__icon" aria-hidden="true">&#9679;</span><p class="atha-card__title">Pricing</p><p class="atha-card__text">3 answers</p></a></li>
+    </ul>
+  </nav>
 
-  <h2 class="section-title">Pricing</h2>
-  <div class="faq">
-    <details><summary>Does ATHA cost anything?</summary><div class="answer"><p>No. ATHA is free, with no subscription, no in-app purchases and no advertising. Every feature is available without payment, and nothing is locked behind a trial.</p></div></details>
-    <details><summary>Why am I being asked to pay for something?</summary><div class="answer"><p>You should not be. ATHA contains no in-app purchases. If you encounter anything resembling a payment prompt inside the app, please <a href="mailto:guledaaydemir@gmail.com?subject=ATHA%20unexpected%20purchase%20prompt">report it by email</a> — it is a bug, not a feature.</p></div></details>
-    <details><summary>Will ATHA stay free?</summary><div class="answer"><p>There is no paid tier planned at present. If paid features are ever introduced, it will be stated on the website before it happens, and features you already rely on will not be removed and sold back to you.</p></div></details>
-  </div>
+  <section class="atha-section atha-container--text" style="padding:0" aria-labelledby="start">
+    <h2 id="start">Getting started</h2>
+    <div class="atha-faq">
+      <details>
+        <summary>Which devices and iOS versions does ATHA support?</summary>
+        <div class="atha-faq__answer"><p>iPhone and iPad with iOS 18.6 or later, and Apple Watch with watchOS 10.6 or later. In ATHA 1.0, widgets and the Live Activity need iOS 26.1 or later. ATHA is a free download from the <a href="https://apps.apple.com/app/id6807887691">App Store</a>. It is not verified for Mac.</p></div>
+      </details>
+      <details>
+        <summary>How do I start my first session?</summary>
+        <div class="atha-faq__answer"><p>Open ATHA and tap <strong>Breathe now</strong>. Or tap the check-in to say how you feel, or choose a moment such as <em>Before a meeting</em> or <em>Before sleep</em>, and ATHA picks the breath. You can also browse every pattern in Explore.</p></div>
+      </details>
+      <details>
+        <summary>How do I change the language?</summary>
+        <div class="atha-faq__answer"><p>ATHA is available in English and Turkish. Open Settings in ATHA and choose <strong>Language</strong>; you can follow the system language or pick one for the app only.</p></div>
+      </details>
+    </div>
+  </section>
+  <section class="atha-section atha-container--text" style="padding:0" aria-labelledby="health">
+    <h2 id="health">Apple Health</h2>
+    <div class="atha-faq">
+      <details>
+        <summary>How do I connect ATHA to Apple Health?</summary>
+        <div class="atha-faq__answer"><p><ol><li>Open ATHA&#8217;s Settings.</li><li>Go to <strong>Apple Health</strong>.</li><li>Turn on <strong>Save sessions</strong> to write completed sessions as Mindful Minutes.</li><li>Turn on <strong>Share reflections</strong> if you want reflections written as State of Mind.</li><li>Approve the permissions in the iOS sheet.</li></ol><p>When permission is granted, the status shows <em>Connected</em>.</p></p></div>
+      </details>
+      <details>
+        <summary>Why does Apple Health show &#8220;Not connected&#8221;?</summary>
+        <div class="atha-faq__answer"><p>Check that at least one Health option is on in ATHA and that iOS permission was granted. If you denied permission before, turning the switch on again may not show a new prompt; change it in the Health app under Sharing &rsaquo; Apps.</p></div>
+      </details>
+      <details>
+        <summary>What does ATHA write to Apple Health? Does it read anything?</summary>
+        <div class="atha-faq__answer"><p>When enabled, ATHA writes completed session time as <strong>Mindful Minutes</strong> and, if you choose, reflections as <strong>State of Mind</strong>. ATHA does not read any Health data.</p></div>
+      </details>
+      <details>
+        <summary>Can I use ATHA without Apple Health?</summary>
+        <div class="atha-faq__answer"><p>Yes. Health is optional. Breathing, custom patterns, routines, the Garden and insights all work without it.</p></div>
+      </details>
+    </div>
+  </section>
+  <section class="atha-section atha-container--text" style="padding:0" aria-labelledby="sessions">
+    <h2 id="sessions">Sessions, sound and routines</h2>
+    <div class="atha-faq">
+      <details>
+        <summary>Can I breathe with my eyes closed?</summary>
+        <div class="atha-faq__answer"><p>Yes. During a session, tap the eye button until you reach <strong>Eyes closed</strong>: the screen dims and haptic taps (plus a soft tone, if Full Guided Mode is on) carry the rhythm. Keep haptics or tones switched on, otherwise there is nothing to follow. On silent (Ring/Silent switch), ATHA 1.0 plays no sound, so keep haptics on. In ATHA 1.0 the cues stop if your iPhone locks itself, so for longer sessions set Settings &#8250; Display &amp; Brightness &#8250; Auto-Lock to longer than the session, or use Apple Watch, which keeps going with your wrist down. <strong>Minimal view</strong> keeps only the visual, the instruction and the time.</p></div>
+      </details>
+      <details>
+        <summary>Is there a spoken guided voice?</summary>
+        <div class="atha-faq__answer"><p>Not in ATHA 1.0. For a sound at every phase, open ATHA&#8217;s Settings &rsaquo; <strong>Breathing sound</strong>, turn on <strong>Full Guided Mode</strong> (&#8220;a sound marks every step of the breath&#8221;) and pick Chime, Marimba, Bowl, Drop or Pulse. Haptic strength (Off, Light, Medium or Strong) is also in Settings. A spoken guided voice and ambient sounds are planned for version 2.0.</p></div>
+      </details>
+      <details>
+        <summary>How do I create a custom breathing pattern?</summary>
+        <div class="atha-faq__answer"><p>Open Explore and choose <strong>Create your own</strong>. Name the pattern, then set Inhale, Hold in, Exhale and Hold out. Holds can be 0, but a pattern needs an inhale and an exhale. Sessions can be 1 to 60 minutes.</p></div>
+      </details>
+      <details>
+        <summary>How do routines work?</summary>
+        <div class="atha-faq__answer"><p>A routine brings you back to a practice at a set time. Create one, choose the practice, time, days and length, and turn on the reminder if you want a notification.</p></div>
+      </details>
+      <details>
+        <summary>Why am I not receiving reminders?</summary>
+        <div class="atha-faq__answer"><p><ul><li>Check that ATHA has notification permission in iOS Settings.</li><li>Check that the reminder or routine is switched on in ATHA.</li><li>Check the time and your Focus settings.</li><li>After a time-zone change, open ATHA once so reminders can reschedule.</li></ul></p></div>
+      </details>
+      <details>
+        <summary>How do I turn off the streak reminder?</summary>
+        <div class="atha-faq__answer"><p>Once notifications are allowed, ATHA sends a gentle streak reminder by default. Turn it off in ATHA&#8217;s Settings &rsaquo; Notifications.</p></div>
+      </details>
+      <details>
+        <summary>Why didn&#8217;t a short session count?</summary>
+        <div class="atha-faq__answer"><p>Sessions shorter than 60 seconds are not added to your stats, so a mis-tap doesn&#8217;t count as practice.</p></div>
+      </details>
+    </div>
+  </section>
+  <section class="atha-section atha-container--text" style="padding:0" aria-labelledby="watch">
+    <h2 id="watch">Apple Watch, widgets and Siri</h2>
+    <div class="atha-faq">
+      <details>
+        <summary>Why is the ATHA Watch app empty?</summary>
+        <div class="atha-faq__answer"><p>Open ATHA on your iPhone once while your Watch is nearby. Your favourites (up to five), today&#8217;s Daily Breath and <em>I need a moment</em> then sync to the Watch; until that first sync it offers Quick Reset, Coherence and Box Breathing. To see a practice on your wrist, mark it as a favourite on your iPhone. Watch sessions run at the practice&#8217;s default length and are sent back to your iPhone history.</p></div>
+      </details>
+      <details>
+        <summary>Which widgets are there?</summary>
+        <div class="atha-faq__answer"><p>Quick Breath, Streak, Daily Progress and Check In (&#8220;How are you feeling?&#8221;), for the Home Screen and Lock Screen. Long-press the Home or Lock Screen, tap Edit or Customize, and add ATHA. In ATHA 1.0, widgets need iOS 26.1 or later (the app itself runs on iOS 18.6).</p></div>
+      </details>
+      <details>
+        <summary>What can I say to Siri?</summary>
+        <div class="atha-faq__answer"><p>&#8220;Breathe now with ATHA&#8221;, &#8220;Quick reset with ATHA&#8221;, &#8220;Start my daily breath in ATHA&#8221; or &#8220;Start a breathing session in ATHA&#8221;. You can also add these as Shortcuts.</p></div>
+      </details>
+      <details>
+        <summary>Can I see the session on my Lock Screen?</summary>
+        <div class="atha-faq__answer"><p>Yes, on iOS 26.1 or later in ATHA 1.0. Sessions of 3 minutes or more can show as a Live Activity on the Lock Screen and in the Dynamic Island.</p></div>
+      </details>
+    </div>
+  </section>
+  <section class="atha-section atha-container--text" style="padding:0" aria-labelledby="progress">
+    <h2 id="progress">Insights and progress</h2>
+    <div class="atha-faq">
+      <details>
+        <summary>What statistics does ATHA show?</summary>
+        <div class="atha-faq__answer"><p>Mindful minutes, sessions, active days, current and longest streak, average session and completion rate, over 7 days, 30 days, 3 months, 1 year or all time, with a calendar, weekly and monthly recaps and your favourite practices.</p></div>
+      </details>
+      <details>
+        <summary>What does &#8220;what works for you&#8221; mean?</summary>
+        <div class="atha-faq__answer"><p>It comes from your own ratings after sessions, for example how often you felt better after a practice. It is calculated on your phone and is a personal pattern, not a medical measurement.</p></div>
+      </details>
+      <details>
+        <summary>Why are some insights not showing yet?</summary>
+        <div class="atha-faq__answer"><p>Personal insights appear after at least 5 sessions, and time-of-day insights after at least 10, so ATHA doesn&#8217;t draw conclusions from one or two sessions.</p></div>
+      </details>
+      <details>
+        <summary>What is the Garden?</summary>
+        <div class="atha-faq__answer"><p>A visual way to see your practice add up. As your total minutes grow, the scene moves from seed to sprout, plant, tree, garden and forest, with an estimate of the air you&#8217;ve breathed. It is a metaphor; nothing real is planted.</p></div>
+      </details>
+    </div>
+  </section>
+  <section class="atha-section atha-container--text" style="padding:0" aria-labelledby="data">
+    <h2 id="data">Privacy and data</h2>
+    <div class="atha-faq">
+      <details>
+        <summary>Does ATHA collect any data?</summary>
+        <div class="atha-faq__answer"><p>No. ATHA has no account and makes no network requests. It contains no analytics or advertising SDKs, so nothing about your use is sent to the developer or anyone else. Apple&#8217;s App Store privacy label for ATHA reads &#8220;Data Not Collected&#8221;. ATHA 1.0 shows an &#8220;Anonymous usage data&#8221; switch in Settings &rsaquo; Data. It has no effect: the App Store build has no analytics destination, so nothing is sent whether it is on or off. Full details: <a href="/ATHA/privacypolicy.html">Privacy Policy</a>.</p></div>
+      </details>
+      <details>
+        <summary>Where is my history stored?</summary>
+        <div class="atha-faq__answer"><p>On your device only. There is no ATHA cloud or iCloud sync; your data is included in your normal device backup, which Apple and your settings control.</p></div>
+      </details>
+      <details>
+        <summary>How do I delete my ATHA history?</summary>
+        <div class="atha-faq__answer"><p>In ATHA, go to Settings &rsaquo; Data &rsaquo; <strong>Reset progress</strong>. Deleting the app also removes its local data (subject to your backups). Entries already written to Apple Health stay in the Health app until you delete them there.</p></div>
+      </details>
+      <details>
+        <summary>Does ATHA sell my health or breathing data?</summary>
+        <div class="atha-faq__answer"><p>No. ATHA never receives your data, so there is nothing to sell, rent or share.</p></div>
+      </details>
+    </div>
+  </section>
+  <section class="atha-section atha-container--text" style="padding:0" aria-labelledby="pricing">
+    <h2 id="pricing">Pricing</h2>
+    <div class="atha-faq">
+      <details>
+        <summary>Does ATHA cost anything?</summary>
+        <div class="atha-faq__answer"><p>No. ATHA is free, with no subscription, no in-app purchases and no ads. Every feature is included.</p></div>
+      </details>
+      <details>
+        <summary>I saw a payment prompt. What should I do?</summary>
+        <div class="atha-faq__answer"><p>ATHA 1.0 has no in-app purchases, so you should never see one. If you do, please <a href="mailto:solostaseraofficial@gmail.com?subject=ATHA%20payment%20prompt">email a screenshot</a> so it can be fixed.</p></div>
+      </details>
+      <details>
+        <summary>Will ATHA stay free?</summary>
+        <div class="atha-faq__answer"><p>There is no paid tier today. If that ever changes, it will be announced on the website before the update that changes it.</p></div>
+      </details>
+    </div>
+  </section>
 
-  <div class="support-card"><div><h2>Still need help?</h2><p>Send a short description of the issue, your iOS version, and what you expected to happen. Please do not send sensitive health information unless it is genuinely necessary to explain the problem.</p></div><a class="email-btn" href="mailto:guledaaydemir@gmail.com?subject=ATHA%20Support">Email support</a></div>
-  <div class="privacy-note">Your support email is handled separately from ATHA's on-device app data. Read the <a href="privacypolicy.html">Privacy Policy</a>.</div>
+  <section class="atha-panel atha-ctaband" aria-labelledby="s-contact" id="contact">
+    <h2 id="s-contact">Still need help?</h2>
+    <p>Send a short description of the problem, your iPhone model and iOS version, and what you expected to happen. Please don&#8217;t include health details unless they are needed to explain the issue.</p>
+    <a class="atha-btn atha-btn--primary" href="mailto:solostaseraofficial@gmail.com?subject=ATHA%20Support">Email support</a>
+    <p class="atha-small" style="margin-top:var(--atha-s-4);margin-bottom:0">solostaseraofficial@gmail.com &middot; answered by Gül Eda, who builds ATHA. Your email is handled separately from the app, which collects no data. <a href="/ATHA/privacypolicy.html">Privacy Policy</a></p>
+  </section>
+
 </main>
-<footer><div class="container footer-inner"><span>© 2026 ATHA · Gül Eda Aydemir</span><div class="footer-links"><a href="index.html">Home</a><a href="privacypolicy.html">Privacy</a><a href="support.html">Support</a></div></div></footer>
+
+<footer class="atha-footer">
+  <div class="atha-container">
+    <h2 class="atha-footer__title" id="more-apps">More apps by Gül Eda</h2>
+    <ul class="atha-morapps">
+      <li><a class="atha-morapp" href="https://guledaaydemir.github.io/DUMP/"><img src="/DUMP/appicon-128.webp" width="44" height="44" alt="" loading="lazy" decoding="async" /><span><strong>DUMP</strong>Photo dump &amp; carousel maker that picks your best shots for you</span></a></li>
+      <li><a class="atha-morapp" href="https://guledaaydemir.github.io/solo.swipe/"><img src="/solo.swipe/appicon-128.webp" width="44" height="44" alt="" loading="lazy" decoding="async" /><span><strong>Solo.Swipe</strong>Swipe to clean your camera roll in 5-minute daily sessions</span></a></li>
+      <li><a class="atha-morapp" href="https://guledaaydemir.github.io/solo.shots/"><img src="/solo.shots/appicon-128.webp" width="44" height="44" alt="" loading="lazy" decoding="async" /><span><strong>Solo.Shots</strong>Progress photos that line up, turned into a timelapse</span></a></li>
+      <li><a class="atha-morapp" href="https://guledaaydemir.github.io/solora/"><img src="/solora/appicon-128.webp" width="44" height="44" alt="" loading="lazy" decoding="async" /><span><strong>Solora</strong>Role-based life planner: pick today&#8217;s Big 3, keep habits going</span></a></li>
+    </ul>
+    <div class="atha-footer__inner">
+      <div class="atha-footer__meta">
+        <span>&copy; 2026 ATHA &middot; Gül Eda Aydemir, independent iOS developer</span>
+        <span class="atha-footer__tagline">ATHA means now. Breathe now.</span>
+        <a href="mailto:solostaseraofficial@gmail.com?subject=ATHA">solostaseraofficial@gmail.com</a>
+      </div>
+      <nav class="atha-footer__links" aria-label="Footer">
+        <a href="/ATHA/">Home</a>
+        <a href="/ATHA/features/">Features</a>
+        <a href="/ATHA/guides/">Guides</a>
+        <a href="/ATHA/meditations/">Breathing techniques</a>
+        <a href="/ATHA/support.html">Support</a>
+        <a href="/ATHA/about.html">About ATHA</a>
+        <a href="https://guledaaydemir.github.io/about/">About the developer</a>
+        <a href="/ATHA/press/">Press kit</a>
+        <a href="/ATHA/privacypolicy.html">Privacy</a>
+        <a href="/ATHA/terms.html">Terms</a>
+        <a href="/ATHA/tr/" hreflang="tr" lang="tr">Türkçe</a>
+        <a href="https://apps.apple.com/app/id6807887691" data-atha-store="footer-link">App Store</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="/ATHA/assets/js/atha.js" defer></script>
+<script src="/ATHA/assets/js/cta.js" defer></script>
 </body>
 </html>

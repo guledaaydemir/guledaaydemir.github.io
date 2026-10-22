@@ -1,0 +1,186 @@
+/* Solora guides: article layout on top of solora.css (same tokens, fonts and components).
+   Used by /solora/guides/, the method pillars, the "for" pages and the comparison page. Added 2026-10-15. */
+
+.g-hero{padding:34px 0 8px;position:relative;z-index:1}
+.g-hero .wrap{max-width:1160px}
+.g-hero .crumbs{margin-bottom:22px}
+.g-hero h1{font-size:clamp(32px,4.6vw,52px);font-weight:700;margin:12px 0 16px;max-width:22ch}
+.g-hero .lede{font-size:clamp(17px,1.9vw,19.5px);color:var(--body);max-width:66ch;margin:0 0 18px}
+.byline{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;font-size:14.5px;color:var(--muted);margin:0 0 6px}
+.byline .who{display:flex;align-items:center;gap:10px}
+.av{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--grad-btn);color:#fff;
+  font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:13px;flex:none}
+.byline a{color:var(--text);text-decoration:underline;text-decoration-color:rgba(163,145,255,.5);text-underline-offset:3px}
+.byline .dot{color:var(--line)}
+.byline time{color:var(--body)}
+
+/* Two-column layout: article + sticky aside (TOC, mini download card) */
+.g-layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:56px;align-items:start;padding-top:26px;padding-bottom:30px;position:relative;z-index:1}
+.g-aside{position:sticky;top:84px;display:flex;flex-direction:column;gap:16px;order:2}
+.g-main{order:1;min-width:0}
+.toc{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:18px 18px 14px}
+.toc .foot-h{margin-bottom:10px}
+.toc ol{margin:0;padding:0 0 0 20px;font-size:14.5px;color:var(--muted)}
+.toc li{padding:4px 0;line-height:1.4}
+.toc a{color:var(--body)}
+.toc a:hover{color:var(--text);text-decoration:underline}
+.mini-cta{border:1px solid rgba(124,92,255,.35);border-radius:16px;padding:18px;background:linear-gradient(180deg,rgba(124,92,255,.12),rgba(34,211,238,.04))}
+.mini-cta p{margin:0 0 12px;font-size:14.5px;color:var(--body);line-height:1.5}
+.mini-cta p b{color:var(--text);display:block;font-family:"Space Grotesk",sans-serif;font-size:16px;margin-bottom:2px}
+.mini-cta .appstore{min-height:50px;padding:8px 16px 8px 13px}
+.mini-cta .appstore .t b{font-size:17px}
+.mini-cta .qr{margin-top:12px;background:transparent}
+
+/* Article typography */
+.prose{max-width:720px;color:var(--body);font-size:17.5px;line-height:1.75}
+.prose h2{font-size:clamp(25px,3vw,33px);color:var(--text);margin:56px 0 14px;scroll-margin-top:84px}
+.prose h3{font-size:clamp(19px,2.2vw,22px);color:var(--text);margin:30px 0 10px;scroll-margin-top:84px}
+.prose p{margin:0 0 16px}
+.prose strong{color:var(--text)}
+.prose a{color:var(--violet-text);text-decoration:underline;text-underline-offset:3px}
+.prose a:hover{color:#C2B6FF}
+.prose a.appstore,.prose a.appstore:hover{color:#fff;text-decoration:none}
+.prose .related a,.prose .related a:hover{color:inherit;text-decoration:none}
+.prose ul,.prose ol{margin:0 0 18px;padding-left:24px}
+.prose li{margin:6px 0}
+.prose li::marker{color:var(--cyan)}
+.prose .first{font-size:18.5px;color:var(--text);line-height:1.65}
+.prose hr{border:0;border-top:1px solid var(--line-soft);margin:44px 0}
+.prose code,.prose kbd{font-family:"Space Mono",ui-monospace,monospace;font-size:.86em;background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:1px 6px;color:var(--text)}
+
+/* Quick answer box */
+.g-hero .qa{margin-top:24px}
+.qa{border:1px solid rgba(124,92,255,.4);border-radius:var(--r);padding:22px 26px;margin:6px 0 4px;max-width:820px;
+  background:linear-gradient(180deg,rgba(124,92,255,.12),rgba(34,211,238,.04))}
+.qa .tag{font-family:"Space Mono",ui-monospace,monospace;font-size:11.5px;letter-spacing:2px;text-transform:uppercase;color:var(--cyan);margin:0 0 8px}
+.qa p{margin:0 0 10px;font-size:17.5px;color:var(--text);line-height:1.65}
+.qa ul{margin:0;padding-left:22px;color:var(--body);font-size:16px}
+.qa li{margin:5px 0}
+.qa li::marker{color:var(--cyan)}
+
+/* Numbered steps */
+.steps-l{list-style:none;padding:0;margin:8px 0 22px;counter-reset:st}
+.steps-l>li{counter-increment:st;position:relative;padding:16px 18px 16px 64px;margin:0 0 12px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.steps-l>li::before{content:counter(st);position:absolute;left:16px;top:16px;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;
+  background:var(--grad-btn);color:#fff;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:16px}
+.steps-l>li b{color:var(--text);display:block;margin-bottom:2px}
+.steps-l>li p{margin:4px 0 0;font-size:16px}
+
+/* Checklist */
+.check{list-style:none;padding:0;margin:8px 0 22px}
+.check li{position:relative;padding:8px 0 8px 34px;border-top:1px solid var(--line-soft)}
+.check li:first-child{border-top:0}
+.check li::before{content:"";position:absolute;left:2px;top:13px;width:18px;height:18px;border-radius:5px;border:2px solid var(--cyan)}
+
+/* Tables */
+.tbl{overflow-x:auto;margin:10px 0 24px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+.tbl table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}
+.tbl caption{text-align:left;color:var(--muted);font-size:14px;padding:12px 16px 4px}
+.tbl th,.tbl td{padding:11px 14px;text-align:left;vertical-align:top;border-top:1px solid var(--line-soft)}
+.tbl thead th{font-family:"Space Mono",ui-monospace,monospace;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--faint);font-weight:400;background:var(--surface-2);border-top:0;white-space:nowrap}
+.tbl tbody th{color:var(--text);font-weight:600}
+.tbl td{color:var(--body)}
+.tbl .y{color:#7FE3F2}
+.tbl .n{color:var(--muted)}
+.tbl.wide table{min-width:680px}
+
+/* Callouts */
+.note-box{border-left:3px solid var(--cyan);background:var(--surface);border-radius:0 12px 12px 0;padding:14px 18px;margin:8px 0 22px;font-size:16px}
+.note-box.warm{border-left-color:#F59E0B}
+.note-box p{margin:0 0 8px}.note-box p:last-child{margin:0}
+.note-box b{color:var(--text)}
+
+/* Text + phone screenshot */
+.split{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:30px;align-items:start;margin:10px 0 22px}
+.split .txt>*:last-child{margin-bottom:0}
+.shot{margin:0}
+.shot .frame{border-radius:32px;background:#05050a;border:1px solid #2c2c40;padding:7px;box-shadow:0 22px 50px rgba(0,0,0,.5)}
+.shot img{display:block;width:100%;height:auto;border-radius:26px}
+.shot figcaption{font-size:13px;color:var(--faint);text-align:center;margin-top:10px;line-height:1.45}
+.shots2{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:520px;margin:12px auto 26px}
+
+/* Try-it card (mid-page and end) */
+.try{display:grid;grid-template-columns:minmax(0,1fr) 170px;gap:24px;align-items:center;border:1px solid rgba(124,92,255,.4);border-radius:22px;
+  padding:26px 28px;margin:34px 0;background:radial-gradient(120% 140% at 0% 0%,rgba(124,92,255,.2),transparent 60%),var(--surface)}
+.try .eyebrow{margin-bottom:6px}
+.try h2,.try h3{font-size:clamp(21px,2.6vw,27px);margin:0 0 8px;color:var(--text)}
+.try p{margin:0 0 12px;color:var(--body);font-size:16px}
+.try ul{margin:0 0 16px;padding-left:22px;font-size:15.5px}
+.try li{margin:4px 0}
+.try .cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.try .fine{font-size:13px;color:var(--muted);margin:12px 0 0}
+.try .shot .frame{border-radius:26px;padding:6px}
+.try .shot img{border-radius:21px}
+.try.end{text-align:left}
+
+/* FAQ (same look as the homepage) */
+.faq details{border:1px solid var(--line);border-radius:14px;background:var(--surface);margin-bottom:12px;overflow:hidden}
+.faq summary{cursor:pointer;padding:16px 20px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary h3{font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:17px;margin:0;letter-spacing:-.2px;line-height:1.35;color:var(--text)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:24px;color:var(--cyan);transition:transform .25s;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .ans{padding:0 20px 18px;color:var(--body);font-size:16.5px}
+.faq .ans p{margin:0 0 8px}.faq .ans p:last-child{margin:0}
+
+/* Related guides */
+.related{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin:12px 0 10px}
+.related a{display:block;border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--surface);text-decoration:none;transition:border-color .2s,transform .2s}
+.related a:hover{border-color:rgba(124,92,255,.5);transform:translateY(-2px)}
+.related b{display:block;color:var(--text);font-family:"Space Grotesk",sans-serif;font-size:16px;line-height:1.35;margin-bottom:4px}
+.related span{display:block;color:var(--muted);font-size:14px;line-height:1.45}
+.related small{display:block;font-family:"Space Mono",ui-monospace,monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--cyan);margin-bottom:6px}
+
+/* Sources + author box */
+.sources{font-size:14.5px;color:var(--muted)}
+.sources ol{padding-left:22px}
+.sources li{margin:6px 0}
+.author{display:flex;gap:16px;align-items:flex-start;border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:var(--surface);margin:30px 0 0}
+.author .av{width:46px;height:46px;font-size:16px}
+.author p{margin:0;font-size:15.5px;color:var(--body)}
+.author p b{color:var(--text)}
+
+/* Guides index cards */
+.gx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin:16px 0 8px}
+.gx{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:22px 22px 18px;transition:border-color .2s,transform .2s}
+.gx:hover{border-color:rgba(124,92,255,.5);transform:translateY(-2px)}
+.gx small{font-family:"Space Mono",ui-monospace,monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cyan)}
+.gx h3{font-size:20px;margin:8px 0 8px;color:var(--text);line-height:1.25}
+.gx p{margin:0 0 14px;color:var(--muted);font-size:15px;line-height:1.55;flex:1}
+.gx .meta{font-size:13px;color:var(--faint)}
+
+@media print{
+  .site-head,.site-foot,.g-aside,.try,.related,.byline,.crumbs,.no-print{display:none!important}
+  body{background:#fff;color:#000}
+  body::before{display:none}
+  .prose,.prose strong,.prose h2,.prose h3{color:#000}
+  .check li::before{border-color:#000}
+}
+@media (max-width:1000px){
+  .g-layout{grid-template-columns:1fr;gap:22px;padding-top:14px}
+  .g-aside{position:static;order:0}
+  .mini-cta{display:none}
+  .prose{max-width:none}
+}
+@media (max-width:640px){
+  .g-hero{padding-top:22px}
+  .byline .dot{display:none}
+  .byline{gap:6px 14px}
+  .tbl thead th{white-space:normal}
+  .tbl.wide::before{content:"Scroll sideways →";content:"Scroll sideways →"/"";display:block;position:sticky;left:0;width:max-content;padding:10px 16px 0;font-size:13px;line-height:1.4;color:var(--faint)}
+  :lang(tr) .tbl.wide::before{content:"Yana kaydır →";content:"Yana kaydır →"/""}
+  .prose{font-size:17px}
+  .prose h2{margin-top:44px}
+  .qa{padding:18px 18px}
+  .qa p{font-size:16.5px}
+  .split{grid-template-columns:1fr;gap:18px}
+  .split .shot{max-width:230px;margin:0 auto}
+  .try{grid-template-columns:1fr;padding:22px 20px}
+  .try .shot{display:none}
+  .steps-l>li{padding:14px 14px 14px 58px}
+  .steps-l>li::before{left:12px;top:14px;width:32px;height:32px}
+  .tbl th,.tbl td{padding:9px 10px}
+  .author{padding:16px}
+}
+/* Turkish pages: note that a screenshot shows the English UI */
+.ui-note{white-space:nowrap;color:var(--faint)}

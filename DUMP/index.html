@@ -1,161 +1,284 @@
 <!DOCTYPE html>
-<!--
-  DUMP — Marketing landing page
-  ------------------------------------------------------------------
-  Drop these files next to this index.html:
-    • appicon.png     app icon (also used as favicon + sticky bar)
-    • dump-og.png     1200x630 share image for Google / social / AI previews
-    • assets/dump.css assets/motion.js assets/basics.js
-  Screenshots arrive in Phase 5 (shot-*.png) — the page renders
-  styled placeholders until then, with zero layout shift.
-  EDIT BEFORE PUBLISHING: replace every occurrence of
-    https://guledaaydemir.github.io/DUMP/
-  with your live domain if it differs.
--->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-<!-- ===== SEO: Primary ===== -->
-<title>DUMP — Photo Dump Maker & Instagram Carousel App for iPhone</title>
-<meta name="description" content="Turn your camera roll into a share-ready photo dump in under 60 seconds. Instagram carousels, collages and grids, exported at full original quality. Free on iPhone.">
-<meta name="keywords" content="photo dump app, photo dump maker, Instagram carousel maker, photo dump creator iPhone, collage app, camera roll organizer, video dump app, Instagram grid maker, seamless carousel app, aesthetic collage editor, dump maker iOS">
+<title>Photo Dump Maker That Picks Your Best Shots | DUMP</title>
+<meta name="description" content="Free iPhone &amp; iPad app that picks your sharpest photos on-device and builds an Instagram photo dump, saved to Photos in order. No account, no upload.">
 <meta name="author" content="Gül Eda Aydemir">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 <meta name="apple-itunes-app" content="app-id=6798248086">
 <link rel="canonical" href="https://guledaaydemir.github.io/DUMP/">
-<link rel="icon" type="image/png" href="appicon.png">
-<link rel="apple-touch-icon" href="appicon.png">
+<link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/DUMP/">
+<link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/DUMP/tr/">
+<link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/DUMP/">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="appicon-180.png">
 <link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0D0D0D">
 
-<!-- ===== SEO: Open Graph / Social / AI previews ===== -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DUMP">
-<meta property="og:title" content="DUMP — Pick it. Make it. DUMP it.">
-<meta property="og:description" content="Turn hundreds of photos into one perfect dump. Carousels, collages, grids and full-quality export — free on iPhone.">
-<meta property="og:image" content="https://guledaaydemir.github.io/DUMP/dump-og.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DUMP app for iPhone — photo dump and carousel maker">
+<meta property="og:title" content="DUMP: the photo dump app that picks your best shots">
+<meta property="og:description" content="Smart Dump picks sharp, varied shots on your iPhone and saves a post-ready carousel to Photos, in order. Free, no account, no upload.">
 <meta property="og:url" content="https://guledaaydemir.github.io/DUMP/">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:image" content="https://guledaaydemir.github.io/DUMP/dump-og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DUMP: Pick it. Make it. DUMP it. The photo dump app for iPhone and iPad">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DUMP — Photo Dump Maker for iPhone">
-<meta name="twitter:description" content="Camera roll in, carousel out. Full original quality, no account, works offline.">
-<meta name="twitter:image" content="https://guledaaydemir.github.io/DUMP/dump-og.png">
-<meta name="theme-color" content="#0D0D0D">
+<meta name="twitter:title" content="DUMP: the photo dump app that picks your best shots">
+<meta name="twitter:description" content="Camera roll in, post-ready carousel out. Picks on-device, saves originals in order. Free on iPhone and iPad.">
+<meta name="twitter:image" content="https://guledaaydemir.github.io/DUMP/dump-og.jpg">
+<meta name="twitter:image:alt" content="DUMP: Pick it. Make it. DUMP it.">
 
-<!-- ===== SEO: Structured data ===== -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"SoftwareApplication",
-  "name":"DUMP",
-  "alternateName":["DUMP App","Dump Maker","Photo Dump Maker"],
-  "applicationCategory":"PhotoVideoApplication",
-  "applicationSubCategory":"Photo Editor",
-  "operatingSystem":"iOS 17.0 or later",
-  "description":"DUMP is a photo and video dump maker for iPhone. It turns your camera roll into share-ready Instagram carousels, collages and grids, then exports them at full original quality straight into a new Photos album. Works offline, needs no account, and is available in English and Turkish.",
-  "url":"https://guledaaydemir.github.io/DUMP/",
-  "downloadUrl":"https://apps.apple.com/app/id6798248086",
-  "installUrl":"https://apps.apple.com/app/id6798248086",
-  "image":"https://guledaaydemir.github.io/DUMP/appicon.png",
-  "screenshot":[
-    "https://guledaaydemir.github.io/DUMP/shot-home.png",
-    "https://guledaaydemir.github.io/DUMP/shot-carousel.png",
-    "https://guledaaydemir.github.io/DUMP/shot-canvas.png"
-  ],
-  "inLanguage":["en","tr"],
-  "isAccessibleForFree":true,
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD","category":"free"},
-  "author":{"@type":"Person","name":"Gül Eda Aydemir"},
-  "publisher":{"@type":"Person","name":"Gül Eda Aydemir"},
-  "sameAs":["https://instagram.com/solo.stasera"],
-  "featureList":[
-    "Swipe carousel mode with zero recompression",
-    "Freeform canvas editor with multiple pages",
-    "Grid layouts and seamless panoramic carousels",
-    "Templates, frames, stickers and textures",
-    "Text styles, filters, crop and masks",
-    "Caption generator",
-    "Export to a new Apple Photos album",
-    "Fully offline, no account required",
-    "English and Turkish"
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"What is a photo dump?","acceptedAnswer":{"@type":"Answer","text":"A photo dump is a casual carousel post made of several unedited, real-life photos and videos posted together instead of one perfect shot. DUMP builds that carousel for you from your camera roll, in the right order, ready to post."}},
-    {"@type":"Question","name":"Does DUMP reduce my photo or video quality?","acceptedAnswer":{"@type":"Answer","text":"No. In Swipe Carousel mode your media is copied with zero recompression, so what you export is exactly what your camera captured. Canvas and grid pages are rendered at full resolution with alpha preserved."}},
-    {"@type":"Question","name":"Is DUMP free?","acceptedAnswer":{"@type":"Answer","text":"Yes. DUMP is free to download and use. An optional Premium upgrade unlocks unlimited projects, larger dumps, premium templates, frames, stickers, textures and the caption generator."}},
-    {"@type":"Question","name":"Do I need an account, and where do my photos go?","acceptedAnswer":{"@type":"Answer","text":"No account, no sign-up, no upload. DUMP works entirely offline on your iPhone. Your photos and videos never leave your device and there is no server that receives them."}},
-    {"@type":"Question","name":"Can I use videos in a dump?","acceptedAnswer":{"@type":"Answer","text":"Yes. Photos and videos can be mixed in the same dump. Videos keep their original quality in carousel mode and can be trimmed, muted and played inside canvas pages."}},
-    {"@type":"Question","name":"How do I post a dump to Instagram?","acceptedAnswer":{"@type":"Answer","text":"DUMP saves your finished dump into a new album in Apple Photos in the exact order you built it. Open Instagram, choose that album, select all, and post — no reordering needed."}}
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebSite",
-  "name":"DUMP",
-  "url":"https://guledaaydemir.github.io/DUMP/",
-  "inLanguage":"en",
-  "publisher":{"@type":"Person","name":"Gül Eda Aydemir","sameAs":["https://instagram.com/solo.stasera"]}
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://guledaaydemir.github.io/DUMP/#website",
+   "name": "DUMP",
+   "url": "https://guledaaydemir.github.io/DUMP/",
+   "inLanguage": "en",
+   "publisher": {
+    "@id": "https://guledaaydemir.github.io/#person"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://guledaaydemir.github.io/DUMP/#webpage",
+   "url": "https://guledaaydemir.github.io/DUMP/",
+   "name": "Photo Dump Maker That Picks Your Best Shots | DUMP",
+   "description": "Free iPhone & iPad app that picks your sharpest photos on-device and builds an Instagram photo dump, saved to Photos in order. No account, no upload.",
+   "inLanguage": "en",
+   "isPartOf": {
+    "@id": "https://guledaaydemir.github.io/DUMP/#website"
+   },
+   "about": {
+    "@id": "https://guledaaydemir.github.io/DUMP/#app"
+   },
+   "primaryImageOfPage": "https://guledaaydemir.github.io/DUMP/dump-og.jpg",
+   "dateModified": "2026-10-15"
+  },
+  {
+   "@type": "MobileApplication",
+   "@id": "https://guledaaydemir.github.io/DUMP/#app",
+   "name": "DUMP: Carousel & Collage",
+   "alternateName": [
+    "DUMP",
+    "DUMP photo dump maker"
+   ],
+   "description": "Free iPhone and iPad app that picks your best photos on-device (skipping blurry shots and burst duplicates), builds an Instagram photo dump, carousel, collage or grid, and saves it to a new Photos album in posting order at original quality. No account; works offline.",
+   "url": "https://guledaaydemir.github.io/DUMP/",
+   "applicationCategory": "MultimediaApplication",
+   "applicationSubCategory": "Photo & Video",
+   "operatingSystem": "iOS 18.6 or later; iPadOS 18.6 or later",
+   "softwareVersion": "2.0",
+   "datePublished": "2026-09-02",
+   "dateModified": "2026-09-25",
+   "inLanguage": [
+    "en",
+    "es",
+    "ja",
+    "tr"
+   ],
+   "fileSize": "158.5 MB",
+   "downloadUrl": "https://apps.apple.com/app/id6798248086",
+   "installUrl": "https://apps.apple.com/app/id6798248086",
+   "image": "https://guledaaydemir.github.io/DUMP/appicon.png",
+   "screenshot": [
+    "https://guledaaydemir.github.io/DUMP/shots/carousel-preview-in-order-1206.webp",
+    "https://guledaaydemir.github.io/DUMP/shots/random-dump-setup-1206.webp",
+    "https://guledaaydemir.github.io/DUMP/shots/swipe-carousel-editor-1206.webp",
+    "https://guledaaydemir.github.io/DUMP/shots/grid-filled-1206.webp"
+   ],
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "url": "https://apps.apple.com/app/id6798248086",
+    "availability": "https://schema.org/InStock"
+   },
+   "isAccessibleForFree": true,
+   "featureList": [
+    "Smart Dump: on-device picking that skips blurry shots and burst duplicates",
+    "Random Dump from Favorites, an album or the whole library",
+    "Moments: this weekend, last month, this year and automatically detected trips",
+    "Sunday “Your week” draft",
+    "Swipe Carousel export of original photos to a new Photos album, in order",
+    "Freeform collage pages, 28 grid layouts and seamless panoramic carousels",
+    "Frames, stickers, cut-out stickers, text styles, filters, masks and date stamps",
+    "Swipe video export (Premium)",
+    "No account, works offline"
+   ],
+   "author": {
+    "@id": "https://guledaaydemir.github.io/#person"
+   },
+   "publisher": {
+    "@id": "https://guledaaydemir.github.io/#person"
+   },
+   "sameAs": [
+    "https://apps.apple.com/us/app/dump-carousel-collage/id6798248086"
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://guledaaydemir.github.io/#person",
+   "name": "Gül Eda Aydemir",
+   "alternateName": "Gul Eda Aydemir",
+   "jobTitle": "Independent iOS developer",
+   "url": "https://guledaaydemir.github.io/about/",
+   "email": "solostaseraofficial@gmail.com",
+   "sameAs": [
+    "https://apps.apple.com/us/developer/gul-eda-aydemir/id1889159460",
+    "https://instagram.com/solo.stasera"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is there an app that picks the best photos for a photo dump?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. DUMP's Smart Dump looks at up to 180 photos on your iPhone, drops blurry shots, keeps only the sharpest of each burst or near-duplicate run, mixes people, places and close-up details, and puts everything in the order you took it. You swap anything you don't love. The picking runs on the device with Apple's Vision framework, so nothing is uploaded."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I choose which photos to put in a photo dump?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Pick a short window first: last weekend, last month or one trip. Drop the blurry shots and repeats, lead with your strongest photo, then alternate people, places and small details, with one short video for every three or four photos. Keep it in the order things happened. Smart Dump applies most of these rules for you, and you make the final call. More in the photo-picking guide."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many photos should a photo dump have?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Instagram allows up to 20 photos and videos in one carousel, but 8 to 12 is usually the sweet spot: enough to tell the story, short enough that people swipe to the end. On the free plan, Random Dump, Smart Dump and the Sunday draft build up to 10 items; with Premium, up to 20."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can DUMP make a dump of my week automatically?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Turn on reminders and every Sunday, within the hours you allow, DUMP sends a notification that opens “Your week”: a draft of your best shots from the last 7 days, with your best shot as the cover and the rest in the order you took them. Check it, swap anything, save. The notification is scheduled on your iPhone; there is no server."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does DUMP upload my photos?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. There is no account and no server. DUMP's App Store privacy label is “Data Not Collected”, the app contains no third-party SDKs, and you can make and save a whole dump in airplane mode. DUMP itself only talks to Apple's purchase system (StoreKit), when it checks or processes Premium. If you use iCloud Photos with Optimize iPhone Storage, iOS may download your own full-size originals from iCloud when DUMP shows or saves them; that's between your device and your iCloud account."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does DUMP analyze my photo library?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Only on your iPhone, and only to pick shots for you. Both Smart Dump and the Sunday draft read photos by date and use Apple's on-device Vision framework: Smart Dump judges sharpness, spots near-duplicates and counts faces (it never identifies who anyone is); the Sunday draft rates how good each photo looks, skips receipts and documents, and gives extra weight to your Favorites. To suggest trips, DUMP reads the location already stored in your photos. None of this leaves your device, and DUMP never asks for your current location. Details are in the privacy policy."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does DUMP reduce photo quality?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not in Swipe Carousel mode. DUMP adds your original photos and videos to a new album in your order: nothing is re-encoded, resized or duplicated. The one exception is a photo you add a date stamp to, which is re-rendered as a high-quality JPEG. Collage, grid and template pages are rendered at 2160 px on the long edge and saved as 98%-quality JPEG (pages with video are saved as MP4). Instagram still compresses on upload; this way it only happens once."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I post my dump to Instagram?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "After you save, tap Share to Instagram. DUMP copies your caption, and your slides are already in a new album in posting order. In Instagram, start a new post, pick that album, turn on multi-select and tap the slides in order, then paste the caption. Instagram only lets approved scheduling tools publish carousels to professional accounts through its API; DUMP has no account or server, so the last tap is yours."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is DUMP free? What does Premium cost?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "DUMP is free to download and use, with no ads and no watermark on your images. On the free plan, Random Dump, Smart Dump and the Sunday draft build up to 10 items (20 with Premium), and you can keep up to 5 saved projects. DUMP Premium is optional: an auto-renewing weekly or yearly subscription; see the current price on the App Store. Cancel any time in Settings → [your name] → Subscriptions."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does DUMP work on iPad, and which languages does it support?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, DUMP is a universal app for iPhone and iPad and needs iOS or iPadOS 18.6 or later. The current version is available in English, Spanish, Japanese and Turkish, and you can switch the language inside the app. There is no Android or web version."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does DUMP write captions with AI?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The Caption Generator (Premium) gives you hand-written caption lines in six moods: Soft, Funny, Travel, Monthly Recap, Influencer and Minimal. You pick the mood; it doesn't look at your photos. On the free plan, text you copy from DUMP ends with a small #DumpApp tag, which Premium can turn off."
+     }
+    }
+   ],
+   "@id": "https://guledaaydemir.github.io/DUMP/#faq",
+   "url": "https://guledaaydemir.github.io/DUMP/"
+  }
+ ]
 }
 </script>
 
+<script>document.documentElement.classList.add('js');setTimeout(function(){var d=document.documentElement;if(!d.classList.contains('js-ready'))d.classList.remove('js')},3000)</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="shots/carousel-preview-in-order-600.webp" imagesrcset="shots/carousel-preview-in-order-600.webp 600w, shots/carousel-preview-in-order-1206.webp 1206w" imagesizes="(max-width: 640px) 220px, 290px" fetchpriority="high">
 <link rel="stylesheet" href="assets/dump.css">
 <script src="assets/motion.js" defer></script>
-<script src="assets/basics.js" defer></script>
 </head>
 <body data-page="home">
 
 <a class="skip" href="#main">Skip to content</a>
 
-<!-- ===================== HEADER ===================== -->
 <header class="site">
   <div class="nav">
-    <a class="brand" href="#top" aria-label="Back to top">
-      <img src="appicon.png" alt="DUMP app icon" width="32" height="32"
-           onerror="this.outerHTML='&lt;span class=\'orb\'&gt;&lt;/span&gt;'">
+    <a class="brand" href="#top" aria-label="DUMP home">
+      <img src="appicon-128.webp" alt="" width="32" height="32">
       <span class="wordmark">DUMP</span>
     </a>
     <nav class="navlinks" aria-label="Primary">
-      <a class="lk" href="#why">Why DUMP</a>
-      <a class="lk" href="#basics">How it works</a>
+      <a class="lk active" href="#top" aria-current="page">Home</a>
       <a class="lk" href="#features">Features</a>
-      <a class="lk" href="#screens">Screens</a>
+      <a class="lk" href="guides/">Guides</a>
       <a class="lk" href="faq.html">FAQ</a>
-
-      <a class="lk" href="#guides">Guides</a>
-      <a class="lk" href="../index.html">More apps</a>
-      <a class="btn btn-grad magnet" data-ct="nav" href="https://apps.apple.com/app/id6798248086">Get DUMP — Free</a>
+      <a class="lk" href="support.html">Support</a>
+      <a class="btn btn-grad magnet" data-ct="nav" href="https://apps.apple.com/app/id6798248086">Download</a>
+      <div class="langsw" role="group" aria-label="Language / Dil"><a href="./" hreflang="en" lang="en" title="English" aria-current="true">EN</a><a href="tr/" hreflang="tr" lang="tr" title="Türkçe">TR</a></div>
       <button class="navtoggle" aria-expanded="false" aria-label="Open menu" aria-controls="drawer"><span></span></button>
     </nav>
   </div>
   <span class="scrollbar" aria-hidden="true"></span>
-  <div class="navdrawer" id="drawer">
-    <a href="#why">Why DUMP</a>
-    <a href="#basics">How it works</a>
+  <nav class="navdrawer" id="drawer" aria-label="Menu">
+    <a href="#top">Home</a>
     <a href="#features">Features</a>
-    <a href="#screens">Screens</a>
-    <a href="#premium">Premium</a>
+    <a href="#how">How it works</a>
+    <a href="#premium">Free vs Premium</a>
+    <a href="guides/">Guides</a>
     <a href="faq.html">FAQ</a>
     <a href="support.html">Support</a>
-    <a href="guides/index.html">Guides</a>
-    <a href="../index.html">More apps by Gül Eda</a>
-    <a class="btn btn-grad" data-ct="drawer" href="https://apps.apple.com/app/id6798248086">Get DUMP — Free</a>
-  </div>
+    <a href="/">More apps by Gül Eda</a>
+    <a class="btn btn-grad" data-ct="drawer" href="https://apps.apple.com/app/id6798248086">Download on the App Store</a>
+  </nav>
 </header>
 
 <main id="main">
@@ -163,436 +286,405 @@
 <!-- ===================== HERO ===================== -->
 <section class="hero section" id="top">
   <div class="wrap">
-    <div class="grid" style="grid-template-columns:1.05fr .95fr;gap:48px;align-items:center">
-
+    <div class="hero-grid">
       <div>
-        <span class="eyebrow rv">Photo dump maker · iPhone</span>
-        <h1 class="h1 rv" data-d="1">Pick it. Make it. <span class="g">DUMP</span> it.</h1>
-        <p class="lead rv" data-d="2">
-          You have 4,000 photos and no idea which nine to post. DUMP picks, orders and
-          builds the carousel for you — then saves it to Photos at full original quality.
-          <b style="color:var(--text)">Under 60 seconds, start to post.</b>
+        <span class="eyebrow">Photo dump maker · iPhone &amp; iPad</span>
+        <h1 class="h1">The photo dump app that picks your <span class="g">best shots</span> for you</h1>
+        <p class="lead">
+          Thousands of photos and nothing posted? DUMP goes through your camera roll
+          <b>on your iPhone</b>, skips the blurry shots and burst repeats, and builds a carousel in
+          the order things happened. Swap anything, then save it to a new Photos album in your order,
+          at original quality.
         </p>
-
-        <div class="row rv" data-d="3" style="margin-top:30px">
+        <p class="hero-for">For weekend recaps, trips, monthly dumps, and anyone who'd rather post than scroll.</p>
+        <div class="cta-row">
           <a class="appstore magnet" data-ct="hero" href="https://apps.apple.com/app/id6798248086" aria-label="Download DUMP on the App Store">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.36 12.9c.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.71-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.18-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.32-3.5zM14.2 6.3c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.56 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.58-1.21z"/></svg>
-            <span class="t"><small>Download on the</small><b>App Store</b></span>
-          </a>
-          <a class="btn btn-ghost" href="#basics">See how it works</a>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.36 12.9c.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.71-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.18-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.32-3.5zM14.2 6.3c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.56 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.58-1.21z"/></svg>
+  <span class="t"><small>Download on the</small><b>App Store</b></span>
+</a>
+          <div class="qr">
+  <img src="assets/appstore-qr.svg" width="76" height="76" alt="QR code that opens DUMP on the App Store">
+  <span><b>On a computer?</b>Scan with your iPhone camera</span>
+</div>
         </div>
-
-        <div class="trust rv" data-d="4">
-          <span><i class="dot"></i>Free to download</span>
-          <span><i class="dot"></i>No account, ever</span>
-          <span><i class="dot"></i>Works fully offline</span>
-          <span><i class="dot"></i>Original quality export</span>
-        </div>
+        <p class="facts-line">
+          <span><i class="dot"></i>Free</span>
+          <span><i class="dot"></i>No account</span>
+          <span><i class="dot"></i>iPhone &amp; iPad</span>
+          <span><i class="dot"></i>iOS 18.6+</span>
+          <span><i class="dot"></i>“Data Not Collected”</span>
+          <span><i class="dot"></i>Optional Premium (price on the App Store)</span>
+          <span><i class="dot"></i><span>By indie developer <a href="/about/">Gül Eda Aydemir</a></span></span>
+        </p>
       </div>
-
-      <div class="rv rv-s" data-d="2">
-        <div class="demo-scr" data-scene="0">
-          <div class="phone">
-            <span class="phone-glow" aria-hidden="true"></span>
-            <div class="screen">
-              <div class="screen-pad">
-                <div class="demo-host" role="img"
-                     aria-label="Animation: a crowded camera roll narrows down to five photos, which stack into one finished dump."></div>
-                <div class="demo-cap">Camera roll → dump</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="hero-shots">
+        <div class="device"><img src="shots/carousel-preview-in-order-600.webp" srcset="shots/carousel-preview-in-order-600.webp 600w, shots/carousel-preview-in-order-1206.webp 1206w" sizes="(max-width: 640px) 220px, 290px" width="600" height="1304" fetchpriority="high" decoding="async" alt="DUMP preview of a 10-slide weekend photo dump, labelled Original quality, saved in this order, with a Save to Photos button"></div>
+        <div class="device back"><img src="shots/grid-filled-600.webp" srcset="shots/grid-filled-600.webp 600w, shots/grid-filled-1206.webp 1206w" sizes="230px" width="600" height="1304" loading="lazy" decoding="async" alt="A four-photo grid collage built in DUMP: clouds, waterfall, sea and sunset"></div>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ===================== WHY / PROBLEM → SOLUTION ===================== -->
+<!-- ===================== OUTCOMES ===================== -->
 <section class="section section-alt" id="why">
   <div class="wrap">
-    <div class="center" style="max-width:720px;margin:0 auto 52px">
+    <div class="center" style="max-width:720px;margin:0 auto 46px">
       <span class="eyebrow rv">The 4,000-photo problem</span>
-      <h2 class="h2 rv" data-d="1">Posting a dump shouldn't take longer than living it.</h2>
+      <h2 class="h2 rv" data-d="1">Stop scrolling past your own life.</h2>
       <p class="lead center rv" data-d="2">
-        Everyone knows the loop: scroll, screenshot, un-favourite, reorder,
-        give up, post one photo instead. DUMP removes every step in that loop.
+        If you take hundreds of photos a month and post almost none, it's usually because choosing
+        takes longer than living it. DUMP does the boring part, so the good moments actually get seen,
+        even if you only send them to your family.
       </p>
     </div>
-
-    <div class="grid grid-2" style="gap:26px;align-items:stretch">
-      <div class="card rv rv-l">
-        <div class="ic" aria-hidden="true">😮‍💨</div>
-        <h3 class="h3">Without DUMP</h3>
-        <ul style="color:var(--muted);padding-left:20px;margin:10px 0 0;line-height:2">
-          <li>Scrolling months of camera roll for nine keepers</li>
-          <li>Screenshotting to remember what you picked</li>
-          <li>Re-selecting one by one inside Instagram</li>
-          <li>Wrong order — start again</li>
-          <li>Compression turning your best shot to mush</li>
-        </ul>
-      </div>
-      <div class="card card-glow rv rv-r" data-d="1">
-        <div class="ic" aria-hidden="true">⚡️</div>
-        <h3 class="h3">With DUMP</h3>
-        <ul style="color:var(--muted);padding-left:20px;margin:10px 0 0;line-height:2">
-          <li>Pull from Favourites, an album, or shuffle at random</li>
-          <li>Swap any weak slot with one tap</li>
-          <li>Preview it exactly as a follower will swipe it</li>
-          <li>Saved to a new Photos album, already in order</li>
-          <li><b style="color:var(--text)">Zero recompression</b> — pixel-identical export</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="stats rv" data-d="2" style="margin-top:56px">
-      <div class="stat"><b data-count="60" data-suffix="s">0s</b><span>From camera roll to post</span></div>
-      <div class="stat"><b data-count="0" data-suffix="%">0%</b><span>Quality lost on export</span></div>
-      <div class="stat"><b data-count="2" data-suffix=" modes">0</b><span>Carousel &amp; canvas</span></div>
-      <div class="stat"><b data-count="0" data-suffix="">0</b><span>Accounts, logins, uploads</span></div>
+    <div class="grid grid-3 outcomes">
+      <article class="card rv" data-d="1">
+        <div class="ic" aria-hidden="true">🎯</div>
+        <h3 class="h3">It picks the photos</h3>
+        <p>Smart Dump chooses sharp, varied shots from this weekend, last month, or a trip it found by itself.</p>
+      </article>
+      <article class="card rv" data-d="2">
+        <div class="ic" aria-hidden="true">🗓</div>
+        <h3 class="h3">It comes to you</h3>
+        <p>Turn on reminders and every Sunday “Your week” is drafted and waiting. You check it and post.</p>
+      </article>
+      <article class="card rv" data-d="3">
+        <div class="ic" aria-hidden="true">📲</div>
+        <h3 class="h3">It keeps the quality</h3>
+        <p>Your originals go into a new album in posting order. In Instagram, pick the album, tap your slides, post.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ===================== LEARN BASICS — SCROLL STORY ===================== -->
-<section class="section" id="basics">
+<!-- ===================== HOW IT WORKS ===================== -->
+<section class="section" id="how">
+  <span id="basics" aria-hidden="true"></span>
   <div class="wrap">
-    <div class="center" style="max-width:700px;margin:0 auto 56px">
-      <span class="eyebrow rv">Learn the basics</span>
-      <h2 class="h2 rv" data-d="1">Watch the whole app in <span class="g">six scrolls.</span></h2>
-      <p class="lead center rv" data-d="2">
-        Every step below is the real flow, animated. Keep scrolling — the phone follows you.
-      </p>
+    <div class="center" style="max-width:700px;margin:0 auto 52px">
+      <span class="eyebrow rv">How it works</span>
+      <h2 class="h2 rv" data-d="1">Three steps. <span class="g">One post.</span></h2>
+      <p class="lead center rv" data-d="2">Real screens from the app, no mockups.</p>
     </div>
-
-    <div class="story">
-      <!-- Sticky phone: driven by assets/basics.js -->
-      <div class="story-sticky rv rv-s">
-        <div class="phone">
-          <span class="phone-glow" aria-hidden="true"></span>
-          <div class="screen">
-            <div class="screen-pad">
-              <div class="scene-bar" id="basicsBar" aria-hidden="true"></div>
-              <div class="demo-host" id="basicsHost" role="img"
-                   aria-label="Animated walkthrough of the DUMP app. Each step is described in the text beside it."></div>
-              <div class="demo-cap" id="basicsCap">Camera roll</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="story-steps">
-        <article class="story-step" data-scene="0">
-          <span class="n">01 — Start</span>
-          <h3 class="h3">Your camera roll, narrowed down</h3>
-          <p>Point DUMP at Favourites, a single album, or the whole library. It pulls
-             eligible photos and videos, skips duplicates, and hands you a dump you can
-             actually post instead of a folder you have to sort.</p>
-        </article>
-
-        <article class="story-step" data-scene="1">
-          <span class="n">02 — Random Dump</span>
-          <h3 class="h3">One tap. A whole carousel.</h3>
-          <p>Random Dump builds the full sequence instantly. Don't like slot three?
-             Shuffle just that slot, or replace it by hand. Order stays exactly where
-             you put it.</p>
-        </article>
-
-        <article class="story-step" data-scene="2">
-          <span class="n">03 — Templates</span>
-          <h3 class="h3">A ready-made look, filled with your photos</h3>
-          <p>Pick a template and your media pours into it — spacing, ratios and layers
-             already balanced. Save any page you build as your own reusable template.</p>
-        </article>
-
-        <article class="story-step" data-scene="3">
-          <span class="n">04 — Grids</span>
-          <h3 class="h3">Many photos, one slide</h3>
-          <p>Drop several shots into a grid, then dial spacing, corners and ratio until
-             it sits right. Perfect for recaps, before-and-afters, and month-in-review posts.</p>
-        </article>
-
-        <article class="story-step" data-scene="4">
-          <span class="n">05 — Canvas</span>
-          <h3 class="h3">Or build it exactly your way</h3>
-          <p>Freeform pages with frames, stickers, textures, text styles, filters, crop
-             and masks. Multi-page projects and seamless panoramic carousels that swipe
-             across slides without a seam.</p>
-        </article>
-
-        <article class="story-step" data-scene="5">
-          <span class="n">06 — Export</span>
-          <h3 class="h3">Straight into Photos, in order</h3>
-          <p>DUMP creates a new album named after your project and saves everything in
-             sequence at full resolution. Open Instagram, select all, post. Done.</p>
-        </article>
-      </div>
-    </div>
-
-    <div class="center rv" style="margin-top:56px">
-      <a class="btn btn-grad btn-lg magnet" data-ct="basics" href="https://apps.apple.com/app/id6798248086">Try it free on iPhone</a>
-      <p class="tiny" style="margin-top:14px">Free download · No account · Works offline</p>
+    <div class="steps3">
+      <article class="step rv" data-d="1">
+        <div class="device"><img src="shots/random-dump-setup-600.webp" srcset="shots/random-dump-setup-600.webp 600w, shots/random-dump-setup-1206.webp 1206w" sizes="(max-width: 640px) 220px, 290px" width="600" height="1304" loading="lazy" decoding="async" alt="DUMP's Random Dump sheet: choose Favorites, an album or the whole library, photos and videos, and how many items"></div>
+        <span class="n" aria-hidden="true">1</span>
+        <h3 class="h3">Choose where from</h3>
+        <p>Favorites, one album or your whole library. Photos, videos or both, and how many (up to 10 free, 20 with Premium). Pick <b>Smart Dump</b> and DUMP chooses the best shots for you.</p>
+      </article>
+      <article class="step rv" data-d="2">
+        <div class="device"><img src="shots/swipe-carousel-editor-600.webp" srcset="shots/swipe-carousel-editor-600.webp 600w, shots/swipe-carousel-editor-1206.webp 1206w" sizes="(max-width: 640px) 220px, 290px" width="600" height="1304" loading="lazy" decoding="async" alt="Swipe Carousel editor with a 10-slide weekend dump and Replace, Random, Fill, Reorder and Remove tools"></div>
+        <span class="n" aria-hidden="true">2</span>
+        <h3 class="h3">Swap what you don't love</h3>
+        <p>Replace any slide yourself or at random, shuffle, drag to reorder, add or remove. Then preview it the way your followers will swipe it.</p>
+      </article>
+      <article class="step rv" data-d="3">
+        <div class="device"><img src="shots/canvas-preview-600.webp" srcset="shots/canvas-preview-600.webp 600w, shots/canvas-preview-1206.webp 1206w" sizes="(max-width: 640px) 220px, 290px" width="600" height="1304" loading="lazy" decoding="async" alt="Instagram-style preview of a finished collage dump with a Save to Photos button, saved in this order"></div>
+        <span class="n" aria-hidden="true">3</span>
+        <h3 class="h3">Save it to Photos, in order</h3>
+        <p>DUMP saves a new album named after your project, in posting order. Swipe carousels keep your originals untouched; collage pages are rendered at 2160 px.</p>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     PHASE 5 INSERT POINT — do not remove this marker.
-     Features grid · Screenshot gallery · Premium comparison ·
-     Social proof · FAQ preview · Final CTA
-     ============================================================ -->
 <!-- ===================== FEATURES ===================== -->
 <section class="section section-alt" id="features">
   <div class="wrap">
-    <div class="center" style="max-width:700px;margin:0 auto 52px">
-      <span class="eyebrow rv">Everything inside</span>
-      <h2 class="h2 rv" data-d="1">A full studio, sized for a <span class="g">thumb.</span></h2>
-      <p class="lead center rv" data-d="2">
-        Two modes cover everything: post fast, or build something nobody else has.
-      </p>
+    <div class="center" style="max-width:720px;margin:0 auto 60px">
+      <span class="eyebrow rv">What DUMP does for you</span>
+      <h2 class="h2 rv" data-d="1">Less choosing. <span class="g">More posting.</span></h2>
+      <p class="lead center rv" data-d="2">A picker that does the first pass, and a studio for when you want it to look designed.</p>
     </div>
 
-    <div class="grid grid-3">
-      <article class="card card-glow rv" data-d="1">
-        <div class="ic" aria-hidden="true">🎞</div>
-        <h3 class="h3">Swipe Carousel mode</h3>
-        <p class="sub">Each photo or video becomes its own slide. Copied with zero
-          recompression — the file that lands in Photos is the file your camera made.</p>
-      </article>
-
-      <article class="card card-glow rv" data-d="2">
-        <div class="ic" aria-hidden="true">🎨</div>
-        <h3 class="h3">Canvas mode</h3>
-        <p class="sub">Freeform multi-page editor. Move, scale, rotate, layer, mask —
-          build a page nobody can reverse-engineer from a preset.</p>
-      </article>
-
-      <article class="card card-glow rv" data-d="3">
-        <div class="ic" aria-hidden="true">🔀</div>
-        <h3 class="h3">Random Dump</h3>
-        <p class="sub">Out of ideas? One tap pulls a full carousel from Favourites, an
-          album, or your whole library — duplicates skipped automatically.</p>
-      </article>
-
-      <article class="card card-glow rv" data-d="1">
-        <div class="ic" aria-hidden="true">▦</div>
-        <h3 class="h3">Grids &amp; seamless carousels</h3>
-        <p class="sub">Several shots in one slide, or one wide panorama split across
-          slides so it swipes edge to edge with no visible seam.</p>
-      </article>
-
-      <article class="card card-glow rv" data-d="2">
-        <div class="ic" aria-hidden="true">🖼</div>
-        <h3 class="h3">Frames, stickers &amp; textures</h3>
-        <p class="sub">Polaroid, film, torn paper, tape, stars, date stamps, grain and
-          paper backgrounds — searchable, categorised, in English and Turkish.</p>
-      </article>
-
-      <article class="card card-glow rv" data-d="3">
-        <div class="ic" aria-hidden="true">🅣</div>
-        <h3 class="h3">Text styles that look designed</h3>
-        <p class="sub">Editorial, handwritten, marker, script and social packs — with
-          real typographic styling, not a font dropdown.</p>
-      </article>
-
-      <article class="card card-glow rv" data-d="1">
-        <div class="ic" aria-hidden="true">✨</div>
-        <h3 class="h3">Filters, adjust, crop, mask</h3>
-        <p class="sub">Per-photo edits that never touch your originals. Non-destructive
-          from first tap to final export.</p>
-      </article>
-
-      <article class="card card-glow rv" data-d="2">
-        <div class="ic" aria-hidden="true">💬</div>
-        <h3 class="h3">Caption generator</h3>
-        <p class="sub">Stuck on the caption? Generate one that matches the mood of the
-          dump, copy it, post it.</p>
-      </article>
-
-      <article class="card card-glow rv" data-d="3">
-        <div class="ic" aria-hidden="true">🔒</div>
-        <h3 class="h3">Offline &amp; account-free</h3>
-        <p class="sub">No sign-up, no upload, no server. Your camera roll never leaves
-          your iPhone — the app runs with airplane mode on.</p>
-      </article>
-    </div>
-
-    <div class="marquee rv" style="margin-top:46px" aria-hidden="true">
-      <div class="marquee-track">
-        <span class="chip">Photo dumps</span><span class="chip">Video dumps</span>
-        <span class="chip">Instagram carousels</span><span class="chip">Grid layouts</span>
-        <span class="chip">Seamless panoramas</span><span class="chip">Polaroid frames</span>
-        <span class="chip">Film borders</span><span class="chip">Paper textures</span>
-        <span class="chip">Date stamps</span><span class="chip">Multi-page canvas</span>
-        <span class="chip">Original quality</span><span class="chip">Offline</span>
+    <div class="feat" id="smart-dump">
+      <div class="rv">
+        <h3>It picks your best shots</h3>
+        <p>Choosing is the part that makes posts late. Turn on <b style="color:var(--text)">Smart Dump</b>
+          and DUMP looks through up to 180 photos from the moment you choose, right on your iPhone:</p>
+        <ul class="ticks">
+          <li>Drops blurry shots</li>
+          <li>Keeps only the sharpest of each burst or near-duplicate run</li>
+          <li>Mixes people, places and close-up details</li>
+          <li>Keeps about a quarter video, if you include videos</li>
+          <li>Puts everything in the order you took it; screenshots are always left out</li>
+        </ul>
+      </div>
+      <div class="rv" data-d="1">
+        <div class="panel">
+          <p class="panel-h">From which moment</p>
+          <div class="moments">
+            <span class="chip">Anytime</span><span class="chip">This week</span>
+            <span class="chip">This weekend</span><span class="chip">Last weekend</span>
+            <span class="chip">This month</span><span class="chip">Last month</span>
+            <span class="chip">This year</span><span class="chip trip">Trip · your dates</span>
+          </div>
+          <p class="tiny">The moments Smart Dump offers. Trips are found automatically from the location
+            stored in your photos (two or more days, at least 75 km from home), on your iPhone. DUMP never
+            asks for your current location and never identifies faces; it only counts them to balance a dump.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- ===================== SCREENSHOTS ===================== -->
-<section class="section" id="screens">
-  <div class="wrap">
-    <div class="center" style="max-width:700px;margin:0 auto 44px">
-      <span class="eyebrow rv">Inside the app</span>
-      <h2 class="h2 rv" data-d="1">See it before you <span class="g">install it.</span></h2>
-      <p class="lead center rv" data-d="2">Swipe through the real screens. No mockup gloss.</p>
+    <div class="feat flip" id="weekly">
+      <div class="rv">
+        <h3>Your week, drafted every Sunday</h3>
+        <p>Turn on reminders and every Sunday DUMP drafts your week: the best shots from the last 7 days,
+          your best one as the cover, the rest in order. Check it, swap anything and post it, or simply
+          keep it as a private album of the week.</p>
+        <p>Prefer a nudge instead? Optional reminders come about twice a week or daily, only within the
+          hours you choose.</p>
+      </div>
+      <div class="feat-media rv" data-d="1">
+        <div class="panel" style="max-width:380px;width:100%">
+          <p class="panel-h">The actual Sunday notification</p>
+          <div style="display:flex;gap:12px;align-items:flex-start;background:var(--surface-2);border:1px solid var(--line);border-radius:18px;padding:14px">
+            <img src="appicon-128.webp" alt="" width="38" height="38" loading="lazy" style="border-radius:9px;flex:none">
+            <div style="line-height:1.45">
+              <b style="font-size:15px">Your week, ready to post</b>
+              <p class="sub" style="font-size:14px">DUMP picked the best shots from the last 7 days. Tap to see your draft.</p>
+            </div>
+          </div>
+          <p class="tiny" style="margin-top:12px">Scheduled on your iPhone. No server, no account.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="shots rv" data-d="1" role="list" aria-label="DUMP app screenshots">
-      <figure class="shot" role="listitem">
-        <div class="fr">
-          <div class="ph">HOME<br>shot-home.png</div>
-          <img src="shot-home.png" alt="DUMP home screen showing saved dump projects and templates" width="1290" height="2796" loading="lazy" decoding="async">
-        </div>
-        <figcaption class="cap"><b>Home</b>Your projects, templates and starters</figcaption>
-      </figure>
-
-      <figure class="shot" role="listitem">
-        <div class="fr">
-          <div class="ph">CAROUSEL<br>shot-carousel.png</div>
-          <img src="shot-carousel.png" alt="Swipe Carousel editor in DUMP with an ordered strip of photos and videos" width="1290" height="2796" loading="lazy" decoding="async">
-        </div>
-        <figcaption class="cap"><b>Swipe Carousel</b>Slide-by-slide, original quality</figcaption>
-      </figure>
-
-      <figure class="shot" role="listitem">
-        <div class="fr">
-          <div class="ph">TEMPLATES<br>shot-templates.png</div>
-          <img src="shot-templates.png" alt="Template browser in DUMP showing ready-made carousel layouts" width="1290" height="2796" loading="lazy" decoding="async">
-        </div>
-        <figcaption class="cap"><b>Templates</b>A finished look in one tap</figcaption>
-      </figure>
-
-      <figure class="shot" role="listitem">
-        <div class="fr">
-          <div class="ph">GRID<br>shot-grid.png</div>
-          <img src="shot-grid.png" alt="Grid layout editor in DUMP with adjustable spacing between photos" width="1290" height="2796" loading="lazy" decoding="async">
-        </div>
-        <figcaption class="cap"><b>Grids</b>Many photos, one slide</figcaption>
-      </figure>
-
-      <figure class="shot" role="listitem">
-        <div class="fr">
-          <div class="ph">CANVAS<br>shot-canvas.png</div>
-          <img src="shot-canvas.png" alt="Freeform canvas editor in DUMP with layered photos, stickers and text" width="1290" height="2796" loading="lazy" decoding="async">
-        </div>
-        <figcaption class="cap"><b>Canvas</b>Layers, masks, full control</figcaption>
-      </figure>
-
-      <figure class="shot" role="listitem">
-        <div class="fr">
-          <div class="ph">FRAMES<br>shot-frames.png</div>
-          <img src="shot-frames.png" alt="Frame and sticker library in DUMP with polaroid and film border options" width="1290" height="2796" loading="lazy" decoding="async">
-        </div>
-        <figcaption class="cap"><b>Frames &amp; stickers</b>Searchable, categorised</figcaption>
-      </figure>
-
-      <figure class="shot" role="listitem">
-        <div class="fr">
-          <div class="ph">CAPTIONS<br>shot-captions.png</div>
-          <img src="shot-captions.png" alt="Caption generator in DUMP producing an Instagram caption for a photo dump" width="1290" height="2796" loading="lazy" decoding="async">
-        </div>
-        <figcaption class="cap"><b>Captions</b>Written to match the mood</figcaption>
-      </figure>
-
-      <figure class="shot" role="listitem">
-        <div class="fr">
-          <div class="ph">EXPORT<br>shot-export.png</div>
-          <img src="shot-export.png" alt="DUMP export screen saving a finished dump into a new Apple Photos album" width="1290" height="2796" loading="lazy" decoding="async">
-        </div>
-        <figcaption class="cap"><b>Export</b>Straight to Photos, in order</figcaption>
-      </figure>
+    <div class="feat" id="screens">
+      <div class="rv">
+        <h3>Make it look designed, not generic</h3>
+        <p>When a plain carousel isn't enough, switch to collage pages and build exactly what you see in your head.</p>
+        <ul class="ticks">
+          <li>Freeform collage pages, up to 20 per project, with photos and videos together</li>
+          <li><b>28 grid layouts</b>, edge-to-edge or spaced</li>
+          <li>Seamless panoramas that swipe across slides without a visible seam</li>
+          <li>40+ frames (Polaroid, film, paper and more) and 500+ stickers</li>
+          <li>Cut-out stickers: lift the subject out of any photo, on-device</li>
+          <li>Film-style date stamps, text styles, filters, masks, shadows and opacity</li>
+        </ul>
+      </div>
+      <div class="feat-media trio rv" data-d="1">
+        <div class="device"><img src="shots/canvas-sticker-600.webp" srcset="shots/canvas-sticker-600.webp 600w, shots/canvas-sticker-1206.webp 1206w" sizes="(max-width: 860px) 31vw, 190px" width="600" height="1304" loading="lazy" decoding="async" alt="Collage page in DUMP with a PHOTO DUMP sticker selected over four photos"></div>
+        <div class="device"><img src="shots/grid-layouts-600.webp" srcset="shots/grid-layouts-600.webp 600w, shots/grid-layouts-1206.webp 1206w" sizes="(max-width: 860px) 31vw, 190px" width="600" height="1304" loading="lazy" decoding="async" alt="DUMP grid picker showing the 28 edge-to-edge collage layouts, with a Spaced option"></div>
+        <div class="device"><img src="shots/stickers-600.webp" srcset="shots/stickers-600.webp 600w, shots/stickers-1206.webp 1206w" sizes="(max-width: 860px) 31vw, 190px" width="600" height="1304" loading="lazy" decoding="async" alt="DUMP sticker library open on the Writings category with handwritten stickers"></div>
+      </div>
     </div>
 
-    <p class="tiny center rv">Drag or swipe to browse · Screens from the current build</p>
+    <div class="feat flip" id="templates">
+      <div class="rv">
+        <h3>One tap fills a template</h3>
+        <p>Start from a ready-made layout (stories, summer, birthday, film, grids and more), then tap
+          <b style="color:var(--text)">Dump It</b>. DUMP fills every empty slot with photos from your library, or
+          re-dumps them all until it feels right. Every change can be undone.</p>
+        <p>Bookmark the templates you love and they wait for you in Saved Templates.</p>
+      </div>
+      <div class="feat-media rv" data-d="1">
+        <div class="device"><img src="shots/template-dump-it-600.webp" srcset="shots/template-dump-it-600.webp 600w, shots/template-dump-it-1206.webp 1206w" sizes="(max-width: 640px) 220px, 290px" width="600" height="1304" loading="lazy" decoding="async" alt="A three-slide template in DUMP with a Dump It button that fills empty photo slots"></div>
+      </div>
+    </div>
+
+    <div class="feat" id="captions">
+      <div class="rv">
+        <h3>A caption starter and a Reel, ready <span class="pill-note">Premium</span></h3>
+        <p>Pick a mood (Soft, Funny, Travel, Monthly Recap, Influencer or Minimal) and copy a
+          hand-written caption line. It isn't AI and it doesn't read your photos; it just gets you past
+          the blank caption box.</p>
+        <p>Want a Reel instead? Export the whole dump as one swiping video, 10 to 30 seconds long.</p>
+      </div>
+      <div class="feat-media rv" data-d="1">
+        <div class="device"><img src="shots/caption-generator-600.webp" srcset="shots/caption-generator-600.webp 600w, shots/caption-generator-1206.webp 1206w" sizes="(max-width: 640px) 220px, 290px" width="600" height="1304" loading="lazy" decoding="async" alt="DUMP Caption Generator with six caption styles and the line: passport full, camera roll fuller"></div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ===================== PREMIUM ===================== -->
-<section class="section section-alt" id="premium">
+<section class="section" id="premium">
   <div class="wrap">
-    <div class="center" style="max-width:700px;margin:0 auto 44px">
+    <div class="center" style="max-width:700px;margin:0 auto 40px">
       <span class="eyebrow rv">Free vs Premium</span>
       <h2 class="h2 rv" data-d="1">Free is genuinely <span class="g">usable.</span></h2>
-      <p class="lead center rv" data-d="2">
-        Post a real dump today without paying anything. Premium exists for people who
-        post constantly — not as a wall in front of the basics.
-      </p>
+      <p class="lead center rv" data-d="2">Post a real dump today without paying. Premium is for people
+        who post a lot and want the whole library.</p>
     </div>
-
     <div class="rv" data-d="1" style="overflow-x:auto">
       <table class="compare">
         <thead>
           <tr>
             <th scope="col">What you get</th>
             <th scope="col" class="c"><span class="badge badge-free">Free</span></th>
-            <th scope="col" class="c pro"><span class="badge">DUMP+</span></th>
+            <th scope="col" class="c pro"><span class="badge">Premium</span></th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>Swipe Carousel mode</td><td class="c yes">✓</td><td class="c pro yes">✓</td></tr>
-          <tr><td>Original-quality export</td><td class="c yes">✓</td><td class="c pro yes">✓</td></tr>
-          <tr><td>Canvas editor &amp; grids</td><td class="c yes">✓</td><td class="c pro yes">✓</td></tr>
-          <tr><td>Save to a Photos album</td><td class="c yes">✓</td><td class="c pro yes">✓</td></tr>
-          <tr><td>Saved projects</td><td class="c">5</td><td class="c pro yes">Unlimited</td></tr>
-          <tr><td>Items per dump</td><td class="c">10</td><td class="c pro yes">20</td></tr>
-          <tr><td>Templates, frames, stickers</td><td class="c">Starter set</td><td class="c pro yes">Full library</td></tr>
-          <tr><td>Background textures &amp; gradients</td><td class="c">Starter set</td><td class="c pro yes">Full library</td></tr>
-          <tr><td>Caption generator</td><td class="c no">—</td><td class="c pro yes">✓</td></tr>
-          <tr><td>Premium theme tints</td><td class="c no">—</td><td class="c pro yes">✓</td></tr>
-          <tr><td>Ads</td><td class="c yes">None</td><td class="c pro yes">None</td></tr>
+          <tr><th scope="row">Smart Dump, Random Dump &amp; the Sunday draft</th><td class="c yes">✓</td><td class="c pro yes">✓</td></tr>
+          <tr><th scope="row">Swipe Carousel export of your originals, in order</th><td class="c yes">✓</td><td class="c pro yes">✓</td></tr>
+          <tr><th scope="row">Collage pages, 28 grids, seamless panoramas</th><td class="c yes">✓</td><td class="c pro yes">✓</td></tr>
+          <tr><th scope="row">Cut-out stickers &amp; date stamps</th><td class="c yes">✓</td><td class="c pro yes">✓</td></tr>
+          <tr><th scope="row">Items per auto-built dump</th><td class="c">Up to 10</td><td class="c pro yes">Up to 20</td></tr>
+          <tr><th scope="row">Saved projects</th><td class="c">5</td><td class="c pro yes">Unlimited</td></tr>
+          <tr><th scope="row">Templates, frames, stickers, shapes</th><td class="c">Free set</td><td class="c pro yes">Everything</td></tr>
+          <tr><th scope="row">Backgrounds &amp; textures</th><td class="c">Solid, gradient, 2 per pack</td><td class="c pro yes">All</td></tr>
+          <tr><th scope="row">Text styles &amp; filters</th><td class="c">Free set</td><td class="c pro yes">All</td></tr>
+          <tr><th scope="row">Caption Generator</th><td class="c no">—</td><td class="c pro yes">✓</td></tr>
+          <tr><th scope="row">Swipe video export (10–30 s)</th><td class="c no">—</td><td class="c pro yes">✓</td></tr>
+          <tr><th scope="row">Copy captions without the #DumpApp tag</th><td class="c no">—</td><td class="c pro yes">✓</td></tr>
+          <tr><th scope="row">All app themes</th><td class="c no">—</td><td class="c pro yes">✓</td></tr>
+          <tr><th scope="row">Watermark on images · Ads</th><td class="c yes">None</td><td class="c pro yes">None</td></tr>
         </tbody>
       </table>
     </div>
-
-    <!--
-      APPLE GUIDELINE 3.1.2 — EDIT BEFORE PUBLISHING.
-      Replace the bracketed values with the exact prices and periods
-      configured in App Store Connect. Auto-renew terms must be visible
-      wherever the subscription is promoted.
-    -->
+    <p class="tiny" style="margin-top:10px">Based on DUMP 2.0, checked 15 October 2026.</p>
     <p class="price-note rv">
-      DUMP+ is available as an auto-renewing monthly or yearly subscription, or as a
-      one-time lifetime purchase. Prices are shown inside the app before purchase and
-      are charged to your Apple ID at confirmation. Subscriptions renew automatically
-      unless cancelled at least 24 hours before the end of the current period, and can
-      be managed or cancelled any time in <b>Settings → [your name] → Subscriptions</b>.
-      Any unused portion of a free trial is forfeited on purchase. Refunds are handled by
-      Apple. Full details in the <a href="terms.html#premium">Terms of Use</a>.
+      <b>DUMP Premium</b> is an optional auto-renewing subscription, <b>weekly</b> or <b>yearly</b> — see the current price on the
+      <a href="https://apps.apple.com/app/id6798248086" style="color:var(--purple);text-decoration:underline">App Store</a>. A free trial
+      may be offered to eligible new subscribers; if so, the app shows its length before you confirm.
+      Payment is charged to your Apple Account at confirmation, and the subscription renews automatically
+      unless cancelled at least 24 hours before the end of the current period. Manage or cancel in
+      <b>Settings → [your name] → Subscriptions</b>.
+      <a href="terms.html#subscription-terms" style="color:var(--purple);text-decoration:underline">Full subscription terms</a> ·
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" style="color:var(--purple);text-decoration:underline">Apple EULA</a>.
     </p>
-
-    <div class="center rv" style="margin-top:34px">
-      <a class="btn btn-grad btn-lg magnet" data-ct="premium" href="https://apps.apple.com/app/id6798248086">Start free — upgrade later</a>
+    <div class="center rv" style="margin-top:30px">
+      <a class="btn btn-grad btn-lg magnet" data-ct="premium" href="https://apps.apple.com/app/id6798248086">Start free on the App Store</a>
     </div>
   </div>
 </section>
 
-<!-- ===================== TRUST / SOCIAL ===================== -->
+<!-- ===================== FACTS ===================== -->
+<section class="section section-alt" id="facts">
+  <div class="wrap wrap-doc">
+    <div class="center" style="margin-bottom:26px">
+      <span class="eyebrow rv">DUMP at a glance</span>
+      <h2 class="h2 rv" data-d="1">The honest facts</h2>
+    </div>
+    <p class="facts-summary rv">DUMP: Carousel &amp; Collage is a free iPhone and iPad app by independent
+      developer Gül Eda Aydemir. It turns a camera roll into Instagram photo dumps, carousels, collages and
+      grids, picks shots on the device, and saves originals to a new Photos album in posting order.</p>
+    <dl class="facts rv" data-d="1">
+      <div><dt>Price</dt><dd>Free, no ads. Optional DUMP Premium, weekly or yearly (price on the <a href="https://apps.apple.com/app/id6798248086">App Store</a>)</dd></div>
+      <div><dt>Free plan</dt><dd>Auto-built dumps of up to 10 items, 5 saved projects, no watermark on images</dd></div>
+      <div><dt>Requires</dt><dd>iOS or iPadOS 18.6 or later</dd></div>
+      <div><dt>Devices</dt><dd>iPhone and iPad (universal app). No Android or web version</dd></div>
+      <div><dt>Languages</dt><dd>English, Spanish, Japanese, Turkish</dd></div>
+      <div><dt>Privacy</dt><dd>App Store label “Data Not Collected”. No account, no third-party SDKs; photo analysis runs on your device</dd></div>
+      <div><dt>Current version</dt><dd>2.0, released 25 September 2026 (first release: 2 September 2026)</dd></div>
+      <div><dt>Category · Size</dt><dd>Photo &amp; Video · 158.5 MB</dd></div>
+      <div><dt>Developer</dt><dd>Gül Eda Aydemir, independent iOS developer · <a href="/about/">About</a></dd></div>
+      <div><dt>Support</dt><dd><a href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a> · <a href="support.html">Help centre</a></dd></div>
+    </dl>
+    <p class="tiny center" style="margin-top:14px">Checked against the App Store listing and the app on 15 October 2026.</p>
+  </div>
+</section>
+
+<!-- ===================== WHAT'S NEW ===================== -->
+<section class="section" id="whats-new">
+  <div class="wrap wrap-doc">
+    <div style="margin-bottom:30px">
+      <span class="eyebrow rv">What's new</span>
+      <h2 class="h2 rv" data-d="1">Release notes</h2>
+    </div>
+    <ol class="changelog rv" data-d="1">
+      <li>
+        <h3>Version 2.0 <span class="when">25 September 2026</span></h3>
+        <blockquote>“DUMP 2.0 is here - with new ways to turn your camera roll into something worth sharing.”
+          <br><span class="tiny">From the App Store release notes</span></blockquote>
+        <p class="sub" style="margin-bottom:6px">What arrived in 2.0:</p>
+        <ul>
+          <li><b>Smart Dump</b>: on-device picking with moments and automatic trip detection</li>
+          <li><b>Your week</b>: a Sunday draft of the last 7 days' best shots</li>
+          <li><b>Share to Instagram</b>: caption copy, step-by-step posting, and “Share cover to Story”</li>
+          <li>Film-style <b>date stamps</b> and <b>cut-out stickers</b></li>
+          <li>A new album browser, lines and shapes, shadow and opacity, better masks</li>
+          <li>Spanish and Japanese (English and Turkish since 1.0)</li>
+        </ul>
+      </li>
+      <li>
+        <h3>Version 1.0 <span class="when">2 September 2026</span></h3>
+        <ul>
+          <li>First App Store release, in English and Turkish: Random Dump, Swipe Carousel export to a new
+            album, collage pages, grids, templates, frames and stickers</li>
+        </ul>
+      </li>
+    </ol>
+    <p class="tiny">Coming soon, not in version 2.0 yet: Memories (On This Day, a monthly recap and Year in
+      review), an in-app camera and more app languages. This page will say when they ship.</p>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section section-alt" id="faq">
+  <div class="wrap wrap-doc">
+    <div class="center" style="margin-bottom:30px">
+      <span class="eyebrow rv">Before you install</span>
+      <h2 class="h2 rv" data-d="1">Questions people actually ask</h2>
+    </div>
+<div class="faq-list">
+  <details id="faq-picks" open>
+    <summary><h3>Is there an app that picks the best photos for a photo dump?</h3><span class="pm" aria-hidden="true">+</span></summary>
+    <div class="a"><p>Yes. DUMP's <b>Smart Dump</b> looks at up to 180 photos on your iPhone, drops blurry shots, keeps only the sharpest of each burst or near-duplicate run, mixes people, places and close-up details, and puts everything in the order you took it. You swap anything you don't love. The picking runs on the device with Apple's Vision framework, so nothing is uploaded.</p></div>
+  </details>
+  <details id="faq-choose">
+    <summary><h3>How do I choose which photos to put in a photo dump?</h3><span class="pm" aria-hidden="true">+</span></summary>
+    <div class="a"><p>Pick a short window first: last weekend, last month or one trip. Drop the blurry shots and repeats, lead with your strongest photo, then alternate people, places and small details, with one short video for every three or four photos. Keep it in the order things happened. Smart Dump applies most of these rules for you, and you make the final call. More in the <a href="guides/how-to-pick-photos-for-a-photo-dump.html">photo-picking guide</a>.</p></div>
+  </details>
+  <details id="faq-how-many">
+    <summary><h3>How many photos should a photo dump have?</h3><span class="pm" aria-hidden="true">+</span></summary>
+    <div class="a"><p>Instagram allows up to 20 photos and videos in one carousel, but 8 to 12 is usually the sweet spot: enough to tell the story, short enough that people swipe to the end. On the free plan, Random Dump, Smart Dump and the Sunday draft build up to 10 items; with Premium, up to 20.</p></div>
+  </details>
+  <details id="faq-week">
+    <summary><h3>Can DUMP make a dump of my week automatically?</h3><span class="pm" aria-hidden="true">+</span></summary>
+    <div class="a"><p>Yes. Turn on reminders and every Sunday, within the hours you allow, DUMP sends a notification that opens “Your week”: a draft of your best shots from the last 7 days, with your best shot as the cover and the rest in the order you took them. Check it, swap anything, save. The notification is scheduled on your iPhone; there is no server.</p></div>
+  </details>
+  <details id="faq-upload">
+    <summary><h3>Does DUMP upload my photos?</h3><span class="pm" aria-hidden="true">+</span></summary>
+    <div class="a"><p>No. There is no account and no server. DUMP's App Store privacy label is “Data Not Collected”, the app contains no third-party SDKs, and you can make and save a whole dump in airplane mode. DUMP itself only talks to Apple's purchase system (StoreKit), when it checks or processes Premium. If you use iCloud Photos with Optimize iPhone Storage, iOS may download your own full-size originals from iCloud when DUMP shows or saves them; that's between your device and your iCloud account.</p></div>
+  </details>
+  <details id="faq-analyze">
+    <summary><h3>Does DUMP analyze my photo library?</h3><span class="pm" aria-hidden="true">+</span></summary>
+    <div class="a"><p>Only on your iPhone, and only to pick shots for you. Both Smart Dump and the Sunday draft read photos by date and use Apple's on-device Vision framework: Smart Dump judges sharpness, spots near-duplicates and counts faces (it never identifies who anyone is); the Sunday draft rates how good each photo looks, skips receipts and documents, and gives extra weight to your Favorites. To suggest trips, DUMP reads the location already stored in your photos. None of this leaves your device, and DUMP never asks for your current location. Details are in the <a href="privacypolicy.html#photos">privacy policy</a>.</p></div>
+  </details>
+  <details id="faq-quality">
+    <summary><h3>Does DUMP reduce photo quality?</h3><span class="pm" aria-hidden="true">+</span></summary>
+    <div class="a"><p>Not in Swipe Carousel mode. DUMP adds your original photos and videos to a new album in your order: nothing is re-encoded, resized or duplicated. The one exception is a photo you add a date stamp to, which is re-rendered as a high-quality JPEG. Collage, grid and template pages are rendered at 2160 px on the long edge and saved as 98%-quality JPEG (pages with video are saved as MP4). Instagram still compresses on upload; this way it only happens once.</p></div>
+  </details>
+  <details id="faq-instagram">
+    <summary><h3>How do I post my dump to Instagram?</h3><span class="pm" aria-hidden="true">+</span></summary>
+    <div class="a"><p>After you save, tap <b>Share to Instagram</b>. DUMP copies your caption, and your slides are already in a new album in posting order. In Instagram, start a new post, pick that album, turn on multi-select and tap the slides in order, then paste the caption. Instagram only lets approved scheduling tools publish carousels to professional accounts through its API; DUMP has no account or server, so the last tap is yours.</p></div>
+  </details>
+  <details id="faq-price">
+    <summary><h3>Is DUMP free? What does Premium cost?</h3><span class="pm" aria-hidden="true">+</span></summary>
+    <div class="a"><p>DUMP is free to download and use, with no ads and no watermark on your images. On the free plan, Random Dump, Smart Dump and the Sunday draft build up to 10 items (20 with Premium), and you can keep up to 5 saved projects. <b>DUMP Premium</b> is optional: an auto-renewing weekly or yearly subscription; see the current price on the <a href="https://apps.apple.com/app/id6798248086">App Store</a>. Cancel any time in Settings → [your name] → Subscriptions.</p></div>
+  </details>
+  <details id="faq-ipad">
+    <summary><h3>Does DUMP work on iPad, and which languages does it support?</h3><span class="pm" aria-hidden="true">+</span></summary>
+    <div class="a"><p>Yes, DUMP is a universal app for iPhone and iPad and needs iOS or iPadOS 18.6 or later. The current version is available in English, Spanish, Japanese and Turkish, and you can switch the language inside the app. There is no Android or web version.</p></div>
+  </details>
+  <details id="faq-captions">
+    <summary><h3>Does DUMP write captions with AI?</h3><span class="pm" aria-hidden="true">+</span></summary>
+    <div class="a"><p>No. The Caption Generator (Premium) gives you hand-written caption lines in six moods: Soft, Funny, Travel, Monthly Recap, Influencer and Minimal. You pick the mood; it doesn't look at your photos. On the free plan, text you copy from DUMP ends with a small #DumpApp tag, which Premium can turn off.</p></div>
+  </details>
+</div>
+    <p class="center" style="margin-top:28px">
+      <a class="btn btn-ghost" href="faq.html">All 23 questions →</a>
+    </p>
+  </div>
+</section>
+
+<!-- ===================== TRUST ===================== -->
 <section class="section-sm" id="trust">
   <div class="wrap">
-    <div class="grid grid-3">
-      <div class="card rv rv-l">
-        <div class="ic" aria-hidden="true">🛡</div>
-        <h3 class="h3">Nothing is uploaded</h3>
-        <p class="sub">DUMP has no server, no account and no analytics on your media.
-          Photos access is used only to read the assets you pick and to write your
-          finished album. <a href="privacypolicy.html#photos" style="color:var(--purple)">Read exactly how →</a></p>
-      </div>
-      <div class="card rv" data-d="1">
-        <div class="ic" aria-hidden="true">🌍</div>
-        <h3 class="h3">English &amp; Turkish</h3>
-        <p class="sub">Fully localised, switchable inside the app without restarting —
-          including every template, frame and sticker name.</p>
-      </div>
-      <div class="card rv rv-r" data-d="2">
-        <div class="ic" aria-hidden="true">📸</div>
-        <h3 class="h3">Built in public</h3>
-        <p class="sub">New templates, frames and sticker packs land regularly. Follow
-          <a href="https://instagram.com/solo.stasera" target="_blank" rel="noopener noreferrer" style="color:var(--purple)">@solo.stasera</a>
-          for what's shipping next.</p>
-      </div>
+    <div class="trust-strip">
+      <div class="t rv"><b>Made by an independent developer</b>
+        <p>DUMP is built and supported by one person, Gül Eda Aydemir. <a href="/about/">About the developer</a></p></div>
+      <div class="t rv" data-d="1"><b>Privacy you can check</b>
+        <p>App Store label “Data Not Collected”. No account, no third-party SDKs. Try it in airplane mode.
+          <a href="privacypolicy.html">Privacy policy</a></p></div>
+      <div class="t rv" data-d="2"><b>A real person answers</b>
+        <p>Email <a href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a>. Replies usually within two business days.</p></div>
+      <div class="t rv" data-d="3"><b>Honest pricing</b>
+        <p>No ads and no watermark on images. Premium is optional, weekly or yearly, cancel any time.</p></div>
     </div>
   </div>
 </section>
@@ -600,228 +692,163 @@
 <!-- ===================== GUIDES ===================== -->
 <section class="section-sm" id="guides">
   <div class="wrap">
-    <div class="center" style="max-width:700px;margin:0 auto 40px">
+    <div class="center" style="max-width:700px;margin:0 auto 36px">
       <span class="eyebrow rv">Learn</span>
-      <h2 class="h2 rv" data-d="1">Everything about <span class="g">photo dumps.</span></h2>
-      <p class="lead center rv" data-d="2">
-        Free guides on posting, sizing, quality and ideas — written by the people who built a
-        whole app for it.
-      </p>
+      <h2 class="h2 rv" data-d="1">Free guides on <span class="g">photo dumps.</span></h2>
+      <p class="lead center rv" data-d="2">Picking, posting, weekly and travel routines, and an honest app comparison, written by Gül Eda, the developer who built DUMP.</p>
     </div>
-
     <div class="grid grid-3">
-      <a class="guide-card rv" data-d="1" href="guides/how-to-post-a-photo-dump-on-instagram.html">
-        <span class="tag">Instagram</span>
-        <h3>How to post a photo dump on Instagram</h3>
-        <p>Picking, ordering, protecting quality and publishing — plus the 2026 carousel limits most guides get wrong.</p>
+      <a class="guide-card rv" data-d="1" href="guides/how-to-pick-photos-for-a-photo-dump.html">
+        <span class="tag">Picking</span>
+        <h3>How to pick photos for a photo dump</h3>
+        <p>Six rules for the cover, order and mix, plus a checklist.</p>
+        <span class="rt">9 min read</span>
+      </a>
+      <a class="guide-card rv" data-d="2" href="guides/sunday-dump-routine.html">
+        <span class="tag">Habit</span>
+        <h3>The Sunday Dump routine</h3>
+        <p>Post your week every Sunday in a ten-minute time box.</p>
         <span class="rt">7 min read</span>
       </a>
-      <a class="guide-card rv" data-d="2" href="guides/instagram-carousel-size-guide.html">
-        <span class="tag">Sizes</span>
-        <h3>Instagram carousel size guide</h3>
-        <p>1080&times;1350, the 3:4 grid crop, and why slide one decides the crop for every other slide.</p>
+      <a class="guide-card rv" data-d="3" href="guides/travel-photo-dump.html">
+        <span class="tag">Travel</span>
+        <h3>How to make a travel photo dump</h3>
+        <p>The 10-slide formula and automatic trip detection.</p>
         <span class="rt">6 min read</span>
       </a>
-      <a class="guide-card rv" data-d="3" href="guides/instagram-photo-quality.html">
-        <span class="tag">Quality</span>
-        <h3>Why Instagram ruins your photo quality</h3>
-        <p>What actually happens on upload, and the six changes that make a visible difference.</p>
-        <span class="rt">6 min read</span>
+      <a class="guide-card rv" data-d="1" href="guides/year-in-review-photo-dump.html">
+        <span class="tag">Seasonal</span>
+        <h3>Year in review photo dump</h3>
+        <p>Your 2026 in one carousel, without scrolling 12 months.</p>
+        <span class="rt">5 min read</span>
+      </a>
+      <a class="guide-card rv" data-d="2" href="guides/how-to-post-a-photo-dump-on-instagram.html">
+        <span class="tag">Instagram</span>
+        <h3>How to post a photo dump on Instagram</h3>
+        <p>Ordering, quality and the exact posting steps.</p>
+        <span class="rt">8 min read</span>
+      </a>
+      <a class="guide-card rv" data-d="3" href="guides/best-photo-dump-apps.html">
+        <span class="tag">Comparison</span>
+        <h3>Photo dump apps, compared honestly</h3>
+        <p>Pickers vs studios: privacy labels, prices, free limits.</p>
+        <span class="rt">8 min read</span>
       </a>
     </div>
-
-    <p class="center rv" style="margin-top:30px">
-      <a class="btn btn-ghost" href="guides/index.html">All 8 guides &rarr;</a>
-    </p>
+    <p class="center" style="margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn btn-ghost" href="guides/">All 12 guides →</a><a class="btn btn-ghost" href="for/creators.html">DUMP for creators →</a></p>
   </div>
 </section>
 
-<!-- ===================== INSTAGRAM ===================== -->
-<section class="section-sm" id="instagram">
+<!-- ===================== CLEAN FIRST, THEN DUMP ===================== -->
+<section class="section-sm" id="pair">
   <div class="wrap">
-    <div class="card rv" style="display:flex;gap:28px;align-items:center;flex-wrap:wrap;
-      padding:34px;background:linear-gradient(140deg,rgba(199,153,250,.12),rgba(255,55,95,.10))">
-      <div style="flex:1;min-width:260px">
-        <span class="eyebrow">Instagram</span>
-        <h2 class="h2" style="font-size:clamp(24px,3.2vw,34px);margin-bottom:10px">
-          See what people are <span class="g">dumping.</span>
-        </h2>
-        <p class="sub" style="max-width:46ch">Real dumps, new template drops, and first look at
-          frames and sticker packs before they ship. Tag your dump and it might land on the grid.</p>
+    <div class="pair rv">
+      <img src="/solo.swipe/appicon-128.webp" alt="" width="56" height="56" loading="lazy">
+      <div class="tx">
+        <b>Clean first, then dump.</b>
+        <p>Camera roll full of screenshots and misses? Solo.Swipe, by the same developer, helps you swipe
+          through and clear it in 5-minute daily sessions. Then DUMP turns what's left into a post.</p>
       </div>
-      <a class="btn btn-grad btn-lg magnet" href="https://instagram.com/solo.stasera"
-         target="_blank" rel="noopener noreferrer">@solo.stasera</a>
+      <a class="btn btn-ghost" href="/solo.swipe/">See Solo.Swipe</a>
     </div>
-  </div>
-</section>
-
-<!-- ===================== FAQ PREVIEW ===================== -->
-<section class="section" id="faq">
-  <div class="wrap wrap-doc">
-    <div class="center" style="margin-bottom:34px">
-      <span class="eyebrow rv">Before you install</span>
-      <h2 class="h2 rv" data-d="1">The questions people actually ask</h2>
-    </div>
-
-    <div class="acc rv" data-d="1">
-      <div class="acc-item" id="q-quality">
-        <button class="acc-q">Does DUMP reduce my photo or video quality?<span class="pm">+</span></button>
-        <div class="acc-a"><div class="inner">
-          No. In Swipe Carousel mode your media is copied with zero recompression — the
-          exported file is byte-for-byte what your camera captured. Canvas and grid pages
-          are rendered at full resolution, with transparency preserved where it exists.
-        </div></div>
-      </div>
-
-      <div class="acc-item" id="q-privacy">
-        <button class="acc-q">Where do my photos go?<span class="pm">+</span></button>
-        <div class="acc-a"><div class="inner">
-          Nowhere. DUMP runs entirely on your iPhone, works in airplane mode, and has no
-          server to receive anything. There is no account and no sign-up. See the
-          <a href="privacypolicy.html">Privacy Policy</a> for the full breakdown.
-        </div></div>
-      </div>
-
-      <div class="acc-item" id="q-free">
-        <button class="acc-q">Is DUMP free?<span class="pm">+</span></button>
-        <div class="acc-a"><div class="inner">
-          Yes, and the free tier posts real dumps — carousel mode, canvas, grids and
-          original-quality export are all included. DUMP+ raises the limits and unlocks
-          the full template, frame, sticker and texture libraries plus the caption generator.
-        </div></div>
-      </div>
-
-      <div class="acc-item" id="q-instagram">
-        <button class="acc-q">How do I get the dump onto Instagram?<span class="pm">+</span></button>
-        <div class="acc-a"><div class="inner">
-          DUMP saves your finished dump into a new Photos album named after your project,
-          already in the right order. Open Instagram, pick that album, select all, post.
-          No reordering, no guessing which shot was which.
-        </div></div>
-      </div>
-
-      <div class="acc-item" id="q-videos">
-        <button class="acc-q">Can I mix videos into a dump?<span class="pm">+</span></button>
-        <div class="acc-a"><div class="inner">
-          Yes. Photos and videos live in the same dump. Videos keep original quality in
-          carousel mode, and can be trimmed, muted and played back inside canvas pages.
-        </div></div>
-      </div>
-
-      <div class="acc-item" id="q-limited">
-        <button class="acc-q">What if I only allow access to selected photos?<span class="pm">+</span></button>
-        <div class="acc-a"><div class="inner">
-          DUMP works with limited access — it simply builds from the assets you shared.
-          If there aren't enough for the dump size you chose, it tells you exactly how
-          many are available instead of silently producing a shorter post.
-        </div></div>
-      </div>
-    </div>
-
-    <p class="center rv" style="margin-top:30px">
-      <a class="btn btn-ghost" href="faq.html">All questions →</a>
-    </p>
   </div>
 </section>
 
 <!-- ===================== FINAL CTA ===================== -->
 <section class="section" id="download">
   <div class="wrap">
-    <div class="card rv rv-s" style="text-align:center;padding:60px 30px;
-      background:linear-gradient(160deg,var(--surface),var(--bg-soft));border-color:var(--line)">
+    <div class="card rv rv-s" style="text-align:center;padding:56px 28px;background:linear-gradient(160deg,var(--surface),var(--bg-soft));border-color:var(--line)">
       <span class="eyebrow">Your next post</span>
-      <h2 class="h2" style="max-width:16ch;margin:0 auto 14px">
-        The dump is already in your <span class="g">camera roll.</span>
-      </h2>
-      <p class="lead center" style="margin:0 auto 30px">
-        It just needs picking, ordering and exporting. That's the whole app —
-        and it takes less than a minute.
-      </p>
-      <div class="row" style="justify-content:center">
-        <a class="appstore magnet" data-ct="footer-cta" href="https://apps.apple.com/app/id6798248086" aria-label="Download DUMP on the App Store">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.36 12.9c.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.71-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.18-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.32-3.5zM14.2 6.3c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.56 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.58-1.21z"/></svg>
-          <span class="t"><small>Download on the</small><b>App Store</b></span>
-        </a>
-        <a class="btn btn-ghost" href="https://instagram.com/solo.stasera" target="_blank" rel="noopener noreferrer">Follow @solo.stasera</a>
+      <h2 class="h2" style="max-width:18ch;margin:0 auto 14px">Your best shots are already in your <span class="g">camera roll.</span></h2>
+      <p class="lead center" style="margin:0 auto 28px">Let DUMP do the picking. You do the posting.</p>
+      <div class="cta-row" style="justify-content:center;margin-top:0">
+        <a class="appstore magnet" data-ct="final-cta" href="https://apps.apple.com/app/id6798248086" aria-label="Download DUMP on the App Store">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.36 12.9c.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.71-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.18-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.32-3.5zM14.2 6.3c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.56 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.58-1.21z"/></svg>
+  <span class="t"><small>Download on the</small><b>App Store</b></span>
+</a>
+        <div class="qr">
+  <img src="assets/appstore-qr.svg" width="76" height="76" alt="QR code that opens DUMP on the App Store">
+  <span><b>On a computer?</b>Scan with your iPhone camera</span>
+</div>
       </div>
-      <p class="tiny" style="margin-top:18px">Free · iPhone · No account · Works offline · English &amp; Turkish</p>
+      <p class="tiny" style="margin-top:18px">Free · No account · iPhone &amp; iPad · iOS 18.6+ · English, Español, 日本語, Türkçe</p>
     </div>
   </div>
 </section>
 
 </main>
 
-<!-- ===================== FOOTER ===================== -->
 <footer class="site">
   <div class="wrap">
+    <section class="more-apps" aria-labelledby="more-apps-h">
+      <h2 class="fh" id="more-apps-h">More apps by Gül Eda</h2>
+      <div class="more-apps-grid">
+        <a class="app-card" href="/solo.swipe/">
+          <img src="/solo.swipe/appicon-128.webp" alt="" width="44" height="44" loading="lazy" decoding="async">
+          <span><b>Solo.Swipe</b><small>Swipe to clean your camera roll in 5-minute daily sessions</small></span>
+        </a>
+        <a class="app-card" href="/solo.shots/">
+          <img src="/solo.shots/appicon-128.webp" alt="" width="44" height="44" loading="lazy" decoding="async">
+          <span><b>Solo.Shots</b><small>Progress photos that line up, turned into a timelapse</small></span>
+        </a>
+        <a class="app-card" href="/solora/">
+          <img src="/solora/appicon-128.webp" alt="" width="44" height="44" loading="lazy" decoding="async">
+          <span><b>Solora</b><small>Role-based life planner: pick today's Big 3, keep habits going</small></span>
+        </a>
+        <a class="app-card" href="/ATHA/">
+          <img src="/ATHA/appicon-128.webp" alt="" width="44" height="44" loading="lazy" decoding="async">
+          <span><b>ATHA</b><small>Breathing exercises for sleep, stress and focus — calm in one tap</small></span>
+        </a>
+      </div>
+    </section>
     <div class="foot-grid">
       <div>
-        <a class="brand" href="#top" aria-label="Back to top">
-          <img src="appicon.png" alt="" width="32" height="32"
-               onerror="this.outerHTML='&lt;span class=\'orb\'&gt;&lt;/span&gt;'">
+        <a class="brand" href="#top" aria-label="DUMP home">
+          <img src="appicon-128.webp" alt="" width="32" height="32" loading="lazy">
           <span class="wordmark">DUMP</span>
         </a>
         <p class="tagline" style="margin-top:12px">Pick it. Make it. <b>DUMP</b> it.</p>
+        <p class="tagline" style="margin-top:6px">The photo dump app that picks your best shots, on your iPhone.</p>
         <div class="social">
-          <a href="https://instagram.com/solo.stasera" target="_blank" rel="noopener noreferrer" aria-label="DUMP on Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.4-10.4a1.44 1.44 0 1 0 1.44 1.44A1.44 1.44 0 0 0 18.4 5.6z"/></svg>
-          </a>
-          <a href="mailto:solostaseraofficial@gmail.com" aria-label="Email DUMP support">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24-8 4.76-8-4.76V6l8 4.76L20 6z"/></svg>
-          </a>
-          <a href="https://apps.apple.com/app/id6798248086" aria-label="DUMP on the App Store">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.36 12.9c.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.71-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.18-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.32-3.5zM14.2 6.3c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.56 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.58-1.21z"/></svg>
-          </a>
+          <a href="https://instagram.com/solo.stasera" target="_blank" rel="noopener noreferrer" aria-label="@solo.stasera on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 3.68A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zm6.4-10.4a1.44 1.44 0 1 0 1.44 1.44A1.44 1.44 0 0 0 18.4 5.6z"/></svg></a>
+          <a href="mailto:solostaseraofficial@gmail.com" aria-label="Email DUMP support"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24-8 4.76-8-4.76V6l8 4.76L20 6z"/></svg></a>
+          <a href="https://apps.apple.com/app/id6798248086" data-ct="footer-icon" aria-label="DUMP on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.36 12.9c.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.71-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.18-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.74 2.21 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.14.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.3-.88-2.32-3.5zM14.2 6.3c.6-.74 1.01-1.76.9-2.78-.87.04-1.93.58-2.56 1.31-.56.65-1.05 1.69-.92 2.68.97.08 1.96-.49 2.58-1.21z"/></svg></a>
         </div>
-        <p style="margin-top:16px">
-          <a href="../index.html" style="font-size:14px;color:var(--purple)">← All apps by Gül Eda</a>
-        </p>
       </div>
-
       <div>
-        <h5>Product</h5>
-        <a href="#why">Why DUMP</a>
-        <a href="#basics">How it works</a>
+        <h2 class="fh">DUMP</h2>
         <a href="#features">Features</a>
-        <a href="#screens">Screens</a>
-        <a href="#premium">Premium</a>
+        <a href="#how">How it works</a>
+        <a href="#premium">Free vs Premium</a>
+        <a href="#whats-new">What's new</a>
+        <a href="guides/">Guides</a>
       </div>
-
       <div>
-        <h5>Help</h5>
-        <a href="guides/index.html">Guides</a>
+        <h2 class="fh">Help</h2>
         <a href="faq.html">FAQ</a>
         <a href="support.html">Support</a>
-        <a href="mailto:solostaseraofficial@gmail.com">Contact</a>
-        <a href="https://apps.apple.com/app/id6798248086">Rate on the App Store</a>
+        <a href="mailto:solostaseraofficial@gmail.com">Email the developer</a>
+        <a href="https://apps.apple.com/app/id6798248086?action=write-review" data-ct="footer-review">Rate on the App Store</a>
       </div>
-
       <div>
-        <h5>Legal</h5>
+        <h2 class="fh">About</h2>
+        <a href="/about/">About the developer</a>
         <a href="privacypolicy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>
-        <a href="privacypolicy.html#photos">Photos permission</a>
+        <a href="/">All apps by Gül Eda</a>
       </div>
     </div>
-
     <div class="foot-bottom">
-      <span>© <span id="yr">2026</span> DUMP · Made by Gül Eda Aydemir</span>
-      <span>
-        <a href="https://instagram.com/solo.stasera" target="_blank" rel="noopener noreferrer">@solo.stasera</a> ·
-        <a href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a>
-      </span>
+      <span>© <span id="yr">2026</span> Gül Eda Aydemir · DUMP: Carousel &amp; Collage</span>
+      <span><a href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a> · <a href="https://instagram.com/solo.stasera" target="_blank" rel="noopener noreferrer">@solo.stasera</a></span>
     </div>
   </div>
 </footer>
 
-<!-- ===================== STICKY MOBILE DOWNLOAD BAR ===================== -->
 <div class="stickybar" role="complementary" aria-label="Download DUMP">
-  <img src="appicon.png" alt="" width="40" height="40">
-  <div class="m">
-    <b>DUMP</b>
-    <span>Free · iPhone · No account</span>
-  </div>
-  <a class="btn btn-grad" data-ct="stickybar" href="https://apps.apple.com/app/id6798248086">Get</a>
+  <img src="appicon-128.webp" alt="" width="40" height="40" loading="lazy">
+  <div class="m"><b>DUMP</b><span>Free · iPhone &amp; iPad · No account</span></div>
+  <a class="btn btn-grad" data-ct="stickybar" href="https://apps.apple.com/app/id6798248086">Download</a>
 </div>
 
 </body>

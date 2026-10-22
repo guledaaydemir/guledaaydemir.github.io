@@ -1,0 +1,123 @@
+/* Home page (/, /tr/) — Apple-style product showcase. Loaded after hub.css. */
+.home main { overflow: hidden; }
+.home .bg-glow, .home .bg-glow-2 { display: none; }
+.home body, body.home { background: #000; }
+
+/* Hero */
+.h-hero { text-align: center; padding: clamp(56px, 9vw, 110px) 0 clamp(36px, 5vw, 56px); }
+.h-hero .eyebrow { justify-content: center; }
+.h-hero h1 {
+  font-size: clamp(2.6rem, 7.2vw, 5.2rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.04;
+  margin: 0 auto 0.35em;
+  max-width: 14ch;
+  text-wrap: balance;
+}
+.h-hero h1 .grad {
+  background: linear-gradient(100deg, #f6a17f 0%, #f3a1c9 30%, #9a7cff 62%, #00e5ff 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.h-hero .lead { font-size: clamp(1.1rem, 2vw, 1.4rem); color: var(--muted); max-width: 40ch; margin: 0 auto; line-height: 1.45; text-wrap: balance; }
+
+/* App lineup: the five apps side by side */
+.lineup { list-style: none; padding: 0; margin: clamp(40px, 6vw, 64px) auto 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; max-width: 1080px; }
+.lineup li { min-width: 0; }
+.lineup a.tile {
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px;
+  padding: 22px 12px 20px; border-radius: 22px; text-decoration: none; color: var(--text);
+  background: #111113; border: 1px solid var(--border); height: 100%;
+  transition: transform .25s ease, border-color .25s ease, background .25s ease;
+}
+.lineup a.tile:hover { transform: translateY(-3px); border-color: var(--border-strong); background: #161618; color: var(--text); }
+.lineup img { width: 76px; height: 76px; border-radius: 18px; box-shadow: 0 8px 24px rgba(0,0,0,.5); }
+.lineup b { font-size: 1.05rem; letter-spacing: -0.01em; }
+.lineup span { font-size: .86rem; color: var(--muted); line-height: 1.35; }
+.lineup .more { color: #2997ff; font-size: .9rem; margin-top: auto; }
+.count-line { text-align: center; color: var(--muted); font-size: .95rem; margin: 22px 0 0; }
+.count-line a { color: #2997ff; text-decoration: none; }
+.count-line a:hover { text-decoration: underline; }
+
+@media (max-width: 860px) {
+  .lineup { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 42%; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 4px 12px; margin-inline: -4px; scrollbar-width: none; }
+  .lineup::-webkit-scrollbar { display: none; }
+  .lineup li { scroll-snap-align: start; }
+}
+@media (max-width: 480px) { .lineup { grid-auto-columns: 62%; } }
+
+/* "What do you want to fix today?" */
+.h-finder { padding: clamp(56px, 8vw, 96px) 0 24px; }
+.h-finder .head { text-align: center; margin-bottom: 26px; }
+.h-finder h2 { font-size: clamp(2rem, 5vw, 3.4rem); letter-spacing: -0.03em; margin-bottom: 0.3em; }
+.h-finder .head p { color: var(--muted); font-size: 1.15rem; margin: 0; }
+.h-chips { list-style: none; padding: 0; margin: 0 auto 36px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.h-chips a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px 8px 8px; border-radius: 999px; background: #161618; border: 1px solid var(--border); color: var(--text); text-decoration: none; font-size: .95rem; }
+.h-chips a:hover { border-color: var(--border-strong); color: var(--text); }
+.h-chips img { width: 26px; height: 26px; border-radius: 7px; }
+
+/* Showcase: all five apps side by side in one wide row (apple.com style) */
+.h-finder .wrap.wide { max-width: 1440px; }
+.showcase-wrap { position: relative; }
+.showcase {
+  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px;
+  padding: 4px 0 18px;
+}
+.panel {
+  position: relative; overflow: hidden; border-radius: 26px; background: #0b0b0d;
+  border: 1px solid var(--border); scroll-snap-align: start;
+  text-align: center; padding: 30px 16px 0;
+  display: grid; grid-template-rows: auto 3.2em auto 1fr auto auto; justify-items: center; align-items: start;
+  min-height: 600px; scroll-margin-top: 90px; isolation: isolate;
+}
+.panel::before { content: ""; position: absolute; inset: auto -20% -30% -20%; height: 75%; background: var(--glow); opacity: .32; filter: blur(70px); z-index: -1; }
+.panel .app-name { display: inline-flex; align-items: center; gap: 8px; font-size: .98rem; font-weight: 600; margin: 0 0 10px; color: var(--soft); }
+.panel .app-name img { width: 30px; height: 30px; border-radius: 8px; }
+.panel .kicker { font-size: .86rem; font-weight: 600; color: var(--muted); margin: 0; line-height: 1.35; align-self: center; }
+.panel h3 { font-size: clamp(1.35rem, 1.75vw, 1.75rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.08; margin: 8px 0 10px; max-width: 13ch; text-wrap: balance; min-height: 3.24em; display: flex; align-items: center; justify-content: center; }
+.panel .why { color: var(--soft); font-size: .93rem; max-width: 26ch; margin: 0 auto 16px; line-height: 1.45; text-wrap: balance; }
+.panel .links { display: flex; gap: 14px; justify-content: center; align-items: center; flex-wrap: wrap; margin: 0 0 24px; }
+.panel .links a { color: #2997ff; text-decoration: none; font-size: .95rem; }
+.panel .links a:hover { text-decoration: underline; }
+.panel .links a.pill { background: #0071e3; color: #fff; padding: 7px 16px; border-radius: 999px; font-weight: 500; }
+.panel .links a.pill:hover { background: #0077ed; text-decoration: none; }
+/* every phone has the same size and sits on the same line */
+.panel .shot { margin: 0; width: min(210px, 84%); height: 300px; overflow: hidden; align-self: end; }
+.panel .shot img { width: 100%; height: auto; border-radius: 28px 28px 0 0; border: 6px solid #1d1d1f; border-bottom: 0; box-shadow: 0 -10px 60px rgba(0,0,0,.6); aspect-ratio: 300 / 652; object-fit: cover; object-position: top; }
+
+.gallery-nav { display: none; }
+
+/* below ~1100px five columns get too narrow: switch to a swipeable row */
+@media (max-width: 1100px) {
+  .showcase { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(260px, 300px); overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding-inline: 2px; }
+  .showcase::-webkit-scrollbar { display: none; }
+  .gallery-nav { display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; }
+  .gallery-nav button { width: 40px; height: 40px; border-radius: 50%; border: 0; cursor: pointer; background: #1d1d1f; color: #f5f5f7; font-size: 1.3rem; line-height: 1; display: grid; place-items: center; }
+  .gallery-nav button:hover { background: #2a2a2d; }
+  .gallery-nav button:disabled { opacity: .35; cursor: default; }
+}
+@media (max-width: 760px) {
+  .showcase { grid-auto-columns: 80%; }
+  .panel { border-radius: 22px; }
+  .gallery-nav { display: none; }
+}
+
+.panel[data-app="atha"]   { --glow: radial-gradient(closest-side, #f3a1c9, #9a7cff 60%, transparent); }
+.panel[data-app="swipe"]  { --glow: radial-gradient(closest-side, #8b5cf6, #ec4899 70%, transparent); }
+.panel[data-app="dump"]   { --glow: radial-gradient(closest-side, #ff375f, #c799fa 70%, transparent); }
+.panel[data-app="shots"]  { --glow: radial-gradient(closest-side, #00e5ff, #0071e3 70%, transparent); }
+.panel[data-app="solora"] { --glow: radial-gradient(closest-side, #7c3aed, #4f46e5 70%, transparent); }
+
+/* Guides strip */
+.h-guides { padding: 56px 0 72px; }
+.h-guides .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+.h-guides h2 { font-size: clamp(1.6rem, 3.4vw, 2.2rem); margin: 0; }
+.h-guides .head a { color: #2997ff; text-decoration: none; }
+.g-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.g-row a { display: block; padding: 22px; border-radius: 20px; background: #111113; border: 1px solid var(--border); color: var(--text); text-decoration: none; }
+.g-row a:hover { border-color: var(--border-strong); color: var(--text); }
+.g-row b { display: block; font-size: 1.08rem; margin-bottom: 6px; letter-spacing: -0.01em; }
+.g-row span { color: var(--muted); font-size: .93rem; }
+@media (max-width: 760px) { .g-row { grid-template-columns: minmax(0, 1fr); } }
+
+@media (prefers-reduced-motion: reduce) { .lineup a.tile { transition: none; } .lineup a.tile:hover { transform: none; } }

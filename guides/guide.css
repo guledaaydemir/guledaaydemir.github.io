@@ -1,0 +1,172 @@
+/* Hub guide pages (/guides/*). Loaded after /assets/hub.css; uses its tokens. */
+.guide-head { max-width: 820px; }
+.guide-head .lead { margin-bottom: 14px; }
+.byline { font-size: .92rem; color: var(--muted); margin: 0 0 6px; line-height: 1.6; }
+.byline img { display: inline-block; width: 28px; height: 28px; border-radius: 8px; vertical-align: middle; margin: -3px 8px 0 0; }
+.byline a { color: var(--soft); }
+.article { max-width: 820px; }
+.article > section { padding: 0; scroll-margin-top: 16px; }
+.article h2 { font-size: clamp(1.45rem, 3.2vw, 1.95rem); margin: 2.2em 0 .55em; scroll-margin-top: 16px; }
+.article h3 { margin-top: 1.4em; }
+.article p, .article li { color: var(--soft); }
+.article strong { color: var(--text); }
+.article li + li { margin-top: .35em; }
+.answer-first { font-size: 1.08rem; color: var(--text) !important; }
+
+/* quick answer + disclosure */
+.box-quick h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .1em; color: var(--link); margin: 0 0 8px; }
+.box-quick p { color: var(--text); font-size: 1.06rem; }
+.box-quick p:last-child, .box p:last-child { margin-bottom: 0; }
+.disclosure { font-size: .9rem; color: var(--muted); border-left: 3px solid var(--border-strong); padding: 2px 0 2px 14px; margin: 18px 0; }
+
+/* table of contents */
+.toc { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 4px 20px; margin: 20px 0; }
+.toc summary { cursor: pointer; font-weight: 650; padding: 14px 0; min-height: 44px; }
+.toc ol, .toc ul { margin: 0 0 16px; padding-left: 1.3em; columns: 1; }
+@media (min-width: 760px) { .toc ol, .toc ul { columns: 2; column-gap: 36px; } }
+.toc li { break-inside: avoid; margin: 0 0 6px; }
+.toc a { color: var(--soft); text-decoration: none; display: block; padding: 3px 0; }
+.toc a:hover { color: #fff; text-decoration: underline; }
+
+/* step with screenshot */
+.with-shot { display: grid; gap: 22px; align-items: start; }
+@media (min-width: 820px) { .with-shot { grid-template-columns: 1fr 230px; gap: 34px; } }
+.shot { margin: 6px auto 0; max-width: 240px; text-align: center; }
+.shot img { width: 100%; border-radius: 24px; border: 1px solid var(--border-strong); box-shadow: 0 18px 44px rgba(0, 0, 0, .5); background: #111; }
+.shot figcaption { font-size: .84rem; color: var(--muted); margin-top: 10px; line-height: 1.4; }
+.shot-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; max-width: 480px; margin: 22px auto; }
+.shot-pair .shot { margin: 0; }
+.shot.shot-wide { max-width: 640px; margin: 22px auto; }
+.shot.shot-wide img { border-radius: 18px; }
+
+/* callouts */
+.no-app { border: 1px solid rgba(134, 239, 172, .35); background: rgba(134, 239, 172, .07); border-radius: var(--radius-sm); padding: 14px 18px; margin: 18px 0; }
+.no-app p { margin: 0; color: var(--soft); }
+.no-app b { color: var(--ok); }
+.tip { border: 1px solid rgba(252, 211, 77, .3); background: rgba(252, 211, 77, .06); border-radius: var(--radius-sm); padding: 14px 18px; margin: 18px 0; }
+.tip p { margin: 0; }
+.tip b { color: var(--warn); }
+
+/* checklists (visual boxes, print friendly) */
+.checklist { list-style: none; padding: 0; margin: 14px 0 18px; display: grid; gap: 8px; }
+.checklist li { position: relative; padding: 10px 14px 10px 46px; background: rgba(255, 255, 255, .035); border: 1px solid var(--border); border-radius: 12px; margin: 0 !important; }
+.checklist li::before { content: ""; position: absolute; left: 14px; top: 12px; width: 18px; height: 18px; border: 2px solid var(--link); border-radius: 5px; }
+
+/* numbered steps inside prose */
+.numbered { counter-reset: n; list-style: none; padding: 0; margin: 14px 0 18px; }
+.numbered > li { counter-increment: n; position: relative; padding-left: 44px; margin: 0 0 12px !important; }
+.numbered > li::before { content: counter(n); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: .92rem; display: grid; place-items: center; }
+
+/* "Try it in <App>" card */
+.try-card { position: relative; display: grid; gap: 18px; margin: 30px 0; padding: 24px 20px; border-radius: var(--radius); background: linear-gradient(135deg, rgba(124, 58, 237, .14), rgba(236, 72, 153, .06)); border: 1px solid var(--border-strong); overflow: hidden; }
+.try-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px; background: var(--app, var(--accent)); }
+@media (min-width: 760px) { .try-card { grid-template-columns: 1fr auto; padding: 28px 30px; align-items: center; } }
+.try-card .try-eyebrow { text-transform: uppercase; letter-spacing: .1em; font-size: .76rem; font-weight: 700; color: var(--link); margin: 0 0 8px; }
+.try-card h3 { font-size: clamp(1.2rem, 2.6vw, 1.45rem); margin: 0 0 10px; }
+.try-card p { color: var(--soft); }
+.try-card .app-line { margin: 0 0 12px; }
+.try-card .app-line img { width: 52px; height: 52px; border-radius: 12px; }
+.try-card .glance { margin-bottom: 16px; }
+.try-card .qr { flex-direction: column; text-align: center; max-width: 120px; }
+.try-card .qr img { width: 104px; height: 104px; }
+
+/* multi-app kit */
+.kit { display: grid; gap: 14px; margin: 18px 0; }
+@media (min-width: 760px) { .kit { grid-template-columns: repeat(3, 1fr); } }
+.kit-item { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 18px; display: flex; flex-direction: column; gap: 10px; }
+.kit-item .app-line { margin: 0; }
+.kit-item .app-line img { width: 44px; height: 44px; border-radius: 11px; }
+.kit-item p { font-size: .94rem; margin: 0; }
+.kit-item .btn-store { align-self: flex-start; margin-top: auto; }
+
+/* plan / tracker tables */
+.plan-box { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 8px 18px 18px; margin: 18px 0; }
+.plan { width: 100%; border-collapse: collapse; font-size: .94rem; }
+.plan caption { text-align: left; color: var(--muted); font-size: .86rem; caption-side: bottom; padding-top: 12px; }
+.plan th, .plan td { text-align: left; vertical-align: top; padding: 12px 10px; border-bottom: 1px solid var(--border); }
+.plan thead th { color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; }
+.plan tbody th { white-space: nowrap; color: var(--text); }
+.plan td { color: var(--soft); }
+.plan .box-cell { text-align: center; }
+.plan .box-cell span { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--link); border-radius: 5px; vertical-align: middle; }
+@media (max-width: 760px) {
+  .plan:not(.tracker) thead { display: none; }
+  .plan:not(.tracker), .plan:not(.tracker) tbody, .plan:not(.tracker) tr, .plan:not(.tracker) th, .plan:not(.tracker) td { display: block; width: 100%; }
+  .plan:not(.tracker) tr { padding: 12px 0; border-bottom: 1px solid var(--border-strong); }
+  .plan:not(.tracker) th, .plan:not(.tracker) td { border: 0; padding: 3px 0; }
+  .plan:not(.tracker) td::before { content: attr(data-label) ": "; color: var(--text); font-weight: 650; }
+  .plan.tracker { font-size: .82rem; }
+  .plan.tracker th, .plan.tracker td { padding: 9px 3px; }
+  .plan.tracker .box-cell span { width: 16px; height: 16px; }
+}
+.table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.print-row { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; margin: 10px 0 0; }
+.print-row .note { margin: 0; }
+button.btn { font: inherit; font-weight: 650; cursor: pointer; }
+
+/* comparison table (apps) */
+.compare { width: 100%; border-collapse: collapse; font-size: .93rem; }
+.compare th, .compare td { text-align: left; vertical-align: top; padding: 12px 10px; border-bottom: 1px solid var(--border); }
+.compare thead th { color: var(--muted); font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; }
+.compare tbody th { color: var(--text); }
+.compare tbody th img { width: 26px; height: 26px; border-radius: 7px; display: inline-block; vertical-align: middle; margin-right: 8px; }
+.compare td { color: var(--soft); }
+@media (max-width: 760px) {
+  .compare thead { display: none; }
+  .compare, .compare tbody, .compare tr, .compare th, .compare td { display: block; width: 100%; }
+  .compare tr { padding: 12px 0; border-bottom: 1px solid var(--border-strong); }
+  .compare th, .compare td { border: 0; padding: 3px 0; }
+  .compare td::before { content: attr(data-label) ": "; color: var(--text); font-weight: 650; }
+}
+
+/* loop diagram */
+.loop { list-style: none; padding: 0; margin: 20px 0; display: grid; gap: 10px; counter-reset: loop; }
+@media (min-width: 760px) { .loop { grid-template-columns: repeat(5, 1fr); } }
+.loop li { counter-increment: loop; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px; margin: 0 !important; }
+.loop li::before { content: counter(loop); display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: .85rem; margin-bottom: 8px; }
+.loop b { display: block; color: var(--text); }
+.loop span { display: block; font-size: .88rem; color: var(--muted); line-height: 1.4; }
+
+/* ritual cards */
+.rituals { display: grid; gap: 16px; margin: 18px 0; }
+.ritual { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 20px; scroll-margin-top: 16px; }
+.ritual h3 { margin: 0 0 6px; }
+.ritual .meta { font-size: .86rem; color: var(--muted); margin-bottom: 12px; }
+.ritual dl { display: grid; gap: 8px; margin: 0 0 12px; }
+@media (min-width: 640px) { .ritual dl { grid-template-columns: 150px 1fr; gap: 8px 16px; } }
+.ritual dt { color: var(--text); font-weight: 650; }
+.ritual dd { margin: 0; color: var(--soft); }
+
+/* sources */
+.sources { font-size: .9rem; }
+.sources li { color: var(--muted); }
+
+/* print: clean black-on-white; "Print the plan" prints only the plan */
+@media print {
+  @page { margin: 14mm; }
+  :root { color-scheme: light; --text: #000; --soft: #000; --muted: #333; --link: #000; --ok: #000; --warn: #000; --border: #999; --border-strong: #666; }
+  body { background: #fff !important; color: #000 !important; font-size: 11pt; min-height: 0 !important; }
+  body.print-plan .page-head, body.print-plan .wrap { padding-top: 0 !important; }
+  .plan th, .plan td, .compare th, .compare td { width: auto !important; white-space: normal !important; }
+  .plan tbody th { white-space: nowrap !important; }
+  .plan .box-cell { text-align: center !important; }
+  .bg-glow, .bg-glow-2, .site-header, .site-footer, .sticky-cta, .skip, .toc, .try-card, .kit, .shot, .shot-pair, .print-row, .crumbs, .related, .no-print { display: none !important; }
+  a { color: #000 !important; }
+  .article p, .article li, .plan td, .plan th, .compare td, .compare th, .box-quick p, .lead, .muted, .byline { color: #000 !important; }
+  .box, .box-quick, .plan-box, .no-app, .tip, .ritual, .checklist li, .loop li { background: #fff !important; border-color: #999 !important; }
+  .plan, .compare { font-size: 10pt; }
+  .plan thead, .compare thead { display: table-header-group !important; }
+  .plan, .compare { display: table !important; width: 100% !important; }
+  .plan tbody, .compare tbody { display: table-row-group !important; }
+  .plan caption, .compare caption { display: table-caption !important; }
+  .plan tr, .compare tr { display: table-row !important; }
+  .plan th, .plan td, .compare th, .compare td { display: table-cell !important; border-bottom: 1px solid #999 !important; padding: 6px !important; }
+  .plan td::before, .compare td::before { content: none !important; }
+  .plan .box-cell span, .checklist li::before { border-color: #000 !important; }
+  .numbered > li::before, .loop li::before { background: #fff !important; color: #000 !important; border: 1px solid #000; }
+  h1, h2, h3 { color: #000 !important; -webkit-text-fill-color: #000 !important; background: none !important; }
+  details { display: block; }
+  details > *:not(summary) { display: block !important; }
+  body.print-plan main > .wrap > *:not(.article), body.print-plan .article > *:not(.printable) { display: none !important; }
+  body.print-plan .printable { display: block !important; }
+}

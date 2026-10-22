@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Gül Eda Aydemir</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="This page doesn't exist. Find Solo.Swipe, Solora, DUMP, Solo.Shots and ATHA, or browse the guides.">
+<script>
+/* GitHub Pages serves this file for every missing path on the host.
+   Paths are case-sensitive, so fix the app folder's case (e.g. /atha/ -> /ATHA/, /Solora/ -> /solora/)
+   and a few known wrong links, then redirect. Runs before anything renders. */
+(function () {
+  var folders = ['ATHA', 'DUMP', 'solo.swipe', 'solo.shots', 'solora', 'tr', 'guides', 'about'];
+  var aliases = {
+    '/solora/privacy-policy.html': '/solora/privacypolicy.html',
+    '/tr/rehberler/': '/tr/rehber/',
+    '/tr/guides/': '/tr/rehber/',
+    '/en/': '/'
+  };
+  var path = location.pathname;
+  var fixed = path;
+  var parts = path.split('/');
+  var first = parts[1] || '';
+  for (var i = 0; i < folders.length; i++) {
+    if (first !== folders[i] && first.toLowerCase() === folders[i].toLowerCase()) {
+      parts[1] = folders[i];
+      fixed = parts.join('/');
+      break;
+    }
+  }
+  if (aliases[fixed]) fixed = aliases[fixed];
+  if (fixed !== path) {
+    location.replace(fixed + location.search + location.hash);
+  }
+})();
+</script>
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#050505">
+<link rel="stylesheet" href="/assets/hub.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="bg-glow" aria-hidden="true"></div>
+<div class="bg-glow-2" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/img/favicon-32.png" width="32" height="32" alt="">Gül Eda Aydemir</a>
+    <nav class="nav" aria-label="Main">
+      <a href="/#finder">Apps</a>
+      <a href="/guides/">Guides</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/about/">About</a>
+      <a href="/about/#contact">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">Error 404</p>
+      <h1>This page moved, or never existed</h1>
+      <p class="lead">The link may be old or mistyped. Addresses on this site are case-sensitive: it's <code>/ATHA/</code> and <code>/DUMP/</code> in capitals, and <code>/solora/</code>, <code>/solo.swipe/</code> and <code>/solo.shots/</code> in lowercase.</p>
+      <div class="cta-row" style="margin-top:20px">
+        <a class="btn btn-primary" href="/">Go to the home page</a>
+        <a class="btn btn-ghost" href="/guides/">Browse the guides</a>
+      </div>
+    </div>
+
+    <section aria-labelledby="apps-title" style="padding-top:28px">
+      <h2 id="apps-title">Looking for one of the apps?</h2>
+      <div class="grid">
+        <a class="link-card" href="/ATHA/"><img src="/ATHA/appicon-128.webp" width="40" height="40" alt=""><div><strong>ATHA: Breathing Exercises</strong><span>Breathing exercises for sleep, stress and focus — calm in one tap.</span></div></a>
+        <a class="link-card" href="/solo.swipe/"><img src="/solo.swipe/appicon-128.webp" width="40" height="40" alt=""><div><strong>Solo.Swipe</strong><span>Swipe to clean your camera roll in 5-minute daily sessions.</span></div></a>
+        <a class="link-card" href="/DUMP/"><img src="/DUMP/appicon-128.webp" width="40" height="40" alt=""><div><strong>DUMP: Carousel &amp; Collage</strong><span>Photo dump &amp; carousel maker that picks your best shots for you.</span></div></a>
+        <a class="link-card" href="/solo.shots/"><img src="/solo.shots/appicon-128.webp" width="40" height="40" alt=""><div><strong>Solo.Shots</strong><span>Progress photos that line up, turned into a timelapse.</span></div></a>
+        <a class="link-card" href="/solora/"><img src="/solora/appicon-128.webp" width="40" height="40" alt=""><div><strong>Solora: AI Life Planner</strong><span>Role-based life planner: pick today's Big 3, keep habits going.</span></div></a>
+        <a class="link-card" href="/about/#legal"><img src="/assets/img/favicon-32.png" width="40" height="40" alt=""><div><strong>Privacy policies, terms &amp; support</strong><span>The official documents for every app, in one place.</span></div></a>
+      </div>
+    </section>
+
+    <section aria-labelledby="help-title" style="padding-top:20px">
+      <h2 id="help-title">Still stuck?</h2>
+      <p class="muted">Email <a href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a> and mention the link you tried; I'll fix it.</p>
+      <p class="muted" lang="tr">Türkçe: <a href="/tr/" hreflang="tr">Türkçe ana sayfa</a> · <a href="/tr/rehber/" hreflang="tr">Türkçe rehberler</a></p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="copyright">© 2026 Gül Eda Aydemir · <a href="/about/">About</a> · <a href="/about/#legal">Privacy &amp; terms</a> · <a href="https://apps.apple.com/us/developer/gul-eda-aydemir/id1889159460">App Store developer page</a></p>
+  </div>
+</footer>
+</body>
+</html>

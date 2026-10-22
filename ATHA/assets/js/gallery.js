@@ -115,7 +115,7 @@
     for (var j = 0; j < triggers.length; j++) {
       (function (position) {
         triggers[position].setAttribute('data-atha-bound', 'true');
-        triggers[position].addEventListener('click', function () { open(group, position); });
+        triggers[position].addEventListener('click', function (e) { e.preventDefault(); open(group, position); });
       })(j);
     }
   }

@@ -2,26 +2,141 @@
   "collection": "guides",
   "basePath": "guides/",
   "title": "Guides",
-  "description": "Practical answers for sleep, stress, focus and everyday calm.",
+  "description": "Answer-first breathing guides for calm, sleep and focus, plus one technique page, one honest comparison and one audience page.",
   "categories": [
-    { "id": "sleep",   "label": "Sleep",           "description": "Falling asleep, waking at night, winding down." },
-    { "id": "stress",  "label": "Stress & anxiety","description": "Calming down quickly and staying steady." },
-    { "id": "focus",   "label": "Focus & energy",  "description": "Attention, clarity and energy without caffeine." },
-    { "id": "habits",  "label": "Life upgrade",    "description": "Small daily practices that hold over time." },
-    { "id": "basics",  "label": "Breathing basics","description": "How breathing techniques actually work." }
+    {
+      "id": "sleep",
+      "label": "Sleep",
+      "description": "Falling asleep, waking at night, winding down."
+    },
+    {
+      "id": "stress",
+      "label": "Stress & anxiety",
+      "description": "Calming down quickly and staying steady."
+    },
+    {
+      "id": "focus",
+      "label": "Focus & energy",
+      "description": "Attention, clarity and energy without caffeine."
+    },
+    {
+      "id": "habits",
+      "label": "Life upgrade",
+      "description": "Small daily practices that hold over time."
+    },
+    {
+      "id": "basics",
+      "label": "Breathing basics",
+      "description": "How breathing techniques actually work."
+    }
   ],
   "items": [
+    {
+      "slug": "calm-down-fast",
+      "title": "How to calm down fast: a 60-second plan",
+      "summary": "Lengthen the exhale, ground yourself with 5-4-3-2-1, and know when it is more than stress. Free timer included.",
+      "category": "stress",
+      "tags": [
+        "anxiety",
+        "panic",
+        "calm down fast",
+        "5-4-3-2-1"
+      ],
+      "intent": "how to calm down fast",
+      "readMinutes": 7,
+      "updated": "2026-10-15",
+      "featured": true,
+      "order": 1,
+      "status": "published"
+    },
+    {
+      "slug": "calm-nerves-before-presentation",
+      "title": "How to calm nerves before a presentation",
+      "summary": "A 10-minute countdown for talks, interviews and big meetings: box breathing at T-10, one long exhale at T-0.",
+      "category": "stress",
+      "readMinutes": 6,
+      "updated": "2026-10-15",
+      "order": 2,
+      "status": "published",
+      "tags": [
+        "presentation",
+        "public speaking",
+        "interview",
+        "nerves"
+      ],
+      "intent": "calm nerves before a presentation",
+      "featured": false
+    },
+    {
+      "slug": "box-breathing",
+      "title": "Box breathing: how to do it (with a free timer)",
+      "summary": "In 4, hold 4, out 4, hold 4: the exact method, how long to keep going, and when it beats a long exhale.",
+      "category": "basics",
+      "readMinutes": 6,
+      "updated": "2026-10-15",
+      "order": 3,
+      "status": "published",
+      "path": "practices/box-breathing.html",
+      "tags": [
+        "box breathing",
+        "timer",
+        "focus"
+      ],
+      "intent": "how to do box breathing",
+      "featured": false
+    },
+    {
+      "slug": "woke-up-at-3am",
+      "title": "Woke up at 3am and can't get back to sleep?",
+      "summary": "No clock, no feed: breathe 6 in, 8 out with your eyes closed, then use the 20-minute rule. Plus the clock-change week.",
+      "category": "sleep",
+      "readMinutes": 6,
+      "updated": "2026-10-15",
+      "order": 4,
+      "status": "published",
+      "tags": [
+        "3am",
+        "night waking",
+        "fall back asleep",
+        "clock change"
+      ],
+      "intent": "woke up at 3am can't get back to sleep",
+      "featured": false
+    },
     {
       "slug": "cant-sleep-at-night",
       "title": "I can't sleep at night — what should I do?",
       "summary": "A step-by-step wind-down for when your body is tired but your mind will not stop.",
       "category": "sleep",
-      "tags": ["insomnia", "bedtime", "racing thoughts", "can't sleep"],
+      "tags": [
+        "insomnia",
+        "bedtime",
+        "racing thoughts",
+        "can't sleep"
+      ],
       "intent": "I can't sleep, what should I do",
       "readMinutes": 7,
-      "updated": "2026-09-12",
+      "updated": "2026-10-15",
       "featured": true,
-      "order": 1,
+      "order": 5,
+      "status": "published"
+    },
+    {
+      "slug": "4-7-8-breathing-for-sleep",
+      "title": "4-7-8 breathing for sleep: how to do it properly",
+      "summary": "The exact count, how many cycles (with the maths), what the evidence says, and a free timer.",
+      "category": "sleep",
+      "tags": [
+        "4-7-8",
+        "technique",
+        "sleep",
+        "how to"
+      ],
+      "intent": "how to do 4-7-8 breathing",
+      "readMinutes": 7,
+      "updated": "2026-10-15",
+      "featured": true,
+      "order": 6,
       "status": "published"
     },
     {
@@ -29,25 +144,17 @@
       "title": "Breathing techniques to fall asleep faster",
       "summary": "Which patterns actually help, why the exhale does the work, and how long to practise.",
       "category": "sleep",
-      "tags": ["4-7-8", "exhale", "sleep", "breathing exercise"],
+      "tags": [
+        "4-7-8",
+        "exhale",
+        "sleep",
+        "breathing exercise"
+      ],
       "intent": "breathing exercise to fall asleep",
       "readMinutes": 6,
-      "updated": "2026-09-12",
+      "updated": "2026-10-15",
       "featured": true,
-      "order": 2,
-      "status": "published"
-    },
-    {
-      "slug": "4-7-8-breathing-for-sleep",
-      "title": "4-7-8 breathing for sleep: how to do it properly",
-      "summary": "The exact count, how many cycles, what it feels like, and the mistakes that stop it working.",
-      "category": "sleep",
-      "tags": ["4-7-8", "technique", "sleep", "how to"],
-      "intent": "how to do 4-7-8 breathing",
-      "readMinutes": 6,
-      "updated": "2026-09-12",
-      "featured": true,
-      "order": 3,
+      "order": 7,
       "status": "published"
     },
     {
@@ -55,44 +162,85 @@
       "title": "How to stop racing thoughts at bedtime",
       "summary": "Why your brain starts working the moment you lie down, and how to give it something else to do.",
       "category": "sleep",
-      "tags": ["racing thoughts", "overthinking", "bedtime", "anxiety"],
+      "tags": [
+        "racing thoughts",
+        "overthinking",
+        "bedtime",
+        "anxiety"
+      ],
       "intent": "how to stop overthinking at night",
       "readMinutes": 6,
-      "updated": "2026-09-12",
-      "order": 4,
-      "status": "published"
+      "updated": "2026-10-15",
+      "order": 8,
+      "status": "published",
+      "featured": false
     },
     {
       "slug": "night-time-wind-down-routine",
       "title": "A wind-down routine that takes ten minutes",
       "summary": "The shortest evening routine that still works — and why long ones get abandoned.",
       "category": "sleep",
-      "tags": ["routine", "evening", "habits", "sleep hygiene"],
+      "tags": [
+        "routine",
+        "evening",
+        "habits",
+        "sleep hygiene"
+      ],
       "intent": "bedtime routine to sleep better",
       "readMinutes": 6,
-      "updated": "2026-09-12",
-      "order": 5,
-      "status": "published"
+      "updated": "2026-10-15",
+      "order": 9,
+      "status": "published",
+      "featured": false
     },
     {
-      "slug": "calm-down-fast",
-      "title": "How to calm down fast when anxiety spikes",
-      "summary": "What to do in the first sixty seconds, and what to do after the spike passes.",
-      "category": "stress",
-      "tags": ["anxiety", "panic", "quick relief"],
-      "intent": "how to calm down quickly",
+      "slug": "creators-and-remote-workers",
+      "title": "Breathing resets for creators and remote workers",
+      "summary": "Calm before you record, a 1-minute reset between deep-work blocks, and a clean end to the working day.",
+      "category": "focus",
       "readMinutes": 5,
-      "updated": "2026-09-12",
-      "featured": true,
+      "updated": "2026-10-15",
       "order": 10,
-      "status": "draft"
+      "status": "published",
+      "path": "for/creators-and-remote-workers.html",
+      "tags": [
+        "creators",
+        "remote work",
+        "focus",
+        "breaks"
+      ],
+      "intent": "breathing breaks for creators and remote workers",
+      "featured": false
+    },
+    {
+      "slug": "free-breathing-apps-no-subscription",
+      "title": "Free breathing apps with no subscription, compared",
+      "summary": "Six iPhone breathing apps checked on price, ads, privacy label, Apple Watch and languages (15 Oct 2026).",
+      "category": "basics",
+      "readMinutes": 8,
+      "updated": "2026-10-15",
+      "order": 11,
+      "status": "published",
+      "path": "compare/free-breathing-apps-no-subscription.html",
+      "tags": [
+        "comparison",
+        "free",
+        "no subscription",
+        "privacy"
+      ],
+      "intent": "best free breathing app no subscription",
+      "featured": false
     },
     {
       "slug": "improve-my-life-daily-habits",
       "title": "I want to improve my life — where do I actually start?",
       "summary": "Why a 60-second daily practice outperforms an ambitious routine you abandon in a week.",
       "category": "habits",
-      "tags": ["habits", "routine", "consistency"],
+      "tags": [
+        "habits",
+        "routine",
+        "consistency"
+      ],
       "intent": "I want to improve my life",
       "readMinutes": 7,
       "updated": "2026-09-12",

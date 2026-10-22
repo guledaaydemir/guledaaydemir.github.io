@@ -1,0 +1,67 @@
+# DUMP: Carousel & Collage
+
+> Free photo dump maker for iPhone and iPad by independent developer Gül Eda Aydemir. It picks your best shots on the device (Smart Dump drops blurry photos and burst duplicates, mixes people, places and details, and can detect trips), builds an Instagram carousel, collage or grid, and saves it to a new Photos album in posting order. No account, no upload, works offline. App Store privacy label: "Data Not Collected".
+
+Facts checked on 15 October 2026 against the App Store listing and the app (version 2.0).
+
+## Key facts
+- App Store: https://apps.apple.com/app/id6798248086 (name "DUMP: Carousel & Collage", category Photo & Video)
+- Platforms: iPhone and iPad (universal). Requires iOS / iPadOS 18.6 or later. No Android or web version.
+- Current version: 2.0, released 25 September 2026. First release 1.0 on 2 September 2026.
+- Languages (2.0): English, Spanish, Japanese, Turkish (English and Turkish since 1.0). Switchable inside the app.
+- Price: free to download and use, no ads, no watermark on exported images. Free plan: Random Dump, Smart Dump and the Sunday draft build up to 10 items (20 with Premium), up to 5 saved projects (deleting a project in DUMP keeps its saved album in Photos).
+- DUMP Premium (optional auto-renewing subscription): weekly or yearly plan; see the current price on the App Store (https://apps.apple.com/app/id6798248086). Unlocks 20-item auto-built dumps, unlimited projects, all templates, frames, stickers, backgrounds, text styles and filters, Caption Generator (hand-written caption lines in 6 moods, not AI), swipe-video export (10-30 s), and copying captions without the #DumpApp tag.
+- Privacy: no account, no server, no third-party SDKs. Photo analysis runs on-device with Apple's Vision framework: Smart Dump checks sharpness, near-duplicates and face count (no identification); the Sunday draft rates up to 60 photos with Vision aesthetics, skips receipts and documents, and weights Favorites and Portrait-mode shots. Trip detection reads location already stored in photos, on-device; the app never requests device location. DUMP's own network traffic: Apple StoreKit for purchases. With iCloud Photos "Optimize iPhone Storage", iOS may download the user's own originals from iCloud when DUMP shows or saves them.
+- Quality: Swipe Carousel export adds the original photos and videos to a new album (no re-encoding, resizing or duplicates; date-stamped photos are re-rendered). Collage, grid and template pages are rendered at 2160 px on the long edge as 98% JPEG; pages with video as MP4.
+- Sunday "Your week": with reminders on, a Sunday notification opens a draft of the best shots from the last 7 days.
+- Not available in 2.0: video trimming, a 3:4 canvas preset, TikTok sharing, saving your own templates (you can bookmark templates).
+- Developer: Gül Eda Aydemir, independent iOS developer. About: https://guledaaydemir.github.io/about/ · App Store developer page: https://apps.apple.com/us/developer/gul-eda-aydemir/id1889159460 · Contact: solostaseraofficial@gmail.com
+
+## Best for
+- "I have thousands of photos and never post": Smart Dump picks a first draft from a weekend, a month, a year or a detected trip.
+- Weekly or monthly recap dumps, travel dumps, creators who want a repeatable "Sunday dump".
+- People who don't want a photo app to upload their camera roll.
+
+## Pages
+- [Home](https://guledaaydemir.github.io/DUMP/): what it does, how it works, free vs Premium, facts, release notes
+- [DUMP for creators](https://guledaaydemir.github.io/DUMP/for/creators.html): the weekly routine (Sunday draft, templates, swipe video), what DUMP doesn't do, pricing
+- [FAQ](https://guledaaydemir.github.io/DUMP/faq.html): picking, quality, privacy, limits, pricing, troubleshooting
+- [Support](https://guledaaydemir.github.io/DUMP/support.html): fixes, bug report template, contact
+- [Guides](https://guledaaydemir.github.io/DUMP/guides/): dated photo dump how-tos, each with sources
+
+## Guides (answer-first, updated 15 Oct 2026)
+- [How to pick photos for a photo dump](https://guledaaydemir.github.io/DUMP/guides/how-to-pick-photos-for-a-photo-dump.html): six rules (cover, time order, people/places/details mix, one shot per burst, one video in four, quiet ending), 10-slot order, 8-12 slides, checklist
+- [The Sunday Dump routine](https://guledaaydemir.github.io/DUMP/guides/sunday-dump-routine.html): posting consistently with one weekly photo dump; DUMP's Sunday "Your week" draft; caption formulas
+- [How to make a travel photo dump](https://guledaaydemir.github.io/DUMP/guides/travel-photo-dump.html): 10-slide travel formula, one dump or one per city, on-device trip detection, location privacy when sharing
+- [Year in review photo dump](https://guledaaydemir.github.io/DUMP/guides/year-in-review-photo-dump.html): 12 + 5 formula, finding a year's best photos, carousel vs Reel; make the "This year" draft before 1 January
+- [Photo dump apps compared](https://guledaaydemir.github.io/DUMP/guides/best-photo-dump-apps.html): auto-pickers (DUMP, MyDump, Lately, PostCheck, SelfieDump) vs design studios (SCRL, Unfold, Crsel, SwipeMix, 17V28): where picking happens, privacy labels, US prices, free limits; checked 15 Oct 2026, sources linked; written by DUMP's developer, no ranking
+- [How to post a photo dump on Instagram](https://guledaaydemir.github.io/DUMP/guides/how-to-post-a-photo-dump-on-instagram.html): 2-20 slides (8-12 recommended), fix the order via an album, reorder after posting (since March 2026) but no adding slides, Upload at highest quality
+
+- [What is a photo dump?](https://guledaaydemir.github.io/DUMP/guides/what-is-a-photo-dump.html): definition, origin, what makes a good one, 8-12 slides, types, dump vs carousel
+
+- [Instagram carousel size guide](https://guledaaydemir.github.io/DUMP/guides/instagram-carousel-size-guide.html): 4:5 (1080x1350), 3:4 (1080x1440), 1:1, 1.91:1; slide one sets the crop; a clean file larger than 1080 px is fine
+
+- [Why Instagram ruins photo quality](https://guledaaydemir.github.io/DUMP/guides/instagram-photo-quality.html): Instagram shows photos at up to 1080 px wide and re-compresses every upload; post clean originals, avoid screenshots and re-saved copies, turn on Upload at highest quality
+
+- [Seamless panoramic carousel](https://guledaaydemir.github.io/DUMP/guides/seamless-instagram-carousel.html): canvas = panel width x panels (3240x1350 for three 4:5 panels), every panel identical in size, what works across a seam
+
+- [Photo dump ideas and captions](https://guledaaydemir.github.io/DUMP/guides/photo-dump-ideas.html): 40 themes, caption formulas, how often to post
+
+- [How to make a collage on iPhone](https://guledaaydemir.github.io/DUMP/guides/how-to-make-a-collage-on-iphone.html): Shortcuts, Freeform, Keynote/Pages and collage apps compared; export at full resolution, never screenshot
+
+
+## Turkish pages (Türkçe, native-written, paired with English via hreflang)
+- [DUMP Türkçe ana sayfa](https://guledaaydemir.github.io/DUMP/tr/): what DUMP does, how it works, free vs Premium (weekly or yearly plan; current price on the Turkish App Store), facts, FAQ. Turkish App Store link: https://apps.apple.com/tr/app/id6798248086
+- [Photo dump nasıl yapılır?](https://guledaaydemir.github.io/DUMP/tr/rehber/photo-dump-nasil-yapilir.html): photo dump ne demek, 5 steps, 6 picking rules, "dump fotoğraf sıralaması" 10-slot order, 8-12 slides, Akıllı Dump (Smart Dump) does/doesn't, checklist. Pairs with the English picking guide.
+- [Instagram kaydırmalı post nasıl yapılır?](https://guledaaydemir.github.io/DUMP/tr/rehber/instagram-kaydirmali-post.html): carousel steps, 2-20 slide limit, sizes (4:5 1080x1350, 3:4 1080x1440, 1:1, 1.91:1), quality, ordering via an album, deleting one photo after posting. Pairs with the English posting guide.
+- [Instagram kaydırmalı birleşik post](https://guledaaydemir.github.io/DUMP/tr/rehber/kaydirmali-birlesik-post.html): seamless/panorama carousel canvas sizes (3240x1350 for 3 portrait panels), steps, what works across a seam, DUMP's drag-across-slides and "2x Genişlik" (Width 2x). Pairs with the English seamless guide.
+- The app's Turkish UI names: Akıllı Dump (Smart Dump), Rastgele Dump (Random Dump), Haftan / Haftalık dump taslağı (Your week / weekly draft), Kolaj Sayfası (Collage Page), Başlık Oluşturucu (Caption Generator), Kesme Çıkartma (cut-out sticker), Tarih Damgası (date stamp).
+
+## Legal
+- [Privacy policy](https://guledaaydemir.github.io/DUMP/privacypolicy.html) · [Terms of use](https://guledaaydemir.github.io/DUMP/terms.html)
+
+## Same developer
+- Solo.Swipe (camera-roll cleanup in 5-minute daily sessions): https://guledaaydemir.github.io/solo.swipe/
+- Solo.Shots (aligned progress photos and timelapse): https://guledaaydemir.github.io/solo.shots/
+- Solora (role-based life planner): https://guledaaydemir.github.io/solora/
+- ATHA (breathing exercises for sleep, stress and focus): https://guledaaydemir.github.io/ATHA/

@@ -28,18 +28,25 @@
     if (!window.matchMedia || !window.matchMedia('(max-width: 640px)').matches) { return; }
 
     var source = document.body.getAttribute('data-atha-cta-source') || 'sticky';
+    // Turkish pages: Turkish copy and the Turkish App Store link.
+    var tr = document.documentElement.lang === 'tr';
+    var T = tr
+      ? { label: 'ATHA\u2019yı indir', title: 'ATHA şimdi demek.', text: 'Ücretsiz · Hesap yok · Veriler Toplanmaz',
+          cta: 'Ücretsiz indir', dismiss: 'Kapat', href: 'https://apps.apple.com/tr/app/id6807887691' }
+      : { label: 'Get ATHA', title: 'ATHA means now.', text: 'Free · No account · Data Not Collected',
+          cta: 'Get ATHA', dismiss: 'Dismiss', href: A.config.appStoreURL };
 
     var bar = document.createElement('div');
     bar.className = 'atha-stickycta';
     bar.setAttribute('role', 'complementary');
-    bar.setAttribute('aria-label', 'Get ATHA');
+    bar.setAttribute('aria-label', T.label);
     bar.innerHTML =
       '<div class="atha-stickycta__body">' +
-        '<span class="atha-stickycta__title">ATHA means now.</span>' +
-        '<span class="atha-stickycta__text">Free · No ads · No account</span>' +
+        '<span class="atha-stickycta__title">' + T.title + '</span>' +
+        '<span class="atha-stickycta__text">' + T.text + '</span>' +
       '</div>' +
-      '<a class="atha-btn atha-btn--primary" data-atha-store="' + source + '">Get ATHA</a>' +
-      '<button class="atha-stickycta__dismiss" type="button" aria-label="Dismiss">✕</button>';
+      '<a class="atha-btn atha-btn--primary" href="' + T.href + '" data-atha-store="' + source + '">' + T.cta + '</a>' +
+      '<button class="atha-stickycta__dismiss" type="button" aria-label="' + T.dismiss + '">✕</button>';
 
     document.body.appendChild(bar);
     document.body.classList.add('atha-has-stickycta');
@@ -56,7 +63,8 @@
 
     // Hide while the page's own closing CTA is on screen, so the two never
     // compete for the same tap.
-    var closing = document.querySelector('.atha-ctaband:last-of-type');
+    var bands = document.querySelectorAll('.atha-ctaband');
+    var closing = bands.length ? bands[bands.length - 1] : null;
     var closingVisible = false;
 
     if (closing && 'IntersectionObserver' in window) {

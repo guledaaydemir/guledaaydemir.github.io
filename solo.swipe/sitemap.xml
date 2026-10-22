@@ -1,159 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Solo.Swipe sitemap
-  Base URL: https://guledaaydemir.github.io/solo.swipe/
-  Submit at: https://search.google.com/search-console  and  https://www.bing.com/webmasters
-  Update <lastmod> whenever a page's content meaningfully changes.
--->
+<!-- Solo.Swipe sitemap. Update <lastmod> only when a page's content meaningfully changes. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
-  <!-- Homepage -->
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://guledaaydemir.github.io/solo.swipe/</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/solo.swipe/raccoon_hero.jpg</image:loc>
-      <image:title>Detective Raccoon, the Solo.Swipe mascot</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/solo.swipe/1.jpg</image:loc>
-      <image:title>Solo.Swipe iPhone photo cleaner app screen</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/solo.swipe/2.jpg</image:loc>
-      <image:title>Solo.Swipe swipe-based photo review on iPhone</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/solo.swipe/3.jpg</image:loc>
-      <image:title>Solo.Swipe photo cleanup categories on iPhone</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/solo.swipe/4.jpg</image:loc>
-      <image:title>Solo.Swipe photo library cleaning screen on iPhone</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/solo.swipe/5.jpg</image:loc>
-      <image:title>Solo.Swipe cleaning progress screen on iPhone</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/solo.swipe/6.jpg</image:loc>
-      <image:title>Solo.Swipe photo organizer screen on iPhone</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/solo.swipe/7.jpg</image:loc>
-      <image:title>Solo.Swipe iPhone storage cleanup screen</image:title>
-    </image:image>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og-image.jpg</image:loc><image:title>Solo.Swipe: swipe through the clutter, keep what matters</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-1-1206.webp</image:loc><image:title>Solo.Swipe swipe review: left to delete, right to keep</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-5-1206.webp</image:loc><image:title>Solo.Swipe Smart Modes menu</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-2-1206.webp</image:loc><image:title>Solo.Swipe duplicate pair screen with Merge and Delete Both</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-3-1206.webp</image:loc><image:title>Solo.Swipe list of photo types to clean</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-4-1206.webp</image:loc><image:title>Solo.Swipe Created Albums tab</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-7-1206.webp</image:loc><image:title>Solo.Swipe 7-day cleaning streak screen</image:title></image:image>
   </url>
-
-  <!-- Creator landing page -->
   <url>
-    <loc>https://guledaaydemir.github.io/solo.swipe/for/content-creators/</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://guledaaydemir.github.io/solo.swipe/features/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-5-1206.webp</image:loc><image:title>Solo.Swipe Smart Modes menu</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-2-1206.webp</image:loc><image:title>Solo.Swipe duplicate pair screen</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-4-1206.webp</image:loc><image:title>Solo.Swipe Created Albums tab</image:title></image:image>
   </url>
-
-  <!-- Influencer landing page -->
   <url>
-    <loc>https://guledaaydemir.github.io/solo.swipe/for/influencers/</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://guledaaydemir.github.io/solo.swipe/pricing/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
-
-  <!-- Camera Roll Reset pillar page -->
   <url>
-    <loc>https://guledaaydemir.github.io/solo.swipe/camera-roll-reset/</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://guledaaydemir.github.io/solo.swipe/support/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
-
-  <!-- App information / entity page -->
   <url>
     <loc>https://guledaaydemir.github.io/solo.swipe/about.html</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/solo.swipe/appicon.png</image:loc>
-      <image:title>Solo.Swipe app icon</image:title>
-    </image:image>
+    <lastmod>2026-10-15</lastmod>
   </url>
-
-  <!-- Guides hub -->
-  <url>
-    <loc>https://guledaaydemir.github.io/solo.swipe/guides/</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Guide: creator camera roll cleanup -->
-  <url>
-    <loc>https://guledaaydemir.github.io/solo.swipe/guides/camera-roll-cleanup-for-content-creators/</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Guide: cleaning a large library -->
-  <url>
-    <loc>https://guledaaydemir.github.io/solo.swipe/guides/how-to-clean-iphone-photo-library.html</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Guide: freeing storage -->
-  <url>
-    <loc>https://guledaaydemir.github.io/solo.swipe/guides/free-up-iphone-storage-photos.html</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Guide: blurry and duplicate photos -->
-  <url>
-    <loc>https://guledaaydemir.github.io/solo.swipe/guides/find-blurry-and-duplicate-photos-iphone.html</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Guide: iPhone digital declutter -->
-  <url>
-    <loc>https://guledaaydemir.github.io/solo.swipe/guides/digital-declutter-iphone/</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Guide: Sunday digital reset -->
-  <url>
-    <loc>https://guledaaydemir.github.io/solo.swipe/guides/sunday-digital-reset/</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Developer story -->
-  <url>
-    <loc>https://guledaaydemir.github.io/solo.swipe/story/why-i-built-solo-swipe/</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- Privacy policy -->
   <url>
     <loc>https://guledaaydemir.github.io/solo.swipe/privacy_policy.html</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-10-15</lastmod>
   </url>
-
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/camera-roll-reset/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/for/content-creators/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/for/influencers/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/camera-roll-cleanup-for-content-creators/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-1-1206.webp</image:loc><image:title>Swiping a photo left to delete and right to keep in Solo.Swipe</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-4-1206.webp</image:loc><image:title>Albums filed while swiping in Solo.Swipe</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/how-to-clean-iphone-photo-library.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/how-to-clean-iphone-photo-library.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/galeri-temizleme/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/how-to-clean-iphone-photo-library.html"/>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/free-up-iphone-storage-photos.html</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/find-blurry-and-duplicate-photos-iphone.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/find-blurry-and-duplicate-photos-iphone.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/bulanik-ve-kopya-fotograflar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/find-blurry-and-duplicate-photos-iphone.html"/>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/not-enough-storage-for-ios-update/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/not-enough-storage-for-ios-update/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-depolama-dolu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/not-enough-storage-for-ios-update/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/ios-update-storage.jpg</image:loc><image:title>Not enough storage to update iPhone: free space in 10 minutes</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-3-list-929.webp</image:loc><image:title>Solo.Swipe photo types list including Videos and Screenshots</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/find-blurry-photos-iphone/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/blurry-photos.jpg</image:loc><image:title>How to find and delete blurry photos on iPhone</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-5-1206.webp</image:loc><image:title>Solo.Swipe Smart Modes menu with Blurry Photos</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/closed-eyes-photos-iphone/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/closed-eyes.jpg</image:loc><image:title>Delete photos where someone blinked, safely</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-5-1206.webp</image:loc><image:title>Solo.Swipe Smart Modes menu with Closed Eyes</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/clean-up-albums-iphone/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/albums.jpg</image:loc><image:title>Delete empty albums on iPhone and keep your photos</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-4-1206.webp</image:loc><image:title>Solo.Swipe albums list with photo counts</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/compare/swipe-photo-cleaners/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/compare.jpg</image:loc><image:title>Swipe photo cleaner apps compared, October 2026</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/for/parents/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/parents.jpg</image:loc><image:title>Too many photos of your kids? Keep the best ones</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-4-1206.webp</image:loc><image:title>Solo.Swipe albums filed while swiping</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-7-1206.webp</image:loc><image:title>Solo.Swipe 7-day cleaning streak</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/for/travelers/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/travelers.jpg</image:loc><image:title>Sort vacation photos on iPhone within a week</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-4-1206.webp</image:loc><image:title>Solo.Swipe albums list with a Trip to Nice album</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-3-list-929.webp</image:loc><image:title>Solo.Swipe photo types list</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/digital-declutter-iphone/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/sunday-digital-reset/</loc>
+    <lastmod>2026-09-04</lastmod>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/story/why-i-built-solo-swipe/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/tr/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/tr-home.jpg</image:loc><image:title>Solo.Swipe: galerini her gün 5 dakikada toparla</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-2-1206.webp</image:loc><image:title>Solo.Swipe Türkçe kopya çifti ekranı: Birleştir ve İkisini de Sil</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-depolama-dolu/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/not-enough-storage-for-ios-update/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-depolama-dolu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/not-enough-storage-for-ios-update/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/tr-depolama.jpg</image:loc><image:title>iPhone depolama dolu mu? Güncelleme için 10 dakikada yer aç</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/tr/rehber/galeri-temizleme/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/how-to-clean-iphone-photo-library.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/galeri-temizleme/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/how-to-clean-iphone-photo-library.html"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/tr-galeri.jpg</image:loc><image:title>iPhone galeri temizleme: binlerce fotoğrafı bitirme planı</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/tr/rehber/bulanik-ve-kopya-fotograflar/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/find-blurry-and-duplicate-photos-iphone.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/bulanik-ve-kopya-fotograflar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/find-blurry-and-duplicate-photos-iphone.html"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/tr-bulanik.jpg</image:loc><image:title>iPhone’da bulanık ve kopya fotoğrafları bulup silme</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-2-1206.webp</image:loc><image:title>Solo.Swipe Türkçe kopya çifti ekranı</image:title></image:image>
+  </url>
 </urlset>

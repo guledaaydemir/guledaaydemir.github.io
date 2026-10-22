@@ -1338,3 +1338,448 @@ body.atha-lightbox-open { overflow: hidden; }
   .atha-devbanner { flex-direction: column; align-items: flex-start; }
   .atha-devbanner .atha-btn { width: 100%; }
 }
+/* --------------------------------------------------------------------------
+   22. Static shell + conversion components (2026-10 refresh)
+   Header, footer and every list are now plain HTML so crawlers, AI
+   assistants and no-JS visitors see the same page as everyone else.
+   -------------------------------------------------------------------------- */
+
+/* Header: download CTA always visible, menu toggle on phones */
+.atha-header__actions { display: flex; align-items: center; gap: var(--atha-s-2); }
+.atha-header__get { display: none; padding: 9px 14px; font-size: 13px; border-radius: var(--atha-r-sm); }
+.atha-nav__cta { padding: 10px 16px; font-size: 13px; border-radius: var(--atha-r-sm); }
+@media (max-width: 640px) {
+  .atha-header__get { display: inline-flex; }
+  .atha-nav .atha-nav__cta { display: none; }
+}
+
+/* Store button + QR ---------------------------------------------------------- */
+.atha-store {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 12px 20px 12px 16px;
+  border-radius: var(--atha-r-md);
+  background: #fff; color: #0d0b17;
+  border: 1px solid rgba(255,255,255,.85);
+  text-decoration: none; line-height: 1.1;
+  transition: transform var(--atha-dur-base) var(--atha-ease-spring), box-shadow var(--atha-dur-base) var(--atha-ease);
+}
+.atha-store:hover { text-decoration: none; transform: translateY(-2px); box-shadow: 0 12px 30px rgba(245,166,129,.22); }
+.atha-store__icon { width: 26px; height: 26px; flex-shrink: 0; }
+.atha-store__text { display: grid; text-align: left; }
+.atha-store__small { font-size: 11px; font-weight: 500; letter-spacing: .02em; color: #3a3550; }
+.atha-store__big { font-size: 18px; font-weight: 650; letter-spacing: -.01em; }
+
+.atha-getrow { display: flex; align-items: center; gap: var(--atha-s-5); flex-wrap: wrap; margin-top: var(--atha-s-5); }
+.atha-getrow--center { justify-content: center; }
+.atha-qr {
+  display: flex; align-items: center; gap: var(--atha-s-3);
+  padding: 10px 14px 10px 10px;
+  border: 1px solid var(--atha-line); border-radius: var(--atha-r-md);
+  background: var(--atha-surface);
+}
+.atha-qr img { width: 76px; height: 76px; border-radius: 8px; background: #fff; padding: 4px; }
+.atha-qr p { margin: 0; font-size: var(--atha-fs-small); color: var(--atha-muted); max-width: 150px; line-height: 1.4; }
+.atha-qr strong { display: block; color: var(--atha-text); font-weight: 560; }
+@media (max-width: 860px) { .atha-qr { display: none; } }
+
+/* Hero (two columns on desktop) --------------------------------------------- */
+.atha-hero2 {
+  display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: var(--atha-s-7); align-items: center;
+  margin: 0 0 var(--atha-s-7);
+}
+.atha-hero2 h1 { font-size: clamp(40px, 6vw, 68px); font-weight: 360; letter-spacing: -.045em; line-height: 1.02; margin: 0 0 var(--atha-s-4); }
+.atha-hero2__lead { font-size: clamp(17px, 2vw, 20px); color: var(--atha-text-soft); margin: 0 0 var(--atha-s-3); max-width: 560px; }
+.atha-hero2__media { display: flex; justify-content: center; }
+.atha-microfacts { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: var(--atha-s-5) 0 0; }
+.atha-microfacts li {
+  margin: 0; padding: 6px 12px; font-size: 13px; color: var(--atha-text-soft);
+  border: 1px solid var(--atha-line); border-radius: var(--atha-r-pill); background: var(--atha-surface);
+}
+.atha-microfacts li strong { color: #fff; font-weight: 600; }
+
+/* Phone frame for real screenshots */
+.atha-phone {
+  margin: 0; width: min(300px, 78vw);
+  padding: 9px; border-radius: 46px;
+  background: linear-gradient(160deg, rgba(255,255,255,.16), rgba(255,255,255,.04));
+  border: 1px solid var(--atha-line-strong);
+  box-shadow: var(--atha-shadow-soft), 0 0 60px rgba(146,122,255,.18);
+}
+.atha-phone img { width: 100%; height: auto; border-radius: 38px; display: block; background: #0b0b18; }
+.atha-phone--sm { width: min(230px, 64vw); border-radius: 38px; padding: 7px; }
+.atha-phone--sm img { border-radius: 31px; }
+.atha-phone figcaption { text-align: center; font-size: var(--atha-fs-small); color: var(--atha-muted); margin-top: var(--atha-s-3); }
+
+/* Trust strip ----------------------------------------------------------------- */
+.atha-trust {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--atha-s-3);
+  list-style: none; padding: 0; margin: 0 0 var(--atha-s-8);
+}
+.atha-trust li {
+  margin: 0; padding: 18px 18px; border: 1px solid var(--atha-line); border-radius: var(--atha-r-md);
+  background: var(--atha-surface); font-size: 14px; color: var(--atha-muted);
+}
+.atha-trust strong { display: block; color: #fff; font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+.atha-trust a { color: var(--atha-peach-2); }
+
+/* How it works ---------------------------------------------------------------- */
+.atha-how { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--atha-s-5); list-style: none; padding: 0; margin: var(--atha-s-5) 0 0; counter-reset: atha-how; }
+.atha-how > li { margin: 0; counter-increment: atha-how; display: flex; flex-direction: column; gap: var(--atha-s-4); }
+.atha-how h3 { margin: 0 0 6px; font-size: 19px; }
+.atha-how h3::before {
+  content: counter(atha-how); display: inline-grid; place-items: center;
+  width: 28px; height: 28px; margin-right: 10px; border-radius: 50%;
+  background: rgba(143,120,255,.16); color: #d4c6ff; font-size: 14px; vertical-align: 2px;
+}
+.atha-how p { margin: 0; font-size: 15px; }
+.atha-how .atha-phone { align-self: center; }
+
+/* Outcome rows (the service, not the feature list) --------------------------- */
+.atha-outcomes { display: grid; gap: var(--atha-s-7); margin-top: var(--atha-s-6); }
+.atha-outcome { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 300px); gap: var(--atha-s-7); align-items: center; }
+.atha-outcome:nth-child(even) { grid-template-columns: minmax(0, 300px) minmax(0, 1fr); }
+.atha-outcome:nth-child(even) .atha-outcome__media { order: -1; }
+.atha-outcome__media { display: flex; justify-content: center; }
+.atha-outcome h3 { font-size: clamp(22px, 2.6vw, 27px); margin: 0 0 var(--atha-s-3); color: #fff; }
+.atha-outcome ul { margin: var(--atha-s-3) 0 var(--atha-s-3); }
+.atha-outcome li { font-size: 15px; }
+.atha-outcome li strong { color: #fff; font-weight: 600; }
+.atha-outcome__link { font-size: var(--atha-fs-small); }
+
+/* Generic tables: never push the page sideways on phones */
+.atha-tablewrap { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: var(--atha-s-4) 0; }
+.atha-tablewrap .atha-pattern { margin: 0; min-width: 520px; }
+.atha-pattern caption { text-align: left; padding-bottom: var(--atha-s-2); font-size: var(--atha-fs-small); color: var(--atha-muted-2); }
+
+/* Facts box ------------------------------------------------------------------- */
+.atha-factbox { border: 1px solid rgba(189,140,255,.18); border-radius: var(--atha-r-lg); background: var(--atha-grad-panel); padding: 26px 28px; }
+.atha-factbox dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 var(--atha-s-6); margin: 0; }
+.atha-factbox div { padding: 12px 0; border-bottom: 1px solid var(--atha-line); }
+.atha-factbox dt { font-size: var(--atha-fs-micro); letter-spacing: .14em; text-transform: uppercase; color: var(--atha-muted-2); margin-bottom: 3px; }
+.atha-factbox dd { margin: 0; color: var(--atha-text-soft); font-size: 15px; }
+.atha-factbox dd strong { color: #fff; font-weight: 600; }
+.atha-factbox__note { margin: var(--atha-s-4) 0 0; font-size: var(--atha-fs-small); color: var(--atha-muted-2); }
+
+/* What's new / changelog */
+.atha-changelog { list-style: none; padding: 0; margin: var(--atha-s-4) 0 0; display: grid; gap: var(--atha-s-3); }
+.atha-changelog li { margin: 0; padding: 18px 20px; border: 1px solid var(--atha-line); border-radius: var(--atha-r-md); background: var(--atha-surface); }
+.atha-changelog strong { color: #fff; }
+.atha-changelog p { margin: 6px 0 0; font-size: 15px; }
+
+/* Byline + sources ------------------------------------------------------------ */
+.atha-byline { font-size: var(--atha-fs-small); color: var(--atha-muted); margin: 0 0 var(--atha-s-3); }
+.atha-byline a { color: var(--atha-peach-2); }
+.atha-sources { font-size: var(--atha-fs-small); color: var(--atha-muted-2); }
+.atha-sources ol, .atha-sources ul { padding-left: 20px; color: var(--atha-muted); }
+.atha-sources li { margin: 6px 0; }
+.atha-related { list-style: none; padding: 0; margin: var(--atha-s-4) 0 0; display: grid; gap: var(--atha-s-2); }
+.atha-related li { margin: 0; }
+
+/* Static cards (replacing JS collections) */
+.atha-cards { list-style: none; padding: 0; margin: 0; }
+.atha-cards > li { margin: 0; display: flex; }
+.atha-cards > li > .atha-card { width: 100%; }
+.atha-card__meta--top { display: block; margin: 0 0 var(--atha-s-2); }
+
+/* Footer: more apps ----------------------------------------------------------- */
+.atha-footer { padding-top: var(--atha-s-7); }
+.atha-footer__title { font-size: 15px; font-weight: 600; color: var(--atha-text); letter-spacing: 0; margin: 0 0 var(--atha-s-3); }
+.atha-morapps { list-style: none; padding: 0; margin: 0 0 var(--atha-s-6); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--atha-s-3); }
+.atha-morapps li { margin: 0; display: flex; }
+.atha-morapp {
+  display: flex; gap: 12px; align-items: flex-start; width: 100%;
+  padding: 14px; border: 1px solid var(--atha-line); border-radius: var(--atha-r-md);
+  background: var(--atha-surface); color: var(--atha-muted); text-decoration: none; font-size: 13px; line-height: 1.45;
+}
+.atha-morapp:hover { text-decoration: none; border-color: rgba(239,143,213,.28); }
+.atha-morapp img { width: 44px; height: 44px; border-radius: 11px; flex-shrink: 0; }
+.atha-morapp strong { display: block; color: var(--atha-text); font-size: 14px; font-weight: 600; margin-bottom: 2px; }
+.atha-footer__meta { display: grid; gap: 6px; }
+.atha-footer__meta a { color: var(--atha-muted); }
+.atha-footer__links { row-gap: 10px; }
+
+@media (max-width: 860px) {
+  .atha-hero2 { grid-template-columns: 1fr; gap: var(--atha-s-6); text-align: left; }
+  .atha-trust { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .atha-how { grid-template-columns: 1fr; gap: var(--atha-s-6); }
+  .atha-how > li { display: grid; grid-template-columns: minmax(0, 1fr) 150px; align-items: center; gap: var(--atha-s-4); }
+  .atha-how .atha-phone { order: 2; width: 150px; padding: 5px; border-radius: 26px; }
+  .atha-how .atha-phone img { border-radius: 22px; }
+  .atha-outcome, .atha-outcome:nth-child(even) { grid-template-columns: 1fr; gap: var(--atha-s-4); }
+  .atha-outcome:nth-child(even) .atha-outcome__media { order: 0; }
+  .atha-morapps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .atha-factbox dl { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .atha-trust { grid-template-columns: 1fr; }
+  .atha-morapps { grid-template-columns: 1fr; }
+  .atha-getrow .atha-store { width: 100%; justify-content: center; }
+  .atha-how > li { grid-template-columns: minmax(0, 1fr) 110px; }
+  .atha-how .atha-phone { width: 110px; border-radius: 20px; padding: 4px; }
+  .atha-how .atha-phone img { border-radius: 17px; }
+  .atha-factbox { padding: 20px; }
+  .atha-hero2__media .atha-phone { width: min(250px, 70vw); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .atha-store:hover { transform: none; }
+}
+@media (max-width: 640px) {
+  .atha-outcome .atha-phone--sm { width: min(190px, 52vw); padding: 6px; border-radius: 30px; }
+  .atha-outcome .atha-phone--sm img { border-radius: 25px; }
+  .atha-outcomes { gap: var(--atha-s-6); }
+  .atha-cards .atha-card--feature { padding: 16px 18px; }
+  .atha-cards .atha-card--feature .atha-card__title { font-size: 16px; }
+  .atha-trust li { padding: 14px 16px; }
+}
+/* Header actions only exist for phones; keep desktop nav right-aligned */
+@media (min-width: 641px) { .atha-header__actions { display: none; } }
+/* Support topic cards: compact on phones */
+.atha-topics .atha-card__icon { margin-bottom: var(--atha-s-3); }
+@media (max-width: 640px) {
+  .atha-topics .atha-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--atha-s-2); }
+  .atha-topics .atha-card { padding: 14px; }
+  .atha-topics .atha-card__icon { width: 34px; height: 34px; font-size: 16px; margin-bottom: var(--atha-s-2); }
+  .atha-topics .atha-card__title { font-size: 15px; }
+}
+
+/* --------------------------------------------------------------------------
+   23. Guides, practices & comparisons (2026-10 content stage)
+   Try-it card with a real screenshot, in-browser pacer, safety box,
+   countdown timeline, checklist, comparison table, landing hero.
+   -------------------------------------------------------------------------- */
+
+/* Static "On this page" list (no JS needed) */
+.atha-toc nav ol { margin: 0; }
+
+/* Try it in ATHA: real screenshot + the outcome + a real store link */
+.atha-trycard {
+  display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: var(--atha-s-5); align-items: center;
+  border: 1px solid rgba(189,140,255,.2); border-radius: var(--atha-r-lg);
+  background: var(--atha-grad-panel); padding: 22px 24px; margin: var(--atha-s-6) 0;
+}
+.atha-trycard__shot {
+  margin: 0; padding: 5px; border-radius: 24px;
+  background: linear-gradient(160deg, rgba(255,255,255,.16), rgba(255,255,255,.04));
+  border: 1px solid var(--atha-line-strong);
+}
+.atha-trycard__shot img { display: block; width: 100%; height: auto; border-radius: 19px; background: #0b0b18; }
+.atha-trycard__shot--watch { border-radius: 30px; padding: 6px; background: #000; }
+.atha-trycard__shot--watch img { border-radius: 24px; }
+.atha-trycard__label { font-size: var(--atha-fs-micro); letter-spacing: .18em; text-transform: uppercase; color: var(--atha-peach-2); margin: 0 0 6px; }
+.atha-article__body .atha-trycard__title,
+.atha-trycard__title { font-size: 20px; font-weight: 600; color: #fff; margin: 0 0 6px; line-height: 1.3; }
+.atha-article__body .atha-trycard p,
+.atha-trycard p { font-size: 15px; color: var(--atha-text-soft); margin: 0 0 var(--atha-s-2); }
+.atha-trycard ul { margin: 0 0 var(--atha-s-3); padding-left: 18px; font-size: 14px; }
+.atha-trycard li { margin: 4px 0; }
+.atha-trycard__actions { display: flex; align-items: center; gap: var(--atha-s-3); flex-wrap: wrap; margin-top: var(--atha-s-3); }
+.atha-trycard__fine { font-size: 12px; color: var(--atha-muted-2); }
+@media (max-width: 640px) {
+  .atha-trycard { grid-template-columns: 84px minmax(0, 1fr); gap: var(--atha-s-3); padding: 18px; align-items: start; }
+  .atha-trycard__shot { padding: 3px; border-radius: 16px; }
+  .atha-trycard__shot img { border-radius: 13px; }
+  .atha-trycard__title { font-size: 17px; }
+  .atha-trycard__actions { grid-column: 1 / -1; }
+  .atha-trycard__actions .atha-store { width: 100%; justify-content: center; }
+}
+
+/* In-browser breathing pacer (progressive enhancement over a CSS orb) */
+.atha-pacer {
+  border: 1px solid rgba(189,140,255,.2); border-radius: var(--atha-r-xl);
+  background: var(--atha-grad-panel); padding: 26px 24px; margin: var(--atha-s-6) 0; text-align: center;
+}
+.atha-article__body .atha-pacer__title,
+.atha-pacer__title { font-size: 19px; font-weight: 600; color: #fff; margin: 0 0 4px; }
+.atha-article__body .atha-pacer__sub,
+.atha-pacer__sub { font-size: 14px; color: var(--atha-muted); margin: 0 auto var(--atha-s-3); max-width: 460px; }
+.atha-pacer__stage { position: relative; height: 230px; display: grid; place-items: center; }
+.atha-pacer__orb {
+  width: 150px; height: 150px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(189,140,255,.36), rgba(15,14,35,.2) 62%);
+  border: 1px solid rgba(239,143,213,.45); box-shadow: var(--atha-shadow-glow);
+  transform: scale(.8); transition-property: transform; transition-timing-function: ease-in-out;
+}
+.atha-pacer:not(.is-ready) .atha-pacer__orb { animation: atha-breath var(--atha-breath-cycle, 16s) ease-in-out infinite; }
+.atha-pacer__readout { position: absolute; inset: 0; display: grid; place-content: center; gap: 2px; pointer-events: none; }
+.atha-article__body .atha-pacer__phase,
+.atha-pacer__phase { font-size: 19px; font-weight: 560; color: #fff; margin: 0; }
+.atha-article__body .atha-pacer__count,
+.atha-pacer__count { font-size: 15px; color: var(--atha-text-soft); margin: 0; font-variant-numeric: tabular-nums; }
+.atha-pacer__chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: var(--atha-s-3) 0; }
+.atha-pacer__chip {
+  appearance: none; font: inherit; font-size: 14px; cursor: pointer;
+  border: 1px solid var(--atha-line-strong); background: var(--atha-surface); color: var(--atha-text-soft);
+  border-radius: var(--atha-r-pill); padding: 8px 14px; min-height: 40px;
+}
+.atha-pacer__chip:hover { color: #fff; border-color: rgba(239,143,213,.4); }
+.atha-pacer__chip[aria-pressed="true"] { background: rgba(146,122,255,.24); border-color: rgba(189,140,255,.65); color: #fff; }
+.atha-pacer__controls { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px 18px; }
+.atha-pacer__controls .atha-btn { font-family: inherit; min-width: 120px; }
+.atha-pacer__controls label { font-size: 14px; color: var(--atha-text-soft); display: inline-flex; align-items: center; gap: 8px; cursor: pointer; }
+.atha-pacer select {
+  font: inherit; font-size: 14px; color: var(--atha-text); background: var(--atha-bg-raised);
+  border: 1px solid var(--atha-line-strong); border-radius: var(--atha-r-sm); padding: 8px 10px; min-height: 40px;
+}
+.atha-pacer input[type="checkbox"] { width: 18px; height: 18px; accent-color: var(--atha-violet); }
+.atha-article__body .atha-pacer__note,
+.atha-pacer__note { font-size: 12px; color: var(--atha-muted-2); margin: var(--atha-s-3) 0 0; }
+.atha-pacer__nojs { font-size: 13px; color: var(--atha-muted); margin: var(--atha-s-2) 0 0; }
+.atha-pacer.is-ready .atha-pacer__nojs { display: none; }
+.atha-pacer [hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .atha-pacer__orb, .atha-pacer:not(.is-ready) .atha-pacer__orb { animation: none; transition: none !important; transform: none !important; }
+}
+
+/* Safety box: always above the fold on health topics */
+.atha-safety {
+  border: 1px solid rgba(245,166,129,.4); border-radius: var(--atha-r-lg);
+  background: rgba(245,166,129,.08); padding: 18px 22px; margin: 0 0 var(--atha-s-6);
+}
+.atha-article__body .atha-safety__title,
+.atha-safety__title { font-size: 15px; font-weight: 600; color: var(--atha-peach-2); margin: 0 0 4px; }
+.atha-article__body .atha-safety p,
+.atha-safety p { font-size: 15px; color: var(--atha-text-soft); margin: 0; }
+
+/* Countdown timeline (T-10 ... T-0) */
+.atha-timeline { list-style: none; padding: 0; margin: var(--atha-s-4) 0; display: grid; gap: var(--atha-s-2); }
+.atha-timeline > li {
+  display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: var(--atha-s-3); margin: 0;
+  padding: 16px 20px; border: 1px solid var(--atha-line); border-radius: var(--atha-r-md);
+  background: var(--atha-surface); color: var(--atha-text-soft);
+}
+.atha-timeline__t {
+  font-size: 21px; font-weight: 400; letter-spacing: -.02em; line-height: 1.2;
+  background: var(--atha-grad-text); -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.atha-timeline strong { display: block; color: #fff; margin-bottom: 2px; }
+@media (max-width: 640px) { .atha-timeline > li { grid-template-columns: 64px minmax(0, 1fr); padding: 14px 16px; } .atha-timeline__t { font-size: 18px; } }
+
+/* Checklist */
+.atha-checklist { list-style: none; padding: 0; margin: var(--atha-s-4) 0; }
+.atha-checklist > li { position: relative; padding-left: 32px; margin: 0 0 10px; }
+.atha-checklist > li::before {
+  content: ""; position: absolute; left: 0; top: .2em; width: 20px; height: 20px; border-radius: 6px;
+  border: 1px solid rgba(119,215,173,.55); background: rgba(119,215,173,.12);
+}
+.atha-checklist > li::after {
+  content: ""; position: absolute; left: 7px; top: calc(.2em + 4px); width: 6px; height: 10px;
+  border: solid var(--atha-green); border-width: 0 2px 2px 0; transform: rotate(45deg);
+}
+
+/* Comparison tables and app verdicts */
+.atha-tablewrap .atha-compare { min-width: 760px; }
+.atha-compare td, .atha-compare th { vertical-align: top; font-size: 14px; line-height: 1.45; }
+.atha-compare tr.is-self td { background: rgba(146,122,255,.07); }
+.atha-compare a { color: var(--atha-peach-2); }
+.atha-tablehint { font-size: var(--atha-fs-small); color: var(--atha-muted-2); margin: 6px 0 0; }
+@media (min-width: 861px) { .atha-tablehint { display: none; } }
+.atha-verdict { border: 1px solid var(--atha-line); border-radius: var(--atha-r-md); background: var(--atha-surface); padding: 18px 22px; margin: var(--atha-s-3) 0; }
+.atha-article__body .atha-verdict h3 { margin: 0 0 6px; }
+.atha-article__body .atha-verdict p { font-size: 15px; margin: 0 0 8px; }
+.atha-article__body .atha-verdict p:last-child { margin-bottom: 0; }
+.atha-verdict__src { font-size: 13px; color: var(--atha-muted-2); }
+
+/* Byline row helpers */
+.atha-article__lede { font-size: var(--atha-fs-lead); color: var(--atha-text-soft); margin: 0 0 var(--atha-s-3); }
+
+/* Audience landing page */
+.atha-landing { max-width: 1040px; margin: 0 auto; }
+.atha-resets { list-style: none; padding: 0; margin: var(--atha-s-5) 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--atha-s-3); }
+.atha-resets > li { margin: 0; padding: 22px; border: 1px solid var(--atha-line); border-radius: var(--atha-r-lg); background: var(--atha-grad-card); }
+.atha-resets h3 { font-size: 18px; color: #fff; margin: 0 0 6px; }
+.atha-resets p { font-size: 15px; margin: 0 0 8px; }
+.atha-resets .atha-badge { margin-bottom: var(--atha-s-3); }
+@media (max-width: 860px) { .atha-resets { grid-template-columns: 1fr; } }
+.atha-tablewrap .atha-pattern--fit { min-width: 0; }
+.atha-pattern__app { display: block; font-size: 12px; color: var(--atha-muted-2); margin-top: 2px; }
+.atha-nowrap { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.atha-narrow { width: min(850px, 100%); margin-left: auto; margin-right: auto; }
+
+/* --------------------------------------------------------------------------
+   24. Languages: EN/TR switcher (2026-10 Turkish stage)
+   Shown in the header of every page that has an English and a Turkish
+   version. Sits next to the wordmark; pushes the nav / phone actions right.
+   -------------------------------------------------------------------------- */
+.atha-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  margin: 0 auto 0 calc(var(--atha-s-2) * -1);
+  border: 1px solid var(--atha-line);
+  border-radius: var(--atha-r-pill);
+  background: var(--atha-surface);
+}
+.atha-lang a {
+  display: inline-block;
+  min-width: 34px;
+  padding: 5px 9px;
+  border-radius: var(--atha-r-pill);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--atha-muted);
+  text-decoration: none;
+  transition: color var(--atha-dur-fast) var(--atha-ease), background var(--atha-dur-fast) var(--atha-ease);
+}
+.atha-lang a:hover { color: #fff; text-decoration: none; }
+.atha-lang a[aria-current="page"] { color: #fff; background: rgba(146, 122, 255, .28); }
+@media (max-width: 380px) { .atha-lang a { min-width: 0; padding: 5px 7px; } }
+
+/* Small honest note under English-UI screenshots on Turkish pages */
+.atha-shotnote { font-size: 12px; color: var(--atha-muted-2); text-align: center; margin: var(--atha-s-2) 0 0; }
+
+/* Timeline with word labels (Turkish exam plan) instead of T-minus numbers */
+.atha-timeline--words > li { grid-template-columns: 124px minmax(0, 1fr); }
+.atha-timeline--words .atha-timeline__t { font-size: 17px; font-weight: 500; }
+@media (max-width: 640px) {
+  .atha-timeline--words > li { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .atha-timeline--words .atha-timeline__t { font-size: 15px; }
+}
+.atha-hero2__media--note { flex-direction: column; align-items: center; }
+.atha-hero2__media--note .atha-shotnote { max-width: 300px; }
+.atha-timeline--words .atha-timeline__t { background: none; -webkit-background-clip: border-box; background-clip: border-box; color: var(--atha-peach-2); }
+
+/* --------------------------------------------------------------------------
+   25. Stage-5 fixes (2026-10-16 review)
+   Narrow phones: header fits at 320-379 px, pattern tables never widen the
+   page, the home FAQ uses the full column width, long emails wrap.
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .atha-pattern th, .atha-pattern td { padding: 10px 8px; }
+  .atha-pattern th { letter-spacing: .06em; }
+}
+@media (max-width: 379px) {
+  .atha-header__inner { gap: var(--atha-s-2); }
+  .atha-header__actions { gap: 6px; }
+  .atha-header__get { padding: 8px 10px; font-size: 12px; }
+  .atha-lang { margin-left: 0; }
+  .atha-lang a { padding: 4px 6px; }
+}
+@media (max-width: 340px) {
+  .atha-header__get { display: none; }
+}
+/* FAQ section on the home pages sits inside .atha-container: no second gutter */
+.atha-main > .atha-section.atha-container--text { width: min(850px, 100%); }
+.atha-trust a[href^="mailto:"] { overflow-wrap: anywhere; }
+.atha-privacy-note { margin-top: var(--atha-s-5); }
+
+/* --------------------------------------------------------------------------
+   26. Stage-5 round 2 (2026-10-16): developer chip in the hero, "Known issues
+   in 1.0" list under the release notes.
+   -------------------------------------------------------------------------- */
+.atha-microfacts li a { color: #fff; text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(255, 255, 255, .4); }
+.atha-microfacts li a:hover { text-decoration-color: currentColor; }
+#known-issues { margin-top: var(--atha-s-6); font-size: 20px; }
+.atha-known { margin: var(--atha-s-3) 0 var(--atha-s-4); padding-left: 1.2em; display: grid; gap: var(--atha-s-2); }
+.atha-known li { margin: 0; font-size: 15px; color: var(--atha-text-soft); }
+.atha-known strong { color: #fff; font-weight: 600; }
+
+/* How it works: all three phones the same size, on the same line */
+.atha-how > li { height: 100%; }
+.atha-how > li > .atha-phone { margin-top: auto; }
+.atha-how .atha-phone img { aspect-ratio: 600 / 1304; object-fit: cover; object-position: top; height: auto; }
+@media (max-width: 860px) { .atha-how > li > .atha-phone { margin-top: 0; } }

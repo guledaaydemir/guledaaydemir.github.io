@@ -1,145 +1,190 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  DUMP — sitemap
-  Update <lastmod> whenever a page's content materially changes.
-  Submit once at https://search.google.com/search-console
-  and at https://www.bing.com/webmasters
--->
+<!-- DUMP sitemap. Update <lastmod> when a page materially changes. 404.html is intentionally excluded. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/DUMP/appicon.png</image:loc>
-      <image:title>DUMP app icon</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/DUMP/shot-home.png</image:loc>
-      <image:title>DUMP home screen showing saved dump projects and templates</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/DUMP/shot-carousel.png</image:loc>
-      <image:title>Swipe Carousel editor with an ordered strip of photos and videos</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/DUMP/shot-templates.png</image:loc>
-      <image:title>Template browser showing ready-made carousel layouts</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/DUMP/shot-grid.png</image:loc>
-      <image:title>Grid layout editor with adjustable spacing between photos</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/DUMP/shot-canvas.png</image:loc>
-      <image:title>Freeform canvas editor with layered photos, stickers and text</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/DUMP/shot-frames.png</image:loc>
-      <image:title>Frame and sticker library with polaroid and film border options</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/DUMP/shot-captions.png</image:loc>
-      <image:title>Caption generator producing an Instagram caption for a photo dump</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://guledaaydemir.github.io/DUMP/shot-export.png</image:loc>
-      <image:title>Export screen saving a finished dump into a new Apple Photos album</image:title>
-    </image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/dump-og.jpg</image:loc><image:title>DUMP: Pick it. Make it. DUMP it.</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/carousel-preview-in-order-1206.webp</image:loc><image:title>DUMP preview of a weekend photo dump saved in posting order at original quality</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/random-dump-setup-1206.webp</image:loc><image:title>DUMP Random Dump sheet: choose Favorites, an album or the whole library</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/swipe-carousel-editor-1206.webp</image:loc><image:title>DUMP Swipe Carousel editor with replace, shuffle and reorder tools</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/canvas-preview-1206.webp</image:loc><image:title>Preview of a finished DUMP collage before saving to Photos</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/grid-filled-1206.webp</image:loc><image:title>Four-photo grid collage made in DUMP</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/template-dump-it-1206.webp</image:loc><image:title>DUMP template with the Dump It button that fills empty slots</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/canvas-sticker-1206.webp</image:loc><image:title>DUMP collage page with a sticker selected</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/grid-layouts-1206.webp</image:loc><image:title>DUMP grid picker with 28 collage layouts</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/stickers-1206.webp</image:loc><image:title>DUMP sticker library</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/caption-generator-1206.webp</image:loc><image:title>DUMP Caption Generator with six caption moods</image:title></image:image>
+      <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/DUMP/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/DUMP/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/DUMP/"/>
   </url>
-
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/faq.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/support.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-
-  <url>
-    <loc>https://guledaaydemir.github.io/DUMP/privacypolicy.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
-  <url>
-    <loc>https://guledaaydemir.github.io/DUMP/terms.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/guides/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/for/creators.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/carousel-preview-in-order-1206.webp</image:loc><image:title>DUMP preview of a weekend dump saved in posting order</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/template-dump-it-1206.webp</image:loc><image:title>DUMP template with the Dump It button</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/guides/how-to-pick-photos-for-a-photo-dump.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/random-dump-setup-1206.webp</image:loc><image:title>DUMP Random Dump sheet: where the photos come from, what to include and how many</image:title></image:image>
+      <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/DUMP/guides/how-to-pick-photos-for-a-photo-dump.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/DUMP/tr/rehber/photo-dump-nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/DUMP/guides/how-to-pick-photos-for-a-photo-dump.html"/>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/guides/sunday-dump-routine.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/caption-generator-1206.webp</image:loc><image:title>DUMP Caption Generator with six caption moods</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/guides/travel-photo-dump.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/grid-filled-1206.webp</image:loc><image:title>Grid collage page filled with trip photos in DUMP</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/guides/year-in-review-photo-dump.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/grid-filled-1206.webp</image:loc><image:title>Four-photo grid collage made in DUMP</image:title></image:image>
+  </url>
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/guides/how-to-post-a-photo-dump-on-instagram.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
+      <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/DUMP/guides/how-to-post-a-photo-dump-on-instagram.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/DUMP/tr/rehber/instagram-kaydirmali-post.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/DUMP/guides/how-to-post-a-photo-dump-on-instagram.html"/>
   </url>
-
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/guides/what-is-a-photo-dump.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/guides/instagram-carousel-size-guide.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/guides/instagram-photo-quality.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/guides/seamless-instagram-carousel.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+      <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/DUMP/guides/seamless-instagram-carousel.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/DUMP/tr/rehber/kaydirmali-birlesik-post.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/DUMP/guides/seamless-instagram-carousel.html"/>
   </url>
-
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/guides/photo-dump-ideas.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/guides/how-to-make-a-collage-on-iphone.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/guides/best-photo-dump-apps.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/privacypolicy.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/terms.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/tr/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/DUMP/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/DUMP/tr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/DUMP/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/dump-og.jpg</image:loc><image:title>DUMP: iPhone ve iPad için photo dump uygulaması</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/carousel-preview-in-order-1206.webp</image:loc><image:title>DUMP'ta paylaşım sırasıyla ve orijinal kalitede kaydedilecek bir hafta sonu dump'ı</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/tr/rehber/photo-dump-nasil-yapilir.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/DUMP/guides/how-to-pick-photos-for-a-photo-dump.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/DUMP/tr/rehber/photo-dump-nasil-yapilir.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/DUMP/guides/how-to-pick-photos-for-a-photo-dump.html"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/random-dump-setup-1206.webp</image:loc><image:title>DUMP Rastgele Dump ekranı: Favoriler, albüm ya da tüm galeri</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/tr/rehber/instagram-kaydirmali-post.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/DUMP/guides/how-to-post-a-photo-dump-on-instagram.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/DUMP/tr/rehber/instagram-kaydirmali-post.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/DUMP/guides/how-to-post-a-photo-dump-on-instagram.html"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/canvas-preview-1206.webp</image:loc><image:title>DUMP'ta kaydırmalı postun Instagram tarzı önizlemesi</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/tr/rehber/kaydirmali-birlesik-post.html</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/DUMP/guides/seamless-instagram-carousel.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/DUMP/tr/rehber/kaydirmali-birlesik-post.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/DUMP/guides/seamless-instagram-carousel.html"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/shots/template-dump-it-1206.webp</image:loc><image:title>DUMP'ta slaytlara akan üç slaytlık bir şablon</image:title></image:image>
+  </url>
 </urlset>

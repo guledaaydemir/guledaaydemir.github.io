@@ -1,0 +1,78 @@
+# Solora: AI Life Planner
+
+> Solora: AI Life Planner is a free iPhone and iPad planner by independent developer Gül Eda Aydemir. People organize tasks, habits and projects by the roles they live (for example parent, student, creator, professional), choose a short daily focus list called the "Big 3", and get help from an AI assistant that runs on the device with Apple Intelligence. There is no account and no server; the App Store privacy label is "Data Not Collected". Not to be confused with unrelated apps that share the name "Solora" (for example a sunset-forecast app).
+
+Facts checked against the app and its App Store page on 2026-10-15.
+
+## App facts
+- Name: Solora: AI Life Planner (short: Solora). Developer: Gül Eda Aydemir (App Store seller "Gul Eda Aydemir").
+- What it is: a role-based life planner with a daily Big 3, a habit tracker and a project planner in one app.
+- Platforms: iPhone and iPad, iOS/iPadOS 18.6 or later. No Apple Watch or native Mac app (Apple silicon Macs and Apple Vision Pro can run the iPad app; the App Store marks it "Not verified for macOS").
+- AI assistant: needs iOS 26 or later on an Apple Intelligence-capable device (for example iPhone 15 Pro, iPhone 16 or later, iPads with M1 or later) with Apple Intelligence turned on. Everything else works without it.
+- Price: free to download. Optional Solora Premium: monthly, yearly, or one-time Lifetime (no subscription). See the current price on the App Store: https://apps.apple.com/app/id6778808618
+- Free plan limits: 4 roles, 15 active tasks, 20 habits, 5 projects, 5 assistant chats per day, 3 AI project breakdowns per month. Premium removes these limits and adds calendar-aware AI day planning, one-tap assistant plans for prioritizing, rescheduling and lighter days (free users get the same suggestions as text), assistant memory for preferences you tell it, an AI-written weekly report, premium widgets and widget themes. Big 3, habit stats, Insights, Archive and theme colors are free.
+- Languages: English, Turkish, Spanish, French, Portuguese (Brazil), Simplified Chinese. The assistant replies in the language you write in.
+- Current version: 3.0, released 2026-10-07 (first release 2026-07-01). Category: Productivity.
+- App Store: https://apps.apple.com/app/id6778808618
+
+## What it does
+- Roles: every task, habit and project can belong to a role with a weekly target. In Solora 3.0 a role's weekly progress counts completed tasks only (habits and project steps don't count toward it yet). The Weekly Review shows completed tasks vs target for each role ("Roles on Track"), Insights shows Life Balance across roles, and the assistant answers "Which role am I neglecting?" by listing finished tasks and habits from the last 7 days per role and naming the one with the least attention. 23 role templates plus custom roles.
+- Big 3: 1, 3 or 5 daily priorities for today (tasks, habits, projects or subtasks). Unfinished ones carry over to the next day. Overdue tasks stay visible with a "Late" tag.
+- Habits: simple, count, timer or routine habits; 52 templates; heatmaps and history; strict, flexible (one missed day is forgiven, two in a row breaks it) or shielded streaks (a shielded day has a reason such as sick, travel or rest, within a small allowance); an optional easier version for low-energy days (logged in one tap from the Premium Light Mode widget).
+- Projects: subtasks with progress, 9 step templates (trip, move, renovation, event, product launch, job search, new skill, savings goal, book) and a moodboard.
+- AI assistant (on-device, Apple Foundation Models): creates tasks, habits and projects from plain language (several at once), shown as editable proposals with undo; plans the day (calendar-aware with Premium); breaks goals into timed steps; helps when you're overwhelmed or low on energy. Voice input is transcribed on the device.
+- Rituals: Morning Kickoff with an energy check-in, Evening Shutdown, Weekly Review.
+- Recovery: when a task slips, Solora asks what got in the way and offers to move it, split it, make it easier or drop it.
+- Insights: tasks finished, focus minutes, daily rhythm, biggest blocker, role balance.
+- 11 Home Screen widgets (including an interactive habit check-in to complete or skip a habit) and a Siri/Shortcuts action, "Quick add to Solora".
+- The number of daily priorities (1, 3 or 5) is chosen during setup.
+
+## Privacy
+- No account, no server, no analytics or advertising SDKs; App Store label "Data Not Collected".
+- Data is stored on the device and included in the device's normal backup. The AI and speech recognition run on the device.
+- Calendar access is optional; Solora adds events only when the user turns on "Add tasks to calendar" and schedules AI breakdown steps (placed one after another from the next free slot).
+
+## What it does not do
+- No cloud sync between devices, no web app, no data export, no shared or team lists.
+
+## Who it is for
+People who juggle several roles and feel buried by long to-do lists: parents, students, creators, founders and freelancers, busy professionals, and anyone who wants a gentle system that still works on low-energy days.
+
+## Key pages
+- Home: https://guledaaydemir.github.io/solora/
+- Support and FAQ: https://guledaaydemir.github.io/solora/support.html
+- Privacy policy: https://guledaaydemir.github.io/solora/privacypolicy.html
+- Terms of use: https://guledaaydemir.github.io/solora/terms.html
+- Solora guides index: https://guledaaydemir.github.io/solora/guides/
+- Guide (all apps): Where to start organizing your life: https://guledaaydemir.github.io/guides/organize-your-life/
+- About the developer: https://guledaaydemir.github.io/about/
+- Contact: solostaseraofficial@gmail.com
+
+## Guides (written by the developer, updated 2026-10-15)
+- The Big 3 method: https://guledaaydemir.github.io/solora/big-3-method/ — Pick three outcomes a day, handle leftovers on purpose, and see how it compares with MIT, 1-3-5, Ivy Lee and Eisenhower.
+- Role-based planning: https://guledaaydemir.github.io/solora/role-based-planning/ — Give each role a small weekly target, then check once a week which one got squeezed. Includes 23 role ideas and a sample week.
+- Weekly review: https://guledaaydemir.github.io/solora/guides/weekly-review/ — Five questions in 15 minutes: wins, the role that fell behind, the most-postponed task, next week's focus, one pile to clear.
+- Morning kickoff & evening shutdown: https://guledaaydemir.github.io/solora/guides/morning-kickoff-evening-shutdown/ — Aim the day in five minutes, close it in ten: an energy check, a Big 3 that fits, and a shutdown that decides what happens to every open loop.
+- Low-energy days: https://guledaaydemir.github.io/solora/for/low-energy-days/ — Shrink the plan on purpose: one small win, an easier version of each habit, honest streak protection and guilt-free rescheduling.
+- Working parents: https://guledaaydemir.github.io/solora/for/parents/ — Four roles, one non-negotiable each, three things a day and tiny family habits, plus a 10-minute Sunday check.
+- Role-based planner apps compared: https://guledaaydemir.github.io/solora/compare/best-role-based-planner-apps/ — Week Plan, Harmony, Griply, Structured and Solora side by side, with when each one is the better choice.
+- Comparison note: competitor facts on the comparison page come from their App Store pages and websites, checked 2026-10-15; the page discloses that the author makes Solora.
+
+## Turkish pages (Türkçe)
+Native Turkish pages written for Turkish searchers (not machine translations), updated 2026-10-15:
+- Turkish home (Türkçe ana sayfa): https://guledaaydemir.github.io/solora/tr/ (English equivalent: https://guledaaydemir.github.io/solora/)
+- Turkish guides hub (Rehberler): https://guledaaydemir.github.io/solora/tr/rehber/
+- "Hayatımı nasıl düzene sokarım?" (a role-based 5-step system that survives bad days, incl. work-family balance): https://guledaaydemir.github.io/solora/tr/rehber/hayatini-duzene-sokmak/ . For an app-free 7-day starter plan in Turkish, see the developer hub guide https://guledaaydemir.github.io/tr/rehber/hayatini-duzenlemeye-nereden-baslamali/
+- "Günün en önemli 3 işi: Big 3 yöntemi" (Turkish counterpart of the Big 3 method guide): https://guledaaydemir.github.io/solora/tr/rehber/en-onemli-3-is/
+- "Erteleme alışkanlığı nasıl yenilir?" (procrastination, 7 practical steps, several backed by cited research, not medical advice): https://guledaaydemir.github.io/solora/tr/rehber/ertelemeyi-yenmek/
+- Turkey App Store: https://apps.apple.com/tr/app/id6778808618 (shows the current Premium prices in TRY).
+- The app's interface is fully Turkish (it follows the device language; Settings → Dil). Turkish UI terms: Big 3 / Bugünün Odağı, Güne Başlangıç (Morning Kickoff), Akşam kapanışı (Evening Shutdown), Haftalık değerlendirme (Weekly Review), Rol dengesi (role balance), Gecikmiş (Late), Devredildi (Carried over), "Bunu yapılabilir kılalım" (recovery).
+- Apple Intelligence supports Turkish since iOS 26.1, so the on-device assistant can reply in Turkish on supported devices. Siri phrases for "Quick add to Solora" are English only.
+- All Turkish guides by the same developer (sleep, camera roll, photo dumps, progress photos, planning): https://guledaaydemir.github.io/tr/rehber/ . Turkish developer hub: https://guledaaydemir.github.io/tr/
+
+## More apps by the same developer
+- ATHA: breathing exercises for sleep, stress and focus. https://guledaaydemir.github.io/ATHA/
+- DUMP: photo dump and carousel maker that picks your best shots. https://guledaaydemir.github.io/DUMP/
+- Solo.Swipe: swipe to clean your camera roll in 5-minute daily sessions. https://guledaaydemir.github.io/solo.swipe/
+- Solo.Shots: progress photos that line up, turned into a timelapse. https://guledaaydemir.github.io/solo.shots/
+- Turkish sites of these apps: https://guledaaydemir.github.io/ATHA/tr/ · https://guledaaydemir.github.io/DUMP/tr/ · https://guledaaydemir.github.io/solo.swipe/tr/ · https://guledaaydemir.github.io/solo.shots/tr/

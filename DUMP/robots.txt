@@ -1,24 +1,7 @@
-# DUMP — https://guledaaydemir.github.io/DUMP/
-# Everything on this site is public marketing and legal content.
-
+# DUMP folder robots file.
+# Note: crawlers only read robots.txt at the host root (https://guledaaydemir.github.io/robots.txt).
+# This copy is kept for reference; the root file must list the sitemap below.
 User-agent: *
-Allow: /
-
-# AI answer engines are a real acquisition channel for app discovery.
-# Explicitly welcomed: the FAQ and privacy pages are written to be quotable.
-User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://guledaaydemir.github.io/DUMP/sitemap.xml

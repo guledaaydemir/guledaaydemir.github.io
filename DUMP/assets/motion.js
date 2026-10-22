@@ -321,11 +321,14 @@
   }
 
   /* ---------- 14. Store links, UTM & outbound safety ---------- */
-  function initLinks() {
-    $$('a[href*="apps.apple.com"]').forEach(function (a) {
-      /* Apple attributes installs by campaign token. Each link declares its
-         own placement via data-ct, so App Store Connect shows which section
-         of the site actually converts. */
+    function initLinks() {
+    /* Only DUMP's own App Store links (incl. /tr/app/…). Competitor listings,
+       the developer page and apps.apple.com/account/subscriptions are left alone.
+       Note: Apple only attributes ct when a provider token (pt=…) is present too;
+       add pt here once it exists in App Store Connect → App Analytics → Campaigns. */
+    $$('a[href*="id6798248086"]').forEach(function (a) {
+      /* Each link declares its own placement via data-ct, so App Store Connect
+         can show which section of the site converts. */
       var ct = a.getAttribute('data-ct') || 'web-' + (document.body.dataset.page || 'home');
       if (a.href.indexOf('ct=') < 0) {
         a.href += (a.href.indexOf('?') > -1 ? '&' : '?') + 'ct=' + encodeURIComponent(ct);
@@ -362,6 +365,21 @@
     });
   }
 
+  /* ---------- 15b. <details> FAQ deep links ---------- */
+  /* /faq.html#q-quality opens that answer even though <details> needs no JS
+     to work; the hash only decides which one starts open. */
+  function initDetails() {
+    function openFromHash() {
+      if (location.hash.length < 2) return;
+      var el = document.getElementById(location.hash.slice(1));
+      if (!el) return;
+      var d = el.tagName === 'DETAILS' ? el : (el.closest ? el.closest('details') : null);
+      if (d) d.open = true;
+    }
+    openFromHash();
+    on(window, 'hashchange', openFromHash);
+  }
+
   /* ---------- 16. Year stamp ---------- */
   function initYear() {
     $$('[data-year], #yr').forEach(function (el) {
@@ -391,6 +409,7 @@
     initStickyBar();
     initLinks();
     initCopy();
+    initDetails();
     initYear();
     document.documentElement.classList.add('js-ready');
     requestFrame();

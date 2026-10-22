@@ -1,16 +1,16 @@
 /* ==========================================================================
-   ATHA — Site-wide structured data
-   Injects WebSite and Organization JSON-LD once per page so individual pages
-   only declare what is unique to them. Page-level JSON-LD always wins.
+   ATHA — Site-wide structured data (legacy fallback)
+   Every published page now carries its WebSite / Person / MobileApplication
+   JSON-LD as static HTML, so this script is no longer loaded by them. It is
+   kept for older templates and does nothing when static JSON-LD is present.
    ========================================================================== */
 (function () {
   'use strict';
 
-  var A = window.ATHA;
-  if (!A) { return; }
-  if (document.querySelector('script[data-atha-seo]')) { return; }
+  if (document.querySelector('script[type="application/ld+json"]')) { return; }
 
-  var SITE = 'https://guledaaydemir.github.io/atha/';
+  var SITE = 'https://guledaaydemir.github.io/ATHA/';
+  var PERSON = 'https://guledaaydemir.github.io/#person';
 
   var graph = {
     '@context': 'https://schema.org',
@@ -19,20 +19,23 @@
         '@type': 'WebSite',
         '@id': SITE + '#website',
         name: 'ATHA',
-        alternateName: 'ATHA — Breathe now',
+        alternateName: 'ATHA: Breathing Exercises',
         url: SITE,
-        description: 'ATHA is a breathing and mindfulness app for iPhone and Apple Watch. Guided breathing for sleep, stress, focus and energy.',
         inLanguage: 'en',
-        publisher: { '@id': SITE + '#developer' }
+        publisher: { '@id': PERSON }
       },
       {
         '@type': 'Person',
-        '@id': SITE + '#developer',
+        '@id': PERSON,
         name: 'Gül Eda Aydemir',
+        alternateName: 'Gul Eda Aydemir',
         jobTitle: 'Independent iOS developer',
-        url: A.config.developerSite,
-        email: 'mailto:' + A.config.email,
-        sameAs: [A.config.developerSite]
+        url: 'https://guledaaydemir.github.io/about/',
+        email: 'mailto:solostaseraofficial@gmail.com',
+        sameAs: [
+          'https://apps.apple.com/us/developer/gul-eda-aydemir/id1889159460',
+          'https://instagram.com/solo.stasera'
+        ]
       }
     ]
   };
