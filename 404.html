@@ -5,18 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page not found — Gül Eda Aydemir</title>
 <meta name="robots" content="noindex">
-<meta name="description" content="This page doesn't exist. Find Solo.Swipe, Solora, DUMP, Solo.Shots and ATHA, or browse the guides.">
+<meta name="description" content="This page doesn't exist. Find Solo.Swipe, Solora, DUMP, Solo.Shots, ATHA and SHOOTS, or browse the guides.">
 <script>
 /* GitHub Pages serves this file for every missing path on the host.
    Paths are case-sensitive, so fix the app folder's case (e.g. /atha/ -> /ATHA/, /Solora/ -> /solora/)
    and a few known wrong links, then redirect. Runs before anything renders. */
 (function () {
-  var folders = ['ATHA', 'DUMP', 'solo.swipe', 'solo.shots', 'solora', 'tr', 'guides', 'about'];
+  var folders = ['ATHA', 'DUMP', 'SHOOTS', 'solo.swipe', 'solo.shots', 'solora', 'tr', 'guides', 'about'];
   var aliases = {
     '/solora/privacy-policy.html': '/solora/privacypolicy.html',
     '/tr/rehberler/': '/tr/rehber/',
     '/tr/guides/': '/tr/rehber/',
-    '/en/': '/'
+    '/en/': '/',
+    '/SHOOTS/privacy.html': '/SHOOTS/privacy/',
+    '/SHOOTS/privacypolicy.html': '/SHOOTS/privacy/',
+    '/SHOOTS/privacy-policy.html': '/SHOOTS/privacy/',
+    '/SHOOTS/terms.html': '/SHOOTS/terms/',
+    '/SHOOTS/support.html': '/SHOOTS/support/',
+    '/SHOOTS/faq/': '/SHOOTS/support/',
+    '/SHOOTS/en/': '/SHOOTS/'
   };
   var path = location.pathname;
   var fixed = path;
@@ -64,7 +71,7 @@
     <div class="page-head">
       <p class="eyebrow">Error 404</p>
       <h1>This page moved, or never existed</h1>
-      <p class="lead">The link may be old or mistyped. Addresses on this site are case-sensitive: it's <code>/ATHA/</code> and <code>/DUMP/</code> in capitals, and <code>/solora/</code>, <code>/solo.swipe/</code> and <code>/solo.shots/</code> in lowercase.</p>
+      <p class="lead">The link may be old or mistyped. Addresses on this site are case-sensitive: it's <code>/ATHA/</code>, <code>/DUMP/</code> and <code>/SHOOTS/</code> in capitals, and <code>/solora/</code>, <code>/solo.swipe/</code> and <code>/solo.shots/</code> in lowercase.</p>
       <div class="cta-row" style="margin-top:20px">
         <a class="btn btn-primary" href="/">Go to the home page</a>
         <a class="btn btn-ghost" href="/guides/">Browse the guides</a>
@@ -77,6 +84,7 @@
         <a class="link-card" href="/ATHA/"><img src="/ATHA/appicon-128.webp" width="40" height="40" alt=""><div><strong>ATHA: Breathing Exercises</strong><span>Breathing exercises for sleep, stress and focus — calm in one tap.</span></div></a>
         <a class="link-card" href="/solo.swipe/"><img src="/solo.swipe/appicon-128.webp" width="40" height="40" alt=""><div><strong>Solo.Swipe</strong><span>Swipe to clean your camera roll in 5-minute daily sessions.</span></div></a>
         <a class="link-card" href="/DUMP/"><img src="/DUMP/appicon-128.webp" width="40" height="40" alt=""><div><strong>DUMP: Carousel &amp; Collage</strong><span>Photo dump &amp; carousel maker that picks your best shots for you.</span></div></a>
+        <a class="link-card" href="/SHOOTS/"><img src="/SHOOTS/appicon-128.webp" width="40" height="40" alt=""><div><strong>SHOOTS: Self Timer Camera</strong><span>Hands-free photos of yourself, with an Apple Watch remote.</span></div></a>
         <a class="link-card" href="/solo.shots/"><img src="/solo.shots/appicon-128.webp" width="40" height="40" alt=""><div><strong>Solo.Shots</strong><span>Progress photos that line up, turned into a timelapse.</span></div></a>
         <a class="link-card" href="/solora/"><img src="/solora/appicon-128.webp" width="40" height="40" alt=""><div><strong>Solora: AI Life Planner</strong><span>Role-based life planner: pick today's Big 3, keep habits going.</span></div></a>
         <a class="link-card" href="/about/#legal"><img src="/assets/img/favicon-32.png" width="40" height="40" alt=""><div><strong>Privacy policies, terms &amp; support</strong><span>The official documents for every app, in one place.</span></div></a>

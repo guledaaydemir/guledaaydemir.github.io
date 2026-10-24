@@ -1,0 +1,10 @@
+# SHOOTS folder robots file (reference copy).
+# Crawlers only read robots.txt at the host root: https://guledaaydemir.github.io/robots.txt
+# That root file is the one that counts; it lists the SHOOTS sitemap below.
+# Everything here is welcome to search engines and AI assistants.
+User-agent: *
+Allow: /SHOOTS/
+Disallow: /SHOOTS/tools/
+
+Sitemap: https://guledaaydemir.github.io/SHOOTS/sitemap.xml
+# Plain-text summary for AI assistants: https://guledaaydemir.github.io/SHOOTS/llms.txt

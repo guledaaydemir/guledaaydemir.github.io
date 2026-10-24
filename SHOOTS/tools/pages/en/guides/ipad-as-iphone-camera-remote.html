@@ -1,0 +1,122 @@
+<!--meta
+{
+ "lang": "en",
+ "path": "guides/ipad-as-iphone-camera-remote/",
+ "type": "article",
+ "section": "guides",
+ "order": 35,
+ "nav": "guides",
+ "date": "2026-10-24",
+ "title": "iPad or Second iPhone as an iPhone Camera Remote | SHOOTS",
+ "h1": "How to use an iPad or second iPhone as your iPhone camera remote",
+ "og_title": "Your iPad as an iPhone camera remote",
+ "crumb": "iPad or iPhone as remote",
+ "description": "Use an iPad or second iPhone as a remote and viewfinder for your iPhone camera: what Apple offers, SHOOTS setup step by step, what’s free, Local Network fixes.",
+ "kicker": "Guide · Remote",
+ "dek": "Your iPhone is the camera. The iPad on the sofa, or the old iPhone in the drawer, can be the viewfinder and the shutter. Here’s how.",
+ "cover": "remote-camera",
+ "cover_alt": "iPhone running SHOOTS as the camera, 7 of 25 photos taken, framing a woman in a red coat on a wall above a bay at sunset",
+ "cover_cap": "The iPhone does the shooting. The remote is across the terrace.",
+ "faq": [
+  {"q": "Can I use my iPad as a remote for my iPhone camera?", "a": "Not with Apple’s Camera app alone: Apple’s remote for the iPhone camera is Camera Remote on Apple Watch, and Apple’s iPhone User Guide doesn’t describe an iPad or iPhone remote for Camera (checked 24 October 2026). For video, Apple’s Final Cut Camera can join a Live Multicam session in Final Cut Pro for iPad. For photos, a camera app with its own remote, like SHOOTS on both devices, does it: the iPad starts and stops the shoot for free, and shows the live picture with SHOOTS+."},
+  {"q": "How do I connect a second iPhone as a camera remote in SHOOTS?", "a": "On the iPhone you’re shooting with, open Menu → Remote and turn on “Another iPhone or iPad as remote”. On the other device, open Menu → Remote → “Use this device as a remote”, tap the camera, then tap Allow once on the camera. You won’t be asked again for that device."},
+  {"q": "Is the remote free?", "a": "The controls are: starting and stopping shoots, switching lenses and modes. Seeing the camera’s live picture on the remote is part of SHOOTS+, unlocked on the camera device. With SHOOTS+, the remote viewfinder also shows the ghost overlay."},
+  {"q": "Why won’t my iPad connect to the iPhone camera?", "a": "Usually Local Network access. On the device that won’t connect, open Settings → Privacy & Security → Local Network and make sure SHOOTS is on (switch it off and on again if it already is), on both devices. Keep them close with Wi-Fi or Bluetooth on, make sure the camera is open in SHOOTS on the other device, and update both to the same SHOOTS version."},
+  {"q": "Can I use my Apple Watch with SHOOTS on iPad?", "a": "No. Apple Watch pairs with an iPhone, not an iPad, so on iPad there’s no Watch remote or Watch viewfinder. Use an iPhone as the iPad’s remote instead."}
+ ]
+}
+-->
+<div class="tldr">
+ <b>The short answer</b>
+ <ul>
+  <li><b>Apple’s own options:</b> Camera Remote on <b>Apple Watch</b> (iPhone only), and for pro video, <b>Final Cut Camera</b> as a remote angle in a Live Multicam session in Final Cut Pro for iPad. We found no iPad or iPhone remote for the Camera app in Apple’s guides (checked 24 October 2026).</li>
+  <li><b>With SHOOTS on both devices:</b> camera → Menu → Remote → “Another iPhone or iPad as remote”. Remote → Menu → Remote → “Use this device as a remote”, tap the camera, then tap <b>Allow</b> on the camera once.</li>
+  <li><b>Free:</b> start and stop shoots, switch lenses and modes. <b>SHOOTS+:</b> the live picture on the remote.</li>
+  <li><b>Won’t connect?</b> Allow <b>Local Network</b> for SHOOTS on both devices.</li>
+ </ul>
+</div>
+
+<p>A propped iPhone has one problem: the screen faces away from you. An Apple Watch fixes that if you have one, but plenty of people have a better screen lying around: an iPad, a partner’s iPhone, the old phone that became a music player. This guide covers what Apple offers for using one device to control another’s camera, and how to set it up in <a href="{{url:home}}">SHOOTS</a>, the hands-free camera we make.</p>
+
+<h2 id="apple">What Apple offers</h2>
+<p>We went through Apple’s support guides on <b>24 October 2026</b> (iOS 27, watchOS 27). Here’s what exists:</p>
+<ul>
+ <li><b>Apple Watch Camera Remote.</b> A live preview of the iPhone camera on your wrist, a shutter with a 3-second timer, zoom with the Digital Crown, within about 33 feet (10 m) (<a href="https://support.apple.com/guide/watch/camera-remote-apda6e61c287/watchos" rel="noopener">Apple Watch User Guide</a>). It needs an Apple Watch, and Apple Watch <a href="https://support.apple.com/guide/watch/set-up-and-pair-your-apple-watch-with-iphone-apdde4d6f98e/watchos" rel="noopener">pairs with an iPhone</a>. Our <a href="/SHOOTS/guides/apple-watch-camera-remote/">Apple Watch camera remote guide</a> covers it.</li>
+ <li><b>Final Cut Camera with Final Cut Pro for iPad.</b> Apple’s <a href="https://support.apple.com/guide/final-cut-camera/dev154067693/ios" rel="noopener">Final Cut Camera</a> app on iPhone or iPad can record on its own or as a remote camera in a <b>Live Multicam</b> session in Final Cut Pro for iPad, with up to four devices to preview, record and sync angles. It’s built for video productions, and Final Cut Pro for iPad is a separate app (see the App Store for its terms).</li>
+ <li><b>Duo Preview on iPhone Duo.</b> iPhone Duo can <a href="https://support.apple.com/guide/iphone/show-subject-a-photo-preview-iphone-duo-iphv5wxwnck2/ios" rel="noopener">show the person you’re photographing a mirrored preview</a> on its outer display. Useful, but it’s the same phone, and someone still presses the shutter.</li>
+ <li><b>AirPods.</b> Supported AirPods can <a href="https://support.apple.com/guide/airpods/use-airpods-with-camera-apps-dev8e2a2ba2e/web" rel="noopener">take a photo with a stem press</a> on iOS 26 and later. A shutter, not a viewfinder.</li>
+</ul>
+<p>What we didn’t find: a way to use an iPad or a second iPhone as the viewfinder and shutter for the iPhone’s Camera app when taking photos. If that changes, tell us via <a href="{{url:support}}">support</a> and we’ll update this page. For now, you need a camera app that has its own remote, on both devices.</p>
+
+<h2 id="shoots">How to set it up in SHOOTS</h2>
+<p>Install SHOOTS on both devices (iPhone or iPad, iOS or iPadOS 18.6 or later). Either one can be the camera; the other becomes the remote. Then:</p>
+<ol class="steps">
+ <li><b>On the camera device:</b> open SHOOTS, tap Menu → <b>Remote</b>, and turn on <b>“Another iPhone or iPad as remote”</b>. It now waits for a remote and tells you what to do on the other device.</li>
+ <li><b>On the remote device:</b> open SHOOTS, tap Menu → <b>Remote</b> → <b>“Use this device as a remote”</b>. It looks for cameras nearby; tap yours in the list. (This device’s own camera stays off while it’s a remote.)</li>
+ <li><b>Allow it, once:</b> the camera asks whether to allow the remote to control it. Tap <b>Allow</b>. You won’t be asked again for that device.</li>
+ <li><b>Prop the camera</b> and frame the shot. No tripod? See <a href="/SHOOTS/guides/prop-your-phone-without-tripod/">places to prop your phone</a>.</li>
+ <li><b>Walk to your spot and start the shoot from the remote.</b> The camera runs your plan: Photoshoot start, Timer mode and Photo limit, exactly as if you had tapped its shutter.</li>
+</ol>
+<p>The first time, iOS may ask on each device whether SHOOTS can find devices on your local network. Allow it on both; it’s how they find each other. To remove a device you allowed, use <b>Forget allowed devices</b> in the camera’s Settings.</p>
+
+{{store:09-remote|A second iPhone or iPad shows the live picture (SHOOTS+) and runs the shoot.}}
+
+<h2 id="free">What’s free, what’s SHOOTS+</h2>
+<div class="cmp-wrap"><table class="cmp">
+ <thead><tr><th>On the remote</th><th>Free</th><th>SHOOTS+</th></tr></thead>
+ <tbody>
+  <tr><th>Start and stop shoots</th><td>✓</td><td>✓</td></tr>
+  <tr><th>Switch lenses and modes</th><td>✓</td><td>✓</td></tr>
+  <tr><th>See the camera’s live picture</th><td>—</td><td>✓ (SHOOTS+ on the camera device)</td></tr>
+  <tr><th>Ghost overlay on the remote viewfinder</th><td>—</td><td>✓</td></tr>
+ </tbody>
+</table></div>
+<p>Without SHOOTS+ on the camera, the remote still works: it says “The remote works. The live picture needs SHOOTS+ on the camera.” and keeps every control. Photo mode is free; Portrait, Live, Video, Cinematic and the + Video modes are SHOOTS+, wherever you pick them from.</p>
+
+{{ipad:remote-view|An iPad as the remote, showing the iPhone camera’s live picture (SHOOTS+). The same shoot, 7 of 25.}}
+
+<h2 id="ideas">Good ways to use it</h2>
+<ul>
+ <li><b>iPad as a big viewfinder for outfits.</b> Lean the iPad against the wall behind the camera, out of frame, and check every look full size before you start. More in <a href="/SHOOTS/guides/outfit-photos-at-home/">outfit photos at home</a>.</li>
+ <li><b>iPhone as the remote for an iPad camera.</b> Shooting with the iPad on a stand? Keep an iPhone in your hand as the remote. (An Apple Watch can’t do this job: it doesn’t pair with iPad.)</li>
+ <li><b>A friend’s phone.</b> In a group, anyone with SHOOTS can be the remote, so the photographer gets into the picture. See <a href="/SHOOTS/guides/group-photo-everyone-in-it/">group photos with everyone in it</a>.</li>
+ <li><b>Your old iPhone.</b> As long as it runs iOS 18.6 or later, it makes a good dedicated remote.</li>
+ <li><b>Match a pose.</b> With SHOOTS+, turn on the ghost overlay on the camera (Viewfinder sheet), and the remote viewfinder shows your earlier shot see-through, so you can line up the same pose from your spot.</li>
+</ul>
+
+<h2 id="fix">Troubleshooting: Local Network and friends</h2>
+<p>Almost every connection problem comes down to one setting. Here’s what you might see, and what to do:</p>
+<div class="cmp-wrap"><table class="cmp">
+ <thead><tr><th>You see</th><th>Do this</th></tr></thead>
+ <tbody>
+  <tr><th>“Looking for a camera…” and nothing appears</th><td>On the camera, check that “Another iPhone or iPad as remote” is on and the camera is open. Keep both devices close with Wi-Fi or Bluetooth on.</td></tr>
+  <tr><th>The camera appears but won’t connect</th><td>Local Network is off for SHOOTS on one device. Open Settings → Privacy &amp; Security → Local Network, and turn SHOOTS on, on both devices. If it’s already on, switch it off and on again.</td></tr>
+  <tr><th>“Needs update”</th><td>Update SHOOTS on both devices so they run the same version.</td></tr>
+  <tr><th>“Not allowed”</th><td>The camera didn’t allow this device. Tap Try Again on the remote, then Allow on the camera.</td></tr>
+  <tr><th>“Camera not open”</th><td>Open the camera in SHOOTS on the camera device.</td></tr>
+  <tr><th>“Connection lost”</th><td>Bring the devices closer; it reconnects on its own.</td></tr>
+  <tr><th>“The camera is in use by a call or another app”</th><td>Finish the call or close the other camera app on the camera device.</td></tr>
+  <tr><th>Still stuck</th><td>Restart the device that won’t connect, then try again.</td></tr>
+ </tbody>
+</table></div>
+<div class="note">Why Local Network? The two devices find each other with Apple’s Bonjour and connect directly over Wi-Fi, Bluetooth or your local network. Nothing goes through a server, there’s no account, and a device can only connect after you tap Allow on the camera. The details are in the <a href="/SHOOTS/privacy/">privacy policy</a>.</div>
+
+<h2 id="watch-vs-ipad">Apple Watch or iPad?</h2>
+<div class="cmp-wrap"><table class="cmp">
+ <thead><tr><th></th><th>Apple Watch</th><th>Second iPhone or iPad</th></tr></thead>
+ <tbody>
+  <tr><th>Camera it controls</th><td>iPhone only</td><td>iPhone or iPad</td></tr>
+  <tr><th>Free controls</th><td>Start, stop, resume, Digital Crown zoom, flip, mode, flash</td><td>Start, stop, lenses, modes</td></tr>
+  <tr><th>Live picture (SHOOTS+)</th><td>Tiny, on your wrist</td><td>Big, easy to judge a whole outfit</td></tr>
+  <tr><th>In the photo</th><td>Easy to hide</td><td>Hard to hide; keep it out of frame or behind the camera</td></tr>
+  <tr><th>Best for</th><td>Solo shoots, travel, posing while you control</td><td>Outfits, groups, a second person directing, iPad cameras</td></tr>
+ </tbody>
+</table></div>
+<p>No remote at all? You can still start from your spot: raise your palm to the camera or say “Cheese” (free). See <a href="/SHOOTS/guides/start-a-photoshoot-hands-free/">How to start a photoshoot hands-free</a>.</p>
+
+<blockquote class="pull">The best viewfinder is the one you’re already holding.</blockquote>
+
+<p>When the shoot is over, review it on the camera device: every session is its own album in the SHOOTS gallery. Turn the keepers into a carousel with <a href="/DUMP/">DUMP</a> and sweep the rest of your camera roll with <a href="/solo.swipe/">Solo.Swipe</a>.</p>
+
+<h2>Questions people ask</h2>
+{{faq}}

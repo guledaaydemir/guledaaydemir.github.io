@@ -21,8 +21,8 @@
 }
 .h-hero .lead { font-size: clamp(1.1rem, 2vw, 1.4rem); color: var(--muted); max-width: 40ch; margin: 0 auto; line-height: 1.45; text-wrap: balance; }
 
-/* App lineup: the five apps side by side */
-.lineup { list-style: none; padding: 0; margin: clamp(40px, 6vw, 64px) auto 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; max-width: 1080px; }
+/* App lineup: the six apps side by side */
+.lineup { list-style: none; padding: 0; margin: clamp(40px, 6vw, 64px) auto 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 14px; max-width: 1180px; }
 .lineup li { min-width: 0; }
 .lineup a.tile {
   display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px;
@@ -56,13 +56,20 @@
 .h-chips a:hover { border-color: var(--border-strong); color: var(--text); }
 .h-chips img { width: 26px; height: 26px; border-radius: 7px; }
 
-/* Showcase: all five apps side by side in one wide row (apple.com style) */
+/* Showcase: the apps in one horizontal, swipeable row (apple.com style). The last card peeks
+   in from the edge so it's clear the row slides; arrows step through it on larger screens. */
 .h-finder .wrap.wide { max-width: 1440px; }
 .showcase-wrap { position: relative; }
 .showcase {
-  display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px;
-  padding: 4px 0 18px;
+  display: grid; grid-auto-flow: column; grid-auto-columns: clamp(260px, 21vw, 300px); gap: 14px;
+  overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; overscroll-behavior-x: contain;
+  scrollbar-width: none; padding: 4px 2px 18px;
 }
+.showcase::-webkit-scrollbar { display: none; }
+/* fade the edge that has more cards behind it */
+.showcase.more-right { -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 90px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 90px), transparent); }
+.showcase.more-left { -webkit-mask-image: linear-gradient(90deg, transparent, #000 90px); mask-image: linear-gradient(90deg, transparent, #000 90px); }
+.showcase.more-left.more-right { -webkit-mask-image: linear-gradient(90deg, transparent, #000 90px, #000 calc(100% - 90px), transparent); mask-image: linear-gradient(90deg, transparent, #000 90px, #000 calc(100% - 90px), transparent); }
 .panel {
   position: relative; overflow: hidden; border-radius: 26px; background: #0b0b0d;
   border: 1px solid var(--border); scroll-snap-align: start;
@@ -85,19 +92,14 @@
 .panel .shot { margin: 0; width: min(210px, 84%); height: 300px; overflow: hidden; align-self: end; }
 .panel .shot img { width: 100%; height: auto; border-radius: 28px 28px 0 0; border: 6px solid #1d1d1f; border-bottom: 0; box-shadow: 0 -10px 60px rgba(0,0,0,.6); aspect-ratio: 300 / 652; object-fit: cover; object-position: top; }
 
-.gallery-nav { display: none; }
+.gallery-nav { display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; }
+.gallery-nav button { width: 40px; height: 40px; border-radius: 50%; border: 0; cursor: pointer; background: #1d1d1f; color: #f5f5f7; font-size: 1.3rem; line-height: 1; display: grid; place-items: center; }
+.gallery-nav button:hover { background: #2a2a2d; }
+.gallery-nav button:disabled { opacity: .35; cursor: default; }
 
-/* below ~1100px five columns get too narrow: switch to a swipeable row */
-@media (max-width: 1100px) {
-  .showcase { grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(260px, 300px); overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding-inline: 2px; }
-  .showcase::-webkit-scrollbar { display: none; }
-  .gallery-nav { display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; }
-  .gallery-nav button { width: 40px; height: 40px; border-radius: 50%; border: 0; cursor: pointer; background: #1d1d1f; color: #f5f5f7; font-size: 1.3rem; line-height: 1; display: grid; place-items: center; }
-  .gallery-nav button:hover { background: #2a2a2d; }
-  .gallery-nav button:disabled { opacity: .35; cursor: default; }
-}
 @media (max-width: 760px) {
   .showcase { grid-auto-columns: 80%; }
+  .showcase.more-left, .showcase.more-right { -webkit-mask-image: none; mask-image: none; }
   .panel { border-radius: 22px; }
   .gallery-nav { display: none; }
 }
@@ -107,6 +109,7 @@
 .panel[data-app="dump"]   { --glow: radial-gradient(closest-side, #ff375f, #c799fa 70%, transparent); }
 .panel[data-app="shots"]  { --glow: radial-gradient(closest-side, #00e5ff, #0071e3 70%, transparent); }
 .panel[data-app="solora"] { --glow: radial-gradient(closest-side, #7c3aed, #4f46e5 70%, transparent); }
+.panel[data-app="shoots"] { --glow: radial-gradient(closest-side, #fdfd03, #ff851a 70%, transparent); }
 
 /* Guides strip */
 .h-guides { padding: 56px 0 72px; }
@@ -120,4 +123,4 @@
 .g-row span { color: var(--muted); font-size: .93rem; }
 @media (max-width: 760px) { .g-row { grid-template-columns: minmax(0, 1fr); } }
 
-@media (prefers-reduced-motion: reduce) { .lineup a.tile { transition: none; } .lineup a.tile:hover { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .lineup a.tile { transition: none; } .lineup a.tile:hover { transform: none; } .showcase { scroll-behavior: auto; } }
