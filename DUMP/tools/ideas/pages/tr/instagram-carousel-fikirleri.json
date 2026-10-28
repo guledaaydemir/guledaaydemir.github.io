@@ -1,0 +1,130 @@
+{
+  "key": "carousel",
+  "order": 3,
+  "slug": "instagram-carousel-fikirleri",
+  "keyword": "carousel fikirleri",
+  "title": "Instagram Carousel Fikirleri: 15 Kesintisiz Düzen",
+  "description": "Kesintisiz (panorama) Instagram carousel fikirleri: birleşik post nedir, hangi ölçü kullanılır ve ufuk çizgisinden albüm sayfasına 15 düzen.",
+  "h1": "Kesintisiz Instagram <span class=\"g\">carousel fikirleri</span>",
+  "crumb": "Carousel fikirleri",
+  "eyebrow": "Fikirler · Carousel düzenleri",
+  "campaign": "web-carousel-tr",
+  "product_page": "carousel",
+  "published": "2026-10-28",
+  "updated": "2026-10-28",
+  "card": {
+    "tag": "Carousel",
+    "title": "Kesintisiz carousel fikirleri",
+    "text": "Panorama, kolaj ve karma 15 düzen; her birinde slaytların nereden kesildiğini gösteren bir çizim."
+  },
+  "og": {
+    "kicker": "Carousel fikirleri",
+    "title": "Kesintisiz",
+    "accent": "carousel fikirleri",
+    "sub": "Ufuk çizgisinden albüm sayfasına 15 düzen",
+    "art": "carousel",
+    "alt": "Kesintisiz Instagram carousel fikirleri: üç slayt boyunca devam eden tek bir görüntü"
+  },
+  "cta_text": "DUMP'ta bir fotoğrafı iki slaytın arasındaki kenara sürükle; dikişleri uygulama hizalar, slaytları paylaşım sırasıyla Fotoğraflar'a kaydeder. iPhone ve iPad'de ücretsiz.",
+  "intro": [
+    "Kesintisiz carousel birkaç slaytı tek ve uzun bir fotoğrafa çevirir: kaydırdıkça görüntü devam eder. Aşağıda ne olduğu, hangi ölçünün kullanılacağı ve 15 düzen fikri var.",
+    "Her fikrin yanında küçük bir çizim var. Kesikli çizgiler Instagram'ın bir slaytı diğerinden ayırdığı yerleri gösteriyor."
+  ],
+  "mid_cta_after": "kolaj",
+  "sections": [
+    {
+      "id": "nedir",
+      "short": "Nedir?",
+      "h2": "Kesintisiz (panorama) carousel nedir?",
+      "lead": "Eşit slaytlara bölünüp sırayla paylaşılan tek bir geniş görüntü; kaydırmak, tek bir fotoğrafın üzerinde gezinmek gibi hissettirir. Instagram'da panorama ayarı yok: slaytlar yüklemeden önce kesilir.",
+      "html": "<p>Kaydırmalı postta her slayt ayrı bir görseldir. Slaytlar kaydırırken kenar kenara durduğu için tam hizalanan parçalar tek ve kesintisiz bir fotoğraf gibi görünür. Bütün iş, her parçayı aynı boyda yapıp doğru yerden kesmekte.</p>\n<div class=\"table-scroll\"><table>\n  <thead><tr><th>Slayt</th><th>Biçim</th><th>Tüm tuval</th><th>Her slayt</th></tr></thead>\n  <tbody>\n    <tr><td>2</td><td>4:5 dikey</td><td>2160 &times; 1350 px</td><td>1080 &times; 1350 px</td></tr>\n    <tr><td><b>3</b></td><td><b>4:5 dikey</b></td><td><b>3240 &times; 1350 px</b></td><td><b>1080 &times; 1350 px</b></td></tr>\n    <tr><td>3</td><td>3:4 dikey</td><td>3240 &times; 1440 px</td><td>1080 &times; 1440 px</td></tr>\n    <tr><td>3</td><td>1:1 kare</td><td>3240 &times; 1080 px</td><td>1080 &times; 1080 px</td></tr>\n  </tbody>\n</table></div>\n<p>Kısaca: tuval genişliği = 1080 &times; slayt sayısı, her slayt tam olarak aynı genişlikte. Adım adım yapımı ve dikişlerin neden kaydığını <a href=\"/DUMP/tr/rehber/kaydirmali-birlesik-post.html\">Instagram kaydırmalı birleşik post</a> rehberinde anlattım.</p>"
+    },
+    {
+      "id": "panorama",
+      "short": "Panorama",
+      "h2": "Panorama düzenleri: tek fotoğraf bütün slaytlarda",
+      "lead": "Klasik hâli. Ortadan kesilse de bir şey kaybetmeyen geniş ve akışkan sahneler seç.",
+      "layouts": [
+        {"strip": "horizon", "panels": 3, "title": "Ufuk çizgisi", "text": "Bir sahil, bir silüet ya da bir tarla üç slayt boyunca. Ufku aynı yükseklikte tut ki çizgi her kesikten düz geçsin."},
+        {"strip": "reveal", "panels": 3, "title": "Merak uyandıran giriş", "text": "Konunun bir parçası ilk slaytın sağ kenarından görünsün: bir tekne, bir bina, bir kule. Gerisini görmek için kaydırırlar. Nesnelerle yap, yüzlerle değil."},
+        {"strip": "line", "panels": 3, "title": "Yönlendiren çizgi", "text": "İlk slaytta başlayıp sonuncuda biten bir iskele, yol ya da kıyı. Çizgi gözü, gözle birlikte parmağı da sağa çeker."},
+        {"strip": "fade", "panels": 4, "title": "Gündüzden geceye gökyüzü", "text": "Uzun bir gün batımı ya da ışık değişirken çekilmiş karelerin birleşimi. Her slayt bir öncekinden biraz daha koyu."}
+      ]
+    },
+    {
+      "id": "kolaj",
+      "short": "Kolaj",
+      "h2": "Kolaj düzenleri: kesintisiz bir zeminde ayrı fotoğraflar",
+      "lead": "Doğru yapması en kolay tür bu. Zemin slaytlar boyunca akar, fotoğraflar üstünde durur; böylece önemli hiçbir şey kesilmez.",
+      "layouts": [
+        {"strip": "scrapbook", "panels": 3, "title": "Albüm sayfası", "text": "Kâğıt ya da düz bir zeminde fotoğraflar, her kesiğin üstünde de yarısı bir slaytta yarısı ötekinde duran bir baskı. Slaytların bağlı olduğunu bu taşma fark ettirir."},
+        {"strip": "film", "panels": 3, "title": "Film şeridi", "text": "Bütün slaytlardan geçen koyu bir şerit ve üstünde küçük kareler. Küçük anlarla dolu bir hafta sonu dump'ı için ideal."},
+        {"strip": "banner", "panels": 4, "title": "Başlıkla açılış", "text": "İlk iki slayta yayılan kısa bir başlık (\"ekim\", \"kaş\", \"23\"), ardından fotoğraflar. Kelimenin iki yarısı da tek başına okunabilmeli."},
+        {"strip": "colors", "panels": 4, "title": "Renk hikâyesi", "text": "Zeminin rengi slayttan slayta değişir, her slaytta bir fotoğraf durur. Fotoğrafları bulundukları slaytın rengine göre seç."},
+        {"strip": "timeline", "panels": 4, "title": "Zaman çizelgesi", "text": "Bütün slaytlardan geçen bir çizgi, altına ve üstüne iliştirilmiş fotoğraflar. Gün gün bir gezi ya da ay ay bir yıl için iyi gider."},
+        {"strip": "route", "panels": 4, "title": "Rota haritası", "text": "Durak durak slaytlar boyunca kıvrılan noktalı bir yol, gittiğin her yerde bir iğne ve bir fotoğraf."}
+      ]
+    },
+    {
+      "id": "karma",
+      "short": "Karma",
+      "h2": "Karma düzenler: normal bir dump'ın içinde kesintisiz slaytlar",
+      "lead": "Bütün postu kesintisiz yapmak zorunda değilsin. Sıradan fotoğrafların yanında birleşik bir bölüm çoğu zaman daha güzel durur.",
+      "layouts": [
+        {"strip": "opener", "panels": 5, "title": "Panoramayla aç", "text": "İlk üç slayt tek bir geniş kare, gerisi normal bir dump. Açılış kaydırtır, fotoğraflar devam ettirir."},
+        {"strip": "closer", "panels": 5, "title": "Panoramayla kapat", "text": "Önce sıradan kareler, sonra son iki slayta yayılan geniş bir sahne. Sakin, sinematik bir bitiş."},
+        {"strip": "middle", "panels": 5, "title": "Ortada sürpriz", "text": "Normal bir dump'ın ortasında kesintisiz bir ikili. Kimse orada beklemediği için işe yarıyor."},
+        {"strip": "beforeafter", "panels": 2, "title": "Önce ve sonra", "text": "İki slaytta tek sahne: sol yarısı önce, sağ yarısı sonra. Bir oda, bir bahçe, yazın ve kışın aynı sokak."},
+        {"strip": "zoom", "panels": 5, "title": "Önce geniş, sonra yakın", "text": "İlk üç slaytta bir panorama, ardından ondaki detayların yakın planları. Sahnenin içinde rehberli bir tur gibi."}
+      ]
+    },
+    {
+      "id": "dikisler",
+      "short": "Temiz dikişler",
+      "h2": "Temiz dikişler için ipuçları",
+      "lead": "Bozuk panoramaların çoğu zevk meselesi değil, hesap hatasıdır.",
+      "html": "<ul>\n  <li><strong>Yüzleri, yazıları ve logoları kesik çizgilerinden uzak tut.</strong> Gökyüzü, su, kum ve duvar kesilebilir; insanlar kesilmez.</li>\n  <li><strong>Her slayt aynı boyda ve biçimde olsun.</strong> Instagram bütün postu ilk slaytın biçimine göre kırpar.</li>\n  <li><strong>Tüm tuvali bir kez dışa aktar, sonra kes.</strong> Her slaytı ayrı ayrı konumlayıp dışa aktarmak dikişlerin kaymasına yol açar.</li>\n  <li><strong>Tek bir slayta filtre uygulama.</strong> Birleşim yerinde gözle görülür bir renk farkı bırakır.</li>\n  <li><strong>Soldan sağa sırayla paylaş.</strong> Paylaştıktan sonra slaytların sırasını değiştirebilirsin ama eksik birini ekleyemezsin.</li>\n</ul>"
+    },
+    {
+      "id": "dump-ile",
+      "short": "DUMP'ta",
+      "h2": "DUMP'ta kesintisiz carousel nasıl yapılır?",
+      "lead": "Kesme işini DUMP yapar; piksel hesabına gerek kalmaz.",
+      "steps": [
+        {"title": "İhtiyacın kadar slaytla bir tuval aç.", "text": "Fotoğrafları, yazıları ve çıkartmaları istediğin yere koy; iki slaytın arasındaki kenarın üstüne bile."},
+        {"title": "Bir fotoğrafı slayt kenarının üzerine sürükle ve Kesintisiz Yap'a dokun.", "text": "Ya da bir fotoğrafı iki slayta yaymak için Konum → Doldur → 2x Genişlik'i kullan."},
+        {"title": "Kaydet.", "text": "Her slayt sırasıyla Fotoğraflar'da yeni bir albüme aktarılır; yeniden dizmeden soldan sağa paylaşabilirsin."}
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Kesintisiz carousel ne demek?",
+      "a": "Slaytları tek bir geniş görüntüden kesilmiş kaydırmalı post; kaydırdıkça fotoğraf bir slayttan diğerine devam eder. Panorama carousel ya da birleşik post da denir."
+    },
+    {
+      "q": "Kesintisiz Instagram carousel ölçüsü ne olmalı?",
+      "a": "1080 pikseli slayt sayısıyla çarp. Üç dikey 4:5 slayt için 3240 × 1350 piksellik bir tuval kullan ve onu 1080 × 1350 piksellik üç slayta böl."
+    },
+    {
+      "q": "Instagram carousel'de kaç slayt olabilir?",
+      "a": "En fazla 20 fotoğraf ve video. Kesintisiz bölüm için iki ila dört slayt genelde yeter; daha uzun panoramalarda insanlar sona varmadan bırakır."
+    },
+    {
+      "q": "Panoramam Instagram'da neden kayık görünüyor?",
+      "a": "Genellikle slaytlar tam olarak aynı boyda değildir, tuval slayt genişliğinin tam katı değildir ya da bir slayta ayrı filtre uygulanmıştır. Her slaytı aynı genişlikte, tek bir dışa aktarmadan kes."
+    },
+    {
+      "q": "Kesintisiz slaytları normal fotoğraflarla karıştırabilir miyim?",
+      "a": "Evet. Panoramayla açılıp normal fotoğraflarla devam eden post en sevilen düzenlerden biri. Instagram farklı kırpmasın diye bütün slaytları aynı biçimde tut."
+    }
+  ],
+  "related": [
+    {
+      "href": "/DUMP/tr/rehber/kaydirmali-birlesik-post.html",
+      "tag": "Rehber",
+      "title": "Instagram kaydırmalı birleşik post",
+      "text": "Tuval ölçüleri, kesme ve dikişlerin neden kaydığı."
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "key": "birthday-ideas",
+  "order": 5,
+  "slug": "birthday-photo-dump-ideas",
+  "keyword": "birthday photo dump ideas",
+  "title": "30 Birthday Photo Dump Ideas for Instagram",
+  "description": "30 birthday photo dump ideas: what to shoot before, during and after the party, ideas for a quiet birthday, and how to order the slides.",
+  "h1": "30 birthday <span class=\"g\">photo dump ideas</span>",
+  "crumb": "Birthday ideas",
+  "eyebrow": "Ideas · Birthday",
+  "campaign": "web-birthday",
+  "product_page": "photo_dump",
+  "published": "2026-10-28",
+  "updated": "2026-10-28",
+  "card": {
+    "tag": "Birthday",
+    "title": "30 birthday photo dump ideas",
+    "text": "What to shoot before, during and after the party, plus ideas for a quiet birthday."
+  },
+  "og": {
+    "kicker": "Birthday photo dump ideas",
+    "title": "30 birthday",
+    "accent": "dump ideas",
+    "sub": "Getting ready, the party, the people, the aftermath",
+    "art": "ideas",
+    "labels": ["ready", "party", "people", "after"],
+    "alt": "30 birthday photo dump ideas for Instagram"
+  },
+  "intro": [
+    "A birthday dump is easiest when you think of the day as a story: getting ready, the party, the people, the mess afterwards. Use the 30 ideas below as a shot list on the day, then pick 8 to 12 for the post.",
+    "No party this year? There's a section for quiet birthdays too."
+  ],
+  "mid_cta_after": "people",
+  "sections": [
+    {
+      "id": "getting-ready",
+      "short": "Getting ready",
+      "h2": "Getting ready: birthday photo dump ideas before the party",
+      "lead": "The hours before are full of small, personal details that nobody else has.",
+      "ideas": [
+        {"title": "The outfit laid out", "text": "on the bed or a chair, before you put it on."},
+        {"title": "One mirror shot", "text": "the birthday face, once. That's enough."},
+        {"title": "Hands busy with something", "text": "tying a ribbon, painting nails, writing a card."},
+        {"title": "The first message of the day", "text": "a screenshot, with names and numbers covered."},
+        {"title": "Morning coffee with a candle in it", "text": "a small, funny opener."},
+        {"title": "The way there", "text": "a car window, a bus stop, the walk to the restaurant."}
+      ]
+    },
+    {
+      "id": "party",
+      "short": "The party",
+      "h2": "Birthday party photo dump ideas",
+      "lead": "Shoot the cake twice: before anyone touches it and after everyone has.",
+      "ideas": [
+        {"title": "The cake, untouched", "text": "straight on or from above, candles lit."},
+        {"title": "Candles mid-blow", "text": "blur is fine; it's the moment that counts."},
+        {"title": "The table from above", "text": "plates, glasses, crumbs, hands reaching in."},
+        {"title": "Decorations up close", "text": "balloons, a banner, a number candle. A texture slide between people."},
+        {"title": "The whole room", "text": "one wide shot so people can see where it happened."},
+        {"title": "The cake afterwards", "text": "the half-eaten version is usually funnier."}
+      ]
+    },
+    {
+      "id": "people",
+      "short": "People",
+      "h2": "Birthday dump ideas with friends and family",
+      "lead": "Candids beat poses. Aim for one honest photo of each person who mattered.",
+      "ideas": [
+        {"title": "Everyone in one frame", "text": "even if someone is blinking."},
+        {"title": "One candid per friend", "text": "laughing, talking, mid-bite. Not posing."},
+        {"title": "The person who organised it", "text": "they deserve a slide of their own."},
+        {"title": "A hug in motion", "text": "slightly blurry is the point."},
+        {"title": "The youngest and oldest guest", "text": "together in one photo, if you can."},
+        {"title": "The group selfie that's mostly ceiling", "text": "keep it. It's the funny slide."}
+      ]
+    },
+    {
+      "id": "details",
+      "short": "Details",
+      "h2": "Small details that make a birthday dump",
+      "lead": "Details sit between the people shots and give the swipe a rhythm.",
+      "ideas": [
+        {"title": "Cards and handwriting", "text": "a line from a card, if the writer doesn't mind."},
+        {"title": "A gift mid-unwrap", "text": "paper half off, hands in the frame."},
+        {"title": "The song of the night", "text": "a screenshot of the playlist or the speaker."},
+        {"title": "Shoes under the table", "text": "taken at the end of the night."},
+        {"title": "Confetti on the floor", "text": "the aftermath slide."},
+        {"title": "Your new age in a number", "text": "a candle, a balloon, or written in sand or frosting."}
+      ]
+    },
+    {
+      "id": "quiet",
+      "short": "Quiet birthday",
+      "h2": "Ideas for a quiet or solo birthday dump",
+      "lead": "A calm birthday makes a lovely dump. Show the small things you did for yourself.",
+      "ideas": [
+        {"title": "Breakfast you didn't rush", "text": "in bed, on a balcony or at a favourite café."},
+        {"title": "A walk somewhere you love", "text": "a park, the sea, your old street."},
+        {"title": "A treat you bought yourself", "text": "flowers, a book, a very good pastry."},
+        {"title": "A letter to your future self", "text": "just the envelope, sealed."},
+        {"title": "Messages from far away", "text": "screenshots with names covered, or a phone lighting up on the table."},
+        {"title": "The calm end of the day", "text": "a candle, a book, the evening sky."}
+      ]
+    },
+    {
+      "id": "slide-order",
+      "short": "Slide order",
+      "h2": "How to order a birthday photo dump",
+      "lead": "Follow the day, swap between people and details, and finish with the aftermath.",
+      "steps": [
+        {"title": "Open with the cake or your best portrait.", "text": "It's the slide people see in the feed, so make it clearly a birthday."},
+        {"title": "Follow the day in order.", "text": "Getting ready, the way there, the party, the end of the night."},
+        {"title": "Alternate people and details.", "text": "A friend, then the table, then two friends, then a balloon. The change of scale keeps people swiping."},
+        {"title": "Put the candle moment in the middle.", "text": "It's the peak of the story, so let it land halfway through."},
+        {"title": "End with the aftermath.", "text": "Confetti, empty plates, or you asleep on the sofa."},
+        {"title": "Keep it to 8 to 12 slides.", "text": "Instagram allows up to 20, but a tighter dump gets swiped to the end."}
+      ],
+      "after": "<p>Need a caption too? There are eleven in the <a href=\"/DUMP/photo-dump-caption-ideas/#birthday\">birthday section of 100 photo dump captions</a>, each with a Copy button.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What should I post in a birthday photo dump?",
+      "a": "A mix of the day's story: getting ready, the cake, the people and a few small details, ending with the aftermath. One candid of each person who mattered is worth more than several posed group shots."
+    },
+    {
+      "q": "How many photos should a birthday photo dump have?",
+      "a": "8 to 12 for most birthdays. Instagram allows up to 20 photos and videos in one carousel, which suits a birthday trip or a whole birthday week."
+    },
+    {
+      "q": "What should I caption a birthday photo dump?",
+      "a": "Something short and personal: your new age, a joke about getting older, or a thank-you to the people in the photos. The <a href=\"/DUMP/photo-dump-caption-ideas/#birthday\">birthday captions</a> are a good place to start."
+    },
+    {
+      "q": "When should I post my birthday photo dump?",
+      "a": "The same evening or the day after works well, while the day is still fresh for everyone who was there. A birthday week dump can wait until the week is over."
+    },
+    {
+      "q": "Can I make a birthday dump without a party?",
+      "a": "Yes. A quiet birthday makes a calm, personal dump: breakfast, a walk, a treat and the end of the day. See the quiet birthday ideas above."
+    }
+  ],
+  "related": [
+    {
+      "href": "/DUMP/guides/how-to-pick-photos-for-a-photo-dump.html",
+      "tag": "Guide",
+      "title": "How to pick photos for a photo dump",
+      "text": "Six rules, a 10-slot order and a checklist."
+    }
+  ]
+}

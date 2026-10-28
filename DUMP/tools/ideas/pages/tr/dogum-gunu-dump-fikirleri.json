@@ -1,0 +1,151 @@
+{
+  "key": "birthday-ideas",
+  "order": 5,
+  "slug": "dogum-gunu-dump-fikirleri",
+  "keyword": "doğum günü dump fikirleri",
+  "title": "Doğum Günü Dump Fikirleri: Instagram İçin 30 Fikir",
+  "description": "Doğum günü photo dump'ı için 30 fikir: hazırlık, parti, insanlar ve detaylar, sakin bir doğum günü için öneriler ve slayt sırası ipuçları.",
+  "h1": "30 doğum günü <span class=\"g\">dump fikri</span>",
+  "crumb": "Doğum günü fikirleri",
+  "eyebrow": "Fikirler · Doğum günü",
+  "campaign": "web-birthday-tr",
+  "product_page": "photo_dump",
+  "published": "2026-10-28",
+  "updated": "2026-10-28",
+  "card": {
+    "tag": "Doğum günü",
+    "title": "30 doğum günü dump fikri",
+    "text": "Partiden önce, parti sırasında ve sonrasında neler çekilir; sakin bir doğum günü için de fikirler."
+  },
+  "og": {
+    "kicker": "Doğum günü dump fikirleri",
+    "title": "30 doğum günü",
+    "accent": "dump fikri",
+    "sub": "Hazırlık, parti, insanlar ve sonrası",
+    "art": "ideas",
+    "labels": ["hazırlık", "parti", "insanlar", "sonra"],
+    "alt": "Instagram için 30 doğum günü photo dump fikri"
+  },
+  "intro": [
+    "Doğum günü dump'ı, günü bir hikâye gibi düşününce kolaylaşır: hazırlık, parti, insanlar ve ardından kalan dağınıklık. Aşağıdaki 30 fikri gün boyunca çekim listesi gibi kullan, sonra post için 8–12 tanesini seç.",
+    "Bu yıl parti yok mu? Sakin doğum günleri için de bir bölüm var."
+  ],
+  "mid_cta_after": "insanlar",
+  "sections": [
+    {
+      "id": "hazirlik",
+      "short": "Hazırlık",
+      "h2": "Hazırlık: partiden önce doğum günü dump fikirleri",
+      "lead": "Partiden önceki saatler, başka kimsede olmayan küçük ve kişisel detaylarla doludur.",
+      "ideas": [
+        {"title": "Hazırlanmış kıyafet", "text": "giymeden önce yatağın ya da sandalyenin üstünde."},
+        {"title": "Tek bir ayna karesi", "text": "doğum günü yüzün, bir kez. Yeter."},
+        {"title": "Bir şeyle meşgul eller", "text": "kurdele bağlarken, oje sürerken, kart yazarken."},
+        {"title": "Günün ilk mesajı", "text": "ekran görüntüsü; isimleri ve numaraları kapat."},
+        {"title": "Mumlu sabah kahvesi", "text": "küçük ve komik bir açılış."},
+        {"title": "Yol", "text": "araba camı, otobüs durağı, restorana yürüyüş."}
+      ]
+    },
+    {
+      "id": "parti",
+      "short": "Parti",
+      "h2": "Doğum günü partisi dump fikirleri",
+      "lead": "Pastayı iki kez çek: kimse dokunmadan önce ve herkes dokunduktan sonra.",
+      "ideas": [
+        {"title": "Dokunulmamış pasta", "text": "karşıdan ya da yukarıdan, mumlar yanarken."},
+        {"title": "Mumlar üflenirken", "text": "bulanık olabilir; önemli olan o an."},
+        {"title": "Yukarıdan sofra", "text": "tabaklar, bardaklar, kırıntılar, uzanan eller."},
+        {"title": "Yakından süsler", "text": "balonlar, flama, rakam mum. İnsan kareleri arasında bir doku slaytı."},
+        {"title": "Bütün oda", "text": "her şeyin nerede olduğunu gösteren tek bir geniş kare."},
+        {"title": "Sonradan pasta", "text": "yarısı yenmiş hâli genelde daha komiktir."}
+      ]
+    },
+    {
+      "id": "insanlar",
+      "short": "İnsanlar",
+      "h2": "Arkadaşlar ve aileyle doğum günü dump fikirleri",
+      "lead": "Doğal kareler pozdan iyidir. O gün önemli olan herkesten dürüst bir fotoğraf hedefle.",
+      "ideas": [
+        {"title": "Herkes tek karede", "text": "biri gözünü kırpmış olsa bile."},
+        {"title": "Her arkadaştan bir doğal kare", "text": "gülerken, konuşurken, lokma ağzındayken. Poz vermeden."},
+        {"title": "Her şeyi organize eden kişi", "text": "kendi slaytını hak ediyor."},
+        {"title": "Hareket hâlinde bir sarılma", "text": "biraz bulanık olması işin güzelliği."},
+        {"title": "En genç ve en yaşlı misafir", "text": "becerebilirsen aynı karede."},
+        {"title": "Çoğu tavan olan grup selfie'si", "text": "silme. Komik slayt o."}
+      ]
+    },
+    {
+      "id": "detaylar",
+      "short": "Detaylar",
+      "h2": "Doğum günü dump'ını tamamlayan küçük detaylar",
+      "lead": "Detaylar insan karelerinin arasına girer ve kaydırmaya ritim verir.",
+      "ideas": [
+        {"title": "Kartlar ve el yazısı", "text": "yazan sakınca görmezse karttan bir satır."},
+        {"title": "Açılırken bir hediye", "text": "paket yarı yırtık, eller kadrajda."},
+        {"title": "Gecenin şarkısı", "text": "çalma listesinin ya da hoparlörün ekran görüntüsü."},
+        {"title": "Masanın altındaki ayakkabılar", "text": "gecenin sonunda çekilmiş."},
+        {"title": "Yerdeki konfeti", "text": "parti sonrası slaytı."},
+        {"title": "Yeni yaşın rakamla", "text": "bir mum, bir balon ya da kuma veya kremaya yazılmış hâli."}
+      ]
+    },
+    {
+      "id": "sakin",
+      "short": "Sakin doğum günü",
+      "h2": "Sakin ya da tek başına doğum günü dump fikirleri",
+      "lead": "Sakin bir doğum günü çok güzel bir dump olur. Kendin için yaptığın küçük şeyleri göster.",
+      "ideas": [
+        {"title": "Acele etmeden kahvaltı", "text": "yatakta, balkonda ya da sevdiğin bir kafede."},
+        {"title": "Sevdiğin bir yerde yürüyüş", "text": "bir park, deniz kenarı, eski sokağın."},
+        {"title": "Kendine aldığın bir şey", "text": "çiçek, bir kitap, çok güzel bir tatlı."},
+        {"title": "Gelecekteki kendine bir mektup", "text": "sadece zarfı, kapalı."},
+        {"title": "Uzaklardan gelen mesajlar", "text": "isimleri kapalı ekran görüntüleri ya da masada yanıp sönen bir telefon."},
+        {"title": "Günün sakin sonu", "text": "bir mum, bir kitap, akşam gökyüzü."}
+      ]
+    },
+    {
+      "id": "slayt-sirasi",
+      "short": "Slayt sırası",
+      "h2": "Doğum günü dump'ında slaytlar nasıl sıralanır?",
+      "lead": "Günün akışını izle, insanlarla detayları dönüşümlü koy ve parti sonrasıyla bitir.",
+      "steps": [
+        {"title": "Pastayla ya da en iyi portrenle aç.", "text": "Akışta görünen kare bu; doğum günü olduğu ilk bakışta anlaşılsın."},
+        {"title": "Günü sırasıyla izle.", "text": "Hazırlık, yol, parti, gecenin sonu."},
+        {"title": "İnsanları ve detayları dönüşümlü koy.", "text": "Bir arkadaş, sonra sofra, sonra iki arkadaş, sonra bir balon. Ölçek değiştikçe kaydırma devam eder."},
+        {"title": "Mum anını ortaya koy.", "text": "Hikâyenin doruk noktası; yolun yarısında gelsin."},
+        {"title": "Parti sonrasıyla bitir.", "text": "Konfeti, boş tabaklar ya da kanepede uyuyakalmış sen."},
+        {"title": "8–12 slaytta kal.", "text": "Instagram 20 kareye izin veriyor ama kısa bir dump sonuna kadar kaydırılır."}
+      ],
+      "after": "<p>Açıklama da mı lazım? <a href=\"/DUMP/tr/photo-dump-caption-onerileri/#dogum-gunu\">100 photo dump açıklamasının doğum günü bölümünde</a> on bir tane var, hepsinin yanında Kopyala düğmesi.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Doğum günü dump'ında neler paylaşılır?",
+      "a": "Günün hikâyesinden bir karışım: hazırlık, pasta, insanlar ve birkaç küçük detay, en sonda da parti sonrası. Önemli olan herkesten bir doğal kare, birkaç pozlu grup fotoğrafından daha değerlidir."
+    },
+    {
+      "q": "Doğum günü dump'ında kaç fotoğraf olmalı?",
+      "a": "Çoğu doğum günü için 8–12. Instagram bir kaydırmalı postta en fazla 20 fotoğraf ve videoya izin veriyor; doğum günü gezisi ya da koca bir doğum günü haftası için uygun."
+    },
+    {
+      "q": "Doğum günü dump'ına ne açıklama yazılır?",
+      "a": "Kısa ve kişisel bir şey: yeni yaşın, yaşlanmakla ilgili bir şaka ya da fotoğraftaki insanlara bir teşekkür. Başlamak için <a href=\"/DUMP/tr/photo-dump-caption-onerileri/#dogum-gunu\">doğum günü açıklamalarına</a> bak."
+    },
+    {
+      "q": "Doğum günü dump'ını ne zaman paylaşmalıyım?",
+      "a": "Aynı akşam ya da ertesi gün iyi gider; gün oradaki herkesin aklındayken. Doğum günü haftası dump'ı hafta bitene kadar bekleyebilir."
+    },
+    {
+      "q": "Parti olmadan doğum günü dump'ı yapılır mı?",
+      "a": "Evet. Sakin bir doğum günü sakin ve kişisel bir dump olur: kahvaltı, bir yürüyüş, kendine bir ödül ve günün sonu. Yukarıdaki sakin doğum günü fikirlerine bak."
+    }
+  ],
+  "related": [
+    {
+      "href": "/DUMP/tr/rehber/photo-dump-nasil-yapilir.html",
+      "tag": "Rehber",
+      "title": "Photo dump nasıl yapılır?",
+      "text": "Altı seçim kuralı, 10 slaytlık sıra ve kontrol listesi."
+    }
+  ]
+}

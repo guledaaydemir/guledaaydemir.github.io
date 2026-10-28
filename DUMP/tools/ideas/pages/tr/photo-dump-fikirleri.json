@@ -1,0 +1,161 @@
+{
+  "key": "ideas",
+  "order": 2,
+  "slug": "photo-dump-fikirleri",
+  "keyword": "photo dump fikirleri",
+  "title": "Photo Dump Fikirleri: Instagram İçin 40 Dump Fikri",
+  "description": "Instagram için 40 photo dump fikri: haftalık, aylık, tatil, yaz ve yıl özeti dump'ına neler konur, slaytlar hangi sırayla dizilir?",
+  "h1": "Instagram için 40 <span class=\"g\">photo dump fikri</span>",
+  "crumb": "Dump fikirleri",
+  "eyebrow": "Fikirler · Ne paylaşmalı?",
+  "campaign": "web-ideas-tr",
+  "product_page": "photo_dump",
+  "published": "2026-10-28",
+  "updated": "2026-10-28",
+  "card": {
+    "tag": "Fikirler",
+    "title": "40 photo dump fikri",
+    "text": "Haftalık, aylık, tatil, yaz ve yıl özeti dump'ına neler konur, slaytlar nasıl sıralanır?"
+  },
+  "og": {
+    "kicker": "Photo dump fikirleri",
+    "title": "40 photo dump",
+    "accent": "fikri",
+    "sub": "Haftalık, aylık, tatil, yaz ve yıl özeti",
+    "art": "ideas",
+    "labels": ["hafta", "ay", "tatil", "yaz"],
+    "alt": "Instagram için 40 photo dump fikri: haftalık, aylık, tatil, yaz ve yıl özeti"
+  },
+  "intro": [
+    "Ne paylaşacağını bilemiyor musun? Yapacağın dump'ın türünü seç, altındaki sekiz fikri çekim listesi gibi kullan. Çoğu dump 8–12 karede en iyi hâlini bulur; hepsine gerek yok.",
+    "Fikirlerin ardından: insanların son slayta kadar kaydırması için kareleri hangi sırayla dizeceğin."
+  ],
+  "mid_cta_after": "tatil",
+  "sections": [
+    {
+      "id": "haftalik",
+      "short": "Haftalık",
+      "h2": "Haftalık photo dump fikirleri",
+      "lead": "Haftalık dump'ta bir şey olması gerekmez. Tekrar eden küçük anlara ve güldüren bir kareye bak.",
+      "ideas": [
+        {"title": "Haftanın çayı ya da kahvesi", "text": "ince belli bardak da olur, köpüklü bir latte de. Yakın plan bir içecek kolay bir açılıştır."},
+        {"title": "Kendi yaptığın bir yemek", "text": "tost bile sayılır. Kadrajda elin olursa daha samimi durur."},
+        {"title": "Yolun", "text": "vapur, metro ya da aynı sokak farklı bir saatte. Küçük bir hikâye gibi okunur."},
+        {"title": "Bir ayna ya da kombin karesi", "text": "bir tane yeter; seni selfie serisine boğmadan dump'a katar."},
+        {"title": "Haftayı özetleyen bir ekran görüntüsü", "text": "komik bir mesaj, bir çalma listesi, hava durumu. İsimleri ve numaraları kapat."},
+        {"title": "Bitirdiğin bir şey", "text": "bir kitap, bir antrenman, bir proje, sonunda toplanan mutfak."},
+        {"title": "Bir arkadaşının elleri ya da sırtı", "text": "poz vermeyen insanlar dump'ı doğal tutar."},
+        {"title": "Bulanık, kaotik bir kare", "text": "hareket ve dağınıklık dump'ı gerçek gösterir; bir tane mutlaka koy."}
+      ]
+    },
+    {
+      "id": "aylik",
+      "short": "Aylık",
+      "h2": "Aylık photo dump fikirleri",
+      "lead": "Tema ayın kendisi olsun. Her haftadan bir kare sırayı kurar, gerisi boşlukları doldurur.",
+      "ideas": [
+        {"title": "Her haftadan bir kare", "text": "dört kare ayın omurgası olur, sıra kendiliğinden oturur."},
+        {"title": "Ayın büyük anı", "text": "bir etkinlik, bir yolculuk, bir ilk gün, bir taşınma."},
+        {"title": "Mevsimden bir detay", "text": "ilk erikler, ıslak bir şemsiye, sokakta kestane kokusu."},
+        {"title": "Önce ve sonra", "text": "bir saç kesimi, odanın yeni hâli, hayatta kalan bir saksı."},
+        {"title": "Aklında kalan bir yemek", "text": "yarın yine sipariş edeceğin o tabak."},
+        {"title": "Bilet, fiş ya da not", "text": "kâğıt detaylar dokuyu artırır. Kişisel bilgileri bulanıklaştır."},
+        {"title": "Her gün gördüğün bir şey", "text": "aynı kupa, aynı ağaç, kedinin yeni köşesi."},
+        {"title": "Kapanışta gün batımı ya da gece", "text": "sakin bir son kare ayı yumuşakça kapatır."}
+      ]
+    },
+    {
+      "id": "tatil",
+      "short": "Tatil",
+      "h2": "Tatil photo dump fikirleri",
+      "lead": "Gezi dump'ında sıra her şeydir: var, etrafa bak, ye, yavaşla, eve dön.",
+      "ideas": [
+        {"title": "Varış", "text": "uçak penceresi, otogar peronu ya da ilk tabela."},
+        {"title": "Geniş bir açılış karesi", "text": "bir silüet, bir koy, bir meydan; nerede olduğunu hemen anlatsın."},
+        {"title": "Yerel yemek, yakından", "text": "sokak lezzeti, pazar tezgâhı, uzun bir kahvaltı."},
+        {"title": "Tabelalar, menüler, kapı numaraları", "text": "açıklamaya gerek bırakmadan \"başka bir yerdeyim\" der."},
+        {"title": "Kaldığın yerin en güzel köşesi", "text": "balkon, manzaralı yatak, çinili banyo."},
+        {"title": "Yol arkadaşının doğal bir karesi", "text": "yalnız gittiysen kendi gölgen de olur."},
+        {"title": "Hiçbir şey olmayan bir an", "text": "dolmuş beklemek, bir bank, kumdaki ayaklar."},
+        {"title": "Dönüş yolu", "text": "valiz, son kahve, havalimanı koltukları."}
+      ]
+    },
+    {
+      "id": "yaz",
+      "short": "Yaz",
+      "h2": "Yaz photo dump fikirleri",
+      "lead": "Yaz dump'ları renk ve ışıkla yürür. Suya, meyveye ve uzun akşam gökyüzüne yaslan.",
+      "ideas": [
+        {"title": "Her hâliyle su", "text": "deniz, havuz, bahçe hortumu, buğulanmış bir bardak."},
+        {"title": "Güneşte solmuş detaylar", "text": "plaj havlusu, bronz izi, hasır şapka."},
+        {"title": "Erimeden önce dondurma", "text": "ya da eridikten sonra; o genelde daha komik."},
+        {"title": "Uzun akşam ışığı", "text": "akşam geç saatte hâlâ aydınlık bir gökyüzü tek başına \"yaz\" der."},
+        {"title": "Meyve", "text": "karpuz, kiraz, incir: ortadaki slaytlar için güçlü renk."},
+        {"title": "Ayak karesi", "text": "terlikler, kum, iskelenin ucu."},
+        {"title": "Bir yaz gecesi", "text": "açık hava sineması, ışık zinciri, dışarıda geç bir akşam yemeği."},
+        {"title": "Sıcak hava şakası", "text": "yüzüne tutulmuş vantilatör, sıcaklığı gösteren hava durumu ekranı."}
+      ]
+    },
+    {
+      "id": "yil-ozeti",
+      "short": "Yıl özeti",
+      "h2": "Yıl özeti photo dump fikirleri",
+      "lead": "Uzun bir kaydırmalı postu hak eden tek dump. Her aydan bir kareyle başla, sonra insanların soracağı anları ekle.",
+      "ideas": [
+        {"title": "Her aydan bir kare", "text": "tarih sırasıyla on iki kare."},
+        {"title": "Herkesin sorduğu an", "text": "yüz yüze gösterdiğin o fotoğraf."},
+        {"title": "İlk kez denediğin bir şey", "text": "bir hobi, bir şehir, bir saç modeli."},
+        {"title": "Zor bir ay, yumuşakça", "text": "sakin bir kare o ayı da sayar, fazla anlatmadan."},
+        {"title": "Yanında olan insanlar", "text": "bir grup fotoğrafı ya da yan yana birkaç yüz."},
+        {"title": "Yılın bir ekran görüntüsünde", "text": "adımlar, kitaplar, müzik özeti; sadece paylaşmak istersen."},
+        {"title": "Neredeyse sildiğin fotoğraf", "text": "kusurlu ama sonradan anlam kazanan o kare."},
+        {"title": "İleriye bir bakış", "text": "yeni bir ajanda, boş bir takvim, yılın ilk gün doğumu."}
+      ]
+    },
+    {
+      "id": "slayt-sirasi",
+      "short": "Slayt sırası",
+      "h2": "Photo dump'ta slaytlar hangi sırayla dizilir?",
+      "lead": "En güçlü kareyle aç, her kaydırmada ölçeği değiştir, komik bir kareyle bitir. Ayrıntılar:",
+      "steps": [
+        {"title": "En güçlü fotoğrafınla başla.", "text": "Net, aydınlık ve tek bir konusu olsun. Akışta ve profil ızgarasında görünen kare bu."},
+        {"title": "Yakın ve geniş kareleri karıştır.", "text": "Bir detay, bir mekân, bir insan. Her kaydırmada ölçek değişince sıradaki kare hep yeni gelir."},
+        {"title": "Renkleri grupla ya da tarih sırasını koru.", "text": "Gezi dump'ı tarih sırasıyla daha iyi okunur; haftalık dump'ta benzer renkler yan yana daha sakin durur."},
+        {"title": "Ortaya bir video ya da hareketli kare koy.", "text": "Dikkat dağılmaya başladığı yerde ritmi bozar."},
+        {"title": "Komik bir kareyle bitir.", "text": "Bir kamera arkası, ifadesiz bir yüz ya da kedi. Sona kadar kaydıranı ödüllendirir."},
+        {"title": "8–12 slaytta dur.", "text": "Instagram 20 kareye izin veriyor ama kısa bir dump sonuna kadar kaydırılır. Uzun hâlini yıl özetine sakla."}
+      ],
+      "after": "<p>Slot slot bir şablon mu istiyorsun? <a href=\"/DUMP/tr/rehber/photo-dump-nasil-yapilir.html\">Photo dump nasıl yapılır?</a> rehberinde 10 slaytlık sıra ve kontrol listesi var. 20 slayt sınırı Instagram'ın 2024'teki güncellemesinden geliyor (<a href=\"https://techcrunch.com/2024/08/08/instagram-is-embracing-the-photo-dump/\" rel=\"noopener\" hreflang=\"en\">TechCrunch</a>, İngilizce).</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Photo dump ne demek?",
+      "a": "Bir haftadan, bir aydan, bir geziden ya da bir etkinlikten gevşekçe bağlantılı fotoğrafların tek bir kaydırmalı postta, kısa bir açıklamayla paylaşılmasıdır. Rahat görünür ama iyi olanlar özenle seçilir ve sıralanır."
+    },
+    {
+      "q": "Bir photo dump'ta kaç fotoğraf olur?",
+      "a": "Instagram bir kaydırmalı postta en fazla 20 fotoğraf ve videoya izin veriyor. Çoğu dump 8–12 karede en iyi hâlini bulur: eğlenceli olacak kadar çeşitli, son slayta kadar kaydırılacak kadar kısa."
+    },
+    {
+      "q": "Photo dump'ın ilk fotoğrafı ne olmalı?",
+      "a": "En güçlü karen: net, aydınlık ve tek bir konusu olan. Akışta ve profil ızgarasında görünen ilk slayt, kimsenin kaydırıp kaydırmayacağını belirler."
+    },
+    {
+      "q": "Ne sıklıkla photo dump paylaşmalıyım?",
+      "a": "Bir dump'a yetecek kadar fotoğrafın olduğunda. Neredeyse her gün fotoğraf çekiyorsan haftalık, sürdürmesi en kolay ritim olarak aylık iyi gider."
+    },
+    {
+      "q": "Photo dump'ın bir teması olmalı mı?",
+      "a": "Gevşek bir tema işe yarar. Bir zaman aralığı (bu hafta, ekim), bir yer ya da bir ruh hâli, fotoğrafların birbirine ait görünmesi için yeter."
+    }
+  ],
+  "related": [
+    {
+      "href": "/DUMP/tr/rehber/photo-dump-nasil-yapilir.html",
+      "tag": "Rehber",
+      "title": "Photo dump nasıl yapılır?",
+      "text": "Altı seçim kuralı, 10 slaytlık sıra ve kontrol listesi."
+    }
+  ]
+}

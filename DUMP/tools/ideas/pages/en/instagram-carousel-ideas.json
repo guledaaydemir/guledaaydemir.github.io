@@ -1,0 +1,130 @@
+{
+  "key": "carousel",
+  "order": 3,
+  "slug": "instagram-carousel-ideas",
+  "keyword": "instagram carousel ideas",
+  "title": "Seamless Instagram Carousel Ideas: 15 Layouts to Try",
+  "description": "Seamless Instagram carousel ideas: what a panorama carousel is, the canvas size to use, and 15 layouts from horizon pans to scrapbook strips.",
+  "h1": "Seamless Instagram <span class=\"g\">carousel ideas</span>",
+  "crumb": "Carousel ideas",
+  "eyebrow": "Ideas · Carousel layouts",
+  "campaign": "web-carousel",
+  "product_page": "carousel",
+  "published": "2026-10-28",
+  "updated": "2026-10-28",
+  "card": {
+    "tag": "Carousel",
+    "title": "Seamless carousel ideas",
+    "text": "15 panorama, collage and hybrid layouts, each with a diagram of where the slides cut."
+  },
+  "og": {
+    "kicker": "Instagram carousel ideas",
+    "title": "Seamless",
+    "accent": "carousel ideas",
+    "sub": "15 layouts, from horizon pans to scrapbook strips",
+    "art": "carousel",
+    "alt": "Seamless Instagram carousel ideas: one image running across three slides"
+  },
+  "cta_text": "Drag a photo across the edge between two slides and DUMP lines up the seams for you, then saves every slide to Photos in posting order. Free on iPhone and iPad.",
+  "intro": [
+    "A seamless carousel turns a few slides into one long picture: as people swipe, the image keeps going. Below: what it is, the size to use, and 15 layout ideas.",
+    "Each idea has a small diagram. The dashed lines show where Instagram cuts one slide from the next."
+  ],
+  "mid_cta_after": "collage",
+  "sections": [
+    {
+      "id": "what",
+      "short": "What it is",
+      "h2": "What is a seamless (panorama) Instagram carousel?",
+      "lead": "One wide image cut into equal slides and posted in order, so swiping feels like panning across a single picture. Instagram has no panorama setting: the slides are cut before you upload them.",
+      "html": "<p>Every slide in a carousel is its own image. Because the slides sit edge to edge as you swipe, panels that line up exactly read as one continuous picture. The whole trick is making each panel the same size and cutting at the right place.</p>\n<div class=\"table-scroll\"><table>\n  <thead><tr><th>Slides</th><th>Shape</th><th>Full canvas</th><th>Each slide</th></tr></thead>\n  <tbody>\n    <tr><td>2</td><td>4:5 portrait</td><td>2160 &times; 1350 px</td><td>1080 &times; 1350 px</td></tr>\n    <tr><td><b>3</b></td><td><b>4:5 portrait</b></td><td><b>3240 &times; 1350 px</b></td><td><b>1080 &times; 1350 px</b></td></tr>\n    <tr><td>3</td><td>3:4 portrait</td><td>3240 &times; 1440 px</td><td>1080 &times; 1440 px</td></tr>\n    <tr><td>3</td><td>1:1 square</td><td>3240 &times; 1080 px</td><td>1080 &times; 1080 px</td></tr>\n  </tbody>\n</table></div>\n<p>Rule of thumb: canvas width = 1080 &times; the number of slides, with every slide exactly the same width. The full method, and why panels drift, is in <a href=\"/DUMP/guides/seamless-instagram-carousel.html\">how to make a seamless panoramic carousel</a>.</p>"
+    },
+    {
+      "id": "panorama",
+      "short": "Panorama",
+      "h2": "Panorama layouts: one photo across every slide",
+      "lead": "The classic version. Choose wide, continuous scenes where a cut through the middle doesn't hurt.",
+      "layouts": [
+        {"strip": "horizon", "panels": 3, "title": "Horizon pan", "text": "A beach, a skyline or a field across three slides. Keep the horizon at the same height so the line runs straight through every cut."},
+        {"strip": "reveal", "panels": 3, "title": "The reveal", "text": "Let part of the subject peek in from the right edge of slide one: a boat, a building, a tower. People swipe to see the rest. Best with objects, never faces."},
+        {"strip": "line", "panels": 3, "title": "Leading line", "text": "A pier, a road or a shoreline that starts on slide one and ends on the last. The line pulls the eye, and the thumb, to the right."},
+        {"strip": "fade", "panels": 4, "title": "Sky from day to night", "text": "A long sunset or a blend of photos taken as the light changed. Each slide is a little darker than the one before."}
+      ]
+    },
+    {
+      "id": "collage",
+      "short": "Collage",
+      "h2": "Collage layouts: separate photos on one continuous background",
+      "lead": "The easiest kind to get right. The background runs across the slides while the photos sit on top, so nothing important gets cut.",
+      "layouts": [
+        {"strip": "scrapbook", "panels": 3, "title": "Scrapbook strip", "text": "Photos on a paper or plain background, with one print straddling each cut. The overlap is what makes people notice the slides connect."},
+        {"strip": "film", "panels": 3, "title": "Film strip", "text": "A dark band with small frames running across all the slides, like a contact sheet. Good for a weekend dump with many small moments."},
+        {"strip": "banner", "panels": 4, "title": "Headline opener", "text": "One short headline across the first two slides (\"october\", \"lisbon\", \"23\"), then photos. Each half of the word should still read on its own."},
+        {"strip": "colors", "panels": 4, "title": "Colour story", "text": "The background shifts colour from slide to slide, with one photo on each. Pick photos that match their slide's colour."},
+        {"strip": "timeline", "panels": 4, "title": "Timeline", "text": "A line runs across every slide with photos pinned above and below it. Works for a trip day by day or a year month by month."},
+        {"strip": "route", "panels": 4, "title": "Route map", "text": "A dotted path wanders across the slides from stop to stop, with a pin and a photo at each place you went."}
+      ]
+    },
+    {
+      "id": "hybrid",
+      "short": "Hybrid",
+      "h2": "Hybrid layouts: seamless slides inside a normal dump",
+      "lead": "You don't have to make the whole carousel seamless. A connected section next to ordinary photos often looks better.",
+      "layouts": [
+        {"strip": "opener", "panels": 5, "title": "Panorama opener", "text": "The first three slides are one wide shot; the rest is a normal dump. The opening makes people swipe, and the photos keep them going."},
+        {"strip": "closer", "panels": 5, "title": "Panorama closer", "text": "Ordinary photos first, then one wide scene across the last two slides. A calm, cinematic ending."},
+        {"strip": "middle", "panels": 5, "title": "Surprise in the middle", "text": "A seamless pair in the middle of a normal dump. Nobody expects it there, which is why it works."},
+        {"strip": "beforeafter", "panels": 2, "title": "Before and after", "text": "One scene in two slides: the left half before, the right half after. A room, a garden, a street in summer and winter."},
+        {"strip": "zoom", "panels": 5, "title": "Wide, then zoom in", "text": "A panorama across the first three slides, then close-ups of details from it. It works like a guided tour of the scene."}
+      ]
+    },
+    {
+      "id": "seams",
+      "short": "Clean seams",
+      "h2": "Tips for clean seams",
+      "lead": "Most broken panoramas come down to arithmetic, not taste.",
+      "html": "<ul>\n  <li><strong>Keep faces, words and logos off the cut lines.</strong> Skies, water, sand and walls can be cut; people can't.</li>\n  <li><strong>Make every slide the same size and shape.</strong> Instagram crops the whole carousel to the first slide's shape.</li>\n  <li><strong>Export the full canvas once, then cut it.</strong> Repositioning and exporting each slide separately is how the seams drift.</li>\n  <li><strong>No filter on a single slide.</strong> It leaves a visible colour step at the join.</li>\n  <li><strong>Post in left-to-right order.</strong> You can reorder slides after posting, but you can't add a missing one.</li>\n</ul>"
+    },
+    {
+      "id": "dump",
+      "short": "In DUMP",
+      "h2": "How to make a seamless carousel in DUMP",
+      "lead": "DUMP does the cutting for you, so there's no pixel maths.",
+      "steps": [
+        {"title": "Start a canvas with the slides you need.", "text": "Add photos, text and stickers anywhere, including across the edge between two slides."},
+        {"title": "Drag a photo across a slide edge and tap Make Seamless.", "text": "Or use Position → Fill → Width 2x to stretch a photo over two slides."},
+        {"title": "Save.", "text": "Each slide is exported in order to a new album in Photos, so you can post them left to right without rearranging."}
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a seamless carousel on Instagram?",
+      "a": "A carousel whose slides are cut from one wide image, so the picture continues from one slide to the next as you swipe. It's also called a panorama or infinite carousel."
+    },
+    {
+      "q": "What size should a seamless Instagram carousel be?",
+      "a": "Multiply 1080 px by the number of slides. For three portrait 4:5 slides, use a 3240 × 1350 px canvas and cut it into three 1080 × 1350 px slides."
+    },
+    {
+      "q": "How many slides can an Instagram carousel have?",
+      "a": "Up to 20 photos and videos. For a seamless section, two to four slides is usually enough; longer panoramas lose people before the end."
+    },
+    {
+      "q": "Why doesn't my panorama line up on Instagram?",
+      "a": "Usually the slides aren't exactly the same size, the canvas isn't an exact multiple of the slide width, or one slide has its own filter. Cut every slide from one export at the same width."
+    },
+    {
+      "q": "Can I mix seamless slides with normal photos?",
+      "a": "Yes. A seamless opener followed by ordinary photos is one of the most popular layouts. Keep all slides the same shape so Instagram doesn't crop them differently."
+    }
+  ],
+  "related": [
+    {
+      "href": "/DUMP/guides/seamless-instagram-carousel.html",
+      "tag": "Guide",
+      "title": "How to make a seamless panoramic carousel",
+      "text": "Canvas sizes, slicing and why seams drift."
+    }
+  ]
+}

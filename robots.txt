@@ -1,11 +1,12 @@
 # https://guledaaydemir.github.io/robots.txt
 # Host-level rules for every site on this domain (the hub and each app folder).
 # Crawlers only read robots.txt at the host root; files inside app folders are ignored.
-# Nothing is blocked except /SHOOTS/tools/ (page-generator sources, not pages). CSS, JS, images and JSON must stay crawlable so pages render correctly.
+# Nothing is blocked except /SHOOTS/tools/ and /DUMP/tools/ (page-generator sources, not pages). CSS, JS, images and JSON must stay crawlable so pages render correctly.
 
 User-agent: *
 Allow: /
 Disallow: /SHOOTS/tools/
+Disallow: /DUMP/tools/
 
 # Search engines and AI assistants are explicitly welcome.
 # (Each group below repeats "Allow: /" because a named bot ignores the "*" group.)
@@ -30,6 +31,7 @@ User-agent: Amazonbot
 User-agent: MistralAI-User
 Allow: /
 Disallow: /SHOOTS/tools/
+Disallow: /DUMP/tools/
 
 Sitemap: https://guledaaydemir.github.io/sitemap.xml
 Sitemap: https://guledaaydemir.github.io/ATHA/sitemap.xml
