@@ -1,0 +1,443 @@
+{
+ "_help": "One entry per cover. art.type: fan | grid | pick | seamless | ratios | zoom. screen.type: preview | editor | grid | caption. Photo names are files in photos/ without .jpg. Caption Generator captions must be real lines from the app (DUMP/en.lproj/Localizable.strings, caption.*).",
+ "covers": [
+  {
+   "slug": "what-is-a-photo-dump",
+   "bg": "nice-harbour-red",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "cafe-croissant-smile",
+     "city-street-orange",
+     "flowers-hat"
+    ]
+   },
+   "screen": {
+    "type": "preview",
+    "title": "Weekend Dump",
+    "count": 10,
+    "photo": "nice-harbour-red"
+   },
+   "alt": "Café, street and flower photos fanned out like a photo dump, next to DUMP's Preview screen"
+  },
+  {
+   "slug": "how-to-pick-photos-for-a-photo-dump",
+   "bg": "bali-temple-coconut",
+   "art": {
+    "type": "pick",
+    "tiles": [
+     "bali-temple-coconut",
+     [
+      "bali-jungle-coffee",
+      "blurry"
+     ],
+     "bali-koi-pond",
+     "bali-statue-pink-dress",
+     [
+      "bali-statue-pink-2",
+      "duplicate"
+     ],
+     "bali-jungle-coffee-2"
+    ]
+   },
+   "screen": {
+    "type": "editor",
+    "title": "Bali Dump",
+    "count": 10,
+    "photo": "bali-temple-coconut",
+    "strip": [
+     "bali-temple-coconut",
+     "bali-koi-pond",
+     "bali-statue-pink-dress",
+     "bali-jungle-coffee-2",
+     "bali-statue-wide",
+     "nice-sunset-beach"
+    ]
+   },
+   "alt": "Bali trip photos with the blurry shot and the duplicate left out, next to DUMP's Swipe Carousel editor"
+  },
+  {
+   "slug": "how-to-post-a-photo-dump-on-instagram",
+   "bg": "office-polka-window",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "office-hair-flip",
+     "office-coral-top",
+     "office-elevator-mirror"
+    ]
+   },
+   "screen": {
+    "type": "preview",
+    "title": "Office Dump",
+    "count": 8,
+    "photo": "office-polka-window"
+   },
+   "alt": "Office outfit photos next to DUMP's Preview screen with the Save to Photos button"
+  },
+  {
+   "slug": "sunday-dump-routine",
+   "bg": "cafe-croissant-closeup",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "cafe-orange-drink",
+     "cafe-brown-dress-mug",
+     "cafe-croissant-closeup"
+    ]
+   },
+   "screen": {
+    "type": "preview",
+    "title": "Sunday Dump",
+    "count": 9,
+    "photo": "cafe-croissant-smile"
+   },
+   "alt": "Café photos from a slow weekend next to a Sunday Dump in DUMP's Preview screen"
+  },
+  {
+   "slug": "travel-photo-dump",
+   "bg": "bali-koi-pond",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "bali-temple-coconut",
+     "bali-koi-pond",
+     "nice-sunset-beach"
+    ]
+   },
+   "screen": {
+    "type": "editor",
+    "title": "Trip Dump",
+    "count": 12,
+    "photo": "bali-jungle-coffee-2",
+    "strip": [
+     "bali-jungle-coffee-2",
+     "bali-temple-coconut",
+     "bali-koi-pond",
+     "bali-statue-pink-dress",
+     "nice-harbour-red",
+     "nice-sunset-beach"
+    ]
+   },
+   "alt": "Bali and Nice travel photos next to a trip dump in DUMP's Swipe Carousel editor"
+  },
+  {
+   "slug": "year-in-review-photo-dump",
+   "bg": "nice-sunset-beach",
+   "art": {
+    "type": "grid",
+    "photos": [
+     "nice-sunset-beach",
+     "office-red-top",
+     "bali-temple-coconut",
+     "flowers-hat"
+    ],
+    "loose": "cafe-croissant-smile"
+   },
+   "screen": {
+    "type": "grid",
+    "photos": [
+     "beach-heart-sand",
+     "city-steps-cathedral",
+     "cafe-orange-drink",
+     "office-desk-red-lips"
+    ]
+   },
+   "alt": "A four-photo grid of moments from the year next to DUMP's grid canvas"
+  },
+  {
+   "slug": "photo-dump-ideas",
+   "bg": "beach-heart-sand",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "beach-bw-hair",
+     "beach-bw-striped",
+     "beach-heart-sand"
+    ]
+   },
+   "screen": {
+    "type": "caption",
+    "style": "Soft Dump",
+    "caption": "little moments, big feelings",
+    "photos": [
+     "beach-bw-hair",
+     "beach-heart-sand",
+     "beach-bw-striped"
+    ]
+   },
+   "alt": "Black-and-white beach photos next to DUMP's Caption Generator"
+  },
+  {
+   "slug": "instagram-carousel-size-guide",
+   "bg": "city-street-orange",
+   "art": {
+    "type": "ratios",
+    "photos": [
+     "city-street-orange"
+    ]
+   },
+   "screen": {
+    "type": "preview",
+    "title": "City Dump",
+    "count": 6,
+    "photo": "city-steps-cathedral"
+   },
+   "alt": "The same photo cropped to 4:5, 3:4 and 1:1, next to DUMP's Preview screen"
+  },
+  {
+   "slug": "instagram-photo-quality",
+   "bg": "nice-harbour-red",
+   "art": {
+    "type": "zoom",
+    "photos": [
+     "nice-harbour-red"
+    ],
+    "focus": [
+     "43%",
+     "37%"
+    ]
+   },
+   "screen": {
+    "type": "preview",
+    "title": "Nice Dump",
+    "count": 7,
+    "photo": "nice-sunset-beach"
+   },
+   "alt": "A harbour portrait with a magnified detail, next to DUMP's Preview screen showing original quality"
+  },
+  {
+   "slug": "seamless-instagram-carousel",
+   "bg": "nice-sunset-beach",
+   "art": {
+    "type": "seamless",
+    "paper": "#F3E1D8",
+    "photos": [
+     "nice-sunset-beach",
+     "beach-heart-sand",
+     "nice-harbour-red",
+     "flowers-hat"
+    ]
+   },
+   "screen": {
+    "type": "editor",
+    "title": "Summer Dump",
+    "count": 3,
+    "photo": "beach-heart-sand",
+    "strip": [
+     "beach-heart-sand",
+     "nice-sunset-beach",
+     "nice-harbour-red",
+     "flowers-hat",
+     "beach-bw-striped",
+     "beach-bw-hair"
+    ]
+   },
+   "alt": "Beach photos laid across three slides with dashed lines at each cut, next to DUMP's Swipe Carousel editor"
+  },
+  {
+   "slug": "how-to-make-a-collage-on-iphone",
+   "bg": "office-polka-laugh",
+   "art": {
+    "type": "grid",
+    "photos": [
+     "office-polka-window",
+     "office-polka-laugh",
+     "office-coral-top",
+     "office-bw-coffee"
+    ],
+    "loose": "office-black-top"
+   },
+   "screen": {
+    "type": "grid",
+    "photos": [
+     "office-desk-red-lips",
+     "office-red-top",
+     "office-elevator-mirror",
+     "office-hair-flip"
+    ]
+   },
+   "alt": "An office photo collage next to DUMP's grid canvas"
+  },
+  {
+   "slug": "best-photo-dump-apps",
+   "bg": "bali-statue-pink-dress",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "bali-statue-pink-dress",
+     "city-steps-2",
+     "cafe-brown-dress-mug"
+    ]
+   },
+   "screen": {
+    "type": "caption",
+    "style": "Travel Dump",
+    "caption": "passport full, camera roll fuller",
+    "photos": [
+     "bali-statue-pink-dress",
+     "bali-temple-coconut",
+     "nice-harbour-red"
+    ]
+   },
+   "alt": "Travel photos next to DUMP's Caption Generator"
+  },
+  {
+   "slug": "photo-dump-caption-ideas",
+   "bg": "nice-sunset-beach",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "beach-heart-sand",
+     "nice-sunset-beach",
+     "nice-harbour-red"
+    ]
+   },
+   "screen": {
+    "type": "caption",
+    "style": "Funny Dump",
+    "caption": "posting this before I overthink it",
+    "photos": [
+     "beach-heart-sand",
+     "nice-sunset-beach",
+     "nice-harbour-red"
+    ]
+   },
+   "alt": "Beach and harbour photos next to DUMP's Caption Generator"
+  },
+  {
+   "slug": "photo-dump-ideas-list",
+   "bg": "cafe-croissant-smile",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "cafe-croissant-smile",
+     "bali-temple-coconut",
+     "nice-sunset-beach"
+    ]
+   },
+   "screen": {
+    "type": "editor",
+    "title": "Monthly Dump",
+    "count": 10,
+    "photo": "city-street-orange",
+    "strip": [
+     "city-street-orange",
+     "cafe-croissant-smile",
+     "bali-temple-coconut",
+     "nice-sunset-beach",
+     "office-red-top",
+     "flowers-hat"
+    ]
+   },
+   "alt": "Café, temple and sunset photos next to DUMP's Swipe Carousel editor"
+  },
+  {
+   "slug": "instagram-carousel-ideas",
+   "bg": "flowers-hat",
+   "art": {
+    "type": "seamless",
+    "paper": "#E9E4F5",
+    "photos": [
+     "flowers-hat",
+     "city-street-orange",
+     "city-steps-cathedral",
+     "cafe-orange-drink"
+    ]
+   },
+   "screen": {
+    "type": "preview",
+    "title": "Seamless Dump",
+    "count": 3,
+    "photo": "flowers-hat"
+   },
+   "alt": "Photos across three seamless slides next to DUMP's Preview screen"
+  },
+  {
+   "slug": "christmas-photo-dump-captions",
+   "bg": "cafe-brown-dress-mug",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "cafe-brown-dress-mug",
+     "cafe-croissant-closeup",
+     "office-bw-coffee"
+    ]
+   },
+   "screen": {
+    "type": "caption",
+    "style": "Soft Dump",
+    "caption": "soft light, softer moments",
+    "photos": [
+     "cafe-brown-dress-mug",
+     "cafe-croissant-closeup",
+     "office-bw-coffee"
+    ]
+   },
+   "alt": "Cozy café photos with warm drinks next to DUMP's Caption Generator"
+  },
+  {
+   "slug": "christmas-photo-dump-ideas",
+   "bg": "cafe-orange-drink",
+   "art": {
+    "type": "grid",
+    "photos": [
+     "cafe-orange-drink",
+     "cafe-croissant-smile",
+     "cafe-brown-dress-mug",
+     "office-bw-coffee"
+    ],
+    "loose": "cafe-croissant-closeup"
+   },
+   "screen": {
+    "type": "preview",
+    "title": "December Dump",
+    "count": 10,
+    "photo": "cafe-brown-dress-mug"
+   },
+   "alt": "A cozy café photo grid next to a December Dump in DUMP's Preview screen"
+  },
+  {
+   "slug": "new-year-photo-dump-captions",
+   "bg": "nice-sunset-beach",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "nice-sunset-beach",
+     "beach-bw-hair",
+     "beach-heart-sand"
+    ]
+   },
+   "screen": {
+    "type": "caption",
+    "style": "Monthly Recap",
+    "caption": "this month, in no particular order",
+    "photos": [
+     "nice-sunset-beach",
+     "beach-bw-hair",
+     "beach-heart-sand"
+    ]
+   },
+   "alt": "Sunset and beach photos next to DUMP's Caption Generator"
+  },
+  {
+   "slug": "birthday-photo-dump-ideas",
+   "bg": "office-polka-laugh",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "office-polka-laugh",
+     "office-hair-flip",
+     "cafe-orange-drink"
+    ]
+   },
+   "screen": {
+    "type": "preview",
+    "title": "Birthday Dump",
+    "count": 12,
+    "photo": "office-polka-laugh"
+   },
+   "alt": "Celebration photos next to a Birthday Dump in DUMP's Preview screen"
+  }
+ ]
+}

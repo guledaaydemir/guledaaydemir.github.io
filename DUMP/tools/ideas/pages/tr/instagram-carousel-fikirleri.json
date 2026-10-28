@@ -25,6 +25,10 @@
     "art": "carousel",
     "alt": "Kesintisiz Instagram carousel fikirleri: üç slayt boyunca devam eden tek bir görüntü"
   },
+  "cover": {
+    "slug": "instagram-carousel-ideas",
+    "alt": "Üç kesintisiz slayta yayılmış fotoğraflar, yanında DUMP'ın önizleme ekranı"
+  },
   "cta_text": "DUMP'ta bir fotoğrafı iki slaytın arasındaki kenara sürükle; dikişleri uygulama hizalar, slaytları paylaşım sırasıyla Fotoğraflar'a kaydeder. iPhone ve iPad'de ücretsiz.",
   "intro": [
     "Kesintisiz carousel birkaç slaytı tek ve uzun bir fotoğrafa çevirir: kaydırdıkça görüntü devam eder. Aşağıda ne olduğu, hangi ölçünün kullanılacağı ve 15 düzen fikri var.",
@@ -45,10 +49,30 @@
       "h2": "Panorama düzenleri: tek fotoğraf bütün slaytlarda",
       "lead": "Klasik hâli. Ortadan kesilse de bir şey kaybetmeyen geniş ve akışkan sahneler seç.",
       "layouts": [
-        {"strip": "horizon", "panels": 3, "title": "Ufuk çizgisi", "text": "Bir sahil, bir silüet ya da bir tarla üç slayt boyunca. Ufku aynı yükseklikte tut ki çizgi her kesikten düz geçsin."},
-        {"strip": "reveal", "panels": 3, "title": "Merak uyandıran giriş", "text": "Konunun bir parçası ilk slaytın sağ kenarından görünsün: bir tekne, bir bina, bir kule. Gerisini görmek için kaydırırlar. Nesnelerle yap, yüzlerle değil."},
-        {"strip": "line", "panels": 3, "title": "Yönlendiren çizgi", "text": "İlk slaytta başlayıp sonuncuda biten bir iskele, yol ya da kıyı. Çizgi gözü, gözle birlikte parmağı da sağa çeker."},
-        {"strip": "fade", "panels": 4, "title": "Gündüzden geceye gökyüzü", "text": "Uzun bir gün batımı ya da ışık değişirken çekilmiş karelerin birleşimi. Her slayt bir öncekinden biraz daha koyu."}
+        {
+          "strip": "horizon",
+          "panels": 3,
+          "title": "Ufuk çizgisi",
+          "text": "Bir sahil, bir silüet ya da bir tarla üç slayt boyunca. Ufku aynı yükseklikte tut ki çizgi her kesikten düz geçsin."
+        },
+        {
+          "strip": "reveal",
+          "panels": 3,
+          "title": "Merak uyandıran giriş",
+          "text": "Konunun bir parçası ilk slaytın sağ kenarından görünsün: bir tekne, bir bina, bir kule. Gerisini görmek için kaydırırlar. Nesnelerle yap, yüzlerle değil."
+        },
+        {
+          "strip": "line",
+          "panels": 3,
+          "title": "Yönlendiren çizgi",
+          "text": "İlk slaytta başlayıp sonuncuda biten bir iskele, yol ya da kıyı. Çizgi gözü, gözle birlikte parmağı da sağa çeker."
+        },
+        {
+          "strip": "fade",
+          "panels": 4,
+          "title": "Gündüzden geceye gökyüzü",
+          "text": "Uzun bir gün batımı ya da ışık değişirken çekilmiş karelerin birleşimi. Her slayt bir öncekinden biraz daha koyu."
+        }
       ]
     },
     {
@@ -57,12 +81,42 @@
       "h2": "Kolaj düzenleri: kesintisiz bir zeminde ayrı fotoğraflar",
       "lead": "Doğru yapması en kolay tür bu. Zemin slaytlar boyunca akar, fotoğraflar üstünde durur; böylece önemli hiçbir şey kesilmez.",
       "layouts": [
-        {"strip": "scrapbook", "panels": 3, "title": "Albüm sayfası", "text": "Kâğıt ya da düz bir zeminde fotoğraflar, her kesiğin üstünde de yarısı bir slaytta yarısı ötekinde duran bir baskı. Slaytların bağlı olduğunu bu taşma fark ettirir."},
-        {"strip": "film", "panels": 3, "title": "Film şeridi", "text": "Bütün slaytlardan geçen koyu bir şerit ve üstünde küçük kareler. Küçük anlarla dolu bir hafta sonu dump'ı için ideal."},
-        {"strip": "banner", "panels": 4, "title": "Başlıkla açılış", "text": "İlk iki slayta yayılan kısa bir başlık (\"ekim\", \"kaş\", \"23\"), ardından fotoğraflar. Kelimenin iki yarısı da tek başına okunabilmeli."},
-        {"strip": "colors", "panels": 4, "title": "Renk hikâyesi", "text": "Zeminin rengi slayttan slayta değişir, her slaytta bir fotoğraf durur. Fotoğrafları bulundukları slaytın rengine göre seç."},
-        {"strip": "timeline", "panels": 4, "title": "Zaman çizelgesi", "text": "Bütün slaytlardan geçen bir çizgi, altına ve üstüne iliştirilmiş fotoğraflar. Gün gün bir gezi ya da ay ay bir yıl için iyi gider."},
-        {"strip": "route", "panels": 4, "title": "Rota haritası", "text": "Durak durak slaytlar boyunca kıvrılan noktalı bir yol, gittiğin her yerde bir iğne ve bir fotoğraf."}
+        {
+          "strip": "scrapbook",
+          "panels": 3,
+          "title": "Albüm sayfası",
+          "text": "Kâğıt ya da düz bir zeminde fotoğraflar, her kesiğin üstünde de yarısı bir slaytta yarısı ötekinde duran bir baskı. Slaytların bağlı olduğunu bu taşma fark ettirir."
+        },
+        {
+          "strip": "film",
+          "panels": 3,
+          "title": "Film şeridi",
+          "text": "Bütün slaytlardan geçen koyu bir şerit ve üstünde küçük kareler. Küçük anlarla dolu bir hafta sonu dump'ı için ideal."
+        },
+        {
+          "strip": "banner",
+          "panels": 4,
+          "title": "Başlıkla açılış",
+          "text": "İlk iki slayta yayılan kısa bir başlık (\"ekim\", \"kaş\", \"23\"), ardından fotoğraflar. Kelimenin iki yarısı da tek başına okunabilmeli."
+        },
+        {
+          "strip": "colors",
+          "panels": 4,
+          "title": "Renk hikâyesi",
+          "text": "Zeminin rengi slayttan slayta değişir, her slaytta bir fotoğraf durur. Fotoğrafları bulundukları slaytın rengine göre seç."
+        },
+        {
+          "strip": "timeline",
+          "panels": 4,
+          "title": "Zaman çizelgesi",
+          "text": "Bütün slaytlardan geçen bir çizgi, altına ve üstüne iliştirilmiş fotoğraflar. Gün gün bir gezi ya da ay ay bir yıl için iyi gider."
+        },
+        {
+          "strip": "route",
+          "panels": 4,
+          "title": "Rota haritası",
+          "text": "Durak durak slaytlar boyunca kıvrılan noktalı bir yol, gittiğin her yerde bir iğne ve bir fotoğraf."
+        }
       ]
     },
     {
@@ -71,11 +125,36 @@
       "h2": "Karma düzenler: normal bir dump'ın içinde kesintisiz slaytlar",
       "lead": "Bütün postu kesintisiz yapmak zorunda değilsin. Sıradan fotoğrafların yanında birleşik bir bölüm çoğu zaman daha güzel durur.",
       "layouts": [
-        {"strip": "opener", "panels": 5, "title": "Panoramayla aç", "text": "İlk üç slayt tek bir geniş kare, gerisi normal bir dump. Açılış kaydırtır, fotoğraflar devam ettirir."},
-        {"strip": "closer", "panels": 5, "title": "Panoramayla kapat", "text": "Önce sıradan kareler, sonra son iki slayta yayılan geniş bir sahne. Sakin, sinematik bir bitiş."},
-        {"strip": "middle", "panels": 5, "title": "Ortada sürpriz", "text": "Normal bir dump'ın ortasında kesintisiz bir ikili. Kimse orada beklemediği için işe yarıyor."},
-        {"strip": "beforeafter", "panels": 2, "title": "Önce ve sonra", "text": "İki slaytta tek sahne: sol yarısı önce, sağ yarısı sonra. Bir oda, bir bahçe, yazın ve kışın aynı sokak."},
-        {"strip": "zoom", "panels": 5, "title": "Önce geniş, sonra yakın", "text": "İlk üç slaytta bir panorama, ardından ondaki detayların yakın planları. Sahnenin içinde rehberli bir tur gibi."}
+        {
+          "strip": "opener",
+          "panels": 5,
+          "title": "Panoramayla aç",
+          "text": "İlk üç slayt tek bir geniş kare, gerisi normal bir dump. Açılış kaydırtır, fotoğraflar devam ettirir."
+        },
+        {
+          "strip": "closer",
+          "panels": 5,
+          "title": "Panoramayla kapat",
+          "text": "Önce sıradan kareler, sonra son iki slayta yayılan geniş bir sahne. Sakin, sinematik bir bitiş."
+        },
+        {
+          "strip": "middle",
+          "panels": 5,
+          "title": "Ortada sürpriz",
+          "text": "Normal bir dump'ın ortasında kesintisiz bir ikili. Kimse orada beklemediği için işe yarıyor."
+        },
+        {
+          "strip": "beforeafter",
+          "panels": 2,
+          "title": "Önce ve sonra",
+          "text": "İki slaytta tek sahne: sol yarısı önce, sağ yarısı sonra. Bir oda, bir bahçe, yazın ve kışın aynı sokak."
+        },
+        {
+          "strip": "zoom",
+          "panels": 5,
+          "title": "Önce geniş, sonra yakın",
+          "text": "İlk üç slaytta bir panorama, ardından ondaki detayların yakın planları. Sahnenin içinde rehberli bir tur gibi."
+        }
       ]
     },
     {
@@ -91,9 +170,18 @@
       "h2": "DUMP'ta kesintisiz carousel nasıl yapılır?",
       "lead": "Kesme işini DUMP yapar; piksel hesabına gerek kalmaz.",
       "steps": [
-        {"title": "İhtiyacın kadar slaytla bir tuval aç.", "text": "Fotoğrafları, yazıları ve çıkartmaları istediğin yere koy; iki slaytın arasındaki kenarın üstüne bile."},
-        {"title": "Bir fotoğrafı slayt kenarının üzerine sürükle ve Kesintisiz Yap'a dokun.", "text": "Ya da bir fotoğrafı iki slayta yaymak için Konum → Doldur → 2x Genişlik'i kullan."},
-        {"title": "Kaydet.", "text": "Her slayt sırasıyla Fotoğraflar'da yeni bir albüme aktarılır; yeniden dizmeden soldan sağa paylaşabilirsin."}
+        {
+          "title": "İhtiyacın kadar slaytla bir tuval aç.",
+          "text": "Fotoğrafları, yazıları ve çıkartmaları istediğin yere koy; iki slaytın arasındaki kenarın üstüne bile."
+        },
+        {
+          "title": "Bir fotoğrafı slayt kenarının üzerine sürükle ve Kesintisiz Yap'a dokun.",
+          "text": "Ya da bir fotoğrafı iki slayta yaymak için Konum → Doldur → 2x Genişlik'i kullan."
+        },
+        {
+          "title": "Kaydet.",
+          "text": "Her slayt sırasıyla Fotoğraflar'da yeni bir albüme aktarılır; yeniden dizmeden soldan sağa paylaşabilirsin."
+        }
       ]
     }
   ],

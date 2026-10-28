@@ -1,6 +1,6 @@
 {
   "key": "birthday-ideas",
-  "order": 5,
+  "order": 6,
   "slug": "dogum-gunu-dump-fikirleri",
   "keyword": "doğum günü dump fikirleri",
   "title": "Doğum Günü Dump Fikirleri: Instagram İçin 30 Fikir",
@@ -23,8 +23,17 @@
     "accent": "dump fikri",
     "sub": "Hazırlık, parti, insanlar ve sonrası",
     "art": "ideas",
-    "labels": ["hazırlık", "parti", "insanlar", "sonra"],
+    "labels": [
+      "hazırlık",
+      "parti",
+      "insanlar",
+      "sonra"
+    ],
     "alt": "Instagram için 30 doğum günü photo dump fikri"
+  },
+  "cover": {
+    "slug": "birthday-photo-dump-ideas",
+    "alt": "Kutlama fotoğrafları, yanında DUMP'ın önizleme ekranında bir doğum günü dump'ı"
   },
   "intro": [
     "Doğum günü dump'ı, günü bir hikâye gibi düşününce kolaylaşır: hazırlık, parti, insanlar ve ardından kalan dağınıklık. Aşağıdaki 30 fikri gün boyunca çekim listesi gibi kullan, sonra post için 8–12 tanesini seç.",
@@ -38,12 +47,30 @@
       "h2": "Hazırlık: partiden önce doğum günü dump fikirleri",
       "lead": "Partiden önceki saatler, başka kimsede olmayan küçük ve kişisel detaylarla doludur.",
       "ideas": [
-        {"title": "Hazırlanmış kıyafet", "text": "giymeden önce yatağın ya da sandalyenin üstünde."},
-        {"title": "Tek bir ayna karesi", "text": "doğum günü yüzün, bir kez. Yeter."},
-        {"title": "Bir şeyle meşgul eller", "text": "kurdele bağlarken, oje sürerken, kart yazarken."},
-        {"title": "Günün ilk mesajı", "text": "ekran görüntüsü; isimleri ve numaraları kapat."},
-        {"title": "Mumlu sabah kahvesi", "text": "küçük ve komik bir açılış."},
-        {"title": "Yol", "text": "araba camı, otobüs durağı, restorana yürüyüş."}
+        {
+          "title": "Hazırlanmış kıyafet",
+          "text": "giymeden önce yatağın ya da sandalyenin üstünde."
+        },
+        {
+          "title": "Tek bir ayna karesi",
+          "text": "doğum günü yüzün, bir kez. Yeter."
+        },
+        {
+          "title": "Bir şeyle meşgul eller",
+          "text": "kurdele bağlarken, oje sürerken, kart yazarken."
+        },
+        {
+          "title": "Günün ilk mesajı",
+          "text": "ekran görüntüsü; isimleri ve numaraları kapat."
+        },
+        {
+          "title": "Mumlu sabah kahvesi",
+          "text": "küçük ve komik bir açılış."
+        },
+        {
+          "title": "Yol",
+          "text": "araba camı, otobüs durağı, restorana yürüyüş."
+        }
       ]
     },
     {
@@ -52,12 +79,30 @@
       "h2": "Doğum günü partisi dump fikirleri",
       "lead": "Pastayı iki kez çek: kimse dokunmadan önce ve herkes dokunduktan sonra.",
       "ideas": [
-        {"title": "Dokunulmamış pasta", "text": "karşıdan ya da yukarıdan, mumlar yanarken."},
-        {"title": "Mumlar üflenirken", "text": "bulanık olabilir; önemli olan o an."},
-        {"title": "Yukarıdan sofra", "text": "tabaklar, bardaklar, kırıntılar, uzanan eller."},
-        {"title": "Yakından süsler", "text": "balonlar, flama, rakam mum. İnsan kareleri arasında bir doku slaytı."},
-        {"title": "Bütün oda", "text": "her şeyin nerede olduğunu gösteren tek bir geniş kare."},
-        {"title": "Sonradan pasta", "text": "yarısı yenmiş hâli genelde daha komiktir."}
+        {
+          "title": "Dokunulmamış pasta",
+          "text": "karşıdan ya da yukarıdan, mumlar yanarken."
+        },
+        {
+          "title": "Mumlar üflenirken",
+          "text": "bulanık olabilir; önemli olan o an."
+        },
+        {
+          "title": "Yukarıdan sofra",
+          "text": "tabaklar, bardaklar, kırıntılar, uzanan eller."
+        },
+        {
+          "title": "Yakından süsler",
+          "text": "balonlar, flama, rakam mum. İnsan kareleri arasında bir doku slaytı."
+        },
+        {
+          "title": "Bütün oda",
+          "text": "her şeyin nerede olduğunu gösteren tek bir geniş kare."
+        },
+        {
+          "title": "Sonradan pasta",
+          "text": "yarısı yenmiş hâli genelde daha komiktir."
+        }
       ]
     },
     {
@@ -66,12 +111,30 @@
       "h2": "Arkadaşlar ve aileyle doğum günü dump fikirleri",
       "lead": "Doğal kareler pozdan iyidir. O gün önemli olan herkesten dürüst bir fotoğraf hedefle.",
       "ideas": [
-        {"title": "Herkes tek karede", "text": "biri gözünü kırpmış olsa bile."},
-        {"title": "Her arkadaştan bir doğal kare", "text": "gülerken, konuşurken, lokma ağzındayken. Poz vermeden."},
-        {"title": "Her şeyi organize eden kişi", "text": "kendi slaytını hak ediyor."},
-        {"title": "Hareket hâlinde bir sarılma", "text": "biraz bulanık olması işin güzelliği."},
-        {"title": "En genç ve en yaşlı misafir", "text": "becerebilirsen aynı karede."},
-        {"title": "Çoğu tavan olan grup selfie'si", "text": "silme. Komik slayt o."}
+        {
+          "title": "Herkes tek karede",
+          "text": "biri gözünü kırpmış olsa bile."
+        },
+        {
+          "title": "Her arkadaştan bir doğal kare",
+          "text": "gülerken, konuşurken, lokma ağzındayken. Poz vermeden."
+        },
+        {
+          "title": "Her şeyi organize eden kişi",
+          "text": "kendi slaytını hak ediyor."
+        },
+        {
+          "title": "Hareket hâlinde bir sarılma",
+          "text": "biraz bulanık olması işin güzelliği."
+        },
+        {
+          "title": "En genç ve en yaşlı misafir",
+          "text": "becerebilirsen aynı karede."
+        },
+        {
+          "title": "Çoğu tavan olan grup selfie'si",
+          "text": "silme. Komik slayt o."
+        }
       ]
     },
     {
@@ -80,12 +143,30 @@
       "h2": "Doğum günü dump'ını tamamlayan küçük detaylar",
       "lead": "Detaylar insan karelerinin arasına girer ve kaydırmaya ritim verir.",
       "ideas": [
-        {"title": "Kartlar ve el yazısı", "text": "yazan sakınca görmezse karttan bir satır."},
-        {"title": "Açılırken bir hediye", "text": "paket yarı yırtık, eller kadrajda."},
-        {"title": "Gecenin şarkısı", "text": "çalma listesinin ya da hoparlörün ekran görüntüsü."},
-        {"title": "Masanın altındaki ayakkabılar", "text": "gecenin sonunda çekilmiş."},
-        {"title": "Yerdeki konfeti", "text": "parti sonrası slaytı."},
-        {"title": "Yeni yaşın rakamla", "text": "bir mum, bir balon ya da kuma veya kremaya yazılmış hâli."}
+        {
+          "title": "Kartlar ve el yazısı",
+          "text": "yazan sakınca görmezse karttan bir satır."
+        },
+        {
+          "title": "Açılırken bir hediye",
+          "text": "paket yarı yırtık, eller kadrajda."
+        },
+        {
+          "title": "Gecenin şarkısı",
+          "text": "çalma listesinin ya da hoparlörün ekran görüntüsü."
+        },
+        {
+          "title": "Masanın altındaki ayakkabılar",
+          "text": "gecenin sonunda çekilmiş."
+        },
+        {
+          "title": "Yerdeki konfeti",
+          "text": "parti sonrası slaytı."
+        },
+        {
+          "title": "Yeni yaşın rakamla",
+          "text": "bir mum, bir balon ya da kuma veya kremaya yazılmış hâli."
+        }
       ]
     },
     {
@@ -94,12 +175,30 @@
       "h2": "Sakin ya da tek başına doğum günü dump fikirleri",
       "lead": "Sakin bir doğum günü çok güzel bir dump olur. Kendin için yaptığın küçük şeyleri göster.",
       "ideas": [
-        {"title": "Acele etmeden kahvaltı", "text": "yatakta, balkonda ya da sevdiğin bir kafede."},
-        {"title": "Sevdiğin bir yerde yürüyüş", "text": "bir park, deniz kenarı, eski sokağın."},
-        {"title": "Kendine aldığın bir şey", "text": "çiçek, bir kitap, çok güzel bir tatlı."},
-        {"title": "Gelecekteki kendine bir mektup", "text": "sadece zarfı, kapalı."},
-        {"title": "Uzaklardan gelen mesajlar", "text": "isimleri kapalı ekran görüntüleri ya da masada yanıp sönen bir telefon."},
-        {"title": "Günün sakin sonu", "text": "bir mum, bir kitap, akşam gökyüzü."}
+        {
+          "title": "Acele etmeden kahvaltı",
+          "text": "yatakta, balkonda ya da sevdiğin bir kafede."
+        },
+        {
+          "title": "Sevdiğin bir yerde yürüyüş",
+          "text": "bir park, deniz kenarı, eski sokağın."
+        },
+        {
+          "title": "Kendine aldığın bir şey",
+          "text": "çiçek, bir kitap, çok güzel bir tatlı."
+        },
+        {
+          "title": "Gelecekteki kendine bir mektup",
+          "text": "sadece zarfı, kapalı."
+        },
+        {
+          "title": "Uzaklardan gelen mesajlar",
+          "text": "isimleri kapalı ekran görüntüleri ya da masada yanıp sönen bir telefon."
+        },
+        {
+          "title": "Günün sakin sonu",
+          "text": "bir mum, bir kitap, akşam gökyüzü."
+        }
       ]
     },
     {
@@ -108,12 +207,30 @@
       "h2": "Doğum günü dump'ında slaytlar nasıl sıralanır?",
       "lead": "Günün akışını izle, insanlarla detayları dönüşümlü koy ve parti sonrasıyla bitir.",
       "steps": [
-        {"title": "Pastayla ya da en iyi portrenle aç.", "text": "Akışta görünen kare bu; doğum günü olduğu ilk bakışta anlaşılsın."},
-        {"title": "Günü sırasıyla izle.", "text": "Hazırlık, yol, parti, gecenin sonu."},
-        {"title": "İnsanları ve detayları dönüşümlü koy.", "text": "Bir arkadaş, sonra sofra, sonra iki arkadaş, sonra bir balon. Ölçek değiştikçe kaydırma devam eder."},
-        {"title": "Mum anını ortaya koy.", "text": "Hikâyenin doruk noktası; yolun yarısında gelsin."},
-        {"title": "Parti sonrasıyla bitir.", "text": "Konfeti, boş tabaklar ya da kanepede uyuyakalmış sen."},
-        {"title": "8–12 slaytta kal.", "text": "Instagram 20 kareye izin veriyor ama kısa bir dump sonuna kadar kaydırılır."}
+        {
+          "title": "Pastayla ya da en iyi portrenle aç.",
+          "text": "Akışta görünen kare bu; doğum günü olduğu ilk bakışta anlaşılsın."
+        },
+        {
+          "title": "Günü sırasıyla izle.",
+          "text": "Hazırlık, yol, parti, gecenin sonu."
+        },
+        {
+          "title": "İnsanları ve detayları dönüşümlü koy.",
+          "text": "Bir arkadaş, sonra sofra, sonra iki arkadaş, sonra bir balon. Ölçek değiştikçe kaydırma devam eder."
+        },
+        {
+          "title": "Mum anını ortaya koy.",
+          "text": "Hikâyenin doruk noktası; yolun yarısında gelsin."
+        },
+        {
+          "title": "Parti sonrasıyla bitir.",
+          "text": "Konfeti, boş tabaklar ya da kanepede uyuyakalmış sen."
+        },
+        {
+          "title": "8–12 slaytta kal.",
+          "text": "Instagram 20 kareye izin veriyor ama kısa bir dump sonuna kadar kaydırılır."
+        }
       ],
       "after": "<p>Açıklama da mı lazım? <a href=\"/DUMP/tr/photo-dump-caption-onerileri/#dogum-gunu\">100 photo dump açıklamasının doğum günü bölümünde</a> on bir tane var, hepsinin yanında Kopyala düğmesi.</p>"
     }

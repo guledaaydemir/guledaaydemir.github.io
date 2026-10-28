@@ -24,8 +24,20 @@
     "sub": "Copy in one tap. Original and free to use.",
     "art": "captions",
     "alt": "100 photo dump captions for Instagram, with a Copy button on each",
-    "samples": ["soft light, loud heart", "postcards i never sent", "proof i left the house"],
-    "photos": ["og-photos/beach-heart.jpg", "og-photos/nice-sunset.jpg", "og-photos/nice-harbour.jpg"]
+    "samples": [
+      "soft light, loud heart",
+      "postcards i never sent",
+      "proof i left the house"
+    ],
+    "photos": [
+      "og-photos/beach-heart.jpg",
+      "og-photos/nice-sunset.jpg",
+      "og-photos/nice-harbour.jpg"
+    ]
+  },
+  "cover": {
+    "slug": "photo-dump-caption-ideas",
+    "alt": "Beach and harbour photos next to DUMP's Caption Generator"
   },
   "intro": [
     "A photo dump caption has one job: set the mood, then get out of the way of the photos. Here are 100 original captions, grouped by occasion. Tap <b>Copy</b> next to any line and paste it into Instagram.",
@@ -127,7 +139,8 @@
         "october, blanket season is open",
         "november, in sweaters and soft light",
         "december, the last page of the year"
-      ]
+      ],
+      "after": "<p>Posting a December dump? There are 100 <a href=\"/DUMP/christmas-photo-dump-captions/\">Christmas photo dump captions</a> and 80 <a href=\"/DUMP/new-year-photo-dump-captions/\">New Year captions</a> for the countdown.</p>"
     },
     {
       "id": "birthday",
@@ -192,17 +205,61 @@
       "h2": "Turkish-English photo dump captions",
       "lead": "Mixing Turkish and English is everywhere on Turkish Instagram. Each line has a rough translation under it; Copy takes only the caption.",
       "captions": [
-        {"text": "biraz chaos, biraz huzur", "note": "a little chaos, a little peace", "lang": "tr"},
-        {"text": "çay, güneş, repeat", "note": "tea, sun, repeat", "lang": "tr"},
-        {"text": "hafta sonu mode: on", "note": "weekend mode: on", "lang": "tr"},
-        {"text": "kahve first, sonra her şey", "note": "coffee first, then everything else", "lang": "tr"},
-        {"text": "slow sabahlar only", "note": "slow mornings only", "lang": "tr"},
-        {"text": "yaz bitmesin please", "note": "please don't let summer end", "lang": "tr"},
-        {"text": "bu ayın özeti: good vibes", "note": "this month's summary: good vibes", "lang": "tr"},
-        {"text": "deniz, tuz, a little bit of sun", "note": "sea, salt, a little bit of sun", "lang": "tr"},
-        {"text": "main character değilim ama kamera bende", "note": "not the main character, but i have the camera", "lang": "tr"},
-        {"text": "simit and sea view", "note": "simit is the sesame bread ring sold on every corner in Turkey", "lang": "tr"},
-        {"text": "evdeyim ama make it aesthetic", "note": "i'm at home, but make it aesthetic", "lang": "tr"}
+        {
+          "text": "biraz chaos, biraz huzur",
+          "note": "a little chaos, a little peace",
+          "lang": "tr"
+        },
+        {
+          "text": "çay, güneş, repeat",
+          "note": "tea, sun, repeat",
+          "lang": "tr"
+        },
+        {
+          "text": "hafta sonu mode: on",
+          "note": "weekend mode: on",
+          "lang": "tr"
+        },
+        {
+          "text": "kahve first, sonra her şey",
+          "note": "coffee first, then everything else",
+          "lang": "tr"
+        },
+        {
+          "text": "slow sabahlar only",
+          "note": "slow mornings only",
+          "lang": "tr"
+        },
+        {
+          "text": "yaz bitmesin please",
+          "note": "please don't let summer end",
+          "lang": "tr"
+        },
+        {
+          "text": "bu ayın özeti: good vibes",
+          "note": "this month's summary: good vibes",
+          "lang": "tr"
+        },
+        {
+          "text": "deniz, tuz, a little bit of sun",
+          "note": "sea, salt, a little bit of sun",
+          "lang": "tr"
+        },
+        {
+          "text": "main character değilim ama kamera bende",
+          "note": "not the main character, but i have the camera",
+          "lang": "tr"
+        },
+        {
+          "text": "simit and sea view",
+          "note": "simit is the sesame bread ring sold on every corner in Turkey",
+          "lang": "tr"
+        },
+        {
+          "text": "evdeyim ama make it aesthetic",
+          "note": "i'm at home, but make it aesthetic",
+          "lang": "tr"
+        }
       ]
     },
     {

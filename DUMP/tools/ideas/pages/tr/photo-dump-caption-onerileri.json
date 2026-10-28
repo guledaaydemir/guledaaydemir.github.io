@@ -24,8 +24,20 @@
     "sub": "Tek dokunuşla kopyala. Özgün ve ücretsiz.",
     "art": "captions",
     "alt": "Instagram için 100 photo dump açıklaması, her birinde Kopyala düğmesi",
-    "samples": ["kuma yazdım, dalga okudu", "gönderilmemiş kartpostallar", "evden çıktığımın kanıtıdır"],
-    "photos": ["og-photos/beach-heart.jpg", "og-photos/nice-sunset.jpg", "og-photos/nice-harbour.jpg"]
+    "samples": [
+      "kuma yazdım, dalga okudu",
+      "gönderilmemiş kartpostallar",
+      "evden çıktığımın kanıtıdır"
+    ],
+    "photos": [
+      "og-photos/beach-heart.jpg",
+      "og-photos/nice-sunset.jpg",
+      "og-photos/nice-harbour.jpg"
+    ]
+  },
+  "cover": {
+    "slug": "photo-dump-caption-ideas",
+    "alt": "Plaj ve liman fotoğrafları, yanında DUMP'ın Başlık Oluşturucu ekranı"
   },
   "intro": [
     "İyi bir dump açıklaması havayı verir, sonra fotoğrafların önünden çekilir. Aşağıda konuya göre ayrılmış 100 özgün caption var. Beğendiğin satırın yanındaki <b>Kopyala</b>'ya dokun, Instagram'a yapıştır.",
@@ -127,7 +139,8 @@
         "ekim: battaniye sezonu açıldı",
         "kasım, kazaklar ve yumuşak ışık",
         "aralık, yılın son sayfası"
-      ]
+      ],
+      "after": "<p>Aralık dump'ı mı hazırlıyorsun? <a href=\"/DUMP/tr/yilbasi-dump-aciklamalari/\">100 yılbaşı açıklaması ve sözü</a> seni bekliyor.</p>"
     },
     {
       "id": "dogum-gunu",

@@ -1,41 +1,50 @@
 {
-  "key": "holiday-captions",
+  "key": "christmas-captions",
   "order": 4,
   "slug": "christmas-photo-dump-captions",
   "keyword": "christmas photo dump captions",
-  "title": "60 Christmas & New Year Photo Dump Captions",
-  "description": "60 original Christmas and New Year photo dump captions to copy in one tap: cozy, funny, family, friends, New Year's Eve and a December recap.",
-  "h1": "Christmas and New Year <span class=\"g\">photo dump captions</span>",
-  "crumb": "Holiday captions",
-  "eyebrow": "Ideas · Holiday captions",
-  "campaign": "web-holiday-captions",
+  "title": "100 Christmas Photo Dump Captions for Instagram",
+  "description": "100 original Christmas photo dump captions to copy in one tap: cozy, funny, puns, family, friends, couples, Christmas morning and short ones.",
+  "h1": "100 Christmas <span class=\"g\">photo dump captions</span>",
+  "crumb": "Christmas captions",
+  "eyebrow": "Ideas · Christmas captions",
+  "campaign": "web-christmas-captions",
   "product_page": "photo_dump",
   "published": "2026-10-28",
   "updated": "2026-10-28",
   "card": {
-    "tag": "Holiday captions",
-    "title": "60 Christmas & New Year captions",
-    "text": "Cozy, funny, family, friends, New Year's Eve and December recap lines, each with a Copy button."
+    "tag": "Christmas",
+    "title": "100 Christmas photo dump captions",
+    "text": "Cozy, funny, puns, family, couples, Christmas morning and one-word lines, each with a Copy button."
   },
   "og": {
     "kicker": "Christmas photo dump captions",
-    "title": "Christmas & New Year",
+    "title": "100 Christmas",
     "accent": "captions",
-    "sub": "60 lines for your December dump. Copy in one tap.",
+    "sub": "For your December dump. Copy in one tap.",
     "art": "captions",
-    "alt": "60 Christmas and New Year photo dump captions, with a Copy button on each",
-    "samples": ["lights on, phone full", "wrapping paper: 1, me: 0", "see you next year"]
+    "alt": "100 Christmas photo dump captions for Instagram, with a Copy button on each",
+    "samples": [
+      "lights on, phone full",
+      "wrapping paper: 1, me: 0",
+      "two mugs, one blanket"
+    ]
   },
+  "cover": {
+    "slug": "christmas-photo-dump-captions",
+    "alt": "Cozy café photos with warm drinks next to DUMP's Caption Generator"
+  },
+  "cta_text": "Point DUMP at December and it picks your sharpest, most varied shots, lays them out as a carousel and saves the slides to Photos in posting order. Free on iPhone and iPad.",
   "intro": [
-    "December camera rolls fill up fast: lights, food, family, a party or two, and one very blurry midnight. Here are 60 original captions for the holiday dump, grouped by mood. Tap <b>Copy</b> and paste.",
-    "They're short on purpose, so the photos do the talking."
+    "December camera rolls fill up fast: lights, baking, family, a party or two. Here are 100 original Christmas captions for your photo dump, grouped by mood. Tap <b>Copy</b> and paste it into Instagram.",
+    "Posting on the 31st instead? The <a href=\"/DUMP/new-year-photo-dump-captions/\">New Year photo dump captions</a> cover the countdown, goodbye 2026 and hello 2027."
   ],
   "mid_cta_after": "family",
   "sections": [
     {
       "id": "cozy",
       "short": "Cozy & short",
-      "h2": "Cozy and short Christmas photo dump captions",
+      "h2": "Cozy and short Christmas captions",
       "lead": "A few warm words for fairy lights, blankets and slow December mornings.",
       "captions": [
         "lights on, phone full",
@@ -47,13 +56,15 @@
         "fairy lights do all the work",
         "slow mornings, wrapped up",
         "a little glow in every frame",
-        "small lights, big feelings"
+        "small lights, big feelings",
+        "candlelight and cinnamon",
+        "the kind of cold that makes home feel warmer"
       ]
     },
     {
       "id": "funny",
       "short": "Funny",
-      "h2": "Funny Christmas photo dump captions",
+      "h2": "Funny Christmas captions for Instagram",
       "lead": "For the crooked tree, the wrapping disasters and the third plate of leftovers.",
       "captions": [
         "the elf on the shelf saw everything",
@@ -65,13 +76,35 @@
         "i can explain slide 4",
         "every gift wrapped at 11:58pm",
         "the dog opened his presents first",
-        "holiday mode: horizontal"
+        "holiday mode: horizontal",
+        "on the nice list, technically",
+        "my love language is leftovers"
+      ]
+    },
+    {
+      "id": "puns",
+      "short": "Puns",
+      "h2": "Christmas pun captions",
+      "lead": "Wordplay works best on its own line, with nothing explaining it.",
+      "captions": [
+        "fir real, the best week",
+        "spruced up and slightly tired",
+        "pine-ing for more days like this",
+        "elf-care sunday",
+        "gingerbread and good company",
+        "jingle all the way to the snack table",
+        "tinsel town, population: us",
+        "resting merry face",
+        "cookie dough and let it snow",
+        "oh, deer. another dump",
+        "yule be glad you swiped",
+        "mistle-toes in the sand"
       ]
     },
     {
       "id": "family",
       "short": "Family",
-      "h2": "Christmas photo dump captions for family",
+      "h2": "Christmas captions for family photos",
       "lead": "Long tables, loud kitchens and the family photo that took fourteen tries.",
       "captions": [
         "home for the holidays, in 10 slides",
@@ -83,13 +116,15 @@
         "we argued about the movie, then watched it twice",
         "the cousins' table never changes",
         "the people who make it feel like december",
-        "being together was the best gift"
+        "being together was the best gift",
+        "same old stories, my favorite ones",
+        "three generations, one very full sofa"
       ]
     },
     {
       "id": "friends",
       "short": "Friends & parties",
-      "h2": "Holiday party and friends photo dump captions",
+      "h2": "Christmas party and friends captions",
       "lead": "Secret Santa, ugly sweaters and the party that ran late on purpose.",
       "captions": [
         "friendsmas, documented",
@@ -101,25 +136,45 @@
         "our annual tradition, still going",
         "group photo before the snacks ran out",
         "the gifts were cheap, the laughs were not",
-        "december nights with these ones"
+        "december nights with these ones",
+        "cookie swap, gossip included",
+        "the best gift was the group chat in real life"
       ]
     },
     {
-      "id": "new-years-eve",
-      "short": "New Year's Eve",
-      "h2": "New Year's Eve photo dump captions",
-      "lead": "For the countdown dump you post on the first of January.",
+      "id": "couples",
+      "short": "Couples",
+      "h2": "Christmas captions for couples",
+      "lead": "Sweet without being too much, for a December dump with your person.",
       "captions": [
-        "see you next year",
-        "last sunset of the year",
-        "new year, same favorite people",
-        "midnight, give or take",
-        "ending the year on a good slide",
-        "countdown, confetti, cleanup",
-        "twelve months, one night",
-        "first photo of the year is a blurry one",
-        "here's to the next 365",
-        "closing this chapter with a toast"
+        "my favorite present is next to me",
+        "under the lights with you",
+        "two mugs, one blanket",
+        "first christmas together, documented",
+        "you make december warmer",
+        "matching sweaters, no regrets",
+        "the best part of the season is you",
+        "the mistletoe was a formality",
+        "our tree, our tradition",
+        "home is wherever our stockings hang"
+      ]
+    },
+    {
+      "id": "christmas-day",
+      "short": "Christmas Eve & Day",
+      "h2": "Christmas Eve and Christmas morning captions",
+      "lead": "For the dump that follows one day from the night before to the walk after lunch.",
+      "captions": [
+        "christmas eve, slow and bright",
+        "the night before, in photos",
+        "wrapping paper everywhere, joy everywhere else",
+        "christmas morning, before coffee",
+        "pajamas until noon",
+        "the calm after the presents",
+        "one plate turned into three",
+        "christmas day, start to finish",
+        "stockings, sunlight, crumbs",
+        "the long walk after lunch"
       ]
     },
     {
@@ -139,23 +194,45 @@
         "december, you were a lot. thank you",
         "my december, unfiltered"
       ]
+    },
+    {
+      "id": "one-word",
+      "short": "One word & emoji",
+      "h2": "One-word and emoji Christmas captions",
+      "lead": "When the photos say everything, one word or a couple of emoji is enough.",
+      "captions": [
+        "merry.",
+        "cozy.",
+        "glow.",
+        "home.",
+        "december.",
+        "twinkle.",
+        "festive-ish",
+        "🎄✨",
+        "❄️☕️",
+        "🎁🕯️"
+      ]
     }
   ],
   "faq": [
     {
-      "q": "What should I caption a Christmas photo dump?",
-      "a": "One short line that sets the mood: cozy, funny or nostalgic. Let the photos show the tree, the food and the people; the caption only needs to frame them."
+      "q": "What is a good Christmas caption for Instagram?",
+      "a": "One short line that sets the mood: cozy, funny or sweet. The photos already show the tree, the food and the people, so the caption only needs to frame them."
     },
     {
-      "q": "When should I post a holiday photo dump?",
-      "a": "Whenever your photos are ready. Many people post on the evening itself or the day after, or save everything for one December recap at the end of the month."
+      "q": "What are short Christmas captions?",
+      "a": "One word or a couple of emoji works well on a strong dump: \"merry.\", \"glow.\" or a tree and a sparkle. The one-word section above has ten to copy."
     },
     {
-      "q": "Should I post one dump for Christmas and another for New Year's?",
-      "a": "If you have enough photos for both, two smaller dumps are easier to swipe than one long one. Otherwise a single December recap covers everything."
+      "q": "What should I caption a Christmas photo dump with my partner?",
+      "a": "Something warm and specific to you two, like \"two mugs, one blanket\" or \"first christmas together, documented\". The couples section has ten more."
     },
     {
-      "q": "Can I use these captions for free?",
+      "q": "When should I post a Christmas photo dump?",
+      "a": "Whenever the photos are ready. Many people post on Christmas evening or the day after, or save everything for one December recap at the end of the month."
+    },
+    {
+      "q": "Can I use these Christmas captions for free?",
       "a": "Yes. Every caption on this page is original writing and free to copy, edit and post. No credit needed."
     }
   ],

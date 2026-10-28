@@ -23,8 +23,17 @@
     "accent": "ideas",
     "sub": "Weekly, monthly, travel, summer and year recap",
     "art": "ideas",
-    "labels": ["week", "month", "trip", "summer"],
+    "labels": [
+      "week",
+      "month",
+      "trip",
+      "summer"
+    ],
     "alt": "40 photo dump ideas for Instagram: weekly, monthly, travel, summer and year recap"
+  },
+  "cover": {
+    "slug": "photo-dump-ideas-list",
+    "alt": "Café, temple and sunset photos next to DUMP's Swipe Carousel editor"
   },
   "intro": [
     "Stuck on what to post? Pick the kind of dump you're making and use its eight ideas as a shot list. Most dumps feel right at 8 to 12 slides, so you won't need all of them.",
@@ -38,14 +47,38 @@
       "h2": "Weekly photo dump ideas",
       "lead": "A weekly dump works because nothing has to happen. Look for small, repeatable moments and one slide that makes people laugh.",
       "ideas": [
-        {"title": "The coffee (or tea) of the week", "text": "a close-up drink is an easy, friendly opener."},
-        {"title": "Something you cooked", "text": "even toast counts. Hands in the frame make it feel personal."},
-        {"title": "Your walk or commute", "text": "the same street at a different hour reads like a tiny story."},
-        {"title": "One mirror or outfit shot", "text": "one is enough to put you in the dump without a selfie series."},
-        {"title": "A screenshot that sums up the week", "text": "a funny text, a playlist, a weather app. Cover names and numbers."},
-        {"title": "Something you finished", "text": "a book, a workout, a project, a kitchen that is finally clean."},
-        {"title": "A friend's hands or back", "text": "people who aren't posing keep the dump candid."},
-        {"title": "One blurry, chaotic photo", "text": "motion and mess are what make a dump feel real."}
+        {
+          "title": "The coffee (or tea) of the week",
+          "text": "a close-up drink is an easy, friendly opener."
+        },
+        {
+          "title": "Something you cooked",
+          "text": "even toast counts. Hands in the frame make it feel personal."
+        },
+        {
+          "title": "Your walk or commute",
+          "text": "the same street at a different hour reads like a tiny story."
+        },
+        {
+          "title": "One mirror or outfit shot",
+          "text": "one is enough to put you in the dump without a selfie series."
+        },
+        {
+          "title": "A screenshot that sums up the week",
+          "text": "a funny text, a playlist, a weather app. Cover names and numbers."
+        },
+        {
+          "title": "Something you finished",
+          "text": "a book, a workout, a project, a kitchen that is finally clean."
+        },
+        {
+          "title": "A friend's hands or back",
+          "text": "people who aren't posing keep the dump candid."
+        },
+        {
+          "title": "One blurry, chaotic photo",
+          "text": "motion and mess are what make a dump feel real."
+        }
       ]
     },
     {
@@ -54,14 +87,38 @@
       "h2": "Monthly photo dump ideas",
       "lead": "Let the month be the theme. Four anchor photos, one per week, keep it in order; the rest fills the gaps.",
       "ideas": [
-        {"title": "One photo from each week", "text": "four anchors give the month a backbone and an order."},
-        {"title": "The month's big moment", "text": "an event, a trip, a first day, a move."},
-        {"title": "A seasonal detail", "text": "the first strawberries, a wet umbrella, a pumpkin on a doorstep."},
-        {"title": "A before and after", "text": "a haircut, a room, a plant that survived."},
-        {"title": "Food you'll remember", "text": "the dish you'd order again tomorrow."},
-        {"title": "A ticket, receipt or note", "text": "paper details add texture. Blur anything personal."},
-        {"title": "Something you saw every day", "text": "the same mug, the same tree, your cat in a new spot."},
-        {"title": "A sunset or night shot to close", "text": "a calm last slide ends the month softly."}
+        {
+          "title": "One photo from each week",
+          "text": "four anchors give the month a backbone and an order."
+        },
+        {
+          "title": "The month's big moment",
+          "text": "an event, a trip, a first day, a move."
+        },
+        {
+          "title": "A seasonal detail",
+          "text": "the first strawberries, a wet umbrella, a pumpkin on a doorstep."
+        },
+        {
+          "title": "A before and after",
+          "text": "a haircut, a room, a plant that survived."
+        },
+        {
+          "title": "Food you'll remember",
+          "text": "the dish you'd order again tomorrow."
+        },
+        {
+          "title": "A ticket, receipt or note",
+          "text": "paper details add texture. Blur anything personal."
+        },
+        {
+          "title": "Something you saw every day",
+          "text": "the same mug, the same tree, your cat in a new spot."
+        },
+        {
+          "title": "A sunset or night shot to close",
+          "text": "a calm last slide ends the month softly."
+        }
       ]
     },
     {
@@ -70,14 +127,38 @@
       "h2": "Travel photo dump ideas",
       "lead": "Order matters most on a trip. Arrive, look around, eat, slow down, go home.",
       "ideas": [
-        {"title": "The arrival", "text": "a plane window, a train platform or the first street sign."},
-        {"title": "A wide establishing shot", "text": "a skyline, a bay or a square, so people know where you are."},
-        {"title": "Local food, up close", "text": "street food, a market stall, a long breakfast."},
-        {"title": "Signs, menus and door numbers", "text": "details that say \"somewhere else\" without a caption."},
-        {"title": "The best corner of where you stayed", "text": "a balcony, a bed with a view, the tiled bathroom."},
-        {"title": "A candid of your travel partner", "text": "or your shadow, if you went alone."},
-        {"title": "A moment of nothing", "text": "waiting for a bus, a bench, feet in the sand."},
-        {"title": "The way home", "text": "a suitcase, a last coffee, the airport floor."}
+        {
+          "title": "The arrival",
+          "text": "a plane window, a train platform or the first street sign."
+        },
+        {
+          "title": "A wide establishing shot",
+          "text": "a skyline, a bay or a square, so people know where you are."
+        },
+        {
+          "title": "Local food, up close",
+          "text": "street food, a market stall, a long breakfast."
+        },
+        {
+          "title": "Signs, menus and door numbers",
+          "text": "details that say \"somewhere else\" without a caption."
+        },
+        {
+          "title": "The best corner of where you stayed",
+          "text": "a balcony, a bed with a view, the tiled bathroom."
+        },
+        {
+          "title": "A candid of your travel partner",
+          "text": "or your shadow, if you went alone."
+        },
+        {
+          "title": "A moment of nothing",
+          "text": "waiting for a bus, a bench, feet in the sand."
+        },
+        {
+          "title": "The way home",
+          "text": "a suitcase, a last coffee, the airport floor."
+        }
       ]
     },
     {
@@ -86,14 +167,38 @@
       "h2": "Summer photo dump ideas",
       "lead": "Summer dumps run on colour and light. Lean into water, fruit and the long evening sky.",
       "ideas": [
-        {"title": "Water in any form", "text": "the sea, a pool, a sprinkler, a glass covered in drops."},
-        {"title": "Sun-faded details", "text": "a beach towel, a tan line, a straw hat."},
-        {"title": "Ice cream before it melts", "text": "or after. The melted one is usually funnier."},
-        {"title": "Long evening light", "text": "a sky that is still bright late in the evening says summer on its own."},
-        {"title": "Fruit", "text": "watermelon, cherries, figs: strong colour for a middle slide."},
-        {"title": "A feet shot", "text": "sandals, sand, the end of a pier."},
-        {"title": "A summer night out", "text": "an open-air cinema, string lights, a late dinner outside."},
-        {"title": "A heat joke", "text": "a fan pointed at your face, a weather app showing the temperature."}
+        {
+          "title": "Water in any form",
+          "text": "the sea, a pool, a sprinkler, a glass covered in drops."
+        },
+        {
+          "title": "Sun-faded details",
+          "text": "a beach towel, a tan line, a straw hat."
+        },
+        {
+          "title": "Ice cream before it melts",
+          "text": "or after. The melted one is usually funnier."
+        },
+        {
+          "title": "Long evening light",
+          "text": "a sky that is still bright late in the evening says summer on its own."
+        },
+        {
+          "title": "Fruit",
+          "text": "watermelon, cherries, figs: strong colour for a middle slide."
+        },
+        {
+          "title": "A feet shot",
+          "text": "sandals, sand, the end of a pier."
+        },
+        {
+          "title": "A summer night out",
+          "text": "an open-air cinema, string lights, a late dinner outside."
+        },
+        {
+          "title": "A heat joke",
+          "text": "a fan pointed at your face, a weather app showing the temperature."
+        }
       ]
     },
     {
@@ -102,14 +207,38 @@
       "h2": "Year-recap photo dump ideas",
       "lead": "The one dump that earns a long carousel. Start with a photo per month, then add the moments people will ask about.",
       "ideas": [
-        {"title": "One photo per month", "text": "twelve anchors in date order."},
-        {"title": "The moment everyone asked about", "text": "the photo you showed people in person."},
-        {"title": "Something you tried for the first time", "text": "a hobby, a city, a haircut."},
-        {"title": "A hard month, gently", "text": "a quiet photo counts it without oversharing."},
-        {"title": "The people who were there", "text": "a group shot, or a few faces in a row."},
-        {"title": "Your year in a screenshot", "text": "steps, books, a music recap, only if you want to share it."},
-        {"title": "The photo you almost deleted", "text": "imperfect, but it turned out to matter."},
-        {"title": "A look ahead", "text": "a new notebook, an empty calendar, the first sunrise of the year."}
+        {
+          "title": "One photo per month",
+          "text": "twelve anchors in date order."
+        },
+        {
+          "title": "The moment everyone asked about",
+          "text": "the photo you showed people in person."
+        },
+        {
+          "title": "Something you tried for the first time",
+          "text": "a hobby, a city, a haircut."
+        },
+        {
+          "title": "A hard month, gently",
+          "text": "a quiet photo counts it without oversharing."
+        },
+        {
+          "title": "The people who were there",
+          "text": "a group shot, or a few faces in a row."
+        },
+        {
+          "title": "Your year in a screenshot",
+          "text": "steps, books, a music recap, only if you want to share it."
+        },
+        {
+          "title": "The photo you almost deleted",
+          "text": "imperfect, but it turned out to matter."
+        },
+        {
+          "title": "A look ahead",
+          "text": "a new notebook, an empty calendar, the first sunrise of the year."
+        }
       ]
     },
     {
@@ -118,12 +247,30 @@
       "h2": "How to order the slides in a photo dump",
       "lead": "Lead with your strongest photo, change the scale on every swipe and end with something funny. The details:",
       "steps": [
-        {"title": "Start with your strongest photo.", "text": "Sharp, bright and with one clear subject. It's the slide people see in the feed and on your profile grid."},
-        {"title": "Mix close-ups and wide shots.", "text": "A detail, then a place, then a person. When the scale changes on every swipe, the next slide always feels new."},
-        {"title": "Group colours, or keep time order.", "text": "Trips read best in date order; a weekly dump looks calmer when similar colours sit side by side."},
-        {"title": "Put a video or motion shot in the middle.", "text": "It breaks the rhythm just as attention starts to drop."},
-        {"title": "End with a funny one.", "text": "A blooper, a deadpan face or the cat. It rewards everyone who swiped to the end."},
-        {"title": "Stop at 8 to 12 slides.", "text": "Instagram allows up to 20, but a tighter dump gets swiped to the end. Save the long version for a year recap."}
+        {
+          "title": "Start with your strongest photo.",
+          "text": "Sharp, bright and with one clear subject. It's the slide people see in the feed and on your profile grid."
+        },
+        {
+          "title": "Mix close-ups and wide shots.",
+          "text": "A detail, then a place, then a person. When the scale changes on every swipe, the next slide always feels new."
+        },
+        {
+          "title": "Group colours, or keep time order.",
+          "text": "Trips read best in date order; a weekly dump looks calmer when similar colours sit side by side."
+        },
+        {
+          "title": "Put a video or motion shot in the middle.",
+          "text": "It breaks the rhythm just as attention starts to drop."
+        },
+        {
+          "title": "End with a funny one.",
+          "text": "A blooper, a deadpan face or the cat. It rewards everyone who swiped to the end."
+        },
+        {
+          "title": "Stop at 8 to 12 slides.",
+          "text": "Instagram allows up to 20, but a tighter dump gets swiped to the end. Save the long version for a year recap."
+        }
       ],
       "after": "<p>Want a slot-by-slot template? <a href=\"/DUMP/guides/how-to-pick-photos-for-a-photo-dump.html\">How to pick photos for a photo dump</a> has a 10-slot order and a checklist. The 20-slide limit comes from Instagram's 2024 carousel update (<a href=\"https://techcrunch.com/2024/08/08/instagram-is-embracing-the-photo-dump/\" rel=\"noopener\">TechCrunch</a>).</p>"
     }

@@ -1,0 +1,269 @@
+{
+  "key": "christmas-ideas",
+  "order": 6,
+  "slug": "christmas-photo-dump-ideas",
+  "keyword": "christmas photo dump ideas",
+  "title": "30 Christmas Photo Dump Ideas for Instagram",
+  "description": "30 Christmas photo dump ideas: lights, baking, family traditions, winter walks and Christmas morning, plus how to order a festive dump.",
+  "h1": "30 Christmas <span class=\"g\">photo dump ideas</span>",
+  "crumb": "Christmas ideas",
+  "eyebrow": "Ideas · Christmas",
+  "campaign": "web-christmas-ideas",
+  "product_page": "photo_dump",
+  "published": "2026-10-28",
+  "updated": "2026-10-28",
+  "card": {
+    "tag": "Christmas",
+    "title": "30 Christmas photo dump ideas",
+    "text": "What to shoot in December: lights, baking, traditions, winter walks and Christmas morning."
+  },
+  "og": {
+    "kicker": "Christmas photo dump ideas",
+    "title": "30 Christmas",
+    "accent": "dump ideas",
+    "sub": "Lights, baking, traditions and Christmas morning",
+    "art": "ideas",
+    "labels": [
+      "lights",
+      "baking",
+      "family",
+      "morning"
+    ],
+    "alt": "30 Christmas photo dump ideas for Instagram"
+  },
+  "cover": {
+    "slug": "christmas-photo-dump-ideas",
+    "alt": "A cozy café photo grid next to a December Dump in DUMP's Preview screen"
+  },
+  "cta_text": "Point DUMP at December and it picks your sharpest, most varied shots, lays them out as a carousel and saves the slides to Photos in posting order. Free on iPhone and iPad.",
+  "intro": [
+    "December gives you more to photograph than any other month, which is exactly why Christmas dumps end up as forty near-identical tree photos. Use these 30 ideas as a shot list through the month, then pick 8 to 12 for the post.",
+    "Got the photos already? Jump to the <a href=\"/DUMP/christmas-photo-dump-captions/\">100 Christmas captions</a>."
+  ],
+  "mid_cta_after": "traditions",
+  "sections": [
+    {
+      "id": "lights",
+      "short": "Lights & decorations",
+      "h2": "Christmas lights and decoration ideas",
+      "lead": "Decorations are the obvious slide, so shoot them in a way nobody else does: close, blurred or in reflections.",
+      "ideas": [
+        {
+          "title": "The tree, out of focus",
+          "text": "tap to focus on something close and let the lights turn into soft circles."
+        },
+        {
+          "title": "One ornament up close",
+          "text": "the old one with a story beats a wide shot of the whole tree."
+        },
+        {
+          "title": "Lights in a window from outside",
+          "text": "your own home, seen from the street at night."
+        },
+        {
+          "title": "Reflections",
+          "text": "fairy lights in a glass, a mirror or a puddle."
+        },
+        {
+          "title": "The decorating mess",
+          "text": "boxes, tangled lights, a cat in the tissue paper."
+        },
+        {
+          "title": "Your street or town lit up",
+          "text": "one wide shot that says where you spent December."
+        }
+      ]
+    },
+    {
+      "id": "baking",
+      "short": "Food & baking",
+      "h2": "Christmas food and baking dump ideas",
+      "lead": "Food photos work best mid-process, with hands and flour in the frame.",
+      "ideas": [
+        {
+          "title": "Hands in the dough",
+          "text": "flour on the counter, sleeves rolled up."
+        },
+        {
+          "title": "The cookie tray",
+          "text": "including the burnt one."
+        },
+        {
+          "title": "A recipe card in someone's handwriting",
+          "text": "one of the most personal slides you can add."
+        },
+        {
+          "title": "The table before everyone sits",
+          "text": "from above, candles lit."
+        },
+        {
+          "title": "A warm drink in cold hands",
+          "text": "hot chocolate, mulled wine, tea by the window."
+        },
+        {
+          "title": "Leftovers the next morning",
+          "text": "the honest, funny food slide."
+        }
+      ]
+    },
+    {
+      "id": "traditions",
+      "short": "People & traditions",
+      "h2": "Family and tradition photo dump ideas",
+      "lead": "Traditions are what make your dump different from everyone else's. Shoot the ones only your family does.",
+      "ideas": [
+        {
+          "title": "Your family's odd tradition",
+          "text": "the game, the walk, the song nobody else knows."
+        },
+        {
+          "title": "Matching pajamas, mid-laugh",
+          "text": "skip the posed version."
+        },
+        {
+          "title": "The kids' table",
+          "text": "or the adults who still sit at it."
+        },
+        {
+          "title": "Gift exchange reactions",
+          "text": "faces, not presents."
+        },
+        {
+          "title": "Someone asleep on the sofa",
+          "text": "the post-lunch classic."
+        },
+        {
+          "title": "The family photo outtake",
+          "text": "the one before everyone was ready."
+        }
+      ]
+    },
+    {
+      "id": "winter",
+      "short": "Outside & winter",
+      "h2": "Winter and outdoor Christmas dump ideas",
+      "lead": "Getting outside gives a December dump its wide shots and its air.",
+      "ideas": [
+        {
+          "title": "A Christmas market stall",
+          "text": "steam, lights and something sweet."
+        },
+        {
+          "title": "Breath in the cold air",
+          "text": "best against a dark background."
+        },
+        {
+          "title": "Boots in snow, or on wet leaves",
+          "text": "December looks different everywhere; show yours."
+        },
+        {
+          "title": "The walk after lunch",
+          "text": "the family from behind, heading somewhere."
+        },
+        {
+          "title": "Ice skating, slightly blurred",
+          "text": "motion is the point."
+        },
+        {
+          "title": "A beach Christmas",
+          "text": "if it's summer where you are, lean into it: hats, sand, a tiny tree."
+        }
+      ]
+    },
+    {
+      "id": "morning",
+      "short": "Christmas morning",
+      "h2": "Christmas morning photo dump ideas",
+      "lead": "The morning goes fast. Have your phone ready before the first present is opened.",
+      "ideas": [
+        {
+          "title": "Presents under the tree, untouched",
+          "text": "the calm before."
+        },
+        {
+          "title": "Stockings in morning light",
+          "text": "a quiet, textured slide."
+        },
+        {
+          "title": "Wrapping paper everywhere",
+          "text": "the after shot, from above."
+        },
+        {
+          "title": "The first coffee of the day",
+          "text": "in the mug you only use in December."
+        },
+        {
+          "title": "A pet with a bow on",
+          "text": "hard to get wrong."
+        },
+        {
+          "title": "The quiet evening",
+          "text": "candles, a film on, everyone tired."
+        }
+      ]
+    },
+    {
+      "id": "slide-order",
+      "short": "Slide order",
+      "h2": "How to order a Christmas photo dump",
+      "lead": "Lead with light, follow the month or the day, and end on something warm or funny.",
+      "steps": [
+        {
+          "title": "Open with your best lights photo.",
+          "text": "It reads as Christmas instantly in the feed."
+        },
+        {
+          "title": "Choose a frame: the month, or the day.",
+          "text": "A December recap runs from the first decorations to the last leftovers; a Christmas Day dump runs from morning to night."
+        },
+        {
+          "title": "Alternate close and wide.",
+          "text": "An ornament, then the room; hands in dough, then the full table."
+        },
+        {
+          "title": "Show people, not just things.",
+          "text": "One candid of each person matters more than ten decoration shots."
+        },
+        {
+          "title": "End warm or funny.",
+          "text": "Someone asleep on the sofa, or the dog in a bow."
+        },
+        {
+          "title": "Keep it to 8 to 12 slides.",
+          "text": "Instagram allows up to 20; save the longer version for your year in review."
+        }
+      ],
+      "after": "<p>Next stop: <a href=\"/DUMP/new-year-photo-dump-captions/\">New Year photo dump captions</a> for the countdown, and the <a href=\"/DUMP/guides/year-in-review-photo-dump.html\">year in review guide</a> for the whole year in one post.</p>"
+    }
+  ],
+  "faq": [
+    {
+      "q": "What should I post in a Christmas photo dump?",
+      "a": "A mix of lights, food, people and one or two funny moments. Close-ups and candids make it yours; one wide shot of your street or table tells people where you were."
+    },
+    {
+      "q": "How do you make a Christmas photo dump look aesthetic?",
+      "a": "Shoot in warm light, get close, and let fairy lights blur in the background. Keep the colours consistent from slide to slide and avoid flash where you can."
+    },
+    {
+      "q": "How many photos should a Christmas photo dump have?",
+      "a": "8 to 12 for most dumps. Instagram allows up to 20 photos and videos in one carousel, which suits a full December recap."
+    },
+    {
+      "q": "Should I post on Christmas Day or wait?",
+      "a": "Either works. Many people post that evening or the next day; others wait and post one December recap at the end of the month."
+    },
+    {
+      "q": "What caption goes with a Christmas photo dump?",
+      "a": "Something short: cozy, funny or sweet. The <a href=\"/DUMP/christmas-photo-dump-captions/\">100 Christmas captions</a> are grouped by mood, each with a Copy button."
+    }
+  ],
+  "related": [
+    {
+      "href": "/DUMP/guides/year-in-review-photo-dump.html",
+      "tag": "Guide",
+      "title": "Year in review photo dump",
+      "text": "The 12 + 5 formula for a December recap of the whole year."
+    }
+  ]
+}

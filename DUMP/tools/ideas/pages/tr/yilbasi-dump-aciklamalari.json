@@ -1,36 +1,45 @@
 {
-  "key": "holiday-captions",
+  "key": "newyear-captions",
   "order": 4,
   "slug": "yilbasi-dump-aciklamalari",
   "keyword": "yılbaşı instagram açıklama",
-  "title": "Yılbaşı Dump Açıklamaları: 60 Instagram Caption Önerisi",
-  "description": "Yılbaşı için 60 özgün Instagram dump açıklaması, tek dokunuşla kopyala: sıcak, komik, aile, arkadaşlar, yılbaşı gecesi ve aralık özeti.",
-  "h1": "Yılbaşı <span class=\"g\">dump açıklamaları</span>",
+  "title": "Yılbaşı Instagram Açıklamaları: 100 Dump Caption ve Söz",
+  "description": "Yılbaşı için 100 özgün Instagram açıklaması ve kısa söz: komik, aile, sevgiliyle, yılbaşı gecesi, 2027'ye merhaba ve aralık özeti.",
+  "h1": "Yılbaşı <span class=\"g\">Instagram açıklamaları</span>",
   "crumb": "Yılbaşı açıklamaları",
   "eyebrow": "Fikirler · Yılbaşı",
-  "campaign": "web-holiday-captions-tr",
+  "campaign": "web-newyear-captions-tr",
   "product_page": "photo_dump",
   "published": "2026-10-28",
   "updated": "2026-10-28",
   "card": {
     "tag": "Yılbaşı",
-    "title": "60 yılbaşı dump açıklaması",
-    "text": "Sıcak, komik, aile, arkadaşlar, yılbaşı gecesi ve aralık özeti; her birinin yanında Kopyala düğmesi."
+    "title": "100 yılbaşı açıklaması ve sözü",
+    "text": "Sıcak, komik, aile, sevgiliyle, yılbaşı gecesi, 2027'ye merhaba ve yeni yıl dilekleri; hepsinde Kopyala düğmesi."
   },
   "og": {
     "kicker": "Yılbaşı instagram açıklama",
-    "title": "Yılbaşı",
-    "accent": "dump açıklamaları",
-    "sub": "Aralık dump'ın için 60 satır. Tek dokunuşla kopyala.",
+    "title": "100 yılbaşı",
+    "accent": "açıklaması",
+    "sub": "Dump'ın için caption ve kısa sözler. Tek dokunuşla kopyala.",
     "art": "captions",
-    "alt": "Instagram için 60 yılbaşı dump açıklaması, her birinde Kopyala düğmesi",
-    "samples": ["ışıklar yandı, kalbim de", "ağaç eğri, ben de", "seneye görüşürüz"]
+    "alt": "Instagram için 100 yılbaşı dump açıklaması ve sözü, her birinde Kopyala düğmesi",
+    "samples": [
+      "ışıklar yandı, kalbim de",
+      "ağaç eğri, ben de",
+      "merhaba 2027, nazik ol"
+    ]
   },
+  "cover": {
+    "slug": "new-year-photo-dump-captions",
+    "alt": "Gün batımı ve plaj fotoğrafları, yanında DUMP'ın Başlık Oluşturucu ekranı"
+  },
+  "cta_text": "DUMP bir ayın ya da bütün yılın fotoğraflarından ilk taslağı kurar: en net ve en çeşitli kareleri seçer, slaytları paylaşım sırasıyla Fotoğraflar'a kaydeder. iPhone ve iPad'de ücretsiz.",
   "intro": [
-    "Aralıkta galeri hızla dolar: ışıklar, sofralar, aile, bir iki parti ve gece yarısından kalan bulanık bir kare. Aşağıda yılbaşı dump'ın için ruh hâline göre ayrılmış 60 özgün açıklama var. <b>Kopyala</b>'ya dokun, yapıştır.",
-    "Hepsi bilerek kısa; sözü fotoğraflara bırakıyor."
+    "Aralıkta galeri hızla dolar: ışıklar, sofralar, aile, bir iki parti ve gece yarısından kalan bulanık bir kare. Aşağıda yılbaşı dump'ın için ruh hâline göre ayrılmış 100 özgün açıklama ve kısa söz var. <b>Kopyala</b>'ya dokun, yapıştır.",
+    "Ne çekeceğini mi düşünüyorsun? <a href=\"/DUMP/tr/yilbasi-dump-fikirleri/\">30 yılbaşı dump fikri</a> sayfasında süslerden geri sayıma bir çekim listesi var."
   ],
-  "mid_cta_after": "aile",
+  "mid_cta_after": "sevgiliyle",
   "sections": [
     {
       "id": "sicak",
@@ -47,13 +56,15 @@
         "küçük ışıklar, büyük hisler",
         "sıcak bir kupa, uzun bir akşam",
         "kış geldi, biz hazırız",
-        "her karede biraz parıltı"
+        "her karede biraz parıltı",
+        "yılbaşı ışıkları, ev kokusu",
+        "soğuk hava, sıcak sofra"
       ]
     },
     {
       "id": "komik",
       "short": "Komik",
-      "h2": "Komik yılbaşı dump açıklamaları",
+      "h2": "Komik yılbaşı açıklamaları",
       "lead": "Eğri ağaç, paket faciaları ve tombalada bir türlü gelmeyen şans için.",
       "captions": [
         "piyango yine çıkmadı ama manzara güzel",
@@ -65,13 +76,15 @@
         "tombala kartı elimde, şans hâlâ yolda",
         "yılbaşı modu: yatay",
         "4. slayt hakkında açıklama yapmayacağım",
-        "mandalina kabukları delil niteliğinde"
+        "mandalina kabukları delil niteliğinde",
+        "kararlarımın son kullanma tarihi: 2 ocak",
+        "gece yarısı öpücüğü: kedi"
       ]
     },
     {
       "id": "aile",
       "short": "Aile",
-      "h2": "Aileyle yılbaşı dump açıklamaları",
+      "h2": "Aileyle yılbaşı açıklamaları",
       "lead": "Uzun sofralar, kalabalık mutfaklar ve on dördüncü denemede çekilen aile fotoğrafı.",
       "captions": [
         "bu yılbaşı evdeyiz, 10 karede",
@@ -83,7 +96,9 @@
         "kuzenler masası hiç değişmiyor",
         "tarifler el değiştiriyor, tabaklar da",
         "yılbaşını yılbaşı yapan insanlar",
-        "en güzel hediye birlikte olmaktı"
+        "en güzel hediye birlikte olmaktı",
+        "masada yer yok ama gönülde var",
+        "babamın her yıl anlattığı aynı hikâye"
       ]
     },
     {
@@ -101,7 +116,27 @@
         "atıştırmalıklar bitmeden toplu fotoğraf",
         "hediyeler ucuzdu, kahkahalar değil",
         "bu ekiple aralık geceleri",
-        "tombalada kazanan belli, kaybeden ben"
+        "tombalada kazanan belli, kaybeden ben",
+        "yeni yıl, aynı grup sohbeti",
+        "gece yarısı ekibi"
+      ]
+    },
+    {
+      "id": "sevgiliyle",
+      "short": "Sevgiliyle",
+      "h2": "Sevgiliyle yılbaşı açıklamaları",
+      "lead": "Geri sayımı birlikte yaptığın kişi ve birlikte başladığınız yıl için.",
+      "captions": [
+        "geri sayımı seninle yapmak",
+        "bir yıl daha biz",
+        "gece yarısının en güzeli sendin",
+        "yılın ilk gün doğumu, yanımda sen",
+        "aynı battaniye, iki kupa",
+        "seninle her yıl yeni",
+        "bizim yılbaşı geleneğimiz",
+        "ilk yılbaşımız, belgeli",
+        "en güzel hediyem yanımda",
+        "2027'ye de el ele"
       ]
     },
     {
@@ -119,7 +154,45 @@
         "on iki ay, tek gece",
         "yılın ilk fotoğrafı tabii ki bulanık",
         "önümüzdeki 365 güne",
-        "bu sayfayı bir kadehle kapatıyorum"
+        "bu sayfayı bir kadehle kapatıyorum",
+        "konfetiyle dans ettik",
+        "gece yarısına üç, iki, bir..."
+      ]
+    },
+    {
+      "id": "veda-2027",
+      "short": "2026'ya veda",
+      "h2": "2026'ya veda, 2027'ye merhaba açıklamaları",
+      "lead": "Geride kalan yıla teşekkür, gelen yıla küçük bir selam.",
+      "captions": [
+        "hoşça kal 2026, çok şey öğrettin",
+        "2026, slayt slayt",
+        "teşekkürler 2026, sıradaki gelsin",
+        "2026'nın en güzel kareleri",
+        "2026 sekmesini kapatıyorum",
+        "merhaba 2027, nazik ol",
+        "2027 yükleniyor",
+        "2027'nin ilk dump'ı",
+        "2027: aynı ben, daha iyi planlar",
+        "sevgili 2027, arkadaş olalım"
+      ]
+    },
+    {
+      "id": "dilekler",
+      "short": "Yeni yıl sözleri",
+      "h2": "Yeni yıl dilekleri ve kısa yılbaşı sözleri",
+      "lead": "Bir dump'ın altına yakışacak kadar kısa, iyi dilek dolu sözler.",
+      "captions": [
+        "yeni yılda daha çok gün batımı, daha az ekran",
+        "bol kahkahalı, az dertli bir yıl",
+        "yeni yıl, yeni sayfa, aynı güzel insanlar",
+        "sağlık, huzur ve bol fotoğraf",
+        "dileğim: daha çok böyle akşamlar",
+        "yeni yılda kendime daha nazik",
+        "planlar kurşun kalemle yazıldı",
+        "yeni yıl sana iyi gelsin",
+        "her ayı bir dump'a değer bir yıl olsun",
+        "az eşya, çok anı"
       ]
     },
     {
@@ -147,12 +220,16 @@
       "a": "Havayı veren kısa bir satır: sıcak, komik ya da nostaljik. Ağacı, sofrayı ve insanları fotoğraflar gösterir; açıklamanın işi sadece onları çerçevelemek."
     },
     {
-      "q": "Yılbaşı dump'ı ne zaman paylaşılır?",
-      "a": "Fotoğrafların hazır olduğunda. Çoğu kişi gecenin kendisinde ya da ertesi gün paylaşıyor; bazıları da her şeyi ay sonundaki aralık özetine saklıyor."
+      "q": "Instagram için kısa yılbaşı sözleri nelerdir?",
+      "a": "\"Seneye görüşürüz\", \"merhaba 2027, nazik ol\" ya da \"yeni yıl sana iyi gelsin\" gibi tek satırlık sözler dump'ın altında en iyi durur. Yeni yıl sözleri bölümünde on tane daha var."
     },
     {
-      "q": "Aralık ve yılbaşı için ayrı dump'lar mı yapmalıyım?",
-      "a": "İkisine yetecek kadar fotoğrafın varsa iki kısa dump, tek uzun bir dump'tan daha kolay kaydırılır. Yoksa tek bir aralık özeti her şeyi kapsar."
+      "q": "Sevgiliyle yılbaşı fotoğrafına ne yazılır?",
+      "a": "İkinize özel, sıcak bir satır: \"bir yıl daha biz\" ya da \"ilk yılbaşımız, belgeli\" gibi. Sevgiliyle bölümünde on öneri var."
+    },
+    {
+      "q": "Yılbaşı dump'ı ne zaman paylaşılır?",
+      "a": "Gecenin kendisinde ya da 1 Ocak'ta. Bütün yılı özetleyen bir dump ise aralığın son haftasından ocak başına kadar her zaman paylaşılabilir."
     },
     {
       "q": "Bu açıklamaları ücretsiz kullanabilir miyim?",

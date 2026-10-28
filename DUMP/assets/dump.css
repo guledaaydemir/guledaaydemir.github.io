@@ -984,3 +984,43 @@ nav.toc ol{margin-bottom:0}
 @media(max-width:640px){.guide-body .lays li{flex-direction:column;align-items:flex-start;gap:14px}}
 
 .more-note{margin-top:18px!important;font-size:15.5px;color:var(--muted)!important}
+
+/* ============================================================
+   28. Blog layout: guides index cards with cover images,
+       featured post, category chips, and the cover image at the
+       top of each guide. Covers come from tools/covers/build.py.
+   ============================================================ */
+.cat-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.cat-chips a.chip{color:var(--muted)}
+.post-feature{display:grid;grid-template-columns:1.2fr 1fr;border:1px solid var(--line-soft);border-radius:var(--r-xl);
+  overflow:hidden;background:var(--surface);transition:border-color var(--t),transform var(--t) var(--e-out),box-shadow var(--t)}
+.post-feature:hover{border-color:var(--purple);transform:translateY(-4px);box-shadow:var(--sh-2)}
+.post-feature .cover{aspect-ratio:1200/630;overflow:hidden;background:var(--surface-2)}
+.post-feature .cover img{width:100%;height:100%;object-fit:cover}
+.post-feature .pc{padding:30px 32px;display:flex;flex-direction:column;justify-content:center;gap:12px}
+.post-feature h3{font-size:clamp(24px,2.8vw,32px);line-height:1.15}
+.post-feature p{color:var(--muted);font-size:16px;line-height:1.6}
+.post-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.post-card{display:flex;flex-direction:column;border:1px solid var(--line-soft);border-radius:var(--r-lg);overflow:hidden;
+  background:var(--surface);color:inherit;transition:border-color var(--t),transform var(--t) var(--e-out),box-shadow var(--t)}
+.post-card:hover{border-color:var(--purple);transform:translateY(-4px);box-shadow:var(--sh-2)}
+.post-card .cover{aspect-ratio:1200/630;overflow:hidden;background:var(--surface-2)}
+.post-card .cover img{width:100%;height:100%;object-fit:cover;transition:transform var(--t-slow) var(--e-out)}
+.post-card:hover .cover img,.post-feature:hover .cover img{transform:scale(1.04)}
+.post-feature .cover img{transition:transform var(--t-slow) var(--e-out)}
+.post-card .pc{flex:1;display:flex;flex-direction:column;gap:8px;padding:18px 20px 20px}
+.post-card h3{font-size:18.5px;line-height:1.28}
+.post-card p{color:var(--muted);font-size:14.5px;line-height:1.55}
+.post-card .tag,.post-feature .tag{font-family:"Space Mono",ui-monospace,monospace;font-size:11px;letter-spacing:2px;
+  text-transform:uppercase;color:var(--purple)}
+.post-card .rt,.post-feature .rt{margin-top:auto;padding-top:6px;font-family:"Space Mono",ui-monospace,monospace;font-size:12px;color:var(--faint)}
+.post-feature .rt{margin-top:4px}
+.post-sec{padding-top:34px;padding-bottom:10px}
+.post-sec .h3{margin-bottom:18px;scroll-margin-top:92px}
+@media(max-width:980px){.post-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.post-feature{grid-template-columns:1fr}}
+@media(max-width:640px){.post-grid{grid-template-columns:minmax(0,1fr);gap:16px}.post-feature .pc{padding:22px 20px}}
+
+/* Cover image at the top of a guide */
+.guide-cover{margin:22px 0 0;border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line-soft);
+  aspect-ratio:1200/630;background:var(--surface-2);box-shadow:var(--sh-2)}
+.guide-cover img{width:100%;height:100%;object-fit:cover}

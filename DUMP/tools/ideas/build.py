@@ -373,6 +373,13 @@ def faq_html(lang, faq):
 
 def page_card(p, cls="guide-card"):
     c = p["card"]
+    cv = p.get("cover")
+    if cv:
+        s = cv["slug"]
+        return f"""<a class="post-card" href="{p['path']}">
+  <span class="cover"><img src="/DUMP/assets/covers/{s}-600.webp" srcset="/DUMP/assets/covers/{s}-600.webp 600w, /DUMP/assets/covers/{s}-1200.webp 1200w" sizes="(max-width:640px) calc(100vw - 52px), (max-width:980px) 45vw, 360px" width="600" height="315" loading="lazy" decoding="async" alt="{e(cv['alt'])}"></span>
+  <span class="pc"><span class="tag">{e(c['tag'])}</span><h3>{e(c['title'])}</h3><p>{e(c['text'])}</p></span>
+</a>"""
     return f"""<a class="{cls}" href="{p['path']}">
   <span class="tag">{e(c['tag'])}</span>
   <h3>{e(c['title'])}</h3>
@@ -501,6 +508,16 @@ def breadcrumb_ld(lang, trail):
         {"@type": "ListItem", "position": i + 1, "name": n, "item": abs_url(u)} for i, (n, u) in enumerate(trail)]}
 
 # ---------------------------------------------------------------- pages
+def cover_html(p):
+    """Optional blog header image from tools/covers (DUMP/assets/covers/<slug>-1200.webp)."""
+    cv = p.get("cover")
+    if not cv:
+        return ""
+    s = cv["slug"]
+    return (f'\n    <figure class="guide-cover"><img src="/DUMP/assets/covers/{s}-1200.webp" srcset="/DUMP/assets/covers/{s}-600.webp 600w, '
+            f'/DUMP/assets/covers/{s}-1200.webp 1200w" sizes="(max-width:860px) calc(100vw - 52px), 768px" width="1200" height="630" '
+            f'fetchpriority="high" decoding="async" alt="{e(cv["alt"])}"></figure>')
+
 def render_page(p, siblings, alt_path, cfg):
     lang, t = p["lang"], T[p["lang"]]
     link = store_link(cfg, p["campaign"], p.get("product_page"))
@@ -555,7 +572,7 @@ def render_page(p, siblings, alt_path, cfg):
     <p class="guide-meta">
       <span>{minutes} {t['min_read']}</span><span>·</span><span>{e(p['card']['tag'])}</span>
     </p>
-    <p class="byline">{t['byline']} <a href="/about/">Gül Eda Aydemir</a>, {t['byline_role']} · {t['updated']} <time datetime="{p['updated']}">{fmt_date(p['updated'], lang)}</time></p>
+    <p class="byline">{t['byline']} <a href="/about/">Gül Eda Aydemir</a>, {t['byline_role']} · {t['updated']} <time datetime="{p['updated']}">{fmt_date(p['updated'], lang)}</time></p>{cover_html(p)}
   </div>
 </header>
 
@@ -627,7 +644,7 @@ def render_index(lang, pages, alt_path, cfg):
 <section class="section-sm" aria-labelledby="ideas-cards" style="padding-top:28px;padding-bottom:28px">
   <div class="wrap">
     <h2 class="h3" id="ideas-cards" style="margin-bottom:18px">{e(ix['cards_h'])}</h2>
-    <div class="grid grid-3">
+    <div class="post-grid">
 {cards}
     </div>
   </div>

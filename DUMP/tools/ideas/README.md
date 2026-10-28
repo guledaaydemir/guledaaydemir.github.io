@@ -60,6 +60,7 @@ automatically. To feature it on `/DUMP/guides/` as well, add a card there by han
 | `sections` | The H2 sections, in order (see below). |
 | `faq` | 4–5 `{ "q": …, "a": … }` pairs. Rendered at the bottom and as FAQPage structured data. |
 | `related` | Optional extra cards for "More ideas": `{ "href", "tag", "title", "text" }`. |
+| `cover` | Optional blog cover: `{ "slug", "alt" }`, a cover rendered by `../covers/build.py`. Shown under the byline and on index cards. |
 
 Each section has an `id` (the anchor), `h2`, an optional `short` label for the jump chips at the top, an optional
 `lead` (answer-first sentence) and **one or more** of:

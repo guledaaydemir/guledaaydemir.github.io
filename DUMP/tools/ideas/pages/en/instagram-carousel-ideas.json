@@ -25,6 +25,10 @@
     "art": "carousel",
     "alt": "Seamless Instagram carousel ideas: one image running across three slides"
   },
+  "cover": {
+    "slug": "instagram-carousel-ideas",
+    "alt": "Photos across three seamless slides next to DUMP's Preview screen"
+  },
   "cta_text": "Drag a photo across the edge between two slides and DUMP lines up the seams for you, then saves every slide to Photos in posting order. Free on iPhone and iPad.",
   "intro": [
     "A seamless carousel turns a few slides into one long picture: as people swipe, the image keeps going. Below: what it is, the size to use, and 15 layout ideas.",
@@ -45,10 +49,30 @@
       "h2": "Panorama layouts: one photo across every slide",
       "lead": "The classic version. Choose wide, continuous scenes where a cut through the middle doesn't hurt.",
       "layouts": [
-        {"strip": "horizon", "panels": 3, "title": "Horizon pan", "text": "A beach, a skyline or a field across three slides. Keep the horizon at the same height so the line runs straight through every cut."},
-        {"strip": "reveal", "panels": 3, "title": "The reveal", "text": "Let part of the subject peek in from the right edge of slide one: a boat, a building, a tower. People swipe to see the rest. Best with objects, never faces."},
-        {"strip": "line", "panels": 3, "title": "Leading line", "text": "A pier, a road or a shoreline that starts on slide one and ends on the last. The line pulls the eye, and the thumb, to the right."},
-        {"strip": "fade", "panels": 4, "title": "Sky from day to night", "text": "A long sunset or a blend of photos taken as the light changed. Each slide is a little darker than the one before."}
+        {
+          "strip": "horizon",
+          "panels": 3,
+          "title": "Horizon pan",
+          "text": "A beach, a skyline or a field across three slides. Keep the horizon at the same height so the line runs straight through every cut."
+        },
+        {
+          "strip": "reveal",
+          "panels": 3,
+          "title": "The reveal",
+          "text": "Let part of the subject peek in from the right edge of slide one: a boat, a building, a tower. People swipe to see the rest. Best with objects, never faces."
+        },
+        {
+          "strip": "line",
+          "panels": 3,
+          "title": "Leading line",
+          "text": "A pier, a road or a shoreline that starts on slide one and ends on the last. The line pulls the eye, and the thumb, to the right."
+        },
+        {
+          "strip": "fade",
+          "panels": 4,
+          "title": "Sky from day to night",
+          "text": "A long sunset or a blend of photos taken as the light changed. Each slide is a little darker than the one before."
+        }
       ]
     },
     {
@@ -57,12 +81,42 @@
       "h2": "Collage layouts: separate photos on one continuous background",
       "lead": "The easiest kind to get right. The background runs across the slides while the photos sit on top, so nothing important gets cut.",
       "layouts": [
-        {"strip": "scrapbook", "panels": 3, "title": "Scrapbook strip", "text": "Photos on a paper or plain background, with one print straddling each cut. The overlap is what makes people notice the slides connect."},
-        {"strip": "film", "panels": 3, "title": "Film strip", "text": "A dark band with small frames running across all the slides, like a contact sheet. Good for a weekend dump with many small moments."},
-        {"strip": "banner", "panels": 4, "title": "Headline opener", "text": "One short headline across the first two slides (\"october\", \"lisbon\", \"23\"), then photos. Each half of the word should still read on its own."},
-        {"strip": "colors", "panels": 4, "title": "Colour story", "text": "The background shifts colour from slide to slide, with one photo on each. Pick photos that match their slide's colour."},
-        {"strip": "timeline", "panels": 4, "title": "Timeline", "text": "A line runs across every slide with photos pinned above and below it. Works for a trip day by day or a year month by month."},
-        {"strip": "route", "panels": 4, "title": "Route map", "text": "A dotted path wanders across the slides from stop to stop, with a pin and a photo at each place you went."}
+        {
+          "strip": "scrapbook",
+          "panels": 3,
+          "title": "Scrapbook strip",
+          "text": "Photos on a paper or plain background, with one print straddling each cut. The overlap is what makes people notice the slides connect."
+        },
+        {
+          "strip": "film",
+          "panels": 3,
+          "title": "Film strip",
+          "text": "A dark band with small frames running across all the slides, like a contact sheet. Good for a weekend dump with many small moments."
+        },
+        {
+          "strip": "banner",
+          "panels": 4,
+          "title": "Headline opener",
+          "text": "One short headline across the first two slides (\"october\", \"lisbon\", \"23\"), then photos. Each half of the word should still read on its own."
+        },
+        {
+          "strip": "colors",
+          "panels": 4,
+          "title": "Colour story",
+          "text": "The background shifts colour from slide to slide, with one photo on each. Pick photos that match their slide's colour."
+        },
+        {
+          "strip": "timeline",
+          "panels": 4,
+          "title": "Timeline",
+          "text": "A line runs across every slide with photos pinned above and below it. Works for a trip day by day or a year month by month."
+        },
+        {
+          "strip": "route",
+          "panels": 4,
+          "title": "Route map",
+          "text": "A dotted path wanders across the slides from stop to stop, with a pin and a photo at each place you went."
+        }
       ]
     },
     {
@@ -71,11 +125,36 @@
       "h2": "Hybrid layouts: seamless slides inside a normal dump",
       "lead": "You don't have to make the whole carousel seamless. A connected section next to ordinary photos often looks better.",
       "layouts": [
-        {"strip": "opener", "panels": 5, "title": "Panorama opener", "text": "The first three slides are one wide shot; the rest is a normal dump. The opening makes people swipe, and the photos keep them going."},
-        {"strip": "closer", "panels": 5, "title": "Panorama closer", "text": "Ordinary photos first, then one wide scene across the last two slides. A calm, cinematic ending."},
-        {"strip": "middle", "panels": 5, "title": "Surprise in the middle", "text": "A seamless pair in the middle of a normal dump. Nobody expects it there, which is why it works."},
-        {"strip": "beforeafter", "panels": 2, "title": "Before and after", "text": "One scene in two slides: the left half before, the right half after. A room, a garden, a street in summer and winter."},
-        {"strip": "zoom", "panels": 5, "title": "Wide, then zoom in", "text": "A panorama across the first three slides, then close-ups of details from it. It works like a guided tour of the scene."}
+        {
+          "strip": "opener",
+          "panels": 5,
+          "title": "Panorama opener",
+          "text": "The first three slides are one wide shot; the rest is a normal dump. The opening makes people swipe, and the photos keep them going."
+        },
+        {
+          "strip": "closer",
+          "panels": 5,
+          "title": "Panorama closer",
+          "text": "Ordinary photos first, then one wide scene across the last two slides. A calm, cinematic ending."
+        },
+        {
+          "strip": "middle",
+          "panels": 5,
+          "title": "Surprise in the middle",
+          "text": "A seamless pair in the middle of a normal dump. Nobody expects it there, which is why it works."
+        },
+        {
+          "strip": "beforeafter",
+          "panels": 2,
+          "title": "Before and after",
+          "text": "One scene in two slides: the left half before, the right half after. A room, a garden, a street in summer and winter."
+        },
+        {
+          "strip": "zoom",
+          "panels": 5,
+          "title": "Wide, then zoom in",
+          "text": "A panorama across the first three slides, then close-ups of details from it. It works like a guided tour of the scene."
+        }
       ]
     },
     {
@@ -91,9 +170,18 @@
       "h2": "How to make a seamless carousel in DUMP",
       "lead": "DUMP does the cutting for you, so there's no pixel maths.",
       "steps": [
-        {"title": "Start a canvas with the slides you need.", "text": "Add photos, text and stickers anywhere, including across the edge between two slides."},
-        {"title": "Drag a photo across a slide edge and tap Make Seamless.", "text": "Or use Position → Fill → Width 2x to stretch a photo over two slides."},
-        {"title": "Save.", "text": "Each slide is exported in order to a new album in Photos, so you can post them left to right without rearranging."}
+        {
+          "title": "Start a canvas with the slides you need.",
+          "text": "Add photos, text and stickers anywhere, including across the edge between two slides."
+        },
+        {
+          "title": "Drag a photo across a slide edge and tap Make Seamless.",
+          "text": "Or use Position → Fill → Width 2x to stretch a photo over two slides."
+        },
+        {
+          "title": "Save.",
+          "text": "Each slide is exported in order to a new album in Photos, so you can post them left to right without rearranging."
+        }
       ]
     }
   ],
