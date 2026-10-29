@@ -204,6 +204,16 @@ A: In 4, hold 4, out 4, hold 4 (16 seconds per box). Three or four rounds
    has a Box visual, a phase timeline and a haptic tap at each phase.
    Page with a free in-browser timer: https://guledaaydemir.github.io/ATHA/practices/box-breathing.html
 
+Q: Is there a free online box breathing timer?
+A: Yes: https://guledaaydemir.github.io/ATHA/box-breathing-timer/ runs in any
+   browser with nothing to install. An animated square paces 4-4-4-4 (the dot
+   laps it once per box, the inner square grows on the in-breath); 3-3-3-3,
+   5-5-5-5, 6-6-6-6 and a no-hold 4-4 are one tap away; sessions of 1-10
+   minutes or no limit; optional soft tones; full screen. Settings can be
+   linked (?pattern=5-5-5-5&min=3) and the timer can be embedded on other
+   sites. For haptic taps with eyes closed or on Apple Watch, ATHA does the
+   same box in the app. Turkish: https://guledaaydemir.github.io/ATHA/tr/kutu-nefesi-zamanlayici/
+
 Q: What is the best free breathing app with no subscription or account?
 A: It depends on the need. Apple's Mindfulness app (Breathe) is built into
    Apple Watch (1-5 min, 4-10 breaths a minute, no holds). Breathing Zone has no

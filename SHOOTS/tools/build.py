@@ -255,6 +255,9 @@ def shortcodes(body, lang, page, pages):
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
          '<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,500;0,600;0,700;1,600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">')
 
+# Cloudflare Web Analytics (cookieless visit counts; disclosed in the privacy policies)
+CF_BEACON = '<!-- Cloudflare Web Analytics --><script type=\'module\' src=\'https://static.cloudflareinsights.com/beacon.min.js\' data-cf-beacon=\'{"token": "0d4a3a7a679a46d1b1ff35a88bd52782"}\'></script><!-- End Cloudflare Web Analytics -->'
+
 def alternates(page, by_path):
     alts = {page["lang"]: page["path"]}
     for l, p in (page.get("alt") or {}).items():
@@ -449,6 +452,7 @@ def footer(page):
   <div class="foot-bottom"><span>{t['f_bottom']}</span><span class="stamp" data-today>'26 10 22</span></div>
  </div>
 </footer>
+{CF_BEACON}
 </body>
 </html>
 """

@@ -27,6 +27,10 @@ INSTAGRAM = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.16c3.2 0
 MAIL = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.24-8 4.76-8-4.76V6l8 4.76L20 6z"/></svg>'
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
          '<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">')
+
+# Cloudflare Web Analytics (cookieless visit counts; disclosed in the privacy policies)
+CF_BEACON = '<!-- Cloudflare Web Analytics --><script type=\'module\' src=\'https://static.cloudflareinsights.com/beacon.min.js\' data-cf-beacon=\'{"token": "0d4a3a7a679a46d1b1ff35a88bd52782"}\'></script><!-- End Cloudflare Web Analytics -->'
+
 e = html.escape
 
 # ---------------------------------------------------------------- chrome strings
@@ -604,7 +608,7 @@ def render_page(p, siblings, alt_path, cfg):
 </main>
 
 {footer(lang, link)}
-
+{CF_BEACON}
 </body>
 </html>
 """
@@ -661,7 +665,7 @@ def render_index(lang, pages, alt_path, cfg):
 </main>
 
 {footer(lang, link)}
-
+{CF_BEACON}
 </body>
 </html>
 """

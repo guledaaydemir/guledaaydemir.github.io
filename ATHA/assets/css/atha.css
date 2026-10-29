@@ -1783,3 +1783,301 @@ body.atha-lightbox-open { overflow: hidden; }
 .atha-how > li > .atha-phone { margin-top: auto; }
 .atha-how .atha-phone img { aspect-ratio: 600 / 1304; object-fit: cover; object-position: top; height: auto; }
 @media (max-width: 860px) { .atha-how > li > .atha-phone { margin-top: 0; } }
+
+/* --------------------------------------------------------------------------
+   27. Free tools (2026-10-29 redesign): the online box breathing timer at
+   /ATHA/box-breathing-timer/ (and /ATHA/tr/kutu-nefesi-zamanlayici/), its
+   embeds and the "Try it now" sections on the home pages. Markup comes from
+   tools/build-box-timer.py.
+   Apple-style: one material card, a rounded-square stage (in up the left,
+   hold across the top, out down the right, hold along the bottom) with a
+   breathing square inside that only ever holds a digit or a glyph; words,
+   a phase timeline, segmented controls and switches sit beside or below it.
+   The card switches to two columns when it is at least 720px wide.
+   -------------------------------------------------------------------------- */
+
+/* Page hero */
+.atha-toolhero h1, .atha-toolhero__sub, .atha-tryhome__head h2, .atha-tryhome__head .atha-lead, .atha-boxtimer__phase { text-wrap: balance; }
+.atha-toolhero { text-align: center; max-width: 780px; margin: var(--atha-s-4) auto var(--atha-s-6); }
+.atha-toolhero__badge {
+  display: inline-flex; align-items: center; gap: 8px; margin: 0 0 var(--atha-s-4);
+  padding: 6px 14px; border-radius: var(--atha-r-pill);
+  background: rgba(255,255,255,.06); border: 1px solid var(--atha-line);
+  font-size: 13px; font-weight: 500; color: var(--atha-text-soft); letter-spacing: 0;
+}
+.atha-toolhero__badge::before {
+  content: ""; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--atha-grad-cta); box-shadow: 0 0 10px rgba(245,166,129,.8);
+}
+.atha-toolhero h1 {
+  font-size: clamp(42px, 7.4vw, 76px); font-weight: 650; letter-spacing: -.045em; line-height: 1.02;
+  margin: 0 0 var(--atha-s-4); color: #fff;
+}
+.atha-toolhero__sub { font-size: clamp(17px, 2.2vw, 21px); line-height: 1.45; color: var(--atha-muted); max-width: 620px; margin: 0 auto; }
+
+/* The card */
+.atha-boxtimer {
+  container: boxtimer / inline-size;
+  position: relative; max-width: 1000px; margin: 0 auto; padding: 32px;
+  border-radius: 36px; text-align: left; color: var(--atha-text);
+  background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025));
+  border: 1px solid rgba(255,255,255,.08);
+  box-shadow: 0 50px 120px -50px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,255,255,.07);
+  -webkit-backdrop-filter: blur(30px) saturate(150%); backdrop-filter: blur(30px) saturate(150%);
+}
+.atha-boxtimer [hidden] { display: none !important; }
+.atha-boxtimer__layout { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 26px; }
+.atha-boxtimer__panel { width: 100%; max-width: 460px; display: grid; gap: 20px; text-align: center; }
+@container boxtimer (min-width: 720px) {
+  .atha-boxtimer__layout { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: center; gap: 48px; }
+  .atha-boxtimer__panel { text-align: left; justify-self: start; }
+}
+
+/* Stage: track, progress, dot and the breathing square */
+.atha-boxtimer__stage { position: relative; width: min(100%, 400px); aspect-ratio: 1; }
+.atha-boxtimer__svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.atha-boxtimer__track { fill: none; stroke: rgba(255,255,255,.1); stroke-width: 2; }
+.atha-boxtimer__progress { fill: none; stroke: url(#atha-bt-stroke); stroke-width: 3.5; stroke-linecap: round; }
+.atha-boxtimer__dot { fill: #fff; filter: drop-shadow(0 0 7px rgba(255,192,155,.95)); }
+.atha-boxtimer__orb { --bt-breath: 0; transform-origin: 160px 160px; transform-box: view-box; transform: scale(.55); }
+.atha-boxtimer__orb-glow { fill: url(#atha-bt-fill); filter: url(#atha-bt-blur); opacity: calc(.18 + .5 * var(--bt-breath)); }
+.atha-boxtimer__orb-body { fill: url(#atha-bt-fill); opacity: calc(.62 + .3 * var(--bt-breath)); }
+.atha-boxtimer__orb-sheen { fill: url(#atha-bt-sheen); }
+.atha-boxtimer__orb-edge { fill: none; stroke: rgba(255,255,255,.28); stroke-width: 1; }
+.atha-boxtimer:not(.is-ready) .atha-boxtimer__orb { animation: atha-boxbreath 16s infinite; }
+
+.atha-boxtimer__center { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; }
+.atha-boxtimer__center > * { grid-area: 1 / 1; }
+.atha-boxtimer__count {
+  margin: 0; font-size: 80px; font-weight: 200; line-height: 1; letter-spacing: -.04em; color: #fff;
+  font-variant-numeric: tabular-nums; text-shadow: 0 4px 30px rgba(20,10,40,.35);
+}
+.atha-boxtimer__glyph {
+  width: 30px; height: 30px; color: #fff; opacity: 0; transform: scale(.7);
+  transition: opacity var(--atha-dur-base) var(--atha-ease), transform var(--atha-dur-base) var(--atha-ease-spring);
+}
+.atha-boxtimer__glyph--play { margin-left: 4px; }
+.atha-boxtimer[data-glyph="play"] .atha-boxtimer__glyph--play,
+.atha-boxtimer[data-glyph="check"] .atha-boxtimer__glyph--check { opacity: 1; transform: scale(1); }
+.atha-boxtimer__stagebtn {
+  position: absolute; inset: 22%; border: 0; padding: 0; margin: 0; border-radius: 26%;
+  background: transparent; cursor: pointer; -webkit-tap-highlight-color: transparent;
+}
+.atha-boxtimer:not(.is-ready) .atha-boxtimer__stagebtn { display: none; }
+.atha-boxtimer__stagebtn:hover ~ .atha-boxtimer__center .atha-boxtimer__glyph { transform: scale(1.12); }
+
+/* Phase, status, timeline */
+.atha-boxtimer__phase { margin: 0; font-size: 32px; font-weight: 650; letter-spacing: -.028em; line-height: 1.15; color: #fff; }
+.atha-boxtimer__phase.is-new { animation: atha-bt-in .45s var(--atha-ease); }
+.atha-boxtimer__status { margin: 6px 0 0; font-size: 15px; color: var(--atha-muted); font-variant-numeric: tabular-nums; min-height: 1.5em; }
+.atha-boxtimer__timeline { display: flex; gap: 6px; list-style: none; margin: 0; padding: 0; text-align: left; }
+.atha-boxtimer__seg { flex: 1 1 0; min-width: 0; margin: 0; display: grid; gap: 8px; }
+.atha-boxtimer__segbar { display: block; height: 5px; border-radius: 99px; background: rgba(255,255,255,.1); overflow: hidden; }
+.atha-boxtimer__segfill {
+  display: block; height: 100%; border-radius: inherit; transform: scaleX(0); transform-origin: left center;
+  background: linear-gradient(90deg, var(--atha-peach-2), var(--atha-pink));
+}
+.atha-boxtimer__seglabel {
+  font-size: 13px; font-weight: 500; color: var(--atha-muted-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  transition: color var(--atha-dur-base) var(--atha-ease);
+}
+.atha-boxtimer__segsec { opacity: .75; font-variant-numeric: tabular-nums; }
+.atha-boxtimer__seg.is-current .atha-boxtimer__seglabel { color: #fff; }
+
+/* Buttons */
+.atha-boxtimer__controls { display: grid; gap: 20px; }
+.atha-boxtimer__actions { display: flex; gap: 10px; }
+.atha-boxtimer:not(.is-ready) .atha-boxtimer__iconbtn { display: none; }
+.atha-btbtn {
+  appearance: none; -webkit-appearance: none; border: 0; margin: 0; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  height: 52px; padding: 0 28px; border-radius: var(--atha-r-pill);
+  font: inherit; font-size: 17px; font-weight: 600; letter-spacing: -.01em; white-space: nowrap;
+  transition: transform .2s var(--atha-ease-spring), box-shadow var(--atha-dur-base) var(--atha-ease), background-color var(--atha-dur-base) var(--atha-ease);
+  -webkit-tap-highlight-color: transparent;
+}
+.atha-btbtn:active { transform: scale(.97); }
+.atha-btbtn--primary { flex: 1 1 auto; color: #14101f; background: var(--atha-grad-cta); box-shadow: 0 12px 30px -12px rgba(245,166,129,.6); }
+.atha-btbtn--primary:hover { box-shadow: 0 16px 38px -12px rgba(245,166,129,.75); }
+.atha-btbtn--secondary { flex: 0 0 auto; color: var(--atha-text); background: rgba(255,255,255,.09); }
+.atha-btbtn--secondary:hover { background: rgba(255,255,255,.14); }
+.atha-boxtimer__iconbtn {
+  position: absolute; top: 18px; right: 18px; z-index: 2; width: 40px; height: 40px; padding: 0;
+  display: grid; place-items: center; border: 0; border-radius: 50%; cursor: pointer;
+  background: rgba(255,255,255,.07); color: var(--atha-text-soft);
+  transition: background-color var(--atha-dur-base) var(--atha-ease), color var(--atha-dur-base) var(--atha-ease);
+}
+.atha-boxtimer__iconbtn:hover { background: rgba(255,255,255,.13); color: #fff; }
+.atha-boxtimer__iconbtn svg { width: 18px; height: 18px; }
+.atha-boxtimer__iconbtn .is-exit, .atha-boxtimer__iconbtn[aria-pressed="true"] .is-enter { display: none; }
+.atha-boxtimer__iconbtn[aria-pressed="true"] .is-exit { display: block; }
+
+/* Settings: an inset grouped list */
+.atha-boxtimer__settings {
+  text-align: left; border-radius: 18px; overflow: hidden;
+  background: rgba(255,255,255,.035); border: 1px solid rgba(255,255,255,.06);
+}
+.atha-boxtimer__row { display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 52px; padding: 10px 16px; margin: 0; font-size: 15px; color: var(--atha-text); }
+.atha-boxtimer__row + .atha-boxtimer__row { border-top: 1px solid rgba(255,255,255,.06); }
+.atha-boxtimer__row--stack { flex-direction: column; align-items: stretch; gap: 10px; padding: 14px 16px; }
+.atha-boxtimer__rowlabel { font-size: 13px; font-weight: 500; color: var(--atha-muted); }
+label.atha-boxtimer__row { cursor: pointer; }
+
+/* Segmented control (radios) */
+.atha-seg { position: relative; display: flex; min-width: 0; margin: 0; padding: 3px; border: 0; border-radius: 11px; background: rgba(118,118,128,.24); }
+.atha-seg legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.atha-seg__thumb {
+  position: absolute; top: 3px; bottom: 3px; left: 0; width: 0; border-radius: 8px; pointer-events: none;
+  background: rgba(255,255,255,.18); box-shadow: 0 3px 8px rgba(0,0,0,.22), inset 0 0 0 .5px rgba(255,255,255,.08);
+  transition: transform .36s cubic-bezier(.3,.9,.3,1), width .36s cubic-bezier(.3,.9,.3,1);
+}
+.atha-seg__opt {
+  position: relative; z-index: 1; flex: 1 1 0; min-width: 0; height: 32px; margin: 0; padding: 0 4px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center; cursor: pointer; user-select: none;
+  font-size: 13px; font-weight: 500; color: var(--atha-text-soft); white-space: nowrap;
+  transition: color .2s var(--atha-ease);
+}
+.atha-seg__opt--wide { flex-grow: 1.9; }
+.atha-seg__opt--custom { flex-grow: 1.7; }
+.atha-seg__opt input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.atha-seg__opt:has(input:checked) { color: #fff; font-weight: 600; }
+.atha-seg:not(.has-thumb) .atha-seg__opt:has(input:checked) { background: rgba(255,255,255,.18); }
+.atha-seg__opt:has(input:focus-visible) { outline: 2px solid var(--atha-peach-2); outline-offset: 1px; }
+
+/* Switch */
+.atha-switch {
+  appearance: none; -webkit-appearance: none; position: relative; flex: none; width: 51px; height: 31px; margin: 0;
+  border-radius: var(--atha-r-pill); background: rgba(120,120,128,.32); cursor: pointer;
+  transition: background-color .25s var(--atha-ease);
+}
+.atha-switch::before {
+  content: ""; position: absolute; top: 2px; left: 2px; width: 27px; height: 27px; border-radius: 50%;
+  background: #fff; box-shadow: 0 3px 8px rgba(0,0,0,.15), 0 3px 1px rgba(0,0,0,.06);
+  transition: transform .3s cubic-bezier(.3,.9,.3,1);
+}
+.atha-switch:checked { background: var(--atha-violet); }
+.atha-switch:checked::before { transform: translateX(20px); }
+.atha-switch:focus-visible { outline: 2px solid var(--atha-peach-2); outline-offset: 2px; }
+
+/* Done: the hand-off to the app */
+.atha-boxtimer__done {
+  display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 14px 16px; align-items: center; text-align: left;
+  padding: 16px; border-radius: 20px; border: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(135deg, rgba(245,166,129,.14), rgba(146,122,255,.12));
+  animation: atha-bt-in .5s var(--atha-ease);
+}
+.atha-boxtimer__done img { width: 56px; height: 56px; border-radius: 13px; display: block; }
+.atha-boxtimer__done-title { margin: 0; font-size: 17px; font-weight: 650; letter-spacing: -.01em; color: #fff; }
+.atha-boxtimer__done-text { margin: 3px 0 0; font-size: 14px; line-height: 1.45; color: var(--atha-text-soft); }
+.atha-boxtimer__done .atha-store { grid-column: 1 / -1; justify-content: center; }
+
+.atha-boxtimer__note { margin: 0; font-size: 12px; color: var(--atha-muted-2); }
+@media (pointer: coarse) { .atha-boxtimer__kbd { display: none; } }
+.atha-boxtimer__nojs { margin: 0; font-size: 14px; color: var(--atha-muted); }
+.atha-boxtimer.is-ready .atha-boxtimer__nojs { display: none; }
+
+/* Full screen: just the square, the words and the buttons */
+.atha-boxtimer.is-focus {
+  position: fixed; inset: 0; z-index: 10000; max-width: none; margin: 0; border: 0; border-radius: 0; box-shadow: none;
+  display: flex; align-items: center; justify-content: center; overflow-y: auto;
+  padding: max(24px, env(safe-area-inset-top)) 24px max(24px, env(safe-area-inset-bottom));
+  background: radial-gradient(circle at 50% 38%, rgba(146,122,255,.16), transparent 58%), var(--atha-bg-deep);
+}
+.atha-boxtimer.is-focus .atha-boxtimer__layout { grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 28px; width: 100%; max-width: 560px; }
+.atha-boxtimer.is-focus .atha-boxtimer__panel { text-align: center; justify-self: center; }
+.atha-boxtimer.is-focus .atha-boxtimer__stage { width: min(100%, 60vh, 520px); }
+.atha-boxtimer.is-focus .atha-boxtimer__settings,
+.atha-boxtimer.is-focus .atha-boxtimer__note,
+.atha-boxtimer.is-focus .atha-boxtimer__done { display: none !important; }
+html.atha-boxtimer-focus, html.atha-boxtimer-focus body { overflow: hidden; }
+html.atha-boxtimer-focus .atha-stickycta, html.atha-boxtimer-focus .atha-header { display: none; }
+
+/* "What is box breathing": four steps, each with its side of the square lit */
+.atha-boxsteps { list-style: none; padding: 0; margin: var(--atha-s-5) 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.atha-boxsteps > li {
+  margin: 0; padding: 20px; border-radius: 22px; color: var(--atha-text-soft); font-size: 15px; line-height: 1.45;
+  background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.07);
+}
+.atha-boxsteps svg { display: block; width: 36px; height: 36px; margin-bottom: 12px; }
+.atha-boxsteps .bs-frame { fill: none; stroke: rgba(255,255,255,.18); stroke-width: 2; }
+.atha-boxsteps .bs-side { fill: none; stroke: var(--atha-peach-2); stroke-width: 3; stroke-linecap: round; }
+.atha-boxsteps strong { display: block; color: #fff; font-size: 17px; font-weight: 650; letter-spacing: -.01em; margin-bottom: 2px; }
+
+/* App card on the timer pages */
+.atha-appcard {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--atha-s-6); align-items: center;
+  margin: var(--atha-s-7) 0; padding: 36px; border-radius: 32px;
+  background: linear-gradient(135deg, rgba(245,166,129,.12), rgba(146,122,255,.12));
+  border: 1px solid rgba(255,255,255,.08);
+}
+.atha-appcard__icon { width: 64px; height: 64px; border-radius: 15px; display: block; margin-bottom: 18px; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+.atha-article__body .atha-appcard__title,
+.atha-appcard__title { margin: 0 0 10px; font-size: clamp(26px, 3.4vw, 34px); font-weight: 650; letter-spacing: -.03em; line-height: 1.1; color: #fff; }
+.atha-article__body .atha-appcard p,
+.atha-appcard p { margin: 0 0 var(--atha-s-3); font-size: 16px; color: var(--atha-text-soft); }
+.atha-appcard ul { margin: 0 0 var(--atha-s-4); padding-left: 20px; font-size: 15px; }
+.atha-appcard .atha-getrow { margin-top: 0; }
+.atha-appcard .atha-phone { width: 200px; }
+
+/* embed.html: just the card, sized for an iframe */
+.atha-embed { background: var(--atha-bg); min-height: 0; padding: 10px; }
+.atha-embed::before { display: none; }
+.atha-embed .atha-boxtimer { padding: 22px 20px 18px; border-radius: 28px; }
+.atha-embed .atha-boxtimer__stage { width: min(100%, 300px); }
+.atha-embed__credit { margin: 0; font-size: 12px; color: var(--atha-muted-2); text-align: center; }
+.atha-embed__credit a { color: var(--atha-text-soft); }
+
+/* Home page "Try it now" */
+.atha-tryhome__head { text-align: center; max-width: 700px; margin: 0 auto var(--atha-s-6); }
+.atha-tryhome__head h2 { font-size: clamp(34px, 5vw, 52px); font-weight: 650; letter-spacing: -.04em; line-height: 1.05; color: #fff; margin: 0 0 var(--atha-s-3); }
+.atha-tryhome__head .atha-lead { margin: 0 auto; max-width: 560px; }
+.atha-tryhome__end {
+  display: flex; align-items: center; gap: var(--atha-s-5); flex-wrap: wrap;
+  max-width: 1000px; margin: var(--atha-s-4) auto 0; padding: 24px 28px; border-radius: 28px;
+  background: linear-gradient(135deg, rgba(245,166,129,.12), rgba(146,122,255,.1)); border: 1px solid rgba(255,255,255,.08);
+}
+.atha-tryhome__end-icon { width: 64px; height: 64px; border-radius: 15px; flex: none; box-shadow: 0 10px 30px rgba(0,0,0,.35); }
+.atha-tryhome__end-copy { flex: 1 1 300px; }
+.atha-tryhome__end-title { margin: 0 0 4px; font-size: 20px; font-weight: 650; letter-spacing: -.02em; color: #fff; }
+.atha-tryhome__end-copy p:last-child { margin: 0; color: var(--atha-text-soft); font-size: 15px; }
+.atha-tryhome__end .atha-getrow { margin-top: 0; }
+.atha-qr--lg img { width: 104px; height: 104px; padding: 6px; border-radius: 14px; }
+.atha-qr--lg p { max-width: 130px; }
+
+@keyframes atha-bt-in {
+  from { opacity: 0; transform: translateY(6px); filter: blur(3px); }
+  to   { opacity: 1; transform: none; filter: none; }
+}
+@keyframes atha-boxbreath {
+  0%   { transform: scale(.55); animation-timing-function: ease-in-out; }
+  25%  { transform: scale(1); }
+  50%  { transform: scale(1); animation-timing-function: ease-in-out; }
+  75%  { transform: scale(.55); }
+  100% { transform: scale(.55); }
+}
+@media (max-width: 860px) {
+  .atha-appcard { grid-template-columns: minmax(0, 1fr); padding: 26px; }
+  .atha-appcard .atha-phone { display: none; }
+}
+@media (max-width: 640px) {
+  .atha-boxtimer { padding: 22px 16px 18px; border-radius: 28px; }
+  .atha-boxtimer__iconbtn { top: 12px; right: 12px; }
+  .atha-boxtimer__count { font-size: 68px; }
+  .atha-boxtimer__phase { font-size: 27px; }
+  .atha-main--tool { padding-top: var(--atha-s-4); }
+  .atha-main--tool > .atha-breadcrumb { display: none; }
+  .atha-toolhero { margin-top: 0; margin-bottom: var(--atha-s-4); }
+  .atha-toolhero__badge { margin-bottom: var(--atha-s-3); }
+  .atha-toolhero h1 { margin-bottom: var(--atha-s-2); }
+  .atha-toolhero__sub { font-size: 16px; }
+  .atha-boxtimer__stage { width: min(100%, 290px); }
+  .atha-boxtimer__layout { gap: 20px; }
+  .atha-boxsteps > li { padding: 16px; }
+  .atha-tryhome__end { padding: 20px; }
+  .atha-tryhome__end .atha-getrow, .atha-tryhome__end .atha-store { width: 100%; justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .atha-boxtimer__orb, .atha-boxtimer:not(.is-ready) .atha-boxtimer__orb { animation: none; }
+  .atha-boxtimer__phase.is-new, .atha-boxtimer__done { animation: none; }
+  .atha-seg__thumb, .atha-switch::before { transition: none; }
+}

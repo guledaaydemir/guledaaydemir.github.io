@@ -20,10 +20,11 @@ const SITE = 'https://guledaaydemir.github.io/ATHA/';
 
 // path -> last real content change (YYYY-MM-DD)
 const STATIC_PAGES = [
-  ['',                   '2026-10-15'],
+  ['',                   '2026-10-29'],
   ['features/',          '2026-10-15'],
   ['meditations/',       '2026-10-15'],
-  ['guides/',            '2026-10-15'],
+  ['guides/',            '2026-10-28'],
+  ['box-breathing-timer/', '2026-10-29'],
   ['support.html',       '2026-10-15'],
   ['about.html',         '2026-10-15'],
   ['press/',             '2026-10-15'],
@@ -34,11 +35,12 @@ const STATIC_PAGES = [
 
 // Turkish pages: path -> last real content change
 const TR_PAGES = [
-  ['tr/',                                '2026-10-15'],
-  ['tr/rehber/',                         '2026-10-15'],
+  ['tr/',                                '2026-10-29'],
+  ['tr/rehber/',                         '2026-10-29'],
   ['tr/rehber/uyuyamiyorum.html',        '2026-10-15'],
   ['tr/rehber/4-7-8-nefes-teknigi.html', '2026-10-15'],
-  ['tr/rehber/kutu-nefesi.html',         '2026-10-15']
+  ['tr/rehber/kutu-nefesi.html',         '2026-10-15'],
+  ['tr/kutu-nefesi-zamanlayici/',        '2026-10-29']
 ];
 
 // English path <-> Turkish path
@@ -47,7 +49,8 @@ const PAIRS = [
   ['guides/',                              'tr/rehber/'],
   ['guides/cant-sleep-at-night.html',      'tr/rehber/uyuyamiyorum.html'],
   ['guides/4-7-8-breathing-for-sleep.html', 'tr/rehber/4-7-8-nefes-teknigi.html'],
-  ['practices/box-breathing.html',         'tr/rehber/kutu-nefesi.html']
+  ['practices/box-breathing.html',         'tr/rehber/kutu-nefesi.html'],
+  ['box-breathing-timer/',                 'tr/kutu-nefesi-zamanlayici/']
 ];
 
 function alternates(path) {

@@ -4,14 +4,14 @@
   Every URL uses the exact live case: /ATHA/ (uppercase). English/Turkish pairs carry xhtml:link alternates.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://guledaaydemir.github.io/ATHA/</loc><lastmod>2026-10-15</lastmod>
+  <url><loc>https://guledaaydemir.github.io/ATHA/</loc><lastmod>2026-10-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/ATHA/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/ATHA/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/ATHA/"/>
   </url>
   <url><loc>https://guledaaydemir.github.io/ATHA/features/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://guledaaydemir.github.io/ATHA/meditations/</loc><lastmod>2026-10-15</lastmod></url>
-  <url><loc>https://guledaaydemir.github.io/ATHA/guides/</loc><lastmod>2026-10-15</lastmod>
+  <url><loc>https://guledaaydemir.github.io/ATHA/guides/</loc><lastmod>2026-10-28</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/ATHA/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/ATHA/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/ATHA/guides/"/>
@@ -39,18 +39,23 @@
   <url><loc>https://guledaaydemir.github.io/ATHA/guides/night-time-wind-down-routine.html</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://guledaaydemir.github.io/ATHA/for/creators-and-remote-workers.html</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://guledaaydemir.github.io/ATHA/compare/free-breathing-apps-no-subscription.html</loc><lastmod>2026-10-15</lastmod></url>
+  <url><loc>https://guledaaydemir.github.io/ATHA/box-breathing-timer/</loc><lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/ATHA/box-breathing-timer/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/ATHA/tr/kutu-nefesi-zamanlayici/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/ATHA/box-breathing-timer/"/>
+  </url>
   <url><loc>https://guledaaydemir.github.io/ATHA/support.html</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://guledaaydemir.github.io/ATHA/about.html</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://guledaaydemir.github.io/ATHA/press/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://guledaaydemir.github.io/ATHA/apps/</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://guledaaydemir.github.io/ATHA/privacypolicy.html</loc><lastmod>2026-10-15</lastmod></url>
   <url><loc>https://guledaaydemir.github.io/ATHA/terms.html</loc><lastmod>2026-10-15</lastmod></url>
-  <url><loc>https://guledaaydemir.github.io/ATHA/tr/</loc><lastmod>2026-10-15</lastmod>
+  <url><loc>https://guledaaydemir.github.io/ATHA/tr/</loc><lastmod>2026-10-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/ATHA/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/ATHA/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/ATHA/"/>
   </url>
-  <url><loc>https://guledaaydemir.github.io/ATHA/tr/rehber/</loc><lastmod>2026-10-15</lastmod>
+  <url><loc>https://guledaaydemir.github.io/ATHA/tr/rehber/</loc><lastmod>2026-10-29</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/ATHA/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/ATHA/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/ATHA/guides/"/>
@@ -69,5 +74,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/ATHA/practices/box-breathing.html"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/ATHA/tr/rehber/kutu-nefesi.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/ATHA/practices/box-breathing.html"/>
+  </url>
+  <url><loc>https://guledaaydemir.github.io/ATHA/tr/kutu-nefesi-zamanlayici/</loc><lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/ATHA/box-breathing-timer/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/ATHA/tr/kutu-nefesi-zamanlayici/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/ATHA/box-breathing-timer/"/>
   </url>
 </urlset>
