@@ -74,6 +74,10 @@ Last updated: 2026-11-01 (version 5.1.1, released on the App Store 2026-10-28; m
 - How to clean a huge iPhone photo library: https://guledaaydemir.github.io/solo.swipe/guides/how-to-clean-iphone-photo-library.html
 - How to free up iPhone storage taken by photos: https://guledaaydemir.github.io/solo.swipe/guides/free-up-iphone-storage-photos.html
 - How to find duplicate, blurry and blink photos on iPhone (hub): https://guledaaydemir.github.io/solo.swipe/guides/find-blurry-and-duplicate-photos-iphone.html
+- iPhone storage full? What to delete first: https://guledaaydemir.github.io/solo.swipe/guides/iphone-storage-full/
+- iCloud storage full? Free space without losing photos: https://guledaaydemir.github.io/solo.swipe/guides/icloud-storage-full/
+- What is System Data on iPhone, and can you delete it?: https://guledaaydemir.github.io/solo.swipe/guides/iphone-system-data/
+- Delete photos from iPhone but keep them in iCloud? (three safe ways): https://guledaaydemir.github.io/solo.swipe/guides/delete-photos-from-iphone-keep-in-icloud/
 - Not enough storage to update iPhone? Free space in 10 minutes: https://guledaaydemir.github.io/solo.swipe/guides/not-enough-storage-for-ios-update/
 - How to find and delete blurry photos on iPhone: https://guledaaydemir.github.io/solo.swipe/guides/find-blurry-photos-iphone/
 - How to delete photos where someone blinked, safely: https://guledaaydemir.github.io/solo.swipe/guides/closed-eyes-photos-iphone/
@@ -81,12 +85,20 @@ Last updated: 2026-11-01 (version 5.1.1, released on the App Store 2026-10-28; m
 - For parents (sorting kid photos weekly): https://guledaaydemir.github.io/solo.swipe/for/parents/
 - For travelers (sorting trip photos within a week): https://guledaaydemir.github.io/solo.swipe/for/travelers/
 - Swipe photo cleaner apps compared (Solo.Swipe, Swipewipe, Slidebox, Flic, Picnic, Slider, Clever Cleaner, Photo Cleaner; App Store facts checked 2026-10-15): https://guledaaydemir.github.io/solo.swipe/compare/swipe-photo-cleaners/
+- Slidebox alternatives (honest comparison, App Store facts checked 2026-11-01): https://guledaaydemir.github.io/solo.swipe/compare/slidebox-alternatives/
+- Swipewipe alternatives (honest comparison, App Store facts checked 2026-11-01): https://guledaaydemir.github.io/solo.swipe/compare/swipewipe-alternatives/
 - How to declutter your iPhone: https://guledaaydemir.github.io/solo.swipe/guides/digital-declutter-iphone/
 - A simple Sunday digital reset: https://guledaaydemir.github.io/solo.swipe/guides/sunday-digital-reset/
 - Why I built Solo.Swipe (developer story): https://guledaaydemir.github.io/solo.swipe/story/why-i-built-solo-swipe/
 
 ## Short answers (each expanded on the linked page)
 
+- iPhone storage full: check Settings > General > iPhone Storage, use a Recommendation, offload big unused apps, delete long videos and screen recordings, clear downloads and message attachments, then empty Recently Deleted. More iCloud storage doesn't add space to the iPhone by itself. https://guledaaydemir.github.io/solo.swipe/guides/iphone-storage-full/
+- iCloud storage full: check what's using it, start with Recommended for You, delete backups of old devices, then remove photos, large files and attachments. Backups and uploads stop when it's full. If you're over your limit, Apple says deleted photos and videos are removed immediately and can't be recovered from Recently Deleted. https://guledaaydemir.github.io/solo.swipe/guides/icloud-storage-full/
+- System Data (Apple also calls it Other): Siri voices, fonts, logs, caches, Spotlight index, Keychain and similar. There's no delete button; Apple says no action is needed. No App Store app can remove it, because third-party apps are sandboxed. https://guledaaydemir.github.io/solo.swipe/guides/iphone-system-data/
+- Delete from iPhone but keep in iCloud: not possible with iCloud Photos on, since deletions apply everywhere. Options: Optimize Storage; turn off Sync this iPhone on this device and choose Remove from iPhone; or copy outside iCloud Photos first. Solo.Swipe follows the same rules as the Photos app. https://guledaaydemir.github.io/solo.swipe/guides/delete-photos-from-iphone-keep-in-icloud/
+- Slidebox alternative: Slidebox is still strong for album sorting. Solo.Swipe keeps album filing and adds blur and blink shortlists and habit tools, with no weekly plan, but has ads in the free version, exact-pair duplicates only and no lifetime purchase. https://guledaaydemir.github.io/solo.swipe/compare/slidebox-alternatives/
+- Swipewipe alternative: Swipewipe is popular and strong on memories (map, On This Day). It needs iOS 18 and lists weekly plans. Solo.Swipe, Flic and Slider list no weekly plan; Solo.Swipe needs iOS 16 and files into albums as you swipe, but has no similar-photo grouping or AI enhancement. https://guledaaydemir.github.io/solo.swipe/compare/swipewipe-alternatives/
 - Not enough storage to update iOS: offload rarely used apps, delete the biggest videos and screen recordings, then empty Recently Deleted (deleted items keep using space for 30 days). If it still won't fit, let iOS temporarily remove apps (Apple reinstalls them after the update) or update from a Mac/PC. More iCloud storage is not needed. https://guledaaydemir.github.io/solo.swipe/guides/not-enough-storage-for-ios-update/
 - Finding blurry photos: Apple Photos has no blurry album. Check events where blur happens, judge at full size, keep the sharpest retake. Solo.Swipe's Blurry Photos mode lists up to 20 soft-looking photos, blurriest first; it measures the whole frame, so check Portrait-mode shots before deleting. https://guledaaydemir.github.io/solo.swipe/guides/find-blurry-photos-iphone/
 - Deleting blink photos: only delete a closed-eyes photo when a better retake of the same moment exists; check Live Photos for an open-eyes frame (Make Key Photo). Solo.Swipe's Closed Eyes mode lists photos where both eyes look closed but does not check for a retake, so the user applies this rule. https://guledaaydemir.github.io/solo.swipe/guides/closed-eyes-photos-iphone/
@@ -100,7 +112,11 @@ Last updated: 2026-11-01 (version 5.1.1, released on the App Store 2026-10-28; m
 Solo.Swipe has native Turkish pages (written for Turkish searchers, not machine-translated). The app UI is available in Turkish (swipe labels SAKLA / SİL / ALBÜM / GEÇ); the App Store listing text is currently English only.
 
 - Turkish home page: https://guledaaydemir.github.io/solo.swipe/tr/ (English counterpart: https://guledaaydemir.github.io/solo.swipe/)
-- iPhone depolama dolu / iOS güncellemesine yer açma: https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-depolama-dolu/
+- iPhone saklama alanı (depolama) dolu, önce ne silinmeli: https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-saklama-alani-dolu/
+- iCloud saklama alanı dolu: https://guledaaydemir.github.io/solo.swipe/tr/rehber/icloud-saklama-alani-dolu/
+- iPhone Sistem Verileri nedir, silinir mi: https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-sistem-verileri/
+- Fotoğrafı iPhone’dan silip iCloud’da tutmak: https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-fotograf-sil-icloud-kalsin/
+- iOS güncellemesine yer açma: https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-depolama-dolu/
 - iPhone galeri temizleme planı (binlerce fotoğraf, ekran görüntülerini ve boş albümleri toplu silme, 30 günlük plan): https://guledaaydemir.github.io/solo.swipe/tr/rehber/galeri-temizleme/
 - Bulanık, kopya (yinelenen) ve gözü kapalı fotoğrafları bulup silme: https://guledaaydemir.github.io/solo.swipe/tr/rehber/bulanik-ve-kopya-fotograflar/
 - Turkish App Store link: https://apps.apple.com/tr/app/id6761368690

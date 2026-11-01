@@ -250,7 +250,7 @@
           "name": "Solo.Swipe fotoğraflarımı internete yükler mi?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Hayır. Fotoğraflar ve videolar Apple’ın PhotoKit altyapısıyla okunur, Apple’ın Vision ve Core Image altyapılarıyla cihazında analiz edilir ve hiçbir yere yüklenmez. Uygulama Google Firebase’e kullanım istatistikleri ve çökme raporları gönderir (5.0 sürümünde bunu kapatan bir uygulama içi ayar yok); ücretsiz sürümde de Google AdMob reklamları gösterir."
+            "text": "Hayır. Fotoğraflar ve videolar Apple’ın PhotoKit altyapısıyla okunur, Apple’ın Vision ve Core Image altyapılarıyla cihazında analiz edilir ve hiçbir yere yüklenmez. Uygulama Google Firebase’e kullanım istatistikleri ve çökme raporları gönderir (Ayarlar › Gizlilik › Kullanım Verisi Paylaş ile kapatabilirsin); ücretsiz sürümde de Google AdMob reklamları gösterir."
           }
         },
         {
@@ -835,7 +835,7 @@
                     <div class="data-col leaves">
                         <h3>Cihazdan çıkar</h3>
                         <ul>
-                            <li><strong>Kullanım istatistikleri</strong> (Google Analytics for Firebase) ve <strong>çökme raporları</strong> (Firebase Crashlytics); adına, e-postana ya da Apple Hesabı&rsquo;na değil, rastgele bir uygulama kimliğine bağlı. İzlemeye izin verirsen Google bunları reklam kimliğinle de ilişkilendirebilir. 5.0 sürümünde bunu kapatan bir uygulama içi ayar yok.</li>
+                            <li><strong>Kullanım istatistikleri</strong> (Google Analytics for Firebase) ve <strong>çökme raporları</strong> (Firebase Crashlytics); adına, e-postana ya da Apple Hesabı&rsquo;na değil, rastgele bir uygulama kimliğine bağlı. İzlemeye izin verirsen Google bunları reklam kimliğinle de ilişkilendirebilir. Bunu Ayarlar › Gizlilik › Kullanım Verisi Paylaş bölümünden kapatabilirsin.</li>
                             <li><strong>Ücretsiz sürümdeki reklamlar</strong> Google AdMob&rsquo;dan gelir; AdMob cihaz ve reklam verilerini kullanır. Reklamlar reklam kimliğini kullanmadan önce Apple&rsquo;ın izleme izni sorusunu görürsün.</li>
                             <li><strong>Konum adları:</strong> Fotoğrafta zaten bulunan GPS koordinatları, şehri göstermek için Apple&rsquo;ın konum hizmetine (geocoder) gönderilir.</li>
                             <li><strong>Satın alımları</strong> Apple yürütür.</li>
@@ -860,7 +860,7 @@
                             <tr><th scope="row">Gereksinim</th><td>iOS 16 ya da iPadOS 16 ve sonrası. Widget&rsquo;lar için iOS 17</td></tr>
                             <tr><th scope="row">Cihazlar</th><td>iPhone ve iPad; ayrıca iPad uygulaması olarak Apple M1 ve sonrası çipli Mac&rsquo;ler (macOS 13+) ve Apple Vision Pro</td></tr>
                             <tr><th scope="row">Diller</th><td>11 dil: Türkçe, İngilizce, Almanca, Arapça, Çince (Basitleştirilmiş), Fransızca, İspanyolca, İtalyanca, Japonca, Korece, Portekizce (Brezilya). Dil, uygulamanın içinden de değiştirilebilir</td></tr>
-                            <tr><th scope="row">Gizlilik</th><td>Fotoğraflar cihazda analiz edilir, hiçbir yere yüklenmez. Google Firebase (kullanım istatistikleri ve çökme raporları; 5.0&rsquo;da uygulama içinden kapatılamıyor) ve Google AdMob (ücretsiz sürümde reklamlar) kullanılır</td></tr>
+                            <tr><th scope="row">Gizlilik</th><td>Fotoğraflar cihazda analiz edilir, hiçbir yere yüklenmez. Google Firebase (kullanım istatistikleri ve çökme raporları; Ayarlar › Gizlilik › Kullanım Verisi Paylaş ile kapatılabilir) ve Google AdMob (ücretsiz sürümde reklamlar) kullanılır</td></tr>
                             <tr><th scope="row">Hesap</th><td>Gerekmez</td></tr>
                             <tr><th scope="row">Güncel sürüm</th><td>5.0, 13 Ekim 2026&rsquo;da yayınlandı (ilk sürüm 4 Nisan 2026)</td></tr>
                             <tr><th scope="row">Boyut ve yaş sınırı</th><td>65,8&nbsp;MB &middot; 4+ &middot; Fotoğraf ve Video kategorisi</td></tr>
@@ -930,8 +930,24 @@
                 <h2 id="guides-title">Daha hafif bir galeri için Türkçe rehberler</h2>
                 <p>Solo.Swipe olsa da olmasa da işe yarayan, adım adım yöntemler.</p>
                 <div class="guide-grid">
+                    <a class="guide-card" href="/solo.swipe/tr/rehber/iphone-saklama-alani-dolu/">
+                        <h3>iPhone saklama alanı dolu: önce ne silmeli?</h3>
+                        <p>Çubuğa bak, sonra ağır ve geri getirilebilir olanlardan başla; Apple’ın kendi adımlarıyla.</p>
+                    </a>
+                    <a class="guide-card" href="/solo.swipe/tr/rehber/icloud-saklama-alani-dolu/">
+                        <h3>iCloud saklama alanı dolu: fotoğrafları kaybetmeden yer aç</h3>
+                        <p>iCloud’unu ne dolduruyor, önce ne silinmeli, silinenler neden Son Silinenler’e düşmeyebilir?</p>
+                    </a>
+                    <a class="guide-card" href="/solo.swipe/tr/rehber/iphone-sistem-verileri/">
+                        <h3>iPhone Sistem Verileri nedir, silinir mi?</h3>
+                        <p>İçinde ne var, Apple ne diyor ve neden hiçbir temizleme uygulaması onu silemez?</p>
+                    </a>
+                    <a class="guide-card" href="/solo.swipe/tr/rehber/iphone-fotograf-sil-icloud-kalsin/">
+                        <h3>Fotoğrafı iPhone’dan silip iCloud’da tutmak mümkün mü?</h3>
+                        <p>Yer açmanın üç güvenli yolu ve fotoğrafları her yerden silen o bir hata.</p>
+                    </a>
                     <a class="guide-card" href="/solo.swipe/tr/rehber/iphone-depolama-dolu/">
-                        <h3>iPhone depolama dolu: önce ne silmeli?</h3>
+                        <h3>iOS güncellemesi için yer yok mu?</h3>
                         <p>iOS güncellemesine yer açmak için 10 dakikalık sıra: en büyük kazançlar önce.</p>
                     </a>
                     <a class="guide-card" href="/solo.swipe/tr/rehber/galeri-temizleme/">
@@ -981,7 +997,7 @@
                 </details>
                 <details class="faq-item">
                     <summary><h3>Solo.Swipe fotoğraflarımı internete yükler mi?</h3></summary>
-                    <p>Hayır. Fotoğraflar ve videolar Apple’ın PhotoKit altyapısıyla okunur, Apple’ın Vision ve Core Image altyapılarıyla cihazında analiz edilir ve hiçbir yere yüklenmez. Uygulama Google Firebase’e kullanım istatistikleri ve çökme raporları gönderir (5.0 sürümünde bunu kapatan bir uygulama içi ayar yok); ücretsiz sürümde de Google AdMob reklamları gösterir. <a class="text-link" href="#gizlilik">Gizlilik özeti</a>.</p>
+                    <p>Hayır. Fotoğraflar ve videolar Apple’ın PhotoKit altyapısıyla okunur, Apple’ın Vision ve Core Image altyapılarıyla cihazında analiz edilir ve hiçbir yere yüklenmez. Uygulama Google Firebase’e kullanım istatistikleri ve çökme raporları gönderir (Ayarlar › Gizlilik › Kullanım Verisi Paylaş ile kapatabilirsin); ücretsiz sürümde de Google AdMob reklamları gösterir. <a class="text-link" href="#gizlilik">Gizlilik özeti</a>.</p>
                 </details>
                 <details class="faq-item">
                     <summary><h3>Solo.Swipe kopya fotoğrafları bulur mu?</h3></summary>
@@ -1055,7 +1071,10 @@
                         <h2 id="ss-ft-app" lang="en">Solo.Swipe</h2>
                         <ul>
                             <li><a href="/solo.swipe/tr/">Ana sayfa</a></li>
-                            <li><a href="/solo.swipe/tr/rehber/iphone-depolama-dolu/">iPhone depolama dolu: ne silmeli?</a></li>
+                            <li><a href="/solo.swipe/tr/rehber/iphone-saklama-alani-dolu/">iPhone saklama alanı dolu: ne silmeli?</a></li>
+                            <li><a href="/solo.swipe/tr/rehber/icloud-saklama-alani-dolu/">iCloud saklama alanı dolu</a></li>
+                            <li><a href="/solo.swipe/tr/rehber/iphone-sistem-verileri/">iPhone Sistem Verileri nedir?</a></li>
+                            <li><a href="/solo.swipe/tr/rehber/iphone-depolama-dolu/">iOS güncellemesi için yer aç</a></li>
                             <li><a href="/solo.swipe/tr/rehber/galeri-temizleme/">iPhone galeri temizleme planı</a></li>
                             <li><a href="/solo.swipe/tr/rehber/bulanik-ve-kopya-fotograflar/">Bulanık ve kopya fotoğraflar</a></li>
                             <li><a href="/solo.swipe/" hreflang="en" lang="en">English site</a></li>

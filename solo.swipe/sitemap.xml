@@ -5,7 +5,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://guledaaydemir.github.io/solo.swipe/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/"/>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://guledaaydemir.github.io/solo.swipe/guides/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-11-01</lastmod>
   </url>
   <url>
     <loc>https://guledaaydemir.github.io/solo.swipe/guides/camera-roll-cleanup-for-content-creators/</loc>
@@ -82,7 +82,7 @@
   </url>
   <url>
     <loc>https://guledaaydemir.github.io/solo.swipe/guides/not-enough-storage-for-ios-update/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/not-enough-storage-for-ios-update/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-depolama-dolu/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/not-enough-storage-for-ios-update/"/>
@@ -109,7 +109,7 @@
   </url>
   <url>
     <loc>https://guledaaydemir.github.io/solo.swipe/compare/swipe-photo-cleaners/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/compare.jpg</image:loc><image:title>Swipe photo cleaner apps compared, October 2026</image:title></image:image>
   </url>
   <url>
@@ -140,7 +140,7 @@
   </url>
   <url>
     <loc>https://guledaaydemir.github.io/solo.swipe/tr/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/"/>
@@ -149,7 +149,7 @@
   </url>
   <url>
     <loc>https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-depolama-dolu/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/not-enough-storage-for-ios-update/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-depolama-dolu/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/not-enough-storage-for-ios-update/"/>
@@ -171,5 +171,79 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/find-blurry-and-duplicate-photos-iphone.html"/>
     <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/tr-bulanik.jpg</image:loc><image:title>iPhone’da bulanık ve kopya fotoğrafları bulup silme</image:title></image:image>
     <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/shots/shot-2-1206.webp</image:loc><image:title>Solo.Swipe Türkçe kopya çifti ekranı</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/iphone-storage-full/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/iphone-storage-full/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-saklama-alani-dolu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/iphone-storage-full/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/storage-full.jpg</image:loc><image:title>iPhone storage full? What to delete first</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/icloud-storage-full/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/icloud-storage-full/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/icloud-saklama-alani-dolu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/icloud-storage-full/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/icloud-full.jpg</image:loc><image:title>iCloud storage full? Free space without losing photos</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/iphone-system-data/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/iphone-system-data/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-sistem-verileri/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/iphone-system-data/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/system-data.jpg</image:loc><image:title>What is System Data on iPhone? Can you delete it?</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/guides/delete-photos-from-iphone-keep-in-icloud/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/delete-photos-from-iphone-keep-in-icloud/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-fotograf-sil-icloud-kalsin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/delete-photos-from-iphone-keep-in-icloud/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/keep-icloud.jpg</image:loc><image:title>Delete photos from iPhone, keep them in iCloud?</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-saklama-alani-dolu/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/iphone-storage-full/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-saklama-alani-dolu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/iphone-storage-full/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/tr-saklama.jpg</image:loc><image:title>iPhone saklama alanı dolu: önce ne silmeli?</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/tr/rehber/icloud-saklama-alani-dolu/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/icloud-storage-full/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/icloud-saklama-alani-dolu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/icloud-storage-full/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/tr-icloud.jpg</image:loc><image:title>iCloud saklama alanı dolu: fotoğrafları kaybetmeden yer aç</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-sistem-verileri/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/iphone-system-data/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-sistem-verileri/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/iphone-system-data/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/tr-sistem.jpg</image:loc><image:title>iPhone Sistem Verileri nedir, silinir mi?</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-fotograf-sil-icloud-kalsin/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solo.swipe/guides/delete-photos-from-iphone-keep-in-icloud/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solo.swipe/tr/rehber/iphone-fotograf-sil-icloud-kalsin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solo.swipe/guides/delete-photos-from-iphone-keep-in-icloud/"/>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/tr-icloud-kalsin.jpg</image:loc><image:title>Fotoğrafı iPhone’dan silip iCloud’da tutmak mümkün mü?</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/compare/slidebox-alternatives/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/alt-slidebox.jpg</image:loc><image:title>Slidebox alternatives: an honest comparison</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solo.swipe/compare/swipewipe-alternatives/</loc>
+    <lastmod>2026-11-01</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solo.swipe/assets/og/alt-swipewipe.jpg</image:loc><image:title>Swipewipe alternatives: an honest comparison</image:title></image:image>
   </url>
 </urlset>
