@@ -2,7 +2,7 @@
   "collection": "meditations",
   "basePath": "meditations/",
   "title": "Breathing techniques",
-  "description": "The ten breathing patterns built into ATHA 1.0, with exact timings and when to use each one.",
+  "description": "The ten breathing patterns built into ATHA, with exact timings and when to use each one.",
   "categories": [
     {
       "id": "calm",

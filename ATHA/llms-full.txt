@@ -5,13 +5,13 @@ ATHA means now. Breathe now.
 ATHA is a free breathing app for iPhone, iPad and Apple Watch, built
 independently by Gül Eda Aydemir ("Gul Eda Aydemir" on the App Store). It
 guides the four phases of a breath (inhale, hold in, exhale, hold out) with an
-ambient visual, haptic taps at every phase change and optional soft phase
-tones, so a session works with the eyes closed. There is no subscription, no in-app
+ambient visual, haptic taps at every phase change, optional soft phase tones,
+spoken voice cues and ambient sounds, so a session works with the eyes closed. There is no subscription, no in-app
 purchase, no advertising and no account, and the app makes no network requests.
 
 Source: https://guledaaydemir.github.io/ATHA/
 App Store: https://apps.apple.com/app/id6807887691
-Last updated: 2026-10-15 (checked against ATHA 1.0, released 2026-09-23)
+Last updated: 2026-11-01 (checked against ATHA 2.1, released 2026-10-28)
 
 --------------------------------------------------------------------------------
 ## At a glance
@@ -19,10 +19,11 @@ Last updated: 2026-10-15 (checked against ATHA 1.0, released 2026-09-23)
 
 Price ............ Free. Every feature included. No subscription, no IAP, no ads.
 Devices .......... iPhone and iPad, iOS 18.6 or later; Apple Watch, watchOS 10.6 or later
-                   (v1.0 widgets and Live Activity: iOS 26.1 or later)
-Languages ........ English, Turkish (changeable inside the app)
+                   (widgets and Live Activity: iOS 26.1 or later)
+Languages ........ English, French, German, Italian, Portuguese (Brazil), Spanish,
+                   Turkish (changeable inside the app)
 Privacy label .... "Data Not Collected"
-Version .......... 1.0 (23 September 2026), 14.3 MB, rated 4+
+Version .......... 2.1 (28 October 2026; first release 23 September 2026), 44.6 MB, rated 4+
 Category ......... Health & Fitness (also Lifestyle)
 Developer ........ Gül Eda Aydemir, independent iOS developer
 Contact .......... solostaseraofficial@gmail.com
@@ -64,7 +65,7 @@ a pattern needs an inhale and an exhale. Named, saved, usable in routines.
 "Four-eight" (4 / 0 / 8 / 0) is not a preset; it can be saved as a custom pattern.
 
 --------------------------------------------------------------------------------
-## Features (version 1.0)
+## Features (version 2.1)
 --------------------------------------------------------------------------------
 
 Starting a session
@@ -80,19 +81,27 @@ During a session
   - 10 ambient visuals: Aura, Orb, Box, Glow, Ripple, Wave, Liquid, Aurora,
     Flower, Particles
   - Haptics: Off, Light, Medium, Strong
-  - Full Guided Mode (opt-in, Settings > Breathing sound): a soft tone marks
+  - Guided Voice (opt-in, Settings > Sound & voice): a short spoken cue at each
+    phase, in 7 languages with 5 voices (Calm, Deep, Soft, Warm, Whisper)
+  - Ambient sounds: Forest, Ocean, Rain, Fairy Night, Tone
+  - Full Guided Mode (opt-in, Settings > Sound & voice): a soft tone marks
     every phase (Chime, Marimba, Bowl, Drop or Pulse); otherwise a choice of
-    completion sounds. v1.0 has no spoken guided voice and no ambient sounds;
-    both are planned for version 2.0.
+    completion sounds
   - Views: Standard, Minimal, Eyes closed (screen dimmed; haptics and
-    optional tones carry the rhythm)
-  - Known limitation in v1.0: Eyes closed lets the screen sleep, and the
-    session's cues (haptics, phase tones) stop while the app is in the
-    background, so they stop if the iPhone auto-locks. For longer sessions,
-    raise Settings > Display & Brightness > Auto-Lock, or use Apple Watch.
-  - Also in v1.0: with the Ring/Silent switch on silent, ATHA plays no sound,
-    so keep haptics on.
+    optional voice cues or tones carry the rhythm)
+  - The screen stays on while a breath is guided. iOS runs no haptics in the
+    background, so the taps stop if the user locks the iPhone or leaves the app;
+    Apple Watch keeps going with the wrist down.
+  - Sound still plays with the Ring/Silent switch on silent.
   - Optional mood rating after a session (5-point scale) and an optional note
+
+Calm down, sleep and programs
+  - SOS: a button on Home, a widget and a "Calm Down Now" shortcut start a
+    two-minute calming breath with no choices to make
+  - Sleep: a "Fairy Forest" session where the breath slows from six to four a
+    minute, guidance fades and the screen darkens
+  - Programs ("Forest Paths"): 7-Day Anxiety Reset, Sleep Better in 14 Days,
+    5-Day Clear Mind. These are wellness exercises, not treatment
 
 Progress
   - Routines with local reminders; daily and weekly minute goals
@@ -114,10 +123,10 @@ Apple platform
     (before the first sync: Quick Reset, Coherence, Box Breathing); each runs
     at its default length. To use a practice on the Watch, favourite it on
     the iPhone.
-  - Widgets: Quick Breath, Streak, Daily Progress, Check In (Home and Lock Screen)
+  - Widgets: Quick Breath, Streak, Daily Progress, Check In, SOS
   - Live Activity / Dynamic Island shows sessions of 3 minutes or more
-  - In v1.0, widgets and the Live Activity need iOS 26.1 or later (the app
-    itself runs on iOS 18.6)
+  - Widgets and the Live Activity need iOS 26.1 or later (the app itself runs
+    on iOS 18.6)
   - Siri: "Breathe now with ATHA", "Quick reset with ATHA",
     "Start my daily breath in ATHA", "Start a breathing session in ATHA"
   - Apple Health, optional and write-only: Mindful Minutes and State of Mind
@@ -125,10 +134,6 @@ Apple platform
     System, Light or Dark appearance
   - Accessibility: VoiceOver, Dynamic Type, Reduce Motion
   - Works offline
-
-In development for version 2.0 (not released, no date; do not describe as
-available): a one-tap "Calm Down Now" control, a sleep session that slowly
-fades out, guided multi-day programs, five more languages.
 
 --------------------------------------------------------------------------------
 ## Pricing
@@ -143,11 +148,8 @@ trial and no account. Every feature listed above is included.
 
 - No account, no server, no iCloud sync. The app makes no network requests.
 - No analytics or advertising SDKs. Apple's privacy label: "Data Not Collected".
-- ATHA 1.0 shows an "Anonymous usage data" switch in Settings > Data. It has
-  no effect: the App Store build has no analytics destination, so nothing is
-  sent whether it is on or off. The next version removes it.
-- ATHA 1.0 (the App Store version) has no separate privacy manifest file;
-  the next version adds one declaring no tracking and no collected data types.
+- The app includes a privacy manifest declaring no tracking and no collected
+  data types.
 - Sessions, patterns, routines, progress, moods, notes and settings are stored
   only on the device (and in the user's own device backup).
 - Apple Health is optional and write-only; ATHA reads nothing from Health.
@@ -166,8 +168,8 @@ A: Give your mind one slow, countable job: breathe in for about 4 seconds and
    are still awake after about 20 minutes, get up briefly in dim light. If sleep
    problems last for months or affect daily life, the NHS suggests seeing a GP,
    who may offer CBT for insomnia. ATHA can keep the count: Eyes-closed mode
-   dims the screen and haptics mark each breath (in v1.0, keep Auto-Lock longer
-   than the session).
+   dims the screen and haptics mark each breath; the screen stays on while a
+   breath is guided.
 
 Q: How do I calm down quickly when anxiety spikes?
 A: Make the out-breath longer than the in-breath, e.g. 4 in and 6 out, for one
@@ -184,7 +186,7 @@ A: Don't check the time or open a feed. Stay in bed in the dark, eyes closed,
    and breathe about 6 seconds in, 8 out for five to ten minutes. If still wide
    awake after roughly 20 minutes, get up, keep the light low, do something dull
    until sleepy. ATHA's Eyes-closed view dims the screen and haptics carry the
-   rhythm (in v1.0, keep Auto-Lock longer than the session or the cues stop);
+   rhythm while the screen stays on;
    the Apple Watch app taps each phase on the wrist (favourite the practice on
    the iPhone first so it appears there).
    Guide: https://guledaaydemir.github.io/ATHA/guides/woke-up-at-3am.html
@@ -245,8 +247,8 @@ A: No. ATHA is a wellness app, not a medical device. It does not diagnose or
 --------------------------------------------------------------------------------
 
 The app interface is available in Turkish (switch inside the app: Ayarlar > Dil).
-The App Store listing, widget names (Quick Breath, Streak, Daily Progress, Check In)
-and Siri shortcut phrases are English in version 1.0. Apple's privacy label reads
+The App Store listing, voice cues and Siri shortcut phrases are in Turkish too; widget
+names (Quick Breath, Streak, Daily Progress, Check In, SOS) stay English. Apple's privacy label reads
 "Veriler Toplanmaz" on the Turkish storefront. Turkish App Store link:
 https://apps.apple.com/tr/app/id6807887691
 

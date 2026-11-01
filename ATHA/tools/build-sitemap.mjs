@@ -20,26 +20,26 @@ const SITE = 'https://guledaaydemir.github.io/ATHA/';
 
 // path -> last real content change (YYYY-MM-DD)
 const STATIC_PAGES = [
-  ['',                   '2026-10-29'],
-  ['features/',          '2026-10-15'],
-  ['meditations/',       '2026-10-15'],
+  ['',                   '2026-11-01'],
+  ['features/',          '2026-11-01'],
+  ['meditations/',       '2026-11-01'],
   ['guides/',            '2026-10-28'],
   ['box-breathing-timer/', '2026-10-29'],
-  ['support.html',       '2026-10-15'],
-  ['about.html',         '2026-10-15'],
-  ['press/',             '2026-10-15'],
+  ['support.html',       '2026-11-01'],
+  ['about.html',         '2026-11-01'],
+  ['press/',             '2026-11-01'],
   ['apps/',              '2026-10-15'],
-  ['privacypolicy.html', '2026-10-15'],
+  ['privacypolicy.html', '2026-11-01'],
   ['terms.html',         '2026-10-15']
 ];
 
 // Turkish pages: path -> last real content change
 const TR_PAGES = [
-  ['tr/',                                '2026-10-29'],
+  ['tr/',                                '2026-11-01'],
   ['tr/rehber/',                         '2026-10-29'],
-  ['tr/rehber/uyuyamiyorum.html',        '2026-10-15'],
-  ['tr/rehber/4-7-8-nefes-teknigi.html', '2026-10-15'],
-  ['tr/rehber/kutu-nefesi.html',         '2026-10-15'],
+  ['tr/rehber/uyuyamiyorum.html',        '2026-11-01'],
+  ['tr/rehber/4-7-8-nefes-teknigi.html', '2026-11-01'],
+  ['tr/rehber/kutu-nefesi.html',         '2026-11-01'],
   ['tr/kutu-nefesi-zamanlayici/',        '2026-10-29']
 ];
 

@@ -52,7 +52,7 @@ Do not present ATHA as treatment. It does not diagnose or treat anxiety, panic o
 ## Pages
 
 - [Home](https://guledaaydemir.github.io/ATHA/): what ATHA does, how it works, facts and FAQ
-- [Features](https://guledaaydemir.github.io/ATHA/features/): the feature list, all free (written for version 1.0; voice, ambient sounds, Sleep, Programs and SOS are described above)
+- [Features](https://guledaaydemir.github.io/ATHA/features/): the feature list, all free
 - [Breathing techniques](https://guledaaydemir.github.io/ATHA/meditations/): the ten patterns with exact timings and when to use each
 - [Guides](https://guledaaydemir.github.io/ATHA/guides/): answer-first guides for calm, sleep and focus, with exact timings and sources
 - [How to calm down fast: a 60-second plan](https://guledaaydemir.github.io/ATHA/guides/calm-down-fast.html): in 4, out 6 for a minute, then 5-4-3-2-1 grounding; panic safety notes (NHS); free in-browser timer
