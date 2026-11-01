@@ -15,8 +15,8 @@
     author: 'Gül Eda Aydemir',
     email: 'solostaseraofficial@gmail.com',
     developerSite: 'https://guledaaydemir.github.io/',
-    // Real App Store URL (id6807887691). Apple ignores utm_* parameters; use
-    // App Store Connect campaign links (pt / ct) in the HTML if needed.
+    // Real App Store URL (id6807887691). Apple ignores utm_* parameters;
+    // bindStoreLinks adds the App Store Connect campaign parameters (pt / ct).
     appStoreURL: 'https://apps.apple.com/app/id6807887691'
   };
 
@@ -88,6 +88,14 @@
     var nodes = (scope || document).querySelectorAll('[data-atha-store]');
     for (var i = 0; i < nodes.length; i++) {
       if (!nodes[i].getAttribute('href')) { nodes[i].setAttribute('href', CONFIG.appStoreURL); }
+    }
+    /* App Store Connect campaign links: pt + ct, placement from data-atha-store. */
+    var links = (scope || document).querySelectorAll('a[href*="apps.apple.com"]');
+    for (var j = 0; j < links.length; j++) {
+      var a = links[j];
+      if (!/\/app\/id(6798248086|6761368690|6762450478|6778808618|6807887691|6825732746)(\?|$)/.test(a.href) || a.href.indexOf('ct=') > -1) { continue; }
+      var ct = ('web-atha-' + (a.getAttribute('data-atha-store') || 'link')).slice(0, 30);
+      a.href += (a.href.indexOf('?') > -1 ? '&' : '?') + 'pt=128720446&ct=' + encodeURIComponent(ct) + '&mt=8';
     }
   }
 

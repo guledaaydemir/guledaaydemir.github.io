@@ -4,14 +4,14 @@
   "slug": "photo-dump-ideas",
   "keyword": "photo dump ideas",
   "title": "40 Photo Dump Ideas for Instagram + Slide Order Tips",
-  "description": "40 photo dump ideas for Instagram: what to include in a weekly, monthly, travel, summer and year-recap dump, plus how to order the slides.",
+  "description": "40 photo dump ideas for Instagram, plus 40 more themes, caption formulas and slide order tips for weekly, monthly, travel and year-recap dumps.",
   "h1": "40 photo dump ideas <span class=\"g\">for Instagram</span>",
   "crumb": "Dump ideas",
   "eyebrow": "Ideas · What to post",
   "campaign": "web-ideas",
   "product_page": "photo_dump",
   "published": "2026-10-28",
-  "updated": "2026-10-28",
+  "updated": "2026-11-01",
   "card": {
     "tag": "Ideas",
     "title": "40 photo dump ideas",
@@ -37,7 +37,7 @@
   },
   "intro": [
     "Stuck on what to post? Pick the kind of dump you're making and use its eight ideas as a shot list. Most dumps feel right at 8 to 12 slides, so you won't need all of them.",
-    "After the ideas: how to order the slides so people swipe all the way to the end."
+    "After the ideas: 40 more themes, how to order the slides, caption formulas and how often to post."
   ],
   "mid_cta_after": "travel",
   "sections": [
@@ -242,6 +242,48 @@
       ]
     },
     {
+      "id": "seasonal-themes",
+      "short": "Seasonal themes",
+      "h2": "Seasonal photo dump themes",
+      "lead": "Need a frame rather than a shot list? These 40 themes give a dump its reason to exist, starting with ten that follow the calendar or the light.",
+      "html": "<ul><li><strong>Month in review:</strong> three or four photos per week, roughly chronological.</li><li><strong>Last seven days:</strong> tighter and more immediate than a monthly recap.</li><li><strong>Summer dump:</strong> heat, water, late light, one melting food item.</li><li><strong>Autumn dump:</strong> texture-led. Leaves, knitwear, steam from a cup.</li><li><strong>Winter dump:</strong> indoor light, cold hands, dark commutes, one bright interior.</li><li><strong>Spring dump:</strong> first outdoor coffee, blossom, a coat finally left at home.</li><li><strong>End of year:</strong> one photo per month, twelve slides, chronological.</li><li><strong>Golden hour only:</strong> every photo shot in the same 40 minutes of light.</li><li><strong>Night dump:</strong> everything after dark. Blur is a feature here.</li><li><strong>Same place, different days:</strong> one location photographed repeatedly.</li></ul><p>Planning an end-of-year post? The <a href=\"/DUMP/guides/year-in-review-photo-dump.html\">year in review guide</a> has the full 12 + 5 formula.</p>"
+    },
+    {
+      "id": "travel-themes",
+      "short": "Travel themes",
+      "h2": "Travel photo dump themes",
+      "lead": "Sequence matters more here than in any other category.",
+      "html": "<ul><li><strong>Trip recap:</strong> arrival, the good bit, the food, the exhaustion.</li><li><strong>City dump:</strong> one city, mixed subjects. Signage and street details carry it.</li><li><strong>Day trip:</strong> a single day, chronological, ending with the journey home.</li><li><strong>Home town:</strong> familiar places shot like you are a visitor.</li><li><strong>Hotel room dump:</strong> the view, the details, the mess by day three.</li><li><strong>Beach dump:</strong> sand, skin, salt, one photo of a drink going warm.</li><li><strong>Mountains or hiking:</strong> wide shots between the small stuff: boots, a map, a snack.</li><li><strong>Road trip:</strong> windscreens, petrol stations, motorway food, the arrival.</li><li><strong>Neighbourhood walk:</strong> one route, everything you noticed.</li><li><strong>Airport and transit:</strong> waiting, windows, tray tables. Weirdly compelling.</li></ul><p>For a full trip, use the 10-slide formula in <a href=\"/DUMP/guides/travel-photo-dump.html\">how to make a travel photo dump</a>.</p>"
+    },
+    {
+      "id": "people-themes",
+      "short": "Friends & family",
+      "h2": "Photo dump themes for friends and family",
+      "lead": "One photo per person, the day in order, and the emotional payload on the last slide.",
+      "html": "<ul><li><strong>Friend group dump:</strong> one photo per person, plus the group shot.</li><li><strong>Birthday dump:</strong> the day, in order, ending with the mess.</li><li><strong>Anniversary or couple dump:</strong> a year in ten photos.</li><li><strong>Family gathering:</strong> hands, food, generations, one blurry action shot.</li><li><strong>Pet dump:</strong> the same animal, different moods. Hard to get wrong.</li><li><strong>Since we met:</strong> chronological, oldest first.</li><li><strong>Dinner party:</strong> prep, table, plates, the state of the kitchen afterwards.</li><li><strong>Wedding guest dump:</strong> the outfit, the venue, the dance floor, the shoes off.</li></ul>"
+    },
+    {
+      "id": "nothing-happened",
+      "short": "Quiet weeks",
+      "h2": "What to post when nothing interesting happened",
+      "lead": "Post the ordinary week. The appeal is recognition rather than novelty, and a quiet week sets a low bar for every slide.",
+      "html": "<ul><li><strong>Coffee dump:</strong> every cup this month, different places.</li><li><strong>What I ate:</strong> a week of meals, including the unimpressive ones.</li><li><strong>Desk and workspace:</strong> the state of it across several days.</li><li><strong>Laundry, dishes, admin:</strong> domestic life, shot properly. Funnier than it sounds.</li><li><strong>Books, screens, headphones:</strong> what you have been consuming.</li><li><strong>Sky dump:</strong> the same sky, different days.</li></ul>"
+    },
+    {
+      "id": "creative-themes",
+      "short": "Creative themes",
+      "h2": "Creative photo dump themes",
+      "lead": "Six themes where a constraint does the work.",
+      "html": "<ul><li><strong>One colour:</strong> every photo contains the same colour.</li><li><strong>Rule of one:</strong> one photo per day for nine days, no exceptions, no editing.</li><li><strong>Before and after:</strong> alternating slides. A room, a project, a haircut.</li><li><strong>Seamless panorama:</strong> first three slides as one continuous image, then normal photos. See the <a href=\"/DUMP/guides/seamless-instagram-carousel.html\">seamless carousel guide</a>.</li><li><strong>Grid then detail:</strong> slide one is a grid of nine thumbnails, the next slides are the full versions.</li><li><strong>Camera roll screenshots:</strong> screenshots, notes and texts alongside photos.</li></ul>"
+    },
+    {
+      "id": "milestones",
+      "short": "Milestones",
+      "h2": "Milestone photo dumps",
+      "lead": "Moving house, a new job's first week, graduation, a first race, finishing a project: the event supplies the structure.",
+      "html": "<p>A shape that works for almost any milestone: the before (boxes, an empty desk, the start line), two or three in-between shots that got messy, the moment itself, and one quiet after-shot to close.</p>"
+    },
+    {
       "id": "slide-order",
       "short": "Slide order",
       "h2": "How to order the slides in a photo dump",
@@ -273,6 +315,20 @@
         }
       ],
       "after": "<p>Want a slot-by-slot template? <a href=\"/DUMP/guides/how-to-pick-photos-for-a-photo-dump.html\">How to pick photos for a photo dump</a> has a 10-slot order and a checklist. The 20-slide limit comes from Instagram's 2024 carousel update (<a href=\"https://techcrunch.com/2024/08/08/instagram-is-embracing-the-photo-dump/\" rel=\"noopener\">TechCrunch</a>).</p>"
+    },
+    {
+      "id": "captions",
+      "short": "Captions",
+      "h2": "What should you caption a photo dump?",
+      "lead": "Keep it to one line. The caption's job is to frame the photos, not explain them.",
+      "html": "<div class=\"table-scroll\"><table><thead><tr><th>Formula</th><th>Example shape</th></tr></thead><tbody><tr><td>Month and place</td><td>\"july, mostly indoors\"</td></tr><tr><td>Single lowercase phrase</td><td>\"nothing happened and it was great\"</td></tr><tr><td>Numbered list matching slides</td><td>\"1. rain 2. the good bread 3. him 4. 6am\"</td></tr><tr><td>Overheard fragment</td><td>A line someone actually said that week</td></tr><tr><td>Understatement</td><td>\"a normal week\" on a chaotic dump</td></tr><tr><td>Just the date</td><td>Dry, confident, works better than it should</td></tr><tr><td>A question</td><td>Invites comments without begging for them</td></tr><tr><td>Emoji only</td><td>Two or three, matched to the mood</td></tr></tbody></table></div><p>Rather pick a line than write one? <a href=\"/DUMP/photo-dump-caption-ideas/\">100 photo dump captions</a>, each with a one-tap Copy button.</p>"
+    },
+    {
+      "id": "how-often",
+      "short": "How often",
+      "h2": "How often should you post a photo dump?",
+      "lead": "Pick a rhythm you can keep. Every one to three weeks suits most people, and a monthly recap is the easiest to sustain.",
+      "html": "<div class=\"table-scroll\"><table><thead><tr><th>Rhythm</th><th>Works well when</th></tr></thead><tbody><tr><td>Weekly</td><td>You take photos most days and like a fixed slot (a Sunday dump)</td></tr><tr><td>Every 2–3 weeks</td><td>Most people: enough time for variety to build up</td></tr><tr><td>Monthly</td><td>You want the lowest effort; the month itself is the theme</td></tr><tr><td>Per trip or event</td><td>Your camera roll comes in bursts rather than a steady trickle</td></tr></tbody></table></div><p>Want weekly to stick? The <a href=\"/DUMP/guides/sunday-dump-routine.html\">Sunday Dump routine</a> turns it into a ten-minute habit.</p>"
     }
   ],
   "faq": [
@@ -295,6 +351,10 @@
     {
       "q": "Does a photo dump need a theme?",
       "a": "A loose one helps. A time span (this week, October), a place or a mood is enough to make the photos feel like they belong together."
+    },
+    {
+      "q": "What should I caption a photo dump?",
+      "a": "Keep it to one line: a month and a place, a single lowercase phrase, a numbered list matching your slides, an overheard fragment or just the date. The photos carry the meaning, so long captions work against the format."
     }
   ],
   "related": [

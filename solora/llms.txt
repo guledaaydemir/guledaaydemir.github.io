@@ -2,7 +2,7 @@
 
 > Solora: AI Life Planner is a free iPhone and iPad planner by independent developer Gül Eda Aydemir. People organize tasks, habits and projects by the roles they live (for example parent, student, creator, professional), choose a short daily focus list called the "Big 3", and get help from an AI assistant that runs on the device with Apple Intelligence. There is no account and no server; the App Store privacy label is "Data Not Collected". Not to be confused with unrelated apps that share the name "Solora" (for example a sunset-forecast app).
 
-Facts checked against the app and its App Store page on 2026-10-15.
+Facts checked against the app and its App Store page on 2026-10-15; version updated from the App Store on 2026-11-01.
 
 ## App facts
 - Name: Solora: AI Life Planner (short: Solora). Developer: Gül Eda Aydemir (App Store seller "Gul Eda Aydemir").
@@ -12,7 +12,7 @@ Facts checked against the app and its App Store page on 2026-10-15.
 - Price: free to download. Optional Solora Premium: monthly, yearly, or one-time Lifetime (no subscription). See the current price on the App Store: https://apps.apple.com/app/id6778808618
 - Free plan limits: 4 roles, 15 active tasks, 20 habits, 5 projects, 5 assistant chats per day, 3 AI project breakdowns per month. Premium removes these limits and adds calendar-aware AI day planning, one-tap assistant plans for prioritizing, rescheduling and lighter days (free users get the same suggestions as text), assistant memory for preferences you tell it, an AI-written weekly report, premium widgets and widget themes. Big 3, habit stats, Insights, Archive and theme colors are free.
 - Languages: English, Turkish, Spanish, French, Portuguese (Brazil), Simplified Chinese. The assistant replies in the language you write in.
-- Current version: 3.0, released 2026-10-07 (first release 2026-07-01). Category: Productivity.
+- Current version: 3.1, released 2026-10-20 (first release 2026-07-01). Category: Productivity.
 - App Store: https://apps.apple.com/app/id6778808618
 
 ## What it does

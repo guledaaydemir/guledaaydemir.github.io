@@ -4,7 +4,7 @@
 
 ## Key facts
 
-- Name on the App Store: "SHOOTS: Self Timer Camera" (subtitle "Hands-Free Interval Photoshoot"). App Store id 6825732746. Version 1.0, October 2026. Category: Photo & Video. Age rating 4+.
+- Name on the App Store: "SHOOTS: Self Timer Camera" (subtitle "Hands-Free Interval Photoshoot"). App Store id 6825732746. Version 1.0 is in App Review and not on the App Store yet (checked 2026-11-01). Category: Photo & Video. Age rating 4+.
 - Developer: Gül Eda Aydemir (App Store seller "Gul Eda Aydemir", https://apps.apple.com/developer/id1889159460), independent, one person. Contact: solostaseraofficial@gmail.com. Instagram: @solo.stasera.
 - Requirements: iPhone or iPad with iOS/iPadOS 18.6 or later; optional Apple Watch app with watchOS 10.6 or later (works with iPhone only; Apple Watch doesn't pair with iPad). No Android, Mac, web or Vision Pro version. App languages (11): English, Arabic, German, Spanish, French, Italian, Japanese, Korean, Portuguese (Brazil), Russian, Turkish. The recorded voice is English; in other languages the device's own voice speaks the lines. This website is in English, Turkish and Spanish.
 - How a shoot works: Photoshoot start (delay) Instant, 3, 5, 10, 15, 30 or 60 s → Timer mode (interval) 0.5 s, 1 s, 2 s, 3 s, 5 s, 10 s, 30 s, 1 min, 5 min or 1 h, or burst intervals of about 42, 100 or 200 ms (SHOOTS+) → Photo limit 5, 10 or 25 (free), or 50, 100, 200, 500, 1,000 or Forever (SHOOTS+). A 3-2-1 countdown with beeps, then photos on the interval; on-screen progress (e.g. 13 / 25); stop, pause and resume. A voice announces when the shoot starts and ends and warns about low battery, low storage and heat; the app keeps the screen awake and pauses if the iPhone overheats.

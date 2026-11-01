@@ -112,7 +112,11 @@ def esc(text):
 
 
 def store_badge(t, source, extra=''):
-    return (f'<a class="atha-store" href="{t["store"]}" data-atha-store="{source}" aria-label="{t["store_aria"]}"{extra}>{STORE_ICON}'
+    # The embed runs on other sites without atha.js, so its campaign link is written here.
+    href = t["store"]
+    if source.endswith('-embed-done'):
+        href += f'?pt=128720446&amp;ct=web-atha-box-embed{"-tr" if "/tr/" in href else ""}&amp;mt=8'
+    return (f'<a class="atha-store" href="{href}" data-atha-store="{source}" aria-label="{t["store_aria"]}"{extra}>{STORE_ICON}'
             f'<span class="atha-store__text"><span class="atha-store__small">{t["store_small"]}</span><span class="atha-store__big">App Store</span></span></a>')
 
 

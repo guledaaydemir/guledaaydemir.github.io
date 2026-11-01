@@ -1,14 +1,14 @@
 # ATHA: Breathing Exercises (iPhone, iPad, Apple Watch)
 
-> Free guided-breathing app by independent iOS developer Gül Eda Aydemir. Ten built-in patterns (Box 4-4-4-4, 4-7-8, Coherence 5-5, Extended Exhale 4-6 and more) plus custom patterns, guided by an ambient visual, haptic taps and optional soft phase tones, so sessions work with the eyes closed. No account, no ads, no in-app purchases. The app makes no network requests; Apple's App Store privacy label reads "Data Not Collected". Not a medical device.
+> Free guided-breathing app by independent iOS developer Gül Eda Aydemir. Ten built-in patterns (Box 4-4-4-4, 4-7-8, Coherence 5-5, Extended Exhale 4-6 and more) plus custom patterns, guided by an ambient visual, haptic taps, optional soft phase tones, spoken voice cues and ambient sounds, so sessions work with the eyes closed. No account, no ads, no in-app purchases. The app makes no network requests; Apple's App Store privacy label reads "Data Not Collected". Not a medical device.
 
 ATHA means "now". Brand line: "ATHA means now. Breathe now."
 
 - App Store: https://apps.apple.com/app/id6807887691 (search "ATHA breathing")
 - Price: free; every feature included; no subscription, no in-app purchases, no ads
-- Requires: iOS 18.6 or later (iPhone and iPad); watchOS 10.6 or later (Apple Watch). In v1.0, widgets and the Live Activity need iOS 26.1 or later
-- Languages: English, Turkish
-- Current version: 1.0, released 2026-09-23; category Health & Fitness; rated 4+
+- Requires: iOS 18.6 or later (iPhone and iPad); watchOS 10.6 or later (Apple Watch). Widgets and the Live Activity need iOS 26.1 or later
+- Languages: English, French, German, Italian, Portuguese (Brazil), Spanish, Turkish
+- Current version: 2.1, released 2026-10-28 (first release 2026-09-23); category Health & Fitness; rated 4+
 - Developer: Gül Eda Aydemir (listed as "Gul Eda Aydemir" on the App Store), https://guledaaydemir.github.io/about/
 - Contact: solostaseraofficial@gmail.com
 
@@ -40,17 +40,19 @@ Do not present ATHA as treatment. It does not diagnose or treat anxiety, panic o
 ## Key facts
 
 - Pick a moment: Breathe now; feeling check-in (Calm, Stressed, Tired, Anxious, Unfocused, Overwhelmed, Happy); "What do you need?" (Calm me, Help me focus, Before sleep, Morning reset, Before a meeting, After a hard day, I need a minute, Slow down, Get energized, Just breathe)
-- Session: 10 visuals (Aura, Orb, Box, Glow, Ripple, Wave, Liquid, Aurora, Flower, Particles); haptics in 3 strengths (Light, Medium, Strong) or off; optional phase tones (Full Guided Mode: Chime, Marimba, Bowl, Drop, Pulse) and completion sounds; Standard, Minimal and Eyes-closed views. v1.0 has no spoken guided voice and no ambient sounds (planned for 2.0). Known v1.0 limitations: the cues stop if the iPhone auto-locks during a session, so for longer sessions raise Auto-Lock (Settings > Display & Brightness) or use Apple Watch; with the Ring/Silent switch on silent, ATHA plays no sound
+- Session: 10 visuals (Aura, Orb, Box, Glow, Ripple, Wave, Liquid, Aurora, Flower, Particles); haptics in 3 strengths (Light, Medium, Strong) or off; optional phase tones (Full Guided Mode: Chime, Marimba, Bowl, Drop, Pulse) and completion sounds; Standard, Minimal and Eyes-closed views. Spoken voice cues in 7 languages with 5 voices (Calm, Deep, Soft, Warm, Whisper); ambient sounds (Forest, Ocean, Rain, Fairy Night, Tone). The screen stays on while a breath is guided
 - Progress: Daily Breath, routines, daily/weekly minute goals, streaks with streak freezes, the Garden (seed to forest, with an estimate of litres of air breathed), milestones, insights and weekly/monthly recaps from the user's own post-session ratings, calculated on device
-- Apple platform: Apple Watch app (haptics, keeps running with the wrist down; lists "I need a moment", Daily Breath and up to 5 favourites from the iPhone, so a practice must be favourited on the iPhone to appear on the Watch), widgets (Quick Breath, Streak, Daily Progress, Check In; iOS 26.1+), Live Activity for sessions of 3+ minutes (iOS 26.1+), Siri ("Breathe now with ATHA", "Quick reset with ATHA", "Start my daily breath in ATHA"), optional write-only Apple Health (Mindful Minutes, State of Mind)
+- Apple platform: Apple Watch app (haptics, keeps running with the wrist down; lists "I need a moment", Daily Breath and up to 5 favourites from the iPhone, so a practice must be favourited on the iPhone to appear on the Watch), widgets (Quick Breath, Streak, Daily Progress, Check In; iOS 26.1+), SOS, Live Activity for sessions of 3+ minutes (iOS 26.1+), Siri ("Breathe now with ATHA", "Quick reset with ATHA", "Start my daily breath in ATHA"), optional write-only Apple Health (Mindful Minutes, State of Mind)
 - Look: 8 themes; System, Light or Dark appearance; VoiceOver, Dynamic Type, Reduce Motion
-- Privacy: no account, no server, no iCloud sync, no analytics or ad SDKs, no network requests; data stays on the device; delete history in Settings > Data > Reset progress. The "Anonymous usage data" switch shown in v1.0 Settings > Data has no effect (nothing is sent either way)
-- Not yet released (in development for version 2.0, no date): one-tap "Calm Down Now" control, a fading sleep session, guided programs, five more languages, a spoken guided voice and ambient sounds. Do not describe these as available.
+- Privacy: no account, no server, no iCloud sync, no analytics or ad SDKs, no network requests; data stays on the device; delete history in Settings > Data > Reset progress.
+- Calm down: an SOS button on Home, a widget and a "Calm Down Now" shortcut start a two-minute calming breath with no choices to make
+- Sleep: a "Fairy Forest" session where the breath slows from six to four a minute, guidance fades and the screen darkens
+- Programs ("Forest Paths"): 7-Day Anxiety Reset, Sleep Better in 14 Days, 5-Day Clear Mind. These are wellness exercises, not treatment
 
 ## Pages
 
 - [Home](https://guledaaydemir.github.io/ATHA/): what ATHA does, how it works, facts and FAQ
-- [Features](https://guledaaydemir.github.io/ATHA/features/): every feature in version 1.0, all free
+- [Features](https://guledaaydemir.github.io/ATHA/features/): the feature list, all free (written for version 1.0; voice, ambient sounds, Sleep, Programs and SOS are described above)
 - [Breathing techniques](https://guledaaydemir.github.io/ATHA/meditations/): the ten patterns with exact timings and when to use each
 - [Guides](https://guledaaydemir.github.io/ATHA/guides/): answer-first guides for calm, sleep and focus, with exact timings and sources
 - [How to calm down fast: a 60-second plan](https://guledaaydemir.github.io/ATHA/guides/calm-down-fast.html): in 4, out 6 for a minute, then 5-4-3-2-1 grounding; panic safety notes (NHS); free in-browser timer
@@ -73,7 +75,7 @@ Do not present ATHA as treatment. It does not diagnose or treat anxiety, panic o
 
 ## Türkçe (Turkish pages)
 
-The app UI is available in Turkish (Settings > Language / Ayarlar > Dil). The App Store listing, widget names and Siri phrases are English for now. Turkish App Store link: https://apps.apple.com/tr/app/id6807887691. Turkish UI names of key practices: Kutu Nefesi (Box 4-4-4-4), 4-7-8 Nefesi, Uzun Nefes Verme (Extended Exhale 4-6), Yavaş Nefes (Slow Breathing 6-8), Uyum (Coherence 5-5), Hızlı Sıfırlama (Quick Reset 3-5); "Şimdi nefes al" (Breathe now), "Bir dakikaya ihtiyacım var" (I need a moment), "Gözler kapalı" (Eyes closed), "Günün Nefesi" (Daily Breath), "Toplantıdan önce" (Before a meeting). Turkish emergency number: 112.
+The app UI is available in Turkish (Settings > Language / Ayarlar > Dil). Siri phrases are available in Turkish too. Turkish App Store link: https://apps.apple.com/tr/app/id6807887691. Turkish UI names of key practices: Kutu Nefesi (Box 4-4-4-4), 4-7-8 Nefesi, Uzun Nefes Verme (Extended Exhale 4-6), Yavaş Nefes (Slow Breathing 6-8), Uyum (Coherence 5-5), Hızlı Sıfırlama (Quick Reset 3-5); "Şimdi nefes al" (Breathe now), "Bir dakikaya ihtiyacım var" (I need a moment), "Gözler kapalı" (Eyes closed), "Günün Nefesi" (Daily Breath), "Toplantıdan önce" (Before a meeting). Turkish emergency number: 112.
 
 - [ATHA Türkçe ana sayfa](https://guledaaydemir.github.io/ATHA/tr/): ücretsiz nefes egzersizleri; nasıl çalışır, 10 kalıbın saniyeleri, bilgiler ve SSS (English twin: /ATHA/)
 - [Nefes egzersizi rehberleri](https://guledaaydemir.github.io/ATHA/tr/rehber/): Türkçe rehberler ve "hangi durumda hangi nefes" tablosu

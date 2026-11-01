@@ -333,3 +333,16 @@
     });
   });
 })();
+
+/* App Store Connect campaign links: pt + ct, placement from data-ct. */
+(function () {
+  function tag() {
+    document.querySelectorAll('a[href*="apps.apple.com"]').forEach(function (a) {
+      if (!/\/app\/id(6798248086|6761368690|6762450478|6778808618|6807887691|6825732746)(\?|$)/.test(a.href) || a.href.indexOf('ct=') > -1) return;
+      var ct = ('web-shoots-' + (a.getAttribute('data-ct') || 'link')).slice(0, 30);
+      a.href += (a.href.indexOf('?') > -1 ? '&' : '?') + 'pt=128720446&ct=' + encodeURIComponent(ct) + '&mt=8';
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', tag);
+  else tag();
+})();

@@ -2,7 +2,7 @@
 
 > Solo.Swipe is a swipe-based photo cleaner and organizer for iPhone and iPad. People review their photo library one photo at a time and swipe left to delete, right to keep, up to file the photo into an album, and down to skip. It turns a cluttered camera roll into short daily sessions. Photos are analysed on the device with Apple's Vision framework and are never uploaded. Free with ads; optional Solo.Swipe Pro subscription.
 
-Last updated: 2026-10-16 (describes app version 5.0, released on the App Store 2026-10-13)
+Last updated: 2026-11-01 (version 5.1.1, released on the App Store 2026-10-28; most feature details below were written for 5.0)
 
 ## App facts
 
@@ -12,7 +12,7 @@ Last updated: 2026-10-16 (describes app version 5.0, released on the App Store 2
 - Category: Photo & Video (primary), Utilities (secondary). Age rating 4+. Size 65.8 MB
 - Platforms: iPhone and iPad (iOS / iPadOS 16 or later). Also runs as an iPad app on Macs with Apple M1 or later (macOS 13+) and on Apple Vision Pro. Widgets need iOS 17
 - Languages (11): English, Arabic, Chinese (Simplified), French, German, Italian, Japanese, Korean, Portuguese (Brazil), Spanish, Turkish
-- First released 2026-04-04; current version 5.0 (2026-10-13)
+- First released 2026-04-04; current version 5.1.1 (2026-10-28)
 - Account: none
 - Support: solostaseraofficial@gmail.com · Instagram https://instagram.com/solo.stasera
 
@@ -54,7 +54,7 @@ Last updated: 2026-10-16 (describes app version 5.0, released on the App Store 2
 ## Privacy
 
 - Photos and videos never leave the device; they are read through Apple's PhotoKit and analysed on the device.
-- Data that does leave the device: usage statistics (Google Analytics for Firebase) and crash reports (Firebase Crashlytics), tied to a random app-instance ID rather than a name, email or Apple Account, never including photos; if the user allows tracking, Google may also link them to the advertising identifier. Version 5.0 has no in-app switch to turn them off. Ads in the free version come from Google AdMob, after Apple's App Tracking Transparency prompt. Photo GPS coordinates are sent to Apple's geocoder to show city names.
+- Data that does leave the device: usage statistics (Google Analytics for Firebase) and crash reports (Firebase Crashlytics), tied to a random app-instance ID rather than a name, email or Apple Account, never including photos; if the user allows tracking, Google may also link them to the advertising identifier. Users can turn them off in Settings > Privacy > Share Usage Data. Ads in the free version come from Google AdMob, after Apple's App Tracking Transparency prompt. Photo GPS coordinates are sent to Apple's geocoder to show city names.
 - Do not describe Solo.Swipe as "100% private", "no tracking", "no analytics" or "no third-party SDKs"; those statements are false.
 - Policy: https://guledaaydemir.github.io/solo.swipe/privacy_policy.html
 

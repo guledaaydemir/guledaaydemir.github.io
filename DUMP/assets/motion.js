@@ -322,16 +322,17 @@
 
   /* ---------- 14. Store links, UTM & outbound safety ---------- */
     function initLinks() {
-    /* Only DUMP's own App Store links (incl. /tr/app/…). Competitor listings,
+    /* Only App Store links to our own apps (incl. /tr/app/…). Competitor listings,
        the developer page and apps.apple.com/account/subscriptions are left alone.
-       Note: Apple only attributes ct when a provider token (pt=…) is present too;
-       add pt here once it exists in App Store Connect → App Analytics → Campaigns. */
-    $$('a[href*="id6798248086"]').forEach(function (a) {
+       Apple only attributes ct when the provider token (pt=…) is present too. */
+    var OWN_APPS = /\/id(6798248086|6761368690|6762450478|6778808618|6807887691|6825732746)(\?|$)/;
+    $$('a[href*="apps.apple.com"]').forEach(function (a) {
+      if (!OWN_APPS.test(a.href)) return;
       /* Each link declares its own placement via data-ct, so App Store Connect
          can show which section of the site converts. */
-      var ct = a.getAttribute('data-ct') || 'web-' + (document.body.dataset.page || 'home');
+      var ct = (a.getAttribute('data-ct') || 'web-' + (document.body.dataset.page || 'home')).slice(0, 30);
       if (a.href.indexOf('ct=') < 0) {
-        a.href += (a.href.indexOf('?') > -1 ? '&' : '?') + 'ct=' + encodeURIComponent(ct);
+        a.href += (a.href.indexOf('?') > -1 ? '&' : '?') + 'pt=128720446&ct=' + encodeURIComponent(ct) + '&mt=8';
       }
       a.setAttribute('rel', 'noopener');
       a.setAttribute('target', '_blank');
