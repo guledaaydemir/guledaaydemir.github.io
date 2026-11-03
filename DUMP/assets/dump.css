@@ -1033,3 +1033,10 @@ nav.toc ol{margin-bottom:0}
 .guide-body .signoff p:last-child{margin-bottom:0}
 .guide-body .signoff .signoff-name{font-weight:600;color:var(--text)}
 .guide-body .signoff .signoff-small{font-size:14px;color:var(--muted)}
+
+/* Photos inside a guide */
+.photo-fig{margin:26px auto;max-width:520px}
+.photo-fig img,.photo-fig video{display:block;width:100%;height:auto;border-radius:var(--r);border:1px solid var(--line-soft);background:var(--surface-2)}
+.photo-fig figcaption{margin-top:10px;color:var(--faint);font-size:13.5px;line-height:1.6;text-align:center}
+.photo-pair{max-width:none}
+.photo-pair>div{display:grid;grid-template-columns:1fr 1fr;gap:12px}

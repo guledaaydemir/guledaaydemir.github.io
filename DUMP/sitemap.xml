@@ -2,6 +2,7 @@
 <!-- DUMP sitemap. Update <lastmod> when a page materially changes. 404.html is intentionally excluded. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/</loc>
@@ -183,6 +184,32 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://guledaaydemir.github.io/DUMP/guides/ghost-photoshoot.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/assets/halloween/ghost-photoshoot-two-ghosts-sunset-1400.webp</image:loc><image:title>Two sheet ghosts in sunglasses against a pink sunset</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/assets/halloween/ghost-photoshoot-friends-card-game-1400.webp</image:loc><image:title>Four sheet ghosts playing cards on the grass</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/assets/halloween/ghost-photoshoot-two-swings-dusk-1400.webp</image:loc><image:title>Two sheet ghosts on garden swings at dusk</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/assets/halloween/ghost-photoshoot-slide-1400.webp</image:loc><image:title>A sheet ghost at the bottom of a playground slide</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/assets/halloween/ghost-photoshoot-swing-flash-1400.webp</image:loc><image:title>A sheet ghost on a swing at night, lit by flash</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/assets/halloween/ghost-photoshoot-swing-night-1400.webp</image:loc><image:title>A sheet ghost on a swing at dusk</image:title></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/assets/halloween/ghost-photoshoot-seesaw-1400.webp</image:loc><image:title>Two sheet ghosts on a wooden seesaw</image:title></image:image>
+    <video:video><video:thumbnail_loc>https://guledaaydemir.github.io/DUMP/assets/halloween/ghost-photoshoot-poster.jpg</video:thumbnail_loc><video:title>Ghost photoshoot</video:title><video:description>Sheet ghosts in sunglasses on a trampoline, swings and a slide. By @solo.stasera.</video:description><video:content_loc>https://guledaaydemir.github.io/DUMP/assets/halloween/ghost-photoshoot.mp4</video:content_loc><video:duration>15</video:duration></video:video>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/guides/diy-ghost-costume.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/guides/halloween-picture-ideas.html</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://guledaaydemir.github.io/DUMP/privacypolicy.html</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>yearly</changefreq>
@@ -302,6 +329,13 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/DUMP/tr/yilbasi-dump-fikirleri/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/DUMP/christmas-photo-dump-ideas/"/>
     <image:image><image:loc>https://guledaaydemir.github.io/DUMP/tr/yilbasi-dump-fikirleri/og.jpg</image:loc><image:title>30 yılbaşı dump fikri</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/DUMP/halloween-captions/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://guledaaydemir.github.io/DUMP/halloween-captions/og.jpg</image:loc><image:title>100 Halloween captions you can copy in one tap</image:title></image:image>
   </url>
   <url>
     <loc>https://guledaaydemir.github.io/DUMP/instagram-captions/</loc>

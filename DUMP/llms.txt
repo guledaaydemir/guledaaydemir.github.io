@@ -66,6 +66,12 @@ Facts checked on 1 November 2026 against the App Store listing and the app's cod
 
 - [Instagram Post Size 2026: Every Format in Pixels](https://guledaaydemir.github.io/DUMP/guides/instagram-post-size.html): 1080x1350 (4:5), 1080x1440 (3:4), 1080x1080, 1080x566, Stories and Reels 1080x1920 (9:16), safe zones, profile grid crop, resizing, file type
 
+- [Ghost Photoshoot: How to Do the Bedsheet Trend at Home](https://guledaaydemir.github.io/DUMP/guides/ghost-photoshoot.html): the bedsheet trend (TikTok, September 2020), what you need, where and when to shoot, 12 poses, phone settings, the film-style edit, how to post it
+
+- [DIY Ghost Costume: How to Make a Sheet Ghost in 15 Minutes](https://guledaaydemir.github.io/DUMP/guides/diy-ghost-costume.html): how to make one with no sewing, sheet sizes, four styles, adults and kids, the Charlie Brown version, safety checks based on long-standing CPSC guidance
+
+- [25 Halloween Picture Ideas You Can Take at Home](https://guledaaydemir.github.io/DUMP/guides/halloween-picture-ideas.html): 25 ideas for pictures to take yourself (ghosts, couples, friends, kids, pets, pumpkins, spooky shots), shooting at night, a slide order for a Halloween photo dump
+
 
 ## Turkish pages (Türkçe, native-written, paired with English via hreflang)
 - [DUMP Türkçe ana sayfa](https://guledaaydemir.github.io/DUMP/tr/): what DUMP does, how it works, free vs Premium (weekly or yearly plan; current price on the Turkish App Store), facts, FAQ. Turkish App Store link: https://apps.apple.com/tr/app/id6798248086
@@ -85,6 +91,7 @@ Facts checked on 1 November 2026 against the App Store listing and the app's cod
 - [30 Christmas photo dump ideas](https://guledaaydemir.github.io/DUMP/christmas-photo-dump-ideas/): 30 Christmas photo dump ideas: lights, baking, family traditions, winter walks and Christmas morning, plus how to order a festive dump. Turkish version: https://guledaaydemir.github.io/DUMP/tr/yilbasi-dump-fikirleri/
 - [30 birthday photo dump ideas](https://guledaaydemir.github.io/DUMP/birthday-photo-dump-ideas/): 30 birthday photo dump ideas: what to shoot before, during and after the party, ideas for a quiet birthday, and how to order the slides. Turkish version: https://guledaaydemir.github.io/DUMP/tr/dogum-gunu-dump-fikirleri/
 - [150 Instagram captions](https://guledaaydemir.github.io/DUMP/instagram-captions/): 150 original Instagram captions to copy in one tap: good, cool, short, funny, aesthetic, selfie, friends, travel, food and everyday posts.
+- [100 Halloween captions](https://guledaaydemir.github.io/DUMP/halloween-captions/): 100 original Halloween captions to copy in one tap: ghost, funny, short, spooky, couples, friends and costume lines for your Instagram post or dump.
 <!-- ideas:end -->
 
 ## Legal

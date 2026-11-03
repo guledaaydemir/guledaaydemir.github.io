@@ -686,6 +686,99 @@
     ]
    },
    "alt": "Café and harbour photos next to DUMP's Caption Generator"
+  },
+  {
+   "slug": "ghost-photoshoot",
+   "bg": "ghost-photoshoot-two-ghosts-sunset",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "ghost-photoshoot-swing-night",
+     "ghost-photoshoot-two-ghosts-sunset",
+     "ghost-photoshoot-slide"
+    ]
+   },
+   "screen": {
+    "type": "preview",
+    "title": "Ghost Dump",
+    "count": 10,
+    "photo": "ghost-photoshoot-swing-flash"
+   },
+   "alt": "Sheet ghost photos on a swing, a slide and in a sunset, next to DUMP's Preview screen"
+  },
+  {
+   "slug": "diy-ghost-costume",
+   "bg": "ghost-photoshoot-seesaw",
+   "art": {
+    "type": "grid",
+    "photos": [
+     "ghost-photoshoot-two-ghosts-sunset",
+     "ghost-photoshoot-slide",
+     "ghost-photoshoot-seesaw",
+     "ghost-photoshoot-swing-flash"
+    ]
+   },
+   "screen": {
+    "type": "grid",
+    "photos": [
+     "ghost-photoshoot-two-swings-dusk",
+     "ghost-photoshoot-friends-card-game",
+     "ghost-photoshoot-swing-night",
+     "ghost-photoshoot-seesaw"
+    ]
+   },
+   "alt": "Two sheet ghost costumes with sunglasses next to DUMP's grid canvas"
+  },
+  {
+   "slug": "halloween-picture-ideas",
+   "bg": "ghost-photoshoot-swing-night",
+   "art": {
+    "type": "seamless",
+    "photos": [
+     "ghost-photoshoot-seesaw",
+     "ghost-photoshoot-swing-flash",
+     "ghost-photoshoot-slide",
+     "ghost-photoshoot-swing-night"
+    ]
+   },
+   "screen": {
+    "type": "editor",
+    "title": "Halloween Dump",
+    "count": 10,
+    "photo": "ghost-photoshoot-seesaw",
+    "strip": [
+     "ghost-photoshoot-seesaw",
+     "ghost-photoshoot-swing-flash",
+     "ghost-photoshoot-slide",
+     "ghost-photoshoot-swing-night",
+     "ghost-photoshoot-two-swings-dusk",
+     "ghost-photoshoot-friends-card-game"
+    ]
+   },
+   "alt": "A sheet ghost on a seesaw and a swing next to DUMP's Swipe Carousel editor"
+  },
+  {
+   "slug": "halloween-captions",
+   "bg": "ghost-photoshoot-two-swings-dusk",
+   "art": {
+    "type": "fan",
+    "photos": [
+     "ghost-photoshoot-seesaw",
+     "ghost-photoshoot-friends-card-game",
+     "ghost-photoshoot-two-ghosts-sunset"
+    ]
+   },
+   "screen": {
+    "type": "caption",
+    "style": "Funny Dump",
+    "caption": "posting this before I overthink it",
+    "photos": [
+     "ghost-photoshoot-friends-card-game",
+     "ghost-photoshoot-seesaw",
+     "ghost-photoshoot-two-ghosts-sunset"
+    ]
+   },
+   "alt": "Sheet ghost photos next to DUMP's Caption Generator"
   }
  ]
 }
