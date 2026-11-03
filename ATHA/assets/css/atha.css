@@ -2081,3 +2081,19 @@ html.atha-boxtimer-focus .atha-stickycta, html.atha-boxtimer-focus .atha-header 
   .atha-boxtimer__phase.is-new, .atha-boxtimer__done { animation: none; }
   .atha-seg__thumb, .atha-switch::before { transition: none; }
 }
+
+/* ==========================================================================
+   28. Figures and author sign-off (respiratory system guides)
+   ========================================================================== */
+.atha-figure { margin: var(--atha-s-5) 0; }
+.atha-figure svg { display: block; width: 100%; height: auto; border-radius: var(--atha-r-lg); border: 1px solid var(--atha-line); }
+.atha-figure figcaption { font-size: var(--atha-fs-small); color: var(--atha-muted); margin-top: var(--atha-s-2); }
+.atha-signoff {
+  display: flex; gap: 16px; align-items: flex-start;
+  border: 1px solid var(--atha-line); border-radius: var(--atha-r-lg);
+  background: var(--atha-surface); padding: 20px 22px; margin: var(--atha-s-5) 0 var(--atha-s-6);
+}
+.atha-signoff img { flex: none; border-radius: 12px; }
+.atha-article__body .atha-signoff p { margin: 0 0 6px; }
+.atha-article__body .atha-signoff p:last-child { margin-bottom: 0; }
+.atha-article__body .atha-signoff__name { font-weight: 600; color: #fff; }

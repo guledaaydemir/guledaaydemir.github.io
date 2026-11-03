@@ -23,7 +23,7 @@ const STATIC_PAGES = [
   ['',                   '2026-11-01'],
   ['features/',          '2026-11-01'],
   ['meditations/',       '2026-11-01'],
-  ['guides/',            '2026-10-28'],
+  ['guides/',            '2026-11-03'],
   ['box-breathing-timer/', '2026-10-29'],
   ['support.html',       '2026-11-01'],
   ['about.html',         '2026-11-01'],

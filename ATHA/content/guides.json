@@ -232,6 +232,187 @@
       "featured": false
     },
     {
+      "slug": "respiratory-system-how-it-works",
+      "title": "The respiratory system: parts, functions and how it works",
+      "summary": "Every part from nose to alveoli, what it does, how a breath travels, and the one part of the system you can steer on purpose.",
+      "category": "basics",
+      "tags": [
+        "respiratory system",
+        "how the respiratory system works",
+        "respiratory system organs",
+        "lungs",
+        "diaphragm"
+      ],
+      "intent": "respiratory system",
+      "readMinutes": 5,
+      "updated": "2026-11-03",
+      "featured": false,
+      "order": 21,
+      "status": "published"
+    },
+    {
+      "slug": "human-respiratory-system-diagram",
+      "title": "Human respiratory system diagram, labelled and explained",
+      "summary": "A free labelled diagram from nose to alveoli, what each label means, and an easy way to draw and remember it.",
+      "category": "basics",
+      "tags": [
+        "human respiratory system diagram",
+        "labeled diagram of respiratory system",
+        "lungs diagram"
+      ],
+      "intent": "human respiratory system diagram",
+      "readMinutes": 4,
+      "updated": "2026-11-03",
+      "featured": false,
+      "order": 22,
+      "status": "published"
+    },
+    {
+      "slug": "respiratory-system-for-kids",
+      "title": "Respiratory system for kids: how lungs work, with fun facts",
+      "summary": "How lungs work in kid-sized language, fun facts with real numbers, an easy experiment, and a calming balloon breath.",
+      "category": "basics",
+      "tags": [
+        "respiratory system for kids",
+        "respiratory system fun facts",
+        "how lungs work for kids"
+      ],
+      "intent": "respiratory system for kids",
+      "readMinutes": 4,
+      "updated": "2026-11-03",
+      "featured": false,
+      "order": 23,
+      "status": "published"
+    },
+    {
+      "slug": "circulatory-and-respiratory-system",
+      "title": "How the circulatory and respiratory systems work together",
+      "summary": "The heart moves the blood, the lungs refresh it. The loop in one diagram, and why your pulse shifts with every breath.",
+      "category": "basics",
+      "tags": [
+        "circulatory system organs",
+        "circulatory and respiratory system",
+        "pulmonary circulation",
+        "circulatory system for kids"
+      ],
+      "intent": "circulatory and respiratory system",
+      "readMinutes": 4,
+      "updated": "2026-11-03",
+      "featured": false,
+      "order": 24,
+      "status": "published"
+    },
+    {
+      "slug": "respiratory-system-diseases",
+      "title": "Respiratory system diseases: types, symptoms and when to get help",
+      "summary": "Asthma, COPD, infections and more in plain English: the main types, which symptoms to check, and what breathing exercises can and can’t do.",
+      "category": "basics",
+      "tags": [
+        "respiratory system diseases",
+        "respiratory diseases list",
+        "asthma",
+        "COPD",
+        "shortness of breath"
+      ],
+      "intent": "respiratory system diseases",
+      "readMinutes": 4,
+      "updated": "2026-11-03",
+      "featured": false,
+      "order": 25,
+      "status": "published"
+    },
+    {
+      "slug": "respiratory-care-at-home",
+      "title": "Respiratory care: what it means, and daily lung care at home",
+      "summary": "What respiratory therapists do, the daily habits that protect your lungs, and what breathing exercises really do for lung capacity.",
+      "category": "basics",
+      "tags": [
+        "respiratory care",
+        "respiratory therapist",
+        "lung health",
+        "lung capacity",
+        "how to keep lungs healthy"
+      ],
+      "intent": "respiratory care",
+      "readMinutes": 4,
+      "updated": "2026-11-03",
+      "featured": false,
+      "order": 26,
+      "status": "published"
+    },
+    {
+      "slug": "diaphragmatic-breathing",
+      "title": "Diaphragmatic breathing: how to do belly breathing properly",
+      "summary": "The hand-on-belly test, lying and sitting versions, how long to practise, common mistakes and a free timer.",
+      "category": "basics",
+      "tags": [
+        "diaphragmatic breathing",
+        "belly breathing",
+        "abdominal breathing",
+        "how to breathe from your diaphragm"
+      ],
+      "intent": "diaphragmatic breathing",
+      "readMinutes": 4,
+      "updated": "2026-11-03",
+      "featured": false,
+      "order": 27,
+      "status": "published"
+    },
+    {
+      "slug": "pursed-lip-breathing",
+      "title": "Pursed-lip breathing: how to do it and when it helps",
+      "summary": "In for 2, out for 4 or more, like cooling hot soup. The steps, who it helps, when to use it, and a free timer.",
+      "category": "basics",
+      "tags": [
+        "pursed lip breathing",
+        "how to do pursed lip breathing",
+        "shortness of breath exercise",
+        "COPD breathing"
+      ],
+      "intent": "pursed lip breathing",
+      "readMinutes": 4,
+      "updated": "2026-11-03",
+      "featured": false,
+      "order": 28,
+      "status": "published"
+    },
+    {
+      "slug": "normal-breaths-per-minute",
+      "title": "How many breaths per minute is normal? Respiratory rate explained",
+      "summary": "12 to 18 for a resting adult. How to count yours, children’s numbers, warning signs, and the breaths-per-minute of every ATHA pattern.",
+      "category": "basics",
+      "tags": [
+        "normal respiratory rate",
+        "breaths per minute",
+        "respiratory rate",
+        "how many breaths per minute"
+      ],
+      "intent": "normal breaths per minute",
+      "readMinutes": 4,
+      "updated": "2026-11-03",
+      "featured": false,
+      "order": 29,
+      "status": "published"
+    },
+    {
+      "slug": "nose-vs-mouth-breathing",
+      "title": "Nose vs mouth breathing: which is better, and why it matters",
+      "summary": "What your nose does that your mouth can’t, the downsides of mouth breathing, and what to do if your nose is blocked.",
+      "category": "basics",
+      "tags": [
+        "nose breathing",
+        "mouth breathing",
+        "nasal breathing benefits",
+        "mouth breathing at night"
+      ],
+      "intent": "nose breathing vs mouth breathing",
+      "readMinutes": 4,
+      "updated": "2026-11-03",
+      "featured": false,
+      "order": 30,
+      "status": "published"
+    },
+    {
       "slug": "improve-my-life-daily-habits",
       "title": "I want to improve my life — where do I actually start?",
       "summary": "Why a 60-second daily practice outperforms an ambitious routine you abandon in a week.",

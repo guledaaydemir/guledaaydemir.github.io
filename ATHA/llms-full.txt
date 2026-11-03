@@ -181,6 +181,34 @@ A: Make the out-breath longer than the in-breath, e.g. 4 in and 6 out, for one
    ATHA is not treatment.
    Guide: https://guledaaydemir.github.io/ATHA/guides/calm-down-fast.html
 
+Q: What is the respiratory system and how does it work?
+A: The organs and muscles that move air in and out so oxygen enters the blood and
+   carbon dioxide leaves: nose and mouth, pharynx, larynx, trachea, bronchi,
+   bronchioles, alveoli in the lungs, driven by the diaphragm. Breathing is
+   automatic but can be changed on purpose, which is what breathing exercises do.
+   Guide: https://guledaaydemir.github.io/ATHA/guides/respiratory-system-how-it-works.html
+   Labelled diagram: https://guledaaydemir.github.io/ATHA/guides/human-respiratory-system-diagram.html
+
+Q: How do I do diaphragmatic (belly) breathing?
+A: On your back with knees bent, one hand on the upper chest and one below the
+   ribs. Breathe in slowly through the nose so only the lower hand rises, then out
+   through pursed lips. Start with 5-10 minutes, 3-4 times a day (Cleveland Clinic).
+   ATHA keeps the rhythm but cannot check the technique.
+   Guide: https://guledaaydemir.github.io/ATHA/guides/diaphragmatic-breathing.html
+
+Q: How do I do pursed-lip breathing?
+A: In through the nose for about 2 seconds, out through lips shaped as if to
+   whistle for 4 or more, without forcing. It can ease shortness of breath in
+   asthma, COPD and pulmonary fibrosis but does not treat lung disease. In ATHA,
+   set up a custom pattern of 2 in, 4 out.
+   Guide: https://guledaaydemir.github.io/ATHA/guides/pursed-lip-breathing.html
+
+Q: How many breaths per minute is normal?
+A: 12 to 18 for a resting adult; under 12 or over 25 at rest may indicate a health
+   condition (Cleveland Clinic). Children breathe faster: a median of 44 at birth,
+   26 at age 2 (Fleming, Lancet 2011). ATHA does not measure breathing.
+   Guide: https://guledaaydemir.github.io/ATHA/guides/normal-breaths-per-minute.html
+
 Q: I woke up at 3am and can't get back to sleep. What should I do?
 A: Don't check the time or open a feed. Stay in bed in the dark, eyes closed,
    and breathe about 6 seconds in, 8 out for five to ten minutes. If still wide
