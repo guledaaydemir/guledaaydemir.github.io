@@ -28,7 +28,7 @@ Facts checked on 1 November 2026 against the App Store listing and the app's cod
 - [DUMP for creators](https://guledaaydemir.github.io/DUMP/for/creators.html): the weekly routine (Sunday draft, templates, swipe video), what DUMP doesn't do, pricing
 - [FAQ](https://guledaaydemir.github.io/DUMP/faq.html): picking, quality, privacy, limits, pricing, troubleshooting
 - [Support](https://guledaaydemir.github.io/DUMP/support.html): fixes, bug report template, contact
-- [Guides](https://guledaaydemir.github.io/DUMP/guides/): dated photo dump how-tos, each with sources
+- [Guides](https://guledaaydemir.github.io/DUMP/guides/): dated photo dump, carousel and collage how-tos, each with sources
 
 ## Guides (answer-first, updated 15 Oct 2026)
 - [How to pick photos for a photo dump](https://guledaaydemir.github.io/DUMP/guides/how-to-pick-photos-for-a-photo-dump.html): six rules (cover, time order, people/places/details mix, one shot per burst, one video in four, quiet ending), 10-slot order, 8-12 slides, checklist
@@ -48,6 +48,24 @@ Facts checked on 1 November 2026 against the App Store listing and the app's cod
 
 - [How to make a collage on iPhone](https://guledaaydemir.github.io/DUMP/guides/how-to-make-a-collage-on-iphone.html): Shortcuts, Freeform, Keynote/Pages and collage apps compared; export at full resolution, never screenshot
 
+- [Dump Meaning: What It Means in Slang, Tech and Instagram](https://guledaaydemir.github.io/DUMP/guides/dump-meaning.html): the verb and noun, dumped, down in the dumps, trauma dump, brain dump, data dump, crash dump, photo dump and dump cake, with a reference table
+
+- [Photo Dump Maker: How to Choose One (and Make a Dump Fast)](https://guledaaydemir.github.io/DUMP/guides/photo-dump-maker.html): the three types (auto-picker, design studio, web tool), five checks before choosing, a 5-minute method, and where DUMP does and doesn't fit
+
+- [Free Collage Maker: 7 Options for iPhone and Online](https://guledaaydemir.github.io/DUMP/guides/free-collage-maker.html): Google Photos, Apple Freeform, DUMP, PicCollage, PhotoGrid, Canva and Adobe Express compared, the catches of free plans, how to export sharp; written by the developer of DUMP and disclosed as such
+
+- [What Is a Photo Collage? Meaning, Types and Examples](https://guledaaydemir.github.io/DUMP/guides/what-is-a-photo-collage.html): the meaning of collage, its 1912 origin, six types, what makes one good, and collage vs grid vs carousel vs dump
+
+- [30 Photo Collage Ideas: Family, Friends, Couples and Travel](https://guledaaydemir.github.io/DUMP/guides/photo-collage-ideas.html): 30 ideas with a layout for each: family, friends, couples, travel, birthdays and milestones, everyday and aesthetic, wall prints
+
+- [How to Make a Collage of Pictures on Any Device (6 Steps)](https://guledaaydemir.github.io/DUMP/guides/how-to-make-a-collage-of-pictures.html): six steps that work in any tool, then specifics for iPhone, Android, computer and paper, plus common mistakes
+
+- [Photo Grid Maker Guide: Layouts, Sizes and How to Make One](https://guledaaydemir.github.io/DUMP/guides/photo-grid-maker.html): which layout for how many photos, exact cell sizes in pixels (2x2 on 1080x1350 = 540x675; 3x3 = 360x450), spacing, and photo grid vs Instagram grid splitter
+
+- [What Is a Carousel Post? Instagram Carousels Explained](https://guledaaydemir.github.io/DUMP/guides/what-is-a-carousel-post.html): what a carousel is (2-20 slides, one caption), steps to create one on Instagram, five types, how to make people swipe, carousel maker vs splitter, other platforms
+
+- [Instagram Post Size 2026: Every Format in Pixels](https://guledaaydemir.github.io/DUMP/guides/instagram-post-size.html): 1080x1350 (4:5), 1080x1440 (3:4), 1080x1080, 1080x566, Stories and Reels 1080x1920 (9:16), safe zones, profile grid crop, resizing, file type
+
 
 ## Turkish pages (Türkçe, native-written, paired with English via hreflang)
 - [DUMP Türkçe ana sayfa](https://guledaaydemir.github.io/DUMP/tr/): what DUMP does, how it works, free vs Premium (weekly or yearly plan; current price on the Turkish App Store), facts, FAQ. Turkish App Store link: https://apps.apple.com/tr/app/id6798248086
@@ -66,6 +84,7 @@ Facts checked on 1 November 2026 against the App Store listing and the app's cod
 - [80 New Year photo dump captions](https://guledaaydemir.github.io/DUMP/new-year-photo-dump-captions/): 80 New Year photo dump captions to copy: New Year's Eve, goodbye 2026, hello 2027, resolutions, funny, couples and friends. Original and free. Turkish version: https://guledaaydemir.github.io/DUMP/tr/yilbasi-dump-aciklamalari/
 - [30 Christmas photo dump ideas](https://guledaaydemir.github.io/DUMP/christmas-photo-dump-ideas/): 30 Christmas photo dump ideas: lights, baking, family traditions, winter walks and Christmas morning, plus how to order a festive dump. Turkish version: https://guledaaydemir.github.io/DUMP/tr/yilbasi-dump-fikirleri/
 - [30 birthday photo dump ideas](https://guledaaydemir.github.io/DUMP/birthday-photo-dump-ideas/): 30 birthday photo dump ideas: what to shoot before, during and after the party, ideas for a quiet birthday, and how to order the slides. Turkish version: https://guledaaydemir.github.io/DUMP/tr/dogum-gunu-dump-fikirleri/
+- [150 Instagram captions](https://guledaaydemir.github.io/DUMP/instagram-captions/): 150 original Instagram captions to copy in one tap: good, cool, short, funny, aesthetic, selfie, friends, travel, food and everyday posts.
 <!-- ideas:end -->
 
 ## Legal

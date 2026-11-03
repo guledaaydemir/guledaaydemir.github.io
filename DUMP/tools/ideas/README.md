@@ -58,6 +58,7 @@ automatically. To feature it on `/DUMP/guides/` as well, add a card there by han
 | `cta_text` | Optional. Replaces the sentence under the CTA heading on this page. |
 | `mid_cta_after` | Section `id` after which the middle CTA box goes. Defaults to the middle section. |
 | `sections` | The H2 sections, in order (see below). |
+| `signoff` | Optional. A closing note from the developer, shown after the final CTA with the "— Gül Eda, @solo.stasera" line. HTML allowed. |
 | `faq` | 4–5 `{ "q": …, "a": … }` pairs. Rendered at the bottom and as FAQPage structured data. |
 | `related` | Optional extra cards for "More ideas": `{ "href", "tag", "title", "text" }`. |
 | `cover` | Optional blog cover: `{ "slug", "alt" }`, a cover rendered by `../covers/build.py`. Shown under the byline and on index cards. |

@@ -522,6 +522,21 @@ def cover_html(p):
             f'/DUMP/assets/covers/{s}-1200.webp 1200w" sizes="(max-width:860px) calc(100vw - 52px), 768px" width="1200" height="630" '
             f'fetchpriority="high" decoding="async" alt="{e(cv["alt"])}"></figure>')
 
+def signoff_html(p):
+    """Optional closing note from the developer ("signoff" in the content file)."""
+    if not p.get("signoff"):
+        return ""
+    return f"""
+<div class="signoff">
+  <img src="/DUMP/appicon-128.webp" width="48" height="48" alt="" loading="lazy" decoding="async">
+  <div>
+    <p>{p["signoff"]}</p>
+    <p class="signoff-name">&#8212; <a href="/about/">Gül Eda</a>, <a href="https://instagram.com/solo.stasera" rel="noopener">@solo.stasera</a></p>
+    <p class="signoff-small">Indie iOS developer, and the maker of DUMP. Say hello on Instagram or at <a href="mailto:solostaseraofficial@gmail.com?subject=DUMP">solostaseraofficial@gmail.com</a>.</p>
+  </div>
+</div>
+"""
+
 def render_page(p, siblings, alt_path, cfg):
     lang, t = p["lang"], T[p["lang"]]
     link = store_link(cfg, p["campaign"], p.get("product_page"))
@@ -595,7 +610,7 @@ def render_page(p, siblings, alt_path, cfg):
 {faq_html(lang, p['faq'])}
 
 {cta_end(lang, link, cta_text)}
-
+{signoff_html(p)}
 <h2 id="more">{e(t['more_h'])}</h2>
 <div class="related">
 {chr(10).join(related)}

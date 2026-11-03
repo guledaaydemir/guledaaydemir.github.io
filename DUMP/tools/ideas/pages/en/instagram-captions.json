@@ -1,0 +1,323 @@
+{
+ "key": "instagram-captions",
+ "order": 8,
+ "slug": "instagram-captions",
+ "keyword": "instagram captions",
+ "title": "150 Instagram Captions: Good, Cool and Short (Copy & Paste)",
+ "description": "150 original Instagram captions to copy in one tap: good, cool, short, funny, aesthetic, selfie, friends, travel, food and everyday posts.",
+ "h1": "150 Instagram captions <span class=\"g\">you can copy in one tap</span>",
+ "crumb": "Instagram captions",
+ "eyebrow": "Ideas · Captions",
+ "campaign": "web-ig-captions",
+ "product_page": "photo_dump",
+ "published": "2026-11-03",
+ "updated": "2026-11-03",
+ "card": {
+  "tag": "Captions",
+  "title": "150 Instagram captions",
+  "text": "Good, cool, short, funny, aesthetic, selfie, friends and travel lines, each with a Copy button."
+ },
+ "og": {
+  "kicker": "Instagram captions",
+  "title": "150 Instagram",
+  "accent": "captions",
+  "sub": "Copy in one tap. Original and free to use.",
+  "art": "captions",
+  "alt": "150 Instagram captions, with a Copy button on each",
+  "samples": [
+   "same me, better lighting",
+   "this is the good part",
+   "evidence of a nice day"
+  ],
+  "photos": [
+   "og-photos/beach-heart.jpg",
+   "og-photos/nice-sunset.jpg",
+   "og-photos/nice-harbour.jpg"
+  ]
+ },
+ "cover": {
+  "slug": "instagram-captions",
+  "alt": "Café and harbour photos next to DUMP's Caption Generator"
+ },
+ "intro": [
+  "A good Instagram caption does one thing: it gives your photo a mood or a reason. Here are 150 original captions, grouped by the kind of post. Tap <b>Copy</b> next to any line and paste it into Instagram.",
+  "All of them are written for this page and free to use. Most read fine in lowercase, and they get better if you change a word so it sounds like you. At the end there is a short guide to writing your own."
+ ],
+ "mid_cta_after": "aesthetic",
+ "sections": [
+  {
+   "id": "good",
+   "short": "Good",
+   "h2": "Good captions for Instagram",
+   "lead": "These work on nearly any photo, because they talk about the moment and not the picture.",
+   "captions": [
+    "this is the good part",
+    "evidence of a nice day",
+    "keeping this one",
+    "a day worth the storage space",
+    "exactly where i meant to be",
+    "the kind of day you don't plan",
+    "remember this one",
+    "not much happened. it was perfect",
+    "today, in case i forget",
+    "the part of the week i'd repeat",
+    "nothing to add",
+    "i'd do this again tomorrow",
+    "more of this, please",
+    "a good one for the archive",
+    "this felt longer than it was, in the best way"
+   ]
+  },
+  {
+   "id": "cool",
+   "short": "Cool",
+   "h2": "Cool captions for Instagram",
+   "lead": "Say less. Cool captions sound like you barely thought about them, even when you did.",
+   "captions": [
+    "anyway",
+    "as planned",
+    "no notes",
+    "off the record",
+    "unbothered, mostly",
+    "still here",
+    "wasn't asking",
+    "the sequel is better",
+    "low effort, high return",
+    "busy being elsewhere",
+    "working as intended",
+    "you had to be there",
+    "new season, same me",
+    "not lost, just early",
+    "file under: obviously"
+   ]
+  },
+  {
+   "id": "short",
+   "short": "Short",
+   "h2": "Short Instagram captions",
+   "lead": "One to three words. Good for when the photo is the whole point.",
+   "captions": [
+    "lately",
+    "soft launch",
+    "currently",
+    "this.",
+    "main quest",
+    "day off",
+    "same again",
+    "good light",
+    "worth it",
+    "side quest",
+    "still life",
+    "home, sort of",
+    "right now",
+    "and then",
+    "you up?"
+   ]
+  },
+  {
+   "id": "funny",
+   "short": "Funny",
+   "h2": "Funny Instagram captions",
+   "lead": "Self-aware beats clever. The easiest joke is admitting why you are posting this at all.",
+   "captions": [
+    "took 47 of these. you're welcome",
+    "posting this before i change my mind",
+    "my therapist will hear about this",
+    "the group chat approved this one",
+    "i peaked and i have photos",
+    "my screen time would like a word",
+    "my phone storage made me do it",
+    "this took three outfits and one small crisis",
+    "i look like i have my life together. i do not",
+    "technically this counts as exercise",
+    "brb, becoming a morning person. never mind",
+    "pretending this was spontaneous",
+    "i was told there would be snacks",
+    "here to lower your expectations",
+    "someone had to post it"
+   ]
+  },
+  {
+   "id": "aesthetic",
+   "short": "Aesthetic",
+   "h2": "Aesthetic Instagram captions",
+   "lead": "Quiet and lowercase. Name a light, a colour or a feeling and stop there.",
+   "captions": [
+    "golden, briefly",
+    "the light was doing something",
+    "soft focus, loud heart",
+    "linen and long afternoons",
+    "a colour i can't name yet",
+    "slow mornings only",
+    "the blue part of the evening",
+    "sun on everything",
+    "fragments of a tuesday",
+    "shadows doing their best work",
+    "somewhere warm in my head",
+    "still, for a second",
+    "a quiet kind of loud",
+    "dust and daylight",
+    "the air smelled like october"
+   ]
+  },
+  {
+   "id": "selfie",
+   "short": "Selfies",
+   "h2": "Instagram captions for selfies",
+   "lead": "Own it or joke about it. Both work better than pretending someone else took the photo.",
+   "captions": [
+    "same me, better lighting",
+    "the front camera was kind today",
+    "good hair day, documented",
+    "this is my good side. they all are",
+    "selfie, because no one else offered",
+    "outfit was too good to waste",
+    "took one and it was the one (it was not)",
+    "face card still valid",
+    "dressed up to go nowhere",
+    "tired, but make it flattering",
+    "evidence that i own a mirror",
+    "this is what rested looks like, apparently",
+    "the lighting did most of the work",
+    "felt cute, kept it",
+    "new haircut, same problems"
+   ]
+  },
+  {
+   "id": "friends",
+   "short": "Friends",
+   "h2": "Instagram captions for friends",
+   "lead": "Tag them, then let the caption sound like the group chat.",
+   "captions": [
+    "people i'd share my last fry with",
+    "my favourite bad influences",
+    "the whole committee",
+    "we were told to keep it down",
+    "the reason i'm always late home",
+    "still the same jokes, still funny",
+    "no one here is the sensible one",
+    "they know too much, so i keep them close",
+    "group photo, finally",
+    "friendship is mostly voice notes and this",
+    "same table, ten years later",
+    "my emergency contacts",
+    "everyone's blinking but me",
+    "a very serious meeting",
+    "you can't sit with us (you can, there's room)"
+   ]
+  },
+  {
+   "id": "travel",
+   "short": "Travel",
+   "h2": "Instagram captions for travel",
+   "lead": "Name the feeling, not the itinerary. The photo already shows where you are.",
+   "captions": [
+    "out of office, in the sea",
+    "wrong turn, right place",
+    "gone, back never",
+    "time zones are a state of mind",
+    "my suitcase is heavier and so am i",
+    "somewhere with a better view of my problems",
+    "i came for the weather and stayed for the bread",
+    "no signal, no complaints",
+    "a little further than planned",
+    "fluent in pointing at menus",
+    "miles from my inbox",
+    "the map was optional",
+    "every window seat, always",
+    "homesick for places i just left",
+    "one more day, i keep saying"
+   ]
+  },
+  {
+   "id": "food",
+   "short": "Food & coffee",
+   "h2": "Instagram captions for food and coffee",
+   "lead": "Everyone posts their lunch. Make the line as good as the plate.",
+   "captions": [
+    "the salad was for the photo",
+    "coffee first, personality later",
+    "this was gone in four minutes",
+    "i ordered for the table. i was the table",
+    "butter, mostly",
+    "second breakfast, no apologies",
+    "a very balanced meal, if you hold it level",
+    "caffeine and good intentions",
+    "ask me about the croissant",
+    "made it at home. it looked better in my head",
+    "worth the queue",
+    "dessert came first today",
+    "my love language is a shared plate",
+    "tiny cup, big plans",
+    "life is short, order the fries"
+   ]
+  },
+  {
+   "id": "everyday",
+   "short": "Everyday",
+   "h2": "Instagram captions for everyday posts",
+   "lead": "For the ordinary week, the desk, the walk, the post with no occasion at all.",
+   "captions": [
+    "an ordinary thursday, for the record",
+    "small wins department",
+    "proof i went outside",
+    "monday survived",
+    "weekend, in progress",
+    "a little bit of everything",
+    "this week's highlights, generously speaking",
+    "nothing happened and i loved it",
+    "work in progress, including me",
+    "the desk, the coffee, the deadline",
+    "plans cancelled, mood lifted",
+    "just checking in",
+    "slowly getting there",
+    "the small stuff was the good stuff",
+    "see you next week, probably"
+   ]
+  },
+  {
+   "id": "write-your-own",
+   "short": "Write your own",
+   "h2": "How to write a good Instagram caption",
+   "lead": "Look at the photo and ask what it feels like. Then say that in as few words as you can.",
+   "html": "<ul>\n  <li><strong>Lead with the line that matters.</strong> Instagram cuts longer captions off after the first line or so, with a \"more\" link, so the opening has to work alone.</li>\n  <li><strong>Add something the photo can't.</strong> A beach photo with the caption \"beach\" says nothing. A beach photo captioned \"out of office, in the sea\" has a voice.</li>\n  <li><strong>Match the post.</strong> A personal photo can take one word. A how-to or a story can run to a paragraph if it earns it.</li>\n  <li><strong>Sound like yourself.</strong> Change one word in any line above to something you would say.</li>\n  <li><strong>Choose your case on purpose.</strong> Lowercase reads relaxed; sentence case reads more polished.</li>\n  <li><strong>Keep hashtags few and at the end.</strong> They should not interrupt the line.</li>\n</ul>"
+  }
+ ],
+ "faq": [
+  {
+   "q": "What is a good caption for an Instagram post?",
+   "a": "A short line that adds a mood or a reason rather than describing the photo. \"this is the good part\" or \"evidence of a nice day\" work on nearly any post."
+  },
+  {
+   "q": "How long should an Instagram caption be?",
+   "a": "It can be up to 2,200 characters, but a line or two is enough for most personal posts. Instagram truncates long captions in the feed, so put the important part first."
+  },
+  {
+   "q": "What are cool captions for Instagram?",
+   "a": "Very short, slightly unbothered lines such as \"no notes\", \"as planned\" or \"working as intended\". The less the caption tries, the cooler it tends to read."
+  },
+  {
+   "q": "Can I use these captions for free?",
+   "a": "Yes. They are original lines written for this page, free to copy and change. If you like them, use them."
+  },
+  {
+   "q": "Does DUMP write captions for me?",
+   "a": "DUMP's Caption Generator (Premium) offers hand-written lines in six moods: Soft, Funny, Travel, Monthly Recap, Influencer and Minimal. It is not AI, and it does not look at your photos."
+  }
+ ],
+ "signoff": "I write these the way I caption my own posts: fast, then one word changed. If one of them ends up under your photo, tag me so I can see it.",
+ "related": [
+  {
+   "href": "/DUMP/guides/what-is-a-carousel-post.html",
+   "tag": "Guide",
+   "title": "What is a carousel post?",
+   "text": "How to create one on Instagram, and how to make people swipe."
+  },
+  {
+   "href": "/DUMP/guides/instagram-post-size.html",
+   "tag": "Guide",
+   "title": "Instagram post size in 2026",
+   "text": "Every format, in pixels."
+  }
+ ]
+}
