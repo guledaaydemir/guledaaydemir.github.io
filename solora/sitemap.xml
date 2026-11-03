@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://guledaaydemir.github.io/solora/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solora/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solora/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solora/"/>
@@ -31,7 +31,7 @@
   </url>
   <url>
     <loc>https://guledaaydemir.github.io/solora/guides/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://guledaaydemir.github.io/solora/guides/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://guledaaydemir.github.io/solora/tr/rehber/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://guledaaydemir.github.io/solora/guides/"/>
@@ -83,7 +83,7 @@
   </url>
   <url>
     <loc>https://guledaaydemir.github.io/solora/compare/best-role-based-planner-apps/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <image:image><image:loc>https://guledaaydemir.github.io/solora/img/screens/roles-1206.webp</image:loc></image:image>
     <image:image><image:loc>https://guledaaydemir.github.io/solora/img/screens/today-big3-1206.webp</image:loc></image:image>
   </url>
@@ -130,5 +130,62 @@
     <lastmod>2026-10-15</lastmod>
     <image:image><image:loc>https://guledaaydemir.github.io/solora/img/screens/assistant-1206.webp</image:loc></image:image>
     <image:image><image:loc>https://guledaaydemir.github.io/solora/img/screens/today-big3-progress-1206.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solora/compare/free-structured-alternatives/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/desk-polka-dot-dress-1400.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solora/compare/sunsama-alternatives/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/desk-coffee-laptop-1400.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solora/compare/todoist-alternatives/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/desk-red-top-1400.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solora/compare/notion-alternatives-life-planning/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/desk-laptop-black-top-1400.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solora/compare/best-ai-planner-apps-iphone/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/desk-waving-1400.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solora/compare/private-planner-apps-no-account/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/coffee-rooftop-1400.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solora/compare/habit-trackers-that-forgive-missed-days/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/gym-floor-1400.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solora/for/content-creators/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/creator-portrait-1400.webp</image:loc></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/office-laughing-1400.webp</image:loc></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/office-window-1400.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solora/for/travel/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/nice-harbour-1400.webp</image:loc></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/bali-temple-1400.webp</image:loc></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/bali-jungle-tea-1400.webp</image:loc></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/nice-sunset-1400.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://guledaaydemir.github.io/solora/for/side-projects/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/office-stretch-1400.webp</image:loc></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/elevator-mirror-1400.webp</image:loc></image:image>
+    <image:image><image:loc>https://guledaaydemir.github.io/solora/img/photos/cafe-croissant-1400.webp</image:loc></image:image>
   </url>
 </urlset>

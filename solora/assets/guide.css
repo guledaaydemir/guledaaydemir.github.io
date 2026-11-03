@@ -184,3 +184,16 @@
 }
 /* Turkish pages: note that a screenshot shows the English UI */
 .ui-note{white-space:nowrap;color:var(--faint)}
+
+/* Photos and sign-off inside a guide (added 2026-11-03) */
+.photo-fig{margin:26px auto;max-width:440px}
+.photo-fig img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--line);background:var(--surface-2)}
+.photo-fig figcaption{margin-top:10px;color:var(--faint);font-size:13.5px;line-height:1.55;text-align:center}
+.photo-pair{max-width:none}
+.photo-pair>div{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+.signoff{display:flex;gap:16px;align-items:flex-start;border:1px solid var(--line);border-radius:16px;padding:20px 22px;background:var(--surface);margin:34px 0 0}
+.signoff img{flex:none;border-radius:50%;width:56px;height:56px}
+.prose .signoff p{margin:0 0 6px;font-size:16px}
+.prose .signoff p:last-child{margin:0}
+.prose .signoff .signoff-name{font-weight:600;color:var(--text)}
+.prose .signoff .signoff-small{font-size:14px;color:var(--muted)}
