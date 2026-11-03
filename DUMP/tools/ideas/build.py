@@ -494,7 +494,7 @@ def head(lang, *, title, desc, path, alt_path, og_path, og_alt, og_type, extra_l
 
 <script>document.documentElement.classList.add('js');setTimeout(function(){{var d=document.documentElement;if(!d.classList.contains('js-ready'))d.classList.remove('js')}},3000)</script>
 {FONTS}
-<link rel="stylesheet" href="/DUMP/assets/dump.css">
+<link rel="stylesheet" href="/DUMP/assets/dump.css?v=20261103">
 <script src="/DUMP/assets/motion.js" defer></script>{scripts}
 </head>"""
 
