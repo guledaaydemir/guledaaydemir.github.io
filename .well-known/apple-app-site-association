@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["JCJKGT3W6Q.com.guleda.SoloShoots"],
+        "appID": "JCJKGT3W6Q.com.guleda.SoloShoots",
+        "components": [
+          { "/": "/SHOOTS/remote", "comment": "Opens SHOOTS as a remote for another device" },
+          { "/": "/SHOOTS/remote/*", "comment": "Opens SHOOTS as a remote for another device" }
+        ],
+        "paths": ["/SHOOTS/remote", "/SHOOTS/remote/*"]
+      }
+    ]
+  }
+}

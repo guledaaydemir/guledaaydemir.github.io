@@ -36,6 +36,66 @@ def star_svg(cls="st"):
 def store_url(lang):
     return f"https://apps.apple.com/{'' if lang == 'en' else lang + '/'}app/id{APP_ID}"
 
+# ---------------------------------------------------------------- campaign links
+# Every App Store link a page renders becomes an App Store Connect campaign link, so
+# ASC → Analytics → Acquisition → Campaigns shows downloads per page. Names are capped at
+# 30 characters by ASC and follow the site-wide `web-<app>-<page>` pattern. The links carry
+# no storefront, so Apple opens each visitor's own country store. JSON-LD keeps the plain URL.
+PROVIDER_TOKEN = "128720446"
+CAMPAIGNS = {
+    "": "web-shoots-home", "features/": "web-shoots-features", "about/": "web-shoots-about",
+    "support/": "web-shoots-support", "privacy/": "web-shoots-privacy", "terms/": "web-shoots-terms",
+    "guides/": "web-shoots-guides", "journal/": "web-shoots-journal",
+    "guides/best-self-timer-camera-apps-iphone/": "web-shoots-g-best-timer-apps",
+    "guides/take-photos-of-yourself-alone/": "web-shoots-g-photos-alone",
+    "guides/solo-travel-photos/": "web-shoots-g-solo-travel",
+    "guides/apple-watch-camera-remote/": "web-shoots-g-watch-remote",
+    "guides/ipad-as-iphone-camera-remote/": "web-shoots-g-ipad-remote",
+    "guides/iphone-self-timer-multiple-photos/": "web-shoots-g-timer-multi",
+    "guides/interval-shooting-iphone/": "web-shoots-g-interval",
+    "guides/start-a-photoshoot-hands-free/": "web-shoots-g-hands-free",
+    "guides/group-photo-everyone-in-it/": "web-shoots-g-group-photo",
+    "guides/outfit-photos-at-home/": "web-shoots-g-outfit-photos",
+    "guides/prop-your-phone-without-tripod/": "web-shoots-g-no-tripod",
+    "journal/why-i-built-shoots/": "web-shoots-j-why-i-built",
+    "journal/be-your-own-paparazzi/": "web-shoots-j-paparazzi",
+    "journal/ten-minute-solo-photoshoot/": "web-shoots-j-10-min-shoot",
+    "journal/poses-on-a-timer/": "web-shoots-j-poses-timer",
+    "journal/pose-coach/": "web-shoots-j-pose-coach",
+    "journal/hype-crew-in-your-pocket/": "web-shoots-j-hype-crew",
+    "journal/shoot-dump-swipe/": "web-shoots-j-dump-swipe",
+    "es/": "web-shoots-es-home", "es/funciones/": "web-shoots-es-features", "es/acerca/": "web-shoots-es-about",
+    "es/soporte/": "web-shoots-es-support", "es/privacidad/": "web-shoots-es-privacy", "es/guias/": "web-shoots-es-guides",
+    "es/guias/fotos-sin-fotografo/": "web-shoots-es-g-photos-alone",
+    "es/guias/fotos-de-viaje-en-solitario/": "web-shoots-es-g-solo-travel",
+    "es/guias/apple-watch-control-remoto-camara/": "web-shoots-es-g-watch-remote",
+    "es/guias/temporizador-iphone-varias-fotos/": "web-shoots-es-g-timer-multi",
+    "es/guias/iniciar-sesion-manos-libres/": "web-shoots-es-g-hands-free",
+    "es/guias/shoots-dump-solo-swipe/": "web-shoots-es-g-dump-swipe",
+    "tr/": "web-shoots-tr-home", "tr/ozellikler/": "web-shoots-tr-features", "tr/hakkinda/": "web-shoots-tr-about",
+    "tr/destek/": "web-shoots-tr-support", "tr/gizlilik/": "web-shoots-tr-privacy", "tr/rehber/": "web-shoots-tr-guides",
+    "tr/rehber/kendi-fotografini-cekmek/": "web-shoots-tr-g-photos-alone",
+    "tr/rehber/tek-basina-seyahat-fotograflari/": "web-shoots-tr-g-solo-travel",
+    "tr/rehber/apple-watch-kamera-kumandasi/": "web-shoots-tr-g-watch-remote",
+    "tr/rehber/iphone-zamanlayici-coklu-fotograf/": "web-shoots-tr-g-timer-multi",
+    "tr/rehber/eller-serbest-baslatma/": "web-shoots-tr-g-hands-free",
+    "tr/rehber/shoots-dump-solo-swipe/": "web-shoots-tr-g-dump-swipe",
+}
+STORE_HREF = re.compile(r'href="https://apps\.apple\.com/(?:[a-z]{2}/)?app/id' + APP_ID + '"')
+
+def campaign_name(path):
+    if path in CAMPAIGNS:
+        return CAMPAIGNS[path]
+    # New page without an entry: derive one and say so, so it can get a proper name above.
+    name = ("web-shoots-" + re.sub(r"[^a-z0-9]+", "-", path.lower()).strip("-"))[:30].rstrip("-")
+    print(f"note: {path or '(home)'} has no CAMPAIGNS entry, using ct={name}")
+    return name
+
+def tag_store_links(out, path):
+    ct = campaign_name(path)
+    tagged = f'href="https://apps.apple.com/app/apple-store/id{APP_ID}?pt={PROVIDER_TOKEN}&amp;ct={ct}&amp;mt=8"'
+    return STORE_HREF.sub(tagged, out)
+
 # ---------------------------------------------------------------- chrome strings
 T = {
  "en": {
@@ -714,7 +774,7 @@ def main():
     for p in pages:
         body = shortcodes(p["body"], p["lang"], p, pages)
         main_html = article(p, pages, body) if p["type"] == "article" else body
-        out = head(p, pages, by_path) + header(p, by_path) + main_html + footer(p)
+        out = tag_store_links(head(p, pages, by_path) + header(p, by_path) + main_html + footer(p), p["path"])
         dest = os.path.join(ROOT, p["path"], "index.html")
         os.makedirs(os.path.dirname(dest), exist_ok=True)
         open(dest, "w", encoding="utf-8").write(out)
