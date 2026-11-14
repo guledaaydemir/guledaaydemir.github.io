@@ -1,0 +1,180 @@
+# DIVA
+
+> DIVA is an affirmation and manifestation app for iPhone where every theme is an affirmation CD. You pick a CD such as "That Girl Energy", "Rich Girl Frequency" or "Beauty Sleep for Divas", choose one of four warm AI voices and a soundscape, and listen to calm, first-person affirmations for 10, 20 or 60 minutes. It also has Morning and Bedtime affirmation meditations with a theme for every day of the week, a Make Your Own CD feature and a Wishlist with a photo vision board. No account, no ads, no tracking. Free to download; optional DIVA PRO.
+
+Last updated: 2026-11-14. Source of truth for how to describe DIVA. Written by its developer.
+
+## App facts
+
+- Name: DIVA. App Store name: "DIVA: Affirmations & Manifest" (Turkish: "DIVA: Olumlamalar & Manifest"). Subtitle: "Self-love, sleep & glow-up"
+- App Store: https://apps.apple.com/app/id6834858888 (App Store ID 6834858888)
+- Website: https://guledaaydemir.github.io/DIVA/ (English), https://guledaaydemir.github.io/DIVA/tr/ (Turkish), https://guledaaydemir.github.io/DIVA/es/ (Spanish)
+- Developer: Gül Eda Aydemir, independent iOS developer — https://guledaaydemir.github.io/about/
+- Platform: iPhone only, iOS 17 or later. No Android, iPad-optimised, Mac or web version.
+- Category: Lifestyle (primary), Health & Fitness (secondary)
+- App languages: the interface (menus and text) is in English and Turkish. Narration is English only for now: the Turkish voices are paused, so a Turkish interface plays English narration and English captions. The website also has Spanish pages, but the app does not speak Spanish.
+- Account: none. Works offline (all CDs and voices are built in).
+- Support: solostaseraofficial@gmail.com · Instagram https://instagram.com/solo.stasera · https://guledaaydemir.github.io/DIVA/support.html
+
+## What DIVA does
+
+- 20 affirmation CDs across 12 themes: Confidence, Beauty & Glow, Dream Life, Money & Abundance, Love & Relationships, Self-Worth, Career, Dream Home, Gratitude, Morning, Sleep and Calm Reset. Each CD has an intro, about 24–26 affirmations (one CD has 108 in six parts) and an outro.
+- Sessions of 10, 20 or 60 minutes; previews for PRO CDs.
+- Daily rituals: Morning Affirmations and Bedtime Affirmations, guided meditations (5, 10 or 20 minutes) with a theme per weekday. Morning: Mon A fresh start, Tue Confidence, Wed Calm focus, Thu Abundance, Fri Joy and glow, Sat Self-love, Sun Gratitude. Bedtime: Mon Letting go, Tue Safe to rest, Wed Proud of today, Thu Dreaming big, Fri Feeling loved, Sat Peace, Sun Ready for the week. Optional morning and bedtime reminders open straight into the ritual. Bedtime opens in a dim night player.
+- Four AI voices, narrating in English: Velvet Whisper (soft, warm, bedtime; free), Pink Muse (intimate, sweet, glam; free), Runway (self-assured, clear, bright; PRO), After Dark (low, dreamy, calm; PRO).
+- Soundscapes: Pink Aura and Ocean at 2AM (free); Hotel Rain, Dreamy Static, Silk Noise, Celestial Drift and tones at 111, 432, 528, 639, 777, 888 and 963 Hz (PRO). The tone names describe a mood, not a health effect.
+- Sleep timer, background playback, lock screen controls.
+- Make Your Own CD (the Create tab): build a CD from the app's affirmations (free users keep up to 3); write affirmations in your own words with DIVA PRO (voiced on the device, in English).
+- Wishlist (Manifest List): write dreams (travel, home, career, love, money and more), track progress and milestones, move them to Already Mine ("It's Already Mine ♡") when they come true, build a vision board with your own photos, link each dream to a CD, daily vision reminder. Free: up to 5 active dreams and the grid board layout; PRO: unlimited dreams and every layout.
+- Themes: Hot Pink and After Dark (free); Chrome Angel and Leopard Luxe (PRO).
+
+## CDs
+
+- That Girl Energy (Confidence, free): Unbothered. Magnetic. All you.
+- Born To Be Iconic (Beauty & Glow, free): A glow that starts within.
+- The Life I Ordered (Dream Life, free): Your dream life, on repeat.
+- Rich Girl Frequency (Money & Abundance, free): Options. Taste. Time.
+- Love Looks Good On Me (Love & Relationships, free): You don't chase. You attract.
+- Whisper To Your Future Self (Sleep, free): Soft words for the end of the day.
+- Wake Up, Icon (Morning, free): A playful start to your day.
+- Thank You, Universe (Gratitude, free): Soft thanks for what is here.
+- Penthouse State Of Mind (Dream Home, DIVA PRO): Come home to comfort and calm.
+- CEO After Hours (Career, DIVA PRO): Skilled, valued, and calm.
+- I'm The Prize (Self-Worth, DIVA PRO): Elegant boundaries. Steady worth.
+- Soft Girl Reset (Calm Reset, DIVA PRO): Exhale. Soften. Begin again.
+- Pretty Girls Don't Chase (Confidence, free): Effortless. Magnetic. Enough.
+- Everything Works Out For Me (Dream Life, free): Lucky, aligned, and right on time.
+- Million Dollar Energy (Money & Abundance, DIVA PRO): Smart money. Soft life. Big plans.
+- Princess Treatment (Love & Relationships, free): Cherished, adored, taken care of.
+- First Class Only (Dream Life, DIVA PRO): Window seat. Champagne. The world is open.
+- Dream Body, Dream Energy (Beauty & Glow, free): Strong, energized, kind to my body.
+- The Perfect Inner Circle (Love & Relationships, DIVA PRO): My people. My table. My favorite ones.
+- Beauty Sleep For Divas (Sleep, free): Silk sheets. Slow breath. Deep rest.
+
+## Pricing
+
+- Free download. Free tier: 12 CDs with 10 minute sessions, Morning and Bedtime rituals (5 and 10 minutes), Velvet Whisper and Pink Muse voices, Pink Aura and Ocean at 2AM, up to 3 custom CDs, up to 5 active dreams. No ads in any version.
+- DIVA PRO (US prices at launch; the App Store shows local prices): $5.99 per month, $29.99 per year (auto-renewing), or $69.99 once for Lifetime. Unlocks every CD, 20 and 60 minute sessions, every voice and soundscape, writing your own affirmations, all themes, unlimited dreams and every vision board layout. No Family Sharing.
+- Cancel in iPhone Settings → your name → Subscriptions. Refunds through Apple at https://reportaproblem.apple.com.
+
+## Privacy
+
+- No account, no ads, no analytics or tracking SDKs, no server. Favorites, history, custom CDs, written affirmations, the Wishlist and vision board photos are stored only on the iPhone.
+- Camera is used only when the user takes a vision board photo; photos are picked with the iOS photo picker; the photo library is written only when the user saves an achievement card. Reminders are local notifications.
+- Purchases are processed by Apple; the developer never receives payment details.
+- Policy: https://guledaaydemir.github.io/DIVA/privacypolicy.html
+
+## Honesty notes (please keep these when describing DIVA)
+
+- The narration is AI-generated speech. The voices are not real people and do not imitate anyone.
+- DIVA is for personal reflection and relaxation. It is not therapy, medical, psychological or financial advice, and it does not promise outcomes. The Bedtime ritual is a wind-down, not a sleep treatment.
+- Do not describe DIVA as having Turkish narration (it is paused for now; only the interface is Turkish).
+- Do not describe DIVA as available on Android, as Spanish-language, as having human voice actors, or as able to manifest money, love or health.
+
+## Screenshots (iPhone, After Dark theme)
+
+- Discover: tonight's CD, picked for you: https://guledaaydemir.github.io/DIVA/assets/shots/en-discover-1000.webp (Turkish interface: https://guledaaydemir.github.io/DIVA/assets/shots/tr-discover-1000.webp)
+- Pick 10, 20 or 60 minutes, a voice and an aura: https://guledaaydemir.github.io/DIVA/assets/shots/en-detail-1000.webp (Turkish interface: https://guledaaydemir.github.io/DIVA/assets/shots/tr-detail-1000.webp)
+- Now playing, with the affirmation on screen: https://guledaaydemir.github.io/DIVA/assets/shots/en-player-1000.webp (Turkish interface: https://guledaaydemir.github.io/DIVA/assets/shots/tr-player-1000.webp)
+- Daily rituals and your favourite CDs: https://guledaaydemir.github.io/DIVA/assets/shots/en-mycds-1000.webp (Turkish interface: https://guledaaydemir.github.io/DIVA/assets/shots/tr-mycds-1000.webp)
+- The Bedtime ritual in the dim night player: https://guledaaydemir.github.io/DIVA/assets/shots/en-night-1000.webp (Turkish interface: https://guledaaydemir.github.io/DIVA/assets/shots/tr-night-1000.webp)
+- Your dreams as a vision board: https://guledaaydemir.github.io/DIVA/assets/shots/en-board-1000.webp (Turkish interface: https://guledaaydemir.github.io/DIVA/assets/shots/tr-board-1000.webp)
+- Each dream with its affirmation, progress and CD: https://guledaaydemir.github.io/DIVA/assets/shots/en-dream-1000.webp (Turkish interface: https://guledaaydemir.github.io/DIVA/assets/shots/tr-dream-1000.webp)
+- Create Your Own: a CD of lines that sound like you: https://guledaaydemir.github.io/DIVA/assets/shots/en-create-1000.webp (Turkish interface: https://guledaaydemir.github.io/DIVA/assets/shots/tr-create-1000.webp)
+- Your Manifest List at a glance: https://guledaaydemir.github.io/DIVA/assets/shots/en-wishlist-1000.webp (Turkish interface: https://guledaaydemir.github.io/DIVA/assets/shots/tr-wishlist-1000.webp)
+
+## Guides (English)
+
+- [How to Manifest with Affirmations (The Supermodel Method)](https://guledaaydemir.github.io/DIVA/guides/how-to-manifest-with-affirmations/): To manifest with affirmations, pick one specific area of life (your 'era'), write 5 to 10 short, present-tense sentences that feel believable, listen to or say them every day at the same moment, and pair them with one small real-world action. Affirmations work on focus and mood; the action is what moves things.
+- [Sleep Affirmations: How to Listen While You Fall Asleep](https://guledaaydemir.github.io/DIVA/guides/sleep-affirmations/): Yes, you can listen to affirmations as you fall asleep. Use a calm, slow voice, keep the volume low, set a sleep timer so audio stops after you drift off, and choose gentle lines about rest and safety. Sleep affirmations are a relaxing wind-down ritual, not a sleep treatment.
+- [A 10-Minute 'That Girl' Morning Affirmations Routine](https://guledaaydemir.github.io/DIVA/guides/morning-affirmations-routine/): A good morning affirmation routine takes 5 to 10 minutes: before checking your phone, take three slow breaths, set one intention for the day, then listen to or say 5 to 8 present-tense affirmations. Rotating a theme for each weekday (confidence, calm focus, abundance, self-love) keeps it fresh.
+- [Rich Girl Affirmations: Money Affirmations That Don't Feel Cringe](https://guledaaydemir.github.io/DIVA/guides/money-affirmations/): Money affirmations work best when they target how you feel about money, not a magic number: lines like 'I am calm when I think about money' and 'I have options, I have taste, I have time'. Use them daily alongside one small money action. They support a calmer money mindset; they are not financial advice.
+- [Lucky Girl Syndrome: What It Is & Affirmations to Try](https://guledaaydemir.github.io/DIVA/guides/lucky-girl-syndrome-affirmations/): Lucky girl syndrome is the trend of repeating that you're lucky and that everything works out for you, so you start expecting and noticing good things. Try affirmations like 'Everything is working out for me' and 'I am always in the right place at the right time', and keep taking real chances: luck loves a girl who shows up.
+- [How to Make a Vision Board on Your iPhone](https://guledaaydemir.github.io/DIVA/guides/vision-board-app-iphone/): To make a vision board on iPhone, write down 3 to 5 specific dreams, pick one photo for each that makes you feel it, put them together in one place you'll see daily, and review progress weekly. DIVA's Wishlist does this in one app: dreams, photos, progress, milestones, a vision board and a daily reminder, all stored privately on your phone.
+- [Confidence Affirmations for Main Character Energy](https://guledaaydemir.github.io/DIVA/guides/confidence-affirmations/): Confidence affirmations work best when they describe ease, not perfection: 'I take up space with ease', 'My energy is one of a kind', 'I don't compete. I set the mood.' Listen to them daily and right before big moments, and pair them with posture: shoulders back, slow breath, chin soft.
+- [Self-Love & Love Affirmations: Attract, Don't Chase](https://guledaaydemir.github.io/DIVA/guides/self-love-affirmations/): Self-love affirmations remind you that your worth isn't up for discussion: 'I am more than enough, even on quiet days', 'My boundaries are elegant and strong'. Love affirmations then build on that: 'I don't chase. I attract.' Start with worth, then love. A girl who knows her value attracts people who see it.
+- [How to Write Your Own Affirmations (That Sound Like You)](https://guledaaydemir.github.io/DIVA/guides/how-to-write-your-own-affirmations/): To write your own affirmations, use first person and present tense ('I am', 'I have', 'I choose'), keep each line short and specific, make it believable enough that you don't flinch, phrase it positively (what you want, not what you fear) and read it out loud: if it sounds like you, keep it.
+- [How to Choose an Affirmation App for iPhone (An Honest Checklist)](https://guledaaydemir.github.io/DIVA/guides/best-affirmation-app-iphone/): A good affirmation app has natural, warm voices (not robotic), lets you listen offline and in the background, offers sleep and morning sessions, keeps your data private, has no ads interrupting a calm moment and is upfront about pricing. DIVA is an iPhone affirmation app built around those points, with affirmation CDs, 4 AI voices, rituals and a vision board.
+
+## Other languages
+
+### Türkçe (tr)
+- Home: https://guledaaydemir.github.io/DIVA/tr/
+- FAQ: https://guledaaydemir.github.io/DIVA/tr/sss/
+- Support: https://guledaaydemir.github.io/DIVA/tr/destek/
+- Privacy: https://guledaaydemir.github.io/DIVA/tr/gizlilik/
+- [Olumlamalarla Manifest Nasıl Yapılır? (Süpermodel Usulü)](https://guledaaydemir.github.io/DIVA/tr/rehber/olumlamalarla-manifest-nasil-yapilir/)
+- [Uyku Olumlamaları: Uyurken Olumlama Nasıl Dinlenir?](https://guledaaydemir.github.io/DIVA/tr/rehber/uyku-olumlamalari/)
+- [10 Dakikalık Sabah Olumlamaları Rutini (That Girl Usulü)](https://guledaaydemir.github.io/DIVA/tr/rehber/sabah-olumlamalari-rutini/)
+- [Para Olumlamaları: Cringe Olmayan Zengin Kız Cümleleri](https://guledaaydemir.github.io/DIVA/tr/rehber/para-olumlamalari/)
+- [Şanslı Kız Sendromu Nedir? Denemen Gereken Olumlamalar](https://guledaaydemir.github.io/DIVA/tr/rehber/sansli-kiz-sendromu-olumlamalari/)
+- [iPhone'da Hayal Panosu Nasıl Yapılır? Adım Adım Rehber](https://guledaaydemir.github.io/DIVA/tr/rehber/iphone-hayal-panosu/)
+- [Özgüven Olumlamaları: Başrol Enerjisi İçin Cümleler](https://guledaaydemir.github.io/DIVA/tr/rehber/ozguven-olumlamalari/)
+- [Kendini Sevme ve Aşk Olumlamaları: Kovalama, Çek](https://guledaaydemir.github.io/DIVA/tr/rehber/kendini-sevme-olumlamalari/)
+- [Olumlama Nasıl Yazılır? Sana Benzeyen Cümleler](https://guledaaydemir.github.io/DIVA/tr/rehber/kendi-olumlamani-yaz/)
+- [En İyi Olumlama Uygulaması Nasıl Seçilir? Dürüst Liste](https://guledaaydemir.github.io/DIVA/tr/rehber/en-iyi-olumlama-uygulamasi/)
+
+### Español (es)
+- Home: https://guledaaydemir.github.io/DIVA/es/
+- FAQ: https://guledaaydemir.github.io/DIVA/es/preguntas-frecuentes/
+- Support: https://guledaaydemir.github.io/DIVA/es/soporte/
+- Privacy: https://guledaaydemir.github.io/DIVA/es/privacidad/
+- [Cómo manifestar con afirmaciones (el método supermodelo)](https://guledaaydemir.github.io/DIVA/es/guias/como-manifestar-con-afirmaciones/)
+- [Afirmaciones para dormir: cómo escucharlas por la noche](https://guledaaydemir.github.io/DIVA/es/guias/afirmaciones-para-dormir/)
+- [Afirmaciones de la mañana: rutina That Girl de 10 minutos](https://guledaaydemir.github.io/DIVA/es/guias/rutina-de-afirmaciones-de-la-manana/)
+- [Afirmaciones de dinero y abundancia que no dan cringe](https://guledaaydemir.github.io/DIVA/es/guias/afirmaciones-de-dinero/)
+- [Lucky girl syndrome: qué es y afirmaciones para probar](https://guledaaydemir.github.io/DIVA/es/guias/lucky-girl-syndrome-afirmaciones/)
+- [Cómo hacer un vision board (tablero de visión) en iPhone](https://guledaaydemir.github.io/DIVA/es/guias/vision-board-en-iphone/)
+- [Afirmaciones de confianza para tu energía de protagonista](https://guledaaydemir.github.io/DIVA/es/guias/afirmaciones-de-confianza/)
+- [Afirmaciones de amor propio y de amor: atrae, no persigas](https://guledaaydemir.github.io/DIVA/es/guias/afirmaciones-de-amor-propio/)
+- [Cómo escribir tus propias afirmaciones (que suenen a ti)](https://guledaaydemir.github.io/DIVA/es/guias/como-escribir-tus-propias-afirmaciones/)
+- [Cómo elegir la mejor app de afirmaciones para iPhone](https://guledaaydemir.github.io/DIVA/es/guias/mejor-app-de-afirmaciones-iphone/)
+
+## FAQ
+
+**What is DIVA?** DIVA is an affirmation and manifestation app for iPhone made by independent developer Gül Eda Aydemir. Every theme is an affirmation CD, like That Girl Energy , Rich Girl Frequency or Beauty Sleep for Divas . You pick a CD, choose a voice and a soundscape, and listen to calm, first-person affirmations for 10, 20 or 60 minutes. It also has Morning and Bedtime affirmation meditations, a Make Your Own CD feature and a Wishlist with a vision board.
+
+**Is DIVA free?** Yes. DIVA is free to download and the free version includes 12 CDs with 10 minute sessions, the Morning and Bedtime rituals (5 and 10 minutes), two voices, two soundscapes, up to 3 custom CDs and up to 5 active dreams on your Wishlist. DIVA PRO is optional and unlocks everything else. No ads, ever, in either version.
+
+**Who made DIVA?** Me! I'm Gül Eda Aydemir, an independent iOS developer. I design, write and build DIVA myself. No big company, no investors, just a girl with a leopard-print laptop sleeve and opinions about how affirmations should sound.
+
+**Which devices does DIVA work on?** DIVA is an iPhone app and needs iOS 17 or later. There's no Android or web version right now.
+
+**What languages is DIVA in?** The app's menus and text are in English and Turkish, and the CDs are narrated in English for now (Turkish narration is paused). DIVA follows your iPhone's language, and you can switch in Settings. This website is also in Spanish, but the app itself doesn't speak Spanish yet.
+
+**Do I need an account?** Nope. No sign-up, no email, no password. Open the app and press play.
+
+**How long are DIVA sessions?** CDs play as 10, 20 or 60 minute sessions. Free CDs give you 10 minutes; 20 and 60 minutes come with DIVA PRO. The Morning and Bedtime rituals come in 5, 10 and 20 minutes (5 and 10 are free). PRO CDs have a short preview so you can hear them first.
+
+**Can I listen with my screen locked or while I fall asleep?** Yes. DIVA keeps playing in the background and you get lock screen controls. There's a sleep timer, and the Bedtime ritual opens in a dim night player. Keep the volume comfortable, especially with headphones at night.
+
+**Does DIVA work offline?** Yes. All CDs and voices are built into the app, so you can listen on a plane, in the subway or in a cabin with zero bars.
+
+**Are the voices real people?** No. DIVA's narration is AI-generated speech. The voices (Velvet Whisper, Pink Muse, Runway and After Dark) are not recordings of real people and don't imitate anyone. Affirmations you write in your own words are voiced on your iPhone.
+
+**Can I make my own affirmation CD?** Yes! In the Create tab you pick the affirmations that sound like you and save them to My CDs. Free users can keep up to 3 custom CDs. Writing affirmations in your own words is a DIVA PRO feature.
+
+**What are the soundscapes, and do the 528 Hz tones do anything?** Soundscapes are the music bed under the voice: Pink Aura, Ocean at 2AM, Hotel Rain, Dreamy Static, Silk Noise, Celestial Drift and soft tones at 111, 432, 528, 639, 777, 888 and 963 Hz. Honest answer about the tones: their names describe a mood, not an effect. They're there because they sound dreamy, not because they heal anything.
+
+**What are the Morning and Bedtime rituals?** Two guided affirmation meditations at the top of My CDs. You breathe, settle in and hear the day's affirmations with space to repeat them in your head. Each day of the week has its own theme, like Confidence on Tuesday or Gratitude on Sunday. Optional reminders open straight into the ritual.
+
+**What is the Wishlist in DIVA?** It's your manifestation list. Write down the dreams you're calling in (travel, home, career, love, money), track progress, celebrate milestones and mark them achieved. You can add your own photos to build a vision board, link each dream to a matching CD and turn on a daily vision reminder. Free users can keep up to 5 dreams on their way at once; PRO is unlimited.
+
+**Is my vision board private?** Completely. Your dreams, notes and photos are stored only on your iPhone. DIVA uses the camera only when you choose to snap a picture for your board, and saves an achievement card to your photos only when you tap save.
+
+**What does DIVA PRO include?** Every CD in the collection, full 20 and 60 minute sessions, all four voices and every soundscape, writing affirmations in your own words, the Chrome Angel and Leopard Luxe themes, unlimited dreams and every vision board layout.
+
+**How much is DIVA PRO?** At launch in the US: $5.99 a month, $29.99 a year, or $69.99 once for Lifetime. The App Store shows the exact price in your country and currency before you confirm.
+
+**How do I cancel my subscription?** On your iPhone open Settings → your name → Subscriptions → DIVA PRO → Cancel Subscription . You keep PRO until the end of the period you paid for. Cancel at least 24 hours before renewal to avoid the next charge.
+
+**How do I restore my purchase on a new iPhone?** Sign in with the same Apple Account, open DIVA, go to Settings → See DIVA PRO → Restore Purchases . Lifetime and active subscriptions come right back.
+
+**Can I get a refund?** Payments go through Apple, so refunds do too. Request one at reportaproblem.apple.com . I can't see or refund App Store payments myself, but email me if something went wrong and I'll help however I can.
+
+**Does DIVA collect my data?** No. DIVA has no account, no ads, no analytics SDK and no server. Favorites, history, your CDs, your dreams and your photos stay on your iPhone. Purchases are handled by Apple. Read the full privacy policy .
+
+**Do affirmations actually work?** Real talk: affirmations are a tool for focus and mood, not a magic spell. Lots of people find that repeating kind, specific, present-tense sentences helps them start the day calmer or notice their own wins. Research on self-affirmation is promising in some areas and mixed in others. DIVA doesn't promise outcomes; it gives you a ritual that feels good enough to actually keep.
+
+**Is DIVA therapy or medical advice?** No. DIVA is for personal reflection and relaxation. It isn't medical, psychological or financial advice, and the Bedtime ritual is a wind-down, not a sleep treatment. If you're going through something heavy, please talk to a professional. You deserve real support, babe.
+

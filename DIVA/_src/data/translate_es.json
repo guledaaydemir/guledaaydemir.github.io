@@ -1,0 +1,179 @@
+{
+ "_how": "Spanish (es.py) translates these. CARD_LINES keys are 'cd_id:index'. DEMO_TRANSLATION keys are cd ids, values are lists in the same order.",
+ "card": {
+  "that_girl_energy:3": "My energy is one of a kind.",
+  "that_girl_energy:4": "I don't compete. I set the mood.",
+  "that_girl_energy:6": "My presence is the entire entrance.",
+  "that_girl_energy:7": "I take up space with ease.",
+  "that_girl_energy:10": "I was never ordinary. That's the point.",
+  "pretty_girls_dont_chase:5": "I don't chase. I attract.",
+  "born_to_be_iconic:1": "I am effortlessly beautiful, exactly as I am.",
+  "born_to_be_iconic:2": "My face tells my story, and I love the story.",
+  "born_to_be_iconic:5": "My glow starts on the inside.",
+  "born_to_be_iconic:6": "Rest looks good on me. Joy looks even better.",
+  "dream_body_dream_energy:0": "I feel strong, healthy, and energized.",
+  "dream_body_dream_energy:6": "I drink my water, and I glow.",
+  "rich_girl_frequency:1": "I am calm when I think about money.",
+  "rich_girl_frequency:3": "I have options. I have taste. I have time.",
+  "rich_girl_frequency:6": "Abundance feels natural to me.",
+  "rich_girl_frequency:8": "I enjoy beautiful things without guilt.",
+  "million_dollar_energy:1": "My wealth grows steadily.",
+  "million_dollar_energy:6": "I spend with joy, and I save with pride.",
+  "love_looks_good_on_me:0": "I am naturally magnetic.",
+  "love_looks_good_on_me:4": "I am the kind of person people feel lucky to love.",
+  "love_looks_good_on_me:6": "I am the prize, and I know it.",
+  "princess_treatment:1": "I am cherished every single day.",
+  "princess_treatment:4": "I am adored in the little things.",
+  "princess_treatment:6": "I am spoiled with love, and I enjoy it.",
+  "the_life_i_ordered:2": "I live a life that feels beautiful to me.",
+  "the_life_i_ordered:4": "My mornings are soft and unhurried.",
+  "everything_works_out:0": "Everything is working out for me.",
+  "everything_works_out:4": "I am always in the right place at the right time.",
+  "first_class_only:1": "The world is open to me.",
+  "first_class_only:6": "I always find the window seat with the best view.",
+  "im_the_prize:1": "I am more than enough, even on quiet days.",
+  "im_the_prize:2": "My worth is not up for discussion.",
+  "im_the_prize:4": "My boundaries are elegant and strong.",
+  "im_the_prize:5": "I say no, and I stay kind.",
+  "im_the_prize:6": "I stay where I am valued."
+ },
+ "demo": {
+  "that_girl_energy": [
+   "Hey, diva. Shoulders back, chin soft. This one is all you.",
+   "My energy is one of a kind.",
+   "I don't compete. I set the mood.",
+   "My presence is the entire entrance.",
+   "I was never ordinary. That's the point."
+  ],
+  "rich_girl_frequency": [
+   "Hey, diva. Get comfortable. Let's tune in to abundance.",
+   "I have options. I have taste. I have time.",
+   "Abundance feels natural to me.",
+   "I enjoy beautiful things without guilt.",
+   "I am building wealth with confidence and care."
+  ],
+  "beauty_sleep_for_divas": [
+   "Good night, diva. Lights low. It's time for your beauty sleep.",
+   "My sheets are soft, and I sink into them.",
+   "My face softens.",
+   "Rest is part of my beauty routine.",
+   "I wake up rested and glowing."
+  ]
+ },
+ "categories": {
+  "confidence": "Confidence",
+  "beauty": "Beauty & Glow",
+  "dream_life": "Dream Life",
+  "money": "Money & Abundance",
+  "love": "Love & Relationships",
+  "sleep": "Sleep",
+  "morning": "Morning",
+  "gratitude": "Gratitude",
+  "dream_home": "Dream Home",
+  "career": "Career",
+  "self_worth": "Self-Worth",
+  "calm": "Calm Reset"
+ },
+ "cds": {
+  "that_girl_energy": {
+   "subtitle": "Unbothered. Magnetic. All you.",
+   "summary": "A playful confidence set for daytime listening. You'll hear first-person lines about feeling at ease in yourself, taking up space, and carrying your worth lightly. Press play whenever you want a moment to reconnect with your own energy."
+  },
+  "born_to_be_iconic": {
+   "subtitle": "A glow that starts within.",
+   "summary": "A warm set about feeling radiant and comfortable in your own skin. The lines focus on self-kindness, care, and enjoying being seen, with no comparison to anyone else. Listen while you get ready, or whenever you want a gentle moment with the mirror."
+  },
+  "the_life_i_ordered": {
+   "subtitle": "Your dream life, on repeat.",
+   "summary": "A slow, dreamy set for the evening. You'll hear calm first-person lines that picture a life you love as if you are already living it, from soft mornings to a peaceful home. It is an imagination practice to unwind with, not a promise of results."
+  },
+  "rich_girl_frequency": {
+   "subtitle": "Options. Taste. Time.",
+   "summary": "A confident, unhurried set about your relationship with money. The lines explore feeling calm, having choices, and enjoying beautiful things without guilt. Treat it as an intention and imagination practice, not financial advice or a promise of results."
+  },
+  "love_looks_good_on_me": {
+   "subtitle": "You don't chase. You attract.",
+   "summary": "A soft, whispered night set about love and relationships. It begins by reminding you that you are already worthy, then moves through six parts: knowing your value, love that comes naturally, the relationship you dream of, attracting instead of chasing, being adored, and gratitude for the love around you. Listen as a quiet reflection on the kind of love you choose."
+  },
+  "whisper_to_your_future_self": {
+   "subtitle": "Soft words for the end of the day.",
+   "summary": "A very quiet bedtime set, spoken slowly with long pauses. The lines are about letting the day be finished, feeling safe to rest, and speaking kindly to the person you are becoming. It is a gentle wind-down ritual, not a sleep treatment."
+  },
+  "wake_up_icon": {
+   "subtitle": "A playful start to your day.",
+   "summary": "A short, bright morning set with a wink. You'll hear playful first-person lines about choosing your mood, getting ready, and walking into the day as yourself. Play it with your coffee or while you get dressed."
+  },
+  "thank_you_universe": {
+   "subtitle": "Soft thanks for what is here.",
+   "summary": "A calm evening set built around appreciation of the present. The lines move from small comforts to the people you love and how far you have come. Use it as a quiet moment of reflection at the end of the day."
+  },
+  "penthouse_state_of_mind": {
+   "subtitle": "Come home to comfort and calm.",
+   "summary": "A slow evening walk through a home that feels like you. The lines picture soft light, a beautiful view, and the simple feeling of being safe and comfortable where you live. Listen as a cozy visualization while you settle in for the night."
+  },
+  "ceo_after_hours": {
+   "subtitle": "Skilled, valued, and calm.",
+   "summary": "A composed, confident set about your working life. The lines reflect on skill, recognition, growth, and knowing when to switch off and belong to yourself again. Play it before a big day or on the way home as a personal pep talk."
+  },
+  "im_the_prize": {
+   "subtitle": "Elegant boundaries. Steady worth.",
+   "summary": "A poised set about self-respect and boundaries. The lines are about choosing yourself, saying no kindly, and knowing your value stays the same wherever you are. Listen whenever you want to remember your own standards."
+  },
+  "soft_girl_reset": {
+   "subtitle": "Exhale. Soften. Begin again.",
+   "summary": "A gentle pause for the moments when everything feels like a lot. The lines follow your breath, make room for your feelings, and bring you back to steadiness at your own pace. It is a calming ritual for reflection, not a treatment."
+  },
+  "pretty_girls_dont_chase": {
+   "subtitle": "Effortless. Magnetic. Enough.",
+   "summary": "A confident daytime set about being at ease in your own beauty. You'll hear first-person lines about letting good things come to you, not competing for attention, and knowing your presence is enough. Play it while you get ready."
+  },
+  "everything_works_out": {
+   "subtitle": "Lucky, aligned, and right on time.",
+   "summary": "A light, lucky-girl daytime set. The lines are about things falling into place, handling surprises with ease, and noticing the good that is already around you. A playful mindset reset for any day that needs one."
+  },
+  "million_dollar_energy": {
+   "subtitle": "Smart money. Soft life. Big plans.",
+   "summary": "A polished daytime set about money and freedom. You'll hear first-person lines about smart choices, growing wealth, and feeling calm and capable with money. A reflection on your relationship with money, not financial advice."
+  },
+  "princess_treatment": {
+   "subtitle": "Cherished, adored, taken care of.",
+   "summary": "A soft evening set about being treated with care. The lines are about respect, affection and thoughtful attention, from a partner, from the people around you, and from yourself. Written for every kind of love."
+  },
+  "first_class_only": {
+   "subtitle": "Window seat. Champagne. The world is open.",
+   "summary": "A jet-set daytime set about travel and freedom. You'll hear first-person lines about moving through the world comfortably, discovering beautiful places, and feeling at home wherever you land. Play it on the way, or while you plan the next trip."
+  },
+  "dream_body_dream_energy": {
+   "subtitle": "Strong, energized, kind to my body.",
+   "summary": "An upbeat daytime set about feeling good in your body. The lines are about strength, energy, movement you enjoy and kindness to yourself, never about chasing a certain look. Play it before a workout, a walk, or a slow stretch."
+  },
+  "perfect_inner_circle": {
+   "subtitle": "My people. My table. My favorite ones.",
+   "summary": "A warm, sparkling daytime set about friendship. You'll hear first-person lines about genuine friends, being celebrated, and making room for people who feel like home. Play it before a night out, or on a quiet day when you miss your people."
+  },
+  "beauty_sleep_for_divas": {
+   "subtitle": "Silk sheets. Slow breath. Deep rest.",
+   "summary": "A very quiet bedtime set, spoken slowly with long pauses. The lines are about letting your body relax, your mind go quiet, and waking up rested. A calming wind-down ritual, not a sleep treatment."
+  }
+ },
+ "ritual_themes": {
+  "morning": [
+   "A fresh start",
+   "Confidence",
+   "Calm focus",
+   "Abundance",
+   "Joy and glow",
+   "Self-love",
+   "Gratitude"
+  ],
+  "night": [
+   "Letting go",
+   "Safe to rest",
+   "Proud of today",
+   "Dreaming big",
+   "Feeling loved",
+   "Peace",
+   "Ready for the week"
+  ]
+ }
+}
