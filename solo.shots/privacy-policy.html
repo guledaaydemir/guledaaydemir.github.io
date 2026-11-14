@@ -53,7 +53,7 @@
       "author": {
         "@id": "https://guledaaydemir.github.io/#person"
       },
-      "dateModified": "2026-10-28",
+      "dateModified": "2026-11-13",
       "breadcrumb": {
         "@id": "https://guledaaydemir.github.io/solo.shots/privacy-policy.html#breadcrumb"
       },
@@ -125,13 +125,14 @@
   </nav>
   <div class="doc-header">
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: <time datetime="2026-10-28">28 October 2026</time> · applies to Solo.Shots 3.0 for iPhone and iPad</p>
+    <p class="meta">Last updated: <time datetime="2026-11-13">13 November 2026</time> · applies to Solo.Shots 3.1 and later for iPhone and iPad</p>
   </div>
 
   <div class="summary">
     <h2>Privacy at a glance</h2>
     <ul>
-      <li><strong>No account and no developer servers.</strong> Solo.Shots doesn't send your photos or projects to the developer, and it contains no third-party analytics SDK.</li>
+      <li><strong>No account and no developer servers.</strong> Solo.Shots doesn't send your photos or projects to the developer.</li>
+      <li><strong>Anonymous usage statistics (from version 3.2).</strong> The App uses Google Analytics for Firebase to count which features are used. Your photos, project names and personal details are never part of it, and it doesn't use your advertising identifier (see section 9).</li>
       <li><strong>Your photos stay on your device.</strong> If you subscribe to Premium and keep <strong>iCloud Backup</strong> on, a copy is also stored in <strong>your own private iCloud</strong>, which the developer can't access.</li>
       <li><strong>Timelapse from your photos</strong> analyses your photo library <strong>on your iPhone</strong> with Apple's Vision framework. Nothing is uploaded and no face data is saved.</li>
       <li><strong>The free version shows Google AdMob ads.</strong> iOS asks whether you allow tracking; your answer decides whether ads can use your device's advertising identifier.</li>
@@ -149,7 +150,8 @@
     <ul>
       <li>We don't upload, transmit or store your photos or projects on any server we control. Solo.Shots has no developer server.</li>
       <li>We don't ask you to create an account and we don't collect your name, email address or phone number in the App.</li>
-      <li>We don't use third-party analytics SDKs (such as Firebase or Mixpanel) and we don't use cloud or generative AI services.</li>
+      <li>We don't use cloud or generative AI services.</li>
+      <li>We don't use the App's usage statistics for advertising or to track you across other apps and websites.</li>
       <li>We don't sell your data.</li>
     </ul>
   </section>
@@ -210,18 +212,31 @@
     <ul>
       <li><strong>Tracking permission:</strong> during onboarding iOS asks whether Solo.Shots may track you (App Tracking Transparency). If you allow it, AdMob may use your device's advertising identifier to personalise and measure ads. If you don't, the identifier isn't available to the App or AdMob. You can change this any time in iPhone Settings → Privacy &amp; Security → Tracking.</li>
       <li><strong>What Google may collect</strong> to serve, measure and protect ads includes approximate location (for example from your IP address), device identifiers, ad interactions, and diagnostics such as crash and performance data. See <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses information from apps that use its services</a>.</li>
-      <li><strong>App Store privacy label:</strong> because of these ads, the Solo.Shots App Store page lists <em>Data Used to Track You</em> (location, identifiers, usage data) and <em>Data Not Linked to You</em> (location, identifiers, usage data and diagnostics) for third-party advertising and analytics.</li>
+      <li><strong>App Store privacy label:</strong> because of these ads, the Solo.Shots App Store page lists <em>Data Used to Track You</em> (location, identifiers, usage data) and <em>Data Not Linked to You</em> (location, identifiers, usage data, diagnostics and purchases) for third-party advertising and analytics. The purchases entry comes from the App's own usage statistics (section 9).</li>
     </ul>
   </section>
 
   <section id="purchases">
     <h2>8. Purchases</h2>
-    <p>Premium ("Solo.Shots Premium Monthly") is sold and billed by Apple through the App Store. We never see your payment details. The App checks your subscription on the device with Apple's StoreKit; there's no developer server involved. See <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>.</p>
+    <p>Premium (a monthly or yearly subscription, or a one-time lifetime purchase) is sold and billed by Apple through the App Store. We never see your payment details. The App checks your purchase on the device with Apple's StoreKit; there's no developer server involved. See <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>.</p>
+    <p>From version 3.2, the App's usage statistics (section 9) record which plan was chosen, whether the purchase went through, and its price and currency. They don't include your Apple Account or payment details.</p>
   </section>
 
   <section id="analytics">
     <h2>9. Analytics and diagnostics</h2>
-    <p>Solo.Shots contains no third-party analytics SDK. If you choose to share analytics with app developers in iPhone Settings → Privacy &amp; Security → Analytics &amp; Improvements, Apple may give us aggregated, anonymised crash and usage reports through App Store Connect. We use them only to fix bugs and improve the App.</p>
+    <h3>Usage statistics: Google Analytics for Firebase (from version 3.2)</h3>
+    <p>Starting with Solo.Shots 3.2, the App uses <strong>Google Analytics for Firebase</strong>, provided by Google, to learn which features help people keep their photo habit, so we can decide what to improve. Versions up to 3.1 don't include it.</p>
+    <ul>
+      <li><strong>What is sent:</strong> events about how the App is used, such as screens opened, onboarding steps, whether you allowed or declined a permission, photo sessions started and finished (with their length and number of photos), which alignment tools you turn on, settings changed, timelapse exports, paywall views and purchase results. It also sends a few app-wide settings: whether you have Premium, the goal you picked during onboarding, the App language, whether iCloud Backup is on, and a rough count of your projects.</li>
+      <li><strong>What the Firebase SDK adds automatically:</strong> a random identifier for this installation of the App, your device model, iOS and App version, language, approximate location (country or region, worked out from your IP address) and basic session information such as when the App was first opened and how long it was used.</li>
+      <li><strong>What is never sent:</strong> your photos or videos, project names, file names, the content of error messages, your name, email address or Apple Account, and face or pet data.</li>
+      <li><strong>No advertising use:</strong> this build of the Firebase SDK can't read your advertising identifier (IDFA). Collection of the identifier for vendor (IDFV) is switched off, advertising signals and ad personalisation are switched off, and the data isn't linked to Google Ads. We don't use it to track you or to show you ads.</li>
+      <li><strong>Retention:</strong> event data is kept in Google Analytics for 14 months and then deleted automatically. We see reports and totals, not your photos or a profile of you.</li>
+      <li><strong>Your control:</strong> deleting the App resets the random installation identifier, so new data can't be connected to earlier data. To ask us to delete statistics, email us (section 16).</li>
+    </ul>
+    <p>Google processes this data under the <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy and security terms</a> and <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>. Where the GDPR or UK GDPR applies, we rely on our legitimate interest in understanding and improving the App, limited to the data described above.</p>
+    <h3>Apple diagnostics</h3>
+    <p>If you choose to share analytics with app developers in iPhone Settings → Privacy &amp; Security → Analytics &amp; Improvements, Apple may give us aggregated, anonymised crash and usage reports through App Store Connect. We use them only to fix bugs and improve the App.</p>
   </section>
 
   <section id="email">
@@ -242,19 +257,21 @@
       <li><strong>Delete iCloud data (Premium):</strong> see section 4.</li>
       <li><strong>Permissions:</strong> change Camera, Photos and Notifications access in iPhone Settings → Solo.Shots.</li>
       <li><strong>Ads:</strong> decline tracking, or change it in iPhone Settings → Privacy &amp; Security → Tracking. Upgrading to Premium removes ads.</li>
+      <li><strong>Usage statistics:</strong> see section 9. Deleting the App resets its random installation identifier.</li>
     </ul>
     <p>For anything else, email <a href="mailto:solostaseraofficial@gmail.com">solostaseraofficial@gmail.com</a>.</p>
   </section>
 
   <section id="security">
     <h2>13. Security and retention</h2>
-    <p>Data on your device is protected by iOS security features such as device encryption and your passcode, Face ID or Touch ID. iCloud data is protected by Apple. We keep support emails only as long as needed to help you.</p>
+    <p>Data on your device is protected by iOS security features such as device encryption and your passcode, Face ID or Touch ID. iCloud data is protected by Apple. Usage statistics are sent to Google over an encrypted connection and kept for 14 months (section 9). We keep support emails only as long as needed to help you.</p>
   </section>
 
   <section id="changes">
     <h2>14. Changes to this policy</h2>
     <p>We'll update this page when the App changes how it handles data, and change the "Last updated" date above.</p>
     <ul>
+      <li><strong>13 November 2026</strong>: Solo.Shots 3.2 adds anonymous usage statistics with Google Analytics for Firebase (section 9). We added purchases to the privacy label description, and section 8 now lists the yearly and lifetime Premium options.</li>
       <li><strong>28 October 2026</strong>: added section 15 about this website, which now counts visits with Cloudflare Web Analytics. Nothing changed in the App.</li>
       <li><strong>15 October 2026</strong>: updated for Solo.Shots 3.0: added iCloud Backup &amp; Sync (Premium), Timelapse from your photos (on-device photo-library analysis), App Tracking Transparency and the App Store privacy label; replaced the contact address with solostaseraofficial@gmail.com.</li>
       <li><strong>1 January 2026</strong>: first version.</li>
@@ -304,7 +321,7 @@
     </div>
     <div class="footer-meta">
       <span>&copy; 2026 Gül Eda Aydemir. Not affiliated with SOLOSHOT cameras.</span>
-      <span>Updated <time datetime="2026-10-28">28 October 2026</time></span>
+      <span>Updated <time datetime="2026-11-13">13 November 2026</time></span>
     </div>
   </div>
 </footer>

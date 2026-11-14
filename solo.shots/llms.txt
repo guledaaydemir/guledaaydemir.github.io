@@ -27,7 +27,7 @@ Facts checked against the shipped app (version 3.0) on 15 October 2026.
 Weekly pregnancy bump photos, baby's first year, 90-day fitness progress, beard and hair growth, plants and home projects, pets growing up, a photo a day.
 
 ## Privacy
-No account, no developer servers, no third-party analytics SDK. Photos stay on the device; with Premium iCloud Backup (on by default for subscribers, can be turned off) they are also stored in the user's own private iCloud (CloudKit private database). Library analysis runs on device and nothing is uploaded. The free version shows Google AdMob ads; App Tracking Transparency controls use of the advertising identifier. Because of these ads, the App Store privacy label lists data used to track you (location, identifiers, usage data).
+No account, no developer servers. From version 3.2 the app sends anonymous usage statistics (which features are used) to Google Analytics for Firebase; they never include photos, project names or personal details, don't use the advertising identifier and aren't used for ads. Photos stay on the device; with Premium iCloud Backup (on by default for subscribers, can be turned off) they are also stored in the user's own private iCloud (CloudKit private database). Library analysis runs on device and nothing is uploaded. The free version shows Google AdMob ads; App Tracking Transparency controls use of the advertising identifier. Because of these ads, the App Store privacy label lists data used to track you (location, identifiers, usage data).
 
 ## Guides (answer-first, by the developer; updated 15 October 2026)
 - Progress photos that line up (distance, height, tilt; how often to shoot): https://guledaaydemir.github.io/solo.shots/guides/progress-photos-that-line-up.html
