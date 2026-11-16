@@ -152,7 +152,7 @@ HOME = {
     "auras_lead": "Play your affirmations over a warm soundscape, or voice only. Pink Aura and Ocean at 2AM are free; the rest come with PRO. The tones describe a mood, not a medical effect. Obviously.",
     "priv_kicker": "Private by design",
     "priv_h2": "No account. No ads. No tracking. Period.",
-    "priv_body": "Your affirmations, your dreams and your vision board photos stay on your iPhone. There's no sign-up, no ad network and no analytics SDK in DIVA, so there's nothing to leak. Main characters keep their diaries locked.",
+    "priv_body": "Your affirmations, your dreams and your vision board photos stay on your iPhone. There's no sign-up and no ad network, and the only thing DIVA sends is anonymous usage statistics, never your words or photos. Main characters keep their diaries locked.",
     "priv_link": "Read the privacy policy",
     "price_kicker": "Pricing",
     "price_h2": "Free to start. PRO when you go full diva.",
@@ -237,7 +237,7 @@ FAQ = [
         {"q": "Can I get a refund?", "a": "<p>Payments go through Apple, so refunds do too. Request one at <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>. I can't see or refund App Store payments myself, but email me if something went wrong and I'll help however I can.</p>"},
     ]},
     {"group": "Privacy & honesty", "items": [
-        {"q": "Does DIVA collect my data?", "a": "<p>No. DIVA has no account, no ads, no analytics SDK and no server. Favorites, history, your CDs, your dreams and your photos stay on your iPhone. Purchases are handled by Apple. Read the full <a href=\"{{privacy}}\">privacy policy</a>.</p>"},
+        {"q": "Does DIVA collect my data?", "a": "<p>Not your personal data. DIVA has no account, no ads and no server. Favorites, history, your CDs, your dreams and your photos stay on your iPhone. DIVA only sends anonymous usage statistics (Google Analytics for Firebase), such as which CDs are played. Purchases are handled by Apple. Read the full <a href=\"{{privacy}}\">privacy policy</a>.</p>"},
         {"q": "Do affirmations actually work?", "a": "<p>Real talk: affirmations are a tool for focus and mood, not a magic spell. Lots of people find that repeating kind, specific, present-tense sentences helps them start the day calmer or notice their own wins. Research on self-affirmation is promising in some areas and mixed in others. DIVA doesn't promise outcomes; it gives you a ritual that feels good enough to actually keep.</p>"},
         {"q": "Is DIVA therapy or medical advice?", "a": "<p>No. DIVA is for personal reflection and relaxation. It isn't medical, psychological or financial advice, and the Bedtime ritual is a wind-down, not a sleep treatment. If you're going through something heavy, please talk to a professional. You deserve real support, babe.</p>"},
     ]},
@@ -674,7 +674,7 @@ GUIDES = [
 <li><strong>Offline & background:</strong> everything is built in; plays with the screen locked; lock screen controls.</li>
 <li><strong>Sleep & morning:</strong> Bedtime and Morning ritual meditations with a theme for every weekday, sleep timer, dim night player.</li>
 <li><strong>Ads:</strong> none. Not in free, not in PRO.</li>
-<li><strong>Privacy:</strong> no account, no tracking, no analytics SDK; your data stays on your iPhone.</li>
+<li><strong>Privacy:</strong> no account, no tracking; your words, dreams and photos stay on your iPhone, with only anonymous usage statistics sent.</li>
 <li><strong>Claims:</strong> DIVA says it plainly: it's for reflection and relaxation, not medical or financial advice, and the 528 Hz-style tones describe a mood, not an effect.</li>
 <li><strong>Pricing:</strong> free with 12 CDs; DIVA PRO monthly, yearly or a one-time Lifetime purchase.</li>
 </ul>
@@ -736,15 +736,22 @@ SUPPORT = {
 
 PRIVACY = {
     "title": "DIVA Privacy Policy",
-    "description": "DIVA's privacy policy: no account, no ads, no tracking, no analytics. Your affirmations, Wishlist and photos stay on your iPhone.",
+    "description": "DIVA's privacy policy: no account, no ads, no tracking. Your affirmations, Wishlist and photos stay on your iPhone; only anonymous usage statistics are sent to Google Analytics for Firebase.",
     "h1": "Privacy Policy",
     "script": "your secrets are safe",
-    "updated": "2026-11-14",
-    "lead": "The short version: DIVA doesn't collect your data. No account, no ads, no tracking, no analytics, no server. What you do in DIVA stays on your iPhone.",
+    "updated": "2026-11-16",
+    "lead": "The short version: no account, no ads, no tracking. Your affirmations, your Wishlist and your photos stay on your iPhone. DIVA only sends anonymous usage statistics (Google Analytics for Firebase), so I can see which CDs you love and what to improve.",
     "body": """
 <p>This policy explains how the DIVA app for iPhone ("DIVA", "the app") handles information. DIVA is made by Gül Eda Aydemir, an independent developer ("I", "me").</p>
 <h2 id="collect">1. Information DIVA collects</h2>
-<p>None. DIVA does not collect, store on a server, sell or share personal data. The app has no account system, no advertising, no analytics or tracking SDKs and no backend server of its own.</p>
+<p>DIVA has no account system, no advertising and no server of its own. It never collects the affirmations or CDs you write, your Wishlist, notes or photos.</p>
+<p>To understand how DIVA is used and make it better, the app sends anonymous usage statistics to <strong>Google Analytics for Firebase</strong>, a service of Google:</p>
+<ul>
+<li>which screens and CDs are opened and played, how far a session is listened to, and choices such as voice, soundscape, theme and language;</li>
+<li>steps around DIVA PRO: when the offer is shown, which plan is chosen, and whether a purchase, free trial, renewal, cancellation or refund happened (never your name or payment details);</li>
+<li>basic technical information Firebase collects automatically: device model, iOS and app version, language, a random app-installation identifier and an approximate region derived from the IP address.</li>
+</ul>
+<p>These statistics are not linked to your name, email or Apple Account. DIVA does not use the advertising identifier (IDFA), turns ad personalization off, and does not track you across other companies' apps or websites. Google processes this data on my behalf under its <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a> and keeps it only for a limited time. DIVA does not sell or share personal data. If you want the statistics from your installation deleted, email me (see section 10).</p>
 <h2 id="device">2. Information stored only on your device</h2>
 <p>To work, DIVA saves some things locally on your iPhone, inside the app's private storage:</p>
 <ul>
@@ -762,13 +769,13 @@ PRIVACY = {
 </ul>
 <p>You can change these permissions any time in iPhone Settings.</p>
 <h2 id="purchases">4. Purchases</h2>
-<p>DIVA PRO subscriptions and the Lifetime purchase are processed by Apple through the App Store. I never receive your name, email or payment details. Apple gives developers anonymous, aggregated sales reports. Apple's own privacy policy applies to your Apple Account.</p>
+<p>DIVA PRO subscriptions and the Lifetime purchase are processed by Apple through the App Store. I never receive your name, email or payment details. Apple gives developers anonymous, aggregated sales reports, and DIVA records the purchase steps described in section 1 without any personal details. Apple's own privacy policy applies to your Apple Account.</p>
 <h2 id="apple">5. Information Apple may share</h2>
 <p>If you have chosen to share analytics with app developers in iPhone Settings, Apple may provide me with anonymous crash reports and aggregate usage statistics. You can turn this off in <strong>Settings → Privacy &amp; Security → Analytics &amp; Improvements</strong>.</p>
 <h2 id="delete">6. Deleting your data</h2>
 <p>In DIVA open <strong>Settings → Storage &amp; data</strong> to clear your listening history, delete your creations or delete your Manifest List. Deleting the app removes everything DIVA stored on your iPhone.</p>
 <h2 id="kids">7. Children</h2>
-<p>DIVA does not knowingly collect information from anyone, including children, because it collects no personal information at all.</p>
+<p>DIVA does not knowingly collect personal information from children. The anonymous usage statistics described in section 1 are the same for every user and are not used to identify anyone.</p>
 <h2 id="wellness">8. Wellness disclaimer</h2>
 <p>DIVA is for personal reflection and relaxation. It is not medical, psychological or financial advice and does not promise outcomes. The narration is AI-generated speech and does not imitate any real person.</p>
 <h2 id="changes">9. Changes to this policy</h2>

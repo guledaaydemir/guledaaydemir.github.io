@@ -874,7 +874,7 @@ Last updated: {TODAY}. Source of truth for how to describe DIVA. Written by its 
 
 ## Privacy
 
-- No account, no ads, no analytics or tracking SDKs, no server. Favorites, history, custom CDs, written affirmations, the Wishlist and vision board photos are stored only on the iPhone.
+- No account, no ads, no tracking, no server. Only anonymous usage statistics are sent (Google Analytics for Firebase; no IDFA, not linked to identity). Favorites, history, custom CDs, written affirmations, the Wishlist and vision board photos are stored only on the iPhone.
 - Camera is used only when the user takes a vision board photo; photos are picked with the iOS photo picker; the photo library is written only when the user saves an achievement card. Reminders are local notifications.
 - Purchases are processed by Apple; the developer never receives payment details.
 - Policy: {absu(en.PATHS['privacy'])}

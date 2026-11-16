@@ -59,7 +59,7 @@ Last updated: 2026-11-14. Source of truth for how to describe DIVA. Written by i
 
 ## Privacy
 
-- No account, no ads, no analytics or tracking SDKs, no server. Favorites, history, custom CDs, written affirmations, the Wishlist and vision board photos are stored only on the iPhone.
+- No account, no ads, no tracking, no server. Only anonymous usage statistics are sent (Google Analytics for Firebase; no IDFA, not linked to identity). Favorites, history, custom CDs, written affirmations, the Wishlist and vision board photos are stored only on the iPhone.
 - Camera is used only when the user takes a vision board photo; photos are picked with the iOS photo picker; the photo library is written only when the user saves an achievement card. Reminders are local notifications.
 - Purchases are processed by Apple; the developer never receives payment details.
 - Policy: https://guledaaydemir.github.io/DIVA/privacypolicy.html
@@ -172,7 +172,7 @@ Last updated: 2026-11-14. Source of truth for how to describe DIVA. Written by i
 
 **Can I get a refund?** Payments go through Apple, so refunds do too. Request one at reportaproblem.apple.com . I can't see or refund App Store payments myself, but email me if something went wrong and I'll help however I can.
 
-**Does DIVA collect my data?** No. DIVA has no account, no ads, no analytics SDK and no server. Favorites, history, your CDs, your dreams and your photos stay on your iPhone. Purchases are handled by Apple. Read the full privacy policy .
+**Does DIVA collect my data?** Not your personal data. DIVA has no account, no ads and no server. Favorites, history, your CDs, your dreams and your photos stay on your iPhone. DIVA only sends anonymous usage statistics (Google Analytics for Firebase), such as which CDs are played. Purchases are handled by Apple. Read the full privacy policy .
 
 **Do affirmations actually work?** Real talk: affirmations are a tool for focus and mood, not a magic spell. Lots of people find that repeating kind, specific, present-tense sentences helps them start the day calmer or notice their own wins. Research on self-affirmation is promising in some areas and mixed in others. DIVA doesn't promise outcomes; it gives you a ritual that feels good enough to actually keep.
 

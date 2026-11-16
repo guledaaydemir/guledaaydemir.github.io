@@ -153,7 +153,7 @@ HOME = {
     "auras_lead": "Olumlamalarını sıcak bir ses atmosferi eşliğinde ya da yalnızca sesle dinle. Pink Aura ve Ocean at 2AM ücretsiz; gerisi PRO ile geliyor. Tonların adları bir havayı anlatır, tıbbi bir etkiyi değil. Belli ki.",
     "priv_kicker": "Tasarımı gereği gizli",
     "priv_h2": "Hesap yok. Reklam yok. Takip yok. Nokta.",
-    "priv_body": "Olumlamaların, hayallerin ve hayal panondaki fotoğrafların iPhone'unda kalır. DIVA'da kayıt yok, reklam ağı yok, analiz SDK'sı yok; yani sızacak bir şey de yok. Başrol kızlar günlüklerini kilitli tutar.",
+    "priv_body": "Olumlamaların, hayallerin ve hayal panondaki fotoğrafların iPhone'unda kalır. DIVA'da kayıt yok, reklam ağı yok; gönderilen tek şey anonim kullanım istatistikleri, asla sözlerin ya da fotoğrafların değil. Başrol kızlar günlüklerini kilitli tutar.",
     "priv_link": "Gizlilik politikasını oku",
     "price_kicker": "Fiyatlar",
     "price_h2": "Başlamak ücretsiz. Tam diva moduna geçince PRO.",
@@ -238,7 +238,7 @@ FAQ = [
         {"q": "Para iadesi alabilir miyim?", "a": "<p>Ödemeler Apple üzerinden yapılıyor, iadeler de öyle. <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a> adresinden talep edebilirsin. App Store ödemelerini ben göremiyor ve iade edemiyorum ama bir şeyler ters gittiyse bana mail at, elimden geldiğince yardım ederim.</p>"},
     ]},
     {"group": "Gizlilik ve dürüstlük", "items": [
-        {"q": "DIVA verilerimi topluyor mu?", "a": "<p>Hayır. DIVA'da hesap, reklam, analiz SDK'sı ve sunucu yok. Favorilerin, geçmişin, CD'lerin, hayallerin ve fotoğrafların iPhone'unda kalır. Satın alımları Apple yönetir. <a href=\"{{privacy}}\">Gizlilik politikasının</a> tamamını oku.</p>"},
+        {"q": "DIVA verilerimi topluyor mu?", "a": "<p>Kişisel verilerini toplamaz. DIVA'da hesap, reklam ve sunucu yok. Favorilerin, geçmişin, CD'lerin, hayallerin ve fotoğrafların iPhone'unda kalır. DIVA yalnızca hangi CD'lerin çalındığı gibi anonim kullanım istatistikleri gönderir (Google Analytics for Firebase). Satın alımları Apple yönetir. <a href=\"{{privacy}}\">Gizlilik politikasının</a> tamamını oku.</p>"},
         {"q": "Olumlamalar gerçekten işe yarıyor mu?", "a": "<p>Açık konuşalım: olumlamalar sihirli bir büyü değil, odak ve ruh hali için bir araç. Pek çok kişi nazik, net ve şimdiki zamanda kurulmuş cümleleri tekrar etmenin güne daha sakin başlamalarına ya da kendi küçük zaferlerini fark etmelerine yardımcı olduğunu görüyor. Kendini olumlama üzerine yapılan araştırmalar bazı alanlarda umut verici, bazılarında ise karışık. DIVA sonuç vaat etmiyor; sana gerçekten sürdürebileceğin kadar iyi hissettiren bir ritüel sunuyor.</p>"},
         {"q": "DIVA terapi ya da tıbbi tavsiye mi?", "a": "<p>Hayır. DIVA kişisel düşünme ve rahatlama içindir. Tıbbi, psikolojik ya da finansal tavsiye değildir; Uyku Öncesi ritüeli de bir gün kapanışıdır, uyku tedavisi değil. Ağır bir şeyler yaşıyorsan lütfen bir uzmanla konuş. Gerçek bir desteği hak ediyorsun, canım.</p>"},
     ]},
@@ -675,7 +675,7 @@ GUIDES = [
 <li><strong>İnternetsiz ve arka planda:</strong> her şey uygulamanın içinde; ekran kilitliyken çalar; kilit ekranından kontrol edilir.</li>
 <li><strong>Uyku ve sabah:</strong> haftanın her günü için ayrı bir teması olan Uyku Öncesi ve Sabah ritüel meditasyonları, uyku zamanlayıcısı, loş gece oynatıcısı.</li>
 <li><strong>Reklamlar:</strong> yok. Ne ücretsizde ne PRO'da.</li>
-<li><strong>Gizlilik:</strong> hesap yok, takip yok, analiz SDK'sı yok; verilerin iPhone'unda kalır.</li>
+<li><strong>Gizlilik:</strong> hesap yok, takip yok; sözlerin, hayallerin ve fotoğrafların iPhone'unda kalır, yalnızca anonim kullanım istatistikleri gönderilir.</li>
 <li><strong>İddialar:</strong> DIVA bunu açıkça söylüyor: kişisel düşünme ve rahatlama içindir, tıbbi ya da finansal tavsiye değildir ve 528 Hz tarzı tonlar bir etkiyi değil, bir havayı anlatır.</li>
 <li><strong>Fiyat:</strong> 12 CD ile ücretsiz; DIVA PRO aylık, yıllık ya da tek seferlik Ömür boyu satın alma olarak.</li>
 </ul>
@@ -737,15 +737,22 @@ SUPPORT = {
 
 PRIVACY = {
     "title": "DIVA Gizlilik Politikası",
-    "description": "DIVA'nın gizlilik politikası: hesap yok, reklam yok, takip yok, analiz yok. Olumlamaların, Dileklerim ve fotoğrafların iPhone'unda kalır.",
+    "description": "DIVA'nın gizlilik politikası: hesap yok, reklam yok, takip yok. Olumlamaların, Dileklerim ve fotoğrafların iPhone'unda kalır; yalnızca anonim kullanım istatistikleri Google Analytics for Firebase'e gönderilir.",
     "h1": "Gizlilik Politikası",
     "script": "sırların güvende",
-    "updated": "2026-11-14",
-    "lead": "Kısaca: DIVA verilerini toplamaz. Hesap yok, reklam yok, takip yok, analiz yok, sunucu yok. DIVA'da yaptığın her şey iPhone'unda kalır.",
+    "updated": "2026-11-16",
+    "lead": "Kısaca: hesap yok, reklam yok, takip yok. Olumlamaların, Dileklerim ve fotoğrafların iPhone'unda kalır. DIVA yalnızca anonim kullanım istatistikleri gönderir (Google Analytics for Firebase); böylece en sevdiğin CD'leri ve neyi geliştirmem gerektiğini görebilirim.",
     "body": """
 <p>Bu politika, iPhone için DIVA uygulamasının ("DIVA", "uygulama") bilgileri nasıl ele aldığını açıklar. DIVA, bağımsız bir geliştirici olan Gül Eda Aydemir ("ben") tarafından yapılmıştır.</p>
 <h2 id="collect">1. DIVA'nın topladığı bilgiler</h2>
-<p>Hiçbiri. DIVA kişisel verileri toplamaz, bir sunucuda saklamaz, satmaz ya da paylaşmaz. Uygulamanın hesap sistemi, reklamı, analiz ya da takip SDK'sı ve kendine ait bir arka uç sunucusu yoktur.</p>
+<p>DIVA'nın hesap sistemi, reklamı ve kendine ait bir sunucusu yoktur. Yazdığın olumlamaları ya da CD'leri, Dileklerim listeni, notlarını ve fotoğraflarını asla toplamaz.</p>
+<p>DIVA'nın nasıl kullanıldığını anlamak ve onu geliştirmek için uygulama, Google'ın bir hizmeti olan <strong>Google Analytics for Firebase</strong>'e anonim kullanım istatistikleri gönderir:</p>
+<ul>
+<li>hangi ekranların ve CD'lerin açılıp çalındığı, bir seansın ne kadarının dinlendiği ve ses, ses ortamı, tema ve dil gibi seçimler;</li>
+<li>DIVA PRO ile ilgili adımlar: teklifin ne zaman gösterildiği, hangi planın seçildiği ve satın alma, ücretsiz deneme, yenileme, iptal ya da iade olup olmadığı (adın ya da ödeme bilgilerin asla);</li>
+<li>Firebase'in otomatik topladığı temel teknik bilgiler: cihaz modeli, iOS ve uygulama sürümü, dil, rastgele bir uygulama kurulum kimliği ve IP adresinden çıkarılan yaklaşık bölge.</li>
+</ul>
+<p>Bu istatistikler adına, e-postana ya da Apple Hesabına bağlanmaz. DIVA reklam kimliğini (IDFA) kullanmaz, reklam kişiselleştirmesini kapatır ve seni başka şirketlerin uygulamaları ya da web siteleri arasında takip etmez. Google bu verileri benim adıma, <a href="https://firebase.google.com/support/privacy">Firebase gizlilik koşulları</a> kapsamında işler ve yalnızca sınırlı bir süre saklar. DIVA kişisel verileri satmaz ya da paylaşmaz. Kurulumuna ait istatistiklerin silinmesini istersen bana e-posta gönder (bkz. bölüm 10).</p>
 <h2 id="device">2. Yalnızca cihazında saklanan bilgiler</h2>
 <p>Çalışabilmek için DIVA bazı şeyleri iPhone'unda, uygulamanın özel depolama alanında yerel olarak kaydeder:</p>
 <ul>
@@ -763,13 +770,13 @@ PRIVACY = {
 </ul>
 <p>Bu izinleri istediğin zaman iPhone Ayarlar'ından değiştirebilirsin.</p>
 <h2 id="purchases">4. Satın alımlar</h2>
-<p>DIVA PRO abonelikleri ve Ömür boyu satın alımı, App Store üzerinden Apple tarafından işlenir. Adını, e-postanı ya da ödeme bilgilerini asla almam. Apple, geliştiricilere anonim ve toplu satış raporları verir. Apple Hesabın için Apple'ın kendi gizlilik politikası geçerlidir.</p>
+<p>DIVA PRO abonelikleri ve Ömür boyu satın alımı, App Store üzerinden Apple tarafından işlenir. Adını, e-postanı ya da ödeme bilgilerini asla almam. Apple, geliştiricilere anonim ve toplu satış raporları verir; DIVA da 1. bölümde anlatılan satın alma adımlarını hiçbir kişisel bilgi olmadan kaydeder. Apple Hesabın için Apple'ın kendi gizlilik politikası geçerlidir.</p>
 <h2 id="apple">5. Apple'ın paylaşabileceği bilgiler</h2>
 <p>iPhone Ayarlar'ında analiz verilerini uygulama geliştiricileriyle paylaşmayı seçtiysen, Apple bana anonim çökme raporları ve toplu kullanım istatistikleri sağlayabilir. Bunu <strong>Ayarlar → Gizlilik ve Güvenlik → Analiz ve Geliştirmeler</strong> bölümünden kapatabilirsin.</p>
 <h2 id="delete">6. Verilerini silmek</h2>
 <p>DIVA'da <strong>Ayarlar → Depolama ve veriler</strong> bölümünden dinleme geçmişini temizleyebilir, oluşturduklarını ya da Manifest Listeni silebilirsin. Uygulamayı silmek, DIVA'nın iPhone'unda sakladığı her şeyi kaldırır.</p>
 <h2 id="kids">7. Çocuklar</h2>
-<p>DIVA hiçbir kişisel bilgi toplamadığı için, çocuklar dahil hiç kimseden bilerek bilgi toplamaz.</p>
+<p>DIVA çocuklardan bilerek kişisel bilgi toplamaz. 1. bölümde anlatılan anonim kullanım istatistikleri her kullanıcı için aynıdır ve kimseyi tanımlamak için kullanılmaz.</p>
 <h2 id="wellness">8. Sağlık ve iyi oluş uyarısı</h2>
 <p>DIVA kişisel düşünme ve rahatlama içindir. Tıbbi, psikolojik ya da finansal tavsiye değildir ve sonuç vaat etmez. Seslendirmeler yapay zekâ ile üretilmiş konuşmadır ve gerçek bir kişiyi taklit etmez.</p>
 <h2 id="changes">9. Bu politikadaki değişiklikler</h2>
