@@ -246,7 +246,7 @@ T = {
                 ("Are there ads or in-app purchases?", "No ads and no in-app purchases. Every chair, tray, waiter and tea house is earned in the game."),
                 ("Does HANE collect any data?", "No. HANE has no account, no analytics, no tracking and no third-party SDKs. See the <a href=\"{{link:privacy}}\">privacy policy</a>."),
                 ("Will I lose my progress?", "The game saves itself on your device. Deleting the game deletes the save. Your iPhone or iPad backups (on your computer or in iCloud) include it."),
-                ("Is HANE good for short breaks?", "A game day lasts about four minutes and then waits for you, so one day fits neatly into a short break. Our guide on <a href=\"{{link:micro-breaks}}\">game breaks and productivity</a> explains how to keep a break a break."),
+                ("Is HANE good for short breaks?", "A game day lasts about four minutes and then waits for you, so one day fits neatly into a short break. Our guide on <a href=\"{{link:micro-breaks}}\">game breaks and productivity</a> explains how to keep a break a break, and our <a href=\"{{link:break-game-checklist}}\">checklist for break-friendly games</a> shows what to look for."),
             ]),
         ],
     },

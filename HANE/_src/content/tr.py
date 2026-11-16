@@ -246,7 +246,7 @@ T = {
                 ("Reklam ya da uygulama içi satın alma var mı?", "Reklam da uygulama içi satın alma da yok. Her sandalye, tepsi, garson ve hane oyunda kazanılır."),
                 ("HANE veri topluyor mu?", "Hayır. Hesap yok, analiz yok, takip yok, üçüncü taraf SDK yok. <a href=\"{{link:privacy}}\">Gizlilik politikasına</a> bak."),
                 ("İlerlememi kaybeder miyim?", "Oyun kendini cihazına kaydeder. Oyunu silmek kaydı da siler. iPhone ya da iPad yedeklerin (bilgisayarında ya da iCloud'da) kaydı da içerir."),
-                ("HANE kısa molalar için uygun mu?", "Bir oyun günü yaklaşık dört dakika sürer ve sonra seni bekler; yani bir gün kısa bir molaya tam sığar. <a href=\"{{link:micro-breaks}}\">Oyun molası ve verimlilik</a> rehberimiz molanın mola olarak kalmasını anlatıyor."),
+                ("HANE kısa molalar için uygun mu?", "Bir oyun günü yaklaşık dört dakika sürer ve sonra seni bekler; yani bir gün kısa bir molaya tam sığar. <a href=\"{{link:micro-breaks}}\">Oyun molası ve verimlilik</a> rehberimiz molanın mola olarak kalmasını anlatıyor; <a href=\"{{link:break-game-checklist}}\">mola için oyun seçme listemiz</a> de nelere bakman gerektiğini gösteriyor."),
             ]),
         ],
     },

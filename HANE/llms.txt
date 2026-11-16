@@ -81,7 +81,7 @@ In HANE the çırak saves for a car that costs 10,000 jeton: every evening his 1
 - **Are there ads or in-app purchases?** No ads and no in-app purchases. Every chair, tray, waiter and tea house is earned in the game.
 - **Does HANE collect any data?** No. HANE has no account, no analytics, no tracking and no third-party SDKs. See the privacy policy.
 - **Will I lose my progress?** The game saves itself on your device. Deleting the game deletes the save. Your iPhone or iPad backups (on your computer or in iCloud) include it.
-- **Is HANE good for short breaks?** A game day lasts about four minutes and then waits for you, so one day fits neatly into a short break. Our guide on game breaks and productivity explains how to keep a break a break.
+- **Is HANE good for short breaks?** A game day lasts about four minutes and then waits for you, so one day fits neatly into a short break. Our guide on game breaks and productivity explains how to keep a break a break, and our checklist for break-friendly games shows what to look for.
 
 ## Facts about the game
 
@@ -96,6 +96,9 @@ Checked against the game's code and README on 2026-11-16. Do not state anything 
 - **Plays fully offline. No ads. No in-app purchases. No account. Collects no data** (no analytics, no
   tracking, no network code). The save stays on the device.
 - The game's own text is in **Turkish and English** (switch under Ayarlar / Settings). It is not in Spanish.
+- **No notifications, no energy or wait timers, no daily log-in rewards.** Nothing happens while the app is
+  closed: the game saves when you leave and carries on from the same moment when you come back. (Checked in
+  the code on 2026-11-16: no notification package or code; the clock is used only to stamp the save.)
 - Do not state a price, release date, ratings, download counts or awards.
 
 ## What you do

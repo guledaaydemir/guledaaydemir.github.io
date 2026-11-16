@@ -246,7 +246,7 @@ T = {
                 ("¿Hay anuncios o compras dentro de la app?", "Ni anuncios ni compras dentro de la app. Cada silla, bandeja, camarero y casa de té se gana jugando."),
                 ("¿HANE recoge datos?", "No. Sin cuenta, sin analíticas, sin rastreo y sin SDK de terceros. Consulta la <a href=\"{{link:privacy}}\">política de privacidad</a>."),
                 ("¿Perderé mi progreso?", "El juego se guarda solo en tu dispositivo. Si borras el juego, se borra la partida. Las copias de seguridad de tu iPhone o iPad (en el ordenador o en iCloud) la incluyen."),
-                ("¿HANE sirve para pausas cortas?", "Un día de juego dura unos cuatro minutos y luego te espera, así que cabe justo en una pausa corta. Nuestra guía sobre <a href=\"{{link:micro-breaks}}\">pausas de juego y productividad</a> explica cómo hacer que la pausa siga siendo una pausa."),
+                ("¿HANE sirve para pausas cortas?", "Un día de juego dura unos cuatro minutos y luego te espera, así que cabe justo en una pausa corta. Nuestra guía sobre <a href=\"{{link:micro-breaks}}\">pausas de juego y productividad</a> explica cómo hacer que la pausa siga siendo una pausa, y nuestra <a href=\"{{link:break-game-checklist}}\">lista para elegir juegos de pausa</a> te dice en qué fijarte."),
             ]),
         ],
     },

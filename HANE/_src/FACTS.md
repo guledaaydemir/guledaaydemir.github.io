@@ -11,6 +11,9 @@ Checked against the game's code and README on 2026-11-16. Do not state anything 
 - **Plays fully offline. No ads. No in-app purchases. No account. Collects no data** (no analytics, no
   tracking, no network code). The save stays on the device.
 - The game's own text is in **Turkish and English** (switch under Ayarlar / Settings). It is not in Spanish.
+- **No notifications, no energy or wait timers, no daily log-in rewards.** Nothing happens while the app is
+  closed: the game saves when you leave and carries on from the same moment when you come back. (Checked in
+  the code on 2026-11-16: no notification package or code; the clock is used only to stamp the save.)
 - Do not state a price, release date, ratings, download counts or awards.
 
 ## What you do
