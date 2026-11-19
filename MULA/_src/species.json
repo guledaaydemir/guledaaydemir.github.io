@@ -1,0 +1,562 @@
+[
+ {
+  "id": "monstera",
+  "latin": "Monstera deliciosa",
+  "common": "Swiss cheese plant",
+  "art": "monstera",
+  "placement": "inside",
+  "light": "bright",
+  "min": 15,
+  "max": 30,
+  "water": [
+   7,
+   5,
+   10,
+   14
+  ],
+  "feed": [
+   28,
+   28,
+   0,
+   0
+  ],
+  "tips": [
+   "New leaves are on the way. Feed monthly and keep the soil lightly moist.",
+   "Bright, indirect light and a weekly soil check keep the leaves splitting.",
+   "Water less often and pause feeding until March. Keep above 15°C.",
+   "Resting. Let the top of the soil dry out and keep away from cold glass."
+  ]
+ },
+ {
+  "id": "camellia",
+  "latin": "Camellia japonica",
+  "common": "Japanese camellia",
+  "art": "camellia",
+  "placement": "balcony",
+  "light": "bright",
+  "min": 5,
+  "max": 18,
+  "water": [
+   5,
+   4,
+   5,
+   7
+  ],
+  "feed": [
+   42,
+   42,
+   0,
+   0
+  ],
+  "tips": [
+   "After flowering, feed with an acid fertilizer and trim lightly.",
+   "Keep the soil evenly moist and shade it from the midday sun.",
+   "Keep the soil evenly moist and leave the pot where it is.",
+   "In flower. Protect the buds and blooms from frost."
+  ]
+ },
+ {
+  "id": "ficus",
+  "latin": "Ficus elastica",
+  "common": "Rubber plant",
+  "art": "ficus",
+  "placement": "inside",
+  "light": "bright",
+  "min": 13,
+  "max": 29,
+  "water": [
+   8,
+   6,
+   10,
+   14
+  ],
+  "feed": [
+   28,
+   28,
+   0,
+   0
+  ],
+  "tips": [
+   "A new red sheath means a new leaf. Feed monthly.",
+   "Wipe the leaves and check the soil every week.",
+   "Water less often. It dislikes being moved now.",
+   "Keep away from draughts and let the soil dry halfway."
+  ]
+ },
+ {
+  "id": "hydrangea",
+  "latin": "Hydrangea macrophylla",
+  "common": "Bigleaf hydrangea",
+  "art": "hydrangea",
+  "placement": "balcony",
+  "light": "bright",
+  "min": -5,
+  "max": 26,
+  "water": [
+   3,
+   2,
+   5,
+   10
+  ],
+  "feed": [
+   28,
+   28,
+   0,
+   0
+  ],
+  "tips": [
+   "Buds are swelling. Start feeding and never let the pot dry out.",
+   "It drinks a lot in the heat. Check the soil every other day.",
+   "Flowers are fading. Stop feeding and water less.",
+   "Dormant and hardy. Leave the old flower heads on for protection."
+  ]
+ },
+ {
+  "id": "orchid",
+  "latin": "Phalaenopsis",
+  "common": "Moth orchid",
+  "art": "orchid",
+  "placement": "inside",
+  "light": "bright",
+  "min": 16,
+  "max": 30,
+  "water": [
+   7,
+   5,
+   7,
+   10
+  ],
+  "feed": [
+   14,
+   14,
+   14,
+   28
+  ],
+  "tips": [
+   "Water when the roots turn silver. A weak feed every two weeks.",
+   "Keep out of direct sun and mist the roots on hot days.",
+   "Cooler nights encourage a new flower spike.",
+   "Water sparingly in the morning and keep it off cold sills."
+  ]
+ },
+ {
+  "id": "pilea",
+  "latin": "Pilea peperomioides",
+  "common": "Chinese money plant",
+  "art": "pilea",
+  "placement": "inside",
+  "light": "bright",
+  "min": 12,
+  "max": 28,
+  "water": [
+   7,
+   5,
+   9,
+   12
+  ],
+  "feed": [
+   28,
+   28,
+   0,
+   0
+  ],
+  "tips": [
+   "Turn the pot every week so it grows evenly.",
+   "Check the soil often; drooping leaves ask for water.",
+   "Slow down on water and stop feeding.",
+   "Let the top third of the soil dry between drinks."
+  ]
+ },
+ {
+  "id": "sansevieria",
+  "latin": "Dracaena trifasciata",
+  "common": "Snake plant",
+  "art": null,
+  "placement": "inside",
+  "light": "low",
+  "min": 10,
+  "max": 32,
+  "water": [
+   14,
+   12,
+   21,
+   30
+  ],
+  "feed": [
+   42,
+   42,
+   0,
+   0
+  ],
+  "tips": [
+   "Water only when the soil is completely dry.",
+   "One deep drink every couple of weeks is plenty.",
+   "Water rarely as the light fades.",
+   "Almost no water. Cold and wet together are the only danger."
+  ]
+ },
+ {
+  "id": "spathiphyllum",
+  "latin": "Spathiphyllum",
+  "common": "Peace lily",
+  "art": null,
+  "placement": "inside",
+  "light": "low",
+  "min": 15,
+  "max": 29,
+  "water": [
+   5,
+   4,
+   6,
+   8
+  ],
+  "feed": [
+   28,
+   28,
+   0,
+   0
+  ],
+  "tips": [
+   "Keep the soil lightly moist and feed monthly.",
+   "It droops when thirsty and recovers quickly after a drink.",
+   "Water a little less and stop feeding.",
+   "Keep it warm and away from draughts."
+  ]
+ },
+ {
+  "id": "pothos",
+  "latin": "Epipremnum aureum",
+  "common": "Pothos",
+  "art": null,
+  "placement": "inside",
+  "light": "low",
+  "min": 12,
+  "max": 30,
+  "water": [
+   7,
+   6,
+   9,
+   12
+  ],
+  "feed": [
+   28,
+   28,
+   0,
+   0
+  ],
+  "tips": [
+   "Trim long vines to keep it full.",
+   "Check the soil weekly; it forgives a missed drink.",
+   "Water less as growth slows.",
+   "Let the soil dry between drinks."
+  ]
+ },
+ {
+  "id": "lavender",
+  "latin": "Lavandula angustifolia",
+  "common": "Lavender",
+  "art": null,
+  "placement": "outside",
+  "light": "direct",
+  "min": -10,
+  "max": 35,
+  "water": [
+   7,
+   5,
+   10,
+   21
+  ],
+  "feed": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "tips": [
+   "Trim lightly once new growth appears.",
+   "Full sun and dry feet. Water only when the soil is dry.",
+   "Cut back the spent flower stems.",
+   "Hardy, but it hates wet soil. Keep the pot draining freely."
+  ]
+ },
+ {
+  "id": "aloe",
+  "latin": "Aloe vera",
+  "common": "Aloe",
+  "art": null,
+  "placement": "inside",
+  "light": "direct",
+  "min": 8,
+  "max": 35,
+  "water": [
+   14,
+   10,
+   21,
+   30
+  ],
+  "feed": [
+   42,
+   42,
+   0,
+   0
+  ],
+  "tips": [
+   "Water deeply, then let the soil dry out fully.",
+   "A sunny sill and a drink every week or two.",
+   "Water rarely as the days shorten.",
+   "Keep almost dry until spring."
+  ]
+ },
+ {
+  "id": "rose",
+  "latin": "Rosa",
+  "common": "Rose",
+  "art": null,
+  "placement": "outside",
+  "light": "direct",
+  "min": -15,
+  "max": 32,
+  "water": [
+   4,
+   2,
+   5,
+   10
+  ],
+  "feed": [
+   21,
+   21,
+   0,
+   0
+  ],
+  "tips": [
+   "New shoots are growing. Feed every three weeks and water at the base.",
+   "Water deeply in the morning and remove spent flowers.",
+   "Stop feeding and let the last flowers form hips.",
+   "Dormant. Prune on a dry, frost-free day late in the season."
+  ]
+ },
+ {
+  "id": "tulip",
+  "latin": "Tulipa",
+  "common": "Tulip",
+  "art": null,
+  "placement": "outside",
+  "light": "direct",
+  "min": -20,
+  "max": 22,
+  "water": [
+   5,
+   10,
+   7,
+   14
+  ],
+  "feed": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "tips": [
+   "In flower. Water when the top of the soil is dry.",
+   "Let the leaves die back. The bulb is resting.",
+   "Planting time for new bulbs.",
+   "Cold is welcome; the bulb needs a chill to flower."
+  ]
+ },
+ {
+  "id": "cactus",
+  "latin": "Cactaceae",
+  "common": "Cactus",
+  "art": null,
+  "placement": "inside",
+  "light": "direct",
+  "min": 5,
+  "max": 38,
+  "water": [
+   14,
+   10,
+   21,
+   35
+  ],
+  "feed": [
+   42,
+   42,
+   0,
+   0
+  ],
+  "tips": [
+   "Water deeply, then let the soil dry out completely.",
+   "Full sun and a drink every week or two.",
+   "Water rarely as the days shorten.",
+   "Keep cool, bright and almost dry."
+  ]
+ },
+ {
+  "id": "fern",
+  "latin": "Nephrolepis exaltata",
+  "common": "Boston fern",
+  "art": null,
+  "placement": "inside",
+  "light": "bright",
+  "min": 12,
+  "max": 26,
+  "water": [
+   3,
+   3,
+   4,
+   5
+  ],
+  "feed": [
+   28,
+   28,
+   0,
+   0
+  ],
+  "tips": [
+   "Keep the soil evenly moist and the air humid.",
+   "Never let it dry out; mist on hot days.",
+   "Water a little less and trim brown fronds.",
+   "Keep away from radiators and dry air."
+  ]
+ },
+ {
+  "id": "ivy",
+  "latin": "Hedera helix",
+  "common": "English ivy",
+  "art": null,
+  "placement": "inside",
+  "light": "bright",
+  "min": 5,
+  "max": 25,
+  "water": [
+   6,
+   5,
+   7,
+   10
+  ],
+  "feed": [
+   28,
+   28,
+   0,
+   0
+  ],
+  "tips": [
+   "Pinch the tips to keep it full.",
+   "Keep it cool and out of hot sun.",
+   "Water less as growth slows.",
+   "It likes a cool room; let the top of the soil dry."
+  ]
+ },
+ {
+  "id": "begonia",
+  "latin": "Begonia",
+  "common": "Begonia",
+  "art": null,
+  "placement": "inside",
+  "light": "bright",
+  "min": 13,
+  "max": 27,
+  "water": [
+   5,
+   4,
+   6,
+   8
+  ],
+  "feed": [
+   14,
+   14,
+   0,
+   0
+  ],
+  "tips": [
+   "Water at the base and keep the leaves dry.",
+   "Bright shade and a weak feed every two weeks.",
+   "Water less and stop feeding.",
+   "Let the top of the soil dry between drinks."
+  ]
+ },
+ {
+  "id": "poinsettia",
+  "latin": "Euphorbia pulcherrima",
+  "common": "Poinsettia",
+  "art": null,
+  "placement": "inside",
+  "light": "bright",
+  "min": 13,
+  "max": 24,
+  "water": [
+   6,
+   5,
+   6,
+   5
+  ],
+  "feed": [
+   28,
+   28,
+   0,
+   0
+  ],
+  "tips": [
+   "Cut it back after the colour fades.",
+   "Growing season. Feed monthly in bright light.",
+   "Long, dark nights bring the colour back.",
+   "In colour. Keep away from draughts and cold windows."
+  ]
+ },
+ {
+  "id": "rosemary",
+  "latin": "Salvia rosmarinus",
+  "common": "Rosemary",
+  "art": null,
+  "placement": "balcony",
+  "light": "direct",
+  "min": -5,
+  "max": 35,
+  "water": [
+   7,
+   5,
+   10,
+   14
+  ],
+  "feed": [
+   42,
+   0,
+   0,
+   0
+  ],
+  "tips": [
+   "Trim lightly after flowering.",
+   "Full sun. Water only when the soil is dry.",
+   "Water less; it dislikes wet roots.",
+   "Protect from hard frost and keep on the dry side."
+  ]
+ },
+ {
+  "id": "palm",
+  "latin": "Dypsis lutescens",
+  "common": "Areca palm",
+  "art": null,
+  "placement": "inside",
+  "light": "bright",
+  "min": 15,
+  "max": 30,
+  "water": [
+   6,
+   5,
+   8,
+   10
+  ],
+  "feed": [
+   28,
+   28,
+   0,
+   0
+  ],
+  "tips": [
+   "Keep the soil lightly moist and feed monthly.",
+   "Bright, indirect light and regular water.",
+   "Water less as growth slows.",
+   "Keep warm and away from cold draughts."
+  ]
+ }
+]

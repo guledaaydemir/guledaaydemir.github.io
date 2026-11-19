@@ -1,0 +1,86 @@
+# MULA — Calm Plant & Flower Care App for iPhone (soil-check watering reminders)
+
+> MULA (App Store name “MULA: Plant Care”) is a calm, paper-textured plant and flower care app for iPhone (iOS 17+) and iPad (iPadOS 17+), also on Apple silicon Macs, with an Apple Watch app (watchOS 10+), Home and Lock Screen widgets and Siri, made by independent developer Gül Eda Aydemir. Instead of telling you to water on a fixed day, it asks how the soil feels (“Dry” logs a watering, “A little moist” asks again in 2 days, “Wet” skips the round). Every plant has a four-season care plan (water and feeding intervals, feeding pauses in the resting season, Southern hemisphere switch). It knows 20 plants (monstera, camellia, rubber plant, hydrangea, moth orchid, Chinese money plant, snake plant, peace lily, pothos, lavender, aloe, rose, tulip, cactus, Boston fern, English ivy, begonia, poinsettia, rosemary, areca palm) and any other plant with a general plan. Also: Emergency Care for very late checks, on-device photo identification of plant kinds, a photo journal with cut-paper plant portraits and posters, calm reminder sounds and garden music, Light Paper and Dark Forest themes. MULA Premium (Annual with a 1-week free trial, or Lifetime) adds unlimited plants (free: 10), plan editing, Vacation mode with a care sheet for plant sitters, a camera light meter (lux estimate), frost and heat alerts from Apple Weather for balcony plants, and answer buttons on larger widgets and Apple Watch. No ads, no account, no tracking; the garden stays on the iPhone and in the user's own iCloud (backup, sync across devices, optional shared garden), with only anonymous usage statistics sent (Google Analytics for Firebase, can be turned off). App interface in English; website in English, Turkish and Spanish.
+
+- App Store: https://apps.apple.com/app/id6836519863
+- Website (EN): https://guledaaydemir.github.io/MULA/
+- Türkçe: https://guledaaydemir.github.io/MULA/tr/
+- Español: https://guledaaydemir.github.io/MULA/es/
+- Full text of the guides: https://guledaaydemir.github.io/MULA/llms-full.txt
+- Developer contact: solostaseraofficial@gmail.com
+
+## Pages
+
+- Launch page: [EN](https://guledaaydemir.github.io/MULA/) | [TR](https://guledaaydemir.github.io/MULA/tr/) | [ES](https://guledaaydemir.github.io/MULA/es/)
+- Why we made MULA: [EN](https://guledaaydemir.github.io/MULA/about/) | [TR](https://guledaaydemir.github.io/MULA/tr/hakkinda/) | [ES](https://guledaaydemir.github.io/MULA/es/acerca-de/)
+- Guides: [EN](https://guledaaydemir.github.io/MULA/guides/) | [TR](https://guledaaydemir.github.io/MULA/tr/rehber/) | [ES](https://guledaaydemir.github.io/MULA/es/guias/)
+- FAQ: [EN](https://guledaaydemir.github.io/MULA/faq/) | [TR](https://guledaaydemir.github.io/MULA/tr/sss/) | [ES](https://guledaaydemir.github.io/MULA/es/preguntas-frecuentes/)
+- Support: [EN](https://guledaaydemir.github.io/MULA/support/) | [TR](https://guledaaydemir.github.io/MULA/tr/destek/) | [ES](https://guledaaydemir.github.io/MULA/es/soporte/)
+- Privacy policy: [EN](https://guledaaydemir.github.io/MULA/privacy/) | [TR](https://guledaaydemir.github.io/MULA/tr/gizlilik/) | [ES](https://guledaaydemir.github.io/MULA/es/privacidad/)
+- Terms of use: [EN](https://guledaaydemir.github.io/MULA/terms/) | [TR](https://guledaaydemir.github.io/MULA/tr/kosullar/) | [ES](https://guledaaydemir.github.io/MULA/es/terminos/)
+
+## Guides (with short answers)
+
+### MULA quick-start guide: add your first plants, answer soil checks and set gentle reminders
+[EN](https://guledaaydemir.github.io/MULA/guides/mula-quick-start-guide/) | [TR](https://guledaaydemir.github.io/MULA/tr/rehber/mula-baslangic-rehberi/) | [ES](https://guledaaydemir.github.io/MULA/es/guias/guia-rapida-mula/)
+
+To start with MULA, add a plant with a nickname, an optional species (or the “General care plan”), where it lives and how much light it gets, then allow notifications. When a plant’s interval is up, MULA asks how the soil feels instead of ordering a watering, and it only logs one when you answer “Dry”. The basics are free for up to 10 plants; MULA Premium adds unlimited plants and extras such as plan editing, the light meter and Vacation mode.
+
+### How often should you water houseplants? When the soil says so
+[EN](https://guledaaydemir.github.io/MULA/guides/how-often-to-water-houseplants/) | [TR](https://guledaaydemir.github.io/MULA/tr/rehber/bitki-ne-siklikla-sulanir/) | [ES](https://guledaaydemir.github.io/MULA/es/guias/cada-cuanto-regar-plantas-de-interior/)
+
+There is no single right number of days. Water a houseplant when the top 2–5 cm of potting mix feels dry and the pot feels light, then water thoroughly until it drains and empty the saucer. How long that takes depends on the plant, the pot, the light and the season, which is why watering on a fixed day so often leads to overwatering.
+
+### Overwatering vs underwatering: how to tell the signs apart and help your plant
+[EN](https://guledaaydemir.github.io/MULA/guides/overwatering-vs-underwatering-signs/) | [TR](https://guledaaydemir.github.io/MULA/tr/rehber/fazla-sulama-ve-az-sulama-belirtileri/) | [ES](https://guledaaydemir.github.io/MULA/es/guias/exceso-de-riego-vs-falta-de-riego/)
+
+Check the soil first. An overwatered plant usually sits in soggy soil, with yellowing lower leaves and wilting that does not improve after watering; its roots may be brown, soft and smell bad. An underwatered plant has dry, light soil that may pull away from the pot, crisp brown leaf edges, and drooping that recovers soon after a thorough watering.
+
+### How should houseplant care change with the seasons?
+[EN](https://guledaaydemir.github.io/MULA/guides/seasonal-houseplant-care-calendar/) | [TR](https://guledaaydemir.github.io/MULA/tr/rehber/mevsimlere-gore-bitki-bakimi/) | [ES](https://guledaaydemir.github.io/MULA/es/guias/cuidado-de-plantas-por-estacion/)
+
+Most houseplants grow when days are long and bright and slow down when they are short and dark, so care follows the light: in spring and summer, water more often, feed regularly and repot if needed; in autumn and winter, water less, feed little or not at all, and keep plants away from cold glass and radiators. Some plants, such as camellias, poinsettias and many orchids, keep their own calendar. MULA gives every plant a four-season plan, and with “Follow the seasons automatically” on, its reminders shift when the season changes.
+
+### How much light does my houseplant need? Low light, bright indirect light and direct sun, explained
+[EN](https://guledaaydemir.github.io/MULA/guides/how-much-light-do-houseplants-need/) | [TR](https://guledaaydemir.github.io/MULA/tr/rehber/bitkiler-ne-kadar-isik-ister/) | [ES](https://guledaaydemir.github.io/MULA/es/guias/cuanta-luz-necesitan-las-plantas/)
+
+Many leafy houseplants do best in bright, indirect light: near a window with a wide view of the sky, but out of strong sun on the leaves. As a rough guide from extension services, low light is under about 1,000 lux (100 foot-candles), bright indirect light about 1,000 to 5,000 lux, high light up to about 10,000 lux and direct sun above that, though sources draw the lines differently. Stretched, leaning growth usually means too little light; pale, scorched patches usually mean too much.
+
+### How do you protect balcony plants from frost and heat waves?
+[EN](https://guledaaydemir.github.io/MULA/guides/protect-balcony-plants-from-frost-and-heat/) | [TR](https://guledaaydemir.github.io/MULA/tr/rehber/balkon-bitkilerini-dondan-ve-sicaktan-koruma/) | [ES](https://guledaaydemir.github.io/MULA/es/guias/proteger-plantas-del-balcon-de-heladas-y-calor/)
+
+Potted plants feel frost and heat sooner than plants in the ground, because their roots are more exposed. Before a frosty night, group pots against a sheltered house wall, wrap the pots, cover tender plants with fleece or bring them under cover, and avoid watering; in a heat wave, water early, shade pots from the midday sun, mulch the compost and keep dark or metal pots out of full sun. MULA’s Premium Weather alerts compare the Apple Weather forecast with each balcony or outdoor plant’s temperature range and warn you at 18:00 the evening before a cold night, or at 08:00 on the morning of a hot day.
+
+### How to keep your houseplants alive while you’re on vacation
+[EN](https://guledaaydemir.github.io/MULA/guides/keep-plants-alive-on-vacation/) | [TR](https://guledaaydemir.github.io/MULA/tr/rehber/tatildeyken-bitkiler-nasil-sulanir/) | [ES](https://guledaaydemir.github.io/MULA/es/guias/como-cuidar-plantas-en-vacaciones/)
+
+For a weekend, most houseplants need nothing more than a soil check and a thorough watering for the ones that are dry. For one to two weeks, also move plants back from hot, sunny windows, group them and give the thirstiest a water reserve, such as a wick or capillary matting. For longer trips, the most reliable plan is a neighbour or friend who checks the soil and waters only what is dry.
+
+### Answer plant watering reminders without opening the app: notifications, widgets, Apple Watch and Siri
+[EN](https://guledaaydemir.github.io/MULA/guides/plant-watering-reminder-widget-apple-watch-siri/) | [TR](https://guledaaydemir.github.io/MULA/tr/rehber/bitki-sulama-hatirlatici-widget-apple-watch-siri/) | [ES](https://guledaaydemir.github.io/MULA/es/guias/recordatorio-riego-widget-apple-watch-siri/)
+
+In MULA you can answer a plant’s soil check without opening the app: tap “Dry · I watered it”, “A little moist” or “Wet” on the notification, use a widget, glance at your Apple Watch or ask Siri, for example “Soil check for Momo in MULA”. Notification buttons, the small and Lock Screen widgets, the Apple Watch list and Siri are free; answer buttons on the medium and large widgets and on Apple Watch come with MULA Premium. Wherever you answer, a watering is only logged when you say the soil was dry.
+
+### How to choose a plant care app for iPhone: a calm checklist
+[EN](https://guledaaydemir.github.io/MULA/guides/plant-care-app-iphone-no-ads/) | [TR](https://guledaaydemir.github.io/MULA/tr/rehber/reklamsiz-bitki-bakim-uygulamasi-iphone/) | [ES](https://guledaaydemir.github.io/MULA/es/guias/app-cuidado-plantas-iphone-sin-anuncios/)
+
+Look for a plant care app that asks you to check the soil before it logs a watering, follows the seasons, shows no ads, needs no account, keeps your data on your iPhone and lets you answer reminders from a widget or your watch. MULA was made around those ideas and is free for up to 10 plants. It runs only on Apple devices (iPhone, iPad, Apple silicon Mac and Apple Watch), its interface is in English, it recognises plant kinds rather than exact species, and it cannot diagnose pests or diseases.
+
+## Frequently asked
+
+- **What is MULA?** MULA is a calm plant and flower care app for iPhone and iPad, with an Apple Watch app, widgets and Siri. It reminds you to check the soil instead of telling you to water on a fixed day, follows the seasons for each plant and keeps a photo journal. No ads, no account.
+- **Is MULA free?** Yes. MULA is free to download and the free version keeps up to 10 plants with all reminders, soil checks and seasonal plans. MULA Premium (Annual with a 1-week free trial, or Lifetime) adds unlimited plants, plan editing, Vacation mode, the light meter, frost and heat alerts and more.
+- **How does MULA know when to water?** It doesn’t guess. Each plant has a soil-check interval for the current season. When it is up, MULA asks how the soil feels: Dry logs a watering, A little moist asks again in 2 days, Wet skips the round.
+- **Can MULA identify my plant?** It can suggest the kind of plant from a photo, on your iPhone: orchid, rose, tulip, cactus, fern and about 20 kinds in total. It does not identify exact species or diagnose diseases, and it says so when it isn’t sure.
+- **Does MULA need an account or the internet?** No account. MULA works offline. When you are online it backs up and syncs your garden through your own iCloud, sends anonymous usage statistics, and, if you turn them on, asks Apple Weather for frost and heat alerts.
+- **Which devices does MULA work on?** iPhone with iOS 17 or later, iPad with iPadOS 17 or later, Macs with Apple silicon (as the iPad app), and Apple Watch with watchOS 10 or later. With Sync with iCloud, they all show the same garden.
+- **Is the app in Turkish or Spanish?** The app’s interface is in English for now. This website is in English, Turkish and Spanish.
+
+## Key facts
+
+- Platforms: iPhone (iOS 17 or later), iPad (iPadOS 17 or later), Macs with Apple silicon (the iPad app, “Designed for iPad”) and Apple Watch (watchOS 10 or later). The same garden on every device with Sync with iCloud. The light meter needs a back camera, so not on Mac. No Android or web version.
+- Price: free to download; optional MULA Premium, Annual with a 1-week free trial or Lifetime (one purchase). Prices are shown in the App Store.
+- Free version: up to 10 plants and 5 photos per plant, all reminders and soil checks, seasonal plans (view), temperature check, photo identification, small and Lock Screen widgets, Apple Watch list, Siri.
+- Privacy: no ads, no account, no tracking, no MULA server; plants, photos and notes stay on the iPhone and in the person's own iCloud (iCloud backup and Sync with iCloud, both on by default and free; sharing a garden with others is Premium). Only anonymous usage statistics are sent (Google Analytics for Firebase; no advertising ID, never plant names, notes or photos; opt-out in Settings → Your garden → Share anonymous usage). Weather alerts send only a location rounded to about 1 km to Apple Weather.
+- Not professional horticultural advice: plans are starting points; MULA does not diagnose pests or diseases; photo identification names plant kinds, not exact species.
+- Developer: Gül Eda Aydemir (independent iOS developer), also makes Solo.Shots and Solora.

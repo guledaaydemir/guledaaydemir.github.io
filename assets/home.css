@@ -110,6 +110,7 @@
 .panel[data-app="shots"]  { --glow: radial-gradient(closest-side, #00e5ff, #0071e3 70%, transparent); }
 .panel[data-app="solora"] { --glow: radial-gradient(closest-side, #7c3aed, #4f46e5 70%, transparent); }
 .panel[data-app="shoots"] { --glow: radial-gradient(closest-side, #fdfd03, #ff851a 70%, transparent); }
+.panel[data-app="diva"]   { --glow: radial-gradient(closest-side, #ff5fb8, #b4237a 70%, transparent); }
 
 /* Guides strip */
 .h-guides { padding: 56px 0 72px; }

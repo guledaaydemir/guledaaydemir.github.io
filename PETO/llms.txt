@@ -1,0 +1,325 @@
+# PETO — Retro Pet Care Routine & Reminder App (iPhone, iPad, Apple Watch)
+
+> PETO is a retro pixel-game pet-care routine app for iPhone, iPad and Apple Watch by independent developer Gül Eda Aydemir. It reminds you about feeding, walks, playtime, cuddles, medication and vet visits (with Fed ✓ / Snooze / Skip actions on the notification), logs care with one tap, keeps a health record with vaccine booster reminders and a weight chart, tracks a cat's litter box, water and toilet habits, schedules aquarium cleaning every N days, can play your own pet's bark or meow as the reminder sound, offers a gentle memorial mode when a pet dies, dresses pets in seasonal pixel outfits, makes a pet-sitter care card and a yearly PETO Wrapped, tracks dog walks on Apple Watch, and (Premium) shares one household over iCloud so families see who fed the pet. 13 species, 104 pixel avatars. Built for iPhone, iPad and Mac. Free to download; optional Premium monthly, yearly or lifetime (one purchase covers iPhone, iPad and Mac). No ads, no account, no tracking; pet data stays on the device; anonymous usage statistics can be turned off in Settings. App in 13 languages (including English, Turkish and Spanish); website in English, Turkish and Spanish.
+
+- App Store: https://apps.apple.com/app/id6836239120
+- Website (EN): https://guledaaydemir.github.io/PETO/
+- Türkçe: https://guledaaydemir.github.io/PETO/tr/
+- Español: https://guledaaydemir.github.io/PETO/es/
+- Full text of the guides: https://guledaaydemir.github.io/PETO/llms-full.txt
+- Developer contact: solostaseraofficial@gmail.com
+
+## Pages
+
+- Launch page: [EN](https://guledaaydemir.github.io/PETO/) | [TR](https://guledaaydemir.github.io/PETO/tr/) | [ES](https://guledaaydemir.github.io/PETO/es/)
+- Why we made PETO: [EN](https://guledaaydemir.github.io/PETO/about/) | [TR](https://guledaaydemir.github.io/PETO/tr/hakkinda/) | [ES](https://guledaaydemir.github.io/PETO/es/acerca-de/)
+- Guides: [EN](https://guledaaydemir.github.io/PETO/guides/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/)
+- FAQ: [EN](https://guledaaydemir.github.io/PETO/faq/) | [TR](https://guledaaydemir.github.io/PETO/tr/sss/) | [ES](https://guledaaydemir.github.io/PETO/es/preguntas-frecuentes/)
+- Support: [EN](https://guledaaydemir.github.io/PETO/support/) | [TR](https://guledaaydemir.github.io/PETO/tr/destek/) | [ES](https://guledaaydemir.github.io/PETO/es/soporte/)
+- Privacy policy: [EN](https://guledaaydemir.github.io/PETO/privacy/) | [TR](https://guledaaydemir.github.io/PETO/tr/gizlilik/) | [ES](https://guledaaydemir.github.io/PETO/es/privacidad/)
+- Terms of use: [EN](https://guledaaydemir.github.io/PETO/terms/) | [TR](https://guledaaydemir.github.io/PETO/tr/kosullar/) | [ES](https://guledaaydemir.github.io/PETO/es/terminos/)
+
+## Guides (with short answers)
+
+### PETO quick-start guide: add your pets, set reminders and log care in five minutes
+[EN](https://guledaaydemir.github.io/PETO/guides/peto-quick-start-guide/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/peto-baslangic-rehberi/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/guia-rapida-peto/)
+
+To start with PETO, add your pets, keep or adjust the routines it suggests for each species, and set the times, repeat days and “Remind me” offset for each routine. PETO then schedules local reminders on your iPhone, and one tap on FEED, WALK, PLAY or CUDDLE (or on the notification itself) logs the care. Core reminders and logging are free; optional PETO Premium (monthly, yearly or lifetime) adds extras such as the medication routine, trends and a vet PDF report.
+
+### How to build a daily pet care routine that sticks
+[EN](https://guledaaydemir.github.io/PETO/guides/daily-pet-care-routine/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/evcil-hayvan-gunluk-bakim-rutini/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/rutina-diaria-cuidado-mascotas/)
+
+A daily pet care routine sticks when each job is tied to a fixed time you already keep, such as breakfast or getting home from work, and written down where everyone can see it. Set regular feeding times and portions (follow your vet and the food label), add walks or play and a little cuddle time, use gentle reminders and look back at each week to adjust. PETO, a free iPhone app with optional Premium, turns each job into a routine with times, reminders and one-tap logging.
+
+### Who fed the dog? How to share pet care with family or flatmates
+[EN](https://guledaaydemir.github.io/PETO/guides/share-pet-care-with-family/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/evcil-hayvan-bakimini-aileyle-paylasma/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/compartir-cuidado-de-mascota-en-familia/)
+
+To share pet care without double meals or missed walks, agree on one shared plan, give every job a named owner, and log each job the moment it’s done where everyone can see it. In PETO, Family sharing (Premium to create, free to join) keeps one household in sync over each person’s own iCloud and sends notifications like “Eda fed Buddy — already done”, so nobody feeds the pet twice.
+
+### How to keep your pet’s vaccines, weight and vet visits in one place
+[EN](https://guledaaydemir.github.io/PETO/guides/pet-vaccine-and-health-record/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/evcil-hayvan-asi-takibi-ve-saglik-karnesi/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/cartilla-de-vacunas-y-salud-de-tu-mascota/)
+
+A pet health record should hold vaccines and preventives with the date given and the next due date, weight over time, current medication, vet visits and notes, plus the microchip number and any allergies. Keep it in one place, set booster reminders using the dates your vet gives you, and bring it to every appointment. In PETO the health record is free (vaccines with booster reminders, a weight chart, vet visits and appointments); the A4 vet PDF report and the medication routine are Premium.
+
+### Pet sitter checklist: everything to leave before you travel
+[EN](https://guledaaydemir.github.io/PETO/guides/pet-sitter-checklist/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/evcil-hayvan-bakicisi-kontrol-listesi/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/lista-para-cuidador-de-mascotas/)
+
+Leave your pet sitter one clear page with feeding times and amounts, walk times, any medication written exactly as your vet prescribed, your phone number and a backup contact, your vet and the nearest emergency clinic, the microchip number, house notes and what normal looks like for your pet. Go through it together before you leave and tell your vet who is caring for your pet. PETO's free pet-sitter care card puts your pet's routines, times, notes and a phone number on one page, as a PDF or an image.
+
+### How to track dog walks with Apple Watch (and make the daily walk a habit)
+[EN](https://guledaaydemir.github.io/PETO/guides/track-dog-walks-apple-watch/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/apple-watch-ile-kopek-yuruyusu-takibi/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/registrar-paseos-perro-apple-watch/)
+
+With PETO on Apple Watch (watchOS 10 or later) you can log a dog walk with one tap, or track it as a HealthKit walking workout that records time, distance and steps. The walk is saved to Apple Health only if you allow it; without Health access, PETO still times the walk and logs it for your dog. Walk reminders reach your wrist with their buttons, and a watch-face complication shows the pet that needs you most.
+
+### How to choose a pet-care reminder app for iPhone: an 8-point checklist
+[EN](https://guledaaydemir.github.io/PETO/guides/best-pet-care-reminder-app-iphone/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/en-iyi-evcil-hayvan-bakim-uygulamasi/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/mejor-app-cuidado-mascotas-iphone/)
+
+A good pet-care reminder app for iPhone delivers reminders reliably, even offline, logs care with one tap, handles several pets and species, lets a family share care without double feeding, keeps a health record with vet reminders, respects your privacy, works with Apple Watch and Siri, and is priced fairly. PETO answers these points with on-device reminders, one-tap logging, 13 species, iCloud family sharing and no account, ads or tracking. Its core reminders and logging are free; optional Premium (monthly, yearly or lifetime) covers extras such as the medication routine, the vet PDF and creating a shared household.
+
+### How to track your cat’s litter box, water and toilet habits (and why vets care)
+[EN](https://guledaaydemir.github.io/PETO/guides/cat-litter-box-water-tracking/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/kedi-kum-kabi-ve-su-takibi/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/registro-arenero-y-agua-del-gato/)
+
+To track your cat’s litter box, note each day how many pee clumps there are and roughly how big, what the stool looks like, any straining, blood or accidents outside the box, and how much water your cat drinks. After a week or two you know your own cat’s normal, so changes stand out: contact your vet about any change in peeing habits, and treat a cat (especially a male) straining with little or no urine as an emergency that needs a vet right away. In PETO, cat care is free: litter cleaning reminders, water in ml, a toilet log and a “Litter & water” card with today’s numbers and a 7-day average.
+
+### How often should you clean a fish tank, and how do you never forget it?
+[EN](https://guledaaydemir.github.io/PETO/guides/fish-tank-cleaning-schedule-reminder/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/akvaryum-temizligi-ne-siklikla/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/cada-cuanto-limpiar-el-acuario/)
+
+Most fish and turtle care guides recommend regular partial water changes, often weekly, plus rinsing the filter media lightly in old tank water rather than under the tap, so the helpful bacteria survive. The right interval for your tank depends on its size, how many animals live in it, how much you feed and the filter, so ask your aquarium shop or vet and then keep to it. PETO’s free aquarium care turns that interval into an “every N days” reminder (2 to 60 days) counted from the day you actually cleaned, and logs the % of water changed and whether the filter was cleaned.
+
+### How to make your pet's bark or meow your iPhone reminder sound
+[EN](https://guledaaydemir.github.io/PETO/guides/pet-voice-notification-sound/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/evcil-hayvanin-sesiyle-hatirlatici/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/recordatorios-con-la-voz-de-tu-mascota/)
+
+In PETO, open Settings → Notifications → “Pet voices”, check that “Reminders in my pet's voice” is on and tap “Record” next to your pet to capture up to 8 seconds of its bark, meow or chirp. PETO trims the silence and evens out the loudness, and from then on that pet's reminders, follow-ups and nudges play its own voice instead of the default sound. Tap “Test” to get a real reminder in about 3 seconds; the feature is free and the recording stays on your device.
+
+### When your pet dies: what to do with the reminders, the records and the memories
+[EN](https://guledaaydemir.github.io/PETO/guides/when-your-pet-dies-memorial-mode/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/evcil-hayvanini-kaybettiginde-anma-modu/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/cuando-muere-tu-mascota-modo-memorial/)
+
+When your pet dies, you don’t have to delete the app or any of their records; the one thing worth doing soon is stopping the reminders. In PETO, memorial mode (free, never behind Premium) quietly stops every reminder, nudge, Live Activity and Apple Watch entry for that pet, keeps all logs, photos and the health record, and turns the pet’s page into a simple memorial you can share. It’s under Edit Pet → Memorial mode → “Create memorial”, and you can leave it at any time.
+
+### Halloween, New Year and Bayram outfits for your pixel pet (and how it comes alive)
+[EN](https://guledaaydemir.github.io/PETO/guides/pet-halloween-new-year-bayram-outfits/) | [TR](https://guledaaydemir.github.io/PETO/tr/rehber/evcil-hayvan-bayram-yilbasi-cadilar-bayrami-kiyafetleri/) | [ES](https://guledaaydemir.github.io/PETO/es/guias/disfraces-de-mascota-halloween-ano-nuevo/)
+
+PETO, a pet-care routine app for iPhone and iPad, has pixel outfits for your pet's avatar: a witch hat or pumpkin cap for Halloween, a Santa hat, reindeer antlers or party hat for New Year, and a fez, crescent tiara or tulip crown for Bayram (the Turkish name for Eid). Anyone can try them on for free; keeping one on your pet is Premium. The pixel pet is also “alive” for free: press and hold to pet it, and it sleeps in a nightcap at night, yawns awake in the morning and walks around on muddy paws after a walk.
+
+## Frequently asked
+
+- **What is PETO?** PETO is a pet-care routine app for iPhone, iPad, Mac and Apple Watch with a retro pixel-game look. It reminds you about feeding, walks, playtime, cuddles, medication and vet visits, logs care with one tap and keeps a health record for every pet.
+- **Who makes PETO?** PETO is made by Gül Eda Aydemir, an independent iOS developer. You can write to solostaseraofficial@gmail.com.
+- **Which devices does PETO run on?** iPhone and iPad with iOS 17 or later, Mac with macOS 14 or later, and Apple Watch with watchOS 10 or later. One Premium purchase unlocks it on iPhone, iPad and Mac with the same Apple ID.
+- **Which languages is PETO in?** The app is in 13 languages: English (US and UK), Turkish, Spanish (Spain and Mexico), Brazilian Portuguese, French, German, Italian, Japanese, Korean, Arabic and Russian. Switch under Settings and it changes instantly. This website is in English, Turkish and Spanish.
+- **Which pets can I add?** Dogs, cats, rabbits, guinea pigs, hamsters, ferrets, hedgehogs, birds, fish, turtles, lizards, snakes and other pets such as rats or hermit crabs. Each species has eight pixel avatars.
+- **Can I add more than one pet?** Yes. Every pet has its own routines, logs, appointments and health record, and Home sorts your pets by who needs something next.
+- **How do reminders work?** Each routine has times, a repeat rule and a "Remind me" setting (at the time, 10 or 30 minutes before). iOS delivers the reminders locally, even when PETO is closed. From the notification you can tap Fed ✓, Snooze 15 min or Skip.
+- **I'm not getting reminders. What should I check?** Make sure notifications are allowed for PETO (Settings → Notification settings shows "Allowed"), that the master switch and the care type are on, and that "Reminders for this routine" is on in the routine. Then open PETO once so it rebuilds the schedule.
+- **Reminders came at the wrong time after travelling.** Routines follow your device's local clock. After a time-zone change, open PETO once and the reminders are rebuilt.
+- **Do I have to log everything?** No. Logging is optional and reminders work without it. Logs add history, status labels and weekly insights, and logging something cancels its reminder.
+- **What do labels like "Getting hungry" mean?** They are friendly labels based only on your schedule and your logs. PETO doesn't know how your pet feels; it is a reminder, not a health check.
+- **I logged something by mistake.** Open the pet's History (or tap the row in the Calendar), choose the log and edit or delete it.
+- **How does family sharing work?** With PETO Premium you create a household and invite people. Pets, routines, logs and health records sync through each person's own iCloud, so everyone sees who fed, walked or played. Invitees join free.
+- **Does everyone in the family need Premium?** No. Only the person who creates the household needs Premium; people who join by opening the invitation link don't.
+- **What is the pet-sitter care card?** A free one-page PDF or image with your pet's routines, times, notes and a phone number, to give to a sitter, neighbour or family member.
+- **What is PETO Wrapped?** A free set of yearly 9:16 story cards about your year with your pets, such as walks taken, park visits and minutes of play, ready to share.
+- **Does PETO have special features for cats?** Yes, free: litter cleaning reminders, water drunk in ml and a toilet log (pee, poop, stool and warning signs such as straining or blood). A Litter & water card shows today's numbers and a 7-day average and suggests a vet visit when warning signs are logged. See the cat litter and water guide .
+- **Can PETO remind me to clean the fish tank?** Yes. Aquarium care is free for fish and turtles: set tank cleaning every N days, log the % of water changed and whether you cleaned the filter, and the next reminder counts from the day you actually did it. See the aquarium cleaning guide .
+- **Can reminders use my pet's own voice?** Yes. In Settings → Notifications → Pet voices, record up to 8 seconds of your pet's bark, meow or chirp, and that pet's reminders play it as the sound. The recording stays on your device. See the pet voice guide .
+- **What happens in memorial mode?** When a pet passes away, Edit Pet → Memorial mode stops every reminder, nudge and watch entry for that pet quietly, keeps all logs, photos and the health record, and turns the pet's page into a simple memorial you can share. It is free and you can leave it at any time. See the memorial mode guide .
+- **Can I dress up my pet in PETO?** Yes. Seasonal pixel outfits for Halloween, New Year and Bayram fit every pet avatar. Anyone can try them on; keeping one on a pet is part of Premium. See the seasonal outfits guide .
+- **What does the Apple Watch app do?** It lists your pets by urgency, logs Feed, Walk, Play, Cuddle or Meds with one tap, shows complications for the most urgent pet and tracks walks as walking workouts with time, distance and steps.
+- **Does PETO use Apple Health?** Only on Apple Watch walks, and only if you allow it: PETO reads steps and distance during a walk and saves the walk as a workout. Without Health access the walk is still timed and logged.
+- **Can I use Siri?** Yes. Say "I fed Buddy in PETO", "How is Buddy?" or "Open Buddy". On iOS 18 or later you can also add a "Log care" control to Control Center, the Lock Screen or the Action Button.
+- **What is the Live Activity?** A playtime countdown and play timer on the Lock Screen and in the Dynamic Island, with a Done ✓ button.
+- **Why does my pet wag or purr when I hold it?** Your pixel pet is alive in PETO: press and hold it to pet it and you feel a wag, purr, flutter or nuzzle (on Apple Watch too). It sleeps in a nightcap at night and gets muddy paws after a walk. Reduce Motion keeps it still.
+- **What does Premium include?** Family sharing, the medication routine, the A4 vet PDF report, photo → pixel avatars, seasonal outfits, trends and week-over-week comparisons, the Honey, Berry and Blossom themes, extra avatar variants, seven app icons and history export.
+- **Monthly, yearly or lifetime?** Monthly and yearly renew automatically until you cancel in your Apple ID subscriptions. Lifetime is a one-time purchase that never renews. Every plan works on iPhone, iPad and Mac. Prices are shown in the App Store.
+- **I bought Premium but it still shows locked.** Go to Settings → Premium → Restore Purchases while online, signed in with the Apple ID you used to buy.
+- **How do I cancel a subscription?** Subscriptions are managed by Apple: open Settings on your iPhone → your name → Subscriptions → PETO, and cancel at least 24 hours before the renewal date.
+- **Where is my data stored?** Your pets' data is stored on your device. If you turn on family sharing, it also syncs through your own iCloud with the people you invite. There is no PETO account and no PETO server.
+- **Does PETO have ads or tracking?** No ads and no tracking across apps or websites, and your data is never sold. PETO counts anonymous usage statistics (Google Analytics for Firebase), such as which screens and features are used, that never include pet names, notes, photos or health records. Turn them off in Settings → Data → Share anonymous usage stats.
+- **How do I delete my data?** Use Settings → Reset all data, or delete the app. Both remove everything PETO stored on the device.
+- **Does PETO give medical advice?** No. PETO is a routine reminder. For anything about your pet's health, please talk to a veterinarian.
+
+## Facts about the app
+
+### The app
+
+- **PETO** is a pet-care routine app for **iPhone and iPad** (iOS 17 or later), with an **Apple Watch** app
+  (watchOS 10 or later). The same app is also built for **Mac** (macOS 14 or later, Mac Catalyst) with
+  **Universal Purchase**: one Premium purchase or subscription unlocks it on iPhone, iPad and Mac. On Mac,
+  Live Activities, the Screen Time nudge and alternate app icons are not available. Made by **Gül Eda Aydemir**, an independent iOS developer.
+  Contact: solostaseraofficial@gmail.com.
+- Style: a warm **retro pixel-game look**: pixel-art pet avatars, chunky pixel buttons, ON/OFF pixel
+  switches, wooden signs, a game-style tab bar (Home, Calendar, Stats, Settings), the Pixelify Sans font.
+- **No ads. No PETO account. No tracking across other apps or websites. PETO has no server of its own.**
+  Pet data is saved on the device. (Optional Family sharing syncs through the user's own iCloud.)
+- **Anonymous usage statistics** (Google Analytics for Firebase): counts which screens open, which
+  features and care types are used, how many pets and routines (numbers and species only), app settings
+  and whether Premium is active. Never pet names, notes, photos, phone numbers, vet/clinic names or health
+  records. No advertising ID, nothing used for ads, no App Tracking Transparency prompt. Users can turn it
+  off in **Settings → Data → "Share anonymous usage stats"**, which also clears on-device analytics data.
+- The app's own text is in **13 languages**: English (US and UK), Turkish, Spanish (Spain and Mexico),
+  Brazilian Portuguese, French, German, Italian, Japanese, Korean, Arabic (right-to-left) and Russian.
+  Switch inside the app; it applies instantly. Siri phrases work in every app language. This website is in
+  English, Turkish and Spanish.
+- **Free to download.** Core reminders and logging are free. Optional **PETO Premium** is sold as
+  **monthly**, **yearly** (auto-renewing until cancelled in Apple ID subscriptions) or **lifetime**
+  (a one-time purchase that never renews). Purchases are handled by Apple; "Restore Purchases" in
+  Settings → Premium. Premium keeps working offline once verified.
+
+### Pets
+
+- Multiple pets, each with its own routines, logs, appointments and health record.
+- **13 species**: dog, cat, rabbit, guinea pig, hamster, ferret, hedgehog, bird, fish, turtle, lizard,
+  snake, and "other" (e.g. rat, hermit crab, snail, sugar glider).
+- Each species has **8 pixel avatar variants** (104 in total); the first 4 per species are free, the
+  others are Premium.
+- Onboarding suggests routines per species (suggestions only): dog → feeding, walk, playtime, attention;
+  cat → feeding, playtime, attention; small mammals → feeding, playtime, attention; bird → feeding,
+  attention; fish → feeding; turtle/lizard/snake → feeding, attention.
+- Sample household used in screenshots: **Buddy** (dog, Golden Retriever, 3 years), **Milo** (cat,
+  2 years), **Poppy** (rabbit, 1 year), **Bubbles** (fish).
+- Suggested routines now also include **Aquarium** for fish (feeding + aquarium) and turtles (feeding,
+  attention, aquarium).
+
+### Care routines (one engine for every care type)
+
+- Care types: **Feeding, Walk, Playtime, Attention (cuddles)** — free — and **Medication** — Premium.
+  Plus, all free: **Litter**, **Water** and **Toilet** (cat care) and **Aquarium** (tank cleaning).
+- A routine has one or more **times** per day (e.g. feeding 7:30 AM and 6:30 PM), a **repeat** rule
+  (Every day / Weekdays / Custom days, or **every N days**, 2–60, counted from the day it was actually
+  done, so a late log moves the next reminder too), a **"Remind me"** offset (At time / 10 min before / 30 min before),
+  an ON/OFF switch for reminders of that routine, and an optional default portion (e.g. "1 cup").
+- **One-tap logging**: big FEED / WALK / PLAY / CUDDLE buttons on the pet page and Quick Actions on
+  Home. Logging is optional; reminders work without it.
+- Optional log details: time, **amount and unit** (cup / g), **food**, **appetite** (Ate all / Ate some /
+  Ate little / Skipped), a **note**; walks can record duration and a **park** visit; play records minutes.
+- **History** per pet, filterable by Feeding / Walk / Park / Playtime / …; logs can be edited or deleted.
+- **Friendly status labels**, derived only from the schedule and the logs, never medical: "All good",
+  "Full", "Meal coming up", "Meal time", "Getting hungry", "Just walked", "Walk time soon", "Walk time!",
+  "Needs a walk", "Happy & played", "Needs some play", "Feeling loved", "Wants cuddles", etc. Home sorts
+  pets by who needs something next and shows a greeting like "1 pet needs attention".
+
+### Reminders (the core feature)
+
+- Local notifications scheduled by iOS from the user's routines (no server). A rolling schedule covers
+  the next 3 days and is rebuilt when the app opens or data changes. Logging something cancels its
+  reminder.
+- Actions right on the notification: **"Fed ✓ / Walked ✓…"**, **"Snooze 15 min"**, **"Skip"**; tapping
+  opens the quick log for that pet. Reminders are grouped per pet and show the pet's pixel sprite.
+  Feeding, walk, medication and vet reminders are time-sensitive.
+- **Smart nudges** (free, can be turned off): one gentle follow-up for unlogged essential care; a
+  "Buddy misses you" nudge after N hours without play or cuddles (quiet hours respected); an evening recap.
+- **Playtime Live Activity** (free): countdown to the next playtime and a play timer with a "Done ✓"
+  button on the Lock Screen and in the Dynamic Island.
+- **Screen Time nudge** (free, optional): after N minutes on apps the user picks (e.g. social media),
+  "Buddy hasn't played with you in 6 h". Uses Apple's Screen Time (Family Controls); stays on device.
+- Per-type switches in Settings → Care reminders (feeding, walk, playtime, attention, medication,
+  vet appointment) and a master notifications switch.
+- Routines follow the device's local clock; after travelling, open PETO once so reminders are rebuilt.
+
+### Calendar and stats
+
+- **Calendar**: a month grid with coloured dots per care type and a red cross for vet appointments;
+  filter by pet; today's list with ticks for done items. **Vet appointments** (free) with reminders.
+- **Stats / Weekly insights** (free): meals completed, walks completed, park visits, play sessions and
+  minutes, and "scheduled meals logged" as a percentage bar; filter by pet. Only logged activity is
+  counted ("unlogged is unknown, not missed").
+- **Premium**: trends and week-over-week comparisons.
+
+### Health record (free; vet PDF report is Premium)
+
+- Per pet: **vaccines and preventives with booster reminders**, **weight log with a trend chart**,
+  medication (the medication routine is Premium), vet visits.
+- **Vet report (PDF)**: an A4 report to show or send to the vet — Premium.
+
+### Family sharing (Premium to create; joining is free)
+
+- One household shared over the users' **own iCloud** (Apple CloudKit sharing). Everyone sees who fed,
+  walked or played, so there are no double meals. Notifications like "Eda fed Buddy 🐾 — already done,
+  no need to do it again." Invitees join free by opening the invitation link on their iPhone.
+- PETO cannot read this data; stop sharing or leave the household at any time.
+
+### Cat care (free; cats only)
+
+- **Litter cleaning reminders** (a normal routine), **water drunk** in ml, and a **toilet log**: pee, poop
+  or both; urine amount (none / small / normal / large); stool (normal / soft / diarrhoea / hard); warning
+  signs (straining, blood, outside the box, frequent trips, pain). The toilet log is log-only, not a routine.
+- A cat-only **"Litter & water"** card on the pet page: today's numbers, a **7-day average**, when the
+  litter was last cleaned, and gentle prompts: if warning signs were logged in the last 48 h it says "These
+  can be signs of a urinary problem. Show this log to your vet."; with no pee logged for over 24 hours it
+  says "If you haven't seen any in the box either, call your vet."; "A cat straining with little or no urine
+  needs a vet right away." It links to the health record and vet report.
+- The (Premium) vet PDF report includes a **14-day "Litter & water" table**.
+- Why it matters: changes in litter-box habits, straining or blood in urine
+  can signal urinary problems; a cat straining to pee with little or nothing coming out is an emergency.
+
+### Aquarium care (free; fish and turtles)
+
+- Tank cleaning as a routine on the owner's own interval (every N days). Log **% of water changed** and
+  whether the **filter was cleaned**. An **"Aquarium" card** on the pet page shows the last clean and the
+  next date ("Counted from the last clean: log it a day late and the next reminder moves too.").
+- PETO does not give water-chemistry advice; the schedule is the owner's (ask the vet or aquarium shop).
+
+### Pet voices (free)
+
+- Settings → Notifications → **"Reminders in my pet's voice"**: record your pet's bark, meow or chirp
+  (up to 8 seconds; silence trimmed and loudness evened out). That pet's reminders, follow-ups and nudges
+  play its own voice as the notification sound. **"Test"** sends a real reminder in about 3 seconds
+  ("Lock your phone to hear it like the real thing"). Delete it to go back to the default sound.
+- Needs microphone access only while recording; the recording stays on the device.
+
+### Memorial mode (free, never behind Premium)
+
+- For when a pet passes away: Edit Pet → **Memorial mode** → "Create memorial". Every reminder, nudge, Live
+  Activity and Apple Watch entry for that pet **stops quietly**; logs, photos and the health record are
+  **all kept**. The pet page becomes a simple **memorial page**: dates, "years of love", "a few words" you
+  write (e.g. "Forever our little sunshine"), **"Memories together"** drawn from the log (e.g. favourite
+  park), and a **shareable memorial card**. The pet is drawn still. Reversible: leave memorial mode at any
+  time and reminders resume. The app opens with "We're so sorry. [Name] was deeply loved."
+
+### Seasonal pixel outfits (try on free; keeping one is Premium)
+
+- Pixel headwear drawn on top of any of the 104 sprites. Seasons: **Halloween** (witch hat, pumpkin cap),
+  **New Year / Yılbaşı** (Santa hat, reindeer antlers, party hat), **Bayram** (fez, crescent tiara,
+  tulip crown). The live season is featured (Halloween Oct 1 – Nov 7, New Year Dec 1 – Jan 15, Bayram from a
+  week before Ramazan and Kurban Bayramı, computed with the Umm al-Qura calendar). Released outfits stay
+  wearable all year. Anyone can try outfits on; keeping one on a pet is Premium.
+
+### The living pet (free)
+
+- On Home and the pet page the pixel pet is "alive": **press and hold to pet it** — a dog wags, a cat or
+  small furry pet purrs, birds and fish flutter, reptiles nuzzle — felt through haptics (and mirrored on
+  Apple Watch). **At night it sleeps** in a nightcap under a moon; the first look each morning it **yawns
+  awake** with a sun. Right after a walk is logged it wanders about on **muddy paws** for a while. Memorial
+  pets are drawn still; Reduce Motion keeps the looks but stops the movement.
+- **Fold fun**: on a foldable iPhone (iPhone Duo), iPad split view or when a Mac window is maximised, a big
+  one-step size change plays a little animation (pixel covers swing open and the pets hop out with hearts;
+  folding squashes the app and puffs out paw prints). Decorative only; Reduce Motion turns it off.
+
+### Other features
+
+- **Pet-sitter care card** (free): a one-page PDF or image with the pet's routines, times, notes and a
+  phone number, to hand to a sitter, neighbour or family member.
+- **PETO Wrapped** (free): a yearly set of 9:16 story cards (1080×1920) such as "Your 2026" and
+  "In 2026 you took 7 walks with Buddy · 4 park visits · 3 h 37 min walking", to share (e.g. Instagram).
+- **Photo → pixel avatar** (Premium to save): turns a photo of your pet into a pixel avatar fully on the
+  device (subject lift, 14-colour palette, outline). The original photo is never uploaded.
+- **Themes**: Meadow (green) and Sky (blue) are free; Honey, Berry and Blossom are Premium. Light and
+  dark appearance.
+- **Alternate app icons** (Premium): Classic, Night, Ocean, Sakura, Gold, Retro Green, Halloween.
+- **History export** (Premium).
+- **Siri & Shortcuts**: "I fed Buddy in PETO" (TR: "PETO Buddy beslendi"), "How is Buddy?", "Open Buddy";
+  feed / walk / play / cuddle shortcuts. On iOS 18+ a "Log care" control for Control Center, the Lock
+  Screen or the Action Button.
+- **Apple Watch**: pets listed by urgency, one-tap Feed / Play / Cuddle / Meds with haptics; tapping Walk
+  asks "Track walk" or "Quick log",
+  **walk tracking** as a HealthKit walking workout (time, distance, steps, saved to Apple Health only if
+  allowed; "Buddy keeps you fit!" summary; without Health access the walk is still timed and logged),
+  watch-face **complications** for the most urgent pet. Reminders appear on the wrist with their buttons.
+- Settings → **Reset all data**, or deleting the app, removes everything PETO stored on the device.
+
+### Privacy (what the app's Privacy screen says)
+
+- Stores pet profiles, routines, logs, health records, vet appointments and preferences **on the device**.
+- Family sharing (optional) syncs through the user's own iCloud; PETO has no server and can't read it.
+- Photo avatars are made on the device; walks are saved to Apple Health only if allowed.
+- Permissions PETO may ask for: notifications; Photos (add only — to save avatars, care cards and
+  Wrapped cards); **Microphone** (only to record a pet voice); Health on Apple Watch (read steps/distance
+  during a walk, save walks); Screen Time (only if the user turns on the Screen Time nudge); iCloud (only
+  for Family sharing).
+- Anonymous usage statistics as described above (opt-out in Settings → Data). App Store privacy label:
+  Device ID, Product Interaction and Purchase History, used for analytics, not linked to the user, no
+  tracking.
+- No PETO account, no ads, no tracking across apps or websites; pet data is never sold.
+- **Not medical advice**: status labels come from the schedule. For health questions, see a vet.
+
+### Why PETO exists (the maker's story, for the About page)
+
+- Pet care at home is many small, repeating jobs that are easy to forget or to do twice when several
+  people share them ("Did anyone feed the cat?"). Most apps for this felt like spreadsheets, wanted an
+  account, or showed ads.
+- PETO turns the routine into something calm and a little playful, like a cosy pixel game: you open it,
+  see who needs what, tap once, done. Gentle reminders instead of guilt; no streak pressure.
+- PETO speaks 13 languages including Turkish, and the website borrows from Turkish craft (kilim borders, İznik tile
+  patterns, the nazar bead, tulips). In Türkiye, neighbourhoods often look after street cats and dogs
+  together (food and water bowls on doorsteps); that "we care for them together" spirit fits PETO's idea
+  of shared care.

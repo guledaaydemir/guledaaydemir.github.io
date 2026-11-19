@@ -59,6 +59,16 @@ In HANE you play the çırak: drag anywhere to walk, and stand next to a table, 
 
 In HANE the çırak saves for a car that costs 10,000 jeton: every evening his 15-jeton wage and half of the day's tips go into his kumbara (piggy bank), and a road with flags at 1, 5, 10, 25, 50 and 75 percent shows how far he has come. The design mirrors what research on goals suggests: a concrete goal, small automatic deposits and visible milestones help people keep going.
 
+### Kolay gelsin, afiyet olsun, hayırlı olsun: Turkish tea house phrases and what they mean
+[EN](https://guledaaydemir.github.io/HANE/guides/turkish-tea-house-phrases/) | [TR](https://guledaaydemir.github.io/HANE/tr/rehber/kahvehane-sozleri-kolay-gelsin/) | [ES](https://guledaaydemir.github.io/HANE/es/guias/frases-turcas-casa-de-te/)
+
+Kolay gelsin (“may it come easy”) is a good wish for anyone at work, afiyet olsun (“may it be health”) means “enjoy your food or drink”, and hayırlı olsun (“may it be for the good”) congratulates someone on a new shop, home or purchase. In a Turkish tea house you order with “bir çay” (one tea), choose açık (light) or koyu (strong), and “çaylar benden” means “the teas are on me”.
+
+### What makes a game good for a short break? A 7-point checklist
+[EN](https://guledaaydemir.github.io/HANE/guides/games-for-short-breaks-checklist/) | [TR](https://guledaaydemir.github.io/HANE/tr/rehber/mola-icin-oyun-secme-rehberi/) | [ES](https://guledaaydemir.github.io/HANE/es/guias/juegos-para-pausas-cortas/)
+
+A good game for a short break is one you can finish and put down. Check seven things: it stops on its own, a session fits into a few minutes, it sends no notifications, it has no energy timers or daily log-in streaks, it has no ads or pay-to-skip offers, it works offline, and it leaves you calm rather than wound up. The last step is yours: when the round ends, put the phone down.
+
 ## Frequently asked
 
 - **What is HANE?** HANE is a tea-house management game (an arcade-idle tycoon) for iPhone and iPad. You play the çırak, the apprentice of a traditional Turkish kıraathane in İstanbul: take orders, call them out to the usta, carry tea on a hanging tray, collect bills, wipe tables, see the neighbourhood cats out and grow one small room into tea houses across Türkiye.

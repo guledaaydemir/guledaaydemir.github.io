@@ -1,0 +1,1476 @@
+# PETO guides — full text (English)
+
+> PETO is a retro pixel-game pet-care routine app for iPhone, iPad and Apple Watch by independent developer Gül Eda Aydemir. It reminds you about feeding, walks, playtime, cuddles, medication and vet visits (with Fed ✓ / Snooze / Skip actions on the notification), logs care with one tap, keeps a health record with vaccine booster reminders and a weight chart, tracks a cat's litter box, water and toilet habits, schedules aquarium cleaning every N days, can play your own pet's bark or meow as the reminder sound, offers a gentle memorial mode when a pet dies, dresses pets in seasonal pixel outfits, makes a pet-sitter care card and a yearly PETO Wrapped, tracks dog walks on Apple Watch, and (Premium) shares one household over iCloud so families see who fed the pet. 13 species, 104 pixel avatars. Built for iPhone, iPad and Mac. Free to download; optional Premium monthly, yearly or lifetime (one purchase covers iPhone, iPad and Mac). No ads, no account, no tracking; pet data stays on the device; anonymous usage statistics can be turned off in Settings. App in 13 languages (including English, Turkish and Spanish); website in English, Turkish and Spanish.
+
+# PETO quick-start guide: add your pets, set reminders and log care in five minutes
+
+URL: https://guledaaydemir.github.io/PETO/guides/peto-quick-start-guide/
+
+**Quick answer:** To start with PETO, add your pets, keep or adjust the routines it suggests for each species, and set the times, repeat days and “Remind me” offset for each routine. PETO then schedules local reminders on your iPhone, and one tap on FEED, WALK, PLAY or CUDDLE (or on the notification itself) logs the care. Core reminders and logging are free; optional PETO Premium (monthly, yearly or lifetime) adds extras such as the medication routine, trends and a vet PDF report.
+
+Key points:
+- Add each pet; during onboarding PETO suggests routines for its species, which you can keep or change.
+- A routine has one or more times a day, a repeat rule, a “Remind me” offset and its own reminder switch.
+- Tap FEED, WALK, PLAY or CUDDLE, or act on the notification; logging cancels that reminder.
+- Status labels come only from your schedule and your logs, never from medical data.
+- Reminders, logging, vet appointments, weekly stats and the health record are free.
+
+## How do I set up PETO in five minutes?
+
+PETO is a pet-care routine app built for iPhone, iPad (iOS 17 or later) and Mac, with an Apple Watch app on the side. Setting it up takes a few short steps, and you don't need an account: there is no PETO account at all, and everything is saved on your device.
+
+- [ ] Add your pets and pick a pixel avatar for each
+- [ ] Keep or edit the routines PETO suggests
+- [ ] Set times, repeat days and “Remind me”
+- [ ] Allow notifications when PETO asks
+- [ ] Log your first meal with one tap
+The app's own text is in 13 languages, including English, Spanish and Turkish. You can switch the language inside the app, and the change applies instantly.
+
+## How do I add my pets to PETO?
+
+Start with one pet; you can add the others later from **Settings** → “Add pet”. PETO knows 13 species: dog, cat, rabbit, guinea pig, hamster, ferret, hedgehog, bird, fish, turtle, lizard, snake and “other”, for animals such as rats, hermit crabs, snails or sugar gliders. Each pet keeps its own routines, logs, appointments and health record, so a home with a dog, a cat and a rabbit stays tidy.
+
+Every species has 8 pixel avatar variants. The first 4 are free and the others come with Premium, as does saving a pixel avatar made from a photo of your own pet. That photo is turned into pixel art on your device and is never uploaded.
+
+During onboarding, PETO suggests routines that fit each species: feeding, a walk, playtime and attention for a dog; feeding, playtime and attention for a cat; feeding and aquarium care for a fish. They are suggestions, nothing more. Keep what fits your home and change the rest.
+
+## How do I set feeding and walk reminders?
+
+Open a pet and look at its **Care Plan**. Every routine there, such as Feeding, Walk, Playtime or Attention, has an ON/OFF switch for its reminders. Tap a routine to edit it:
+
+- **Times**: one or more a day, for example feeding at 7:30 AM and 6:30 PM. Use “Add time” for another one.
+
+- **Repeat**: “Every day”, “Weekdays”, “Custom” days, or every 2 to 60 days, counted from when the job was last done.
+
+- **Remind me**: “At time”, “10 min before” or “30 min before”.
+
+- **Default portion**: optional, for example “1 cup”.
+
+(Screenshot: Buddy's Feeding routine: two times a day, the repeat rule, “Remind me” and the reminders switch.)
+Reminders are local notifications that iOS schedules from your routines; no PETO server is involved. Feeding and walk reminders are time-sensitive. To silence a whole care type, use the switches in **Settings** → “Care reminders”. If you want to plan the whole day around your pet, read how to build a daily pet-care routine.
+
+## How do I log feeding, walks and play with one tap?
+
+Each pet's page has big **FEED**, **WALK**, **PLAY** and **CUDDLE** buttons, and Home has a row of Quick Actions for the same jobs. One tap logs it. You can also act straight from a reminder: “Fed ✓” (or “Walked ✓” and so on), “Snooze 15 min” or “Skip”. Tapping the notification itself opens the quick log for that pet.
+
+Logging something cancels its reminder, so nobody gets nagged about a meal that has already been served. If you want more detail, add the time, the amount and unit (cup or g), the food, the appetite (“Ate all”, “Ate some”, “Ate little” or “Skipped”) or a note. Walks can record their duration and a park visit, and play records minutes.
+
+Logging is optional. Reminders work even if you never log anything, but your logs are what the status labels, the history and the stats are built from.
+
+(Screenshot: Buddy's page: the FEED, WALK, PLAY and CUDDLE buttons above his Care Plan.)
+> Tip: Set “Remind me” to **10 min before** for meals you need to prepare, and leave quick jobs like cuddles **At time**. When the reminder pops up, tap “Fed ✓” right on the notification and you're done.
+
+## What do PETO's status labels mean?
+
+Each pet card shows a friendly status such as “All good”, “Meal coming up”, “Getting hungry”, “Walk time!”, “Needs a walk”, “Happy & played” or “Wants cuddles”. These labels come only from your schedule and your logs. They remind you of the routine; they are not a judgment of your pet's health and never medical. If something about your pet's health worries you, ask your vet.
+
+Home sorts your pets by who needs something next and greets you with a line like “1 pet needs attention”, so you can see at a glance where to start.
+
+## Where do I see the calendar and weekly stats?
+
+The **Calendar** tab shows a month grid with coloured dots for each care type and a red cross on days with a vet appointment. Filter it by pet and check today's list, where finished items get a tick. Vet appointments are free and come with their own reminders.
+
+The **Stats** tab holds your weekly insights: meals and walks completed, park visits, play sessions and minutes, and a bar showing what percentage of scheduled meals you logged. You can filter by pet. Only logged activity counts, so a walk you forgot to log is unknown, not missed.
+
+(Screenshot: Weekly insights: meals and walks completed, park visits, play minutes and the share of scheduled meals logged.)
+Vaccines, booster reminders and the weight log live in each pet's health record; the health record guide walks you through them.
+
+## What is free in PETO and what needs Premium?
+
+PETO is free to download, shows no ads, and its core, reminders and logging, is free. PETO Premium is optional and comes as a monthly or yearly subscription (both renew automatically until you cancel them in your Apple ID subscriptions) or as a lifetime one-time purchase that never renews.
+
+| Free | Premium |
+
+| Feeding, walk, playtime and attention routines with reminders | Medication routine |
+
+| One-tap logging and smart nudges | History export |
+
+| Vet appointments and weekly stats | Trends and week-over-week comparisons |
+
+| Health record: vaccines, booster reminders, weight log | Vet report (PDF) |
+
+| Joining a shared household | Creating a household for Family sharing |
+
+| Cat care (litter, water, toilet log), aquarium care, pet voices and memorial mode | Keeping a seasonal outfit on a pet (trying one on is free) |
+
+| 4 avatars per species, Meadow and Sky themes | All 8 avatars, saving photo avatars, Honey, Berry and Blossom themes, alternate app icons |
+
+The pet-sitter care card and PETO Wrapped are free as well. One Premium purchase covers iPhone, iPad and Mac. Purchases are handled by Apple, and “Restore Purchases” is in **Settings** → “Premium”. Once verified, Premium keeps working offline.
+
+## What should I do next?
+
+Once your first reminders arrive, you're set up. If other people help with the pets, read how to share pet care with your family, so everyone sees who already fed whom and no one feeds twice. Walking a dog every day? The Apple Watch walks guide shows how to log and track walks from your wrist.
+
+One last note for travellers: routines follow your device's local clock, so open PETO once when you arrive somewhere new and your reminders are rebuilt.
+
+## Questions people ask
+
+**Is PETO free?** Yes. PETO is free to download and has no ads. Reminders and logging are free, and so are vet appointments, weekly stats and the health record. Optional PETO Premium is sold as monthly, yearly or lifetime and adds extras such as the medication routine, trends and the vet PDF report.
+
+**Do I need to log care for reminders to work?** No. Reminders work whether or not you log. Logging is optional, but it cancels that reminder, updates the pet's status label and counts in your weekly stats.
+
+**Do I need an account to use PETO?** No. PETO has no account and no server of its own. Your pets, routines and logs are saved on your device. Family sharing, if you turn it on, syncs through your own iCloud.
+
+**Which pets can I add to PETO?** PETO supports 13 species: dog, cat, rabbit, guinea pig, hamster, ferret, hedgehog, bird, fish, turtle, lizard, snake and “other”, for animals such as rats, hermit crabs or snails. You can add several pets, each with its own routines and reminders.
+
+
+---
+
+# How to build a daily pet care routine that sticks
+
+URL: https://guledaaydemir.github.io/PETO/guides/daily-pet-care-routine/
+
+**Quick answer:** A daily pet care routine sticks when each job is tied to a fixed time you already keep, such as breakfast or getting home from work, and written down where everyone can see it. Set regular feeding times and portions (follow your vet and the food label), add walks or play and a little cuddle time, use gentle reminders and look back at each week to adjust. PETO, a free iPhone app with optional Premium, turns each job into a routine with times, reminders and one-tap logging.
+
+Key points:
+- Anchor each care job to a fixed time you already keep.
+- Follow your vet and the food label for portions and meal frequency.
+- Give walks, play and cuddle time their own slots, not leftovers.
+- Use gentle reminders, log when it suits you and review the week.
+
+## How do you build a daily pet care routine that sticks?
+
+Tie every care job to a fixed time of day, write it down, and make it easy to see what's done and what's next. Routines fall apart when they live only in someone's head. They last when feeding, walks, play and cuddles happen at roughly the same times and everyone at home knows the plan.
+
+Your pet benefits too. RSPCA WA notes that consistent routines around feeding, toileting, exercise, training and rest help a dog feel secure. The same idea works for cats, rabbits and small pets: predictable days are calmer days.
+
+## Anchor feeding to fixed times and portions
+
+Pick meal times that fit your real day, not an ideal one. Breakfast before you leave and dinner when you get home are easy anchors. Then keep them steady, weekends included, wherever you can.
+
+How often and how much to feed depends on species, age, size, health and the food itself, so **follow your vet and the food label** rather than a generic rule. As one example, Cornell Feline Health Center says feeding once or twice a day suits most adult cats, while kittens under six months usually do best on three meals. Puppies, older pets and pets with health conditions may need a different plan, so ask your vet.
+
+- Measure portions with the same cup or a kitchen scale, so everyone gives the same amount.
+
+- Count treats as part of the day's food.
+
+- Keep fresh water available and refresh it at every meal.
+
+## Plan walks, play and enrichment every day
+
+Exercise and play are as much part of the routine as food. The PDSA says most dogs need at least one or two walks a day unless your vet advises otherwise, and that play doesn't replace a good walk. Length and pace depend on breed, age and health.
+
+Cats don't need walks, but most enjoy short, regular play sessions with a wand or chase toy, ideally before a meal. For every species, enrichment keeps the mind busy: RSPCA WA suggests food puzzles, scent games, training sessions and rotating toys for dogs, and puzzle feeders or hidden food work for many cats and small pets too.
+
+## Make time for attention and cuddles
+
+Attention is the job that slips first on a busy day, because nothing reminds you. Give it a slot of its own: ten quiet minutes of brushing, a cuddle on the sofa, or gentle handling for a rabbit or guinea pig that is used to it. These moments also help you notice changes in coat, weight or mood early, which you can raise with your vet.
+
+## Routines for rabbits, guinea pigs and other small pets
+
+Small pets have daily needs too; they're just quieter about them. For rabbits, the RSPCA says fresh hay is essential for dental health, that rabbits are highly social and shouldn't live alone unless a vet advises it, and that they need stimulation in their everyday life. A simple rhythm: hay and water topped up morning and evening, greens or pellets as your vet advises, time out to explore, and a quick check of the enclosure.
+
+## Example daily schedule for a dog and a cat
+
+*This is an example, not a prescription. Adjust times, amounts and activities to your pet's age, breed and health, and to your vet's advice.*
+
+| Time | Dog (example) | Cat (example) |
+
+| 7:30 AM | Breakfast; toilet break outside | Breakfast; fresh water |
+
+| 9:00 AM | Morning walk | Short play with a wand toy |
+
+| Midday | Toilet break (or a dog walker if you're out) | Rest; a window perch or a box |
+
+| 5:00 PM | Playtime: fetch, tug or a scent game | Chase-and-pounce play |
+
+| 6:30 PM | Dinner | Dinner |
+
+| 8:00 PM | Cuddles and a quick brush | Cuddles or grooming |
+
+| Before bed | Last toilet break; fresh water | Fresh water; scoop the litter tray |
+
+The dog column follows the sample plan for Buddy in PETO's screenshots.
+
+## Write the routine down and share it
+
+A written routine survives sick days, holidays and new people in the house. List each job with its time, the portion and who usually does it. If several people share care, agree on one place to mark things done. Otherwise someone asks "Did anyone feed the cat?" and the cat gets two dinners.
+
+In PETO, each pet's **Care Plan** is that written routine. Quick Actions on Home let anyone log care in one tap, and with family sharing (Premium to create, free to join) everyone sees who fed, walked or played. When you travel, the free pet-sitter care card puts the same plan on one page.
+
+(Screenshot: Buddy's Care Plan: feeding, walk, playtime and attention, each with its own switch.)
+
+## Turn each job into a routine in PETO
+
+PETO uses one kind of routine for every care type. **Feeding**, **Walk**, **Playtime** and **Attention** are free, and so are litter, water and toilet for cats and aquarium cleaning; **Medication** is Premium. During setup, PETO suggests routines for each species (for a dog: feeding, walk, playtime and attention), which you can keep or change. Each routine has:
+
+- one or more **times** a day, such as 7:30 AM and 6:30 PM;
+
+- a **repeat** rule: Every day, Weekdays, Custom days, or every 2 to 60 days, counted from when the job was last done (handy for litter or tank cleaning);
+
+- a "Remind me" setting: At time, 10 min before or 30 min before;
+
+- an ON/OFF switch for that routine's reminders;
+
+- an optional default portion, such as "1 cup".
+
+(Screenshot: Editing Buddy's feeding routine: two times, repeat, "Remind me" and a default portion.)
+
+When a job is done, tap FEED, WALK, PLAY or CUDDLE on the pet's page. Add details only if you want: amount and unit, food, appetite, a note, walk duration or a park visit. Status labels such as "Meal coming up", "Needs a walk" or "Feeling loved" come only from your schedule and logs. They are never medical, so take health questions to your vet. New to the app? Start with the quick-start guide.
+
+## Use reminders without guilt
+
+A reminder should be a nudge, not a telling-off. PETO's reminders are local notifications on your device, and you can act right from them: "Fed ✓", "Snooze 15 min" or "Skip". Logging something cancels its reminder, but logging is optional: reminders work even if you never log. And there are no streaks to protect; a missing log is just a gap.
+
+> Tip: Try **10 min before** for meals, so you have time to get the bowl ready, and **At time** for cuddles. Free smart nudges add one gentle follow-up for unlogged essential care and an evening recap, and you can turn them off.
+
+## Review your week and adjust
+
+Once a week, look back. Did the walk time actually work? Is play getting squeezed out? PETO's free **Weekly insights** show meals completed, walks, park visits, play sessions and minutes, and how many scheduled meals were logged, with a filter for each pet. Only logged activity counts, so unlogged means unknown, not missed. Premium adds trends and week-over-week comparisons. Logging walks from your wrist? See Apple Watch walks.
+
+(Screenshot: Weekly insights: meals, walks, park visits, play minutes and scheduled meals logged.)
+
+Change one thing at a time and give it a week before you judge it.
+
+## Daily pet care routine checklist
+
+- [ ] Pick fixed feeding times that fit your day
+- [ ] Write down portions agreed with your vet or the food label
+- [ ] Plan daily walks for dogs and play sessions for every pet
+- [ ] Give attention and grooming a slot of its own
+- [ ] Add hay, water and enclosure checks for small pets
+- [ ] Put the routine where everyone at home can see it
+- [ ] Agree who does what and where to mark it done
+- [ ] Turn on reminders with a lead time that suits you
+- [ ] Review the week and change one thing at a time
+
+## Questions people ask
+
+**How do I make a pet care routine stick?** Tie each job to a fixed time you already keep, write the plan down where everyone can see it, use gentle reminders and review it once a week. Small, regular adjustments work better than a perfect plan you can't keep.
+
+**How many times a day should I feed my dog or cat?** It depends on species, age, size, health and the food, so follow your vet and the food label. For example, Cornell Feline Health Center says once or twice a day suits most adult cats, while kittens under six months usually do best on three meals.
+
+**Do I have to log everything in PETO for reminders to work?** No. Logging is optional and reminders work without it. When you do log something, its reminder is cancelled. Weekly insights count only what was logged, so unlogged means unknown, not missed.
+
+**Is PETO free for daily routines?** Yes. Feeding, walk, playtime and attention routines, reminders, one-tap logging and Weekly insights are free. Medication routines, trends and week-over-week comparisons are part of optional PETO Premium, sold as monthly, yearly or lifetime.
+
+Sources:
+- Cornell Feline Health Center (2024). How often should you feed your cat? https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/how-often-should-you-feed-your-cat
+- PDSA (n.d.). Exercising your dog. https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/puppies-dogs/how-much-exercise-does-your-dog-need
+- RSPCA WA (n.d.). How to take care of a dog. https://www.rspcawa.org.au/learn-advocate/responsible-pet-ownership/caring-for-a-dog/
+- RSPCA (n.d.). Pet rabbits. https://www.rspca.org.uk/adviceandwelfare/pets/rabbits
+
+---
+
+# Who fed the dog? How to share pet care with family or flatmates
+
+URL: https://guledaaydemir.github.io/PETO/guides/share-pet-care-with-family/
+
+**Quick answer:** To share pet care without double meals or missed walks, agree on one shared plan, give every job a named owner, and log each job the moment it’s done where everyone can see it. In PETO, Family sharing (Premium to create, free to join) keeps one household in sync over each person’s own iCloud and sends notifications like “Eda fed Buddy — already done”, so nobody feeds the pet twice.
+
+Key points:
+- Most double meals and missed walks come from not knowing what’s already done, not from forgetting.
+- Write one shared plan, give every job a named owner and a backup, and log each job right after doing it.
+- PETO Family sharing (Premium to create, free to join) syncs one household over each person’s own iCloud and sends “already done” notifications.
+- Kids can help at every age with jobs matched to the child and the pet, while an adult stays responsible.
+- At handovers, check the log and leave notes; for sitters, use PETO’s free pet-sitter care card.
+
+## How do you share pet care without double meals?
+
+Most “who fed the dog?” mix-ups don’t happen because someone forgot. They happen because two people each assumed the other one did it, or both did it to be safe. The fix works with or without an app: one shared plan, one clear owner for each job, and the habit of logging every job the moment it’s done, somewhere everyone can see.
+
+This guide walks through that system and shows how PETO’s **Family sharing** fits in, so a family or a flat full of housemates can see at a glance what is already done.
+
+## Why shared pet care goes wrong
+
+A pet that lives with three people gets three sets of habits. The usual problems:
+
+- **Double meals.** One person feeds the cat at 7, the next one sees a clean bowl at 8 and feeds again.
+
+- **Missed walks.** Everyone thought someone else had the lunchtime walk.
+
+- **Lost information.** The vet said something important, but only one person heard it.
+
+- **Nagging.** “Did you feed him?” messages all day, which wear everyone out.
+
+None of this is laziness. It’s a visibility problem: the information lives in one person’s head instead of in a place the whole household can check.
+
+## Step 1: agree on one shared plan
+
+Sit down together once and write the routine: how many meals and at what times, when the walks happen, when there’s playtime and quiet cuddle time, and any medication your vet has prescribed. Plan for your busiest weekday, not your ideal one, and pick times that suit the people who will actually be home.
+
+In PETO this plan is each pet’s **Care Plan**. Every routine (Feeding, Walk, Playtime, Attention) has one or more times a day, a repeat rule (“Every day”, “Weekdays” or “Custom”) and a “Remind me” setting. If you’re starting from scratch, the daily routine guide helps you build it.
+
+(Screenshot: The Calendar: coloured dots per care type, a red cross for a vet appointment, a pet filter and today’s list with ticks for what’s done.)
+
+## Step 2: give every task a clear owner
+
+“We all feed the dog” usually means nobody is quite sure. Give each recurring job a named owner, plus a backup for the days the owner is away. For example:
+
+- **Morning meal and walk:** whoever leaves the house last.
+
+- **Evening meal:** whoever gets home first.
+
+- **Litter tray, cage or tank cleaning:** one person per week, on a rota.
+
+- **Vet appointments and medication:** one adult, so nothing falls between two people.
+
+Say the plan out loud at the start of the week or pin it to the fridge. Owning a job doesn’t mean doing everything alone; it means making sure the job gets done or is clearly handed to someone else.
+
+## Step 3: log it right after you do it
+
+One habit prevents most double meals: log the job immediately, while the bowl is still in your hand or before you take off the lead. A log written two hours later is a guess, and a job that isn’t logged looks undone to everyone else.
+
+PETO keeps logging to a single tap: the big FEED / WALK / PLAY / CUDDLE buttons on the pet page, the Quick Actions on **Home**, or the “Fed ✓” and “Walked ✓” buttons right on a reminder. You can also tell Siri “I fed Buddy in PETO” or tap Feed on an Apple Watch. Extra details such as amount, food, appetite or a short note are optional, and a log can be edited or deleted later if someone makes a mistake.
+
+(Screenshot: Buddy’s Today’s Log: fed at 7:30, a 28-minute walk with a park visit, playtime, the evening meal, and 8:00 PM cuddle time still open.)
+
+## How PETO Family sharing shows that it’s already done
+
+With **Family sharing**, everyone uses one shared PETO household instead of separate copies on separate phones. Everyone sees who fed, walked or played, so the second person doesn’t feed the cat again. When someone logs a job, the others can get a notification such as “Eda fed Buddy 🐾 — already done, no need to do it again.”
+
+- **Free vs Premium:** creating a shared household needs PETO Premium. Joining is free: the people you invite open the invitation link on their iPhone.
+
+- **Privacy:** sharing runs over each person’s own iCloud (Apple’s CloudKit sharing). PETO has no server of its own and no PETO account, and it cannot read the shared data.
+
+- **Freedom to leave:** you can stop sharing or leave the household at any time.
+
+You’ll find it under **Settings → Family sharing**. Reminders keep working as before: iOS schedules them on the phone from your routines, with “Snooze 15 min” and “Skip” when the timing is off, and **Settings → Care reminders** has a switch for each care type. The **Calendar** is handy for a weekly check-in.
+
+(Screenshot: Settings: Manage pets, Family sharing, PETO Wrapped and a switch for each type of care reminder.)
+
+> Tip: Agree on one house rule: **if it isn’t logged, it isn’t done**. Before you feed, glance at the log or check for an “already done” notification. It takes two seconds and ends the “did you feed him?” messages.
+
+## Pet care jobs for kids by age
+
+Children can be real helpers, and a pet is a lovely way to learn routines. Match the job to the child and to the animal, and remember that an adult stays responsible for the pet’s care: the RSPCA’s advice when children help to feed pets is to supervise. As a general guide:
+
+- **Young children:** help an adult check the water bowl, put toys away, sit calmly for gentle cuddle time, and press the log button together with you.
+
+- **School-age children:** scoop a measured meal while an adult watches, brush a patient pet, walk alongside while an adult holds the lead, and log what they did.
+
+- **Teenagers:** own a whole routine such as the evening meal or a weekend walk, if the pet and your neighbourhood allow it, and log it like everyone else.
+
+Keep medication, vet decisions and anything involving a large, strong or nervous animal with adults. If a child’s job is missed, the adult backup steps in. The pet shouldn’t have to wait for a lesson to be learned.
+
+## Handovers: shift changes, trips and sitters
+
+Many mistakes happen at handovers: a parent leaves for a work trip, a flatmate goes home for the weekend, a neighbour comes in to feed the cat. Before you hand over:
+
+- Check today’s log so the next person knows what is already done.
+
+- Write anything unusual in a log note, for example “ate little this morning” or “short walk, it rained”.
+
+- Agree who takes over each of your jobs, and until when.
+
+For someone outside the household, PETO’s free pet-sitter care card puts the pet’s routines, times, notes and a phone number on one page, as a PDF or an image; the sitter card guide shows how. Vet appointments added to the Calendar come with their own reminders, and the health record guide covers keeping vaccines and weight in one place.
+
+## Set up shared care in PETO in five steps
+
+- Add your pets and their routines (the quick-start guide covers this).
+
+- Open **Settings → Family sharing** and create the household (PETO Premium).
+
+- Send the invitation link to everyone who helps. They open it on their iPhone and join for free.
+
+- Agree on owners, backups and the “log it right away” rule.
+
+- Look at the Calendar together once a week and adjust any times that no longer fit.
+
+## Questions people ask
+
+**Is PETO Family sharing free?** Creating a shared household needs PETO Premium (monthly, yearly or lifetime). Joining is free: the people you invite open the invitation link on their iPhone.
+
+**Does Family sharing need a PETO account?** No. There is no PETO account. Sharing runs over each person’s own iCloud through Apple’s CloudKit sharing; PETO has no server of its own and cannot read the shared data. You can stop sharing or leave the household at any time.
+
+**How do I know if someone already fed the dog?** Check the pet’s log: everyone in the household sees who fed, walked or played. With Family sharing you can also get a notification like “Eda fed Buddy — already done, no need to do it again.”
+
+**What pet care jobs can children do?** It depends on the child and the animal. Young children can help an adult with water and toys, school-age children can serve a measured meal or brush the pet with supervision, and teenagers can own a routine such as the evening meal. An adult stays responsible for the pet.
+
+Sources:
+- RSPCA (2026). Feed pets: Helping hands. https://education.rspca.org.uk/library/-/content/feed-pets-helping-hands
+
+---
+
+# How to keep your pet’s vaccines, weight and vet visits in one place
+
+URL: https://guledaaydemir.github.io/PETO/guides/pet-vaccine-and-health-record/
+
+**Quick answer:** A pet health record should hold vaccines and preventives with the date given and the next due date, weight over time, current medication, vet visits and notes, plus the microchip number and any allergies. Keep it in one place, set booster reminders using the dates your vet gives you, and bring it to every appointment. In PETO the health record is free (vaccines with booster reminders, a weight chart, vet visits and appointments); the A4 vet PDF report and the medication routine are Premium.
+
+Key points:
+- A complete pet health record lists vaccines and preventives with dates and next due dates, weight over time, medication, vet visits, the microchip number and allergies.
+- Vaccination plans depend on the animal, its lifestyle and local rules, and your vet sets them; your job is to keep a clean, dated record.
+- Booster reminders and a weight trend help you notice what’s due or changing between appointments.
+- PETO’s health record is free: vaccines with booster reminders, a weight chart, vet visits and vet appointments with reminders.
+- PETO Premium adds an A4 vet report (PDF) and the medication routine.
+
+## What should a pet health record include?
+
+A pet health record is one place where you, your family and your vet can see the essentials: which vaccines and preventives your pet has had and when the next ones are due, how its weight has changed over time, what medication it takes, what happened at past vet visits, and basics like the microchip number and known allergies. A folder, a notebook or an app all work. What matters is that it’s complete, dated and easy to bring to the vet.
+
+Use this checklist to see what you already have and what’s missing:
+
+- [ ] Vaccines given, with the date of each
+- [ ] Next due date for every booster, as your vet gave it
+- [ ] Parasite preventives (fleas, ticks, worms) with dates
+- [ ] Weight, written down regularly with the date
+- [ ] Current medication, exactly as prescribed
+- [ ] Vet visits: date, reason and what the vet said
+- [ ] Microchip number
+- [ ] Known allergies or foods to avoid
+- [ ] Your vet practice’s name and phone number
+- [ ] Insurance details, if you have a policy
+
+## Vaccines and preventives: record dates, not just names
+
+There’s no single vaccine list that fits every pet. Which vaccines your pet needs, and how often, depends on the species, age and health of the animal, on how it lives (indoors or outdoors, kennels, travel, other pets at home) and on local rules and disease risks. The WSAVA vaccination guidelines say this openly: they are broad guidance that vets adapt to local conditions, and lifestyle-based vaccines are chosen in a conversation between vet and owner. So your vet sets the plan. Your part is to keep a clean record of it.
+
+For each vaccine or preventive, note:
+
+- what it was, as written on the vet’s card or certificate,
+
+- the date it was given,
+
+- the next due date your vet gave you,
+
+- where it was given, and anything you noticed afterwards.
+
+Keep the vet’s own vaccination card or certificate as well. For travel, boarding or official requirements, that document may be what you’re asked to show.
+
+## Why booster reminders help
+
+Boosters are easy to forget because they come months or even years apart, long after the last appointment has faded from memory. PDSA’s advice on dog vaccines is that dogs need regular boosters throughout their life, and that a dog that misses one may stay protected for only a couple of months after the due date before it is at risk again. A reminder set on the day of the vaccination, using the date your vet gave you, takes that worry off your mind.
+
+The same goes for flea, tick and worm preventives. A dated record shows at a glance whether the last treatment was three weeks or three months ago, which is exactly what your vet will ask.
+
+## Why tracking your pet’s weight over time matters
+
+A single weight says little on its own. A series of weights taken the same way shows a trend: slow gain over the winter, a loss hidden under a fluffy coat, a change after switching food. PDSA recommends checking your dog’s body shape regularly to know whether it has gained or lost weight, and using shape as well as the scales, with your vet as the best person to ask for advice. Vets look at this too: WSAVA’s nutrition guidelines ask vet teams to assess body condition at every visit.
+
+Weigh at home in a consistent way, with the same scale at a similar time of day, or ask whether your vet practice lets you use their scale between appointments. Write the date next to every weight. If the trend moves in a way that worries you, that is a question for your vet, not for an app.
+
+## Medication, vet visits, microchip and allergies
+
+Write medication down exactly as your vet prescribed it: the name, the amount, how often, until when and why. Never change or stop a medication without asking your vet first. Vet visit notes can be short: the date, the reason, what was done, what to watch for and when to go back.
+
+Keep the microchip number, known allergies and your vet’s phone number where the whole household, and anyone who looks after your pet, can find them quickly.
+
+## How to keep your pet’s health record in PETO
+
+Each pet in PETO has its own **Health record**, and it’s free. You open it with the **Health record** button next to the pet’s Today’s Log. Inside you can:
+
+- **Add vaccines and preventives** to get booster reminders.
+
+- **Log weights** and see them as a trend chart.
+
+- **Keep vet visits** with the pet’s record, and add upcoming **vet appointments** (also free) with reminders. They appear as a red cross in the Calendar.
+
+- **Set up a medication routine** with PETO Premium. It works like any other routine, with times, a repeat rule and a reminder, and you enter what your vet prescribed. PETO reminds you; it doesn’t advise you.
+
+- **For cats**, use the free litter and water log: water drunk plus a toilet log (pee, poop, stool and warning signs), summed up in a “Litter & water” card that links to the health record.
+
+Your pet’s data is stored on your device. There’s no PETO account and PETO has no server of its own. PETO’s anonymous usage statistics never include health records, and you can turn them off in **Settings → Data**. And PETO isn’t medical advice: its friendly status labels come only from your schedule and logs, so for any health question, see your vet.
+
+(Screenshot: Buddy’s Health record: Vet report (PDF), Vaccines with “add vaccines and preventives to get booster reminders”, Weight, and the Premium Medication routine.)
+
+## How to bring your pet’s health record to the vet
+
+Before the appointment, take five minutes:
+
+- Check the weight chart and note any change since the last visit.
+
+- Scroll through recent logs for anything unusual, such as an “Ate little” appetite or a note someone at home wrote.
+
+- List current medication and the questions you want to ask.
+
+- Pack the vet’s vaccination card or certificate.
+
+At the practice, you can simply show the Health record on your phone. With PETO Premium, **Vet report (PDF)** creates an A4 report you can show or send to your vet. For a cat, it includes a 14-day “Litter & water” table.
+
+(Screenshot: Editing a feeding log: amount and unit, food, appetite (Ate all / Ate some / Ate little / Skipped) and a note. Useful details to mention at the vet.)
+
+After the visit, update the record while it’s fresh: the new vaccine and its next due date, today’s weight, any new medication and the next appointment.
+
+> Tip: Do the update **before you leave the waiting room**: add the vaccine, the weight and the next appointment while the vet’s words are still fresh. Thirty seconds now saves a lot of guessing next year.
+
+(Screenshot: Vet appointments show as a red cross in the Calendar and come with their own reminder.)
+
+## Share the essentials with everyone who cares for your pet
+
+If several people look after your pet, make sure health information doesn’t live in one person’s head. In a shared home, PETO’s Family sharing lets everyone see who fed, walked or played. When you travel, the free pet-sitter care card gives a sitter or neighbour the routines, times, notes and a phone number on one page, and the notes are a good place for a food allergy (see the sitter card guide). New to PETO? The quick-start guide walks you through adding your pets.
+
+## Questions people ask
+
+**What should a pet health record include?** Vaccines and preventives with the date given and the next due date, weight over time, current medication as prescribed, vet visits with short notes, the microchip number, known allergies and your vet’s contact details.
+
+**How often does my pet need booster vaccines?** That depends on the animal, the vaccine, its lifestyle and local rules, so your vet sets the schedule. Write down the next due date your vet gives you and set a reminder for it.
+
+**Is PETO’s health record free?** Yes. Vaccines and preventives with booster reminders, the weight log with its trend chart, vet visits and vet appointments with reminders are free. The A4 vet report (PDF) and the medication routine are part of PETO Premium.
+
+**Does PETO give medical advice?** No. PETO keeps records and sends reminders. Its friendly status labels come only from your schedule and logs. For health questions and vaccination plans, ask your vet.
+
+**Where is my pet’s health data stored?** On your device. PETO has no account and no server of its own, so it never receives your pet’s health record; its anonymous usage statistics never include health records either. Deleting the app or using Settings → Reset all data removes everything PETO stored on the device.
+
+Sources:
+- WSAVA (2024). 2024 Guidelines for the Vaccination of Dogs and Cats – Executive Summary. https://wsava.org/wp-content/uploads/2024/05/2024-Guidelines-for-the-Vaccination-of-Dogs-and-Cats.pdf
+- PDSA (2022). Dog Vaccines. https://www.pdsa.org.uk/pet-help-and-advice/pet-health-hub/other-veterinary-advice/dog-vaccines
+- PDSA (n.d.). Your dog’s Body Condition Score. https://pdsa.org.uk/get-involved/our-campaigns/weigh-up/your-dog/your-dogs-body-shape/your-dogs-body-condition-score
+- WSAVA (2011). Global Nutrition Guidelines. https://wsava.org/global-guidelines/global-nutrition-guidelines/
+
+---
+
+# Pet sitter checklist: everything to leave before you travel
+
+URL: https://guledaaydemir.github.io/PETO/guides/pet-sitter-checklist/
+
+**Quick answer:** Leave your pet sitter one clear page with feeding times and amounts, walk times, any medication written exactly as your vet prescribed, your phone number and a backup contact, your vet and the nearest emergency clinic, the microchip number, house notes and what normal looks like for your pet. Go through it together before you leave and tell your vet who is caring for your pet. PETO's free pet-sitter care card puts your pet's routines, times, notes and a phone number on one page, as a PDF or an image.
+
+Key points:
+- Cover three things: the routine, the contacts and the context.
+- Write medication exactly as your vet prescribed and go through it with the sitter.
+- Explain what normal looks like and when to call the vet.
+- PETO's free care card puts routines, times, notes and a phone number on one page.
+
+## What should you leave for a pet sitter?
+
+Leave everything they need to keep your pet's day the same as when you're home, plus everything they'd need if something went wrong. That comes down to three things: the routine (food, walks, play and any medication), the contacts (you, a backup and the vet) and the context (house notes, quirks and what "normal" looks like).
+
+The same list works for a professional sitter, a neighbour popping in or a relative staying over. Put it in writing: PDSA advises leaving written instructions on how much food to give and when, and how much exercise your pet usually gets. Then walk your sitter through it in person if you can.
+
+## Contacts: you, a backup and the vet
+
+- Your phone number and travel dates, including times you'll be hard to reach.
+
+- A backup person who knows your pet and can make decisions if you can't be reached.
+
+- Your vet's name, phone number and address, plus the nearest emergency or out-of-hours clinic.
+
+- Pet insurance details, if you have a policy.
+
+The ASPCA also recommends telling your vet when you'll be away and who can authorise decisions for your pet. Agree an emergency plan with the sitter: who they call first and what you'd want done. PDSA suggests asking what the sitter will do if they can't get hold of you.
+
+## Feeding, walks and the daily routine
+
+Write the routine as times, not vague instructions. "Breakfast 7:30 AM, one level scoop, bowl by the back door" beats "feed in the morning".
+
+- **Food:** what, how much, when, where it's kept and the rule on treats.
+
+- **Water:** where the bowls are and how often to refresh them.
+
+- **Walks:** times, rough length, lead or harness, usual routes and anything to avoid.
+
+- **Play and attention:** favourite toys and games. Cats Protection suggests leaving favourite toys out and asking the sitter for regular play sessions.
+
+- **Litter trays, cages and hutches:** how and when to clean them, and where supplies are kept.
+
+If your cat stays home, Cats Protection recommends that a sitter visits at least twice a day, and more often for very young or old cats or cats with health conditions. Leave enough food, litter and medication for the whole trip, plus a little extra in case you're delayed.
+
+## Medication, health notes and microchip details
+
+If your pet takes medication, write down each one exactly as your vet prescribed it: name, amount, time and how it's given. The ASPCA suggests going over medication with the sitter in person. Ask your vet before you go what the sitter should do if a dose is missed or refused, so nobody has to guess. Keep medicines out of reach; the ASPCA recommends a pet-resistant container, because pets can mistake flavoured pills for treats.
+
+- Health conditions, allergies and anything your vet has asked you to watch.
+
+- Your pet's age and current weight.
+
+- Microchip number, the database it's registered with, and a recent photo in case your pet gets out.
+
+If you keep vaccines and weight in PETO's free health record, these details are easy to copy out.
+
+## House notes and behaviour quirks
+
+Small things trip sitters up, because nobody thinks to mention them.
+
+- Keys, doors and windows to keep shut, and rooms that are off-limits. Share alarm codes privately, not on a printed sheet.
+
+- Where the carrier, lead, towels and cleaning supplies are.
+
+- Hiding spots (the ASPCA suggests pointing these out for cats), escape tricks, and fears such as fireworks or the doorbell.
+
+- How your pet gets on with visitors, children and other animals.
+
+- Plants, food or objects your pet must not get into.
+
+## What "normal" looks like, and when to call the vet
+
+A sitter can only spot a problem if they know your pet's normal. Describe a typical day: how quickly they eat, roughly how much they drink, toilet habits, energy, favourite sleeping spots and the noises they usually make. Then say plainly that if anything seems wrong, such as not eating, vomiting, unusual tiredness or trouble breathing, the sitter should call your vet (or the emergency clinic out of hours) first, then you. When in doubt, call the vet.
+
+## Make a one-page care card in PETO
+
+If your routines are already in PETO, you don't have to retype them. The free **pet-sitter care card** puts your pet's routines, times, notes and a phone number on one page, as a PDF or an image, ready to hand to a sitter, neighbour or family member. Look for the **Care card** button below your pet's Today's Log, alongside Health record and History.
+
+(Screenshot: Buddy's Today's Log, with the Health record, History and Care card buttons below it.)
+
+The card shows the routines and times from your pet's **Care Plan**, so check the plan before you make it: every feeding time, the walk, playtime and attention. Saving the card to Photos only needs add-only access. Keep anything longer, like the full contact list or medication instructions, on a separate sheet next to the card.
+
+(Screenshot: Buddy's Care Plan: feeding at 7:30 AM and 6:30 PM, a walk at 9:00 AM, playtime at 5:00 PM and attention at 8:00 PM.)
+
+> Tip: Do a trial run. Give your sitter the card a few days early, do one feeding together and fix anything that confused them.
+
+## Reminders and family sharing while you're away
+
+- **Your own reminders:** keep them on as a quiet check-in, or switch a routine's reminders off while someone else is in charge. Routines follow your device's local clock, so after travelling, open PETO once so reminders are rebuilt.
+
+- **Vet appointments:** if a vet visit falls during your trip, add it in PETO so it gets its own reminder and shows on the calendar, and tell your sitter.
+
+- **Family sharing (Premium):** if the person caring for your pet has an iPhone, invite them to your household; joining is free. Everyone sees who fed, walked or played, and a notification like "Eda fed Buddy 🐾 — already done, no need to do it again." prevents double meals. It syncs through your own iCloud, PETO can't read it, and you can stop sharing at any time. More in the family sharing guide.
+
+(Screenshot: The calendar: coloured care dots, a vet appointment marked with a red cross and today's list.)
+
+## Pet sitter checklist
+
+Tick these off before you leave.
+
+- [ ] Your phone number and travel dates
+- [ ] A backup contact who can make decisions
+- [ ] Vet, emergency clinic and insurance details
+- [ ] Feeding times, amounts and where food is kept
+- [ ] Walk times, routes and lead or harness notes
+- [ ] Medication written exactly as your vet prescribed
+- [ ] Microchip number and a recent photo
+- [ ] House notes: keys, doors and off-limits rooms
+- [ ] Behaviour quirks, fears and hiding spots
+- [ ] What normal looks like and when to call the vet
+- [ ] Enough food, litter and medication for the trip
+- [ ] PETO care card saved or printed
+
+Want the routine itself in better shape first? Read how to build a daily pet care routine.
+
+## Questions people ask
+
+**What should I leave for a pet sitter?** Leave one page with feeding times and amounts, walk times, any medication written exactly as your vet prescribed, your phone number and a backup contact, your vet and the nearest emergency clinic, the microchip number, house notes and what normal looks like for your pet. Go through it with the sitter in person if you can.
+
+**Is PETO's pet-sitter care card free?** Yes. The pet-sitter care card is free. It is a one-page PDF or image with your pet's routines, times, notes and a phone number, to hand to a sitter, neighbour or family member.
+
+**Does my pet sitter need the PETO app?** No. The care card is a PDF or an image, so they can use it without the app. If they have an iPhone and you have PETO Premium, you can invite them to family sharing; joining is free.
+
+**How often should a cat sitter visit?** Cats Protection recommends at least twice a day, and more often for very young or old cats or cats with health conditions. Ask your vet if your cat has special needs.
+
+Sources:
+- ASPCA (2017). Pet Sitter Safety: What to Know Before You Go. https://www.aspca.org/news/pet-sitter-safety-what-know-you-go
+- PDSA (n.d.). Pet boarding, kennels, and holiday care. https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/all-pets/pet-boarding-kennels-and-holiday-care
+- Cats Protection (n.d.). Going on holiday. https://www.cats.org.uk/help-and-advice/going-on-holiday
+
+---
+
+# How to track dog walks with Apple Watch (and make the daily walk a habit)
+
+URL: https://guledaaydemir.github.io/PETO/guides/track-dog-walks-apple-watch/
+
+**Quick answer:** With PETO on Apple Watch (watchOS 10 or later) you can log a dog walk with one tap, or track it as a HealthKit walking workout that records time, distance and steps. The walk is saved to Apple Health only if you allow it; without Health access, PETO still times the walk and logs it for your dog. Walk reminders reach your wrist with their buttons, and a watch-face complication shows the pet that needs you most.
+
+Key points:
+- One tap on Walk logs a walk instantly, with a haptic tap to confirm.
+- Walk tracking runs as a HealthKit walking workout: time, distance and steps.
+- Apple Health access is optional; without it the walk is still timed and logged.
+- Reminders arrive on your wrist with their buttons, and a complication shows the most urgent pet.
+- Logged walks feed your weekly stats and your yearly PETO Wrapped.
+
+## Can you track dog walks with Apple Watch?
+
+Yes. With PETO's Apple Watch app (watchOS 10 or later) you can record a dog walk in two ways. A **one-tap log** simply notes that the walk happened. **Walk tracking** goes further: PETO runs the walk as a HealthKit walking workout and records the time, distance and steps. Use the quick log when you only need the record, and tracking when you also want to know how long and how far you went.
+
+Either way, the walk lands in your dog's log in PETO, where it updates the status label, cancels the walk reminder and counts toward your weekly stats. Haven't set up a walk routine yet? Start with the PETO quick-start guide, then come back here.
+
+## How do I log a walk with one tap on my wrist?
+
+Open PETO on your watch. Your pets are listed by urgency, so whoever needs something soonest is at the top. Pick your dog and tap **Walk**: PETO asks whether to **“Quick log”** the walk or **“Track walk”**. Choose Quick log and a haptic tap confirms that the walk is logged. The same one-tap buttons exist for **Feed**, **Play**, **Cuddle** and **Meds** (the medication routine is part of PETO Premium).
+
+Reminders reach your wrist too, complete with their buttons. When the walk reminder arrives, tap “Walked ✓” on the notification once you're back, “Snooze 15 min” if you're just about to head out, or “Skip” to let this one go. Walk reminders are marked time-sensitive.
+
+On iPhone, Siri and Shortcuts can log a walk as well, and on iOS 18 or later a “Log care” control can sit in Control Center, on the Lock Screen or on the Action Button.
+
+## How does walk tracking with Apple Health work?
+
+When you track a walk, PETO starts a walking workout through HealthKit, Apple's framework for health and fitness data. During the walk it reads steps and distance. When you finish, you get a “Buddy keeps you fit!” summary, and the walk is logged for your dog with its duration.
+
+PETO asks for permission to use Health on your Apple Watch for two things: reading steps and distance during a walk, and saving the walk. You decide:
+
+- **Allow**, and each tracked walk is saved to Apple Health as a walking workout, next to the rest of your activity.
+
+- **Don't allow**, and PETO still times the walk and logs it for your dog. Nothing is written to Apple Health.
+
+You can change your mind later. Apple's guide to managing Health data shows where: open the Health app on your iPhone, tap your profile, tap **Apps** under Privacy, choose the app and turn its health categories on or off.
+
+Keep in mind that the watch is on your wrist, so the steps and distance are yours. The walk is logged for your dog, but the workout numbers belong to the person holding the lead.
+
+## What does PETO do with my walk data?
+
+PETO has no account, no ads, no tracking across other apps or websites, and no server of its own. Your walk logs are saved on your device, and walks reach Apple Health only if you allow it. PETO’s anonymous usage statistics never include pet names, notes, photos or health records, and you can turn them off in Settings → Data → “Share anonymous usage stats”. If you use Family sharing, the household syncs through your own iCloud, and PETO can't read that data either. Settings → “Reset all data”, or deleting the app, removes everything PETO stored on the device.
+
+## How do I add a PETO complication to my watch face?
+
+PETO's watch-face complications show your most urgent pet, so a glance at your wrist tells you whether the walk is next. Add one with Apple's steps for adding complications:
+
+- With the watch face showing, touch and hold the display, then tap **Edit**.
+
+- Swipe left all the way to the end. If the face offers complications, they're on the last screen.
+
+- Tap a complication slot and turn the Digital Crown to choose PETO.
+
+- Press the Digital Crown to save, then tap the face to switch to it.
+
+Apple notes that you can open most apps by tapping their complication on the watch face, so the complication can double as a shortcut into PETO.
+
+## Where do my walks show up afterwards?
+
+Every walk appears in your dog's **Today's Log** in PETO, next to meals, play and cuddles. A walk log can include its duration and a park visit, and **History** can be filtered by Walk or Park to show them all. Logs can be edited or deleted later, so a double tap by mistake is easy to fix.
+
+(Screenshot: Buddy's Today's Log: “Walk completed 28 min · Park” between his meals and playtime.)
+The **Stats** tab counts walks completed and park visits in its weekly insights; filter by pet to see one dog's week. Only logged walks count, so a walk you forgot to log is simply unknown, not missed.
+
+At the end of the year, **PETO Wrapped** (free) turns it all into 9:16 story cards you can share, with lines like “In 2026 you took 7 walks with Buddy · 4 park visits · 3 h 37 min walking”.
+
+(Screenshot: A PETO Wrapped card: Buddy's walks, park visits and walking time for the year.)
+
+## How do I make daily dog walks a habit?
+
+How much exercise a dog needs depends on its breed, age, health and fitness. The UK veterinary charity PDSA says walking should be part of every dog's daily routine, and that most dogs need at least one or two walks a day unless their vet advises otherwise. Growing puppies should be introduced to exercise slowly, and older dogs may need a little less. If you're unsure what's right for your dog, ask your vet. Then these habits help the walk actually happen:
+
+- **Give the walk a fixed time.** Add a Walk routine with real times, such as 9:00 AM, and let PETO remind you. A walk with a time on it is harder to postpone than “sometime today”. One routine can hold several times, for example a morning and an evening walk.
+
+- **Get a heads-up.** Set “Remind me” to 10 or 30 minutes before, so there's time to find the lead and your shoes.
+
+- **Mix brisk and sniffy walks.** PDSA notes that a brisk walk burns off energy, while a slow, meandering walk with time to sniff and explore is great for a dog's mental health.
+
+- **Share the job.** With Family sharing, everyone sees who already walked the dog and when.
+
+- **Follow the label, not a streak.** PETO has no streak pressure. “Walk time soon” and “Needs a walk” are gentle signals from your schedule and logs, nothing more.
+
+For the rest of the day's care, see how to build a daily pet-care routine.
+
+> Tip: Anchor the walk to something you already do, like getting home from work, and set the routine a few minutes after it. Then let the watch handle the rest: tap “Walked ✓” on your wrist, or track the walk and enjoy the “Buddy keeps you fit!” summary.
+
+## Questions people ask
+
+**Can Apple Watch track my dog's walk?** Apple Watch measures you, the person wearing it. With PETO, a dog walk is tracked as a HealthKit walking workout on your wrist (time, distance and steps) and logged for your dog in PETO. You can also tap Walk and choose “Quick log” to log a walk without tracking it.
+
+**Do I have to give PETO access to Apple Health?** No. Health access is optional. If you allow it, PETO reads steps and distance during a walk and saves the walk to Apple Health. If you don't, PETO still times the walk and logs it for your dog.
+
+**Which Apple Watch do I need for PETO?** Any Apple Watch that runs watchOS 10 or later. The PETO app on iPhone needs iOS 17 or later.
+
+**How many walks a day does a dog need?** It depends on breed, age, health and fitness. PDSA says most dogs need at least one or two walks a day unless a vet advises otherwise. Ask your vet what suits your dog, then set PETO's Walk routine to match.
+
+Sources:
+- Apple Support (2026). Manage Health data on your iPhone, iPad, or Apple Watch. https://support.apple.com/en-us/108779
+- Apple Support. Apple Watch User Guide: Add complications to the watch face on your Apple Watch. https://support.apple.com/guide/watch/add-complications-to-the-watch-face-apd8d0b9c582/watchos
+- PDSA. Exercise for dogs. https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/puppies-dogs/how-much-exercise-does-your-dog-need
+
+---
+
+# How to choose a pet-care reminder app for iPhone: an 8-point checklist
+
+URL: https://guledaaydemir.github.io/PETO/guides/best-pet-care-reminder-app-iphone/
+
+**Quick answer:** A good pet-care reminder app for iPhone delivers reminders reliably, even offline, logs care with one tap, handles several pets and species, lets a family share care without double feeding, keeps a health record with vet reminders, respects your privacy, works with Apple Watch and Siri, and is priced fairly. PETO answers these points with on-device reminders, one-tap logging, 13 species, iCloud family sharing and no account, ads or tracking. Its core reminders and logging are free; optional Premium (monthly, yearly or lifetime) covers extras such as the medication routine, the vet PDF and creating a shared household.
+
+Key points:
+- Reminders scheduled by iOS on the device don't depend on a server or a signal.
+- One-tap logging, also from the notification, is what keeps a routine going.
+- Shared care only works if everyone can see who already fed or walked the pet.
+- Check whether an app needs an account, shows ads or collects data linked to you.
+- Know what is free, what is paid, and whether you can pay once instead of subscribing.
+
+## What makes a good pet-care reminder app for iPhone?
+
+A pet-care reminder app has one job: making sure meals, walks, play and medicine happen on time, and only once, without you keeping it all in your head. Almost any app can send a notification. The differences are in the details: whether reminders arrive when you're offline, how fast you can mark something done, and whether two people end up feeding the cat twice.
+
+Use this checklist when you compare apps; below, each point explains what to look for and how PETO answers it, gaps included.
+
+- [ ] Reminders scheduled on the device that work offline
+- [ ] One-tap logging, also from the notification
+- [ ] Several pets and different species
+- [ ] Family sharing that prevents double feeding
+- [ ] A health record with vaccine and vet reminders
+- [ ] No account, no ads, no tracking
+- [ ] Apple Watch and Siri support
+- [ ] Fair pricing: a free core plus a subscription or one-time option
+
+## Do the reminders work offline and on time?
+
+Reminders are the heart of a care app, so check how they are delivered. Reminders that iOS schedules locally on your iPhone don't depend on a company's server, or on having a signal at feeding time.
+
+**PETO:** reminders are local notifications that iOS schedules from your routines; PETO has no server. A rolling schedule covers the next three days and is rebuilt whenever you open the app or change something. Each routine has its own “Remind me” setting: at the time, 10 minutes before or 30 minutes before.
+
+## Can you log feeding or a walk with one tap?
+
+If marking a job as done takes five taps, people stop doing it, and then the app can't tell anyone what's done. Look for logging straight from the notification and a quick button in the app.
+
+**PETO:** big FEED, WALK, PLAY and CUDDLE buttons on each pet's page, Quick Actions on Home, and “Fed ✓”, “Snooze 15 min” and “Skip” right on the notification. Logging cancels that reminder and is optional; reminders work either way.
+
+(Screenshot: Buddy's page in PETO: one tap on FEED, WALK, PLAY or CUDDLE logs the job.)
+
+## Does it handle several pets and different species?
+
+Plenty of homes have more than one animal, and not all of them are dogs and cats. Check that each pet gets its own schedule and that the app's suggestions fit the animals you actually have.
+
+**PETO:** multiple pets, each with its own routines, logs, appointments and health record. It supports 13 species, from dogs, cats and rabbits to birds, fish, turtles, lizards, snakes and “other”. During onboarding it suggests routines per species, such as feeding, a walk, playtime and attention for a dog, or feeding and aquarium care for a fish; they are only suggestions. Cats also get free litter, water and toilet tracking, and fish and turtles a tank-cleaning routine: see the cat litter and water guide and the aquarium cleaning guide.
+
+## Can the whole family share care without double feeding?
+
+“Did anyone feed the cat?” is exactly the question a shared app should answer. Look for sharing where everyone sees who did what, ideally without yet another account.
+
+**PETO:** Family sharing keeps one household on your own iCloud through Apple's CloudKit sharing. Everyone sees who fed, walked or played, with notifications like “Eda fed Buddy 🐾 — already done, no need to do it again.” Creating a household needs Premium; joining is free by opening the invitation link on an iPhone. PETO can't read the shared data. See the family sharing guide.
+
+## Does it keep a health record and vet reminders?
+
+Care is more than meals. A useful app keeps vaccines, weight and vet visits next to the daily routine, and reminds you before a booster or an appointment.
+
+**PETO:** each pet has a free health record with vaccines and preventives (with booster reminders), a weight log with a trend chart, and vet visits. Vet appointments with reminders are free too. The medication routine and an A4 vet report (PDF) are Premium. More in the health record guide.
+
+(Screenshot: Buddy's health record: vet report, vaccines, weight and medication.)
+
+## Does it need an account, show ads or track you?
+
+A pet-care app learns a lot about your days: when you're home, when you go out, who lives with you. Check the App Store privacy label, where Apple separates data used to track you, data linked to you, data not linked to you and data not collected, and ask whether you really need to sign up.
+
+**PETO:** no PETO account, no ads, no tracking across other apps or websites, and no server of its own. Profiles, routines, logs and health records are stored on your device, and walks go to Apple Health only if you allow it. PETO does count anonymous usage statistics (Google Analytics for Firebase), such as which screens and features are used, but never pet names, notes, photos or health records; its privacy label lists them as data not linked to you, used for analytics. You can turn them off in **Settings → Data** → “Share anonymous usage stats”. Pet data is never sold. Details are on the privacy page.
+
+## Does it work with Apple Watch and Siri?
+
+You often need to log something when your hands are full: a lead in one hand, a food bowl in the other. Watch and voice support let you log without unlocking your phone.
+
+**PETO:** the Apple Watch app (watchOS 10 or later) lists pets by urgency, logs Feed, Walk, Play, Cuddle or Meds with one tap, tracks walks as a HealthKit walking workout and offers complications for the most urgent pet. Reminders reach the wrist with their buttons, and on iPhone, Siri understands phrases like “I fed Buddy in PETO”. See the Apple Watch walks guide.
+
+## Is the pricing fair: free core, subscription or one-time?
+
+Check what the free version covers; ideally reminders and logging aren't behind a paywall. Some people like a subscription, others prefer to pay once. Subscriptions bought through Apple can be cancelled in Settings, under your name and then Subscriptions, as Apple's guide to cancelling a subscription explains.
+
+**PETO:** free to download, no ads. Reminders, logging, vet appointments, weekly stats and the health record are free. PETO Premium is optional: monthly or yearly (auto-renewing until you cancel in your Apple ID subscriptions) or lifetime, a one-time purchase that never renews. It adds extras such as the medication routine, trends, the vet PDF, creating Family sharing, more avatars and themes, and history export. Premium keeps working offline once verified, and one purchase covers iPhone, iPad and Mac. Cat care, aquarium care, pet voices and memorial mode are free extras.
+
+## What doesn't PETO do?
+
+An honest checklist includes the gaps. PETO may not suit you if:
+
+- **Someone at home uses Android.** There's no Android version. PETO is built for iPhone, iPad and Mac, with an Apple Watch app, and household invitations are opened on an iPhone.
+
+- **You want the medication routine, the vet PDF or your own shared household for free.** Those are Premium; joining someone else's household is free.
+
+- **You'd mostly use it on a Mac.** PETO is built for Mac too, but Live Activities, the Screen Time nudge and alternate app icons aren't available there.
+
+- **You want health advice.** Labels like “Needs a walk” are friendly signals from your schedule and logs, not medical assessments. Ask your vet.
+
+- **You like streak counters.** PETO skips streak pressure on purpose: gentle reminders instead of guilt.
+
+> Tip: Test any reminder app with one real routine for a week. If the reminder arrives on time, one tap marks it done and nobody at home feeds twice, it's doing its job. To try PETO that way, follow the quick-start guide.
+If PETO matches your checklist, it's free to download.
+
+## Questions people ask
+
+**What should I look for in a pet care reminder app?** Reliable reminders (ideally scheduled on the device so they work offline), one-tap logging, support for several pets and species, family sharing that shows who already did what, a health record with vet reminders, clear privacy with no account, ads or tracking, Apple Watch and Siri support, and a pricing model you are comfortable with.
+
+**Is there a pet care reminder app with no ads and no account?** Yes. PETO has no ads and no PETO account. It has no server of its own and stores your pet data on your device; optional Family sharing syncs through your own iCloud. Anonymous usage statistics can be turned off in Settings → Data.
+
+**Is PETO available in Spanish?** Yes. PETO's own text is in 13 languages, including Spanish (Spain and Mexico), English and Turkish. You can switch the language inside the app and it applies instantly. Its website, including this guide, is also available in Spanish.
+
+**Is PETO a subscription or a one-time purchase?** Neither is required. PETO is free to download, with free reminders and logging. Optional PETO Premium is offered monthly or yearly (auto-renewing until cancelled) or as a lifetime one-time purchase that never renews.
+
+Sources:
+- Apple Support (2026). Cancel a subscription from Apple. https://support.apple.com/en-us/118428
+- Apple. Privacy Labels. https://www.apple.com/privacy/labels/
+
+---
+
+# How to track your cat’s litter box, water and toilet habits (and why vets care)
+
+URL: https://guledaaydemir.github.io/PETO/guides/cat-litter-box-water-tracking/
+
+**Quick answer:** To track your cat’s litter box, note each day how many pee clumps there are and roughly how big, what the stool looks like, any straining, blood or accidents outside the box, and how much water your cat drinks. After a week or two you know your own cat’s normal, so changes stand out: contact your vet about any change in peeing habits, and treat a cat (especially a male) straining with little or no urine as an emergency that needs a vet right away. In PETO, cat care is free: litter cleaning reminders, water in ml, a toilet log and a “Litter & water” card with today’s numbers and a 7-day average.
+
+Key points:
+- What’s normal differs from cat to cat, so a short daily log of your own cat’s litter box and water shows its baseline and makes changes easy to spot.
+- Note the number and rough size of pee clumps, stool consistency, straining, blood, accidents outside the box and how much water was drunk.
+- Contact your vet about any change in peeing habits; a cat straining with little or no urine needs a vet right away, and male cats are at greater risk of a blockage.
+- Keep the litter clean: Cats Protection suggests scooping twice a day and cleaning the whole tray at least once a week.
+- PETO’s cat care is free: litter reminders, water in ml, a toilet log and a “Litter & water” card; the Premium vet PDF adds a 14-day table.
+
+## Why track your cat’s litter box and water?
+
+Your cat can’t tell you when something feels wrong, but the litter box often can. A change in how often your cat pees, how much comes out or what the stool looks like is one of the first things you can actually see. That’s why vets ask about it. Cornell Feline Health Center lists difficult or painful urination, peeing more often, crying out while peeing, blood in the urine, peeing outside the litter box and frequent licking of the genital area as common signs of feline lower urinary tract disease.
+
+Water matters in both directions. Cornell notes that cats that drink less water are more likely to show these signs, and PDSA lists drinking more than usual among the signs of a urine problem. A short daily log turns “I think she’s been drinking a lot lately” into something you can show your vet.
+
+## What is normal for your cat? Start with a baseline
+
+There is no single “normal” that fits every cat. How often a cat pees, how big the clumps are and how much it drinks vary with the cat, its age, the weather, the litter and especially its food: wet food contains water, so the amount your cat drinks from the bowl can change when the food changes. So instead of general numbers, learn your own cat’s baseline.
+
+Log the litter box and the water bowl the same way every day for a week or two, while everything is fine. After that you know what an ordinary day looks like for your cat, and a change stands out on its own: more trips with smaller clumps, a day with no pee at all, a bowl that suddenly empties twice as fast. Cats Protection puts it simply: it’s always good to check for any changes in your cat’s litter tray behaviour.
+
+## What to log: pee, poop, warning signs and water
+
+Keep each entry short: just note what you saw when you scooped.
+
+- [ ] Litter scooped or fully changed, and when
+- [ ] Pee: number of clumps and roughly how big
+- [ ] No pee seen in the box today
+- [ ] Poop: normal, soft, diarrhoea or hard
+- [ ] Straining or crying in the box
+- [ ] Blood in the pee or stool
+- [ ] Peeing or pooping outside the box
+- [ ] Frequent trips with little or nothing coming out
+- [ ] Signs of pain or lots of licking around the genitals
+- [ ] Water drunk in ml, measured the same way each day
+- [ ] Appetite, and any change of food or litter
+
+To measure water, fill the bowl with a measuring jug, and before you refill it, measure what’s left. The difference is roughly what your cat drank (some evaporates, and other pets may share the bowl). With several bowls or a fountain, just measure the same way every time.
+
+## When is it urgent? Warning signs and emergencies
+
+Contact your vet as soon as you notice a change in your cat’s peeing habits. PDSA’s advice is clear: call your vet, and never wait to see whether the symptoms improve. Signs to take seriously include:
+
+- straining in the box, or crying while peeing,
+
+- many trips with only small amounts, or nothing at all,
+
+- blood in the urine,
+
+- peeing outside the box, for example in the bath, the sink or on cold floors,
+
+- a lot of licking around the genitals, hiding, eating less or low energy.
+
+**A cat straining with little or no urine is an emergency.** It can mean the urethra is blocked, which Cornell calls a true medical emergency. Male cats are at greater risk of a blockage than females, and Cats Protection says a cat that can’t pass any pee needs immediate veterinary attention. Don’t wait until the morning: call your vet or the nearest emergency vet straight away.
+
+## How to keep the litter box clean
+
+A clean box also helps the record: fresh clumps are easier to see in clean litter. Cats Protection suggests scooping twice a day and cleaning the whole tray at least once a week. Cornell’s advice on lower urinary tract disease includes keeping litter boxes clean, having enough of them, placing them in quiet, safe areas of the home, and providing clean, fresh water at all times.
+
+## How free cat care works in PETO
+
+For cats, PETO adds free cat care to the usual feeding, playtime and attention routines:
+
+- **Litter cleaning reminders.** Litter is a normal routine: pick the times, the repeat (every day, set days, or every N days counted from the day it was actually done) and “Remind me”. Mark it done right from the notification, snooze it for 15 minutes or skip it.
+
+- **Water in ml.** Log how much your cat drank, in millilitres.
+
+- **Toilet log.** Log pee, poop or both; the urine amount (none, small, normal, large); the stool (normal, soft, diarrhoea, hard); and warning signs: straining, blood, outside the box, frequent trips, pain. The toilet log is log-only, not a routine, so it never sends you reminders.
+
+Everything comes together on the cat-only **“Litter & water”** card on your cat’s page: today’s numbers, a 7-day average and when the litter was last cleaned. The 7-day average is your cat’s baseline at a glance.
+
+(Screenshot: Milo’s pet page with the cat-only “Litter & water” card: today’s water and toilet numbers, the 7-day average and the last litter clean.)
+
+The card also shows gentle prompts based on what you logged. If warning signs were logged in the last 48 hours, it says “These can be signs of a urinary problem. Show this log to your vet.” If no pee has been logged for over 24 hours, it says “If you haven’t seen any in the box either, call your vet.” And it reminds you that “A cat straining with little or no urine needs a vet right away.” PETO doesn’t diagnose anything; the prompts only point you to your vet.
+
+> Tip: Log the toilet entry **while you scoop**, scoop still in hand: pick the urine amount and the stool, and tick any warning sign you noticed. It takes ten seconds and keeps your 7-day average honest.
+
+## How to show the log to your vet
+
+The “Litter & water” card links to your cat’s **Health record** and to the vet report. The health record itself is free: vaccines with booster reminders, a weight chart and vet visits. With PETO Premium, **Vet report (PDF)** creates an A4 report to show or send to your vet, and for cats it includes a **14-day “Litter & water” table**. Without Premium, just show the card and your logs on your phone.
+
+(Screenshot: Buddy’s Health record with the Premium Vet report (PDF) at the top. For a cat, the report adds a 14-day Litter & water table.)
+
+Appetite belongs in the picture too: PDSA lists eating less among the signs of a urine problem. A feeding log can record whether your cat ate all, some or little of the meal or skipped it, plus a note.
+
+(Screenshot: Editing a feeding log: amount and unit, food, appetite (Ate all / Ate some / Ate little / Skipped) and a note.)
+
+Before the appointment, ask your vet whether to bring a urine sample, and write down when you first noticed the change.
+
+## Share the litter duty
+
+If several people scoop, the log only works when everyone uses it. PETO’s Family sharing (Premium to create, free to join) shares one household over your own iCloud, so everyone sees who fed, walked or played. When you go away, the free pet-sitter care card puts your cat’s routines, times, notes and a phone number on one page, with room in the notes for “tell me if the litter looks different”. See also the daily routine guide and, for vaccines and weight, the health record guide.
+
+## Questions people ask
+
+**How much water should my cat drink a day?** It varies with the cat, its size, the weather and especially its food: wet food contains water, so the amount from the bowl can change with the diet. That’s why a log of your own cat’s usual amount is more useful than a general number. If your cat suddenly drinks clearly more or less than usual, ask your vet.
+
+**How often should a cat pee?** There’s no single number that fits every cat. Learn your own cat’s usual pattern by noting the number and size of pee clumps for a week or two, and contact your vet if it changes, especially if your cat goes more often and passes less.
+
+**Is a cat straining in the litter box an emergency?** It can be. If your cat strains and passes little or no urine, treat it as an emergency and contact a vet straight away, day or night. Male cats are at greater risk of a urinary blockage. Don’t wait to see whether it improves.
+
+**Is PETO’s cat care free?** Yes. Litter cleaning reminders, water in ml, the toilet log and the Litter & water card are free for cats. The vet report PDF, which includes a 14-day Litter & water table, is part of PETO Premium.
+
+**Can PETO tell me if my cat is ill?** No. PETO keeps your log and shows gentle prompts based on what you logged, such as suggesting you show the log to your vet after warning signs. It doesn’t diagnose anything; for any health question, ask your vet.
+
+Sources:
+- Cornell Feline Health Center (2016). Feline Lower Urinary Tract Disease. https://www.vet.cornell.edu/departments-centers-and-institutes/cornell-feline-health-center/health-information/feline-health-topics/feline-lower-urinary-tract-disease
+- PDSA (2020). Urine problems in cats. https://www.pdsa.org.uk/pet-help-and-advice/pet-health-hub/symptoms/urine-problems-in-cats
+- Cats Protection (n.d.). Urinary problems in cats. https://www.cats.org.uk/help-and-advice/health/urinary-problems
+
+---
+
+# How often should you clean a fish tank, and how do you never forget it?
+
+URL: https://guledaaydemir.github.io/PETO/guides/fish-tank-cleaning-schedule-reminder/
+
+**Quick answer:** Most fish and turtle care guides recommend regular partial water changes, often weekly, plus rinsing the filter media lightly in old tank water rather than under the tap, so the helpful bacteria survive. The right interval for your tank depends on its size, how many animals live in it, how much you feed and the filter, so ask your aquarium shop or vet and then keep to it. PETO’s free aquarium care turns that interval into an “every N days” reminder (2 to 60 days) counted from the day you actually cleaned, and logs the % of water changed and whether the filter was cleaned.
+
+Key points:
+- Partial water changes dilute the waste a filter can’t break down; the filter needs care too, but over-cleaning it removes helpful bacteria.
+- Rinse filter media lightly in tank water you’ve removed, not under the tap: chlorine or chloramine in tap water can kill the helpful bacteria.
+- The right interval depends on your tank, how many animals live in it, feeding and the filter; your aquarium shop or vet can help you set it.
+- Overfeeding fouls the water: uneaten food rots, and turtles in particular produce a lot of waste.
+- In PETO, aquarium care is free for fish and turtles: an every-N-days cleaning routine counted from the last real clean, an “Aquarium” card and feeding reminders.
+
+## How often should you clean a fish tank?
+
+There isn’t one interval that fits every tank, but care guides agree on the method: small, regular **partial water changes** and gentle care of the filter. For goldfish, RSPCA Australia suggests weekly partial water changes of 10 to 25% of the water together with a gravel clean, and the Ornamental Aquatic Trade Association (OATA) recommends a partial change at least once a week. For terrapins such as red-eared sliders, the RSPCA suggests weekly partial changes too.
+
+Treat those figures as a starting point, not as a rule for your tank. How often your tank needs attention depends on its size, how many fish or turtles live in it, how much you feed and the filter you use. Ask your aquarium shop or vet to help you set your interval. The RSPCA recommends buying from a reputable aquatics retailer who will advise you, and OATA says: if in doubt, ask. Then turn the answer into a routine you can actually keep.
+
+## Why partial water changes and filter care matter
+
+Fish and turtles live in their own waste. Uneaten food and droppings break down in the water, and the filter is home to helpful bacteria that break down waste such as ammonia. Without those bacteria, waste builds up and, as RSPCA Australia warns, can kill fish. Partial water changes dilute the waste the filter can’t break down; that’s exactly how the RSPCA explains them for terrapin tanks. A gravel siphon lifts droppings and leftover food out of the substrate while you change the water.
+
+The filter needs care, but not too much. RSPCA Australia says not to clean the filter with tap water, and OATA explains why: chlorine or chloramine in tap water may kill the helpful bacteria. Instead, rinse the media lightly in the tank water you’ve just taken out. RSPCA Australia also warns that over-cleaning the filter media removes those bacteria. And treat the new water with a tap water conditioner (dechlorinator) before it goes in.
+
+## What decides the right interval for your tank?
+
+- **Tank size.** A small volume of water has less room to dilute waste.
+
+- **Stocking.** More fish, or a bigger turtle, means more waste.
+
+- **Feeding.** Uneaten food rots and fouls the water. RSPCA Australia calls overfeeding the most common problem with goldfish, and the RSPCA names over-feeding as the main cause of poor water quality in terrapin tanks.
+
+- **Filter.** The type and capacity of the filter change how much work is left for you.
+
+- **A new tank.** New tanks need closer checks while the helpful bacteria settle in; the RSPCA recommends fishless cycling when you set one up.
+
+Water test kits show how your tank is coping. OATA advises setting a routine for testing and recording your results, so you spot changes quickly. If you’re not sure what a reading means, take it to your aquarium shop. PETO doesn’t give water-chemistry advice: the schedule is yours, set with someone who knows your tank.
+
+## Turtle tanks: more waste, same idea
+
+Turtles are messy. The RSPCA says red-eared sliders produce lots of waste, so their water needs powerful filtration and regular maintenance. The basics are the same: weekly partial water changes, swishing the filter sponge in tank water rather than under the tap, and not overfeeding. The RSPCA also recommends registering with a reptile vet, so you have someone to ask when something looks wrong. Whatever the tank, wash your hands when you’re done.
+
+## A simple tank-cleaning routine you can keep
+
+- Prepare the replacement water and treat it with a conditioner, as your shop recommends.
+
+- Siphon out part of the water, cleaning the gravel or sand as you go.
+
+- If the filter needs it, rinse the media lightly in the water you removed.
+
+- Top up with the treated water.
+
+- Write down what you did: roughly what percentage of the water you changed, and whether you cleaned the filter.
+
+The last step is the one most people skip, and it’s the one that makes the next clean easy to plan. “Did we change the water last weekend or the one before?” has a real answer when it’s written down.
+
+## How to set an aquarium cleaning reminder in PETO
+
+PETO’s aquarium care is free for fish and turtles. When you add a fish, PETO suggests a feeding and an aquarium routine; for a turtle, feeding, attention and aquarium. They’re only suggestions: keep, change or remove them.
+
+- **Every N days.** Set the aquarium routine to repeat every N days, from 2 to 60, using the interval you agreed with your shop or vet. It’s counted from the day the clean was actually done, so if you clean a day late and log it, the next reminder moves too.
+
+- **Time and “Remind me”.** Pick a time when you usually have half an hour free, and get the reminder at that time, 10 minutes before or 30 minutes before.
+
+- **Log the clean.** Record the % of water changed and whether the filter was cleaned.
+
+- **Act on the reminder.** Mark it done, “Snooze 15 min” or “Skip” right from the notification.
+
+The **“Aquarium”** card on your fish’s or turtle’s page shows the last clean and the next date, with a short reminder of how it works: “Counted from the last clean: log it a day late and the next reminder moves too.”
+
+(Screenshot: Bubbles the fish: the pet page with the “Aquarium” card showing the last clean and the next date.)
+
+Feeding works like any other routine: one or more feeding times, a default portion if you like, and one-tap logging. Since overfeeding fouls the water, a shared record of who already fed the fish is worth having in a busy home.
+
+(Screenshot: The routine editor, shown here for Buddy’s feeding: times, Repeat, “Remind me” and the reminder switch. The aquarium routine uses the same editor.)
+
+> Tip: Log the clean **before you put the bucket away**. The next date counts from your log, so logging right away keeps the reminder in step with your tank, not with the plan.
+
+## See the schedule and share the job
+
+The **Calendar** shows the month with coloured dots per care type, and you can filter it by pet. If the whole household looks after the tank, Family sharing (Premium to create, free to join) lets everyone see who fed, walked or played, so the fish don’t get a second breakfast. Going away? The free pet-sitter care card gives your neighbour the routines, times, notes and a phone number on one page. New to PETO? Start with the quick-start guide, and see the daily routine guide for how routines fit together.
+
+(Screenshot: The Calendar: a month grid with coloured dots per care type and a pet filter.)
+
+Your pet data is saved on your device, with no PETO account and no ads. And PETO isn’t a vet or an aquarium expert: if your fish or turtle seems unwell, ask your vet.
+
+## Questions people ask
+
+**How often should I clean my fish tank?** It depends on the tank’s size, how many fish live in it, how much you feed and the filter. Care guides for goldfish from RSPCA Australia and OATA recommend a partial water change about once a week, with a gravel clean. Ask your aquarium shop or vet what suits your tank, then keep to that interval.
+
+**Can I rinse the aquarium filter under the tap?** Care guides advise against it: chlorine or chloramine in tap water may kill the helpful bacteria in the filter. Rinse the media lightly in tank water you’ve removed during a water change, and don’t over-clean it.
+
+**How often should a turtle tank be cleaned?** Turtles such as red-eared sliders produce a lot of waste, so their tanks need powerful filtration and regular maintenance. The RSPCA suggests weekly partial water changes for terrapins. Ask a reptile vet about your own setup.
+
+**How does PETO count the next cleaning date?** From the day you actually log the clean. You set the aquarium routine to repeat every N days (2 to 60); if you clean and log it a day late, the next reminder moves by a day too. The Aquarium card shows the last clean and the next date.
+
+**Is PETO’s aquarium care free, and does it give water advice?** Aquarium care is free for fish and turtles: the every-N-days cleaning routine, logging the % of water changed and filter cleaning, the Aquarium card and feeding reminders. PETO doesn’t give water-chemistry advice; ask your aquarium shop or vet.
+
+Sources:
+- RSPCA Australia (2024). How should I care for my goldfish? https://kb.rspca.org.au/knowledge-base/how-should-i-care-for-my-goldfish/
+- OATA (n.d.). How to look after goldfish in an aquarium / fish tank. https://ornamentalfish.org/what-we-do/advice-information/care-sheets/caresheets-coldwater-fish/how-to-look-after-goldfish-in-an-aquarium-fishtank/
+- RSPCA (n.d.). How to care for a terrapin. https://www.rspca.org.uk/adviceandwelfare/pets/other/terrapin
+- RSPCA (n.d.). Keeping fish as pets. https://www.rspca.org.uk/adviceandwelfare/pets/fish
+
+---
+
+# How to make your pet's bark or meow your iPhone reminder sound
+
+URL: https://guledaaydemir.github.io/PETO/guides/pet-voice-notification-sound/
+
+**Quick answer:** In PETO, open Settings → Notifications → “Pet voices”, check that “Reminders in my pet's voice” is on and tap “Record” next to your pet to capture up to 8 seconds of its bark, meow or chirp. PETO trims the silence and evens out the loudness, and from then on that pet's reminders, follow-ups and nudges play its own voice instead of the default sound. Tap “Test” to get a real reminder in about 3 seconds; the feature is free and the recording stays on your device.
+
+Key points:
+- Settings → Notifications → “Pet voices” → “Record”: up to 8 seconds per pet.
+- Each pet's reminders, follow-ups and nudges play that pet's own voice.
+- Tap “Test” for a real reminder in about 3 seconds, then lock your phone to hear it.
+- Silent mode, a Focus or notifications switched off can keep it quiet.
+- It's free; the microphone is used only while recording and the clip stays on your device.
+
+## Can your pet's bark or meow be your iPhone reminder sound?
+
+Yes. PETO, a pet-care routine app for iPhone, iPad and Mac that is free to download, lets you record your pet's bark, meow or chirp and use it as the notification sound for that pet's reminders. Open **Settings → Notifications → "Pet voices"**, make sure **"Reminders in my pet's voice"** is on and tap **"Record"** next to your pet. From then on, that pet's reminders, follow-ups and nudges play its own voice instead of the default sound.
+
+It's free, it works per pet, and the recording stays on your device. Here's how to set it up, record a clean clip and fix it when you can't hear it.
+
+## Why a familiar sound is easier to notice
+
+Phones chime, ping and buzz all day, and a standard alert sounds like every other app. That makes it easy to swipe away without reading. A sound you know well is different: you recognise it before you look at the screen, and you know straight away which pet the reminder is about.
+
+That helps with the jobs that slip on a busy day, like the evening meal, the afternoon walk or ten minutes of play. Hearing your dog's bark at dinner time feels more like a friendly nudge than a beep. It won't turn anyone into a perfect pet parent, but it makes the reminder harder to miss and a little more fun.
+
+## How to set up pet voice reminders in PETO, step by step
+
+- Open PETO and go to **Settings → Notifications → "Pet voices"**.
+
+- Check that **"Reminders in my pet's voice"** is switched on.
+
+- Find your pet in the list and tap **"Record"**. PETO needs microphone access to record, so allow it when your iPhone asks.
+
+- When your pet has made its sound, tap **"Stop & save"**. You have up to 8 seconds. PETO trims the silence and evens out the loudness, so there's nothing to edit.
+
+- Tap **"Play"** to listen back. Not happy with it? Tap **"Re-record"**.
+
+- Tap **"Test"**. PETO sends a real reminder in about 3 seconds. As the app suggests, lock your phone to hear it like the real thing.
+
+Changed your mind? Tap the bin icon next to the recording and confirm, and that pet's reminders go back to the default sound. You can record a new clip whenever you like.
+
+(Screenshot: "Pet voices": switch on "Reminders in my pet's voice" and tap Record next to each pet.)
+
+## Give every pet its own reminder voice
+
+Pet voices work per pet, which is where they shine in a busy household. Record the dog's bark, the cat's meow and the budgie's chirp separately. Each pet's reminders, follow-ups and smart nudges then play that pet's own clip, while a pet without a recording simply keeps the default sound. A quiet rabbit like Poppy may be happy with the default anyway.
+
+The result: when your phone barks, it's about the dog; when it meows, it's the cat's turn, and you can tell from the next room. PETO already groups reminders per pet and shows the pet's pixel sprite, so the sound and the picture match. You can still act right from the notification with "Fed ✓", "Snooze 15 min" or "Skip".
+
+Haven't set up any times yet? The daily routine guide explains routines and "Remind me", and the quick-start guide gets you going.
+
+(Screenshot: Buddy, Milo and Poppy on Home. Each pet can have its own reminder voice.)
+
+## Tips for recording a clear bark, meow or chirp
+
+- **Pick a quiet room.** Turn off the TV, the washing machine and the cooker hood. Background noise ends up in the clip too.
+
+- **Hold the phone fairly close**, without pushing it into your pet's face.
+
+- **Catch a natural moment.** Many dogs bark when the doorbell rings or the lead comes out, many cats meow around mealtimes, and many birds chirp in the morning. Start recording just before; the silence is trimmed anyway.
+
+- **Try a treat or a favourite toy** if your pet "talks" when it wants something. If your dog knows a "speak" cue, use it.
+
+- **Keep it short and happy.** One clear bark or meow is plenty; you don't need all 8 seconds. A cheerful sound makes a nicer reminder than an anxious one.
+
+- **Never frighten or tease your pet** to get a sound. If it isn't in the mood, try another day.
+
+> Tip: Your pet will hear the reminders too, and some pets may prick up their ears or answer back. If yours seems unsettled by its own voice coming from the phone, record a softer sound or delete the clip to go back to the **default sound**.
+
+## Why can't I hear my pet's voice? What to check
+
+If the test or a real reminder stays silent, one of these is usually the reason. PETO points out several of them on the "Pet voices" screen.
+
+- **Notifications are off for PETO.** PETO tells you: "Notifications are off for PETO, so the test can't play." In the iPhone Settings app, go to Notifications → PETO and turn on Allow Notifications, plus Sounds if you see it. Also check the notifications master switch in PETO's own Settings.
+
+- **Silent mode is on.** As the screen notes, your iPhone's ring/silent switch still applies. In Silent mode, iPhone doesn't play alerts or sound effects, though it may still vibrate. Depending on your model, turn it off with the Ring/Silent switch, the Action button, Control Center or Settings → Sounds & Haptics.
+
+- **A Focus is on.** Do Not Disturb, Sleep or another Focus can silence notifications. In Settings → Focus, choose the Focus, tap Apps and add PETO to the apps allowed to notify you. PETO's feeding, walk, medication and vet reminders are time-sensitive, and Apple explains that turning on Time Sensitive Notifications for a Focus lets apps send those immediately.
+
+- **Microphone access is off.** If you can't record, PETO shows "Microphone access is off" with a button that opens Settings. You can also go to Settings → Privacy & Security → Microphone and turn PETO on.
+
+- **The volume is low or the clip is faint.** Turn up the ringer and alerts volume, and re-record closer to your pet if the clip sounds quiet.
+
+(Screenshot: PETO's Settings: care-reminder switches and notification settings.)
+
+## Is my pet's recording private?
+
+Yes. PETO uses the microphone only while you record a pet voice, and the recording stays on your device. PETO has no account and no server of its own; your pets' profiles, routines and logs are saved on the device too.
+
+PETO does collect anonymous usage statistics, such as which screens open and which features are used. They never include pet names, notes or photos, and your recording stays on the phone. You can turn the statistics off in Settings → Data → "Share anonymous usage stats". To remove a voice, delete the recording; Settings → Reset all data, or deleting the app, removes everything PETO stored on the device.
+
+## Pet voice reminder checklist
+
+- [ ] Open Settings → Notifications → Pet voices in PETO
+- [ ] Check that "Reminders in my pet's voice" is on
+- [ ] Record each pet in a quiet room with the phone close
+- [ ] Play it back and re-record if it sounds faint
+- [ ] Tap Test and lock your phone to hear it
+- [ ] Turn off Silent mode or allow PETO in your Focus
+- [ ] Delete a clip any time to go back to the default sound
+
+Want more of your pet in the app? Dress your pixel pet up for Halloween, New Year and Bayram, and press and hold it to give it a pat.
+
+## Questions people ask
+
+**Can I use my dog's bark as a notification sound on iPhone?** Yes, for PETO's reminders. In PETO, go to Settings → Notifications → “Pet voices” and record up to 8 seconds of your dog's bark. That dog's reminders, follow-ups and nudges then play it instead of the default sound. Sounds from other apps don't change.
+
+**Is the pet voice feature in PETO free?** Yes. Pet voices are free, like PETO's core reminders and logging. Optional PETO Premium, sold as monthly, yearly or lifetime, adds extras such as medication routines and seasonal outfits.
+
+**Why can't I hear my pet's voice when a PETO reminder arrives?** Check that notifications are allowed for PETO, that Silent mode is off (in Silent mode iPhone doesn't play alert sounds, though it may vibrate) and that no Focus is silencing PETO. Then tap “Test” in Pet voices and lock your phone to hear it.
+
+**Can each of my pets have its own reminder sound?** Yes. Recordings are per pet, so the dog's reminders can bark and the cat's can meow. A pet without a recording keeps the default sound.
+
+**Does PETO upload my pet's recording?** No. PETO uses the microphone only while you record, and the recording stays on your device. PETO has no account or server of its own; its anonymous usage statistics don't include the recording and can be turned off in Settings → Data.
+
+Sources:
+- Apple Support (n.d.). Change notification settings on iPhone. https://support.apple.com/guide/iphone/change-notification-settings-iph7c3d96bab/ios
+- Apple Support (n.d.). Silence iPhone. https://support.apple.com/guide/iphone/silence-iphone-iph81c7fd7d1/ios
+- Apple Support (n.d.). Allow or silence notifications for a Focus on iPhone. https://support.apple.com/guide/iphone/allow-or-silence-notifications-for-a-focus-iph21d43af5b/ios
+- Apple Support (n.d.). Control access to hardware features on iPhone. https://support.apple.com/guide/iphone/control-access-to-hardware-features-iph168c4bbd5/ios
+
+---
+
+# When your pet dies: what to do with the reminders, the records and the memories
+
+URL: https://guledaaydemir.github.io/PETO/guides/when-your-pet-dies-memorial-mode/
+
+**Quick answer:** When your pet dies, you don’t have to delete the app or any of their records; the one thing worth doing soon is stopping the reminders. In PETO, memorial mode (free, never behind Premium) quietly stops every reminder, nudge, Live Activity and Apple Watch entry for that pet, keeps all logs, photos and the health record, and turns the pet’s page into a simple memorial you can share. It’s under Edit Pet → Memorial mode → “Create memorial”, and you can leave it at any time.
+
+Key points:
+- You don’t need to delete anything when your pet dies; stopping the reminders is the one thing worth doing soon.
+- PETO’s memorial mode is free and never behind Premium: Edit Pet → Memorial mode → “Create memorial”.
+- Every reminder, nudge, Live Activity and Apple Watch entry for that pet stops quietly; logs, photos and the health record are kept.
+- The memorial page shows dates, years of love, a few words, memories together from the log and a shareable memorial card.
+- Memorial mode can be undone at any time, and free pet-loss support lines are there when you want to talk.
+
+## What should you do with your pet’s app when your pet dies?
+
+Nothing has to happen today: you don’t need to delete the app, the photos or the years of records. The one thing worth doing soon is stopping the reminders, because a notification about feeding a pet who has died can catch you off guard on an ordinary morning.
+
+In PETO, **memorial mode** does exactly that. It’s free for everyone and never behind Premium. Every reminder for that pet stops quietly, everything you logged is kept, and the pet’s page becomes a simple memorial. This guide explains how it works, what to tell the people who shared the care, and where to find support when the grief is heavy.
+
+## Why reminders that keep arriving hurt
+
+A care app is meant to be persistent. While your pet is alive, that’s the point: a reminder at 7:30 every morning, a gentle follow-up when a walk isn’t logged, a playtime countdown on the Lock Screen. After a death, the same persistence lands differently. A “Meal time” alert or a nudge saying your pet misses you can arrive in a meeting or on the first quiet morning, and each one brings the loss back at a moment you didn’t choose.
+
+The American Veterinary Medical Association writes about how loud the silence at home can feel after a pet dies. A reminder breaks into that silence without warning. Stopping the reminders isn’t forgetting. It simply lets you choose when to think about your pet, and how.
+
+## How to turn on memorial mode in PETO
+
+Memorial mode lives where you edit your pet’s profile:
+
+- Open your pet’s page and choose **Edit Pet**.
+
+- Tap **Memorial mode**. A short sheet opens with the words “We’re so sorry. [Name] was deeply loved.” and explains what will happen.
+
+- Check the date, add **a few words** if you like (they’re optional) and tap **“Create memorial”**, or “Not now” if you aren’t ready.
+
+(Screenshot: The memorial sheet: “We’re so sorry” with your pet’s name, what happens next, the date, “A few words (optional)” and “Create memorial”.)
+
+From that moment, every reminder, nudge, Live Activity and Apple Watch entry for that pet stops quietly. There’s no farewell notification and nothing to dismiss. Your other pets’ routines carry on as before. If you had recorded your pet’s bark or meow for reminders in their own voice, those reminders stop too, so the recording won’t play unexpectedly as a notification sound.
+
+And nothing is final: you can leave memorial mode at any time, and the reminders resume.
+
+## What the memorial page shows
+
+Instead of a list of jobs, the pet’s page becomes a quiet memorial page. It holds:
+
+- **Dates** and **years of love**: the time you had together.
+
+- **A few words** you write yourself, such as “Forever our little sunshine”.
+
+- **Memories together**, drawn from your own log: walks together, meals shared, play sessions and a favourite park.
+
+- A **shareable memorial card** (“Share memorial”) to send to family and friends.
+
+The pixel pet is drawn still, without the everyday animations. The few words can be as short as you like. Some people write a nickname, others a line that only the family understands.
+
+(Screenshot: Buddy’s “In memory” page: the dates, “3 years of love”, memories together (7 walks, 13 meals shared, 6 play sessions, a favourite park) and “Share memorial”.)
+
+## Logs, photos and the health record are all kept
+
+Memorial mode doesn’t delete anything. Every log, every photo and the whole health record stay on your device as they were. That can matter in a few ways:
+
+- **Memories.** The log turns out to be a diary you didn’t know you were keeping: walks, park visits, evenings of cuddles.
+
+- **Questions later.** If you want to talk through the last months with your vet, the vaccines and the weight log are still there to look at.
+
+- **Future pets.** One day, perhaps not soon, the record may help you remember which food suited, which routine worked and what you would do again.
+
+The health record guide explains what the record holds.
+
+(Screenshot: The health record, with vaccines and weight, stays as it was.)
+
+## What to tell family members who shared the care
+
+If others helped with meals and walks, they should hear the news from you, not from a reminder that suddenly goes quiet. That includes a partner, children, flatmates and anyone you share the care with through Family sharing. A few things worth saying:
+
+- **That you’re creating a memorial**, so the silence that follows makes sense to them.
+
+- **What changes:** the reminders and nudges for this pet stop; the logs, photos and health record are kept; and everything can be undone.
+
+- **That they can help with the few words**, if that feels right. Children often want to add something of their own; the RSPCA’s pet bereavement toolkit has a page on children and pet loss.
+
+Remember people outside the home too: a sitter, a dog walker or a neighbour who looked after your pet. A short message, or the memorial card, lets them know.
+
+(Screenshot: Buddy’s Care Plan: every routine has its own reminder switch, if you’d rather pause reminders before creating a memorial.)
+
+> Tip: There’s no deadline. If creating a memorial feels too soon, you can turn off the reminder switch on each of the pet’s routines for now and come back to memorial mode later. Memorial mode is the one step that stops everything for that pet at once.
+
+## Gentle ways to remember your pet
+
+There’s no right way to remember, and no schedule for grief. A few ideas people find helpful:
+
+- **Write a few words.** The AVMA suggests writing a tribute or a letter to your pet as a way to keep memories close. The memorial page has room for a short one.
+
+- **Share the memorial card** with the people who knew your pet: family, the sitter, the neighbour who always said hello.
+
+- **Look back through the log** when you feel ready. “Memories together” brings out moments like a favourite park.
+
+- **Visit a place you shared.** The RSPCA lists favourite walks and places among the ways people remember.
+
+- **Keep the health record** for the day another animal joins your home. The RSPCA calls that a personal decision with no fixed timing.
+
+## Where to find support after your pet dies
+
+Grief for a pet is real grief, yet in an RSPCA survey more than half of the people who answered said they felt they had to hide it. Talking to someone who understands can help. These free services are run by animal charities and a veterinary college:
+
+- **Blue Cross Pet Loss Support** (UK, formerly the Pet Bereavement Support Service): free, confidential support from trained volunteers on 0800 096 6606, 8.30am to 8.30pm every day, or by email.
+
+- **Cats Protection’s Paws to Listen** (UK): a free, confidential phone line, 0800 024 94 94, on weekdays.
+
+- **Cornell Pet Loss Support Hotline** (US): 607-218-7457, answered by veterinary student volunteers trained with professional grief counsellors. Hours vary, so check the website.
+
+- **RSPCA pet bereavement toolkit** (UK): guidance on coping, children and pet loss, and supporting someone who is grieving.
+
+- **AVMA: Coping with the loss of a pet** (US): a short, kind read.
+
+These lines offer a listening ear, not counselling. If grief feels overwhelming or you’re struggling to cope, please reach out to your doctor or a mental health professional.
+
+Memorial mode is free for everyone, with or without Premium. If PETO was part of your pet’s everyday life, it can also hold their memory, quietly.
+
+## Questions people ask
+
+**What happens to reminders when I turn on memorial mode?** Every reminder, nudge, Live Activity and Apple Watch entry for that pet stops quietly, with no farewell notification. Reminders for your other pets carry on as before.
+
+**Does memorial mode delete my pet’s data?** No. Every log, photo and the full health record are kept on your device. The pet’s page becomes a memorial page with dates, years of love, a few words you write, memories together from the log and a shareable memorial card.
+
+**Is PETO’s memorial mode free?** Yes. Memorial mode is free for everyone and never behind Premium. You’ll find it under Edit Pet → Memorial mode → “Create memorial”.
+
+**Can I undo memorial mode?** Yes. You can leave memorial mode at any time, and the pet’s reminders resume. Nothing is deleted while the memorial is in place.
+
+**Where can I find support after my pet dies?** Free options include Blue Cross Pet Loss Support in the UK (0800 096 6606, every day), Cats Protection’s Paws to Listen in the UK and the Cornell Pet Loss Support Hotline in the US. They offer a listening ear, not counselling; if grief feels overwhelming, talk to your doctor or a mental health professional.
+
+Sources:
+- Blue Cross (2020). Pet loss. https://www.bluecross.org.uk/pet-loss
+- Cats Protection (n.d.). Grief and loss. https://www.cats.org.uk/what-we-do/grief
+- Cornell University College of Veterinary Medicine (n.d.). Pet Loss Resources and Support. https://www.vet.cornell.edu/about-us/outreach/pet-loss-support-hotline
+- RSPCA (2026). Pet bereavement toolkit. https://www.rspca.org.uk/adviceandwelfare/pets/bereavement
+- RSPCA (2026). How to cope with the loss of a pet. https://www.rspca.org.uk/adviceandwelfare/pets/bereavement/coping
+- AVMA (n.d.). Coping with the loss of a pet. https://www.avma.org/resources-tools/pet-owners/petcare/coping-loss-pet
+
+---
+
+# Halloween, New Year and Bayram outfits for your pixel pet (and how it comes alive)
+
+URL: https://guledaaydemir.github.io/PETO/guides/pet-halloween-new-year-bayram-outfits/
+
+**Quick answer:** PETO, a pet-care routine app for iPhone and iPad, has pixel outfits for your pet's avatar: a witch hat or pumpkin cap for Halloween, a Santa hat, reindeer antlers or party hat for New Year, and a fez, crescent tiara or tulip crown for Bayram (the Turkish name for Eid). Anyone can try them on for free; keeping one on your pet is Premium. The pixel pet is also “alive” for free: press and hold to pet it, and it sleeps in a nightcap at night, yawns awake in the morning and walks around on muddy paws after a walk.
+
+Key points:
+- Eight pixel outfits across three seasons: Halloween, New Year and Bayram.
+- The live season is featured; released outfits stay wearable all year.
+- Try any outfit on for free; keeping one on your pet is Premium.
+- The living pet is free: press and hold to pet it, with haptics.
+- Dressing up your real pet? Only if it's relaxed, only briefly, and never unattended.
+
+## How do you dress up your pet in PETO?
+
+Open your pet, go to **Edit Pet** and tap **"Outfits"**. The picker shows your pet's pixel avatar with seasonal headwear for **Halloween**, **New Year** and **Bayram**. Tap any outfit to try it on in the preview. Trying on is free for everyone; keeping an outfit on your pet is part of PETO Premium.
+
+- Open your pet and go to Edit Pet.
+
+- Tap "Outfits".
+
+- Tap an outfit to see it on your pet, or "No outfit" for the plain look.
+
+- With Premium, tap "Done" to keep it. Without Premium, the button reads "Unlock with Premium".
+
+The outfits are pixel headwear drawn on top of the avatar, so they fit every one of PETO's 104 pixel pets, whether yours is a golden retriever, a tuxedo cat, a white rabbit or a leopard gecko. Your routines don't change at all; your pet just looks festive while you do them.
+
+(Screenshot: The outfit picker: try Halloween, New Year and Bayram headwear on for free; keeping one is Premium.)
+
+## Every seasonal outfit in PETO, and when each season is featured
+
+| Season | Featured in PETO | Outfits |
+
+| Halloween | 1 October – 7 November | Witch hat, pumpkin cap |
+
+| New Year | 1 December – 15 January | Santa hat, reindeer antlers, party hat |
+
+| Bayram | From a week before Ramazan Bayramı and Kurban Bayramı | Fez, crescent tiara, tulip crown |
+
+The season that's live is featured in the picker. Outside those dates nothing disappears: released outfits stay wearable all year, so a pumpkin cap in March is entirely up to you.
+
+## What is Bayram, and how does PETO know the dates?
+
+Bayram is the Turkish word for a holiday or festival. In Türkiye the two big religious ones are **Ramazan Bayramı**, the Turkish name for Eid al-Fitr at the end of Ramadan, and **Kurban Bayramı**, the Turkish name for Eid al-Adha. They're family days: people visit relatives, greet their elders and share sweets, which is why Ramazan Bayramı is also called Şeker Bayramı, the "sugar feast".
+
+Both follow the lunar Islamic calendar, so in the Gregorian calendar they move about 11 days earlier every year. PETO works the dates out with the Umm al-Qura calendar and features the Bayram outfits from a week before each Bayram, so you don't have to look anything up. The fez, crescent tiara and tulip crown nod to Turkish style; the tulip, for instance, is a classic motif in İznik tiles.
+
+## Try outfits on for free, keep one with Premium
+
+Trying on is open to everyone, with or without Premium, so you can see your dog in reindeer antlers before deciding anything. In the picker, each season carries a Premium badge and the outfits show small locks; they're about keeping an outfit, not trying it on.
+
+PETO Premium is optional and sold as monthly, yearly (both renew until cancelled in your Apple ID subscriptions) or lifetime, a one-time purchase that never renews. Apple handles the purchase, and with Universal Purchase one Premium unlocks PETO on iPhone, iPad and Mac. Premium also covers things like creating family sharing, medication routines and the vet PDF report. Core reminders, logging and the living pet below stay free.
+
+## Meet the living pet: pet it, watch it sleep, spot the muddy paws
+
+Outfits are the seasonal part. The everyday part is free: on Home and on the pet page, your pixel pet is "alive".
+
+- **Press and hold to pet it.** A dog wags, a cat or small furry pet purrs, birds and fish flutter, and reptiles nuzzle. You feel it through haptics, and it's mirrored on Apple Watch.
+
+- **Bedtime and wake-up.** At night your pet sleeps in a nightcap under a moon. The first time you look each morning, it yawns awake with a sun.
+
+- **Muddy paws.** Right after you log a walk, your pet wanders about on muddy paws for a while. Tracking walks on your wrist? See Apple Watch walks.
+
+With Reduce Motion turned on, the looks stay but the movement stops. A pet in memorial mode is drawn still.
+
+(Screenshot: Buddy's page: press and hold the pixel pet to pet it.)
+
+> Tip: Petting the pixel pet is a nice little pause, but the real one probably wants it more. The free **Attention** routine reminds you to make time for cuddles, and with pet voice reminders it can even arrive in your pet's own bark or meow.
+
+## Fold fun on iPhone Duo, iPad and Mac
+
+PETO is built for iPhone, iPad and Mac, and it has a little trick for big screen changes. On a foldable iPhone (iPhone Duo), in iPad split view or when you maximise a Mac window, a big one-step size change plays a short animation: pixel covers swing open and your pets hop out with hearts. Folding back squashes the app and puffs out paw prints.
+
+It's decorative only, so your routines and reminders stay as they are, and Reduce Motion turns it off.
+
+(Screenshot: Home, where your pixel pets live. Press and hold one to pet it.)
+
+## Dressing up your real pet? Keep it short, comfortable and supervised
+
+A pixel hat costs your pet nothing. A real costume is different, and animal-welfare charities are cautious about it. The PDSA advises avoiding clothes that aren't designed to keep a pet warm or safe, because outfits can get in the way of going to the toilet or grooming and can make a pet too hot. The ASPCA recommends not putting a dog or cat in a costume unless you know they love it.
+
+If you still want a festive photo of your real pet:
+
+- Choose a costume that doesn't limit movement, sight, breathing or the ability to bark or meow, with no small, dangling or easily chewed-off pieces (ASPCA).
+
+- Let your pet try it on before the big day, and keep it on only briefly, for example for a photo (ASPCA, RSPCA Australia).
+
+- Watch for stress. RSPCA Australia mentions panting, lip licking and showing the whites of the eyes; the PDSA adds yawning in dogs and over-grooming, aggression or extra noise in cats. If your pet tries to get it off, take it off.
+
+- Supervise the whole time and never leave a pet in a costume unattended (RSPCA Australia).
+
+- Cats generally don't enjoy being dressed up. A festive bandana for a moment, or no costume at all, is fine (RSPCA Australia, ASPCA).
+
+If your pet seems stressed or unwell afterwards, ask your vet.
+
+## Seasonal outfit checklist
+
+- [ ] Open your pet, then Edit Pet → Outfits
+- [ ] Try on Halloween, New Year and Bayram headwear for free
+- [ ] Keep your favourite with Premium
+- [ ] Press and hold your pixel pet to pet it
+- [ ] Look in at night and in the morning to see it sleep and wake
+- [ ] Log a walk and look for muddy paws
+- [ ] Dressing up your real pet: brief, comfortable, supervised
+
+New to PETO? Start with the quick-start guide.
+
+## Questions people ask
+
+**When can I dress my pet up for Halloween, New Year or Bayram in PETO?** Any time. PETO features Halloween from 1 October to 7 November, New Year from 1 December to 15 January and Bayram from a week before Ramazan Bayramı and Kurban Bayramı, with dates from the Umm al-Qura calendar. Released outfits stay wearable all year.
+
+**Are PETO's seasonal outfits free?** Trying them on is free for everyone. Keeping an outfit on your pet is part of optional PETO Premium, sold as monthly, yearly or lifetime.
+
+**How do I pet my pixel pet in PETO?** Press and hold your pet on Home or on its pet page. A dog wags, a cat or small furry pet purrs, birds and fish flutter and reptiles nuzzle, with haptics that are mirrored on Apple Watch. It's free.
+
+**Why is my pet asleep in PETO?** At night your pixel pet sleeps in a nightcap under a moon, and the first time you look each morning it yawns awake with a sun. It's part of the free living pet. With Reduce Motion on, the looks stay but the movement stops.
+
+**Is it safe to dress up my real pet for Halloween?** Animal-welfare charities are cautious. The ASPCA suggests a costume only if you know your pet loves it, and RSPCA Australia says to keep it brief, supervise closely and never leave a pet in a costume unattended. Watch for stress such as panting or lip licking, and ask your vet if you're unsure.
+
+Sources:
+- ASPCA (n.d.). Halloween Safety Tips. https://www.aspca.org/pet-care/general-pet-care/halloween-safety-tips
+- RSPCA Australia (2020). Leave dressing up to the humans this holiday season. https://rspca.org.au/blog/2020/leave-dressing-humans-holiday-season
+- PDSA (2022). Is it ok to dress up my pet? https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/all-pets/is-it-ok-to-dress-up-my-pet
+
+---
