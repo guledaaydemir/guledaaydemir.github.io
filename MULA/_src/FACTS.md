@@ -247,8 +247,8 @@ App Store name "MULA: Plant Care", App Store id 6836519863. Do not state anythin
 - Opt-out: **Settings › Your garden › "Share anonymous usage"** ("Helps improve MULA. Never names, notes or
   photos."). Turning it off stops collection and clears the analytics data on the device. Google's
   <https://firebase.google.com/support/privacy> applies; data is kept for a limited time. The App Store
-  privacy label: Device ID, Product Interaction, Purchase History, used for analytics, not linked to the
-  user, not used for tracking.
+  privacy label: Device ID, Product Interaction, Purchase History and Coarse Location (the IP-derived region),
+  used for analytics, not linked to the user, not used for tracking.
 - Permissions MULA may ask for: **notifications** (reminders); **camera** (plant photos and the light meter;
   light readings are never saved); **photo library** via the system picker (to add a plant photo);
   **approximate location while using** (only for Weather alerts, Premium).
